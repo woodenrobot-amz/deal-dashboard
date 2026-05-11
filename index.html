@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wooden Robot | Command v1.2.2</title>
+    <title>Wooden Robot | Command v1.2.3</title>
     
-    <!-- 1. REFERENCE YOUR EXTERNAL CONFIG HERE -->
+    <!-- Reference your external config -->
     <script src="config.js"></script>
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,18 +18,18 @@
 </head>
 <body class="bg-slate-50 min-h-screen pb-10 custom-scroll">
 
-    <!-- Header Navigation -->
+    <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-2 border-blue-600 px-6 py-4">
         <div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-4">
                 <div class="bg-blue-600 px-3 py-1 rounded-lg font-black italic tracking-tighter text-2xl text-white">WR</div>
                 <div>
-                    <h1 class="text-lg font-black tracking-tighter uppercase italic leading-none">Deal <span class="text-blue-500">Command</span></h1>
-                    <p id="deal-count" class="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-1 text-white">Loading Assets...</p>
+                    <h1 class="text-lg font-black tracking-tighter uppercase italic leading-none text-white">Deal <span class="text-blue-500">Command</span></h1>
+                    <p id="deal-count" class="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-1 text-white text-white">Initializing...</p>
                 </div>
             </div>
 
-            <div class="flex flex-wrap items-center gap-3 text-white">
+            <div class="flex flex-wrap items-center gap-3">
                 <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search..." 
                        class="bg-slate-800 border border-slate-700 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none w-48 text-white">
                 
@@ -51,9 +51,9 @@
         </div>
     </nav>
 
-    <main class="max-w-[1600px] mx-auto px-6 mt-8">
+    <main class="max-w-[1600px] mx-auto px-6 mt-8 text-white">
         <div id="deal-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
-            <!-- Cards will inject here -->
+            <!-- Cards -->
         </div>
     </main>
 
@@ -62,10 +62,8 @@
 
         async function init() {
             try {
-                // Uses CONFIG from your external config.js file
                 const response = await fetch(`${CONFIG.CSV_URL}&cb=${Date.now()}`);
                 const csvData = await response.text();
-                
                 const rows = csvData.split(/\r?\n/).slice(1);
                 const hiddenDeals = JSON.parse(localStorage.getItem('hiddenDeals') || '[]');
                 const cats = new Set();
@@ -94,11 +92,8 @@
 
                     const savingsPct = ((d.avg90 - d.price) / d.avg90) * 100;
                     let score = savingsPct * CONFIG.WEIGHT_SAVINGS;
-                    
                     if (d.rank <= 500) score += 35;
                     else if (d.rank <= 2000) score += 20;
-                    else if (d.rank <= 10000) score += 10;
-                    
                     score += (d.rating * CONFIG.WEIGHT_RATING);
                     
                     d.dealScore = Math.round(score);
@@ -135,13 +130,13 @@
         }
 
         function handlePost(amazonUrl) {
+            // Build the standard Amazon Affiliate Link
             const baseUrl = amazonUrl.split('?')[0];
-            const finalAmazonUrl = `${baseUrl}?tag=${CONFIG.AFFILIATE_TAG}`;
-            const deepLink = `https://ptap.it/${CONFIG.POSTTAP_HANDLE}/${encodeURIComponent(finalAmazonUrl)}`;
+            const finalAffiliateLink = `${baseUrl}?tag=${CONFIG.AFFILIATE_TAG}`;
             
-            navigator.clipboard.writeText(deepLink).then(() => {
-                alert("Deep Link Copied!");
-                window.open(deepLink, '_blank');
+            navigator.clipboard.writeText(finalAffiliateLink).then(() => {
+                alert("Affiliate Link Copied!\nPaste into PostTap now.");
+                window.open(finalAffiliateLink, '_blank');
             });
         }
 
@@ -171,7 +166,7 @@
                         </div>
 
                         <div class="h-36 flex items-center justify-center mb-4 bg-slate-50 rounded-xl p-2 relative">
-                            <a href="${d.keepaUrl}" target="_blank" class="absolute bottom-2 right-2 bg-slate-900 text-white text-[8px] px-2 py-1 rounded hover:bg-blue-600 transition-all font-bold">KEEPA ↗</a>
+                            <a href="${d.keepaUrl}" target="_blank" class="absolute bottom-2 right-2 bg-slate-900 text-white text-[8px] px-2 py-1 rounded hover:bg-blue-600 transition-all font-bold text-white text-white">KEEPA ↗</a>
                             <img src="${d.img}" class="max-h-full max-w-full object-contain mix-blend-multiply">
                         </div>
 
@@ -183,11 +178,11 @@
                                 <p class="text-xl font-black text-slate-900">$${d.price.toFixed(2)}</p>
                             </div>
                             <div class="text-right">
-                                <p class="text-[8px] text-slate-400 font-black uppercase tracking-tighter">90d Avg</p>
-                                <p class="text-sm font-bold text-slate-400 line-through tracking-tighter">$${d.avg90.toFixed(2)}</p>
+                                <p class="text-[8px] text-slate-400 font-black uppercase">90d Avg</p>
+                                <p class="text-sm font-bold text-slate-400 line-through">$${d.avg90.toFixed(2)}</p>
                             </div>
                             <div class="mt-1">
-                                <p class="text-[8px] text-slate-400 font-black uppercase">Dropped</p>
+                                <p class="text-[8px] text-slate-400 font-black uppercase tracking-tighter">Dropped</p>
                                 <p class="text-[9px] font-bold text-slate-600">${d.lastChangeDate}</p>
                             </div>
                             <div class="text-right mt-1">
@@ -197,8 +192,8 @@
                         </div>
 
                         <button onclick="handlePost('${d.url}')" 
-                            class="w-full bg-slate-900 text-white text-xs font-black py-3 rounded-xl hover:bg-blue-600 transition-all shadow-lg active:scale-95">
-                            GENERATE DEEP LINK
+                            class="w-full bg-slate-900 text-white text-xs font-black py-3 rounded-xl hover:bg-blue-600 transition-all shadow-lg active:scale-95 text-white">
+                            COPY AFFILIATE LINK
                         </button>
                     </div>
                 </div>

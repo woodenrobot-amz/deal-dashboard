@@ -1,63 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wooden Robot | Command v1.4.6</title>
-    <script src="config.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .deal-card { transition: all 0.2s ease-in-out; }
-        .deal-card:hover { transform: translateY(-4px); }
-        .custom-scroll::-webkit-scrollbar { width: 6px; }
-        .custom-scroll::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 10px; }
-    </style>
-</head>
-<body class="bg-slate-50 min-h-screen pb-10 custom-scroll">
-
-    <!-- Header Navigation -->
-    <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-2 border-blue-600 px-6 py-4">
-        <div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-4">
-                <div class="bg-blue-600 px-3 py-1 rounded-lg font-black italic tracking-tighter text-2xl text-white">WR</div>
-                <div>
-                    <h1 class="text-lg font-black tracking-tighter uppercase italic leading-none text-white">Deal <span class="text-blue-500">Command</span></h1>
-                    <p id="deal-count" class="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-1 text-white uppercase">Syncing Data...</p>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap items-center gap-3">
-                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search..." class="bg-slate-800 border border-slate-700 rounded-lg px-4 py-2 text-sm text-white focus:ring-2 focus:ring-blue-500 outline-none w-48">
-                
-                <select id="sortSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white outline-none font-bold">
-                    <option value="score">Sort: Score</option>
-                    <option value="drop">Sort: % Drop</option>
-                    <option value="rank">Sort: BSR</option>
-                </select>
-
-                <select id="subCatSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white outline-none max-w-[150px]">
-                    <option value="All">All Categories</option>
-                </select>
-
-                <button onclick="resetHidden()" class="bg-red-900/20 text-red-400 border border-red-800 px-3 py-2 rounded-lg text-[10px] font-bold">RESET</button>
-            </div>
-        </div>
-    </nav>
-
-    <main class="max-w-[1600px] mx-auto px-6 mt-8">
-        <div id="deal-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
-            <!-- Cards Inject Here -->
-        </div>
-    </main>
-
     <script>
         let allDeals = [];
 
-        // Helper to strip symbols and ensure a clean number
-        const cleanNum = (val) => {
-            if (!val) return 0;
-            const cleaned = String(val).replace(/[$,%#\s]/g, '').replace(/,/g, '');
-            return parseFloat(cleaned) || 0;
+        // STRONGER CLEANER: Strips everything except digits and decimal points
+        const forceNum = (val) => {
+            if (val === null || val === undefined) return 0;
+            const cleaned = String(val).replace(/[^0-9.-]/g, '');
+            const parsed = parseFloat(cleaned);
+            return isNaN(parsed) ? 0 : parsed;
         };
 
         async function init() {
@@ -70,6 +19,10 @@
                 const hiddenDeals = JSON.parse(localStorage.getItem('hiddenDeals') || '[]');
                 const subCats = new Set();
 
+                // FORCE CONFIG TO NUMBERS
+                const weightSavings = forceNum(CONFIG.WEIGHT_SAVINGS) || 1.5;
+                const weightRating = forceNum(CONFIG.WEIGHT_RATING) || 5;
+
                 allDeals = rows.map((row) => {
                     const cols = row.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
                     if (!cols || cols.length < 13) return null;
@@ -77,38 +30,46 @@
                     const d = {
                         img: (cols[0] || "").replace(/"/g, ''),
                         title: (cols[1] || "").replace(/"/g, ''),
-                        price: cleanNum(cols[2]),
-                        avg90: cleanNum(cols[3]),
-                        drop1Day: cleanNum(cols[4]),
+                        price: forceNum(cols[2]),
+                        avg90: forceNum(cols[3]),
+                        drop1Day: forceNum(cols[4]),
                         isLow90: String(cols[5]).toUpperCase().includes('YES'),
                         isLowAll: String(cols[6]).toUpperCase().includes('YES'),
-                        reviews: cleanNum(cols[7]),
+                        reviews: forceNum(cols[7]),
                         subCategory: (cols[8] || "General").replace(/"/g, '').trim(),
-                        rank: cleanNum(cols[10]),
+                        rank: forceNum(cols[10]),
                         url: (cols[11] || "").replace(/"/g, '').trim(),
                         keepaUrl: (cols[12] || "#").replace(/"/g, '').trim(),
-                        rating: cleanNum(cols[13])
+                        rating: forceNum(cols[13])
                     };
 
-                    // --- CALIBRATED SCORECARD ---
-                    const savingsPct = d.avg90 > 0 ? ((d.avg90 - d.price) / d.avg90) * 100 : 0;
-                    
-                    // Base: Savings + Rating
-                    let score = (savingsPct * (CONFIG.WEIGHT_SAVINGS || 1.5)) + (d.rating * (CONFIG.WEIGHT_RATING || 5));
-                    
-                    // Flash Drop Boost
-                    if (d.drop1Day >= 10) score += 40;
-                    else if (d.drop1Day >= 5) score += 20;
-                    
-                    // BSR Velocity Boost
-                    if (d.rank > 0 && d.rank <= 500) score += 35;
-                    else if (d.rank > 0 && d.rank <= 2000) score += 20;
+                    // --- THE REWRITTEN MATH ENGINE ---
+                    let finalScore = 0;
 
-                    // Social Proof & Scarcity
-                    if (d.reviews >= 1000) score += 10;
-                    if (d.isLow90 && d.isLowAll) score += 15;
+                    // 1. Savings Score
+                    if (d.avg90 > 0 && d.price > 0) {
+                        const savingsPct = ((d.avg90 - d.price) / d.avg90) * 100;
+                        finalScore += (savingsPct * weightSavings);
+                    }
 
-                    d.dealScore = Math.round(score);
+                    // 2. Rating Score
+                    finalScore += (d.rating * weightRating);
+
+                    // 3. Flash Boost
+                    if (d.drop1Day >= 10) finalScore += 40;
+                    else if (d.drop1Day >= 5) finalScore += 20;
+
+                    // 4. Rank Boost
+                    if (d.rank > 0 && d.rank <= 500) finalScore += 35;
+                    else if (d.rank > 0 && d.rank <= 2000) finalScore += 20;
+
+                    // 5. Bonus Points
+                    if (d.reviews >= 1000) finalScore += 10;
+                    if (d.isLow90 && d.isLowAll) finalScore += 15;
+
+                    // FORCE THE FINAL RESULT TO A ROUNDED NUMBER
+                    d.dealScore = Math.floor(Number(finalScore));
+
                     if (d.subCategory) subCats.add(d.subCategory);
                     return d;
                 }).filter(d => d !== null && d.rating >= (CONFIG.MIN_RATING || 4.0) && !hiddenDeals.includes(d.url));
@@ -123,7 +84,7 @@
                 });
 
                 filterAndSort();
-            } catch (err) { console.error("Data Load Error:", err); }
+            } catch (err) { console.error("Load Error:", err); }
         }
 
         function filterAndSort() {
@@ -169,7 +130,7 @@
 
             grid.innerHTML = deals.map(d => `
                 <div class="deal-card bg-white rounded-3xl border border-slate-200 p-5 flex flex-col relative shadow-sm hover:shadow-xl">
-                    <button onclick="hideCard('${d.url}')" class="absolute top-3 right-3 z-30 bg-white/90 hover:bg-red-500 hover:text-white w-7 h-7 rounded-full text-[10px] shadow flex items-center justify-center transition-all font-bold">✕</button>
+                    <button onclick="hideCard('${d.url}')" class="absolute top-3 right-3 z-30 bg-white/90 hover:bg-red-500 hover:text-white w-7 h-7 rounded-full text-[10px] shadow flex items-center justify-center transition-all font-bold text-slate-400">✕</button>
                     
                     <div class="flex justify-between items-start mb-2">
                         <span class="text-[9px] font-black text-blue-600 uppercase truncate max-w-[100px]">${d.subCategory}</span>
@@ -188,7 +149,7 @@
                     
                     <div class="grid grid-cols-2 gap-2 mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
                         <div><p class="text-[8px] text-slate-400 uppercase font-bold">Price</p><p class="text-xl font-black text-slate-900">$${d.price.toFixed(2)}</p></div>
-                        <div class="text-right"><p class="text-[8px] text-slate-400 uppercase font-bold">90d Avg</p><p class="text-sm font-bold text-slate-400 line-through">$${d.avg90.toFixed(2)}</p></div>
+                        <div class="text-right"><p class="text-[8px] text-slate-400 uppercase font-bold">90d Avg</p><p class="text-sm font-bold text-slate-400 line-through tracking-tighter">$${d.avg90.toFixed(2)}</p></div>
                         <div class="mt-1"><p class="text-[8px] text-slate-400 uppercase font-bold">1d Drop</p><p class="text-[10px] font-bold text-blue-600">${d.drop1Day}%</p></div>
                         <div class="text-right mt-1"><p class="text-[8px] text-slate-400 uppercase font-bold">Score</p><p class="text-[10px] font-black text-orange-600">${d.dealScore}</p></div>
                     </div>
@@ -199,5 +160,3 @@
         }
         init();
     </script>
-</body>
-</html>

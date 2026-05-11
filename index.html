@@ -3,54 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wooden Robot Reviews | Deal Command</title>
+    <title>Wooden Robot | Deal Command v1.2</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .deal-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .deal-card:hover { transform: translateY(-5px); }
-        .bg-glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        .deal-card { transition: all 0.3s ease; }
+        .bg-glass { background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(12px); }
+        .custom-scroll::-webkit-scrollbar { width: 6px; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 10px; }
     </style>
 </head>
-<body class="bg-slate-100 min-h-screen pb-20">
+<body class="bg-slate-50 min-h-screen pb-10 custom-scroll">
 
-    <!-- Sticky Header -->
-    <nav class="sticky top-0 z-50 bg-slate-900 text-white p-4 shadow-2xl border-b-2 border-blue-500">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-xl font-black italic tracking-tighter">WOODEN ROBOT <span class="text-blue-500">V1.1</span></h1>
-                <p id="deal-count" class="text-[10px] text-blue-300 font-bold uppercase tracking-widest">Initialising Dashboard...</p>
+    <!-- SETTINGS & CONSTANTS (Update these) -->
+    <script>
+        const CONFIG = {
+            CSV_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT1QglaKzDDE5441XFT9FAhJgp7lK75YqysOo1ctQbXI1-g46k10vPG9E5MoihGd4g9bsgBnuL2IoMu/pub?output=csv',
+            AFFILIATE_TAG: 'amdyadams85-20',
+            POSTTAP_HANDLE: 'creator-a71ru62gtn', // Just the handle name
+            KEEPA_API_KEY: 'YOUR_API_KEY_OPTIONAL'
+        };
+    </script>
+
+    <!-- Navigation / Header -->
+    <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-2 border-blue-600 px-6 py-4">
+        <div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <div class="bg-blue-600 p-2 rounded-lg font-black italic tracking-tighter text-xl">WR</div>
+                <div>
+                    <h1 class="text-lg font-black tracking-tighter uppercase italic">Deal <span class="text-blue-500">Command</span></h1>
+                    <p id="deal-count" class="text-[9px] font-bold text-blue-300 uppercase tracking-widest leading-none">Loading Gear...</p>
+                </div>
             </div>
-            <button onclick="resetHidden()" class="text-[10px] border border-slate-700 px-3 py-1 rounded hover:bg-slate-800 transition-colors">
-                RESET HIDDEN
-            </button>
+
+            <!-- Filters & Sorting -->
+            <div class="flex flex-wrap items-center gap-3">
+                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search tools..." 
+                       class="bg-slate-800 border border-slate-700 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none w-48 lg:w-64">
+                
+                <select id="sortSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm outline-none">
+                    <option value="score">Sort: Deal Score</option>
+                    <option value="price-low">Sort: Price (Low)</option>
+                    <option value="rank">Sort: Sales Rank</option>
+                    <option value="newest">Sort: Recent Drop</option>
+                </select>
+
+                <select id="catSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm outline-none">
+                    <option value="All">All Categories</option>
+                </select>
+
+                <button onclick="resetHidden()" class="bg-red-900/30 text-red-400 border border-red-800/50 px-3 py-2 rounded-lg text-[10px] font-bold hover:bg-red-800 hover:text-white transition-all">
+                    RESET HIDDEN
+                </button>
+            </div>
         </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto px-4 mt-8">
-        <div id="deal-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <!-- Cards will inject here -->
+    <main class="max-w-[1600px] mx-auto px-6 mt-8">
+        <div id="deal-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
+            <!-- CARDS INJECTED HERE -->
         </div>
     </main>
 
     <script>
-        // CONFIGURATION
-        const CSV_BASE_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT1QglaKzDDE5441XFT9FAhJgp7lK75YqysOo1ctQbXI1-g46k10vPG9E5MoihGd4g9bsgBnuL2IoMu/pub?output=csv';
-        const AFFILIATE_ID = "YOUR_AFFILIATE_ID";
-        const POSTTAP_PREFIX = "https://ptap.it/yourhandle/"; 
+        let allDeals = [];
 
         async function init() {
             try {
-                // Cache-busting: adds a timestamp so the browser doesn't show old data
-                const response = await fetch(`${CSV_BASE_URL}&cacheBust=${Date.now()}`);
+                const response = await fetch(`${CONFIG.CSV_URL}&cb=${Date.now()}`);
                 const data = await response.text();
-                const rows = data.split('\n').slice(1); 
+                const rows = data.split('\n').slice(1);
                 const hiddenDeals = JSON.parse(localStorage.getItem('hiddenDeals') || '[]');
-                
-                let allDeals = rows.map(row => {
-                    const cols = row.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
-                    if (!cols || cols.length < 11) return null;
+                const cats = new Set();
 
-                    // MAPPING: Img(0), Title(1), Price(2), 90Avg(3), L90(4), LAll(5), Rat(6), Rev(7), Cat(8), Change(9), Rank(10), URL(11)
+                allDeals = rows.map(row => {
+                    const cols = row.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+                    if (!cols || cols.length < 13) return null;
+
                     const d = {
                         img: cols[0].replace(/"/g, ''),
                         title: cols[1].replace(/"/g, ''),
@@ -61,43 +89,58 @@
                         rating: parseFloat(cols[6]),
                         reviews: cols[7],
                         category: cols[8].replace(/"/g, '').trim(),
-                        lastChange: cols[9], 
+                        lastChange: cols[9].replace(/"/g, ''), // Date of drop
                         rank: parseInt(cols[10].replace(/[,#]/g, '')),
-                        url: cols[11].replace(/"/g, '')
+                        url: cols[11].replace(/"/g, ''),
+                        keepaUrl: cols[12]?.replace(/"/g, '') || '#'
                     };
 
-                    // --- SCORING ENGINE ---
+                    // Scoring Engine
                     const savingsPct = ((d.avg90 - d.price) / d.avg90) * 100;
-                    let score = savingsPct * 1.5; 
-
-                    // Rank Velocity Boost
+                    let score = savingsPct * 1.5;
                     if (d.rank <= 500) score += 35;
                     else if (d.rank <= 2000) score += 20;
-                    else if (d.rank <= 10000) score += 10;
-
-                    // Quality Multiplier
                     score += (d.rating * 5);
-
+                    
                     d.dealScore = Math.round(score);
+                    if (d.category) cats.add(d.category);
                     return d;
-                }).filter(d => d !== null && d.rating >= 4.2 && !hiddenDeals.includes(d.url));
+                }).filter(d => d !== null && !hiddenDeals.includes(d.url));
 
-                // Sort: Highest Score First
-                allDeals.sort((a, b) => b.dealScore - a.dealScore);
+                // Populate Cats
+                const catMenu = document.getElementById('catSelect');
+                Array.from(cats).sort().forEach(c => {
+                    const opt = document.createElement('option');
+                    opt.value = c; opt.innerText = c;
+                    catMenu.appendChild(opt);
+                });
 
-                renderDeals(allDeals);
-                document.getElementById('deal-count').innerText = `${allDeals.length} HIGH-VALUE DEALS ACTIVE`;
-            } catch (err) {
-                console.error("Dashboard Error:", err);
-            }
+                filterAndSort();
+            } catch (err) { console.error("Init Error:", err); }
+        }
+
+        function filterAndSort() {
+            const search = document.getElementById('searchBox').value.toLowerCase();
+            const sort = document.getElementById('sortSelect').value;
+            const cat = document.getElementById('catSelect').value;
+            
+            let filtered = allDeals.filter(d => 
+                d.title.toLowerCase().includes(search) && (cat === "All" || d.category === cat)
+            );
+
+            if (sort === "score") filtered.sort((a,b) => b.dealScore - a.dealScore);
+            if (sort === "price-low") filtered.sort((a,b) => a.price - b.price);
+            if (sort === "rank") filtered.sort((a,b) => a.rank - b.rank);
+            if (sort === "newest") filtered.sort((a,b) => new Date(b.lastChange) - new Date(a.lastChange));
+
+            render(filtered);
         }
 
         function handlePost(url) {
-            const fullUrl = url.includes('?') ? `${url}&tag=${AFFILIATE_ID}` : `${url}?tag=${AFFILIATE_ID}`;
-            const deepLink = `${POSTTAP_PREFIX}${encodeURIComponent(fullUrl)}`;
-            
+            const fullUrl = url.includes('?') ? `${url}&tag=${CONFIG.AFFILIATE_TAG}` : `${url}?tag=${CONFIG.AFFILIATE_TAG}`;
+            const deepLink = `https://ptap.it/${CONFIG.POSTTAP_HANDLE}/${encodeURIComponent(fullUrl)}`;
             navigator.clipboard.writeText(deepLink).then(() => {
-                alert("Deep Link Copied! Opening Amazon...");
+                alert("Deep Link Copied!");
                 window.open(deepLink, '_blank');
             });
         }
@@ -106,59 +149,61 @@
             let hidden = JSON.parse(localStorage.getItem('hiddenDeals') || '[]');
             hidden.push(url);
             localStorage.setItem('hiddenDeals', JSON.stringify(hidden));
-            init(); // Re-render without refreshing the whole page
-        }
-
-        function resetHidden() {
-            localStorage.removeItem('hiddenDeals');
             location.reload();
         }
 
-        function renderDeals(deals) {
+        function resetHidden() { localStorage.removeItem('hiddenDeals'); location.reload(); }
+
+        function render(deals) {
             const grid = document.getElementById('deal-grid');
+            document.getElementById('deal-count').innerText = `${deals.length} SELECTIVE OPPORTUNITIES`;
             grid.innerHTML = deals.map(d => `
-                <div class="deal-card group bg-white rounded-[2rem] border border-slate-200 overflow-hidden flex flex-col relative shadow-sm hover:shadow-xl">
-                    <!-- Hide Button -->
-                    <button onclick="hideCard('${d.url}')" class="absolute top-4 right-4 z-30 bg-white/90 hover:bg-red-500 hover:text-white w-8 h-8 rounded-full text-xs shadow-sm flex items-center justify-center transition-all">✕</button>
+                <div class="deal-card bg-white rounded-3xl border border-slate-200 overflow-hidden flex flex-col relative hover:shadow-2xl">
+                    <button onclick="hideCard('${d.url}')" class="absolute top-3 right-3 z-30 bg-white/90 hover:bg-red-500 hover:text-white w-7 h-7 rounded-full text-[10px] shadow flex items-center justify-center transition-all">✕</button>
                     
-                    <div class="p-6 flex-grow flex flex-col">
-                        <div class="flex justify-between items-center mb-4">
-                            <div class="flex flex-col">
-                                <span class="text-[10px] font-black text-blue-600 uppercase tracking-tighter">${d.category}</span>
-                                <span class="text-xs font-bold text-slate-400">Score: ${d.dealScore}</span>
+                    <div class="p-5 flex-grow flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="text-[9px] font-black text-blue-600 uppercase tracking-tighter">${d.category}</span>
+                            <div class="flex gap-1">
+                                ${d.isLowAll ? '<span class="bg-red-100 text-red-600 text-[8px] font-black px-1.5 py-0.5 rounded">YEAR</span>' : ''}
+                                ${d.isLow90 ? '<span class="bg-blue-100 text-blue-600 text-[8px] font-black px-1.5 py-0.5 rounded">90D</span>' : ''}
                             </div>
-                            ${d.isLowAll ? '<span class="bg-red-100 text-red-600 text-[9px] font-black px-2 py-1 rounded-md">YEAR LOW</span>' : 
-                              d.isLow90 ? '<span class="bg-blue-100 text-blue-600 text-[9px] font-black px-2 py-1 rounded-md">90D LOW</span>' : ''}
                         </div>
 
-                        <div class="h-44 flex items-center justify-center mb-4 bg-slate-50 rounded-2xl p-4">
-                            <img src="${d.img}" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform">
+                        <div class="h-36 flex items-center justify-center mb-4 bg-slate-50 rounded-xl p-2 relative">
+                            <a href="${d.keepaUrl}" target="_blank" class="absolute bottom-2 right-2 bg-slate-900 text-white text-[8px] px-2 py-1 rounded hover:bg-blue-600 transition-all font-bold">KEEPA ↗</a>
+                            <img src="${d.img}" class="max-h-full max-w-full object-contain">
                         </div>
 
-                        <h3 class="font-bold text-sm leading-tight h-10 overflow-hidden mb-4 text-slate-800">${d.title}</h3>
+                        <h3 class="font-bold text-xs leading-tight h-8 overflow-hidden mb-3 text-slate-800">${d.title}</h3>
                         
-                        <div class="mt-auto pt-4 border-t border-slate-50">
-                            <div class="flex justify-between items-end mb-6">
-                                <div>
-                                    <p class="text-[9px] text-slate-400 font-black uppercase">Deal Price</p>
-                                    <p class="text-3xl font-black text-slate-900 leading-none">$${d.price.toFixed(2)}</p>
-                                </div>
-                                <div class="text-right">
-                                    <p class="text-[9px] text-slate-400 font-black uppercase">BSR Rank</p>
-                                    <p class="text-xs font-bold text-slate-700">#${d.rank.toLocaleString()}</p>
-                                </div>
+                        <div class="grid grid-cols-2 gap-2 mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                            <div>
+                                <p class="text-[8px] text-slate-400 font-black uppercase">Deal Price</p>
+                                <p class="text-xl font-black text-slate-900 leading-none">$${d.price.toFixed(2)}</p>
                             </div>
-
-                            <button onclick="handlePost('${d.url}')" 
-                                class="w-full bg-slate-900 text-white font-black py-4 rounded-2xl hover:bg-blue-600 transition-all shadow-lg active:scale-95">
-                                GENERATE POST LINK
-                            </button>
+                            <div class="text-right">
+                                <p class="text-[8px] text-slate-400 font-black uppercase tracking-tighter">90d Avg</p>
+                                <p class="text-sm font-bold text-slate-400 line-through tracking-tighter">$${d.avg90.toFixed(2)}</p>
+                            </div>
+                            <div class="mt-1">
+                                <p class="text-[8px] text-slate-400 font-black uppercase">Drop Date</p>
+                                <p class="text-[9px] font-bold text-slate-600">${d.lastChange}</p>
+                            </div>
+                            <div class="text-right mt-1">
+                                <p class="text-[8px] text-slate-400 font-black uppercase">Score</p>
+                                <p class="text-[10px] font-black text-orange-600">${d.dealScore}</p>
+                            </div>
                         </div>
+
+                        <button onclick="handlePost('${d.url}')" 
+                            class="w-full bg-slate-900 text-white text-xs font-black py-3 rounded-xl hover:bg-blue-600 transition-all active:scale-95 shadow-lg">
+                            POST TO GROUP
+                        </button>
                     </div>
                 </div>
             `).join('');
         }
-
         init();
     </script>
 </body>

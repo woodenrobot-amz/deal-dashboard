@@ -3,132 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andy's Selective Tool Deals</title>
+    <title>Wooden Robot Reviews | Selective Deals</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .deal-card { transition: transform 0.2s; }
-        .deal-card:hover { transform: translateY(-5px); }
+        .deal-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .deal-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
     </style>
 </head>
-<body class="bg-gray-50 min-h-screen">
+<body class="bg-slate-50 min-h-screen font-sans">
 
-    <!-- Header & Brand -->
-    <nav class="bg-slate-900 text-white p-6 shadow-xl mb-8">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <!-- Brand Header -->
+    <nav class="bg-slate-900 text-white py-8 px-6 shadow-2xl border-b-4 border-blue-500">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div>
-                <h1 class="text-2xl font-bold tracking-tight">WOODEN ROBOT <span class="text-blue-400">REVIEWS</span></h1>
-                <p class="text-xs text-gray-400 uppercase tracking-widest">Selective Deal Dashboard</p>
+                <h1 class="text-3xl font-black tracking-tighter italic">WOODEN ROBOT <span class="text-blue-500">REVIEWS</span></h1>
+                <p class="text-blue-200 text-xs uppercase tracking-[0.3em] font-bold">The Selective Deal Dashboard</p>
             </div>
-            <div class="text-right">
-                <span id="deal-count" class="bg-blue-600 px-3 py-1 rounded-full text-sm font-bold">Loading...</span>
+            <div id="stats" class="flex gap-4">
+                <span id="deal-count" class="bg-blue-600 px-4 py-2 rounded-lg text-sm font-black shadow-inner italic">Loading Tools...</span>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto px-4 pb-12">
-        <!-- Controls -->
-        <div class="bg-white p-4 rounded-xl shadow-sm mb-8 flex flex-wrap gap-4 items-center justify-between border border-gray-200">
-            <div class="flex gap-4 items-center">
-                <input type="text" id="search" placeholder="Search by tool name..." 
-                       class="border border-gray-300 rounded-lg px-4 py-2 w-72 focus:ring-2 focus:ring-blue-500 outline-none">
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        
+        <!-- Smart Filters -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 mb-10 flex flex-wrap gap-4 items-center justify-between">
+            <div class="flex flex-wrap gap-3">
+                <input type="text" id="searchInput" onkeyup="filterDeals()" placeholder="Search tools..." 
+                       class="border border-slate-300 rounded-xl px-5 py-3 w-80 focus:ring-4 focus:ring-blue-100 outline-none transition-all">
                 
-                <select id="filterType" class="border border-gray-300 rounded-lg px-4 py-2 bg-white outline-none">
-                    <option value="all">All Quality Deals</option>
-                    <option value="90day">90-Day Lows Only</option>
-                    <option value="ytd">YTD Lows Only</option>
+                <select id="catFilter" onchange="filterDeals()" class="border border-slate-300 rounded-xl px-5 py-3 bg-white outline-none focus:ring-4 focus:ring-blue-100">
+                    <option value="All">All Categories</option>
                 </select>
             </div>
-
-            <div class="text-sm text-gray-500">
-                Minimum Quality: <span class="font-bold text-gray-800">4.2+ Stars</span>
+            
+            <div class="flex items-center gap-6">
+                <div class="text-right">
+                    <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Quality Filter</p>
+                    <p class="text-sm font-bold text-slate-700">Min 4.2 ★ Rating</p>
+                </div>
             </div>
         </div>
 
-        <!-- The Grid -->
-        <div id="deal-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <!-- Cards will be injected here -->
+        <!-- Deal Grid -->
+        <div id="deal-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Cards injected via JavaScript -->
         </div>
     </main>
 
     <script>
+        // YOUR PUBLISHED CSV URL
         const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT1QglaKzDDE5441XFT9FAhJgp7lK75YqysOo1ctQbXI1-g46k10vPG9E5MoihGd4g9bsgBnuL2IoMu/pub?output=csv';
+        let allDeals = [];
 
         async function init() {
             try {
                 const response = await fetch(CSV_URL);
                 const data = await response.text();
-                // Use a regex or CSV parser if titles contain commas, 
-                // but this simple split works for standard Keepa exports:
                 const rows = data.split('\n').slice(1); 
-                renderDeals(rows);
-            } catch (error) {
-                console.error("Error loading CSV:", error);
+                
+                const categories = new Set();
+
+                allDeals = rows.map(row => {
+                    const cols = row.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g);
+                    if (!cols || cols.length < 9) return null;
+
+                    // MAPPING: Img(0), Title(1), Price(2), 90Avg(3), L90(4), LAll(5), Rat(6), Rev(7), Cat(8), URL(9)
+                    const deal = {
+                        img: cols[0].replace(/"/g, ''),
+                        title: cols[1].replace(/"/g, ''),
+                        price: parseFloat(cols[2].replace(/[$,]/g, '')),
+                        avg90: parseFloat(cols[3].replace(/[$,]/g, '')),
+                        isLow90: cols[4].toUpperCase().includes('TRUE'),
+                        isLowAll: cols[5].toUpperCase().includes('TRUE'),
+                        rating: parseFloat(cols[6]),
+                        reviews: cols[7],
+                        category: cols[8].replace(/"/g, '').trim(),
+                        url: cols[9].replace(/"/g, '')
+                    };
+                    
+                    if (deal.category) categories.add(deal.category);
+                    return deal;
+                }).filter(d => d !== null && d.rating >= 4.2); // Global Quality Guard
+
+                // Populate Category Dropdown
+                const catSelect = document.getElementById('catFilter');
+                Array.from(categories).sort().forEach(cat => {
+                    const opt = document.createElement('option');
+                    opt.value = cat;
+                    opt.innerText = cat;
+                    catSelect.appendChild(opt);
+                });
+
+                filterDeals();
+            } catch (err) {
+                console.error("CSV Load Error:", err);
             }
         }
 
-        function renderDeals(rows) {
+        function filterDeals() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const catTerm = document.getElementById('catFilter').value;
             const grid = document.getElementById('deal-grid');
-            const countLabel = document.getElementById('deal-count');
             grid.innerHTML = '';
-            let count = 0;
 
-            rows.forEach(row => {
-                const cols = row.split(',');
-                if (cols.length < 5) return;
+            const filtered = allDeals.filter(d => {
+                const matchesSearch = d.title.toLowerCase().includes(searchTerm);
+                const matchesCat = catTerm === "All" || d.category === catTerm;
+                return matchesSearch && matchesCat;
+            });
 
-                // COLUMN MAPPING (Adjust these indices based on your Keepa Export column order)
-                const asin = cols[0]?.trim();
-                const title = cols[1]?.replace(/"/g, '');
-                const currentPrice = parseFloat(cols[2]);
-                const rating = parseFloat(cols[3]);
-                const low90 = parseFloat(cols[4]);
-                const isYTD = cols[5]?.toLowerCase().includes('true'); // Assuming col 6 is YTD check
-
-                // SELECTIVE FILTERS
-                if (rating < 4.2) return; // Ignore low quality items
-
-                // Calculate Badge
-                let badge = '';
-                if (currentPrice <= low90) badge = '90-DAY LOW';
-                if (isYTD) badge = 'YEAR LOW';
-                
-                // If it's not a significant long-term low, we skip it
-                if (!badge && currentPrice > (low90 * 1.02)) return;
-
-                count++;
+            filtered.forEach(d => {
+                const savings = Math.round(((d.avg90 - d.price) / d.avg90) * 100);
                 
                 const card = `
-                    <div class="deal-card bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden flex flex-col">
-                        <div class="relative p-4">
-                            ${badge ? `<span class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-md z-10">${badge}</span>` : ''}
-                            <img src="https://images.amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg" 
-                                 class="w-full h-48 object-contain hover:scale-105 transition-transform duration-300"
-                                 onerror="this.src='https://placehold.co/400x400?text=No+Image'">
+                    <div class="deal-card bg-white rounded-3xl border border-slate-200 overflow-hidden flex flex-col h-full">
+                        <div class="relative p-6 bg-white aspect-square flex items-center justify-center">
+                            ${d.isLowAll ? `<span class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-black px-3 py-1.5 rounded-lg z-10 shadow-lg">YEAR LOW</span>` : 
+                              d.isLow90 ? `<span class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-black px-3 py-1.5 rounded-lg z-10 shadow-lg">90-DAY LOW</span>` : ''}
+                            
+                            ${savings > 5 ? `<span class="absolute top-4 right-4 bg-emerald-500 text-white text-[10px] font-black px-3 py-1.5 rounded-lg z-10 shadow-lg">${savings}% OFF</span>` : ''}
+                            
+                            <img src="${d.img}" class="max-w-full max-h-full object-contain" onerror="this.src='https://placehold.co/400?text=No+Image'">
                         </div>
                         
-                        <div class="p-5 flex-grow flex flex-col">
-                            <h3 class="text-gray-800 font-semibold text-sm leading-tight h-10 overflow-hidden mb-2">${title}</h3>
+                        <div class="p-6 flex-grow flex flex-col border-t border-slate-50">
+                            <p class="text-[10px] font-black text-blue-500 uppercase tracking-widest mb-1">${d.category}</p>
+                            <h3 class="text-slate-800 font-bold text-sm leading-snug h-10 overflow-hidden mb-3">${d.title}</h3>
                             
-                            <div class="flex items-center gap-1 mb-4">
-                                <span class="text-yellow-500 text-sm">★</span>
-                                <span class="text-sm font-bold text-gray-700">${rating}</span>
+                            <div class="flex items-center gap-1 mb-6">
+                                <span class="text-amber-400">★★★★★</span>
+                                <span class="text-xs font-bold text-slate-400">${d.rating} (${d.reviews})</span>
                             </div>
 
-                            <div class="mt-auto">
-                                <div class="flex justify-between items-end mb-4">
+                            <div class="mt-auto pt-4 border-t border-slate-100">
+                                <div class="flex justify-between items-end mb-5">
                                     <div>
-                                        <p class="text-xs text-gray-400 uppercase font-bold tracking-tighter">Current Price</p>
-                                        <p class="text-2xl font-black text-slate-900">$${currentPrice}</p>
+                                        <p class="text-[9px] text-slate-400 uppercase font-black tracking-tighter">Current Price</p>
+                                        <p class="text-3xl font-black text-slate-900">$${d.price.toFixed(2)}</p>
                                     </div>
                                     <div class="text-right">
-                                        <p class="text-[10px] text-gray-400 uppercase font-bold tracking-tighter">90-Day Low</p>
-                                        <p class="text-sm font-bold text-gray-500 italic">$${low90}</p>
+                                        <p class="text-[9px] text-slate-400 uppercase font-black tracking-tighter">90d Average</p>
+                                        <p class="text-sm font-bold text-slate-400 line-through">$${d.avg90.toFixed(2)}</p>
                                     </div>
                                 </div>
 
-                                <a href="https://www.amazon.com/dp/${asin}?tag=YOUR_AFFILIATE_ID" target="_blank" 
-                                   class="block w-full text-center bg-slate-900 text-white font-bold py-3 rounded-xl hover:bg-blue-600 transition-colors">
-                                   View on Amazon
+                                <a href="${d.url}?tag=YOUR_AFFILIATE_ID" target="_blank" 
+                                   class="block w-full text-center bg-slate-900 text-white font-black py-4 rounded-2xl hover:bg-blue-600 transition-all shadow-lg hover:shadow-blue-200">
+                                   VIEW DEAL
                                 </a>
                             </div>
                         </div>
@@ -137,7 +160,7 @@
                 grid.innerHTML += card;
             });
 
-            countLabel.innerText = `${count} Deals Found`;
+            document.getElementById('deal-count').innerText = `${filtered.length} SELECT TOOLS FOUND`;
         }
 
         init();

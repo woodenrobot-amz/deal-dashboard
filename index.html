@@ -1,7 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wooden Robot | Command v1.4.8</title>
+    
+    <!-- External Config Dependency -->
+    <script src="config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .deal-card { transition: all 0.2s ease-in-out; }
+        .deal-card:hover { transform: translateY(-4px); }
+        .custom-scroll::-webkit-scrollbar { width: 6px; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen pb-10 custom-scroll">
+
+    <!-- Header Navigation -->
+    <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-2 border-blue-600 px-6 py-4">
+        <div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <div class="bg-blue-600 px-3 py-1 rounded-lg font-black italic tracking-tighter text-2xl text-white">WR</div>
+                <div>
+                    <h1 class="text-lg font-black tracking-tighter uppercase italic leading-none text-white">Deal <span class="text-blue-500">Command</span></h1>
+                    <p id="deal-count" class="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-1 text-white uppercase">Syncing Data...</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3 text-white">
+                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search..." class="bg-slate-800 border border-slate-700 rounded-lg px-4 py-2 text-sm text-white focus:ring-2 focus:ring-blue-500 outline-none w-48">
+                
+                <select id="sortSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white outline-none font-bold">
+                    <option value="score">Sort: Score</option>
+                    <option value="drop">Sort: % Drop</option>
+                    <option value="rank">Sort: Sales Velocity (BSR)</option>
+                </select>
+
+                <select id="subCatSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white outline-none max-w-[150px]">
+                    <option value="All">All Categories</option>
+                </select>
+
+                <button onclick="resetHidden()" class="bg-red-900/20 text-red-400 border border-red-800 px-3 py-2 rounded-lg text-[10px] font-bold hover:bg-red-600 hover:text-white transition-all">RESET</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-[1600px] mx-auto px-6 mt-8">
+        <div id="deal-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
+            <!-- Cards -->
+        </div>
+    </main>
+
     <script>
         let allDeals = [];
 
-        // STRONGER CLEANER: Strips everything except digits and decimal points
+        // NUCLEAR OPTION: Strips everything but digits/decimals and forces a clean Number type
         const forceNum = (val) => {
             if (val === null || val === undefined) return 0;
             const cleaned = String(val).replace(/[^0-9.-]/g, '');
@@ -43,7 +98,7 @@
                         rating: forceNum(cols[13])
                     };
 
-                    // --- THE REWRITTEN MATH ENGINE ---
+                    // --- CALIBRATED MATH ENGINE ---
                     let finalScore = 0;
 
                     // 1. Savings Score
@@ -55,21 +110,21 @@
                     // 2. Rating Score
                     finalScore += (d.rating * weightRating);
 
-                    // 3. Flash Boost
+                    // 3. Flash Drop Boost
                     if (d.drop1Day >= 10) finalScore += 40;
                     else if (d.drop1Day >= 5) finalScore += 20;
-
-                    // 4. Rank Boost
+                    
+                    // 4. BSR VELOCITY GATE (Bonus Points Only)
+                    // We NEVER add the d.rank itself, only flat rewards
                     if (d.rank > 0 && d.rank <= 500) finalScore += 35;
-                    else if (d.rank > 0 && d.rank <= 2000) finalScore += 20;
+                    else if (d.rank > 500 && d.rank <= 2000) finalScore += 20;
+                    else if (d.rank > 2000 && d.rank <= 10000) finalScore += 10;
 
-                    // 5. Bonus Points
+                    // 5. Bonus Social/Scarcity
                     if (d.reviews >= 1000) finalScore += 10;
                     if (d.isLow90 && d.isLowAll) finalScore += 15;
 
-                    // FORCE THE FINAL RESULT TO A ROUNDED NUMBER
                     d.dealScore = Math.floor(Number(finalScore));
-
                     if (d.subCategory) subCats.add(d.subCategory);
                     return d;
                 }).filter(d => d !== null && d.rating >= (CONFIG.MIN_RATING || 4.0) && !hiddenDeals.includes(d.url));
@@ -84,7 +139,7 @@
                 });
 
                 filterAndSort();
-            } catch (err) { console.error("Load Error:", err); }
+            } catch (err) { console.error("Data Load Error:", err); }
         }
 
         function filterAndSort() {
@@ -99,7 +154,11 @@
 
             if (sort === "score") filtered.sort((a,b) => b.dealScore - a.dealScore);
             if (sort === "drop") filtered.sort((a,b) => b.drop1Day - a.drop1Day);
-            if (sort === "rank") filtered.sort((a,b) => (a.rank || 999999) - (b.rank || 999999));
+            if (sort === "rank") filtered.sort((a,b) => {
+                let rA = a.rank === 0 ? 9999999 : a.rank;
+                let rB = b.rank === 0 ? 9999999 : b.rank;
+                return rA - rB; 
+            });
 
             render(filtered);
         }
@@ -107,7 +166,7 @@
         function handlePost(amazonUrl) {
             const baseUrl = amazonUrl.split('?')[0];
             const finalLink = `${baseUrl}?tag=${CONFIG.AFFILIATE_TAG}`;
-            navigator.clipboard.writeText(finalLink).then(() => alert("Copied Affiliate Link!"));
+            navigator.clipboard.writeText(finalLink).then(() => alert("Affiliate Link Copied!"));
         }
 
         function hideCard(url) {
@@ -160,3 +219,5 @@
         }
         init();
     </script>
+</body>
+</html>

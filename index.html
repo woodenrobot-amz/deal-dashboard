@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wooden Robot | Command v1.3.1</title>
+    <title>Wooden Robot | Command v1.4.1</title>
     
-    <!-- Reference your external config.js -->
     <script src="config.js"></script>
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .deal-card { transition: all 0.2s ease-in-out; }
@@ -18,30 +16,29 @@
 </head>
 <body class="bg-slate-50 min-h-screen pb-10 custom-scroll">
 
-    <!-- Header Navigation -->
     <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-2 border-blue-600 px-6 py-4">
         <div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-4">
                 <div class="bg-blue-600 px-3 py-1 rounded-lg font-black italic tracking-tighter text-2xl">WR</div>
                 <div>
                     <h1 class="text-lg font-black tracking-tighter uppercase italic leading-none">Deal <span class="text-blue-500">Command</span></h1>
-                    <p id="deal-count" class="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-1">Analyzing Market Data...</p>
+                    <p id="deal-count" class="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-1">Filtering Sub-Niches...</p>
                 </div>
             </div>
 
             <div class="flex flex-wrap items-center gap-3">
-                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search tools..." 
+                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search..." 
                        class="bg-slate-800 border border-slate-700 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none w-48 text-white">
                 
-                <select id="sortSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm outline-none text-white">
-                    <option value="score">Sort: Deal Score</option>
-                    <option value="price-low">Sort: Price (Low)</option>
-                    <option value="drop">Sort: 1-Day Drop</option>
-                    <option value="rank">Sort: BSR Rank</option>
+                <select id="sortSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm outline-none text-white font-bold">
+                    <option value="score">Sort: Score</option>
+                    <option value="drop">Sort: % Drop</option>
+                    <option value="rank">Sort: BSR</option>
                 </select>
 
-                <select id="catSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm outline-none text-white">
-                    <option value="All">All Categories</option>
+                <!-- Updated Sub-Category Filter -->
+                <select id="subCatSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm outline-none text-white max-w-[200px]">
+                    <option value="All">All Sub-Categories</option>
                 </select>
 
                 <button onclick="resetHidden()" class="bg-red-900/20 text-red-400 border border-red-800/50 px-3 py-2 rounded-lg text-[10px] font-bold hover:bg-red-600 hover:text-white transition-all">
@@ -53,7 +50,7 @@
 
     <main class="max-w-[1600px] mx-auto px-6 mt-8">
         <div id="deal-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
-            <!-- Cards will inject here -->
+            <!-- Cards -->
         </div>
     </main>
 
@@ -64,10 +61,9 @@
             try {
                 const response = await fetch(`${CONFIG.CSV_URL}&cb=${Date.now()}`);
                 const csvData = await response.text();
-                
                 const rows = csvData.split(/\r?\n/).slice(1);
                 const hiddenDeals = JSON.parse(localStorage.getItem('hiddenDeals') || '[]');
-                const cats = new Set();
+                const subCats = new Set();
 
                 allDeals = rows.map(row => {
                     const cols = row.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
@@ -81,8 +77,8 @@
                         drop1Day: parseFloat(cols[4]?.replace(/[%,]/g, '') || 0),
                         isLow90: cols[5].toUpperCase().includes('TRUE'),
                         isLowAll: cols[6].toUpperCase().includes('TRUE'),
-                        reviews: parseInt(cols[7]?.replace(/[,]/g, '') || 0),
-                        category: cols[8].replace(/"/g, '').trim(),
+                        reviews: parseInt(cols[7]?.replace(/[,/g, '') || 0),
+                        subCategory: cols[8].replace(/"/g, '').trim(), // NEW
                         lastChangeRaw: cols[9].replace(/"/g, ''), 
                         rank: parseInt(cols[10]?.replace(/[,#]/g, '') || 0),
                         url: cols[11].replace(/"/g, '').trim(),
@@ -90,36 +86,26 @@
                         rating: parseFloat(cols[13])
                     };
 
-                    // --- SCORING ENGINE V1.3 ---
                     const savingsPct = ((d.avg90 - d.price) / d.avg90) * 100;
                     let score = (savingsPct * CONFIG.WEIGHT_SAVINGS) + (d.rating * CONFIG.WEIGHT_RATING);
 
-                    // 1. Flash Drop Boost
                     if (d.drop1Day >= 10) score += 40;
                     else if (d.drop1Day >= 5) score += 20;
-
-                    // 2. BSR Velocity
                     if (d.rank > 0 && d.rank <= 500) score += 35;
-                    else if (d.rank > 0 && d.rank <= 2000) score += 20;
-
-                    // 3. Social Proof (Reliability)
                     if (d.reviews >= 1000) score += 10;
-
-                    // 4. Scarcity (Double Floor)
                     if (d.isLow90 && d.isLowAll) score += 15;
 
                     d.dealScore = Math.round(score);
-                    d.lastChangeDate = d.lastChangeRaw.split(' ')[0];
-                    
-                    if (d.category) cats.add(d.category);
+                    if (d.subCategory) subCats.add(d.subCategory);
                     return d;
                 }).filter(d => d !== null && d.rating >= CONFIG.MIN_RATING && !hiddenDeals.includes(d.url));
 
-                const catMenu = document.getElementById('catSelect');
-                Array.from(cats).sort().forEach(c => {
+                // Populate Sub-Categories
+                const subCatMenu = document.getElementById('subCatSelect');
+                Array.from(subCats).sort().forEach(sc => {
                     const opt = document.createElement('option');
-                    opt.value = c; opt.innerText = c;
-                    catMenu.appendChild(opt);
+                    opt.value = sc; opt.innerText = sc;
+                    subCatMenu.appendChild(opt);
                 });
 
                 filterAndSort();
@@ -129,14 +115,13 @@
         function filterAndSort() {
             const search = document.getElementById('searchBox').value.toLowerCase();
             const sort = document.getElementById('sortSelect').value;
-            const cat = document.getElementById('catSelect').value;
+            const subCat = document.getElementById('subCatSelect').value;
             
             let filtered = allDeals.filter(d => 
-                d.title.toLowerCase().includes(search) && (cat === "All" || d.category === cat)
+                d.title.toLowerCase().includes(search) && (subCat === "All" || d.subCategory === subCat)
             );
 
             if (sort === "score") filtered.sort((a,b) => b.dealScore - a.dealScore);
-            if (sort === "price-low") filtered.sort((a,b) => a.price - b.price);
             if (sort === "drop") filtered.sort((a,b) => b.drop1Day - a.drop1Day);
             if (sort === "rank") filtered.sort((a,b) => a.rank - b.rank);
 
@@ -146,10 +131,7 @@
         function handlePost(amazonUrl) {
             const baseUrl = amazonUrl.split('?')[0];
             const finalLink = `${baseUrl}?tag=${CONFIG.AFFILIATE_TAG}`;
-            
-            navigator.clipboard.writeText(finalLink).then(() => {
-                alert("Affiliate Link Copied!");
-            });
+            navigator.clipboard.writeText(finalLink).then(() => { alert("Affiliate Link Copied!"); });
         }
 
         function hideCard(url) {
@@ -163,14 +145,14 @@
 
         function render(deals) {
             const grid = document.getElementById('deal-grid');
-            document.getElementById('deal-count').innerText = `${deals.length} SELECTIVE DEALS ACTIVE`;
+            document.getElementById('deal-count').innerText = `${deals.length} TARGETED DEALS`;
             grid.innerHTML = deals.map(d => `
                 <div class="deal-card bg-white rounded-3xl border border-slate-200 overflow-hidden flex flex-col relative shadow-sm">
-                    <button onclick="hideCard('${d.url}')" class="absolute top-3 right-3 z-30 bg-white/90 hover:bg-red-500 hover:text-white w-7 h-7 rounded-full text-[10px] shadow flex items-center justify-center transition-all">✕</button>
+                    <button onclick="hideCard('${d.url}')" class="absolute top-3 right-3 z-30 bg-white/90 hover:bg-red-500 hover:text-white w-7 h-7 rounded-full text-[10px] shadow flex items-center justify-center transition-all font-bold">✕</button>
                     
                     <div class="p-5 flex-grow flex flex-col">
                         <div class="flex justify-between items-start mb-2">
-                            <span class="text-[9px] font-black text-blue-600 uppercase tracking-tighter">${d.category}</span>
+                            <span class="text-[9px] font-black text-blue-600 uppercase tracking-tighter truncate max-w-[120px]">${d.subCategory}</span>
                             <div class="flex gap-1">
                                 ${d.drop1Day >= 5 ? '<span class="bg-yellow-400 text-yellow-900 text-[8px] font-black px-1.5 py-0.5 rounded uppercase flex items-center gap-1">⚡ FLASH</span>' : ''}
                                 ${d.isLowAll ? '<span class="bg-red-100 text-red-600 text-[8px] font-black px-1.5 py-0.5 rounded uppercase">Year</span>' : ''}
@@ -186,20 +168,20 @@
                         
                         <div class="grid grid-cols-2 gap-2 mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
                             <div>
-                                <p class="text-[8px] text-slate-400 font-black uppercase">Current</p>
-                                <p class="text-xl font-black text-slate-900">$${d.price.toFixed(2)}</p>
+                                <p class="text-[8px] text-slate-400 font-black uppercase tracking-tighter">Current</p>
+                                <p class="text-xl font-black text-slate-900 leading-none">$${d.price.toFixed(2)}</p>
                             </div>
                             <div class="text-right">
                                 <p class="text-[8px] text-slate-400 font-black uppercase tracking-tighter">90d Avg</p>
-                                <p class="text-sm font-bold text-slate-400 line-through">$${d.avg90.toFixed(2)}</p>
+                                <p class="text-sm font-bold text-slate-400 line-through leading-none">$${d.avg90.toFixed(2)}</p>
                             </div>
                             <div class="mt-1">
                                 <p class="text-[8px] text-slate-400 font-black uppercase tracking-tighter">1d Drop</p>
-                                <p class="text-[10px] font-bold text-blue-600">${d.drop1Day}%</p>
+                                <p class="text-[10px] font-bold text-blue-600 leading-none">${d.drop1Day}%</p>
                             </div>
                             <div class="text-right mt-1">
-                                <p class="text-[8px] text-slate-400 font-black uppercase">Score</p>
-                                <p class="text-[10px] font-black text-orange-600">${d.dealScore}</p>
+                                <p class="text-[8px] text-slate-400 font-black uppercase tracking-tighter">Score</p>
+                                <p class="text-[10px] font-black text-orange-600 leading-none">${d.dealScore}</p>
                             </div>
                         </div>
 

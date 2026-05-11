@@ -88,32 +88,28 @@
         keepaUrl: cols[12]?.replace(/"/g, '').trim() || '#'
     };
 
-    // 1. FRESHNESS CALCULATION
-    const now = new Date();
-    const dropTime = new Date(d.lastChangeRaw);
-    const hoursOld = (now - dropTime) / (1000 * 60 * 60); // Convert ms to hours
 
-    // 2. BASE MATH
-    const savingsPct = ((d.avg90 - d.price) / d.avg90) * 100;
-    let score = savingsPct * CONFIG.WEIGHT_SAVINGS;
-    score += (d.rating * CONFIG.WEIGHT_RATING);
+const savingsPct = ((d.avg90 - d.price) / d.avg90) * 100;
 
-    // 3. VELOCITY BOOSTS (BSR)
-    if (d.rank <= 500) score += 35;
-    else if (d.rank <= 2000) score += 20;
-    else if (d.rank <= 10000) score += 10;
+// 1. CONVICTION SCORING (Replaces Freshness)
+let convictionBoost = 0;
+if (savingsPct >= 25) convictionBoost = 40;
+else if (savingsPct >= 15) convictionBoost = 25;
+else if (savingsPct >= 10) convictionBoost = 10;
 
-    // 4. THE "IT FACTOR" AUTOMATED TRIGGERS
-    // Freshness Boost
-    if (hoursOld <= 6) score += 25;
-    else if (hoursOld <= 12) score += 15;
-    else if (hoursOld <= 24) score += 5;
+// 2. STABILITY BOOST
+const stabilityBoost = (d.reviews >= 5000) ? 15 : (d.reviews >= 1000 ? 5 : 0);
 
-    // Double Floor Bonus
-    if (d.isLow90 && d.isLowAll) score += 15;
+// 3. SCARCITY BOOST (The "Double Floor")
+const scarcityBoost = (d.isLow90 && d.isLowAll) ? 20 : 0;
 
-    // Social Proof Bonus
-    if (d.reviews >= 1000) score += 10;
+// 4. FINAL SCORE
+let score = (savingsPct * CONFIG.WEIGHT_SAVINGS) + (d.rating * CONFIG.WEIGHT_RATING);
+score += convictionBoost + stabilityBoost + scarcityBoost;
+
+// 5. VELOCITY (BSR)
+if (d.rank <= 500) score += 35;
+else if (d.rank <= 2000) score += 20;
 
     d.dealScore = Math.round(score);
     d.lastChangeDate = d.lastChangeRaw.split(' ')[0]; // For display

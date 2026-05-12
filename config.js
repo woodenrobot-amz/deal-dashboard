@@ -17,5 +17,10 @@ const CONFIG = {
             name: "Deals for Dudes",
             url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSJRzV2dgrkg8XOyW5_RD4gjiX04ZBFaYk2kalQJ96Gm0ILosp6tgwdvbNGGW3Un36Qomsl3G07XJc5/pub?output=csv"
         }
+        const CONFIG = {
+    // ... your existing settings ...
+    BRAND_LIST_URL: "https://docs.google.com/spreadsheets/d/e/YOUR_BRAND_SHEET_ID/pub?output=csv",
+    // ...
+};
     }
 };

@@ -3,46 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wooden Robot | Command v1.5.3</title>
+    <title>Wooden Robot | Command v1.6.0</title>
     <script src="config.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
         .deal-card { transition: all 0.2s ease-in-out; }
-        .deal-card:hover { transform: translateY(-4px); }
-        /* Sticky Version Tracker */
-        #version-tag { position: fixed; bottom: 10px; right: 10px; font-size: 10px; font-weight: 900; color: #94a3b8; z-index: 100; pointer-events: none; }
+        .deal-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+        #version-tag { position: fixed; bottom: 10px; right: 10px; font-size: 12px; font-weight: 900; color: #cbd5e1; z-index: 100; }
+        .btn-shadow { box-shadow: 0 4px 0 0 rgba(0,0,0,0.2); }
+        .btn-shadow:active { transform: translateY(2px); box-shadow: 0 2px 0 0 rgba(0,0,0,0.2); }
     </style>
 </head>
-<body class="bg-slate-50 min-h-screen pb-10">
+<body class="bg-slate-100 min-h-screen pb-20">
 
-    <div id="version-tag">COMMAND V1.5.3</div>
+    <div id="version-tag">COMMAND V1.6.0</div>
 
-    <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-2 border-blue-600 px-6 py-4">
-        <div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-4">
-                <div class="bg-blue-600 px-3 py-1 rounded-lg font-black italic tracking-tighter text-2xl text-white">WR</div>
+    <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-4 border-blue-600 px-6 py-6">
+        <div class="max-w-[1800px] mx-auto flex flex-col xl:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-6">
+                <div class="bg-blue-600 px-4 py-2 rounded-xl font-black italic tracking-tighter text-3xl text-white">WR</div>
                 <div>
-                    <h1 class="text-lg font-black tracking-tighter uppercase italic leading-none text-white">Deal <span class="text-blue-500">Command</span></h1>
-                    <p id="deal-count" class="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-1">INITIALIZING...</p>
+                    <h1 class="text-2xl font-black tracking-tighter uppercase italic leading-none text-white">Deal <span class="text-blue-500">Command</span></h1>
+                    <p id="deal-count" class="text-xs font-bold text-blue-300 uppercase tracking-widest mt-1">CONNECTING...</p>
                 </div>
             </div>
-            <div class="flex flex-wrap items-center gap-3">
-                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search..." class="bg-slate-800 border border-slate-700 rounded-lg px-4 py-2 text-sm text-white outline-none w-48">
-                <select id="sortSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white outline-none font-bold">
-                    <option value="score">Sort: Score</option>
-                    <option value="drop">Sort: % Drop</option>
-                    <option value="rank">Sort: BSR</option>
+            
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search tools..." class="bg-slate-800 border-2 border-slate-700 rounded-xl px-6 py-3 text-lg text-white outline-none w-64 focus:border-blue-500">
+                
+                <select id="sortSelect" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-xl px-4 py-3 text-lg font-bold text-white outline-none cursor-pointer">
+                    <option value="score">Sort: Deal Score</option>
+                    <option value="drop">Sort: Price Drop</option>
+                    <option value="rank">Sort: BSR (Low to High)</option>
                 </select>
-                <select id="subCatSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white outline-none max-w-[150px]">
+
+                <select id="subCatSelect" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-xl px-4 py-3 text-lg text-white outline-none cursor-pointer">
                     <option value="All">All Categories</option>
                 </select>
-                <button onclick="resetHidden()" class="bg-red-900/20 text-red-400 border border-red-800 px-3 py-2 rounded-lg text-[10px] font-bold">RESET</button>
+
+                <select id="tagFilter" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-xl px-4 py-3 text-lg text-white outline-none font-bold text-yellow-500">
+                    <option value="All">All Deals</option>
+                    <option value="Flash">⚡ Flash Only</option>
+                    <option value="Year">🏆 Year Low Only</option>
+                </select>
+
+                <button onclick="resetHidden()" class="bg-red-600 text-white px-6 py-3 rounded-xl text-sm font-black btn-shadow uppercase">Reset Hidden</button>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-[1600px] mx-auto px-6 mt-8">
-        <div id="deal-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6"></div>
+    <main class="max-w-[1800px] mx-auto px-6 mt-10">
+        <div id="deal-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8"></div>
     </main>
 
     <script>
@@ -51,73 +64,68 @@
         const forceNum = (val) => {
             if (!val) return 0;
             const cleaned = String(val).replace(/[^0-9.-]/g, '');
-            const parsed = parseFloat(cleaned);
-            return isNaN(parsed) ? 0 : parsed;
+            return parseFloat(cleaned) || 0;
         };
 
-        const cleanUrl = (url) => {
-            if (!url) return "";
-            return url.replace(/["\s]/g, '').trim();
+        const copyToClipboard = (text, btn, originalText) => {
+            navigator.clipboard.writeText(text).then(() => {
+                btn.innerText = "COPIED!";
+                btn.classList.replace('bg-slate-900', 'bg-green-600');
+                btn.classList.replace('bg-blue-600', 'bg-green-600');
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.classList.remove('bg-green-600');
+                    if(originalText.includes('ASIN')) btn.classList.add('bg-blue-600');
+                    else btn.classList.add('bg-slate-900');
+                }, 1000);
+            });
         };
 
         async function init() {
-            const statusEl = document.getElementById('deal-count');
             try {
                 const response = await fetch(`${CONFIG.CSV_URL}&cb=${Date.now()}`);
-                if (!response.ok) throw new Error("Sheet Connection Failed");
-                
                 const csvData = await response.text();
-                const lines = csvData.split(/\r?\n/).filter(line => line.trim() !== "");
-                const rows = lines.slice(1);
-                
+                const rows = csvData.split(/\r?\n/).filter(line => line.trim() !== "").slice(1);
                 const hiddenDeals = JSON.parse(localStorage.getItem('hiddenDeals') || '[]');
                 const subCats = new Set();
 
-                allDeals = rows.map((row, idx) => {
-                    try {
-                        const cols = row.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
-                        // If columns are missing, skip this row but keep going
-                        if (!cols || cols.length < 13) return null;
+                allDeals = rows.map((row) => {
+                    const cols = row.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
+                    if (!cols || cols.length < 13) return null;
 
-                        const d = {
-                            img: cleanUrl(cols[0]),
-                            title: (cols[1] || "No Title").replace(/"/g, ''),
-                            price: forceNum(cols[2]),
-                            avg90: forceNum(cols[3]),
-                            drop1Day: forceNum(cols[4]),
-                            isLow90: String(cols[5]).toUpperCase().includes('YES'),
-                            isLowAll: String(cols[6]).toUpperCase().includes('YES'),
-                            reviews: forceNum(cols[7]),
-                            subCategory: (cols[8] || "General").replace(/"/g, '').trim(),
-                            rank: forceNum(cols[10]),
-                            url: cleanUrl(cols[11]),
-                            keepaUrl: cleanUrl(cols[12]),
-                            rating: forceNum(cols[13])
-                        };
+                    const d = {
+                        img: (cols[0] || "").replace(/["\s]/g, ''),
+                        title: (cols[1] || "").replace(/"/g, ''),
+                        price: forceNum(cols[2]),
+                        avg90: forceNum(cols[3]),
+                        drop1Day: forceNum(cols[4]),
+                        isLow90: String(cols[5]).toUpperCase().includes('YES'),
+                        isLowAll: String(cols[6]).toUpperCase().includes('YES'),
+                        reviews: forceNum(cols[7]),
+                        subCategory: (cols[8] || "General").replace(/"/g, '').trim(),
+                        rank: forceNum(cols[10]),
+                        url: (cols[11] || "").replace(/["\s]/g, ''),
+                        keepaUrl: (cols[12] || "").replace(/["\s]/g, ''),
+                        rating: forceNum(cols[13]),
+                        asin: (cols[14] || "").replace(/["\s]/g, '') // New ASIN Column O
+                    };
 
-                        // Math with Safety Checks
-                        let s = 0;
-                        if (d.avg90 > 0 && d.price > 0) {
-                            let pct = ((d.avg90 - d.price) / d.avg90) * 100;
-                            if (pct > 100) pct = 100; 
-                            s += (pct * (forceNum(CONFIG.WEIGHT_SAVINGS) || 1.5));
-                        }
-                        s += (d.rating * (forceNum(CONFIG.WEIGHT_RATING) || 5));
-                        if (d.drop1Day >= 10) s += 40; else if (d.drop1Day >= 5) s += 20;
-                        if (d.rank > 0 && d.rank <= 1000) s += 30;
-                        if (d.isLow90 && d.isLowAll) s += 15;
-
-                        d.dealScore = Math.floor(s);
-                        if (d.subCategory) subCats.add(d.subCategory);
-                        return d;
-                    } catch (e) {
-                        console.error(`Row ${idx} failed to parse:`, e);
-                        return null;
+                    let s = 0;
+                    if (d.avg90 > 0 && d.price > 0) {
+                        let pct = Math.min(((d.avg90 - d.price) / d.avg90) * 100, 100);
+                        s += (pct * (forceNum(CONFIG.WEIGHT_SAVINGS) || 1.5));
                     }
-                }).filter(d => d !== null && d.price > 0 && d.url.includes('http') && !hiddenDeals.includes(d.url));
+                    s += (d.rating * (forceNum(CONFIG.WEIGHT_RATING) || 5));
+                    if (d.drop1Day >= 10) s += 40; else if (d.drop1Day >= 5) s += 20;
+                    if (d.rank > 0 && d.rank <= 1000) s += 30;
+                    if (d.isLowAll) s += 15;
+
+                    d.dealScore = Math.floor(s);
+                    if (d.subCategory) subCats.add(d.subCategory);
+                    return d;
+                }).filter(d => d !== null && d.price > 0 && !hiddenDeals.includes(d.url));
 
                 const menu = document.getElementById('subCatSelect');
-                menu.innerHTML = '<option value="All">All Categories</option>';
                 Array.from(subCats).sort().forEach(c => {
                     const opt = document.createElement('option');
                     opt.value = c; opt.innerText = c;
@@ -125,71 +133,89 @@
                 });
 
                 filterAndSort();
-            } catch (err) { 
-                console.error("Dashboard Load Error:", err);
-                statusEl.innerText = "LOAD ERROR: CHECK CONSOLE";
-                statusEl.classList.add("text-red-500");
-            }
+            } catch (err) { console.error(err); }
         }
 
         function filterAndSort() {
             const search = document.getElementById('searchBox').value.toLowerCase();
             const sort = document.getElementById('sortSelect').value;
             const sub = document.getElementById('subCatSelect').value;
+            const tag = document.getElementById('tagFilter').value;
             
             let filtered = allDeals.filter(d => 
                 (d.title.toLowerCase().includes(search) || d.subCategory.toLowerCase().includes(search)) && 
-                (sub === "All" || d.subCategory === sub)
+                (sub === "All" || d.subCategory === sub) &&
+                (tag === "All" || (tag === "Flash" && d.drop1Day >= 5) || (tag === "Year" && d.isLowAll))
             );
 
             if (sort === "score") filtered.sort((a,b) => b.dealScore - a.dealScore);
             if (sort === "drop") filtered.sort((a,b) => b.drop1Day - a.drop1Day);
             if (sort === "rank") filtered.sort((a,b) => (a.rank || 999999) - (b.rank || 999999));
+            
             render(filtered);
-        }
-
-        function handlePost(amazonUrl) {
-            let cleanBase = amazonUrl.split('?')[0];
-            if (!cleanBase.includes('http')) {
-                alert("Error: Amazon URL is invalid in the spreadsheet.");
-                return;
-            }
-            const finalLink = `${cleanBase}?tag=${CONFIG.AFFILIATE_TAG}`;
-            navigator.clipboard.writeText(finalLink).then(() => alert("Affiliate Link Copied!"));
         }
 
         function hideCard(url) {
             let hidden = JSON.parse(localStorage.getItem('hiddenDeals') || '[]');
             hidden.push(url);
             localStorage.setItem('hiddenDeals', JSON.stringify(hidden));
-            location.reload();
+            filterAndSort();
         }
 
         function resetHidden() { localStorage.removeItem('hiddenDeals'); location.reload(); }
 
         function render(deals) {
             const grid = document.getElementById('deal-grid');
-            document.getElementById('deal-count').innerText = `${deals.length} ACTIVE DEALS`;
+            document.getElementById('deal-count').innerText = `${deals.length} ITEMS FOUND`;
             grid.innerHTML = deals.map(d => `
-                <div class="deal-card bg-white rounded-3xl border border-slate-200 p-5 flex flex-col relative shadow-sm">
-                    <button onclick="hideCard('${d.url}')" class="absolute top-3 right-3 text-slate-300 hover:text-red-500 font-bold">✕</button>
-                    <div class="flex justify-between mb-2">
-                        <span class="text-[9px] font-black text-blue-600 uppercase truncate max-w-[100px]">${d.subCategory}</span>
-                        <div class="flex gap-1">
-                            ${d.drop1Day >= 5 ? '<span class="bg-yellow-400 text-[8px] px-1 rounded font-black">⚡ FLASH</span>' : ''}
-                            ${d.isLowAll ? '<span class="bg-red-100 text-red-600 text-[8px] px-1 rounded font-black">Year Low</span>' : ''}
+                <div class="deal-card bg-white rounded-[2rem] border-2 border-slate-200 p-6 flex flex-col relative shadow-md overflow-hidden">
+                    <!-- Hide Button -->
+                    <button onclick="hideCard('${d.url}')" class="absolute top-4 right-4 z-30 bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition-all font-black shadow-lg">✕</button>
+                    
+                    <!-- Tags -->
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs font-black text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded-lg">${d.subCategory}</span>
+                        ${d.drop1Day >= 5 ? '<span class="bg-yellow-400 text-yellow-900 text-[10px] font-black px-3 py-1 rounded-lg uppercase">⚡ FLASH DROP</span>' : ''}
+                        ${d.isLowAll ? '<span class="bg-red-100 text-red-600 text-[10px] font-black px-3 py-1 rounded-lg uppercase">🏆 YEAR LOW</span>' : ''}
+                    </div>
+
+                    <!-- Image & Keepa Button -->
+                    <div class="h-48 flex items-center justify-center mb-6 bg-slate-50 rounded-2xl p-4 relative group">
+                        <img src="${d.img}" class="max-h-full max-w-full object-contain mix-blend-multiply transition-transform group-hover:scale-110">
+                        <a href="${d.keepaUrl}" target="_blank" class="absolute bottom-3 right-3 bg-orange-500 hover:bg-orange-600 text-white text-[10px] font-black px-4 py-2 rounded-xl shadow-lg transition-all">KEEPA CHART ↗</a>
+                    </div>
+
+                    <!-- Title (Bigger) -->
+                    <h3 class="font-bold text-lg leading-snug h-14 overflow-hidden mb-4 text-slate-800">${d.title}</h3>
+                    
+                    <!-- Pricing & Score -->
+                    <div class="grid grid-cols-2 gap-4 mb-6 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                        <div>
+                            <p class="text-[10px] text-slate-400 uppercase font-black tracking-widest">Current</p>
+                            <p class="text-2xl font-black text-slate-900">$${d.price.toFixed(2)}</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-[10px] text-slate-400 uppercase font-black tracking-widest">90d Avg</p>
+                            <p class="text-sm font-bold text-slate-400 line-through">$${d.avg90.toFixed(2)}</p>
+                            <p class="text-xs font-black text-blue-600">-${d.drop1Day}%</p>
+                        </div>
+                        <div class="col-span-2 mt-2 pt-2 border-t border-slate-200 flex justify-between items-center">
+                            <span class="text-[10px] text-slate-400 uppercase font-black">Deal Score</span>
+                            <span class="text-xl font-black text-orange-600">${d.dealScore}</span>
                         </div>
                     </div>
-                    <div class="h-32 flex items-center justify-center mb-4 bg-slate-50 rounded-xl p-2 relative">
-                        <a href="${d.keepaUrl}" target="_blank" class="absolute bottom-2 right-2 bg-slate-900 text-white text-[8px] px-2 py-1 rounded font-bold">KEEPA ↗</a>
-                        <img src="${d.img}" class="max-h-full max-w-full object-contain mix-blend-multiply">
+
+                    <!-- Actions -->
+                    <div class="space-y-2 mt-auto">
+                        <button onclick="copyToClipboard('${d.url.split('?')[0]}?tag=${CONFIG.AFFILIATE_TAG}', this, 'COPY AFFILIATE LINK')" 
+                                class="w-full bg-slate-900 text-white text-xs font-black py-4 rounded-xl btn-shadow transition-all uppercase tracking-widest">
+                            COPY AFFILIATE LINK
+                        </button>
+                        <button onclick="copyToClipboard('${d.asin}', this, 'COPY ASIN: ${d.asin}')" 
+                                class="w-full bg-blue-600 text-white text-[10px] font-black py-2 rounded-lg btn-shadow transition-all uppercase opacity-80 hover:opacity-100">
+                            COPY ASIN: ${d.asin}
+                        </button>
                     </div>
-                    <h3 class="font-bold text-xs h-8 overflow-hidden mb-3 text-slate-800">${d.title}</h3>
-                    <div class="grid grid-cols-2 gap-2 bg-slate-50 p-3 rounded-xl mb-4">
-                        <div><p class="text-[8px] text-slate-400 uppercase">Price</p><p class="text-xl font-black text-slate-900">$${d.price.toFixed(2)}</p></div>
-                        <div class="text-right"><p class="text-[8px] text-slate-400 uppercase">Score</p><p class="text-[10px] font-black text-orange-600">${d.dealScore}</p></div>
-                    </div>
-                    <button onclick="handlePost('${d.url}')" class="w-full bg-slate-900 text-white text-xs font-black py-3 rounded-xl shadow-lg">COPY LINK</button>
                 </div>
             `).join('');
         }

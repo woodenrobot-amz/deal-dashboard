@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wooden Robot | Command v1.6.1</title>
+    <title>Wooden Robot | Command v1.6.3</title>
     <script src="config.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -11,13 +11,13 @@
         body { font-family: 'Inter', sans-serif; }
         .deal-card { transition: all 0.2s ease-in-out; }
         .deal-card:hover { transform: translateY(-4px); }
-        #version-tag { position: fixed; bottom: 10px; right: 10px; font-size: 10px; font-weight: 900; color: #94a3b8; z-index: 100; }
+        #version-tag { position: fixed; bottom: 10px; right: 10px; font-size: 10px; font-weight: 900; color: #94a3b8; z-index: 100; pointer-events: none; }
         .btn-shadow { box-shadow: 0 4px 0 0 rgba(0,0,0,0.1); }
     </style>
 </head>
 <body class="bg-slate-100 min-h-screen pb-10">
 
-    <div id="version-tag">COMMAND V1.6.1</div>
+    <div id="version-tag">COMMAND V1.6.3</div>
 
     <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-4 border-blue-600 px-6 py-4">
         <div class="max-w-[1800px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-4">
@@ -27,7 +27,7 @@
             </div>
             
             <div class="flex flex-wrap gap-2">
-                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search..." class="bg-slate-800 border-2 border-slate-700 rounded-lg px-4 py-2 text-white outline-none w-48 focus:border-blue-500">
+                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search tools..." class="bg-slate-800 border-2 border-slate-700 rounded-lg px-4 py-2 text-white outline-none w-48 focus:border-blue-500">
                 
                 <select id="sortSelect" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-lg px-2 py-2 font-bold text-white outline-none">
                     <option value="score">Sort: Score</option>
@@ -36,7 +36,7 @@
                 </select>
 
                 <select id="subCatSelect" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-lg px-2 py-2 text-white outline-none">
-                    <option value="All">Categories</option>
+                    <option value="All">All Categories</option>
                 </select>
 
                 <select id="tagFilter" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-lg px-2 py-2 text-yellow-500 outline-none font-bold">
@@ -65,47 +65,70 @@
 
         const cleanStr = (val) => {
             if (!val) return "";
-            return String(val).replace(/["\s]/g, '').trim();
+            return String(val).replace(/["]/g, '').trim();
         };
 
         const copyText = (text, btn, original) => {
             if(!text || text.length < 3) return;
             navigator.clipboard.writeText(text).then(() => {
+                const oldColor = btn.classList.contains('bg-slate-900') ? 'bg-slate-900' : 'bg-blue-600';
                 btn.innerText = "COPIED!";
-                setTimeout(() => { btn.innerText = original; }, 1000);
+                btn.classList.replace(oldColor, 'bg-green-600');
+                setTimeout(() => { 
+                    btn.innerText = original; 
+                    btn.classList.replace('bg-green-600', oldColor);
+                }, 1000);
             });
         };
+
+        // ROBUST CSV PARSER: Handles commas inside quotes correctly
+        function parseCSVLine(line) {
+            const result = [];
+            let cur = '';
+            let inQuote = false;
+            for (let i = 0; i < line.length; i++) {
+                let char = line[i];
+                if (char === '"') inQuote = !inQuote;
+                else if (char === ',' && !inQuote) {
+                    result.push(cur);
+                    cur = '';
+                } else cur += char;
+            }
+            result.push(cur);
+            return result;
+        }
 
         async function init() {
             try {
                 const response = await fetch(`${CONFIG.CSV_URL}&cb=${Date.now()}`);
                 const csvData = await response.text();
-                const rows = csvData.split(/\r?\n/).filter(line => line.trim() !== "").slice(1);
+                const lines = csvData.split(/\r?\n/).filter(line => line.trim() !== "");
+                const rows = lines.slice(1);
                 const subCats = new Set();
                 const hidden = JSON.parse(localStorage.getItem('hiddenDeals') || '[]');
 
                 allDeals = rows.map((row) => {
-                    const cols = row.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
+                    const cols = parseCSVLine(row);
                     if (!cols || cols.length < 13) return null;
 
                     const d = {
                         img: cleanStr(cols[0]),
-                        title: (cols[1] || "").replace(/"/g, ''),
+                        title: cleanStr(cols[1]),
                         price: forceNum(cols[2]),
                         avg90: forceNum(cols[3]),
                         drop1Day: forceNum(cols[4]),
                         isLowAll: String(cols[6]).toUpperCase().includes('YES'),
-                        category: (cols[8] || "General").replace(/"/g, '').trim(),
+                        category: cleanStr(cols[8] || "General"),
                         rank: forceNum(cols[10]),
                         url: cleanStr(cols[11]),
                         keepa: cleanStr(cols[12]),
                         rating: forceNum(cols[13]),
-                        asin: cleanStr(cols[14]) // Index 14 = Column O
+                        asin: cleanStr(cols[14]) // Column O
                     };
 
-                    // --- CALIBRATED MATH ---
+                    // --- HARDENED MATH ---
                     let s = 0;
-                    if (d.avg90 > 0 && d.price > 0) {
+                    if (d.avg90 > 0 && d.price > 0 && d.price < d.avg90) {
                         let pct = Math.min(((d.avg90 - d.price) / d.avg90) * 100, 100);
                         s += (pct * (forceNum(CONFIG.WEIGHT_SAVINGS) || 1.5));
                     }
@@ -165,40 +188,40 @@
                     <button onclick="hideCard('${d.url}')" class="absolute top-3 right-3 z-30 bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-black shadow-md hover:scale-110 transition-all">✕</button>
                     
                     <div class="flex flex-wrap gap-1 mb-3">
-                        <span class="text-[9px] font-black text-blue-600 uppercase bg-blue-50 px-2 py-0.5 rounded">${d.category}</span>
-                        ${d.drop1Day >= 5 ? '<span class="bg-yellow-400 text-yellow-900 text-[10px] font-black px-2 py-0.5 rounded uppercase">⚡ FLASH</span>' : ''}
-                        ${d.isLowAll ? '<span class="bg-red-100 text-red-600 text-[10px] font-black px-2 py-0.5 rounded uppercase">🏆 YEAR</span>' : ''}
+                        <span class="text-[10px] font-black text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded-lg">${d.category}</span>
+                        ${d.drop1Day >= 5 ? '<span class="bg-yellow-400 text-yellow-900 text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-tighter">⚡ FLASH</span>' : ''}
+                        ${d.isLowAll ? '<span class="bg-red-600 text-white text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-tighter">🏆 YEAR LOW</span>' : ''}
                     </div>
 
-                    <div class="h-40 flex items-center justify-center mb-4 bg-slate-50 rounded-2xl p-4 relative group">
+                    <div class="h-44 flex items-center justify-center mb-4 bg-slate-50 rounded-2xl p-4 relative group">
                         <img src="${d.img}" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-all">
-                        <a href="${d.keepa}" target="_blank" class="absolute bottom-2 right-2 bg-orange-500 text-white text-[9px] font-black px-3 py-1.5 rounded-lg shadow hover:bg-orange-600 transition-all">KEEPA ↗</a>
+                        <a href="${d.keepa}" target="_blank" class="absolute bottom-2 right-2 bg-orange-500 text-white text-[10px] font-black px-4 py-2 rounded-xl shadow-lg hover:bg-orange-600 transition-all">KEEPA ↗</a>
                     </div>
 
-                    <h3 class="font-bold text-lg leading-tight h-12 overflow-hidden mb-4 text-slate-800">${d.title}</h3>
+                    <h3 class="font-bold text-xl leading-tight h-14 overflow-hidden mb-4 text-slate-800">${d.title}</h3>
                     
                     <div class="grid grid-cols-2 gap-3 mb-5 bg-slate-50 p-4 rounded-2xl border border-slate-100">
                         <div>
-                            <p class="text-[9px] text-slate-400 uppercase font-black">Price</p>
-                            <p class="text-xl font-black text-slate-900">$${d.price.toFixed(2)}</p>
+                            <p class="text-[10px] text-slate-400 uppercase font-black">Price</p>
+                            <p class="text-2xl font-black text-slate-900">$${d.price.toFixed(2)}</p>
                         </div>
                         <div class="text-right">
-                            <p class="text-[9px] text-slate-400 uppercase font-black">90d Avg</p>
-                            <p class="text-sm font-bold text-slate-400 line-through">$${d.avg90.toFixed(2)}</p>
+                            <p class="text-[10px] text-slate-400 uppercase font-black">90d Avg</p>
+                            <p class="text-base font-bold text-slate-400 line-through">$${d.avg90.toFixed(2)}</p>
                         </div>
-                        <div class="col-span-2 border-t pt-2 flex justify-between">
-                            <span class="text-[9px] font-black text-slate-400 uppercase">Score</span>
-                            <span class="text-lg font-black text-orange-600">${d.dealScore}</span>
+                        <div class="col-span-2 border-t border-slate-200 mt-2 pt-2 flex justify-between items-center">
+                            <span class="text-[10px] font-black text-slate-400 uppercase">Deal Score</span>
+                            <span class="text-2xl font-black text-orange-600">${d.dealScore}</span>
                         </div>
                     </div>
 
-                    <div class="space-y-2 mt-auto">
+                    <div class="space-y-3 mt-auto">
                         <button onclick="copyText('${d.url.split('?')[0]}?tag=${CONFIG.AFFILIATE_TAG}', this, 'COPY AFFILIATE LINK')" 
-                                class="w-full bg-slate-900 text-white text-[10px] font-black py-4 rounded-xl btn-shadow uppercase tracking-widest">
+                                class="w-full bg-slate-900 text-white text-[11px] font-black py-5 rounded-2xl btn-shadow uppercase tracking-widest">
                             COPY AFFILIATE LINK
                         </button>
                         <button onclick="copyText('${d.asin}', this, 'COPY ASIN: ${d.asin}')" 
-                                class="w-full bg-blue-600 text-white text-[10px] font-black py-2 rounded-lg btn-shadow uppercase opacity-90">
+                                class="w-full bg-blue-600 text-white text-[10px] font-black py-3 rounded-xl btn-shadow uppercase tracking-tight">
                             COPY ASIN: ${d.asin}
                         </button>
                     </div>

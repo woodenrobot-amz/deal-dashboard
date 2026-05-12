@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wooden Robot | Command v1.8.1</title>
+    <title>Wooden Robot | Command v1.8.2</title>
     <script src="config.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -13,31 +13,24 @@
         .deal-card:hover { transform: translateY(-4px); }
         #version-tag { position: fixed; bottom: 10px; right: 10px; font-size: 10px; font-weight: 900; color: #94a3b8; z-index: 100; pointer-events: none; }
         .btn-shadow { box-shadow: 0 4px 0 0 rgba(0,0,0,0.1); }
-        /* Pulse for High Velocity items */
         .hot-glow { box-shadow: 0 0 15px rgba(239, 68, 68, 0.4); border-color: #f87171 !important; }
     </style>
 </head>
 <body class="bg-slate-100 min-h-screen pb-10">
 
-    <div id="version-tag">COMMAND V1.8.1</div>
+    <div id="version-tag">COMMAND V1.8.2</div>
 
-    <!-- Navigation Bar -->
     <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-4 border-blue-600 px-6 py-4">
         <div class="max-w-[1800px] mx-auto flex flex-col gap-6">
-            
-            <!-- Top Row: Branding and Multi-Source Toggles -->
             <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
                 <div class="flex items-center gap-4">
                     <div class="bg-blue-600 px-3 py-1 rounded-lg font-black italic text-2xl text-white">WR</div>
                     <h1 class="text-xl font-black uppercase italic tracking-tighter">Deal <span class="text-blue-500">Command</span></h1>
                     <p id="deal-count" class="text-[10px] font-black text-blue-300 ml-4 uppercase tracking-widest bg-slate-800 px-2 py-1 rounded">Syncing...</p>
                 </div>
-
-                <!-- Brand Switcher Tabs -->
                 <div id="source-tabs" class="flex flex-wrap gap-2 justify-center"></div>
             </div>
             
-            <!-- Bottom Row: Filters -->
             <div class="flex flex-wrap gap-2 items-center justify-center lg:justify-start">
                 <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search current brand..." class="bg-slate-800 border-2 border-slate-700 rounded-lg px-4 py-2 text-white outline-none w-64 focus:border-blue-500">
                 
@@ -51,11 +44,13 @@
                     <option value="All">All Categories</option>
                 </select>
 
+                <!-- UPDATED TAG FILTER -->
                 <select id="tagFilter" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-lg px-2 py-2 text-yellow-500 outline-none font-bold">
                     <option value="All">All Deals</option>
                     <option value="Flash">⚡ Flash</option>
                     <option value="Year">🏆 Year Low</option>
                     <option value="Hot">🔥 High Velocity</option>
+                    <option value="Brand">★ Top Brands</option>
                 </select>
                 
                 <button onclick="resetHidden()" class="bg-red-600 text-white px-4 py-2 rounded-lg text-xs font-black uppercase ml-auto">Reset Hidden</button>
@@ -143,7 +138,6 @@
             const sourceUrl = CONFIG.SOURCES[currentSourceKey].url;
             
             try {
-                // Fetch Master Brand List from Google Sheet (External Config)
                 if (CONFIG.BRAND_LIST_URL) {
                     const brandResponse = await fetch(`${CONFIG.BRAND_LIST_URL}&cb=${Date.now()}`);
                     const brandData = await brandResponse.text();
@@ -163,8 +157,6 @@
 
                     const title = cleanStr(cols[1]);
                     const bsr = forceNum(cols[10]);
-                    
-                    // Match title against dynamic brand list
                     const isNameBrand = nameBrands.some(brand => title.toLowerCase().includes(brand.toLowerCase()));
 
                     const d = {
@@ -184,7 +176,6 @@
                         isHighVelocity: bsr > 0 && bsr <= 5000
                     };
 
-                    // Score Logic
                     let s = 0;
                     if (d.avg90 > 0 && d.price > 0 && d.price < d.avg90) {
                         let pct = Math.min(((d.avg90 - d.price) / d.avg90) * 100, 100);
@@ -194,7 +185,7 @@
                     if (d.drop1Day >= 10) s += 40; else if (d.drop1Day >= 5) s += 20;
                     if (d.isHighVelocity) s += 30;
                     if (d.isLowAll) s += 15;
-                    if (d.isNameBrand) s += 15; // Extra boost for known good brands
+                    if (d.isNameBrand) s += 15;
 
                     d.dealScore = Math.floor(s);
                     if (d.category) subCats.add(d.category);
@@ -230,7 +221,8 @@
                 (tag === "All" || 
                 (tag === "Flash" && d.drop1Day >= 5) || 
                 (tag === "Year" && d.isLowAll) || 
-                (tag === "Hot" && d.isHighVelocity))
+                (tag === "Hot" && d.isHighVelocity) ||
+                (tag === "Brand" && d.isNameBrand)) // NEW BRAND FILTER LOGIC
             );
 
             if (sort === "score") filtered.sort((a,b) => b.dealScore - a.dealScore);
@@ -302,7 +294,6 @@
             `).join('');
         }
 
-        // Initialize on load
         window.addEventListener('DOMContentLoaded', () => {
             const saved = localStorage.getItem('lastUsedSource');
             if (saved && CONFIG.SOURCES[saved]) currentSourceKey = saved;

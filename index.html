@@ -2,66 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wooden Robot | Command v1.9.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>WR Deal Command</title>
+    
+    <!-- PWA Integration -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+
     <script src="config.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; }
         .deal-card { transition: all 0.2s ease-in-out; }
-        .deal-card:hover { transform: translateY(-4px); }
         #version-tag { position: fixed; bottom: 10px; right: 10px; font-size: 10px; font-weight: 900; color: #94a3b8; z-index: 100; pointer-events: none; }
         .btn-shadow { box-shadow: 0 4px 0 0 rgba(0,0,0,0.1); }
         .hot-glow { box-shadow: 0 0 15px rgba(239, 68, 68, 0.4); border-color: #f87171 !important; }
-        /* Keepa Blue Logo Color */
         .bg-keepa { background-color: #0099cc; }
     </style>
 </head>
 <body class="bg-slate-100 min-h-screen pb-10">
 
-    <div id="version-tag">COMMAND V1.9.0</div>
+    <div id="version-tag">COMMAND V1.9.1 PWA</div>
 
-    <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-4 border-blue-600 px-6 py-4">
-        <div class="max-w-[1800px] mx-auto flex flex-col gap-6">
-            <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
-                <div class="flex items-center gap-4">
-                    <div class="bg-blue-600 px-3 py-1 rounded-lg font-black italic text-2xl text-white">WR</div>
-                    <h1 class="text-xl font-black uppercase italic tracking-tighter">Deal <span class="text-blue-500">Command</span></h1>
-                    <p id="deal-count" class="text-[10px] font-black text-blue-300 ml-4 uppercase tracking-widest bg-slate-800 px-2 py-1 rounded">Syncing...</p>
+    <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-4 border-blue-600 px-4 py-4">
+        <div class="max-w-[1800px] mx-auto flex flex-col gap-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <div class="bg-blue-600 px-2 py-1 rounded-lg font-black italic text-xl">WR</div>
+                    <h1 class="text-lg font-black uppercase italic tracking-tighter">Deal <span class="text-blue-500">Command</span></h1>
                 </div>
-                <div id="source-tabs" class="flex flex-wrap gap-2 justify-center"></div>
+                <p id="deal-count" class="text-[9px] font-black text-blue-300 uppercase tracking-widest bg-slate-800 px-2 py-1 rounded">Syncing...</p>
             </div>
             
-            <div class="flex flex-wrap gap-2 items-center justify-center lg:justify-start">
-                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search..." class="bg-slate-800 border-2 border-slate-700 rounded-lg px-4 py-2 text-white outline-none w-64 focus:border-blue-500 placeholder:text-slate-500">
+            <div id="source-tabs" class="flex gap-2 overflow-x-auto pb-1 no-scrollbar"></div>
+
+            <div class="flex flex-wrap gap-2">
+                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search..." class="flex-grow bg-slate-800 border-2 border-slate-700 rounded-xl px-4 py-2 text-white outline-none focus:border-blue-500">
                 
-                <select id="sortSelect" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-lg px-2 py-2 font-bold text-white outline-none">
-                    <option value="score">Sort: Score</option>
-                    <option value="drop">Sort: % Drop</option>
-                    <option value="rank">Sort: BSR</option>
-                    <option value="priceLow">Sort: Price (Low to High)</option>
-                    <option value="priceHigh">Sort: Price (High to Low)</option>
-                </select>
-
-                <select id="subCatSelect" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-lg px-2 py-2 text-white outline-none">
-                    <option value="All">All Categories</option>
-                </select>
-
-                <select id="tagFilter" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-lg px-2 py-2 text-yellow-500 outline-none font-bold">
+                <select id="tagFilter" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-xl px-2 py-2 text-yellow-500 outline-none font-bold text-sm">
                     <option value="All">All Deals</option>
-                    <option value="Brand">★ Top Brands</option>
+                    <option value="Brand">★ Brands</option>
                     <option value="Flash">⚡ Flash</option>
                     <option value="Year">🏆 Year Low</option>
                     <option value="Hot">🔥 Hot</option>
                 </select>
-                
-                <button onclick="resetHidden()" class="bg-red-600 text-white px-4 py-2 rounded-lg text-xs font-black uppercase ml-auto">Reset Hidden</button>
+            </div>
+
+            <div class="flex gap-2">
+                <select id="sortSelect" onchange="filterAndSort()" class="flex-1 bg-slate-800 border-2 border-slate-700 rounded-xl px-2 py-2 font-bold text-white outline-none text-xs">
+                    <option value="score">Sort: Score</option>
+                    <option value="drop">Sort: % Drop</option>
+                    <option value="rank">Sort: BSR</option>
+                    <option value="priceLow">Price: Low to High</option>
+                    <option value="priceHigh">Price: High to Low</option>
+                </select>
+                <select id="subCatSelect" onchange="filterAndSort()" class="flex-1 bg-slate-800 border-2 border-slate-700 rounded-xl px-2 py-2 text-white outline-none text-xs">
+                    <option value="All">All Categories</option>
+                </select>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-[1800px] mx-auto px-6 mt-8">
+    <main class="max-w-[1800px] mx-auto px-4 mt-6">
         <div id="deal-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6"></div>
     </main>
 
@@ -70,68 +78,45 @@
         let nameBrands = [];
         let currentSourceKey = Object.keys(CONFIG.SOURCES)[0];
 
-        const forceNum = (val) => {
-            if (!val) return 0;
-            const cleaned = String(val).replace(/[^0-9.-]/g, '');
-            return parseFloat(cleaned) || 0;
-        };
-
-        const cleanStr = (val) => {
-            if (!val) return "";
-            return String(val).replace(/["]/g, '').trim();
-        };
+        const forceNum = (val) => { if (!val) return 0; return parseFloat(String(val).replace(/[^0-9.-]/g, '')) || 0; };
+        const cleanStr = (val) => { if (!val) return ""; return String(val).replace(/["]/g, '').trim(); };
 
         const copyText = (text, btn, original) => {
             if(!text || text.length < 3) return;
             navigator.clipboard.writeText(text).then(() => {
-                const isBlue = btn.classList.contains('bg-blue-600');
-                const isAmazon = btn.classList.contains('bg-orange-600');
-                const oldColor = isBlue ? 'bg-blue-600' : (isAmazon ? 'bg-orange-600' : 'bg-slate-900');
+                const oldColor = btn.classList.contains('bg-blue-600') ? 'bg-blue-600' : (btn.classList.contains('bg-orange-600') ? 'bg-orange-600' : 'bg-slate-900');
                 btn.innerText = "COPIED!";
                 btn.classList.replace(oldColor, 'bg-green-600');
-                setTimeout(() => { 
-                    btn.innerText = original; 
-                    btn.classList.replace('bg-green-600', oldColor);
-                }, 1000);
+                setTimeout(() => { btn.innerText = original; btn.classList.replace('bg-green-600', oldColor); }, 1000);
             });
         };
 
         function parseCSVLine(line) {
-            const result = [];
-            let cur = '';
-            let inQuote = false;
-            for (let i = 0; i < line.length; i++) {
-                let char = line[i];
+            const result = []; let cur = ''; let inQuote = false;
+            for (let char of line) {
                 if (char === '"') inQuote = !inQuote;
                 else if (char === ',' && !inQuote) { result.push(cur); cur = ''; } 
                 else cur += char;
             }
-            result.push(cur);
-            return result;
+            result.push(cur); return result;
         }
 
         function switchSource(key) {
             currentSourceKey = key;
             localStorage.setItem('lastUsedSource', key);
-            const grid = document.getElementById('deal-grid');
-            if (grid) grid.innerHTML = '<div class="col-span-full py-20 text-center font-black text-slate-400 animate-pulse uppercase tracking-widest text-2xl">Switching Brands...</div>';
+            document.getElementById('deal-grid').innerHTML = '<div class="col-span-full py-20 text-center font-black text-slate-400 animate-pulse uppercase text-xl">Switching...</div>';
             init();
         }
 
         function buildSourceTabs() {
             const container = document.getElementById('source-tabs');
-            if (!container) return;
             container.innerHTML = '';
             Object.keys(CONFIG.SOURCES).forEach(key => {
                 const source = CONFIG.SOURCES[key];
                 const btn = document.createElement('button');
                 btn.innerText = source.name;
                 const isActive = currentSourceKey === key;
-                btn.className = `px-5 py-2.5 rounded-xl text-[11px] font-black uppercase transition-all shadow-sm ${
-                    isActive 
-                    ? 'bg-blue-600 text-white scale-105 ring-2 ring-blue-400 ring-offset-2 ring-offset-slate-900' 
-                    : 'bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700'
-                }`;
+                btn.className = `whitespace-nowrap px-4 py-2 rounded-xl text-[10px] font-black uppercase transition-all flex-shrink-0 ${isActive ? 'bg-blue-600 text-white scale-105 ring-2 ring-blue-400' : 'bg-slate-800 text-slate-400'}`;
                 btn.onclick = () => switchSource(key);
                 container.appendChild(btn);
             });
@@ -139,18 +124,15 @@
 
         async function init() {
             buildSourceTabs();
-            const sourceUrl = CONFIG.SOURCES[currentSourceKey].url;
-            
             try {
                 if (CONFIG.BRAND_LIST_URL) {
-                    const brandResponse = await fetch(`${CONFIG.BRAND_LIST_URL}&cb=${Date.now()}`);
-                    const brandData = await brandResponse.text();
-                    nameBrands = brandData.split(/\r?\n/).map(b => b.replace(/"/g, '').trim()).filter(b => b !== "");
+                    const br = await fetch(`${CONFIG.BRAND_LIST_URL}&cb=${Date.now()}`);
+                    const bd = await br.text();
+                    nameBrands = bd.split(/\r?\n/).map(b => b.replace(/"/g, '').trim()).filter(b => b !== "");
                 }
-
-                const response = await fetch(`${sourceUrl}&cb=${Date.now()}`);
-                const csvData = await response.text();
-                const lines = csvData.split(/\r?\n/).filter(line => line.trim() !== "");
+                const res = await fetch(`${CONFIG.SOURCES[currentSourceKey].url}&cb=${Date.now()}`);
+                const data = await res.text();
+                const lines = data.split(/\r?\n/).filter(l => l.trim() !== "");
                 const rows = lines.slice(1);
                 const subCats = new Set();
                 const hidden = JSON.parse(localStorage.getItem('hiddenDeals') || '[]');
@@ -158,90 +140,51 @@
                 allDeals = rows.map((row) => {
                     const cols = parseCSVLine(row);
                     if (cols.length < 13) return null;
-
                     const title = cleanStr(cols[1]);
                     const bsr = forceNum(cols[10]);
                     const isNameBrand = nameBrands.some(brand => title.toLowerCase().includes(brand.toLowerCase()));
-
                     const d = {
-                        img: cleanStr(cols[0]),
-                        title: title,
-                        price: forceNum(cols[2]),
-                        avg90: forceNum(cols[3]),
-                        drop1Day: forceNum(cols[4]),
-                        isLowAll: String(cols[6]).toUpperCase().includes('YES'),
-                        category: cleanStr(cols[8] || "General"),
-                        rank: bsr,
-                        url: cleanStr(cols[11]),
-                        keepa: cleanStr(cols[12]),
-                        rating: forceNum(cols[13]),
-                        asin: cleanStr(cols[14]),
-                        isNameBrand: isNameBrand,
-                        isHot: bsr > 0 && bsr <= 5000
+                        img: cleanStr(cols[0]), title, price: forceNum(cols[2]), avg90: forceNum(cols[3]),
+                        drop1Day: forceNum(cols[4]), isLowAll: String(cols[6]).toUpperCase().includes('YES'),
+                        category: cleanStr(cols[8] || "General"), rank: bsr, url: cleanStr(cols[11]),
+                        keepa: cleanStr(cols[12]), rating: forceNum(cols[13]), asin: cleanStr(cols[14]),
+                        isNameBrand, isHot: bsr > 0 && bsr <= 5000
                     };
-
-                    let s = 0;
-                    if (d.avg90 > 0 && d.price > 0 && d.price < d.avg90) {
-                        let pct = Math.min(((d.avg90 - d.price) / d.avg90) * 100, 100);
-                        s += (pct * (forceNum(CONFIG.WEIGHT_SAVINGS) || 1.5));
-                    }
-                    s += (d.rating * (forceNum(CONFIG.WEIGHT_RATING) || 5));
-                    if (d.drop1Day >= 10) s += 40; else if (d.drop1Day >= 5) s += 20;
-                    if (d.isHot) s += 30;
-                    if (d.isLowAll) s += 15;
-                    if (d.isNameBrand) s += 15;
-
+                    let s = (d.rating * (forceNum(CONFIG.WEIGHT_RATING) || 5));
+                    if (d.avg90 > d.price) s += (((d.avg90 - d.price) / d.avg90) * 100 * (forceNum(CONFIG.WEIGHT_SAVINGS) || 1.5));
+                    if (d.drop1Day >= 5) s += 20; if (d.isHot) s += 30; if (d.isLowAll) s += 15; if (d.isNameBrand) s += 15;
                     d.dealScore = Math.floor(s);
-                    if (d.category) subCats.add(d.category);
+                    subCats.add(d.category);
                     return d;
                 }).filter(d => d !== null && d.price > 0 && !hidden.includes(d.url));
 
                 const menu = document.getElementById('subCatSelect');
-                if (menu) {
-                    menu.innerHTML = '<option value="All">All Categories</option>';
-                    Array.from(subCats).sort().forEach(c => {
-                        const opt = document.createElement('option');
-                        opt.value = c; opt.innerText = c;
-                        menu.appendChild(opt);
-                    });
-                }
-
+                menu.innerHTML = '<option value="All">All Categories</option>';
+                Array.from(subCats).sort().forEach(c => {
+                    const opt = document.createElement('option'); opt.value = c; opt.innerText = c;
+                    menu.appendChild(opt);
+                });
                 filterAndSort();
-            } catch (err) { 
-                console.error(err); 
-                document.getElementById('deal-count').innerText = "LOAD ERROR";
-            }
+            } catch (err) { console.error(err); }
         }
 
         function filterAndSort() {
-            const search = document.getElementById('searchBox')?.value.toLowerCase() || "";
-            const sort = document.getElementById('sortSelect')?.value || "score";
-            const sub = document.getElementById('subCatSelect')?.value || "All";
-            const tag = document.getElementById('tagFilter')?.value || "All";
-            
-            let filtered = allDeals.filter(d => 
-                (d.title.toLowerCase().includes(search)) && 
-                (sub === "All" || d.category === sub) &&
-                (tag === "All" || 
-                (tag === "Flash" && d.drop1Day >= 5) || 
-                (tag === "Year" && d.isLowAll) || 
-                (tag === "Hot" && d.isHot) ||
-                (tag === "Brand" && d.isNameBrand))
-            );
-
-            if (sort === "score") filtered.sort((a,b) => b.dealScore - a.dealScore);
-            if (sort === "drop") filtered.sort((a,b) => b.drop1Day - a.drop1Day);
-            if (sort === "rank") filtered.sort((a,b) => (a.rank || 999999) - (b.rank || 999999));
-            if (sort === "priceLow") filtered.sort((a,b) => a.price - b.price);
-            if (sort === "priceHigh") filtered.sort((a,b) => b.price - a.price);
-            
-            render(filtered);
+            const s = document.getElementById('searchBox').value.toLowerCase();
+            const sort = document.getElementById('sortSelect').value;
+            const sub = document.getElementById('subCatSelect').value;
+            const tag = document.getElementById('tagFilter').value;
+            let f = allDeals.filter(d => d.title.toLowerCase().includes(s) && (sub === "All" || d.category === sub) && (tag === "All" || (tag === "Flash" && d.drop1Day >= 5) || (tag === "Year" && d.isLowAll) || (tag === "Hot" && d.isHot) || (tag === "Brand" && d.isNameBrand)));
+            if (sort === "score") f.sort((a,b) => b.dealScore - a.dealScore);
+            if (sort === "drop") f.sort((a,b) => b.drop1Day - a.drop1Day);
+            if (sort === "rank") f.sort((a,b) => (a.rank || 999999) - (b.rank || 999999));
+            if (sort === "priceLow") f.sort((a,b) => a.price - b.price);
+            if (sort === "priceHigh") f.sort((a,b) => b.price - a.price);
+            render(f);
         }
 
         function hideCard(url) {
-            let hidden = JSON.parse(localStorage.getItem('hiddenDeals') || '[]');
-            hidden.push(url);
-            localStorage.setItem('hiddenDeals', JSON.stringify(hidden));
+            let h = JSON.parse(localStorage.getItem('hiddenDeals') || '[]');
+            h.push(url); localStorage.setItem('hiddenDeals', JSON.stringify(h));
             filterAndSort();
         }
 
@@ -249,65 +192,37 @@
 
         function render(deals) {
             const grid = document.getElementById('deal-grid');
-            const counter = document.getElementById('deal-count');
-            if (counter) counter.innerText = `${deals.length} ITEMS IN ${CONFIG.SOURCES[currentSourceKey].name.toUpperCase()}`;
-            if (!grid) return;
-
+            document.getElementById('deal-count').innerText = `${deals.length} ITEMS`;
             grid.innerHTML = deals.map(d => {
-                const amazonUrl = `https://www.amazon.com/dp/${d.asin}/?tag=${CONFIG.AFFILIATE_TAG}`;
+                const amz = `https://www.amazon.com/dp/${d.asin}/?tag=${CONFIG.AFFILIATE_TAG}`;
                 return `
-                <div class="deal-card bg-white rounded-[2rem] border-2 border-slate-200 p-5 flex flex-col relative shadow-sm ${d.isHot ? 'hot-glow' : ''}">
-                    <button onclick="hideCard('${d.url}')" class="absolute top-3 right-3 z-30 bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-black shadow-md hover:scale-110 transition-all">✕</button>
-                    
+                <div class="deal-card bg-white rounded-[2rem] border-2 border-slate-200 p-5 flex flex-col relative ${d.isHot ? 'hot-glow' : ''}">
+                    <button onclick="hideCard('${d.url}')" class="absolute top-3 right-3 z-30 bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-black shadow-md">✕</button>
                     <div class="flex flex-wrap gap-1 mb-3">
-                        ${d.isNameBrand ? '<span class="bg-slate-900 text-white text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-tighter">★ TOP BRAND</span>' : ''}
-                        ${d.isHot ? '<span class="bg-orange-500 text-white text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-tighter">🔥 HOT</span>' : ''}
-                        ${d.drop1Day >= 5 ? '<span class="bg-yellow-400 text-yellow-900 text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-tighter">⚡ FLASH</span>' : ''}
-                        ${d.isLowAll ? '<span class="bg-red-600 text-white text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-tighter">🏆 YEAR LOW</span>' : ''}
+                        ${d.isNameBrand ? '<span class="bg-slate-900 text-white text-[9px] font-black px-2 py-1 rounded-lg">★ BRAND</span>' : ''}
+                        ${d.isHot ? '<span class="bg-orange-500 text-white text-[9px] font-black px-2 py-1 rounded-lg">🔥 HOT</span>' : ''}
+                        ${d.isLowAll ? '<span class="bg-red-600 text-white text-[9px] font-black px-2 py-1 rounded-lg">🏆 YEAR LOW</span>' : ''}
                     </div>
-
-                    <div class="h-44 flex items-center justify-center mb-4 bg-slate-50 rounded-2xl p-4 relative group">
-                        <img src="${d.img}" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-all">
-                        <a href="${d.keepa}" target="_blank" class="absolute bottom-2 right-2 bg-keepa text-white text-[10px] font-black px-4 py-2 rounded-xl shadow-lg hover:brightness-110 transition-all">KEEPA ↗</a>
+                    <div class="h-40 flex items-center justify-center mb-4 bg-slate-50 rounded-2xl p-4 relative group">
+                        <img src="${d.img}" class="max-h-full max-w-full object-contain mix-blend-multiply">
+                        <a href="${d.keepa}" target="_blank" class="absolute bottom-2 right-2 bg-keepa text-white text-[9px] font-black px-3 py-1 rounded-lg shadow-lg">KEEPA ↗</a>
                     </div>
-
-                    <h3 class="font-bold text-xl leading-tight h-20 overflow-hidden mb-4 text-slate-800">${d.title}</h3>
-                    
+                    <h3 class="font-bold text-lg leading-tight h-20 overflow-hidden mb-4 text-slate-800">${d.title}</h3>
                     <div class="mb-5 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                        <div class="grid grid-cols-2 gap-3 mb-2">
-                            <div>
-                                <p class="text-[10px] text-slate-400 uppercase font-black">Price</p>
-                                <p class="text-2xl font-black text-slate-900">$${d.price.toFixed(2)}</p>
-                            </div>
-                            <div class="text-right">
-                                <p class="text-[10px] text-slate-400 uppercase font-black">90d Avg</p>
-                                <p class="text-base font-bold text-slate-400 line-through">$${d.avg90.toFixed(2)}</p>
-                            </div>
+                        <div class="flex justify-between items-center mb-2">
+                            <div><p class="text-[9px] text-slate-400 uppercase font-black">Price</p><p class="text-xl font-black text-slate-900">$${d.price.toFixed(2)}</p></div>
+                            <div class="text-right"><p class="text-[9px] text-slate-400 uppercase font-black">90d Avg</p><p class="text-sm font-bold text-slate-300 line-through">$${d.avg90.toFixed(2)}</p></div>
                         </div>
-                        <div class="border-t border-slate-200 pt-2 flex justify-between items-center mb-2">
-                            <span class="text-[10px] font-black text-slate-400 uppercase">Score</span>
-                            <span class="text-2xl font-black text-orange-600">${d.dealScore}</span>
-                        </div>
-                        <div class="bg-white border border-slate-200 px-3 py-1 rounded-lg text-center">
-                            <span class="text-[10px] font-black text-blue-600 uppercase italic">${d.category}</span>
-                        </div>
+                        <div class="border-t border-slate-200 pt-2 flex justify-between items-center mb-2"><span class="text-[9px] font-black text-slate-400">SCORE</span><span class="text-xl font-black text-orange-600">${d.dealScore}</span></div>
+                        <div class="bg-white border border-slate-200 px-2 py-1 rounded-lg text-center"><span class="text-[9px] font-black text-blue-600 uppercase italic">${d.category}</span></div>
                     </div>
-
-                    <div class="space-y-3 mt-auto">
-                        <a href="${amazonUrl}" target="_blank" class="block text-center w-full bg-orange-600 text-white text-[11px] font-black py-4 rounded-2xl btn-shadow uppercase tracking-widest hover:brightness-110 transition-all">
-                            VIEW ON AMAZON
-                        </a>
-                        <button onclick="copyText('${amazonUrl}', this, 'COPY AFFILIATE LINK')" 
-                                class="w-full bg-slate-900 text-white text-[11px] font-black py-3 rounded-2xl btn-shadow uppercase tracking-widest">
-                            COPY AFFILIATE LINK
-                        </button>
-                        <button onclick="copyText('${d.asin}', this, 'COPY ASIN: ${d.asin}')" 
-                                class="w-full bg-blue-600 text-white text-[10px] font-black py-2 rounded-xl btn-shadow uppercase tracking-tight">
-                            COPY ASIN: ${d.asin}
-                        </button>
+                    <div class="space-y-2 mt-auto">
+                        <a href="${amz}" target="_blank" class="block text-center bg-orange-600 text-white text-[10px] font-black py-3 rounded-xl uppercase tracking-widest">VIEW ON AMAZON</a>
+                        <button onclick="copyText('${amz}', this, 'COPY LINK')" class="w-full bg-slate-900 text-white text-[10px] font-black py-2 rounded-xl uppercase tracking-widest">COPY LINK</button>
+                        <button onclick="copyText('${d.asin}', this, 'ASIN: ${d.asin}')" class="w-full bg-blue-600 text-white text-[9px] font-black py-2 rounded-xl uppercase">ASIN: ${d.asin}</button>
                     </div>
-                </div>
-            `;}).join('');
+                </div>`;
+            }).join('');
         }
 
         window.addEventListener('DOMContentLoaded', () => {

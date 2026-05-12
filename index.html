@@ -1,66 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wooden Robot | Command v1.4.9</title>
-    
-    <script src="config.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <style>
-        .deal-card { transition: all 0.2s ease-in-out; }
-        .deal-card:hover { transform: translateY(-4px); }
-        .custom-scroll::-webkit-scrollbar { width: 6px; }
-        .custom-scroll::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 10px; }
-    </style>
-</head>
-<body class="bg-slate-50 min-h-screen pb-10 custom-scroll">
-
-    <!-- Header Navigation -->
-    <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-2 border-blue-600 px-6 py-4">
-        <div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-4">
-                <div class="bg-blue-600 px-3 py-1 rounded-lg font-black italic tracking-tighter text-2xl text-white">WR</div>
-                <div>
-                    <h1 class="text-lg font-black tracking-tighter uppercase italic leading-none text-white">Deal <span class="text-blue-500">Command</span></h1>
-                    <p id="deal-count" class="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-1 text-white uppercase">Syncing Data...</p>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap items-center gap-3 text-white">
-                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search..." class="bg-slate-800 border border-slate-700 rounded-lg px-4 py-2 text-sm text-white focus:ring-2 focus:ring-blue-500 outline-none w-48">
-                
-                <select id="sortSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white outline-none font-bold">
-                    <option value="score">Sort: Score</option>
-                    <option value="drop">Sort: % Drop</option>
-                    <option value="rank">Sort: Sales Velocity (BSR)</option>
-                </select>
-
-                <select id="subCatSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white outline-none max-w-[150px]">
-                    <option value="All">All Categories</option>
-                </select>
-
-                <button onclick="resetHidden()" class="bg-red-900/20 text-red-400 border border-red-800 px-3 py-2 rounded-lg text-[10px] font-bold hover:bg-red-600 hover:text-white transition-all">RESET</button>
-            </div>
-        </div>
-    </nav>
-
-    <main class="max-w-[1600px] mx-auto px-6 mt-8">
-        <div id="deal-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
-            <!-- Cards -->
-        </div>
-    </main>
-
-    <script>
+<script>
         let allDeals = [];
 
-        // NUCLEAR OPTION: Strips everything but digits/decimals and forces a clean Number type
+        // STRONGER CLEANER: Removes %, $, commas, and invisible spaces
         const forceNum = (val) => {
             if (val === null || val === undefined) return 0;
+            // Removes everything except digits, decimal points, and minus signs
             const cleaned = String(val).replace(/[^0-9.-]/g, '');
             const parsed = parseFloat(cleaned);
             return isNaN(parsed) ? 0 : parsed;
+        };
+
+        const cleanUrl = (url) => {
+            if (!url) return "";
+            // Removes quotes and whitespace that often break links
+            return url.replace(/["\s]/g, '').trim();
         };
 
         async function init() {
@@ -73,148 +26,74 @@
                 const hiddenDeals = JSON.parse(localStorage.getItem('hiddenDeals') || '[]');
                 const subCats = new Set();
 
-                const weightSavings = forceNum(CONFIG.WEIGHT_SAVINGS) || 1.5;
-                const weightRating = forceNum(CONFIG.WEIGHT_RATING) || 5;
-
                 allDeals = rows.map((row) => {
+                    // Splits by comma but ignores commas inside quotes
                     const cols = row.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
                     
-                    // COLUMN VALIDATOR: If sheet layout breaks, skip the row
-                    if (!cols || cols.length < 13) return null;
+                    if (!cols || cols.length < 14) return null;
 
                     const d = {
-                        img: (cols[0] || "").replace(/"/g, ''),
+                        img: cleanUrl(cols[0]),
                         title: (cols[1] || "").replace(/"/g, ''),
                         price: forceNum(cols[2]),
                         avg90: forceNum(cols[3]),
-                        drop1Day: forceNum(cols[4]),
+                        drop1Day: forceNum(cols[4]), // This now safely ignores the %
                         isLow90: String(cols[5]).toUpperCase().includes('YES'),
                         isLowAll: String(cols[6]).toUpperCase().includes('YES'),
                         reviews: forceNum(cols[7]),
                         subCategory: (cols[8] || "General").replace(/"/g, '').trim(),
                         rank: forceNum(cols[10]),
-                        url: (cols[11] || "").replace(/"/g, '').trim(),
-                        keepaUrl: (cols[12] || "#").replace(/"/g, '').trim(),
+                        url: cleanUrl(cols[11]),
+                        keepaUrl: cleanUrl(cols[12]),
                         rating: forceNum(cols[13])
                     };
 
-                    // --- IRON-CLAD MATH ---
-                    let s = 0; 
-
-                    // 1. Savings Score (Capped at 100% to stop BSR-bleed)
-                    if (d.avg90 > 0 && d.price > 0 && d.price < d.avg90) {
+                    // Scoreboard Logic
+                    let s = 0;
+                    if (d.avg90 > 0 && d.price > 0) {
                         let pct = ((d.avg90 - d.price) / d.avg90) * 100;
                         if (pct > 100) pct = 100; 
-                        s += (pct * weightSavings);
+                        s += (pct * (forceNum(CONFIG.WEIGHT_SAVINGS) || 1.5));
                     }
-
-                    // 2. Rating Score
-                    s += (d.rating * weightRating);
-
-                    // 3. FLASH DROP Boost
-                    if (d.drop1Day >= 10) s += 40;
-                    else if (d.drop1Day >= 5) s += 20;
-                    
-                    // 4. BSR VELOCITY GATE (Bonus Points Only)
-                    if (d.rank > 0 && d.rank <= 500) s += 35;
-                    else if (d.rank > 500 && d.rank <= 2000) s += 20;
-                    else if (d.rank > 2000 && d.rank <= 10000) s += 10;
-
-                    // 5. Extras
+                    s += (d.rating * (forceNum(CONFIG.WEIGHT_RATING) || 5));
+                    if (d.drop1Day >= 10) s += 40; else if (d.drop1Day >= 5) s += 20;
+                    if (d.rank > 0 && d.rank <= 1000) s += 30;
                     if (d.isLow90 && d.isLowAll) s += 15;
-                    if (d.reviews >= 1000) s += 10;
 
                     d.dealScore = Math.floor(s);
                     if (d.subCategory) subCats.add(d.subCategory);
                     return d;
-                }).filter(d => d !== null && d.rating >= (CONFIG.MIN_RATING || 4.0) && !hiddenDeals.includes(d.url));
+                }).filter(d => d !== null && d.price > 0 && d.url.includes('amazon.com') && !hiddenDeals.includes(d.url));
 
+                // Populate Sub-Category Dropdown
                 const menu = document.getElementById('subCatSelect');
                 menu.innerHTML = '<option value="All">All Categories</option>';
                 Array.from(subCats).sort().forEach(c => {
-                    const opt = document.createElement('option');
-                    opt.value = c; opt.innerText = c;
-                    menu.appendChild(opt);
+                    if(c) {
+                        const opt = document.createElement('option');
+                        opt.value = c; opt.innerText = c;
+                        menu.appendChild(opt);
+                    }
                 });
 
                 filterAndSort();
-            } catch (err) { console.error("Data Load Error:", err); }
-        }
-
-        function filterAndSort() {
-            const search = document.getElementById('searchBox').value.toLowerCase();
-            const sort = document.getElementById('sortSelect').value;
-            const sub = document.getElementById('subCatSelect').value;
-            
-            let filtered = allDeals.filter(d => 
-                (d.title.toLowerCase().includes(search) || d.subCategory.toLowerCase().includes(search)) && 
-                (sub === "All" || d.subCategory === sub)
-            );
-
-            if (sort === "score") filtered.sort((a,b) => b.dealScore - a.dealScore);
-            if (sort === "drop") filtered.sort((a,b) => b.drop1Day - a.drop1Day);
-            if (sort === "rank") filtered.sort((a,b) => {
-                let rA = a.rank === 0 ? 9999999 : a.rank;
-                let rB = b.rank === 0 ? 9999999 : b.rank;
-                return rA - rB; 
-            });
-
-            render(filtered);
+            } catch (err) { 
+                console.error("Critical Failure:", err); 
+            }
         }
 
         function handlePost(amazonUrl) {
-            const baseUrl = amazonUrl.split('?')[0];
-            const finalLink = `${baseUrl}?tag=${CONFIG.AFFILIATE_TAG}`;
-            navigator.clipboard.writeText(finalLink).then(() => alert("Affiliate Link Copied!"));
-        }
-
-        function hideCard(url) {
-            let hidden = JSON.parse(localStorage.getItem('hiddenDeals') || '[]');
-            hidden.push(url);
-            localStorage.setItem('hiddenDeals', JSON.stringify(hidden));
-            location.reload();
-        }
-
-        function resetHidden() { localStorage.removeItem('hiddenDeals'); location.reload(); }
-
-        function render(deals) {
-            const grid = document.getElementById('deal-grid');
-            document.getElementById('deal-count').innerText = `${deals.length} DEALS ACTIVE`;
-            
-            if (deals.length === 0) {
-                grid.innerHTML = `<div class="col-span-full py-20 text-center text-slate-400 font-bold uppercase tracking-widest">No deals matching filters.</div>`;
+            // Strips existing tracking and cleans the URL
+            let cleanBase = amazonUrl.split('?')[0];
+            if (!cleanBase.includes('amazon.com')) {
+                alert("The Amazon link in your sheet appears to be invalid.");
                 return;
             }
-
-            grid.innerHTML = deals.map(d => `
-                <div class="deal-card bg-white rounded-3xl border border-slate-200 p-5 flex flex-col relative shadow-sm hover:shadow-xl transition-all">
-                    <button onclick="hideCard('${d.url}')" class="absolute top-3 right-3 z-30 bg-white/90 hover:bg-red-500 hover:text-white w-7 h-7 rounded-full text-[10px] shadow flex items-center justify-center transition-all font-bold text-slate-400">✕</button>
-                    
-                    <div class="flex justify-between items-start mb-2">
-                        <span class="text-[9px] font-black text-blue-600 uppercase truncate max-w-[100px]">${d.subCategory}</span>
-                        <div class="flex gap-1">
-                            ${d.drop1Day >= 5 ? '<span class="bg-yellow-400 text-yellow-900 text-[8px] font-black px-1.5 py-0.5 rounded uppercase flex items-center gap-1">⚡ FLASH</span>' : ''}
-                            ${d.isLowAll ? '<span class="bg-red-100 text-red-600 text-[8px] font-black px-1.5 py-0.5 rounded uppercase tracking-tighter">Year Low</span>' : ''}
-                        </div>
-                    </div>
-
-                    <div class="h-32 flex items-center justify-center mb-4 bg-slate-50 rounded-xl p-2 relative">
-                        <a href="${d.keepaUrl}" target="_blank" class="absolute bottom-2 right-2 bg-slate-900 text-white text-[8px] px-2 py-1 rounded hover:bg-blue-600 transition-all font-bold">KEEPA ↗</a>
-                        <img src="${d.img}" class="max-h-full max-w-full object-contain mix-blend-multiply" onerror="this.src='https://via.placeholder.com/150?text=No+Img'">
-                    </div>
-
-                    <h3 class="font-bold text-xs leading-tight h-8 overflow-hidden mb-3 text-slate-800">${d.title}</h3>
-                    
-                    <div class="grid grid-cols-2 gap-2 mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
-                        <div><p class="text-[8px] text-slate-400 uppercase font-bold">Price</p><p class="text-xl font-black text-slate-900">$${d.price.toFixed(2)}</p></div>
-                        <div class="text-right"><p class="text-[8px] text-slate-400 uppercase font-bold">Score</p><p class="text-[10px] font-black text-orange-600">${d.dealScore}</p></div>
-                    </div>
-
-                    <button onclick="handlePost('${d.url}')" class="w-full bg-slate-900 text-white text-xs font-black py-3 rounded-xl hover:bg-blue-600 transition-all shadow-lg active:scale-95">COPY AFFILIATE LINK</button>
-                </div>
-            `).join('');
+            const finalLink = `${cleanBase}?tag=${CONFIG.AFFILIATE_TAG}`;
+            navigator.clipboard.writeText(finalLink).then(() => {
+                alert("Affiliate Link Copied!");
+            });
         }
-        init();
+        
+        // ... include your existing filterAndSort, hideCard, and render functions ...
     </script>
-</body>
-</html>

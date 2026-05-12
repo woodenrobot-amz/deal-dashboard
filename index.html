@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wooden Robot | Command v1.6.3</title>
+    <title>Wooden Robot | Command v1.6.4</title>
     <script src="config.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -17,34 +17,32 @@
 </head>
 <body class="bg-slate-100 min-h-screen pb-10">
 
-    <div id="version-tag">COMMAND V1.6.3</div>
+    <div id="version-tag">COMMAND V1.6.4</div>
 
     <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-4 border-blue-600 px-6 py-4">
         <div class="max-w-[1800px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-4">
                 <div class="bg-blue-600 px-3 py-1 rounded-lg font-black italic text-2xl text-white">WR</div>
                 <h1 class="text-xl font-black uppercase italic tracking-tighter">Deal <span class="text-blue-500">Command</span></h1>
+                <!-- CRITICAL ID HERE -->
+                <p id="deal-count" class="text-[10px] font-black text-blue-300 ml-4 uppercase tracking-widest bg-slate-800 px-2 py-1 rounded">Syncing...</p>
             </div>
             
             <div class="flex flex-wrap gap-2">
                 <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search tools..." class="bg-slate-800 border-2 border-slate-700 rounded-lg px-4 py-2 text-white outline-none w-48 focus:border-blue-500">
-                
                 <select id="sortSelect" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-lg px-2 py-2 font-bold text-white outline-none">
                     <option value="score">Sort: Score</option>
                     <option value="drop">Sort: % Drop</option>
                     <option value="rank">Sort: BSR (Low First)</option>
                 </select>
-
                 <select id="subCatSelect" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-lg px-2 py-2 text-white outline-none">
                     <option value="All">All Categories</option>
                 </select>
-
                 <select id="tagFilter" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-lg px-2 py-2 text-yellow-500 outline-none font-bold">
                     <option value="All">All Deals</option>
                     <option value="Flash">⚡ Flash</option>
                     <option value="Year">🏆 Year Low</option>
                 </select>
-                
                 <button onclick="resetHidden()" class="bg-red-600 text-white px-4 py-2 rounded-lg text-xs font-black uppercase">Reset</button>
             </div>
         </div>
@@ -71,17 +69,16 @@
         const copyText = (text, btn, original) => {
             if(!text || text.length < 3) return;
             navigator.clipboard.writeText(text).then(() => {
-                const oldColor = btn.classList.contains('bg-slate-900') ? 'bg-slate-900' : 'bg-blue-600';
+                const isBlue = btn.classList.contains('bg-blue-600');
                 btn.innerText = "COPIED!";
-                btn.classList.replace(oldColor, 'bg-green-600');
+                btn.classList.replace(isBlue ? 'bg-blue-600' : 'bg-slate-900', 'bg-green-600');
                 setTimeout(() => { 
                     btn.innerText = original; 
-                    btn.classList.replace('bg-green-600', oldColor);
+                    btn.classList.replace('bg-green-600', isBlue ? 'bg-blue-600' : 'bg-slate-900');
                 }, 1000);
             });
         };
 
-        // ROBUST CSV PARSER: Handles commas inside quotes correctly
         function parseCSVLine(line) {
             const result = [];
             let cur = '';
@@ -123,10 +120,9 @@
                         url: cleanStr(cols[11]),
                         keepa: cleanStr(cols[12]),
                         rating: forceNum(cols[13]),
-                        asin: cleanStr(cols[14]) // Column O
+                        asin: cleanStr(cols[14]) 
                     };
 
-                    // --- HARDENED MATH ---
                     let s = 0;
                     if (d.avg90 > 0 && d.price > 0 && d.price < d.avg90) {
                         let pct = Math.min(((d.avg90 - d.price) / d.avg90) * 100, 100);
@@ -143,21 +139,23 @@
                 }).filter(d => d !== null && d.price > 0 && !hidden.includes(d.url));
 
                 const menu = document.getElementById('subCatSelect');
-                Array.from(subCats).sort().forEach(c => {
-                    const opt = document.createElement('option');
-                    opt.value = c; opt.innerText = c;
-                    menu.appendChild(opt);
-                });
+                if(menu) {
+                    Array.from(subCats).sort().forEach(c => {
+                        const opt = document.createElement('option');
+                        opt.value = c; opt.innerText = c;
+                        menu.appendChild(opt);
+                    });
+                }
 
                 filterAndSort();
             } catch (err) { console.error(err); }
         }
 
         function filterAndSort() {
-            const search = document.getElementById('searchBox').value.toLowerCase();
-            const sort = document.getElementById('sortSelect').value;
-            const sub = document.getElementById('subCatSelect').value;
-            const tag = document.getElementById('tagFilter').value;
+            const search = document.getElementById('searchBox')?.value.toLowerCase() || "";
+            const sort = document.getElementById('sortSelect')?.value || "score";
+            const sub = document.getElementById('subCatSelect')?.value || "All";
+            const tag = document.getElementById('tagFilter')?.value || "All";
             
             let filtered = allDeals.filter(d => 
                 (d.title.toLowerCase().includes(search) || d.category.toLowerCase().includes(search)) && 
@@ -182,7 +180,12 @@
 
         function render(deals) {
             const grid = document.getElementById('deal-grid');
-            document.getElementById('deal-count').innerText = `${deals.length} ITEMS`;
+            const counter = document.getElementById('deal-count');
+            
+            // Safety Guard for the Error you saw
+            if (counter) counter.innerText = `${deals.length} ITEMS`;
+            if (!grid) return;
+
             grid.innerHTML = deals.map(d => `
                 <div class="deal-card bg-white rounded-[2rem] border-2 border-slate-200 p-5 flex flex-col relative shadow-sm">
                     <button onclick="hideCard('${d.url}')" class="absolute top-3 right-3 z-30 bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-black shadow-md hover:scale-110 transition-all">✕</button>
@@ -228,7 +231,9 @@
                 </div>
             `).join('');
         }
-        init();
+
+        // Wait for page to fully load before starting
+        window.addEventListener('DOMContentLoaded', init);
     </script>
 </body>
 </html>

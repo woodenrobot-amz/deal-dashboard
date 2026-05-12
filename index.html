@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wooden Robot | Command v1.8.2</title>
+    <title>Wooden Robot | Command v1.9.0</title>
     <script src="config.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -14,11 +14,13 @@
         #version-tag { position: fixed; bottom: 10px; right: 10px; font-size: 10px; font-weight: 900; color: #94a3b8; z-index: 100; pointer-events: none; }
         .btn-shadow { box-shadow: 0 4px 0 0 rgba(0,0,0,0.1); }
         .hot-glow { box-shadow: 0 0 15px rgba(239, 68, 68, 0.4); border-color: #f87171 !important; }
+        /* Keepa Blue Logo Color */
+        .bg-keepa { background-color: #0099cc; }
     </style>
 </head>
 <body class="bg-slate-100 min-h-screen pb-10">
 
-    <div id="version-tag">COMMAND V1.8.2</div>
+    <div id="version-tag">COMMAND V1.9.0</div>
 
     <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-4 border-blue-600 px-6 py-4">
         <div class="max-w-[1800px] mx-auto flex flex-col gap-6">
@@ -32,25 +34,26 @@
             </div>
             
             <div class="flex flex-wrap gap-2 items-center justify-center lg:justify-start">
-                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search current brand..." class="bg-slate-800 border-2 border-slate-700 rounded-lg px-4 py-2 text-white outline-none w-64 focus:border-blue-500">
+                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search..." class="bg-slate-800 border-2 border-slate-700 rounded-lg px-4 py-2 text-white outline-none w-64 focus:border-blue-500 placeholder:text-slate-500">
                 
                 <select id="sortSelect" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-lg px-2 py-2 font-bold text-white outline-none">
                     <option value="score">Sort: Score</option>
                     <option value="drop">Sort: % Drop</option>
-                    <option value="rank">Sort: BSR (Low First)</option>
+                    <option value="rank">Sort: BSR</option>
+                    <option value="priceLow">Sort: Price (Low to High)</option>
+                    <option value="priceHigh">Sort: Price (High to Low)</option>
                 </select>
 
                 <select id="subCatSelect" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-lg px-2 py-2 text-white outline-none">
                     <option value="All">All Categories</option>
                 </select>
 
-                <!-- UPDATED TAG FILTER -->
                 <select id="tagFilter" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-lg px-2 py-2 text-yellow-500 outline-none font-bold">
                     <option value="All">All Deals</option>
+                    <option value="Brand">★ Top Brands</option>
                     <option value="Flash">⚡ Flash</option>
                     <option value="Year">🏆 Year Low</option>
-                    <option value="Hot">🔥 High Velocity</option>
-                    <option value="Brand">★ Top Brands</option>
+                    <option value="Hot">🔥 Hot</option>
                 </select>
                 
                 <button onclick="resetHidden()" class="bg-red-600 text-white px-4 py-2 rounded-lg text-xs font-black uppercase ml-auto">Reset Hidden</button>
@@ -82,7 +85,8 @@
             if(!text || text.length < 3) return;
             navigator.clipboard.writeText(text).then(() => {
                 const isBlue = btn.classList.contains('bg-blue-600');
-                const oldColor = isBlue ? 'bg-blue-600' : 'bg-slate-900';
+                const isAmazon = btn.classList.contains('bg-orange-600');
+                const oldColor = isBlue ? 'bg-blue-600' : (isAmazon ? 'bg-orange-600' : 'bg-slate-900');
                 btn.innerText = "COPIED!";
                 btn.classList.replace(oldColor, 'bg-green-600');
                 setTimeout(() => { 
@@ -173,7 +177,7 @@
                         rating: forceNum(cols[13]),
                         asin: cleanStr(cols[14]),
                         isNameBrand: isNameBrand,
-                        isHighVelocity: bsr > 0 && bsr <= 5000
+                        isHot: bsr > 0 && bsr <= 5000
                     };
 
                     let s = 0;
@@ -183,7 +187,7 @@
                     }
                     s += (d.rating * (forceNum(CONFIG.WEIGHT_RATING) || 5));
                     if (d.drop1Day >= 10) s += 40; else if (d.drop1Day >= 5) s += 20;
-                    if (d.isHighVelocity) s += 30;
+                    if (d.isHot) s += 30;
                     if (d.isLowAll) s += 15;
                     if (d.isNameBrand) s += 15;
 
@@ -216,18 +220,21 @@
             const tag = document.getElementById('tagFilter')?.value || "All";
             
             let filtered = allDeals.filter(d => 
-                (d.title.toLowerCase().includes(search) || d.category.toLowerCase().includes(search)) && 
+                (d.title.toLowerCase().includes(search)) && 
                 (sub === "All" || d.category === sub) &&
                 (tag === "All" || 
                 (tag === "Flash" && d.drop1Day >= 5) || 
                 (tag === "Year" && d.isLowAll) || 
-                (tag === "Hot" && d.isHighVelocity) ||
-                (tag === "Brand" && d.isNameBrand)) // NEW BRAND FILTER LOGIC
+                (tag === "Hot" && d.isHot) ||
+                (tag === "Brand" && d.isNameBrand))
             );
 
             if (sort === "score") filtered.sort((a,b) => b.dealScore - a.dealScore);
             if (sort === "drop") filtered.sort((a,b) => b.drop1Day - a.drop1Day);
             if (sort === "rank") filtered.sort((a,b) => (a.rank || 999999) - (b.rank || 999999));
+            if (sort === "priceLow") filtered.sort((a,b) => a.price - b.price);
+            if (sort === "priceHigh") filtered.sort((a,b) => b.price - a.price);
+            
             render(filtered);
         }
 
@@ -246,52 +253,61 @@
             if (counter) counter.innerText = `${deals.length} ITEMS IN ${CONFIG.SOURCES[currentSourceKey].name.toUpperCase()}`;
             if (!grid) return;
 
-            grid.innerHTML = deals.map(d => `
-                <div class="deal-card bg-white rounded-[2rem] border-2 border-slate-200 p-5 flex flex-col relative shadow-sm ${d.isHighVelocity ? 'hot-glow' : ''}">
+            grid.innerHTML = deals.map(d => {
+                const amazonUrl = `https://www.amazon.com/dp/${d.asin}/?tag=${CONFIG.AFFILIATE_TAG}`;
+                return `
+                <div class="deal-card bg-white rounded-[2rem] border-2 border-slate-200 p-5 flex flex-col relative shadow-sm ${d.isHot ? 'hot-glow' : ''}">
                     <button onclick="hideCard('${d.url}')" class="absolute top-3 right-3 z-30 bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-black shadow-md hover:scale-110 transition-all">✕</button>
                     
                     <div class="flex flex-wrap gap-1 mb-3">
-                        <span class="text-[10px] font-black text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded-lg">${d.category}</span>
                         ${d.isNameBrand ? '<span class="bg-slate-900 text-white text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-tighter">★ TOP BRAND</span>' : ''}
-                        ${d.isHighVelocity ? '<span class="bg-orange-500 text-white text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-tighter">🔥 HOT</span>' : ''}
+                        ${d.isHot ? '<span class="bg-orange-500 text-white text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-tighter">🔥 HOT</span>' : ''}
                         ${d.drop1Day >= 5 ? '<span class="bg-yellow-400 text-yellow-900 text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-tighter">⚡ FLASH</span>' : ''}
                         ${d.isLowAll ? '<span class="bg-red-600 text-white text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-tighter">🏆 YEAR LOW</span>' : ''}
                     </div>
 
                     <div class="h-44 flex items-center justify-center mb-4 bg-slate-50 rounded-2xl p-4 relative group">
                         <img src="${d.img}" class="max-h-full max-w-full object-contain mix-blend-multiply group-hover:scale-105 transition-all">
-                        <a href="${d.keepa}" target="_blank" class="absolute bottom-2 right-2 bg-orange-500 text-white text-[10px] font-black px-4 py-2 rounded-xl shadow-lg hover:bg-orange-600 transition-all">KEEPA ↗</a>
+                        <a href="${d.keepa}" target="_blank" class="absolute bottom-2 right-2 bg-keepa text-white text-[10px] font-black px-4 py-2 rounded-xl shadow-lg hover:brightness-110 transition-all">KEEPA ↗</a>
                     </div>
 
-                    <h3 class="font-bold text-xl leading-tight h-14 overflow-hidden mb-4 text-slate-800">${d.title}</h3>
+                    <h3 class="font-bold text-xl leading-tight h-20 overflow-hidden mb-4 text-slate-800">${d.title}</h3>
                     
-                    <div class="grid grid-cols-2 gap-3 mb-5 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                        <div>
-                            <p class="text-[10px] text-slate-400 uppercase font-black">Price</p>
-                            <p class="text-2xl font-black text-slate-900">$${d.price.toFixed(2)}</p>
+                    <div class="mb-5 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                        <div class="grid grid-cols-2 gap-3 mb-2">
+                            <div>
+                                <p class="text-[10px] text-slate-400 uppercase font-black">Price</p>
+                                <p class="text-2xl font-black text-slate-900">$${d.price.toFixed(2)}</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-[10px] text-slate-400 uppercase font-black">90d Avg</p>
+                                <p class="text-base font-bold text-slate-400 line-through">$${d.avg90.toFixed(2)}</p>
+                            </div>
                         </div>
-                        <div class="text-right">
-                            <p class="text-[10px] text-slate-400 uppercase font-black">90d Avg</p>
-                            <p class="text-base font-bold text-slate-400 line-through">$${d.avg90.toFixed(2)}</p>
-                        </div>
-                        <div class="col-span-2 border-t border-slate-200 mt-2 pt-2 flex justify-between items-center">
+                        <div class="border-t border-slate-200 pt-2 flex justify-between items-center mb-2">
                             <span class="text-[10px] font-black text-slate-400 uppercase">Score</span>
                             <span class="text-2xl font-black text-orange-600">${d.dealScore}</span>
+                        </div>
+                        <div class="bg-white border border-slate-200 px-3 py-1 rounded-lg text-center">
+                            <span class="text-[10px] font-black text-blue-600 uppercase italic">${d.category}</span>
                         </div>
                     </div>
 
                     <div class="space-y-3 mt-auto">
-                        <button onclick="copyText('${d.url.split('?')[0]}?tag=${CONFIG.AFFILIATE_TAG}', this, 'COPY AFFILIATE LINK')" 
-                                class="w-full bg-slate-900 text-white text-[11px] font-black py-5 rounded-2xl btn-shadow uppercase tracking-widest">
+                        <a href="${amazonUrl}" target="_blank" class="block text-center w-full bg-orange-600 text-white text-[11px] font-black py-4 rounded-2xl btn-shadow uppercase tracking-widest hover:brightness-110 transition-all">
+                            VIEW ON AMAZON
+                        </a>
+                        <button onclick="copyText('${amazonUrl}', this, 'COPY AFFILIATE LINK')" 
+                                class="w-full bg-slate-900 text-white text-[11px] font-black py-3 rounded-2xl btn-shadow uppercase tracking-widest">
                             COPY AFFILIATE LINK
                         </button>
                         <button onclick="copyText('${d.asin}', this, 'COPY ASIN: ${d.asin}')" 
-                                class="w-full bg-blue-600 text-white text-[10px] font-black py-3 rounded-xl btn-shadow uppercase tracking-tight">
+                                class="w-full bg-blue-600 text-white text-[10px] font-black py-2 rounded-xl btn-shadow uppercase tracking-tight">
                             COPY ASIN: ${d.asin}
                         </button>
                     </div>
                 </div>
-            `).join('');
+            `;}).join('');
         }
 
         window.addEventListener('DOMContentLoaded', () => {

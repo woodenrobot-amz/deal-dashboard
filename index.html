@@ -1,3 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wooden Robot | Command v1.5.1</title>
+    <script src="config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .deal-card { transition: all 0.2s ease-in-out; }
+        .deal-card:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen pb-10">
+
+    <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-2 border-blue-600 px-6 py-4">
+        <div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-4">
+                <div class="bg-blue-600 px-3 py-1 rounded-lg font-black italic tracking-tighter text-2xl text-white">WR</div>
+                <div>
+                    <h1 class="text-lg font-black tracking-tighter uppercase italic leading-none text-white">Deal <span class="text-blue-500">Command</span></h1>
+                    <p id="deal-count" class="text-[9px] font-bold text-blue-300 uppercase tracking-widest mt-1 text-white">VALIDATING DATA...</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center gap-3">
+                <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search..." class="bg-slate-800 border border-slate-700 rounded-lg px-4 py-2 text-sm text-white outline-none w-48">
+                <select id="sortSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white outline-none font-bold">
+                    <option value="score">Sort: Score</option>
+                    <option value="drop">Sort: % Drop</option>
+                    <option value="rank">Sort: BSR</option>
+                </select>
+                <select id="subCatSelect" onchange="filterAndSort()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white outline-none max-w-[150px]">
+                    <option value="All">All Categories</option>
+                </select>
+                <button onclick="resetHidden()" class="bg-red-900/20 text-red-400 border border-red-800 px-3 py-2 rounded-lg text-[10px] font-bold">RESET</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-[1600px] mx-auto px-6 mt-8">
+        <div id="deal-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6"></div>
+    </main>
 <script>
         let allDeals = [];
 
@@ -97,3 +139,6 @@
         
         // ... include your existing filterAndSort, hideCard, and render functions ...
     </script>
+    
+</body>
+</html>

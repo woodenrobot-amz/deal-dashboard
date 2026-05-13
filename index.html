@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>WR Deal Command</title>
     
-    <!-- PWA Integration -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#2563eb">
     <script>
@@ -18,17 +17,39 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-        body { font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; }
+        body { font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; overflow-x: hidden; }
         .deal-card { transition: all 0.2s ease-in-out; }
         #version-tag { position: fixed; bottom: 10px; right: 10px; font-size: 10px; font-weight: 900; color: #94a3b8; z-index: 100; pointer-events: none; }
-        .btn-shadow { box-shadow: 0 4px 0 0 rgba(0,0,0,0.1); }
         .hot-glow { box-shadow: 0 0 15px rgba(239, 68, 68, 0.4); border-color: #f87171 !important; }
         .bg-keepa { background-color: #0099cc; }
+        
+        /* Smooth Horizontal Scroll for Source Pills */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Robotic Arm Animation */
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(20deg); }
+        }
+        .animate-arm { 
+            animation: wave 1.5s ease-in-out infinite; 
+            transform-origin: bottom center;
+        }
     </style>
 </head>
 <body class="bg-slate-100 min-h-screen pb-10">
 
-    <div id="version-tag">COMMAND V1.9.1 PWA</div>
+    <div id="version-tag">COMMAND V1.9.2 PWA</div>
+
+    <!-- DELAYED LOADING SCREEN -->
+    <div id="loading-screen" class="fixed inset-0 z-[100] bg-slate-900 flex flex-col items-center justify-center transition-opacity duration-500">
+        <div class="relative mb-6">
+            <img src="https://img.icons8.com/color/96/robotic-arm.png" class="animate-arm w-24 h-24">
+        </div>
+        <h2 class="text-white font-black italic text-2xl tracking-tighter uppercase">Initializing <span class="text-blue-500">Command</span></h2>
+        <p class="text-blue-300 text-[10px] font-black uppercase mt-2 tracking-widest animate-pulse">Scanning Deal Ecosystem...</p>
+    </div>
 
     <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-4 border-blue-600 px-4 py-4">
         <div class="max-w-[1800px] mx-auto flex flex-col gap-4">
@@ -37,14 +58,15 @@
                     <div class="bg-blue-600 px-2 py-1 rounded-lg font-black italic text-xl">WR</div>
                     <h1 class="text-lg font-black uppercase italic tracking-tighter">Deal <span class="text-blue-500">Command</span></h1>
                 </div>
-                <p id="deal-count" class="text-[9px] font-black text-blue-300 uppercase tracking-widest bg-slate-800 px-2 py-1 rounded">Syncing...</p>
+                <!-- INCREASED FONT SIZE FOR ITEM COUNT -->
+                <p id="deal-count" class="text-[12px] font-black text-blue-300 uppercase tracking-widest bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 shadow-inner">...</p>
             </div>
             
-            <div id="source-tabs" class="flex gap-2 overflow-x-auto pb-1 no-scrollbar"></div>
+            <!-- REFINED SOURCE PILLS -->
+            <div id="source-tabs" class="flex gap-2 overflow-x-auto pb-1 no-scrollbar -mx-2 px-2"></div>
 
             <div class="flex flex-wrap gap-2">
                 <input type="text" id="searchBox" onkeyup="filterAndSort()" placeholder="Search..." class="flex-grow bg-slate-800 border-2 border-slate-700 rounded-xl px-4 py-2 text-white outline-none focus:border-blue-500">
-                
                 <select id="tagFilter" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-xl px-2 py-2 text-yellow-500 outline-none font-bold text-sm">
                     <option value="All">All Deals</option>
                     <option value="Brand">★ Brands</option>
@@ -59,10 +81,11 @@
                     <option value="score">Sort: Score</option>
                     <option value="drop">Sort: % Drop</option>
                     <option value="rank">Sort: BSR</option>
-                    <option value="priceLow">Price: Low to High</option>
-                    <option value="priceHigh">Price: High to Low</option>
+                    <option value="priceLow">Price: L to H</option>
+                    <option value="priceHigh">Price: H to L</option>
                 </select>
-                <select id="subCatSelect" onchange="filterAndSort()" class="flex-1 bg-slate-800 border-2 border-slate-700 rounded-xl px-2 py-2 text-white outline-none text-xs">
+                <!-- CATEGORY FIX: MAX-WIDTH TO PREVENT BREAKTHROUGH -->
+                <select id="subCatSelect" onchange="filterAndSort()" class="max-w-[50%] flex-1 bg-slate-800 border-2 border-slate-700 rounded-xl px-2 py-2 text-white outline-none text-xs truncate">
                     <option value="All">All Categories</option>
                 </select>
             </div>
@@ -104,7 +127,13 @@
         function switchSource(key) {
             currentSourceKey = key;
             localStorage.setItem('lastUsedSource', key);
-            document.getElementById('deal-grid').innerHTML = '<div class="col-span-full py-20 text-center font-black text-slate-400 animate-pulse uppercase text-xl">Switching...</div>';
+            
+            // RESET FILTERS ON SWITCH
+            document.getElementById('searchBox').value = "";
+            document.getElementById('tagFilter').value = "All";
+            document.getElementById('subCatSelect').value = "All";
+            
+            document.getElementById('deal-grid').innerHTML = '<div class="col-span-full py-20 text-center font-black text-slate-400 animate-pulse uppercase text-xl">Loading Group...</div>';
             init();
         }
 
@@ -164,7 +193,16 @@
                     const opt = document.createElement('option'); opt.value = c; opt.innerText = c;
                     menu.appendChild(opt);
                 });
+
                 filterAndSort();
+
+                // HIDE LOADING SCREEN AFTER 3 SECONDS
+                setTimeout(() => {
+                    const loader = document.getElementById('loading-screen');
+                    loader.style.opacity = '0';
+                    setTimeout(() => loader.style.display = 'none', 500);
+                }, 3000);
+
             } catch (err) { console.error(err); }
         }
 
@@ -201,6 +239,7 @@
                     <div class="flex flex-wrap gap-1 mb-3">
                         ${d.isNameBrand ? '<span class="bg-slate-900 text-white text-[9px] font-black px-2 py-1 rounded-lg">★ BRAND</span>' : ''}
                         ${d.isHot ? '<span class="bg-orange-500 text-white text-[9px] font-black px-2 py-1 rounded-lg">🔥 HOT</span>' : ''}
+                        ${d.drop1Day >= 5 ? '<span class="bg-yellow-400 text-yellow-900 text-[9px] font-black px-2 py-1 rounded-lg">⚡ FLASH</span>' : ''}
                         ${d.isLowAll ? '<span class="bg-red-600 text-white text-[9px] font-black px-2 py-1 rounded-lg">🏆 YEAR LOW</span>' : ''}
                     </div>
                     <div class="h-40 flex items-center justify-center mb-4 bg-slate-50 rounded-2xl p-4 relative group">

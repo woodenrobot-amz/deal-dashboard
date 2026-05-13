@@ -1,5 +1,5 @@
 const CONFIG = {
-    AFFILIATE_TAG: 'amdyadams-20',
+    AFFILIATE_TAG: 'amdyadams85-20',
     WEIGHT_SAVINGS: 1.5,
     WEIGHT_RATING: 5,
     MIN_RATING: 4.0,

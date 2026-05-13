@@ -78,6 +78,18 @@
         const forceNum = (val) => parseFloat(String(val).replace(/[^0-9.-]/g, '')) || 0;
         const cleanStr = (val) => String(val || "").replace(/["]/g, '').trim();
 
+        // --- BOOKMARK LOGIC ---
+        function toggleBookmark(asin) {
+            let saved = JSON.parse(localStorage.getItem('mySavedDeals')) || [];
+            if (saved.includes(asin)) {
+                saved = saved.filter(id => id !== asin);
+            } else {
+                saved.push(asin);
+            }
+            localStorage.setItem('mySavedDeals', JSON.stringify(saved));
+            filterAndSort(); // Re-render to update the icon state
+        }
+
         function copyText(text, btn, original) {
             navigator.clipboard.writeText(text).then(() => {
                 const old = btn.innerText;
@@ -111,10 +123,18 @@
 
         function filterAndSort() {
             const s = document.getElementById('searchBox').value.toLowerCase(), sort = document.getElementById('sortSelect').value, sub = document.getElementById('subCatSelect').value, tag = document.getElementById('tagFilter').value;
+            const saved = JSON.parse(localStorage.getItem('mySavedDeals')) || [];
             let f = allDeals.filter(d => d.title.toLowerCase().includes(s) && (sub === "All" || d.category === sub) && (tag === "All" || (tag === "Flash" && d.drop1Day >= 5) || (tag === "Year" && d.isLowAll) || (tag === "Hot" && d.isHot) || (tag === "Brand" && d.isNameBrand)));
             f.sort((a,b) => sort === "score" ? b.dealScore - a.dealScore : sort === "priceLow" ? a.price - b.price : sort === "priceHigh" ? b.price - a.price : (a.rank || 999999) - (b.rank || 999999));
             document.getElementById('deal-count').innerText = `${f.length} ITEMS`;
-            document.getElementById('deal-grid').innerHTML = f.map(d => `<div class="deal-card bg-white rounded-[2rem] border-2 border-slate-200 p-5 flex flex-col relative ${d.isHot ? 'hot-glow' : ''}"><div class="flex flex-wrap gap-1 mb-3">${d.isNameBrand ? '<span class="bg-slate-900 text-white text-[9px] font-black px-2 py-1 rounded-lg">★ BRAND</span>' : ''}${d.isHot ? '<span class="bg-orange-500 text-white text-[9px] font-black px-2 py-1 rounded-lg">🔥 HOT</span>' : ''}${d.drop1Day >= 5 ? '<span class="bg-yellow-400 text-yellow-900 text-[9px] font-black px-2 py-1 rounded-lg">⚡ FLASH</span>' : ''}</div><div class="h-40 flex items-center justify-center mb-4 bg-slate-50 rounded-2xl p-4 relative"><img src="${d.img}" class="max-h-full max-w-full object-contain mix-blend-multiply"><a href="${d.keepa}" target="_blank" class="absolute bottom-2 right-2 bg-keepa text-white text-[9px] font-black px-3 py-1 rounded-lg">KEEPA ↗</a></div><h3 class="font-bold text-lg h-20 overflow-hidden mb-4">${d.title}</h3><div class="mb-5 bg-slate-50 p-4 rounded-2xl"><div class="flex justify-between items-center mb-2"><div><p class="text-[9px] text-slate-400 font-black">PRICE</p><p class="text-xl font-black">$${d.price.toFixed(2)}</p></div><div class="text-right"><p class="text-[9px] text-slate-400 font-black">90d AVG</p><p class="text-sm line-through text-slate-300">$${d.avg90.toFixed(2)}</p></div></div><div class="border-t pt-2 flex justify-between"><span class="text-[9px] font-black">SCORE</span><span class="text-xl font-black text-orange-600">${d.dealScore}</span></div></div><div class="space-y-2 mt-auto"><a href="https://www.amazon.com/dp/${d.asin}/?tag=${CONFIG.AFFILIATE_TAG}" target="_blank" class="block text-center bg-orange-600 text-white text-[10px] font-black py-3 rounded-xl uppercase">VIEW ON AMAZON</a><button onclick="copyText('https://www.amazon.com/dp/${d.asin}/?tag=${CONFIG.AFFILIATE_TAG}', this, 'COPY LINK')" class="w-full bg-slate-900 text-white text-[10px] font-black py-2 rounded-xl uppercase">COPY LINK</button><button onclick="copyText('${d.asin}', this, 'ASIN: ${d.asin}')" class="w-full bg-blue-600 text-white text-[9px] font-black py-2 rounded-xl uppercase">COPY ASIN</button></div></div>`).join('');
+            document.getElementById('deal-grid').innerHTML = f.map(d => `<div class="deal-card bg-white rounded-[2rem] border-2 border-slate-200 p-5 flex flex-col relative ${d.isHot ? 'hot-glow' : ''}">
+                <button onclick="toggleBookmark('${d.asin}')" class="absolute top-4 right-4 z-20 text-2xl">${saved.includes(d.asin) ? '★' : '☆'}</button>
+                <div class="flex flex-wrap gap-1 mb-3">${d.isNameBrand ? '<span class="bg-slate-900 text-white text-[9px] font-black px-2 py-1 rounded-lg">★ BRAND</span>' : ''}${d.isHot ? '<span class="bg-orange-500 text-white text-[9px] font-black px-2 py-1 rounded-lg">🔥 HOT</span>' : ''}${d.drop1Day >= 5 ? '<span class="bg-yellow-400 text-yellow-900 text-[9px] font-black px-2 py-1 rounded-lg">⚡ FLASH</span>' : ''}</div>
+                <div class="h-40 flex items-center justify-center mb-4 bg-slate-50 rounded-2xl p-4 relative"><img src="${d.img}" class="max-h-full max-w-full object-contain mix-blend-multiply"><a href="${d.keepa}" target="_blank" class="absolute bottom-2 right-2 bg-keepa text-white text-[9px] font-black px-3 py-1 rounded-lg">KEEPA ↗</a></div>
+                <h3 class="font-bold text-lg h-20 overflow-hidden mb-4">${d.title}</h3>
+                <div class="mb-5 bg-slate-50 p-4 rounded-2xl"><div class="flex justify-between items-center mb-2"><div><p class="text-[9px] text-slate-400 font-black">PRICE</p><p class="text-xl font-black">$${d.price.toFixed(2)}</p></div><div class="text-right"><p class="text-[9px] text-slate-400 font-black">90d AVG</p><p class="text-sm line-through text-slate-300">$${d.avg90.toFixed(2)}</p></div></div><div class="border-t pt-2 flex justify-between"><span class="text-[9px] font-black">SCORE</span><span class="text-xl font-black text-orange-600">${d.dealScore}</span></div></div>
+                <div class="space-y-2 mt-auto"><a href="https://www.amazon.com/dp/${d.asin}/?tag=${CONFIG.AFFILIATE_TAG}" target="_blank" class="block text-center bg-orange-600 text-white text-[10px] font-black py-3 rounded-xl uppercase">VIEW ON AMAZON</a><button onclick="copyText('https://www.amazon.com/dp/${d.asin}/?tag=${CONFIG.AFFILIATE_TAG}', this, 'COPY LINK')" class="w-full bg-slate-900 text-white text-[10px] font-black py-2 rounded-xl uppercase">COPY LINK</button><button onclick="copyText('${d.asin}', this, 'ASIN: ${d.asin}')" class="w-full bg-blue-600 text-white text-[9px] font-black py-2 rounded-xl uppercase">COPY ASIN</button></div>
+            </div>`).join('');
         }
 
         function switchSource(k) { currentSourceKey = k; localStorage.setItem('lastUsedSource', k); document.getElementById('searchBox').value = ""; document.getElementById('tagFilter').value = "All"; document.getElementById('subCatSelect').value = "All"; init(); }

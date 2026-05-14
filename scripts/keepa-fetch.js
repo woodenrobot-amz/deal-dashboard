@@ -16,7 +16,7 @@ const output = {
 
 // SAFE folder creation (no crash possible)
 if (!fs.existsSync("data")) {
-  fs.mkdirSync("data");
+  fs.mkdirSync("data", { recursive: true });
 }
 
 fs.writeFileSync("data/deals.json", JSON.stringify(output, null, 2));

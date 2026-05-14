@@ -17,6 +17,10 @@ const output = {
   ]
 };
 
+// Ensure data directory exists (safe for multiple runs)
+if (fs.existsSync("data")) {
+  fs.rmSync("data", { recursive: true, force: true });
+}
 fs.mkdirSync("data", { recursive: true });
 
 fs.writeFileSync(

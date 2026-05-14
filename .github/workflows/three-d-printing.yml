@@ -1,0 +1,43 @@
+name: Keepa 3D Printing Stream
+
+on:
+  schedule:
+    # Eastern daylight time schedule:
+    # 6:00 AM, 11:30 AM
+    - cron: "0 10 * * *"
+    - cron: "30 15 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: keepa-stream-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run 3D printing stream
+        env:
+          KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+        run: node scripts/keepa-fetch.js three_d_printing
+
+      - name: Commit results
+        run: |
+          git config user.name "keepa-bot"
+          git config user.email "keepa-bot@users.noreply.github.com"
+          git pull --rebase origin main
+          git add data/deals.json
+          git diff --cached --quiet || git commit -m "update 3d printing deals"
+          git push

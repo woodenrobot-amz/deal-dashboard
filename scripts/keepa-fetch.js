@@ -76,7 +76,8 @@ function buildKeepaProductUrl(asins) {
     "&domain=1" +
     `&asin=${asins.join(",")}` +
     "&stats=90" +
-    "&rating=1"
+    "&rating=1" +
+    "&images=1"
   );
 }
 

@@ -36,7 +36,7 @@ const STREAMS = [
       page: 0,
 
       // Keep low for first real product-detail test to protect tokens.
-      perPage: 10
+      perPage: 100
     }
   }
 ];
@@ -198,8 +198,8 @@ async function fetchStream(stream) {
     throw new Error(`Keepa query error for ${stream.name}: ${JSON.stringify(data.error)}`);
   }
 
-  const asinList = data.asinList || [];
-
+const asinList = (data.asinList || []).slice(0, 10);
+  
   console.log(`${stream.name}: ${asinList.length} ASINs returned`);
   console.log(
     `${stream.name}: query tokens consumed ${data.tokensConsumed}, tokens left ${data.tokensLeft}`

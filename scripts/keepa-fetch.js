@@ -17,10 +17,18 @@ const output = {
   ]
 };
 
-// Ensure data directory exists (safe for multiple runs)
-if (fs.existsSync("data")) {
-  fs.rmSync("data", { recursive: true, force: true });
+// Remove data if it exists (whether file or directory)
+try {
+  const stats = fs.statSync("data");
+  if (stats.isDirectory()) {
+    fs.rmSync("data", { recursive: true, force: true });
+  } else {
+    fs.unlinkSync("data");
+  }
+} catch (err) {
+  // data doesn't exist, that's fine
 }
+
 fs.mkdirSync("data", { recursive: true });
 
 fs.writeFileSync(

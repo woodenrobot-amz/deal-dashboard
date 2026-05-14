@@ -8,23 +8,86 @@ if (!KEEPA_API_KEY) throw new Error("Missing KEEPA_API_KEY");
 if (!STREAM_NAME) throw new Error("Missing stream argument");
 
 const STREAMS = {
-  woodworking: {
-    name: "woodworking",
-    asinLimit: 30,
-    selection: {
-      categories_exclude: ["13400741","13749581","2225057011","228899","3180231","322525011","3753381","3754161","495224","495266","495310","511228","551240","552262","553188","553350","553424","8106310011","2225055011","553406","15569906011","553136","553242","552788"],
-      rootCategory: ["228013"],
-      current_SALES_gte: 1,
-      current_SALES_lte: 400000,
-      current_RATING_gte: 42,
-      current_COUNT_REVIEWS_gte: 25,
-      deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
-      productType: [0, 1, 2],
-      sort: [["title", "asc"]],
-      page: 0,
-      perPage: 100
-    }
-  },
+ woodworking: {
+  name: "woodworking",
+
+  asinLimit: 100,
+
+  selection: {
+    categories_exclude: [
+      "13399871",
+      "13749581",
+      "15569906011",
+      "157681011",
+      "17515060011",
+      "2225057011",
+      "495346",
+      "553140",
+      "553242",
+      "553348",
+      "553350",
+      "553392",
+      "553406",
+      "553422"
+    ],
+
+    current_SALES_gte: 1,
+    current_SALES_lte: 200000,
+
+    current_RATING_gte: 42,
+    current_COUNT_REVIEWS_gte: 50,
+
+    isLowest90_BUY_BOX_SHIPPING: true,
+
+    deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
+    deltaPercent30_BUY_BOX_SHIPPING_gte: 5,
+
+    rootCategory: [
+      "16310091",
+      "228013"
+    ],
+
+    productType: [0],
+
+    variationReviewCount_gte: 1,
+
+    categories_include: [
+      "2399141011",
+      "3116511",
+      "551236",
+      "551238",
+      "552318",
+      "552342",
+      "552578",
+      "552580",
+      "552648",
+      "552780",
+      "552794",
+      "552824",
+      "552842",
+      "552866",
+      "552910",
+      "552940",
+      "552942",
+      "552962",
+      "552964",
+      "553022",
+      "553150",
+      "553218",
+      "553244",
+      "553142",
+      "383663011",
+      "16412291"
+    ],
+
+    sort: [["title", "asc"]],
+
+    lastRatingUpdate_gte: 7953123,
+
+    page: 0,
+    perPage: 2000
+  }
+}
 
   three_d_printing: {
     name: "three_d_printing",

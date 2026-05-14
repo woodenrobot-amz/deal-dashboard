@@ -1,26 +1,24 @@
 const fs = require("fs");
 
-// For now we simulate data so the pipeline works first
-// We will plug Keepa in AFTER this runs successfully
-
-const fakeDeals = [
-  {
-    asin: "TEST123",
-    title: "Test Product",
-    price: 49.99,
-    avg90: 79.99,
-    category: "woodworking",
-    dealScore: 85
-  }
-];
+console.log("Starting script...");
 
 const output = {
   generatedAt: new Date().toISOString(),
-  source: "keepa-stage1-test",
-  deals: fakeDeals
+  deals: [
+    {
+      asin: "TEST123",
+      title: "Pipeline Test Product",
+      price: 49.99,
+      category: "woodworking"
+    }
+  ]
 };
 
-fs.mkdirSync("data", { recursive: true });
+// SAFE folder creation (no crash possible)
+if (!fs.existsSync("data")) {
+  fs.mkdirSync("data");
+}
+
 fs.writeFileSync("data/deals.json", JSON.stringify(output, null, 2));
 
-console.log("Wrote deals.json");
+console.log("Wrote deals.json successfully");

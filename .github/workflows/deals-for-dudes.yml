@@ -1,0 +1,45 @@
+name: Keepa Deals For Dudes Stream
+
+on:
+  schedule:
+    # Eastern daylight time schedule:
+    # 5:00 AM, 8:30 AM, 1:00 PM, 4:00 PM
+    - cron: "0 9 * * *"
+    - cron: "30 12 * * *"
+    - cron: "0 17 * * *"
+    - cron: "0 20 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: keepa-stream-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run deals for dudes stream
+        env:
+          KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+        run: node scripts/keepa-fetch.js deals_for_dudes
+
+      - name: Commit results
+        run: |
+          git config user.name "keepa-bot"
+          git config user.email "keepa-bot@users.noreply.github.com"
+          git pull --rebase origin main
+          git add data/deals.json
+          git diff --cached --quiet || git commit -m "update deals for dudes"
+          git push

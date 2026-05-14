@@ -77,7 +77,7 @@ function buildKeepaProductUrl(asins) {
     `&asin=${asins.join(",")}` +
     "&stats=90" +
     "&rating=1" +
-    "&images=1"
+    "&history=1"
   );
 }
 
@@ -171,23 +171,47 @@ function getSalesRank(product) {
   return rank;
 }
 
+function getImage(product) {
+  console.log(
+    "Product debug:",
+    product.asin,
+    {
+      keys: Object.keys(product),
+      imagesCSV: product.imagesCSV,
+      image: product.image,
+      images: product.images,
+      imageUrl: product.imageUrl
+    }
+  );
+
+  if (product.imagesCSV) {
+    return `https://images-na.ssl-images-amazon.com/images/I/${product.imagesCSV.split(",")[0]}`;
+  }
+
+  if (product.image) {
+    return product.image;
+  }
+
+  if (
+    Array.isArray(product.images) &&
+    product.images.length
+  ) {
+    return product.images[0];
+  }
+
+  if (product.imageUrl) {
+    return product.imageUrl;
+  }
+
+  return "";
+}
+
 function normalizeProduct(product, streamName) {
   const asin = product.asin || "";
 
   const price = getCurrentPrice(product);
   const avg90 = getAvg90(product);
   const rank = getSalesRank(product);
-
-  console.log(
-  "Image debug:",
-  product.asin,
-  {
-    imagesCSV: product.imagesCSV,
-    image: product.image,
-    images: product.images,
-    imageUrl: product.imageUrl
-  }
-);
 
   return {
     asin,
@@ -205,9 +229,7 @@ function normalizeProduct(product, streamName) {
 
     rank,
 
-    img: product.imagesCSV
-      ? `https://images-na.ssl-images-amazon.com/images/I/${product.imagesCSV.split(",")[0]}`
-      : "",
+    img: getImage(product),
 
     url: asin
       ? `https://www.amazon.com/dp/${asin}`

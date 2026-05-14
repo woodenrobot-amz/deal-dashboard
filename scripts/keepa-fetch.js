@@ -1,7 +1,10 @@
 const fs = require("fs");
 
 console.log("Starting script...");
+const fs = require("fs");
 
+console.log("data exists:", fs.existsSync("data"));
+console.log("data stats:", fs.existsSync("data") ? fs.statSync("data") : "missing");
 const output = {
   generatedAt: new Date().toISOString(),
   deals: [

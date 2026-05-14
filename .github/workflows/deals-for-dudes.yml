@@ -2,7 +2,7 @@ name: Keepa Deals For Dudes Stream
 
 on:
   schedule:
-    # Eastern daylight time schedule:
+    # Eastern daylight time:
     # 5:00 AM, 8:30 AM, 1:00 PM, 4:00 PM
     - cron: "0 9 * * *"
     - cron: "30 12 * * *"
@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -39,7 +41,7 @@ jobs:
         run: |
           git config user.name "keepa-bot"
           git config user.email "keepa-bot@users.noreply.github.com"
-          git pull --rebase origin main
           git add data/deals.json
           git diff --cached --quiet || git commit -m "update deals for dudes"
+          git pull --rebase origin main
           git push

@@ -126,10 +126,10 @@
                 // For now, we fetch from the primary source defined in your config
                 const fetchUrl = currentSourceKey === 'SAVED' ? CONFIG.SOURCES[Object.keys(CONFIG.SOURCES)[0]].url : CONFIG.SOURCES[currentSourceKey].url;
                 
-                const res = await fetch(`${fetchUrl}&cb=${Date.now()}`);
-                const data = await res.text();
-                const rows = data.split(/\r?\n/).slice(1);
-                
+                const res = await fetch("data/deals.json?v=" + Date.now());
+const json = await res.json();
+
+allDeals = json.deals || [];
                 allDeals = rows.map(row => {
                     const cols = row.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
                     if (cols.length < 13) return null;

@@ -80,7 +80,10 @@ const STREAMS = {
       "16412291"
     ],
 
-    sort: [["title", "asc"]],
+    sort: [
+  ["current_SALES", "asc"],
+  ["monthlySold", "desc"]
+],
 
     lastRatingUpdate_gte: 7953123,
 

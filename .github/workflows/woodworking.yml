@@ -35,11 +35,11 @@ jobs:
           KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
         run: node scripts/keepa-fetch.js woodworking
 
-      - name: Commit results
+           - name: Commit results
         run: |
           git config user.name "keepa-bot"
           git config user.email "keepa-bot@users.noreply.github.com"
-          git pull --rebase origin main
           git add data/deals.json
-          git diff --cached --quiet || git commit -m "update woodworking deals"
+          git diff --cached --quiet || git commit -m "update keepa deals"
+          git pull --rebase origin main
           git push

@@ -26,7 +26,6 @@ const STREAMS = [
       deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
       rootCategory: ["228013"],
       sort: [["title", "asc"]],
-      lastRatingUpdate_gte: 7951881,
       productType: [0, 1, 2],
       page: 0,
       perPage: 100

@@ -1,10 +1,10 @@
-const fs = require("fs");
-
 console.log("Starting script...");
+
 const fs = require("fs");
+const path = require("path");
 
 console.log("data exists:", fs.existsSync("data"));
-console.log("data stats:", fs.existsSync("data") ? fs.statSync("data") : "missing");
+
 const output = {
   generatedAt: new Date().toISOString(),
   deals: [
@@ -17,12 +17,7 @@ const output = {
   ]
 };
 
-// SAFE: ensure directory exists (no race condition possible)
-try {
-  fs.mkdirSync("data");
-} catch (e) {
-  if (e.code !== "EEXIST") throw e;
-}
+fs.mkdirSync("data", { recursive: true });
 
 fs.writeFileSync(
   "data/deals.json",

@@ -172,35 +172,23 @@ function getSalesRank(product) {
 }
 
 function getImage(product) {
-  console.log(
-    "Product debug:",
-    product.asin,
-    {
-      keys: Object.keys(product),
-      imagesCSV: product.imagesCSV,
-      image: product.image,
-      images: product.images,
-      imageUrl: product.imageUrl
-    }
-  );
-
   if (product.imagesCSV) {
     return `https://images-na.ssl-images-amazon.com/images/I/${product.imagesCSV.split(",")[0]}`;
-  }
-
-  if (product.image) {
-    return product.image;
   }
 
   if (
     Array.isArray(product.images) &&
     product.images.length
   ) {
-    return product.images[0];
-  }
+    const first = product.images[0];
 
-  if (product.imageUrl) {
-    return product.imageUrl;
+    if (first.l) {
+      return `https://images-na.ssl-images-amazon.com/images/I/${first.l}`;
+    }
+
+    if (first.m) {
+      return `https://images-na.ssl-images-amazon.com/images/I/${first.m}`;
+    }
   }
 
   return "";

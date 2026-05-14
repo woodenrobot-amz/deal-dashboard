@@ -14,8 +14,12 @@ const output = {
   ]
 };
 
-// write file directly (Node will NOT create missing folders automatically)
-fs.mkdirSync("data", { recursive: true }); // safe + idempotent ALWAYS
+// SAFE: ensure directory exists (no race condition possible)
+try {
+  fs.mkdirSync("data");
+} catch (e) {
+  if (e.code !== "EEXIST") throw e;
+}
 
 fs.writeFileSync(
   "data/deals.json",

@@ -1,0 +1,45 @@
+name: Keepa Woodworking Stream
+
+on:
+  schedule:
+    # Eastern daylight time schedule:
+    # 4:00 AM, 7:00 AM, 10:00 AM, 2:30 PM
+    - cron: "0 8 * * *"
+    - cron: "0 11 * * *"
+    - cron: "0 14 * * *"
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: keepa-stream-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run woodworking stream
+        env:
+          KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+        run: node scripts/keepa-fetch.js woodworking
+
+      - name: Commit results
+        run: |
+          git config user.name "keepa-bot"
+          git config user.email "keepa-bot@users.noreply.github.com"
+          git pull --rebase origin main
+          git add data/deals.json
+          git diff --cached --quiet || git commit -m "update woodworking deals"
+          git push

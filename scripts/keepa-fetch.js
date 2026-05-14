@@ -26,13 +26,19 @@ try {
     fs.unlinkSync("data");
   }
 } catch (err) {
-  // data doesn't exist, that's fine
-}
+      - name: Commit results
+        run: |
+          git config user.name "keepa-bot"
+          git config user.email "keepa-bot@users.noreply.github.com"
+          git add data/deals.json
+          git commit -m "daily keepa update" || echo "no changes"
 
-fs.mkdirSync("data", { recursive: true });
-
-fs.writeFileSync(
-  "data/deals.json",
+      - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+          git push
   JSON.stringify(output, null, 2)
 );
 

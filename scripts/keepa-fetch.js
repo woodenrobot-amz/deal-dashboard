@@ -87,7 +87,7 @@ const STREAMS = {
     page: 0,
     perPage: 2000
   }
-}
+},
 
   three_d_printing: {
     name: "three_d_printing",

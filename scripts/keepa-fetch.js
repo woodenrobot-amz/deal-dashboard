@@ -179,10 +179,15 @@ function normalizeProduct(product, streamName) {
   const rank = getSalesRank(product);
 
   console.log(
-    "Image debug:",
-    product.asin,
-    product.imagesCSV
-  );
+  "Image debug:",
+  product.asin,
+  {
+    imagesCSV: product.imagesCSV,
+    image: product.image,
+    images: product.images,
+    imageUrl: product.imageUrl
+  }
+);
 
   return {
     asin,

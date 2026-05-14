@@ -19,16 +19,24 @@ const STREAMS = [
         "553350", "553424", "8106310011", "2225055011", "553406",
         "15569906011", "553136", "553242", "552788"
       ],
+
+      rootCategory: ["228013"],
+
       current_SALES_gte: 1,
       current_SALES_lte: 400000,
       current_RATING_gte: 42,
       current_COUNT_REVIEWS_gte: 25,
+
+      // Keep this loose for now while testing.
       deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
-      rootCategory: ["228013"],
-      sort: [["title", "asc"]],
+
       productType: [0, 1, 2],
+      sort: [["title", "asc"]],
+
       page: 0,
-      perPage: 100
+
+      // Keep low for first real product-detail test to protect tokens.
+      perPage: 10
     }
   }
 ];
@@ -42,68 +50,100 @@ function buildKeepaQueryUrl(selection) {
   );
 }
 
+function buildKeepaProductUrl(asins) {
+  return (
+    "https://api.keepa.com/product" +
+    `?key=${KEEPA_API_KEY}` +
+    "&domain=1" +
+    `&asin=${asins.join(",")}` +
+    "&stats=90"
+  );
+}
+
+function getFirstValidPrice(values = []) {
+  const price = values.find(v => typeof v === "number" && v > 0);
+  return price ? price / 100 : null;
+}
+
 function getCurrentPrice(product) {
   const current = product.stats?.current || [];
 
-  // Try common Keepa price slots safely.
-  // Positive values are cents.
-  const candidates = [
+  return getFirstValidPrice([
+    current[10], // Buy Box shipping
     current[1],  // Amazon
     current[2],  // New
-    current[10], // Buy Box shipping
-    current[0]
-  ];
-
-  const price = candidates.find(v => typeof v === "number" && v > 0);
-
-  return price ? price / 100 : null;
+    current[0]   // Used as fallback
+  ]);
 }
 
 function getAvg90(product) {
   const avg90 = product.stats?.avg90 || [];
 
-  const candidates = [
-    avg90[1],
-    avg90[2],
-    avg90[10],
-    avg90[0]
-  ];
+  return getFirstValidPrice([
+    avg90[10], // Buy Box shipping
+    avg90[1],  // Amazon
+    avg90[2],  // New
+    avg90[0]   // Used as fallback
+  ]);
+}
 
-  const price = candidates.find(v => typeof v === "number" && v > 0);
+function getRating(product) {
+  const ratingRaw = product.stats?.current?.[16];
 
-  return price ? price / 100 : null;
+  if (typeof ratingRaw !== "number" || ratingRaw <= 0) {
+    return null;
+  }
+
+  return ratingRaw / 10;
+}
+
+function getReviewCount(product) {
+  const reviewCount = product.stats?.current?.[17];
+
+  if (typeof reviewCount !== "number" || reviewCount < 0) {
+    return null;
+  }
+
+  return reviewCount;
+}
+
+function getSalesRank(product) {
+  const rank = product.stats?.current?.[3];
+
+  if (typeof rank !== "number" || rank <= 0) {
+    return null;
+  }
+
+  return rank;
 }
 
 function normalizeProduct(product, streamName) {
+  const asin = product.asin || "";
   const price = getCurrentPrice(product);
   const avg90 = getAvg90(product);
-
-  const ratingRaw = product.stats?.current?.[16] || null;
-  const reviewCount = product.stats?.current?.[17] || null;
+  const rank = getSalesRank(product);
 
   return {
-    asin: product.asin || "",
+    asin,
     title: product.title || "",
     category: streamName,
 
     price,
     avg90,
-
-    rating: ratingRaw ? ratingRaw / 10 : null,
-    reviewCount,
-
-    rank: product.stats?.current?.[3] || null,
+    rating: getRating(product),
+    reviewCount: getReviewCount(product),
+    rank,
 
     img: product.imagesCSV
       ? `https://m.media-amazon.com/images/I/${product.imagesCSV.split(",")[0]}`
       : "",
 
-    url: `https://www.amazon.com/dp/${product.asin}`,
-    keepa: `https://keepa.com/#!product/1-${product.asin}`,
+    url: asin ? `https://www.amazon.com/dp/${asin}` : "",
+    keepa: asin ? `https://keepa.com/#!product/1-${asin}` : "",
 
     isLowAll: false,
     drop1Day: 0,
-    isHot: product.stats?.current?.[3] > 0 && product.stats.current[3] <= 5000,
+    isHot: rank !== null && rank <= 5000,
     isNameBrand: false
   };
 }
@@ -111,16 +151,40 @@ function normalizeProduct(product, streamName) {
 function scoreDeal(deal) {
   let score = 0;
 
-  if (deal.rating) score += deal.rating * 5;
+  if (deal.rating) {
+    score += deal.rating * 5;
+  }
 
   if (deal.price && deal.avg90 && deal.avg90 > deal.price) {
     const savingsPercent = ((deal.avg90 - deal.price) / deal.avg90) * 100;
     score += savingsPercent * 1.5;
   }
 
-  if (deal.isHot) score += 30;
+  if (deal.isHot) {
+    score += 30;
+  }
 
   return Math.floor(score);
+}
+
+async function fetchProductDetails(asins) {
+  if (!asins.length) return [];
+
+  console.log(`Fetching product details for ${asins.length} ASINs...`);
+
+  const url = buildKeepaProductUrl(asins);
+  const res = await fetch(url);
+  const data = await res.json();
+
+  if (data.error) {
+    throw new Error(`Keepa product error: ${JSON.stringify(data.error)}`);
+  }
+
+  console.log(
+    `Product lookup tokens consumed: ${data.tokensConsumed}, tokens left: ${data.tokensLeft}`
+  );
+
+  return data.products || [];
 }
 
 async function fetchStream(stream) {
@@ -131,19 +195,20 @@ async function fetchStream(stream) {
   const data = await res.json();
 
   if (data.error) {
-    throw new Error(`Keepa error for ${stream.name}: ${JSON.stringify(data.error)}`);
+    throw new Error(`Keepa query error for ${stream.name}: ${JSON.stringify(data.error)}`);
   }
 
-console.log("Keepa response keys:", Object.keys(data));
-console.log("Keepa response preview:", JSON.stringify(data, null, 2).slice(0, 2000));
+  const asinList = data.asinList || [];
 
-const products = data.products || [];
-const asinList = data.asinList || data.asins || [];
+  console.log(`${stream.name}: ${asinList.length} ASINs returned`);
+  console.log(
+    `${stream.name}: query tokens consumed ${data.tokensConsumed}, tokens left ${data.tokensLeft}`
+  );
 
-console.log(`${stream.name}: ${products.length} products returned`);
-console.log(`${stream.name}: ${asinList.length} ASINs returned`);
+  const products = await fetchProductDetails(asinList);
 
-  
+  console.log(`${stream.name}: ${products.length} product details returned`);
+
   return products
     .map(product => {
       const deal = normalizeProduct(product, stream.name);

@@ -14,11 +14,12 @@ const output = {
   ]
 };
 
-// SAFE folder creation (no crash possible)
-if (!fs.existsSync("data")) {
-  fs.mkdirSync("data", { recursive: true });
-}
+// write file directly (Node will NOT create missing folders automatically)
+fs.mkdirSync("data", { recursive: true }); // safe + idempotent ALWAYS
 
-fs.writeFileSync("data/deals.json", JSON.stringify(output, null, 2));
+fs.writeFileSync(
+  "data/deals.json",
+  JSON.stringify(output, null, 2)
+);
 
 console.log("Wrote deals.json successfully");

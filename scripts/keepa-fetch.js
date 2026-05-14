@@ -88,23 +88,31 @@ function getAvg90(product) {
 }
 
 function getRating(product) {
-  const ratingRaw = product.stats?.current?.[16];
-
-  if (typeof ratingRaw !== "number" || ratingRaw <= 0) {
-    return null;
+  if (typeof product.rating === "number" && product.rating > 0) {
+    return product.rating / 10;
   }
 
-  return ratingRaw / 10;
+  const ratingRaw = product.stats?.current?.[16];
+
+  if (typeof ratingRaw === "number" && ratingRaw > 0) {
+    return ratingRaw / 10;
+  }
+
+  return null;
 }
 
 function getReviewCount(product) {
-  const reviewCount = product.stats?.current?.[17];
-
-  if (typeof reviewCount !== "number" || reviewCount < 0) {
-    return null;
+  if (typeof product.reviewCount === "number" && product.reviewCount >= 0) {
+    return product.reviewCount;
   }
 
-  return reviewCount;
+  const reviewCount = product.stats?.current?.[17];
+
+  if (typeof reviewCount === "number" && reviewCount >= 0) {
+    return reviewCount;
+  }
+
+  return null;
 }
 
 function getSalesRank(product) {
@@ -134,9 +142,9 @@ function normalizeProduct(product, streamName) {
     reviewCount: getReviewCount(product),
     rank,
 
-    img: product.imagesCSV
-      ? `https://m.media-amazon.com/images/I/${product.imagesCSV.split(",")[0]}`
-      : "",
+   img: product.imagesCSV
+  ? `https://images-na.ssl-images-amazon.com/images/I/${product.imagesCSV.split(",")[0]}`
+  : "",
 
     url: asin ? `https://www.amazon.com/dp/${asin}` : "",
     keepa: asin ? `https://keepa.com/#!product/1-${asin}` : "",

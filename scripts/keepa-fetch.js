@@ -134,10 +134,16 @@ async function fetchStream(stream) {
     throw new Error(`Keepa error for ${stream.name}: ${JSON.stringify(data.error)}`);
   }
 
-  const products = data.products || [];
+console.log("Keepa response keys:", Object.keys(data));
+console.log("Keepa response preview:", JSON.stringify(data, null, 2).slice(0, 2000));
 
-  console.log(`${stream.name}: ${products.length} products returned`);
+const products = data.products || [];
+const asinList = data.asinList || data.asins || [];
 
+console.log(`${stream.name}: ${products.length} products returned`);
+console.log(`${stream.name}: ${asinList.length} ASINs returned`);
+
+  
   return products
     .map(product => {
       const deal = normalizeProduct(product, stream.name);

@@ -2,7 +2,8 @@ const fs = require("fs");
 
 const KEEPA_API_KEY = process.env.KEEPA_API_KEY;
 const STREAM_NAME = process.argv[2];
-const TOKEN_FLOOR = 100;
+const TOKEN_FLOOR = 65;
+const MAX_DEAL_AGE_HOURS = 48;
 
 if (!KEEPA_API_KEY) throw new Error("Missing KEEPA_API_KEY");
 if (!STREAM_NAME) throw new Error("Missing stream argument");
@@ -303,9 +304,25 @@ async function run() {
     .filter(d => d.asin && d.title && d.price);
 
   const existingDeals = readExistingDeals();
-  const mergedDeals = dedupeDeals([...existingDeals, ...newDeals]);
 
-  fs.mkdirSync("data", { recursive: true });
+let mergedDeals = dedupeDeals([
+  ...existingDeals,
+  ...newDeals
+]);
+
+// Remove stale deals
+const cutoff =
+  Date.now() - (MAX_DEAL_AGE_HOURS * 60 * 60 * 1000);
+
+mergedDeals = mergedDeals.filter(deal => {
+  if (!deal.updatedAt) return false;
+
+  return (
+    new Date(deal.updatedAt).getTime() > cutoff
+  );
+});
+
+fs.mkdirSync("data", { recursive: true });
 
   fs.writeFileSync(
     "data/deals.json",

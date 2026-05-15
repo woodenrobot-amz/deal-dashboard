@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,349 +16,368 @@
       --danger-bg: rgba(239, 68, 68, 0.12);
       --good: #22c55e;
       --shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
-    }
+    }* {
+  box-sizing: border-box;
+}
 
-    * {
-      box-sizing: border-box;
-    }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
 
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(15, 17, 21, 0.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 14px 10px;
+}
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      background: rgba(15, 17, 21, 0.94);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      padding: 14px 14px 10px;
-    }
+.top-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
 
-    .top-row {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 12px;
-    }
+h1 {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
 
-    h1 {
-      margin: 0;
-      font-size: 1.1rem;
-      letter-spacing: 0.02em;
-    }
+.deal-count {
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
 
-    .deal-count {
-      color: var(--muted);
-      font-size: 0.85rem;
-      white-space: nowrap;
-    }
+.search-wrap {
+  position: relative;
+  width: 100%;
+}
 
-    .search-wrap {
-      position: relative;
-      width: 100%;
-    }
+#searchInput {
+  width: 100%;
+  padding: 12px 42px 12px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  outline: none;
+  font-size: 1rem;
+}
 
-    #searchInput {
-      width: 100%;
-      padding: 12px 42px 12px 14px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: var(--panel);
-      color: var(--text);
-      outline: none;
-      font-size: 1rem;
-    }
+#searchInput:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.16);
+}
 
-    #searchInput:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.16);
-    }
+#clearSearchBtn {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--panel-2);
+  color: var(--muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: none;
+  line-height: 1;
+}
 
-    #clearSearchBtn {
-      position: absolute;
-      right: 7px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 30px;
-      height: 30px;
-      border: 0;
-      border-radius: 999px;
-      background: var(--panel-2);
-      color: var(--muted);
-      font-size: 1.1rem;
-      cursor: pointer;
-      display: none;
-      line-height: 1;
-    }
+#clearSearchBtn:hover {
+  color: var(--text);
+  background: #2a3140;
+}
 
-    #clearSearchBtn:hover {
-      color: var(--text);
-      background: #2a3140;
-    }
+.filter-section {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
 
-    .filter-section {
-      margin-top: 12px;
-      display: flex;
-      gap: 8px;
-      overflow-x: auto;
-      padding-bottom: 4px;
-      scrollbar-width: none;
-    }
+.filter-section::-webkit-scrollbar {
+  display: none;
+}
 
-    .filter-section::-webkit-scrollbar {
-      display: none;
-    }
+.tag-pill {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--muted);
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 0.88rem;
+}
 
-    .tag-pill {
-      border: 1px solid var(--border);
-      background: var(--panel);
-      color: var(--muted);
-      padding: 8px 12px;
-      border-radius: 999px;
-      cursor: pointer;
-      white-space: nowrap;
-      font-size: 0.88rem;
-    }
+.tag-pill.active {
+  background: var(--accent);
+  color: #16100a;
+  border-color: var(--accent);
+  font-weight: 700;
+}
 
-    .tag-pill.active {
-      background: var(--accent);
-      color: #16100a;
-      border-color: var(--accent);
-      font-weight: 700;
-    }
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 16px 14px 90px;
+}
 
-    main {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 16px 14px 90px;
-    }
+.toolbar {
+  position: sticky;
+  top: 132px;
+  z-index: 12;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin: -4px 0 12px;
+  padding: 8px 0;
+  background: rgba(15, 17, 21, 0.94);
+  backdrop-filter: blur(10px);
+  color: var(--muted);
+  font-size: 0.86rem;
+}
 
-    .toolbar {
-      position: sticky;
-      top: 132px;
-      z-index: 12;
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      align-items: center;
-      margin: -4px 0 12px;
-      padding: 8px 0;
-      background: rgba(15, 17, 21, 0.94);
-      backdrop-filter: blur(10px);
-      color: var(--muted);
-      font-size: 0.86rem;
-    }
+.toolbar-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
 
-    .toolbar button {
-      border: 1px solid var(--border);
-      color: var(--muted);
-      background: var(--panel);
-      border-radius: 999px;
-      padding: 8px 11px;
-      cursor: pointer;
-      white-space: nowrap;
-    }
+.toolbar button {
+  border: 1px solid var(--border);
+  color: var(--muted);
+  background: var(--panel);
+  border-radius: 999px;
+  padding: 8px 11px;
+  cursor: pointer;
+  white-space: nowrap;
+}
 
-    .toolbar button:hover {
-      color: var(--text);
-    }
+.toolbar button:hover {
+  color: var(--text);
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 14px;
-    }
+.toolbar button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #16100a;
+  font-weight: 800;
+}
 
-    .deal-card {
-      position: relative;
-      border: 1px solid var(--border);
-      background: var(--panel);
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 14px;
+}
 
-    .deal-card.hidden-local {
-      display: none;
-    }
+.deal-card {
+  position: relative;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
 
-    .image-wrap {
-      aspect-ratio: 4 / 3;
-      background: #fff;
-      display: grid;
-      place-items: center;
-      padding: 12px;
-      max-height: 205px;
-      overflow: hidden;
-    }
+.deal-card.hidden-local {
+  display: none;
+}
 
-    .image-wrap img {
-      display: block;
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-      object-position: center;
-      margin: auto;
-    }
+.image-wrap {
+  aspect-ratio: 4 / 3;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  max-height: 205px;
+  overflow: hidden;
+}
 
-    .card-body {
-      padding: 12px;
-    }
+.image-wrap img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  margin: auto;
+}
 
-    .title {
-      margin: 0 0 8px;
-      font-size: 0.96rem;
-      line-height: 1.25;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      min-height: 3.6em;
-    }
+.card-body {
+  padding: 12px;
+}
 
-    .meta-row {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 8px;
-    }
+.title {
+  margin: 0 0 8px;
+  font-size: 0.96rem;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 3.6em;
+}
 
-    .price-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 1px;
-    }
+.meta-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
 
-    .price {
-      color: var(--good);
-      font-size: 1.2rem;
-      font-weight: 800;
-    }
+.price-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
 
-    .avg-price {
-      color: var(--muted);
-      font-size: 0.82rem;
-      text-decoration: line-through;
-      text-decoration-thickness: 1.5px;
-    }
+.price {
+  color: var(--good);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
 
-    .asin {
-      color: var(--muted);
-      font-size: 0.75rem;
-    }
+.avg-price {
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+}
 
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin: 9px 0 12px;
-    }
+.asin {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
 
-    .mini-tag {
-      background: var(--panel-2);
-      border: 1px solid var(--border);
-      color: var(--muted);
-      border-radius: 999px;
-      padding: 4px 8px;
-      font-size: 0.74rem;
-    }
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 9px 0 12px;
+}
 
-    .actions {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
-      align-items: stretch;
-    }
+.mini-tag {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 0.74rem;
+}
 
-    .actions a,
-    .actions button {
-      width: 100%;
-      min-height: 42px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      padding: 9px 10px;
-      font-weight: 700;
-      cursor: pointer;
-      text-decoration: none;
-      font-size: 0.84rem;
-      line-height: 1.15;
-    }
+.actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  align-items: stretch;
+}
 
-    .buy-btn {
-      color: #17110a;
-      background: var(--accent);
-      border-color: var(--accent) !important;
-    }
+.actions a,
+.actions button {
+  width: 100%;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 9px 10px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.84rem;
+  line-height: 1.15;
+}
 
-    .copy-btn,
-    .hide-btn {
-      background: var(--panel-2);
-      color: var(--text);
-    }
+.buy-btn {
+  color: #17110a;
+  background: var(--accent);
+  border-color: var(--accent) !important;
+}
 
-    .junk-btn {
-      background: var(--danger-bg);
-      color: #fecaca;
-      border-color: rgba(239, 68, 68, 0.35) !important;
-    }
+.copy-btn,
+.bookmark-btn,
+.hide-btn {
+  background: var(--panel-2);
+  color: var(--text);
+}
 
-    .empty-state {
-      border: 1px dashed var(--border);
-      border-radius: 18px;
-      color: var(--muted);
-      padding: 32px 18px;
-      text-align: center;
-      background: rgba(255,255,255,0.02);
-    }
+.bookmark-btn.active {
+  background: rgba(245, 158, 11, 0.16);
+  border-color: rgba(245, 158, 11, 0.65) !important;
+  color: #fbbf24;
+}
 
-    .toast {
-      position: fixed;
-      left: 50%;
-      bottom: 18px;
-      transform: translateX(-50%);
-      background: #111827;
-      color: var(--text);
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 10px 14px;
-      box-shadow: var(--shadow);
-      z-index: 40;
-      display: none;
-      max-width: calc(100% - 28px);
-      text-align: center;
-      font-size: 0.9rem;
-    }
+.junk-btn {
+  background: var(--danger-bg);
+  color: #fecaca;
+  border-color: rgba(239, 68, 68, 0.35) !important;
+}
 
-    @media (min-width: 760px) {
-      header {
-        padding: 16px 22px 12px;
-      }
+.empty-state {
+  border: 1px dashed var(--border);
+  border-radius: 18px;
+  color: var(--muted);
+  padding: 32px 18px;
+  text-align: center;
+  background: rgba(255,255,255,0.02);
+}
 
-      main {
-        padding: 20px 22px 100px;
-      }
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  background: #111827;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 10px 14px;
+  box-shadow: var(--shadow);
+  z-index: 40;
+  display: none;
+  max-width: calc(100% - 28px);
+  text-align: center;
+  font-size: 0.9rem;
+}
 
-      h1 {
-        font-size: 1.35rem;
-      }
+@media (min-width: 760px) {
+  header {
+    padding: 16px 22px 12px;
+  }
 
-      .toolbar {
-        top: 142px;
-      }
-    }
+  main {
+    padding: 20px 22px 100px;
+  }
+
+  h1 {
+    font-size: 1.35rem;
+  }
+
+  .toolbar {
+    top: 142px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -367,29 +385,24 @@
     <div class="top-row">
       <h1>Wooden Robot Deals</h1>
       <div class="deal-count" id="dealCount">0 deals</div>
-    </div>
+    </div><div class="search-wrap">
+  <input id="searchInput" type="search" placeholder="Search deals, brands, ASINs..." autocomplete="off" />
+  <button id="clearSearchBtn" type="button" aria-label="Clear search">×</button>
+</div>
 
-    <div class="search-wrap">
-      <input id="searchInput" type="search" placeholder="Search deals, brands, ASINs..." autocomplete="off" />
-      <button id="clearSearchBtn" type="button" aria-label="Clear search">×</button>
-    </div>
+<div class="filter-section" id="tagFilters" aria-label="Filter by tag"></div>
 
-    <div class="filter-section" id="tagFilters" aria-label="Filter by tag"></div>
-  </header>
-
-  <main>
+  </header>  <main>
     <div class="toolbar">
       <span id="activeFilterLabel">Showing all tags</span>
-      <button id="showIgnoredBtn" type="button">Ignored ASINs</button>
-    </div>
+      <div class="toolbar-actions">
+        <button id="showBookmarksBtn" type="button">Bookmarks</button>
+        <button id="showIgnoredBtn" type="button">Ignored ASINs</button>
+      </div>
+    </div><section id="dealGrid" class="grid"></section>
+<section id="emptyState" class="empty-state" style="display:none;">No matching deals found.</section>
 
-    <section id="dealGrid" class="grid"></section>
-    <section id="emptyState" class="empty-state" style="display:none;">No matching deals found.</section>
-  </main>
-
-  <div id="toast" class="toast"></div>
-
-  <script>
+  </main>  <div id="toast" class="toast"></div>  <script>
     /********************************************************************
      * Wooden Robot PWA immediate UI improvements
      *
@@ -408,6 +421,7 @@
     const STORAGE_KEYS = {
       ignoredAsins: "woodenRobot.ignoredAsins.v1",
       hiddenAsins: "woodenRobot.hiddenAsins.v1",
+      bookmarkedAsins: "woodenRobot.bookmarkedAsins.v1",
       selectedTag: "woodenRobot.selectedTag.v1"
     };
 
@@ -415,8 +429,10 @@
       deals: [],
       search: "",
       selectedTag: localStorage.getItem(STORAGE_KEYS.selectedTag) || "All",
+      showBookmarksOnly: false,
       ignoredAsins: loadSet(STORAGE_KEYS.ignoredAsins),
-      hiddenAsins: loadSet(STORAGE_KEYS.hiddenAsins)
+      hiddenAsins: loadSet(STORAGE_KEYS.hiddenAsins),
+      bookmarkedAsins: loadSet(STORAGE_KEYS.bookmarkedAsins)
     };
 
     const els = {
@@ -428,6 +444,7 @@
       dealCount: document.getElementById("dealCount"),
       activeFilterLabel: document.getElementById("activeFilterLabel"),
       showIgnoredBtn: document.getElementById("showIgnoredBtn"),
+      showBookmarksBtn: document.getElementById("showBookmarksBtn"),
       toast: document.getElementById("toast")
     };
 
@@ -451,6 +468,11 @@
       });
 
       els.clearSearchBtn.addEventListener("click", clearSearch);
+
+      els.showBookmarksBtn.addEventListener("click", () => {
+        state.showBookmarksOnly = !state.showBookmarksOnly;
+        renderDeals();
+      });
 
       els.showIgnoredBtn.addEventListener("click", () => {
         const ignored = [...state.ignoredAsins];
@@ -617,9 +639,13 @@
       const visibleDeals = getVisibleDeals();
 
       els.dealCount.textContent = `${visibleDeals.length} ${visibleDeals.length === 1 ? "deal" : "deals"}`;
-      els.activeFilterLabel.textContent = state.selectedTag === "All"
+      els.showBookmarksBtn.classList.toggle("active", state.showBookmarksOnly);
+      const filterText = state.selectedTag === "All"
         ? "Showing all tags"
         : `Filtered by ${state.selectedTag}`;
+      els.activeFilterLabel.textContent = state.showBookmarksOnly
+        ? `${filterText} · Bookmarks only`
+        : filterText;
 
       els.emptyState.style.display = visibleDeals.length ? "none" : "block";
       els.dealGrid.innerHTML = visibleDeals.map(renderDealCard).join("");
@@ -631,6 +657,7 @@
       return state.deals.filter(deal => {
         if (state.ignoredAsins.has(deal.asin)) return false;
         if (state.hiddenAsins.has(deal.asin)) return false;
+        if (state.showBookmarksOnly && !state.bookmarkedAsins.has(deal.asin)) return false;
 
         const matchesTag = state.selectedTag === "All" || deal.tags.includes(state.selectedTag);
         if (!matchesTag) return false;
@@ -653,6 +680,9 @@
       const avg90 = shouldShowAvg90(deal.price, deal.avg90)
         ? `<div class="avg-price" title="90-day average">90-day avg ${formatPrice(deal.avg90)}</div>`
         : "";
+      const isBookmarked = state.bookmarkedAsins.has(deal.asin);
+      const bookmarkLabel = isBookmarked ? "Bookmarked" : "Bookmark";
+      const bookmarkClass = isBookmarked ? "bookmark-btn active" : "bookmark-btn";
       const img = deal.image
         ? `<img src="${escapeHtml(deal.image)}" alt="${escapeHtml(deal.title)}" loading="lazy" />`
         : `<span style="color:#111;">No image</span>`;
@@ -675,6 +705,7 @@
             <div class="actions">
               <a class="buy-btn" href="${escapeHtml(deal.url)}" target="_blank" rel="noopener noreferrer">Amazon</a>
               <button class="copy-btn" type="button" data-action="copy" data-asin="${escapeHtml(deal.asin)}">Copy ASIN</button>
+              <button class="${bookmarkClass}" type="button" data-action="bookmark" data-asin="${escapeHtml(deal.asin)}">${bookmarkLabel}</button>
               <button class="hide-btn" type="button" data-action="hide" data-asin="${escapeHtml(deal.asin)}">Hide</button>
               <button class="junk-btn" type="button" data-action="junk" data-asin="${escapeHtml(deal.asin)}">Ignore ASIN</button>
             </div>
@@ -689,6 +720,21 @@
           const asin = button.dataset.asin;
           await copyToClipboard(asin);
           showToast(`Copied ${asin}`);
+        });
+      });
+
+      els.dealGrid.querySelectorAll("[data-action='bookmark']").forEach(button => {
+        button.addEventListener("click", () => {
+          const asin = button.dataset.asin;
+          if (state.bookmarkedAsins.has(asin)) {
+            state.bookmarkedAsins.delete(asin);
+            showToast(`Removed ${asin} from bookmarks.`);
+          } else {
+            state.bookmarkedAsins.add(asin);
+            showToast(`Bookmarked ${asin}.`);
+          }
+          saveSet(STORAGE_KEYS.bookmarkedAsins, state.bookmarkedAsins);
+          renderDeals();
         });
       });
 
@@ -713,106 +759,7 @@
 
           state.ignoredAsins.add(asin);
           state.hiddenAsins.delete(asin);
+          state.bookmarkedAsins.delete(asin);
           saveSet(STORAGE_KEYS.ignoredAsins, state.ignoredAsins);
           saveSet(STORAGE_KEYS.hiddenAsins, state.hiddenAsins);
-          showToast(`${asin} added to ignored ASINs.`);
-          render();
-        });
-      });
-    }
-
-    function clearSearch() {
-      state.search = "";
-      els.searchInput.value = "";
-      els.clearSearchBtn.style.display = "none";
-      els.searchInput.focus();
-      renderDeals();
-    }
-
-    async function copyToClipboard(text) {
-      if (navigator.clipboard && window.isSecureContext) {
-        return navigator.clipboard.writeText(text);
-      }
-
-      const textarea = document.createElement("textarea");
-      textarea.value = text;
-      textarea.style.position = "fixed";
-      textarea.style.left = "-9999px";
-      document.body.appendChild(textarea);
-      textarea.focus();
-      textarea.select();
-      document.execCommand("copy");
-      textarea.remove();
-    }
-
-    function firstValidNumber(...values) {
-      for (const value of values) {
-        if (value === null || value === undefined || value === "") continue;
-
-        if (Array.isArray(value)) {
-          const firstArrayValue = firstValidNumber(...value);
-          if (firstArrayValue !== null) return firstArrayValue;
-          continue;
-        }
-
-        const numeric = Number(value);
-        if (Number.isFinite(numeric) && numeric > 0) return numeric;
-      }
-
-      return null;
-    }
-
-    function shouldShowAvg90(price, avg90) {
-      if (!Number.isFinite(Number(price)) || !Number.isFinite(Number(avg90))) return false;
-      return Number(avg90) > Number(price);
-    }
-
-    function loadSet(key) {
-      try {
-        return new Set(JSON.parse(localStorage.getItem(key) || "[]"));
-      } catch {
-        return new Set();
-      }
-    }
-
-    function saveSet(key, set) {
-      localStorage.setItem(key, JSON.stringify([...set]));
-    }
-
-    function formatPrice(value) {
-      if (value === null || value === undefined || value === "") return "See deal";
-
-      const numeric = Number(value);
-      if (Number.isNaN(numeric)) return String(value);
-
-      return numeric.toLocaleString("en-US", {
-        style: "currency",
-        currency: "USD"
-      });
-    }
-
-    function asinToAmazonUrl(asin) {
-      return asin ? `https://www.amazon.com/dp/${encodeURIComponent(asin)}` : "#";
-    }
-
-    function escapeHtml(value) {
-      return String(value ?? "")
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;");
-    }
-
-    let toastTimeout;
-    function showToast(message) {
-      clearTimeout(toastTimeout);
-      els.toast.textContent = message;
-      els.toast.style.display = "block";
-      toastTimeout = setTimeout(() => {
-        els.toast.style.display = "none";
-      }, 2600);
-    }
-  </script>
-</body>
-</html>
+          saveSet(STORAGE_KEYS.bookmarkedAsins, state.bookmarkedAsins)

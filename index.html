@@ -1,460 +1,699 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>WR Deal Command</title>
-
-  <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#2563eb" />
-
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js");
-    }
-  </script>
-
-  <script src="config.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wooden Robot Deals</title>
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+    :root {
+      --bg: #0f1115;
+      --panel: #171a21;
+      --panel-2: #1f2430;
+      --text: #f2f4f8;
+      --muted: #9aa4b2;
+      --border: #2b3240;
+      --accent: #f59e0b;
+      --danger: #ef4444;
+      --danger-bg: rgba(239, 68, 68, 0.12);
+      --good: #22c55e;
+      --shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    }* {
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: "Inter", sans-serif;
-      -webkit-tap-highlight-color: transparent;
-      overflow-x: hidden;
-    }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
 
-    .loader-container {
-      display: flex;
-      gap: 10px;
-    }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(15, 17, 21, 0.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 14px 10px;
+}
 
-    .dot {
-      width: 12px;
-      height: 12px;
-      background-color: #3b82f6;
-      border-radius: 50%;
-      animation: pulse 1.2s infinite ease-in-out;
-    }
+.top-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
 
-    .dot:nth-child(2) {
-      animation-delay: 0.2s;
-      background-color: #60a5fa;
-    }
+h1 {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
 
-    .dot:nth-child(3) {
-      animation-delay: 0.4s;
-      background-color: #93c5fd;
-    }
+.deal-count {
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
 
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(0.5);
-        opacity: 0.3;
-      }
-      50% {
-        transform: scale(1.2);
-        opacity: 1;
-      }
-    }
+.search-wrap {
+  position: relative;
+  width: 100%;
+}
 
-    .deal-card {
-      transition: all 0.2s ease-in-out;
-    }
+#searchInput {
+  width: 100%;
+  padding: 12px 42px 12px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  outline: none;
+  font-size: 1rem;
+}
 
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
+#searchInput:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.16);
+}
 
-    .hot-glow {
-      box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
-      border-color: #f87171 !important;
-    }
+#clearSearchBtn {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--panel-2);
+  color: var(--muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: none;
+  line-height: 1;
+}
 
-    .bg-keepa {
-      background-color: #0099cc;
-    }
+#clearSearchBtn:hover {
+  color: var(--text);
+  background: #2a3140;
+}
+
+.filter-section {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+
+.filter-section::-webkit-scrollbar {
+  display: none;
+}
+
+.tag-pill {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--muted);
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 0.88rem;
+}
+
+.tag-pill.active {
+  background: var(--accent);
+  color: #16100a;
+  border-color: var(--accent);
+  font-weight: 700;
+}
+
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 16px 14px 90px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.toolbar button {
+  border: 1px solid var(--border);
+  color: var(--muted);
+  background: var(--panel);
+  border-radius: 999px;
+  padding: 8px 11px;
+  cursor: pointer;
+}
+
+.toolbar button:hover {
+  color: var(--text);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 14px;
+}
+
+.deal-card {
+  position: relative;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.deal-card.hidden-local {
+  display: none;
+}
+
+.image-wrap {
+  aspect-ratio: 1 / 1;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+.image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-body {
+  padding: 12px;
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 0.96rem;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 3.6em;
+}
+
+.meta-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.price {
+  color: var(--good);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.asin {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 9px 0 12px;
+}
+
+.mini-tag {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 0.74rem;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.actions a,
+.actions button {
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 9px 10px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.86rem;
+}
+
+.buy-btn {
+  color: #17110a;
+  background: var(--accent);
+  border-color: var(--accent) !important;
+}
+
+.hide-btn {
+  background: var(--panel-2);
+  color: var(--text);
+}
+
+.junk-btn {
+  grid-column: 1 / -1;
+  background: var(--danger-bg);
+  color: #fecaca;
+  border-color: rgba(239, 68, 68, 0.35) !important;
+}
+
+.empty-state {
+  border: 1px dashed var(--border);
+  border-radius: 18px;
+  color: var(--muted);
+  padding: 32px 18px;
+  text-align: center;
+  background: rgba(255,255,255,0.02);
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  background: #111827;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 10px 14px;
+  box-shadow: var(--shadow);
+  z-index: 40;
+  display: none;
+  max-width: calc(100% - 28px);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 760px) {
+  header {
+    padding: 16px 22px 12px;
+  }
+
+  main {
+    padding: 20px 22px 100px;
+  }
+
+  h1 {
+    font-size: 1.35rem;
+  }
+}
+
   </style>
 </head>
+<body>
+  <header>
+    <div class="top-row">
+      <h1>Wooden Robot Deals</h1>
+      <div class="deal-count" id="dealCount">0 deals</div>
+    </div><div class="search-wrap">
+  <input id="searchInput" type="search" placeholder="Search deals, brands, ASINs..." autocomplete="off" />
+  <button id="clearSearchBtn" type="button" aria-label="Clear search">×</button>
+</div>
 
-<body class="bg-slate-100 min-h-screen pb-10">
+<div class="filter-section" id="tagFilters" aria-label="Filter by tag"></div>
 
-  <div id="loading-screen" class="fixed inset-0 z-[100] bg-slate-950 flex flex-col items-center justify-center transition-opacity duration-500">
-    <div class="loader-container mb-6">
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div>
-    <h2 class="text-white font-black italic text-xl tracking-tighter uppercase">WR Command</h2>
-  </div>
+  </header>  <main>
+    <div class="toolbar">
+      <span id="activeFilterLabel">Showing all tags</span>
+      <button id="showIgnoredBtn" type="button">Ignored ASINs</button>
+    </div><section id="dealGrid" class="grid"></section>
+<section id="emptyState" class="empty-state" style="display:none;">No matching deals found.</section>
 
-  <nav class="sticky top-0 z-50 bg-slate-900 text-white shadow-2xl border-b-4 border-blue-600 px-4 py-4">
-    <div class="max-w-[1800px] mx-auto flex flex-col gap-4">
-      <div class="flex justify-between items-center">
-        <div class="flex items-center gap-3">
-          <div class="bg-blue-600 px-2 py-1 rounded-lg font-black italic text-xl">WR</div>
-          <h1 class="text-lg font-black uppercase italic tracking-tighter">Deal Command</h1>
-        </div>
-        <p id="deal-count" class="text-sm font-black text-blue-300 uppercase bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">...</p>
-      </div>
+  </main>  <div id="toast" class="toast"></div>  <script>
+    /********************************************************************
+     * Wooden Robot PWA immediate UI improvements
+     *
+     * Adds:
+     * 1. Quick-clear search button
+     * 2. Hide card locally
+     * 3. Mark ASIN as junk/ignored so it won't display again
+     * 4. Restores filtering by tags instead of deal streams
+     * 5. Normalizes Three D Printing -> 3D Printing
+     *
+     * Data expectations:
+     * window.DEALS can be injected before this script, or deals can be
+     * loaded from ./data/deals.json.
+     ********************************************************************/
 
-      <div id="source-tabs" class="flex gap-2 overflow-x-auto pb-1 no-scrollbar -mx-4 px-4"></div>
+    const STORAGE_KEYS = {
+      ignoredAsins: "woodenRobot.ignoredAsins.v1",
+      hiddenAsins: "woodenRobot.hiddenAsins.v1",
+      selectedTag: "woodenRobot.selectedTag.v1"
+    };
 
-      <div class="flex gap-2">
-        <input
-          type="text"
-          id="searchBox"
-          onkeyup="filterAndSort()"
-          placeholder="Search..."
-          class="flex-grow bg-slate-800 border-2 border-slate-700 rounded-xl px-4 py-2 text-white outline-none focus:border-blue-500"
-        />
+    const state = {
+      deals: [],
+      search: "",
+      selectedTag: localStorage.getItem(STORAGE_KEYS.selectedTag) || "All",
+      ignoredAsins: loadSet(STORAGE_KEYS.ignoredAsins),
+      hiddenAsins: loadSet(STORAGE_KEYS.hiddenAsins)
+    };
 
-        <select id="tagFilter" onchange="filterAndSort()" class="bg-slate-800 border-2 border-slate-700 rounded-xl px-2 py-2 text-yellow-500 outline-none font-bold text-sm">
-          <option value="All">All</option>
-          <option value="Brand">★ Brands</option>
-          <option value="Hot">🔥 Hot</option>
-          <option value="Saved">★ Saved</option>
-          <option value="Excellent">✅ Excellent</option>
-          <option value="Good">👍 Good</option>
-          <option value="Junk">🗑️ Junk</option>
-          <option value="Untagged">Untagged</option>
-        </select>
-      </div>
+    const els = {
+      searchInput: document.getElementById("searchInput"),
+      clearSearchBtn: document.getElementById("clearSearchBtn"),
+      tagFilters: document.getElementById("tagFilters"),
+      dealGrid: document.getElementById("dealGrid"),
+      emptyState: document.getElementById("emptyState"),
+      dealCount: document.getElementById("dealCount"),
+      activeFilterLabel: document.getElementById("activeFilterLabel"),
+      showIgnoredBtn: document.getElementById("showIgnoredBtn"),
+      toast: document.getElementById("toast")
+    };
 
-      <div class="flex gap-2">
-        <select id="sortSelect" onchange="filterAndSort()" class="flex-1 bg-slate-800 border-2 border-slate-700 rounded-xl px-2 py-2 font-bold text-white outline-none text-xs">
-          <option value="score">Score</option>
-          <option value="priceLow">Price: L to H</option>
-          <option value="priceHigh">Price: H to L</option>
-          <option value="rank">BSR</option>
-          <option value="rating">Rating</option>
-          <option value="reviews">Reviews</option>
-        </select>
+    init();
 
-        <select id="subCatSelect" onchange="filterAndSort()" class="flex-1 max-w-[170px] bg-slate-800 border-2 border-slate-700 rounded-xl px-2 py-2 text-white outline-none text-xs truncate">
-          <option value="All">All Streams</option>
-        </select>
-      </div>
-    </div>
-  </nav>
-
-  <main class="max-w-[1800px] mx-auto px-4 mt-6">
-    <div id="deal-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6"></div>
-  </main>
-
-  <script>
-    let allDeals = [];
-    let nameBrands = [];
-    let currentSourceKey = "All";
-
-    const cleanStr = value => String(value || "").replace(/["]/g, "").trim();
-
-    function money(value) {
-      const num = Number(value);
-      return Number.isFinite(num) && num > 0 ? `$${num.toFixed(2)}` : "N/A";
+    async function init() {
+      bindEvents();
+      state.deals = normalizeDeals(await getDeals());
+      render();
     }
 
-    function safeNumber(value, fallback = 0) {
-      const num = Number(value);
-      return Number.isFinite(num) ? num : fallback;
-    }
+    function bindEvents() {
+      els.searchInput.addEventListener("input", event => {
+        state.search = event.target.value.trim().toLowerCase();
+        els.clearSearchBtn.style.display = state.search ? "block" : "none";
+        renderDeals();
+      });
 
-    function getSavedDeals() {
-      return JSON.parse(localStorage.getItem("mySavedDeals")) || [];
-    }
+      els.searchInput.addEventListener("keydown", event => {
+        if (event.key === "Escape") clearSearch();
+      });
 
-    function getDealTags() {
-      return JSON.parse(localStorage.getItem("dealTags")) || {};
-    }
+      els.clearSearchBtn.addEventListener("click", clearSearch);
 
-    function setDealTag(asin, tag) {
-      const tags = getDealTags();
+      els.showIgnoredBtn.addEventListener("click", () => {
+        const ignored = [...state.ignoredAsins];
+        if (!ignored.length) {
+          showToast("No ignored ASINs yet.");
+          return;
+        }
 
-      if (tag === "none") {
-        delete tags[asin];
-      } else {
-        tags[asin] = tag;
-      }
+        const restore = confirm(
+          `Ignored ASINs:\n\n${ignored.join("\n")}\n\nRestore all ignored ASINs?`
+        );
 
-      localStorage.setItem("dealTags", JSON.stringify(tags));
-      filterAndSort();
-    }
-
-    function toggleBookmark(asin) {
-      let saved = getSavedDeals();
-
-      if (saved.includes(asin)) {
-        saved = saved.filter(id => id !== asin);
-      } else {
-        saved.push(asin);
-      }
-
-      localStorage.setItem("mySavedDeals", JSON.stringify(saved));
-      filterAndSort();
-    }
-
-    function copyText(text, btn) {
-      navigator.clipboard.writeText(text).then(() => {
-        const old = btn.innerText;
-        btn.innerText = "COPIED!";
-        setTimeout(() => btn.innerText = old, 1000);
+        if (restore) {
+          state.ignoredAsins.clear();
+          saveSet(STORAGE_KEYS.ignoredAsins, state.ignoredAsins);
+          showToast("Ignored ASIN list cleared.");
+          render();
+        }
       });
     }
 
-    function buildAffiliateUrl(asin) {
-      return `https://www.amazon.com/dp/${asin}/?tag=${CONFIG.AFFILIATE_TAG}`;
-    }
-
-    async function loadBrandList() {
-      if (!CONFIG.BRAND_LIST_URL) return [];
+    async function getDeals() {
+      if (Array.isArray(window.DEALS)) return window.DEALS;
 
       try {
-        const res = await fetch(`${CONFIG.BRAND_LIST_URL}&cb=${Date.now()}`);
-        const text = await res.text();
+        const response = await fetch("./data/deals.json", { cache: "no-store" });
+        if (!response.ok) throw new Error(`Failed to fetch deals: ${response.status}`);
+        const data = await response.json();
 
-        return text
-          .split(/\r?\n/)
-          .map(b => b.trim())
-          .filter(Boolean);
-      } catch (err) {
-        console.warn("Brand list failed to load:", err);
+        if (Array.isArray(data)) return data;
+        if (Array.isArray(data.deals)) return data.deals;
+        return [];
+      } catch (error) {
+        console.error(error);
+        showToast("Could not load deals.json");
         return [];
       }
     }
 
-    function enrichDeals(deals) {
-      return deals.map(d => {
-        const title = cleanStr(d.title);
-        const asin = cleanStr(d.asin);
-        const category = cleanStr(d.category || "uncategorized");
+    function normalizeDeals(deals) {
+      return deals
+        .filter(Boolean)
+        .map(deal => {
+          const asin = String(deal.asin || deal.ASIN || "").trim();
+          const tags = normalizeTags(deal.tags || deal.tag || deal.categories || deal.category || []);
 
-        const isNameBrand = nameBrands.some(
-          b => title.toLowerCase().includes(b.toLowerCase())
-        );
+          return {
+            ...deal,
+            asin,
+            title: deal.title || deal.name || "Untitled deal",
+            price: deal.price ?? deal.currentPrice ?? deal.buyBoxPrice ?? null,
+            image: deal.image || deal.imageUrl || deal.img || "",
+            url: deal.url || deal.amazonUrl || deal.link || asinToAmazonUrl(asin),
+            brand: deal.brand || "",
+            tags
+          };
+        })
+        .filter(deal => deal.asin);
+    }
 
-        return {
-          ...d,
-          asin,
-          title,
-          category,
-          price: safeNumber(d.price, 0),
-          avg90: safeNumber(d.avg90, 0),
-          rating: safeNumber(d.rating, 0),
-          reviewCount: safeNumber(d.reviewCount, 0),
-          rank: safeNumber(d.rank, 999999),
-          dealScore: safeNumber(d.dealScore, 0),
-          img: cleanStr(d.img),
-          keepa: cleanStr(d.keepa),
-          isHot: Boolean(d.isHot),
-          isLowAll: Boolean(d.isLowAll),
-          isNameBrand
-        };
+    function normalizeTags(value) {
+      let tags;
+
+      if (Array.isArray(value)) {
+        tags = value;
+      } else if (typeof value === "string") {
+        tags = value.split(/[|,]/g);
+      } else {
+        tags = [];
+      }
+
+      return tags
+        .map(tag => String(tag).trim())
+        .filter(Boolean)
+        .map(prettyTagName)
+        .filter(uniqueOnly);
+    }
+
+    function prettyTagName(tag) {
+      const normalized = tag.toLowerCase().replace(/[\s_-]+/g, " ").trim();
+
+      const aliases = {
+        "three d printing": "3D Printing",
+        "3 d printing": "3D Printing",
+        "3d printing": "3D Printing",
+        "edc": "EDC",
+        "diy": "DIY"
+      };
+
+      if (aliases[normalized]) return aliases[normalized];
+
+      return normalized.replace(/\b\w/g, char => char.toUpperCase());
+    }
+
+    function uniqueOnly(value, index, array) {
+      return array.indexOf(value) === index;
+    }
+
+    function render() {
+      renderTagFilters();
+      renderDeals();
+    }
+
+    function renderTagFilters() {
+      const tags = getAllTags();
+
+      if (!tags.includes(state.selectedTag)) {
+        state.selectedTag = "All";
+        localStorage.setItem(STORAGE_KEYS.selectedTag, state.selectedTag);
+      }
+
+      els.tagFilters.innerHTML = tags
+        .map(tag => `
+          <button
+            type="button"
+            class="tag-pill ${tag === state.selectedTag ? "active" : ""}"
+            data-tag="${escapeHtml(tag)}"
+          >${escapeHtml(tag)}</button>
+        `)
+        .join("");
+
+      els.tagFilters.querySelectorAll(".tag-pill").forEach(button => {
+        button.addEventListener("click", () => {
+          state.selectedTag = button.dataset.tag;
+          localStorage.setItem(STORAGE_KEYS.selectedTag, state.selectedTag);
+          render();
+        });
       });
     }
 
-    function renderSourceTabs() {
-      const container = document.getElementById("source-tabs");
-      const streams = ["All", ...new Set(allDeals.map(d => d.category).filter(Boolean))];
+    function getAllTags() {
+      const tags = new Set(["All"]);
 
-      container.innerHTML = streams.map(stream => `
-        <button
-          onclick="switchSource('${stream}')"
-          class="whitespace-nowrap px-4 py-2 rounded-xl text-[10px] font-black uppercase ${
-            currentSourceKey === stream
-              ? "bg-blue-600 text-white"
-              : "bg-slate-800 text-slate-400"
-          }"
-        >
-          ${stream.replaceAll("_", " ").replaceAll(",", " + ")}
-        </button>
-      `).join("");
+      state.deals.forEach(deal => {
+        deal.tags.forEach(tag => tags.add(tag));
+      });
+
+      return [...tags].sort((a, b) => {
+        if (a === "All") return -1;
+        if (b === "All") return 1;
+        return a.localeCompare(b);
+      });
     }
 
-    function renderCategoryOptions() {
-      const select = document.getElementById("subCatSelect");
-      const categories = [...new Set(allDeals.map(d => d.category).filter(Boolean))];
+    function renderDeals() {
+      const visibleDeals = getVisibleDeals();
 
-      select.innerHTML = `
-        <option value="All">All Streams</option>
-        ${categories.map(cat => `<option value="${cat}">${cat.replaceAll("_", " ").replaceAll(",", " + ")}</option>`).join("")}
+      els.dealCount.textContent = `${visibleDeals.length} ${visibleDeals.length === 1 ? "deal" : "deals"}`;
+      els.activeFilterLabel.textContent = state.selectedTag === "All"
+        ? "Showing all tags"
+        : `Filtering by ${state.selectedTag}`;
+
+      els.emptyState.style.display = visibleDeals.length ? "none" : "block";
+      els.dealGrid.innerHTML = visibleDeals.map(renderDealCard).join("");
+
+      bindCardButtons();
+    }
+
+    function getVisibleDeals() {
+      return state.deals.filter(deal => {
+        if (state.ignoredAsins.has(deal.asin)) return false;
+        if (state.hiddenAsins.has(deal.asin)) return false;
+
+        const matchesTag = state.selectedTag === "All" || deal.tags.includes(state.selectedTag);
+        if (!matchesTag) return false;
+
+        if (!state.search) return true;
+
+        const haystack = [
+          deal.title,
+          deal.asin,
+          deal.brand,
+          ...(deal.tags || [])
+        ].join(" ").toLowerCase();
+
+        return haystack.includes(state.search);
+      });
+    }
+
+    function renderDealCard(deal) {
+      const price = formatPrice(deal.price);
+      const img = deal.image
+        ? `<img src="${escapeHtml(deal.image)}" alt="${escapeHtml(deal.title)}" loading="lazy" />`
+        : `<span style="color:#111;">No image</span>`;
+
+      return `
+        <article class="deal-card" data-asin="${escapeHtml(deal.asin)}">
+          <div class="image-wrap">${img}</div>
+          <div class="card-body">
+            <h2 class="title">${escapeHtml(deal.title)}</h2>
+            <div class="meta-row">
+              <div class="price">${price}</div>
+              <div class="asin">${escapeHtml(deal.asin)}</div>
+            </div>
+            <div class="tags">
+              ${(deal.tags || []).map(tag => `<span class="mini-tag">${escapeHtml(tag)}</span>`).join("")}
+            </div>
+            <div class="actions">
+              <a class="buy-btn" href="${escapeHtml(deal.url)}" target="_blank" rel="noopener noreferrer">Amazon</a>
+              <button class="hide-btn" type="button" data-action="hide" data-asin="${escapeHtml(deal.asin)}">Hide</button>
+              <button class="junk-btn" type="button" data-action="junk" data-asin="${escapeHtml(deal.asin)}">Junk Deal — Ignore ASIN</button>
+            </div>
+          </div>
+        </article>
       `;
     }
 
-    async function init() {
-      const loading = document.getElementById("loading-screen");
+    function bindCardButtons() {
+      els.dealGrid.querySelectorAll("[data-action='hide']").forEach(button => {
+        button.addEventListener("click", () => {
+          const asin = button.dataset.asin;
+          state.hiddenAsins.add(asin);
+          saveSet(STORAGE_KEYS.hiddenAsins, state.hiddenAsins);
+          showToast(`Hidden ${asin} for this browser.`);
+          renderDeals();
+        });
+      });
 
+      els.dealGrid.querySelectorAll("[data-action='junk']").forEach(button => {
+        button.addEventListener("click", () => {
+          const asin = button.dataset.asin;
+          const confirmed = confirm(
+            `Mark ${asin} as a junk deal?\n\nThis will hide it and add it to the ignored ASIN list for this browser.`
+          );
+
+          if (!confirmed) return;
+
+          state.ignoredAsins.add(asin);
+          state.hiddenAsins.delete(asin);
+          saveSet(STORAGE_KEYS.ignoredAsins, state.ignoredAsins);
+          saveSet(STORAGE_KEYS.hiddenAsins, state.hiddenAsins);
+          showToast(`${asin} added to ignored ASINs.`);
+          render();
+        });
+      });
+    }
+
+    function clearSearch() {
+      state.search = "";
+      els.searchInput.value = "";
+      els.clearSearchBtn.style.display = "none";
+      els.searchInput.focus();
+      renderDeals();
+    }
+
+    function loadSet(key) {
       try {
-        nameBrands = await loadBrandList();
-
-        const res = await fetch(`data/deals.json?v=${Date.now()}`);
-        const json = await res.json();
-
-        allDeals = enrichDeals(json.deals || []);
-
-        renderSourceTabs();
-        renderCategoryOptions();
-        filterAndSort();
-
-        setTimeout(() => {
-          loading.style.opacity = "0";
-          setTimeout(() => loading.style.display = "none", 500);
-        }, 500);
-      } catch (err) {
-        console.error("App failed to initialize:", err);
-
-        document.getElementById("deal-grid").innerHTML = `
-          <div class="col-span-full bg-white rounded-2xl p-6 border-2 border-red-200">
-            <h2 class="text-xl font-black text-red-600 mb-2">Failed to load deals</h2>
-            <p class="text-slate-600 text-sm">Check that <code>data/deals.json</code> exists and is valid JSON.</p>
-          </div>
-        `;
-
-        loading.style.display = "none";
+        return new Set(JSON.parse(localStorage.getItem(key) || "[]"));
+      } catch {
+        return new Set();
       }
     }
 
-    function filterAndSort() {
-      const search = document.getElementById("searchBox").value.toLowerCase();
-      const sort = document.getElementById("sortSelect").value;
-      const sub = document.getElementById("subCatSelect").value;
-      const tag = document.getElementById("tagFilter").value;
-
-      const saved = getSavedDeals();
-      const dealTags = getDealTags();
-
-      let filtered = allDeals.filter(d => {
-        const dealTag = dealTags[d.asin] || "none";
-
-        const matchesSearch = d.title.toLowerCase().includes(search);
-        const matchesStreamTab = currentSourceKey === "All" || d.category === currentSourceKey;
-        const matchesDropdown = sub === "All" || d.category === sub;
-
-        const matchesTag =
-          tag === "All" ||
-          (tag === "Brand" && d.isNameBrand) ||
-          (tag === "Hot" && d.isHot) ||
-          (tag === "Saved" && saved.includes(d.asin)) ||
-          (tag === "Excellent" && dealTag === "excellent") ||
-          (tag === "Good" && dealTag === "good") ||
-          (tag === "Junk" && dealTag === "junk") ||
-          (tag === "Untagged" && dealTag === "none");
-
-        return matchesSearch && matchesStreamTab && matchesDropdown && matchesTag;
-      });
-
-      filtered.sort((a, b) => {
-        if (sort === "score") return b.dealScore - a.dealScore;
-        if (sort === "priceLow") return a.price - b.price;
-        if (sort === "priceHigh") return b.price - a.price;
-        if (sort === "rank") return a.rank - b.rank;
-        if (sort === "rating") return b.rating - a.rating;
-        if (sort === "reviews") return b.reviewCount - a.reviewCount;
-        return b.dealScore - a.dealScore;
-      });
-
-      document.getElementById("deal-count").innerText = `${filtered.length} ITEMS`;
-
-      document.getElementById("deal-grid").innerHTML = filtered.map(d => {
-        const affiliateUrl = buildAffiliateUrl(d.asin);
-        const currentTag = dealTags[d.asin] || "none";
-
-        const tagBadge =
-          currentTag !== "none"
-            ? `<span class="bg-purple-600 text-white text-[9px] font-black px-2 py-1 rounded-lg">${currentTag.toUpperCase()}</span>`
-            : "";
-
-        return `
-          <div class="deal-card bg-white rounded-[2rem] border-2 border-slate-200 p-5 flex flex-col relative ${d.isHot ? "hot-glow" : ""}">
-            <button onclick="toggleBookmark('${d.asin}')" class="absolute top-4 right-4 z-20 text-2xl">
-              ${saved.includes(d.asin) ? "★" : "☆"}
-            </button>
-
-            <div class="flex flex-wrap gap-1 mb-3 pr-8">
-              ${d.isNameBrand ? '<span class="bg-slate-900 text-white text-[9px] font-black px-2 py-1 rounded-lg">★ BRAND</span>' : ""}
-              ${d.isHot ? '<span class="bg-orange-500 text-white text-[9px] font-black px-2 py-1 rounded-lg">🔥 HOT</span>' : ""}
-              ${tagBadge}
-              ${d.category ? `<span class="bg-blue-100 text-blue-800 text-[9px] font-black px-2 py-1 rounded-lg">${d.category.replaceAll("_", " ").replaceAll(",", " + ").toUpperCase()}</span>` : ""}
-            </div>
-
-            <div class="h-40 flex items-center justify-center mb-4 bg-slate-50 rounded-2xl p-4 relative">
-              ${d.img ? `<img src="${d.img}" class="max-h-full max-w-full object-contain mix-blend-multiply" loading="lazy">` : '<div class="text-slate-400 text-xs font-bold">NO IMAGE</div>'}
-              ${d.keepa ? `<a href="${d.keepa}" target="_blank" class="absolute bottom-2 right-2 bg-keepa text-white text-[9px] font-black px-3 py-1 rounded-lg">KEEPA ↗</a>` : ""}
-            </div>
-
-            <h3 class="font-bold text-lg h-20 overflow-hidden mb-4">${d.title}</h3>
-
-            <div class="mb-4 bg-slate-50 p-4 rounded-2xl">
-              <div class="flex justify-between items-center mb-2">
-                <div>
-                  <p class="text-[9px] text-slate-400 font-black">PRICE</p>
-                  <p class="text-xl font-black">${money(d.price)}</p>
-                </div>
-                <div class="text-right">
-                  <p class="text-[9px] text-slate-400 font-black">90d AVG</p>
-                  <p class="text-sm line-through text-slate-300">${money(d.avg90)}</p>
-                </div>
-              </div>
-
-              <div class="border-t pt-2 grid grid-cols-3 gap-2 text-center">
-                <div>
-                  <p class="text-[9px] font-black text-slate-400">SCORE</p>
-                  <p class="text-lg font-black text-orange-600">${d.dealScore}</p>
-                </div>
-                <div>
-                  <p class="text-[9px] font-black text-slate-400">RATING</p>
-                  <p class="text-sm font-black">${d.rating ? d.rating.toFixed(1) : "N/A"}</p>
-                </div>
-                <div>
-                  <p class="text-[9px] font-black text-slate-400">BSR</p>
-                  <p class="text-sm font-black">${d.rank && d.rank !== 999999 ? d.rank.toLocaleString() : "N/A"}</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="grid grid-cols-4 gap-1 mb-2">
-              <button onclick="setDealTag('${d.asin}', 'excellent')" class="${currentTag === "excellent" ? "ring-2 ring-green-900" : ""} bg-green-600 text-white text-[9px] font-black py-2 rounded-lg">BEST</button>
-              <button onclick="setDealTag('${d.asin}', 'good')" class="${currentTag === "good" ? "ring-2 ring-blue-900" : ""} bg-blue-600 text-white text-[9px] font-black py-2 rounded-lg">GOOD</button>
-              <button onclick="setDealTag('${d.asin}', 'junk')" class="${currentTag === "junk" ? "ring-2 ring-red-900" : ""} bg-red-600 text-white text-[9px] font-black py-2 rounded-lg">JUNK</button>
-              <button onclick="setDealTag('${d.asin}', 'none')" class="bg-slate-300 text-slate-800 text-[9px] font-black py-2 rounded-lg">CLEAR</button>
-            </div>
-
-            <div class="space-y-2 mt-auto">
-              <a href="${affiliateUrl}" target="_blank" class="block text-center bg-orange-600 text-white text-[10px] font-black py-3 rounded-xl uppercase">
-                VIEW ON AMAZON
-              </a>
-
-              <button onclick="copyText('${affiliateUrl}', this)" class="w-full bg-slate-900 text-white text-[10px] font-black py-2 rounded-xl uppercase">
-                COPY LINK
-              </button>
-
-              <button onclick="copyText('${d.asin}', this)" class="w-full bg-blue-600 text-white text-[9px] font-black py-2 rounded-xl uppercase">
-                COPY ASIN
-              </button>
-            </div>
-          </div>
-        `;
-      }).join("");
+    function saveSet(key, set) {
+      localStorage.setItem(key, JSON.stringify([...set]));
     }
 
-    function switchSource(key) {
-      currentSourceKey = key;
-      localStorage.setItem("lastUsedSource", key);
+    function formatPrice(value) {
+      if (value === null || value === undefined || value === "") return "See deal";
 
-      document.getElementById("searchBox").value = "";
-      document.getElementById("tagFilter").value = "All";
-      document.getElementById("subCatSelect").value = "All";
+      const numeric = Number(value);
+      if (Number.isNaN(numeric)) return String(value);
 
-      renderSourceTabs();
-      filterAndSort();
+      return numeric.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD"
+      });
     }
 
-    window.addEventListener("DOMContentLoaded", () => {
-      const savedSource = localStorage.getItem("lastUsedSource");
-      if (savedSource) currentSourceKey = savedSource;
-      init();
-    });
-  </script>
-</body>
+    function asinToAmazonUrl(asin) {
+      return asin ? `https://www.amazon.com/dp/${encodeURIComponent(asin)}` : "#";
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    let toastTimeout;
+    function showToast(message) {
+      clearTimeout(toastTimeout);
+      els.toast.textContent = message;
+      els.toast.style.display = "block";
+      toastTimeout = setTimeout(() => {
+        els.toast.style.display = "none";
+      }, 2600);
+    }
+  </script></body>
 </html>

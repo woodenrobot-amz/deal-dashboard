@@ -4,8 +4,8 @@ on:
   schedule:
     # Eastern daylight time:
     # 6:00 AM, 11:30 AM
-    - cron: "0 10 * * *"
-    - cron: "30 15 * * *"
+    - cron: "7 10 * * *"
+    - cron: "37 15 * * *"
   workflow_dispatch:
 
 permissions:

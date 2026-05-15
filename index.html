@@ -1,7 +1,8 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wooden Robot Deals</title>
   <style>
     :root {
@@ -16,368 +17,348 @@
       --danger-bg: rgba(239, 68, 68, 0.12);
       --good: #22c55e;
       --shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
-    }* {
-  box-sizing: border-box;
-}
+    }
 
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-}
+    * { box-sizing: border-box; }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  background: rgba(15, 17, 21, 0.94);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  padding: 14px 14px 10px;
-}
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
 
-.top-row {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(15, 17, 21, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 14px 10px;
+    }
 
-h1 {
-  margin: 0;
-  font-size: 1.1rem;
-  letter-spacing: 0.02em;
-}
+    .top-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
 
-.deal-count {
-  color: var(--muted);
-  font-size: 0.85rem;
-  white-space: nowrap;
-}
+    h1 {
+      margin: 0;
+      font-size: 1.1rem;
+      letter-spacing: 0.02em;
+    }
 
-.search-wrap {
-  position: relative;
-  width: 100%;
-}
+    .deal-count {
+      color: var(--muted);
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
 
-#searchInput {
-  width: 100%;
-  padding: 12px 42px 12px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--panel);
-  color: var(--text);
-  outline: none;
-  font-size: 1rem;
-}
+    .search-wrap {
+      position: relative;
+      width: 100%;
+    }
 
-#searchInput:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.16);
-}
+    #searchInput {
+      width: 100%;
+      padding: 12px 42px 12px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: var(--text);
+      outline: none;
+      font-size: 1rem;
+    }
 
-#clearSearchBtn {
-  position: absolute;
-  right: 7px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  border: 0;
-  border-radius: 999px;
-  background: var(--panel-2);
-  color: var(--muted);
-  font-size: 1.1rem;
-  cursor: pointer;
-  display: none;
-  line-height: 1;
-}
+    #searchInput:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.16);
+    }
 
-#clearSearchBtn:hover {
-  color: var(--text);
-  background: #2a3140;
-}
+    #clearSearchBtn {
+      position: absolute;
+      right: 7px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border: 0;
+      border-radius: 999px;
+      background: var(--panel-2);
+      color: var(--muted);
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: none;
+      line-height: 1;
+    }
 
-.filter-section {
-  margin-top: 12px;
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding-bottom: 4px;
-  scrollbar-width: none;
-}
+    #clearSearchBtn:hover {
+      color: var(--text);
+      background: #2a3140;
+    }
 
-.filter-section::-webkit-scrollbar {
-  display: none;
-}
+    .filter-section {
+      margin-top: 12px;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
 
-.tag-pill {
-  border: 1px solid var(--border);
-  background: var(--panel);
-  color: var(--muted);
-  padding: 8px 12px;
-  border-radius: 999px;
-  cursor: pointer;
-  white-space: nowrap;
-  font-size: 0.88rem;
-}
+    .filter-section::-webkit-scrollbar { display: none; }
 
-.tag-pill.active {
-  background: var(--accent);
-  color: #16100a;
-  border-color: var(--accent);
-  font-weight: 700;
-}
+    .tag-pill {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: var(--muted);
+      padding: 8px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      white-space: nowrap;
+      font-size: 0.88rem;
+    }
 
-main {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 16px 14px 90px;
-}
+    .tag-pill.active {
+      background: var(--accent);
+      color: #16100a;
+      border-color: var(--accent);
+      font-weight: 700;
+    }
 
-.toolbar {
-  position: sticky;
-  top: 132px;
-  z-index: 12;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: center;
-  margin: -4px 0 12px;
-  padding: 8px 0;
-  background: rgba(15, 17, 21, 0.94);
-  backdrop-filter: blur(10px);
-  color: var(--muted);
-  font-size: 0.86rem;
-}
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 16px 14px 90px;
+    }
 
-.toolbar-actions {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
+    .toolbar {
+      position: sticky;
+      top: 132px;
+      z-index: 12;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      margin: -4px 0 12px;
+      padding: 8px 0;
+      background: rgba(15, 17, 21, 0.96);
+      backdrop-filter: blur(10px);
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
 
-.toolbar button {
-  border: 1px solid var(--border);
-  color: var(--muted);
-  background: var(--panel);
-  border-radius: 999px;
-  padding: 8px 11px;
-  cursor: pointer;
-  white-space: nowrap;
-}
+    .toolbar-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
 
-.toolbar button:hover {
-  color: var(--text);
-}
+    .toolbar button {
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: var(--panel);
+      border-radius: 999px;
+      padding: 8px 11px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
 
-.toolbar button.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #16100a;
-  font-weight: 800;
-}
+    .toolbar button:hover { color: var(--text); }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 14px;
-}
+    .toolbar button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #16100a;
+      font-weight: 800;
+    }
 
-.deal-card {
-  position: relative;
-  border: 1px solid var(--border);
-  background: var(--panel);
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 14px;
+    }
 
-.deal-card.hidden-local {
-  display: none;
-}
+    .deal-card {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
 
-.image-wrap {
-  aspect-ratio: 4 / 3;
-  background: #fff;
-  display: grid;
-  place-items: center;
-  padding: 12px;
-  max-height: 205px;
-  overflow: hidden;
-}
+    .image-wrap {
+      aspect-ratio: 4 / 3;
+      background: #fff;
+      display: grid;
+      place-items: center;
+      padding: 12px;
+      max-height: 205px;
+      overflow: hidden;
+    }
 
-.image-wrap img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  object-position: center;
-  margin: auto;
-}
+    .image-wrap img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+      margin: auto;
+    }
 
-.card-body {
-  padding: 12px;
-}
+    .card-body { padding: 12px; }
 
-.title {
-  margin: 0 0 8px;
-  font-size: 0.96rem;
-  line-height: 1.25;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  min-height: 3.6em;
-}
+    .title {
+      margin: 0 0 8px;
+      font-size: 0.96rem;
+      line-height: 1.25;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 3.6em;
+    }
 
-.meta-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 8px;
-}
+    .meta-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
 
-.price-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
+    .price-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
 
-.price {
-  color: var(--good);
-  font-size: 1.2rem;
-  font-weight: 800;
-}
+    .price {
+      color: var(--good);
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
 
-.avg-price {
-  color: var(--muted);
-  font-size: 0.82rem;
-  text-decoration: line-through;
-  text-decoration-thickness: 1.5px;
-}
+    .avg-price {
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-decoration: line-through;
+      text-decoration-thickness: 1.5px;
+    }
 
-.asin {
-  color: var(--muted);
-  font-size: 0.75rem;
-}
+    .asin {
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-align: right;
+      word-break: break-all;
+    }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 9px 0 12px;
-}
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 9px 0 12px;
+    }
 
-.mini-tag {
-  background: var(--panel-2);
-  border: 1px solid var(--border);
-  color: var(--muted);
-  border-radius: 999px;
-  padding: 4px 8px;
-  font-size: 0.74rem;
-}
+    .mini-tag {
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: 0.74rem;
+    }
 
-.actions {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-  align-items: stretch;
-}
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      align-items: stretch;
+    }
 
-.actions a,
-.actions button {
-  width: 100%;
-  min-height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  padding: 9px 10px;
-  font-weight: 700;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 0.84rem;
-  line-height: 1.15;
-}
+    .actions a,
+    .actions button {
+      width: 100%;
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 9px 10px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.84rem;
+      line-height: 1.15;
+    }
 
-.buy-btn {
-  color: #17110a;
-  background: var(--accent);
-  border-color: var(--accent) !important;
-}
+    .buy-btn {
+      color: #17110a;
+      background: var(--accent);
+      border-color: var(--accent) !important;
+    }
 
-.copy-btn,
-.bookmark-btn,
-.hide-btn {
-  background: var(--panel-2);
-  color: var(--text);
-}
+    .copy-btn,
+    .bookmark-btn,
+    .hide-btn {
+      background: var(--panel-2);
+      color: var(--text);
+    }
 
-.bookmark-btn.active {
-  background: rgba(245, 158, 11, 0.16);
-  border-color: rgba(245, 158, 11, 0.65) !important;
-  color: #fbbf24;
-}
+    .bookmark-btn.active {
+      background: rgba(245, 158, 11, 0.16);
+      border-color: rgba(245, 158, 11, 0.65) !important;
+      color: #fbbf24;
+    }
 
-.junk-btn {
-  background: var(--danger-bg);
-  color: #fecaca;
-  border-color: rgba(239, 68, 68, 0.35) !important;
-}
+    .junk-btn {
+      grid-column: 1 / -1;
+      background: var(--danger-bg);
+      color: #fecaca;
+      border-color: rgba(239, 68, 68, 0.35) !important;
+    }
 
-.empty-state {
-  border: 1px dashed var(--border);
-  border-radius: 18px;
-  color: var(--muted);
-  padding: 32px 18px;
-  text-align: center;
-  background: rgba(255,255,255,0.02);
-}
+    .empty-state {
+      border: 1px dashed var(--border);
+      border-radius: 18px;
+      color: var(--muted);
+      padding: 32px 18px;
+      text-align: center;
+      background: rgba(255,255,255,0.02);
+    }
 
-.toast {
-  position: fixed;
-  left: 50%;
-  bottom: 18px;
-  transform: translateX(-50%);
-  background: #111827;
-  color: var(--text);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 10px 14px;
-  box-shadow: var(--shadow);
-  z-index: 40;
-  display: none;
-  max-width: calc(100% - 28px);
-  text-align: center;
-  font-size: 0.9rem;
-}
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
+      background: #111827;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 10px 14px;
+      box-shadow: var(--shadow);
+      z-index: 40;
+      display: none;
+      max-width: calc(100% - 28px);
+      text-align: center;
+      font-size: 0.9rem;
+    }
 
-@media (min-width: 760px) {
-  header {
-    padding: 16px 22px 12px;
-  }
-
-  main {
-    padding: 20px 22px 100px;
-  }
-
-  h1 {
-    font-size: 1.35rem;
-  }
-
-  .toolbar {
-    top: 142px;
-  }
-}
-
+    @media (min-width: 760px) {
+      header { padding: 16px 22px 12px; }
+      main { padding: 20px 22px 100px; }
+      h1 { font-size: 1.35rem; }
+      .toolbar { top: 142px; }
+    }
   </style>
 </head>
 <body>
@@ -385,39 +366,32 @@ main {
     <div class="top-row">
       <h1>Wooden Robot Deals</h1>
       <div class="deal-count" id="dealCount">0 deals</div>
-    </div><div class="search-wrap">
-  <input id="searchInput" type="search" placeholder="Search deals, brands, ASINs..." autocomplete="off" />
-  <button id="clearSearchBtn" type="button" aria-label="Clear search">×</button>
-</div>
+    </div>
 
-<div class="filter-section" id="tagFilters" aria-label="Filter by tag"></div>
+    <div class="search-wrap">
+      <input id="searchInput" type="search" placeholder="Search deals, brands, ASINs..." autocomplete="off">
+      <button id="clearSearchBtn" type="button" aria-label="Clear search">×</button>
+    </div>
 
-  </header>  <main>
+    <div class="filter-section" id="tagFilters" aria-label="Filter by tag"></div>
+  </header>
+
+  <main>
     <div class="toolbar">
       <span id="activeFilterLabel">Showing all tags</span>
       <div class="toolbar-actions">
         <button id="showBookmarksBtn" type="button">Bookmarks</button>
         <button id="showIgnoredBtn" type="button">Ignored ASINs</button>
       </div>
-    </div><section id="dealGrid" class="grid"></section>
-<section id="emptyState" class="empty-state" style="display:none;">No matching deals found.</section>
+    </div>
 
-  </main>  <div id="toast" class="toast"></div>  <script>
-    /********************************************************************
-     * Wooden Robot PWA immediate UI improvements
-     *
-     * Adds:
-     * 1. Quick-clear search button
-     * 2. Hide card locally
-     * 3. Mark ASIN as junk/ignored so it won't display again
-     * 4. Restores filtering by tags instead of deal streams
-     * 5. Normalizes Three D Printing -> 3D Printing
-     *
-     * Data expectations:
-     * window.DEALS can be injected before this script, or deals can be
-     * loaded from ./data/deals.json.
-     ********************************************************************/
+    <section id="dealGrid" class="grid"></section>
+    <section id="emptyState" class="empty-state" style="display:none;">No matching deals found.</section>
+  </main>
 
+  <div id="toast" class="toast"></div>
+
+  <script>
     const STORAGE_KEYS = {
       ignoredAsins: "woodenRobot.ignoredAsins.v1",
       hiddenAsins: "woodenRobot.hiddenAsins.v1",
@@ -443,8 +417,8 @@ main {
       emptyState: document.getElementById("emptyState"),
       dealCount: document.getElementById("dealCount"),
       activeFilterLabel: document.getElementById("activeFilterLabel"),
-      showIgnoredBtn: document.getElementById("showIgnoredBtn"),
       showBookmarksBtn: document.getElementById("showBookmarksBtn"),
+      showIgnoredBtn: document.getElementById("showIgnoredBtn"),
       toast: document.getElementById("toast")
     };
 
@@ -457,33 +431,32 @@ main {
     }
 
     function bindEvents() {
-      els.searchInput.addEventListener("input", event => {
+      els.searchInput.addEventListener("input", function(event) {
         state.search = event.target.value.trim().toLowerCase();
         els.clearSearchBtn.style.display = state.search ? "block" : "none";
         renderDeals();
       });
 
-      els.searchInput.addEventListener("keydown", event => {
+      els.searchInput.addEventListener("keydown", function(event) {
         if (event.key === "Escape") clearSearch();
       });
 
       els.clearSearchBtn.addEventListener("click", clearSearch);
 
-      els.showBookmarksBtn.addEventListener("click", () => {
+      els.showBookmarksBtn.addEventListener("click", function() {
         state.showBookmarksOnly = !state.showBookmarksOnly;
         renderDeals();
       });
 
-      els.showIgnoredBtn.addEventListener("click", () => {
-        const ignored = [...state.ignoredAsins];
+      els.showIgnoredBtn.addEventListener("click", function() {
+        const ignored = Array.from(state.ignoredAsins);
         if (!ignored.length) {
           showToast("No ignored ASINs yet.");
           return;
         }
 
-        const restore = confirm(
-          `Ignored ASINs:\n\n${ignored.join("\n")}\n\nRestore all ignored ASINs?`
-        );
+        const message = ["Ignored ASINs:", "", ignored.join(String.fromCharCode(10)), "", "Restore all ignored ASINs?"].join(String.fromCharCode(10));
+        const restore = confirm(message);
 
         if (restore) {
           state.ignoredAsins.clear();
@@ -499,9 +472,8 @@ main {
 
       try {
         const response = await fetch("./data/deals.json", { cache: "no-store" });
-        if (!response.ok) throw new Error(`Failed to fetch deals: ${response.status}`);
+        if (!response.ok) throw new Error("Failed to fetch deals");
         const data = await response.json();
-
         if (Array.isArray(data)) return data;
         if (Array.isArray(data.deals)) return data.deals;
         return [];
@@ -513,64 +485,72 @@ main {
     }
 
     function normalizeDeals(deals) {
-      return deals
-        .filter(Boolean)
-        .map(deal => {
-          const asin = String(deal.asin || deal.ASIN || "").trim();
-          const tags = normalizeTags(deal.tags || deal.tag || deal.categories || deal.category || []);
+      return deals.filter(Boolean).map(function(deal) {
+        const asin = String(deal.asin || deal.ASIN || "").trim();
+        const tags = normalizeTags(deal.tags || deal.tag || deal.categories || deal.category || []);
+        const price = firstValidNumber(deal.price, deal.currentPrice, deal.buyBoxPrice, deal.salePrice, deal.dealPrice);
+        const avg90 = getAvg90(deal);
 
-          return {
-            ...deal,
-            asin,
-            title: deal.title || deal.name || "Untitled deal",
-            price: firstValidNumber(
-              deal.price,
-              deal.currentPrice,
-              deal.buyBoxPrice,
-              deal.salePrice,
-              deal.dealPrice
-            ),
-            avg90: firstValidNumber(
-              deal.avg90,
-              deal.average90,
-              deal.avg90Price,
-              deal.avg90DayPrice,
-              deal.ninetyDayAverage,
-              deal.ninetyDayAvg,
-              deal.stats?.avg90,
-              deal.stats?.current?.avg90,
-              deal.keepa?.avg90,
-              deal.keepa?.stats?.avg90
-            ),
-            image: deal.image || deal.imageUrl || deal.img || "",
-            url: deal.url || deal.amazonUrl || deal.link || asinToAmazonUrl(asin),
-            brand: deal.brand || "",
-            tags
-          };
-        })
-        .filter(deal => deal.asin);
+        return Object.assign({}, deal, {
+          asin: asin,
+          title: deal.title || deal.name || "Untitled deal",
+          price: price,
+          avg90: avg90,
+          image: deal.image || deal.imageUrl || deal.img || "",
+          url: deal.url || deal.amazonUrl || deal.link || asinToAmazonUrl(asin),
+          brand: deal.brand || "",
+          tags: tags
+        });
+      }).filter(function(deal) {
+        return deal.asin;
+      });
+    }
+
+    function getAvg90(deal) {
+      const candidates = [
+        deal.avg90,
+        deal.average90,
+        deal.avg90Price,
+        deal.avg90DayPrice,
+        deal.ninetyDayAverage,
+        deal.ninetyDayAvg
+      ];
+
+      if (deal.stats) {
+        candidates.push(deal.stats.avg90);
+        if (deal.stats.current) candidates.push(deal.stats.current.avg90);
+      }
+
+      if (deal.keepa) {
+        candidates.push(deal.keepa.avg90);
+        if (deal.keepa.stats) candidates.push(deal.keepa.stats.avg90);
+      }
+
+      return firstValidNumber.apply(null, candidates);
     }
 
     function normalizeTags(value) {
-      let tags;
-
+      let tags = [];
       if (Array.isArray(value)) {
         tags = value;
       } else if (typeof value === "string") {
-        tags = value.split(/[|,]/g);
-      } else {
-        tags = [];
+        tags = value.replaceAll("|", ",").split(",");
       }
 
-      return tags
-        .map(tag => String(tag).trim())
-        .filter(Boolean)
-        .map(prettyTagName)
-        .filter(uniqueOnly);
+      const seen = new Set();
+      return tags.map(function(tag) {
+        return prettyTagName(String(tag).trim());
+      }).filter(function(tag) {
+        if (!tag) return false;
+        if (seen.has(tag)) return false;
+        seen.add(tag);
+        return true;
+      });
     }
 
     function prettyTagName(tag) {
-      const normalized = tag.toLowerCase().replace(/[\s_-]+/g, " ").trim();
+      const normalized = tag.toLowerCase().replaceAll("_", " ").replaceAll("-", " ").trim();
+      const compacted = normalized.split(" ").filter(Boolean).join(" ");
 
       const aliases = {
         "three d printing": "3D Printing",
@@ -580,13 +560,12 @@ main {
         "diy": "DIY"
       };
 
-      if (aliases[normalized]) return aliases[normalized];
+      if (aliases[compacted]) return aliases[compacted];
 
-      return normalized.replace(/\b\w/g, char => char.toUpperCase());
-    }
-
-    function uniqueOnly(value, index, array) {
-      return array.indexOf(value) === index;
+      return compacted.split(" ").map(function(word) {
+        if (!word) return "";
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      }).join(" ");
     }
 
     function render() {
@@ -602,18 +581,13 @@ main {
         localStorage.setItem(STORAGE_KEYS.selectedTag, state.selectedTag);
       }
 
-      els.tagFilters.innerHTML = tags
-        .map(tag => `
-          <button
-            type="button"
-            class="tag-pill ${tag === state.selectedTag ? "active" : ""}"
-            data-tag="${escapeHtml(tag)}"
-          >${escapeHtml(tag)}</button>
-        `)
-        .join("");
+      els.tagFilters.innerHTML = tags.map(function(tag) {
+        const active = tag === state.selectedTag ? "active" : "";
+        return '<button type="button" class="tag-pill ' + active + '" data-tag="' + escapeHtml(tag) + '">' + escapeHtml(tag) + '</button>';
+      }).join("");
 
-      els.tagFilters.querySelectorAll(".tag-pill").forEach(button => {
-        button.addEventListener("click", () => {
+      Array.from(els.tagFilters.querySelectorAll(".tag-pill")).forEach(function(button) {
+        button.addEventListener("click", function() {
           state.selectedTag = button.dataset.tag;
           localStorage.setItem(STORAGE_KEYS.selectedTag, state.selectedTag);
           render();
@@ -623,12 +597,13 @@ main {
 
     function getAllTags() {
       const tags = new Set(["All"]);
-
-      state.deals.forEach(deal => {
-        deal.tags.forEach(tag => tags.add(tag));
+      state.deals.forEach(function(deal) {
+        deal.tags.forEach(function(tag) {
+          tags.add(tag);
+        });
       });
 
-      return [...tags].sort((a, b) => {
+      return Array.from(tags).sort(function(a, b) {
         if (a === "All") return -1;
         if (b === "All") return 1;
         return a.localeCompare(b);
@@ -637,24 +612,19 @@ main {
 
     function renderDeals() {
       const visibleDeals = getVisibleDeals();
-
-      els.dealCount.textContent = `${visibleDeals.length} ${visibleDeals.length === 1 ? "deal" : "deals"}`;
+      els.dealCount.textContent = visibleDeals.length + " " + (visibleDeals.length === 1 ? "deal" : "deals");
       els.showBookmarksBtn.classList.toggle("active", state.showBookmarksOnly);
-      const filterText = state.selectedTag === "All"
-        ? "Showing all tags"
-        : `Filtered by ${state.selectedTag}`;
-      els.activeFilterLabel.textContent = state.showBookmarksOnly
-        ? `${filterText} · Bookmarks only`
-        : filterText;
+
+      const filterText = state.selectedTag === "All" ? "Showing all tags" : "Filtered by " + state.selectedTag;
+      els.activeFilterLabel.textContent = state.showBookmarksOnly ? filterText + " · Bookmarks only" : filterText;
 
       els.emptyState.style.display = visibleDeals.length ? "none" : "block";
       els.dealGrid.innerHTML = visibleDeals.map(renderDealCard).join("");
-
       bindCardButtons();
     }
 
     function getVisibleDeals() {
-      return state.deals.filter(deal => {
+      return state.deals.filter(function(deal) {
         if (state.ignoredAsins.has(deal.asin)) return false;
         if (state.hiddenAsins.has(deal.asin)) return false;
         if (state.showBookmarksOnly && !state.bookmarkedAsins.has(deal.asin)) return false;
@@ -664,97 +634,80 @@ main {
 
         if (!state.search) return true;
 
-        const haystack = [
-          deal.title,
-          deal.asin,
-          deal.brand,
-          ...(deal.tags || [])
-        ].join(" ").toLowerCase();
-
+        const haystack = [deal.title, deal.asin, deal.brand].concat(deal.tags || []).join(" ").toLowerCase();
         return haystack.includes(state.search);
       });
     }
 
     function renderDealCard(deal) {
       const price = formatPrice(deal.price);
-      const avg90 = shouldShowAvg90(deal.price, deal.avg90)
-        ? `<div class="avg-price" title="90-day average">90-day avg ${formatPrice(deal.avg90)}</div>`
-        : "";
+      const avg90 = shouldShowAvg90(deal.price, deal.avg90) ? '<div class="avg-price" title="90-day average">90-day avg ' + formatPrice(deal.avg90) + '</div>' : "";
       const isBookmarked = state.bookmarkedAsins.has(deal.asin);
       const bookmarkLabel = isBookmarked ? "Bookmarked" : "Bookmark";
       const bookmarkClass = isBookmarked ? "bookmark-btn active" : "bookmark-btn";
-      const img = deal.image
-        ? `<img src="${escapeHtml(deal.image)}" alt="${escapeHtml(deal.title)}" loading="lazy" />`
-        : `<span style="color:#111;">No image</span>`;
+      const img = deal.image ? '<img src="' + escapeHtml(deal.image) + '" alt="' + escapeHtml(deal.title) + '" loading="lazy">' : '<span style="color:#111;">No image</span>';
+      const tags = (deal.tags || []).map(function(tag) {
+        return '<span class="mini-tag">' + escapeHtml(tag) + '</span>';
+      }).join("");
 
-      return `
-        <article class="deal-card" data-asin="${escapeHtml(deal.asin)}">
-          <div class="image-wrap">${img}</div>
-          <div class="card-body">
-            <h2 class="title">${escapeHtml(deal.title)}</h2>
-            <div class="meta-row">
-              <div class="price-stack">
-                <div class="price">${price}</div>
-                ${avg90}
-              </div>
-              <div class="asin">${escapeHtml(deal.asin)}</div>
-            </div>
-            <div class="tags">
-              ${(deal.tags || []).map(tag => `<span class="mini-tag">${escapeHtml(tag)}</span>`).join("")}
-            </div>
-            <div class="actions">
-              <a class="buy-btn" href="${escapeHtml(deal.url)}" target="_blank" rel="noopener noreferrer">Amazon</a>
-              <button class="copy-btn" type="button" data-action="copy" data-asin="${escapeHtml(deal.asin)}">Copy ASIN</button>
-              <button class="${bookmarkClass}" type="button" data-action="bookmark" data-asin="${escapeHtml(deal.asin)}">${bookmarkLabel}</button>
-              <button class="hide-btn" type="button" data-action="hide" data-asin="${escapeHtml(deal.asin)}">Hide</button>
-              <button class="junk-btn" type="button" data-action="junk" data-asin="${escapeHtml(deal.asin)}">Ignore ASIN</button>
-            </div>
-          </div>
-        </article>
-      `;
+      return '<article class="deal-card" data-asin="' + escapeHtml(deal.asin) + '">' +
+        '<div class="image-wrap">' + img + '</div>' +
+        '<div class="card-body">' +
+        '<h2 class="title">' + escapeHtml(deal.title) + '</h2>' +
+        '<div class="meta-row">' +
+        '<div class="price-stack"><div class="price">' + price + '</div>' + avg90 + '</div>' +
+        '<div class="asin">' + escapeHtml(deal.asin) + '</div>' +
+        '</div>' +
+        '<div class="tags">' + tags + '</div>' +
+        '<div class="actions">' +
+        '<a class="buy-btn" href="' + escapeHtml(deal.url) + '" target="_blank" rel="noopener noreferrer">Amazon</a>' +
+        '<button class="copy-btn" type="button" data-action="copy" data-asin="' + escapeHtml(deal.asin) + '">Copy ASIN</button>' +
+        '<button class="' + bookmarkClass + '" type="button" data-action="bookmark" data-asin="' + escapeHtml(deal.asin) + '">' + bookmarkLabel + '</button>' +
+        '<button class="hide-btn" type="button" data-action="hide" data-asin="' + escapeHtml(deal.asin) + '">Hide</button>' +
+        '<button class="junk-btn" type="button" data-action="junk" data-asin="' + escapeHtml(deal.asin) + '">Ignore ASIN</button>' +
+        '</div>' +
+        '</div>' +
+        '</article>';
     }
 
     function bindCardButtons() {
-      els.dealGrid.querySelectorAll("[data-action='copy']").forEach(button => {
-        button.addEventListener("click", async () => {
+      Array.from(els.dealGrid.querySelectorAll('[data-action="copy"]')).forEach(function(button) {
+        button.addEventListener("click", async function() {
           const asin = button.dataset.asin;
           await copyToClipboard(asin);
-          showToast(`Copied ${asin}`);
+          showToast("Copied " + asin);
         });
       });
 
-      els.dealGrid.querySelectorAll("[data-action='bookmark']").forEach(button => {
-        button.addEventListener("click", () => {
+      Array.from(els.dealGrid.querySelectorAll('[data-action="bookmark"]')).forEach(function(button) {
+        button.addEventListener("click", function() {
           const asin = button.dataset.asin;
           if (state.bookmarkedAsins.has(asin)) {
             state.bookmarkedAsins.delete(asin);
-            showToast(`Removed ${asin} from bookmarks.`);
+            showToast("Removed " + asin + " from bookmarks.");
           } else {
             state.bookmarkedAsins.add(asin);
-            showToast(`Bookmarked ${asin}.`);
+            showToast("Bookmarked " + asin + ".");
           }
           saveSet(STORAGE_KEYS.bookmarkedAsins, state.bookmarkedAsins);
           renderDeals();
         });
       });
 
-      els.dealGrid.querySelectorAll("[data-action='hide']").forEach(button => {
-        button.addEventListener("click", () => {
+      Array.from(els.dealGrid.querySelectorAll('[data-action="hide"]')).forEach(function(button) {
+        button.addEventListener("click", function() {
           const asin = button.dataset.asin;
           state.hiddenAsins.add(asin);
           saveSet(STORAGE_KEYS.hiddenAsins, state.hiddenAsins);
-          showToast(`Hidden ${asin} for this browser.`);
+          showToast("Hidden " + asin + " for this browser.");
           renderDeals();
         });
       });
 
-      els.dealGrid.querySelectorAll("[data-action='junk']").forEach(button => {
-        button.addEventListener("click", () => {
+      Array.from(els.dealGrid.querySelectorAll('[data-action="junk"]')).forEach(function(button) {
+        button.addEventListener("click", function() {
           const asin = button.dataset.asin;
-          const confirmed = confirm(
-            `Mark ${asin} as a junk deal?\n\nThis will hide it and add it to the ignored ASIN list for this browser.`
-          );
-
+          const confirmed = confirm("Mark " + asin + " as a junk deal? This will hide it and add it to the ignored ASIN list for this browser.");
           if (!confirmed) return;
 
           state.ignoredAsins.add(asin);
@@ -762,4 +715,100 @@ main {
           state.bookmarkedAsins.delete(asin);
           saveSet(STORAGE_KEYS.ignoredAsins, state.ignoredAsins);
           saveSet(STORAGE_KEYS.hiddenAsins, state.hiddenAsins);
-          saveSet(STORAGE_KEYS.bookmarkedAsins, state.bookmarkedAsins)
+          saveSet(STORAGE_KEYS.bookmarkedAsins, state.bookmarkedAsins);
+          showToast(asin + " added to ignored ASINs.");
+          render();
+        });
+      });
+    }
+
+    function clearSearch() {
+      state.search = "";
+      els.searchInput.value = "";
+      els.clearSearchBtn.style.display = "none";
+      els.searchInput.focus();
+      renderDeals();
+    }
+
+    async function copyToClipboard(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text);
+      }
+
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.style.position = "fixed";
+      textarea.style.left = "-9999px";
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+      document.execCommand("copy");
+      textarea.remove();
+    }
+
+    function firstValidNumber() {
+      for (let i = 0; i < arguments.length; i++) {
+        const value = arguments[i];
+        if (value === null || value === undefined || value === "") continue;
+
+        if (Array.isArray(value)) {
+          const found = firstValidNumber.apply(null, value);
+          if (found !== null) return found;
+          continue;
+        }
+
+        const numeric = Number(value);
+        if (Number.isFinite(numeric) && numeric > 0) return numeric;
+      }
+      return null;
+    }
+
+    function shouldShowAvg90(price, avg90) {
+      if (!Number.isFinite(Number(price)) || !Number.isFinite(Number(avg90))) return false;
+      return Number(avg90) > Number(price);
+    }
+
+    function loadSet(key) {
+      try {
+        return new Set(JSON.parse(localStorage.getItem(key) || "[]"));
+      } catch (error) {
+        return new Set();
+      }
+    }
+
+    function saveSet(key, set) {
+      localStorage.setItem(key, JSON.stringify(Array.from(set)));
+    }
+
+    function formatPrice(value) {
+      if (value === null || value === undefined || value === "") return "See deal";
+      const numeric = Number(value);
+      if (Number.isNaN(numeric)) return String(value);
+      return numeric.toLocaleString("en-US", { style: "currency", currency: "USD" });
+    }
+
+    function asinToAmazonUrl(asin) {
+      return asin ? "https://www.amazon.com/dp/" + encodeURIComponent(asin) : "#";
+    }
+
+    function escapeHtml(value) {
+      return String(value === null || value === undefined ? "" : value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll(String.fromCharCode(34), "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    let toastTimeout;
+    function showToast(message) {
+      clearTimeout(toastTimeout);
+      els.toast.textContent = message;
+      els.toast.style.display = "block";
+      toastTimeout = setTimeout(function() {
+        els.toast.style.display = "none";
+      }, 2600);
+    }
+  </script>
+</body>
+</html>

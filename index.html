@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,337 +17,349 @@
       --danger-bg: rgba(239, 68, 68, 0.12);
       --good: #22c55e;
       --shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
-    }* {
-  box-sizing: border-box;
-}
+    }
 
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-}
+    * {
+      box-sizing: border-box;
+    }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  background: rgba(15, 17, 21, 0.94);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  padding: 14px 14px 10px;
-}
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
 
-.top-row {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(15, 17, 21, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 14px 10px;
+    }
 
-h1 {
-  margin: 0;
-  font-size: 1.1rem;
-  letter-spacing: 0.02em;
-}
+    .top-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
 
-.deal-count {
-  color: var(--muted);
-  font-size: 0.85rem;
-  white-space: nowrap;
-}
+    h1 {
+      margin: 0;
+      font-size: 1.1rem;
+      letter-spacing: 0.02em;
+    }
 
-.search-wrap {
-  position: relative;
-  width: 100%;
-}
+    .deal-count {
+      color: var(--muted);
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
 
-#searchInput {
-  width: 100%;
-  padding: 12px 42px 12px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--panel);
-  color: var(--text);
-  outline: none;
-  font-size: 1rem;
-}
+    .search-wrap {
+      position: relative;
+      width: 100%;
+    }
 
-#searchInput:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.16);
-}
+    #searchInput {
+      width: 100%;
+      padding: 12px 42px 12px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: var(--text);
+      outline: none;
+      font-size: 1rem;
+    }
 
-#clearSearchBtn {
-  position: absolute;
-  right: 7px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  border: 0;
-  border-radius: 999px;
-  background: var(--panel-2);
-  color: var(--muted);
-  font-size: 1.1rem;
-  cursor: pointer;
-  display: none;
-  line-height: 1;
-}
+    #searchInput:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.16);
+    }
 
-#clearSearchBtn:hover {
-  color: var(--text);
-  background: #2a3140;
-}
+    #clearSearchBtn {
+      position: absolute;
+      right: 7px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border: 0;
+      border-radius: 999px;
+      background: var(--panel-2);
+      color: var(--muted);
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: none;
+      line-height: 1;
+    }
 
-.filter-section {
-  margin-top: 12px;
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding-bottom: 4px;
-  scrollbar-width: none;
-}
+    #clearSearchBtn:hover {
+      color: var(--text);
+      background: #2a3140;
+    }
 
-.filter-section::-webkit-scrollbar {
-  display: none;
-}
+    .filter-section {
+      margin-top: 12px;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
 
-.tag-pill {
-  border: 1px solid var(--border);
-  background: var(--panel);
-  color: var(--muted);
-  padding: 8px 12px;
-  border-radius: 999px;
-  cursor: pointer;
-  white-space: nowrap;
-  font-size: 0.88rem;
-}
+    .filter-section::-webkit-scrollbar {
+      display: none;
+    }
 
-.tag-pill.active {
-  background: var(--accent);
-  color: #16100a;
-  border-color: var(--accent);
-  font-weight: 700;
-}
+    .tag-pill {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      color: var(--muted);
+      padding: 8px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      white-space: nowrap;
+      font-size: 0.88rem;
+    }
 
-main {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 16px 14px 90px;
-}
+    .tag-pill.active {
+      background: var(--accent);
+      color: #16100a;
+      border-color: var(--accent);
+      font-weight: 700;
+    }
 
-.toolbar {
-  position: sticky;
-  top: 132px;
-  z-index: 12;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: center;
-  margin: -4px 0 12px;
-  padding: 8px 0;
-  background: rgba(15, 17, 21, 0.94);
-  backdrop-filter: blur(10px);
-  color: var(--muted);
-  font-size: 0.86rem;
-}
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 16px 14px 90px;
+    }
 
-.toolbar button {
-  border: 1px solid var(--border);
-  color: var(--muted);
-  background: var(--panel);
-  border-radius: 999px;
-  padding: 8px 11px;
-  cursor: pointer;
-  white-space: nowrap;
-}
+    .toolbar {
+      position: sticky;
+      top: 132px;
+      z-index: 12;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      margin: -4px 0 12px;
+      padding: 8px 0;
+      background: rgba(15, 17, 21, 0.94);
+      backdrop-filter: blur(10px);
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
 
-.toolbar button:hover {
-  color: var(--text);
-}
+    .toolbar button {
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: var(--panel);
+      border-radius: 999px;
+      padding: 8px 11px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 14px;
-}
+    .toolbar button:hover {
+      color: var(--text);
+    }
 
-.deal-card {
-  position: relative;
-  border: 1px solid var(--border);
-  background: var(--panel);
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 14px;
+    }
 
-.deal-card.hidden-local {
-  display: none;
-}
+    .deal-card {
+      position: relative;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
 
-.image-wrap {
-  aspect-ratio: 4 / 3;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  max-height: 205px;
-}
+    .deal-card.hidden-local {
+      display: none;
+    }
 
-.image-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
+    .image-wrap {
+      aspect-ratio: 4 / 3;
+      background: #fff;
+      display: grid;
+      place-items: center;
+      padding: 12px;
+      max-height: 205px;
+      overflow: hidden;
+    }
 
-.card-body {
-  padding: 12px;
-}
+    .image-wrap img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+      margin: auto;
+    }
 
-.title {
-  margin: 0 0 8px;
-  font-size: 0.96rem;
-  line-height: 1.25;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  min-height: 3.6em;
-}
+    .card-body {
+      padding: 12px;
+    }
 
-.meta-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 8px;
-}
+    .title {
+      margin: 0 0 8px;
+      font-size: 0.96rem;
+      line-height: 1.25;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 3.6em;
+    }
 
-.price-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
+    .meta-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
 
-.price {
-  color: var(--good);
-  font-size: 1.2rem;
-  font-weight: 800;
-}
+    .price-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
 
-.avg-price {
-  color: var(--muted);
-  font-size: 0.82rem;
-  text-decoration: line-through;
-  text-decoration-thickness: 1.5px;
-}
+    .price {
+      color: var(--good);
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
 
-.asin {
-  color: var(--muted);
-  font-size: 0.75rem;
-}
+    .avg-price {
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-decoration: line-through;
+      text-decoration-thickness: 1.5px;
+    }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 9px 0 12px;
-}
+    .asin {
+      color: var(--muted);
+      font-size: 0.75rem;
+    }
 
-.mini-tag {
-  background: var(--panel-2);
-  border: 1px solid var(--border);
-  color: var(--muted);
-  border-radius: 999px;
-  padding: 4px 8px;
-  font-size: 0.74rem;
-}
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 9px 0 12px;
+    }
 
-.actions {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-}
+    .mini-tag {
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: 0.74rem;
+    }
 
-.actions a,
-.actions button {
-  text-align: center;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  padding: 9px 10px;
-  font-weight: 700;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 0.86rem;
-}
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      align-items: stretch;
+    }
 
-.buy-btn {
-  color: #17110a;
-  background: var(--accent);
-  border-color: var(--accent) !important;
-}
+    .actions a,
+    .actions button {
+      width: 100%;
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 9px 10px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.84rem;
+      line-height: 1.15;
+    }
 
-.copy-btn,
-.hide-btn {
-  background: var(--panel-2);
-  color: var(--text);
-}
+    .buy-btn {
+      color: #17110a;
+      background: var(--accent);
+      border-color: var(--accent) !important;
+    }
 
-.junk-btn {
-  grid-column: 1 / -1;
-  background: var(--danger-bg);
-  color: #fecaca;
-  border-color: rgba(239, 68, 68, 0.35) !important;
-}
+    .copy-btn,
+    .hide-btn {
+      background: var(--panel-2);
+      color: var(--text);
+    }
 
-.empty-state {
-  border: 1px dashed var(--border);
-  border-radius: 18px;
-  color: var(--muted);
-  padding: 32px 18px;
-  text-align: center;
-  background: rgba(255,255,255,0.02);
-}
+    .junk-btn {
+      background: var(--danger-bg);
+      color: #fecaca;
+      border-color: rgba(239, 68, 68, 0.35) !important;
+    }
 
-.toast {
-  position: fixed;
-  left: 50%;
-  bottom: 18px;
-  transform: translateX(-50%);
-  background: #111827;
-  color: var(--text);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 10px 14px;
-  box-shadow: var(--shadow);
-  z-index: 40;
-  display: none;
-  max-width: calc(100% - 28px);
-  text-align: center;
-  font-size: 0.9rem;
-}
+    .empty-state {
+      border: 1px dashed var(--border);
+      border-radius: 18px;
+      color: var(--muted);
+      padding: 32px 18px;
+      text-align: center;
+      background: rgba(255,255,255,0.02);
+    }
 
-@media (min-width: 760px) {
-  header {
-    padding: 16px 22px 12px;
-  }
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
+      background: #111827;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 10px 14px;
+      box-shadow: var(--shadow);
+      z-index: 40;
+      display: none;
+      max-width: calc(100% - 28px);
+      text-align: center;
+      font-size: 0.9rem;
+    }
 
-  main {
-    padding: 20px 22px 100px;
-  }
+    @media (min-width: 760px) {
+      header {
+        padding: 16px 22px 12px;
+      }
 
-  h1 {
-    font-size: 1.35rem;
-  }
+      main {
+        padding: 20px 22px 100px;
+      }
 
-  .toolbar {
-    top: 142px;
-  }
-}
+      h1 {
+        font-size: 1.35rem;
+      }
 
+      .toolbar {
+        top: 142px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -354,21 +367,29 @@ main {
     <div class="top-row">
       <h1>Wooden Robot Deals</h1>
       <div class="deal-count" id="dealCount">0 deals</div>
-    </div><div class="search-wrap">
-  <input id="searchInput" type="search" placeholder="Search deals, brands, ASINs..." autocomplete="off" />
-  <button id="clearSearchBtn" type="button" aria-label="Clear search">×</button>
-</div>
+    </div>
 
-<div class="filter-section" id="tagFilters" aria-label="Filter by tag"></div>
+    <div class="search-wrap">
+      <input id="searchInput" type="search" placeholder="Search deals, brands, ASINs..." autocomplete="off" />
+      <button id="clearSearchBtn" type="button" aria-label="Clear search">×</button>
+    </div>
 
-  </header>  <main>
+    <div class="filter-section" id="tagFilters" aria-label="Filter by tag"></div>
+  </header>
+
+  <main>
     <div class="toolbar">
       <span id="activeFilterLabel">Showing all tags</span>
       <button id="showIgnoredBtn" type="button">Ignored ASINs</button>
-    </div><section id="dealGrid" class="grid"></section>
-<section id="emptyState" class="empty-state" style="display:none;">No matching deals found.</section>
+    </div>
 
-  </main>  <div id="toast" class="toast"></div>  <script>
+    <section id="dealGrid" class="grid"></section>
+    <section id="emptyState" class="empty-state" style="display:none;">No matching deals found.</section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script>
     /********************************************************************
      * Wooden Robot PWA immediate UI improvements
      *
@@ -655,7 +676,7 @@ main {
               <a class="buy-btn" href="${escapeHtml(deal.url)}" target="_blank" rel="noopener noreferrer">Amazon</a>
               <button class="copy-btn" type="button" data-action="copy" data-asin="${escapeHtml(deal.asin)}">Copy ASIN</button>
               <button class="hide-btn" type="button" data-action="hide" data-asin="${escapeHtml(deal.asin)}">Hide</button>
-              <button class="junk-btn" type="button" data-action="junk" data-asin="${escapeHtml(deal.asin)}">Junk Deal — Ignore ASIN</button>
+              <button class="junk-btn" type="button" data-action="junk" data-asin="${escapeHtml(deal.asin)}">Ignore ASIN</button>
             </div>
           </div>
         </article>
@@ -792,5 +813,6 @@ main {
         els.toast.style.display = "none";
       }, 2600);
     }
-  </script></body>
+  </script>
+</body>
 </html>

@@ -116,6 +116,10 @@
           <option value="Brand">★ Brands</option>
           <option value="Hot">🔥 Hot</option>
           <option value="Saved">★ Saved</option>
+          <option value="Excellent">✅ Excellent</option>
+          <option value="Good">👍 Good</option>
+          <option value="Junk">🗑️ Junk</option>
+          <option value="Untagged">Untagged</option>
         </select>
       </div>
 
@@ -149,7 +153,7 @@
 
     function money(value) {
       const num = Number(value);
-      return Number.isFinite(num) ? `$${num.toFixed(2)}` : "N/A";
+      return Number.isFinite(num) && num > 0 ? `$${num.toFixed(2)}` : "N/A";
     }
 
     function safeNumber(value, fallback = 0) {
@@ -157,8 +161,29 @@
       return Number.isFinite(num) ? num : fallback;
     }
 
+    function getSavedDeals() {
+      return JSON.parse(localStorage.getItem("mySavedDeals")) || [];
+    }
+
+    function getDealTags() {
+      return JSON.parse(localStorage.getItem("dealTags")) || {};
+    }
+
+    function setDealTag(asin, tag) {
+      const tags = getDealTags();
+
+      if (tag === "none") {
+        delete tags[asin];
+      } else {
+        tags[asin] = tag;
+      }
+
+      localStorage.setItem("dealTags", JSON.stringify(tags));
+      filterAndSort();
+    }
+
     function toggleBookmark(asin) {
-      let saved = JSON.parse(localStorage.getItem("mySavedDeals")) || [];
+      let saved = getSavedDeals();
 
       if (saved.includes(asin)) {
         saved = saved.filter(id => id !== asin);
@@ -231,7 +256,6 @@
 
     function renderSourceTabs() {
       const container = document.getElementById("source-tabs");
-
       const streams = ["All", ...new Set(allDeals.map(d => d.category).filter(Boolean))];
 
       container.innerHTML = streams.map(stream => `
@@ -243,7 +267,7 @@
               : "bg-slate-800 text-slate-400"
           }"
         >
-          ${stream.replaceAll("_", " ")}
+          ${stream.replaceAll("_", " ").replaceAll(",", " + ")}
         </button>
       `).join("");
     }
@@ -254,7 +278,7 @@
 
       select.innerHTML = `
         <option value="All">All Streams</option>
-        ${categories.map(cat => `<option value="${cat}">${cat.replaceAll("_", " ")}</option>`).join("")}
+        ${categories.map(cat => `<option value="${cat}">${cat.replaceAll("_", " ").replaceAll(",", " + ")}</option>`).join("")}
       `;
     }
 
@@ -296,9 +320,13 @@
       const sort = document.getElementById("sortSelect").value;
       const sub = document.getElementById("subCatSelect").value;
       const tag = document.getElementById("tagFilter").value;
-      const saved = JSON.parse(localStorage.getItem("mySavedDeals")) || [];
+
+      const saved = getSavedDeals();
+      const dealTags = getDealTags();
 
       let filtered = allDeals.filter(d => {
+        const dealTag = dealTags[d.asin] || "none";
+
         const matchesSearch = d.title.toLowerCase().includes(search);
         const matchesStreamTab = currentSourceKey === "All" || d.category === currentSourceKey;
         const matchesDropdown = sub === "All" || d.category === sub;
@@ -307,7 +335,11 @@
           tag === "All" ||
           (tag === "Brand" && d.isNameBrand) ||
           (tag === "Hot" && d.isHot) ||
-          (tag === "Saved" && saved.includes(d.asin));
+          (tag === "Saved" && saved.includes(d.asin)) ||
+          (tag === "Excellent" && dealTag === "excellent") ||
+          (tag === "Good" && dealTag === "good") ||
+          (tag === "Junk" && dealTag === "junk") ||
+          (tag === "Untagged" && dealTag === "none");
 
         return matchesSearch && matchesStreamTab && matchesDropdown && matchesTag;
       });
@@ -326,6 +358,12 @@
 
       document.getElementById("deal-grid").innerHTML = filtered.map(d => {
         const affiliateUrl = buildAffiliateUrl(d.asin);
+        const currentTag = dealTags[d.asin] || "none";
+
+        const tagBadge =
+          currentTag !== "none"
+            ? `<span class="bg-purple-600 text-white text-[9px] font-black px-2 py-1 rounded-lg">${currentTag.toUpperCase()}</span>`
+            : "";
 
         return `
           <div class="deal-card bg-white rounded-[2rem] border-2 border-slate-200 p-5 flex flex-col relative ${d.isHot ? "hot-glow" : ""}">
@@ -333,10 +371,11 @@
               ${saved.includes(d.asin) ? "★" : "☆"}
             </button>
 
-            <div class="flex flex-wrap gap-1 mb-3">
+            <div class="flex flex-wrap gap-1 mb-3 pr-8">
               ${d.isNameBrand ? '<span class="bg-slate-900 text-white text-[9px] font-black px-2 py-1 rounded-lg">★ BRAND</span>' : ""}
               ${d.isHot ? '<span class="bg-orange-500 text-white text-[9px] font-black px-2 py-1 rounded-lg">🔥 HOT</span>' : ""}
-              ${d.category ? `<span class="bg-blue-100 text-blue-800 text-[9px] font-black px-2 py-1 rounded-lg">${d.category.replaceAll("_", " ").toUpperCase()}</span>` : ""}
+              ${tagBadge}
+              ${d.category ? `<span class="bg-blue-100 text-blue-800 text-[9px] font-black px-2 py-1 rounded-lg">${d.category.replaceAll("_", " ").replaceAll(",", " + ").toUpperCase()}</span>` : ""}
             </div>
 
             <div class="h-40 flex items-center justify-center mb-4 bg-slate-50 rounded-2xl p-4 relative">
@@ -346,7 +385,7 @@
 
             <h3 class="font-bold text-lg h-20 overflow-hidden mb-4">${d.title}</h3>
 
-            <div class="mb-5 bg-slate-50 p-4 rounded-2xl">
+            <div class="mb-4 bg-slate-50 p-4 rounded-2xl">
               <div class="flex justify-between items-center mb-2">
                 <div>
                   <p class="text-[9px] text-slate-400 font-black">PRICE</p>
@@ -372,6 +411,13 @@
                   <p class="text-sm font-black">${d.rank && d.rank !== 999999 ? d.rank.toLocaleString() : "N/A"}</p>
                 </div>
               </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-1 mb-2">
+              <button onclick="setDealTag('${d.asin}', 'excellent')" class="${currentTag === "excellent" ? "ring-2 ring-green-900" : ""} bg-green-600 text-white text-[9px] font-black py-2 rounded-lg">BEST</button>
+              <button onclick="setDealTag('${d.asin}', 'good')" class="${currentTag === "good" ? "ring-2 ring-blue-900" : ""} bg-blue-600 text-white text-[9px] font-black py-2 rounded-lg">GOOD</button>
+              <button onclick="setDealTag('${d.asin}', 'junk')" class="${currentTag === "junk" ? "ring-2 ring-red-900" : ""} bg-red-600 text-white text-[9px] font-black py-2 rounded-lg">JUNK</button>
+              <button onclick="setDealTag('${d.asin}', 'none')" class="bg-slate-300 text-slate-800 text-[9px] font-black py-2 rounded-lg">CLEAR</button>
             </div>
 
             <div class="space-y-2 mt-auto">

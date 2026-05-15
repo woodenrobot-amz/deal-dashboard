@@ -95,7 +95,7 @@ const STREAMS = {
 
   three_d_printing: {
     name: "three_d_printing",
-    asinLimit: 20,
+    asinLimit: 30,
     selection: {
       categories_exclude: ["8481415011"],
       current_SALES_gte: 1,
@@ -108,13 +108,13 @@ const STREAMS = {
       sort: [["current_SALES", "asc"], ["monthlySold", "desc"]],
       productType: [0],
       page: 0,
-      perPage: 100
+      perPage: 1000
     }
   },
 
   deals_for_dudes: {
     name: "deals_for_dudes",
-    asinLimit: 30,
+    asinLimit: 50,
     selection: {
       categories_exclude: ["172435","172526","172574","3011391011","3248684011","502394","524136","6684132011"],
       current_SALES_gte: 1,
@@ -130,7 +130,7 @@ const STREAMS = {
       lastRatingUpdate_gte: 7952433,
       productType: [0],
       page: 0,
-      perPage: 100
+      perPage: 1000
     }
   }
 };

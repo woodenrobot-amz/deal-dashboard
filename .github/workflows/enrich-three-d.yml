@@ -1,0 +1,57 @@
+name: Enrich 3D Printing
+
+on:
+  schedule:
+    # 7:20 AM Eastern Daylight Time
+    - cron: "20 11 * * *"
+
+    # 10:20 AM EDT
+    - cron: "20 14 * * *"
+
+    # 1:20 PM EDT
+    - cron: "20 17 * * *"
+
+    # 4:20 PM EDT
+    - cron: "20 20 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: keepa-enrich-3d-printing
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run 3D printing enrichment
+        env:
+          KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+        run: node scripts/enrich-stream.js three_d_printing
+
+      - name: Commit enrichment results
+        run: |
+          git config user.name "keepa-bot"
+          git config user.email "keepa-bot@users.noreply.github.com"
+
+          git add data/deals.json
+          git add data/discovered-asins.json
+
+          git diff --cached --quiet || git commit -m "enrich 3d printing deals"
+
+          git pull --rebase origin main
+          git push

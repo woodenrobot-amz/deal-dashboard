@@ -2,17 +2,17 @@ name: Enrich 3D Printing
 
 on:
   schedule:
-    # 7:20 AM Eastern Daylight Time
-    - cron: "20 11 * * *"
+    # 8:20 AM Eastern Daylight Time
+    - cron: "20 12 * * *"
 
-    # 10:20 AM EDT
-    - cron: "20 14 * * *"
+    # 11:20 AM EDT
+    - cron: "20 15 * * *"
 
-    # 1:20 PM EDT
-    - cron: "20 17 * * *"
+    # 2:20 PM EDT
+    - cron: "20 19 * * *"
 
-    # 4:20 PM EDT
-    - cron: "20 20 * * *"
+    # 5:20 PM EDT
+    - cron: "20 21 * * *"
 
   workflow_dispatch:
 

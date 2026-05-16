@@ -9,6 +9,7 @@ const ENRICH_LIMITS = {
   three_d_printing: 50
 };
 
+const SPC_DEFAULT_STREAM = "deals_for_dudes";
 const TOKEN_FLOOR = 75;
 const MAX_DEAL_AGE_HOURS = 48;
 const MIN_KEEPA_HISTORY_DAYS = 90;
@@ -58,6 +59,39 @@ function readIgnoredParentAsins() {
   }
 
   return new Set((parsed.ignoredParentAsins || []).map(normalizeAsin).filter(Boolean));
+}
+
+function readSpcImports() {
+  const parsed = readJson("data/spc-asins.json", []);
+
+  const rawItems = Array.isArray(parsed)
+    ? parsed
+    : Array.isArray(parsed.asins)
+      ? parsed.asins
+      : [];
+
+  return rawItems
+    .map(item => {
+      if (typeof item === "string") {
+        return {
+          asin: normalizeAsin(item),
+          source: "sponsored_products_creators",
+          streams: [SPC_DEFAULT_STREAM]
+        };
+      }
+
+      const asin = normalizeAsin(item.asin);
+
+      return {
+        ...item,
+        asin,
+        source: item.source || "sponsored_products_creators",
+        streams: Array.isArray(item.streams) && item.streams.length
+          ? item.streams
+          : [SPC_DEFAULT_STREAM]
+      };
+    })
+    .filter(item => item.asin);
 }
 
 function buildProductUrl(asins) {
@@ -175,53 +209,34 @@ function scoreDeal(d) {
     reviews: 0,
     variationFamily: 0,
     productAge: 0,
-    streamFit: 0
+    streamFit: 0,
+    spc: 0
   };
 
-  if (d.rating) {
-    breakdown.rating += d.rating * 5;
-  }
+  if (d.rating) breakdown.rating += d.rating * 5;
 
   if (d.price && d.avg90 && d.avg90 > d.price) {
     breakdown.discount += ((d.avg90 - d.price) / d.avg90) * 100 * 1.5;
   }
 
-  if (d.rank && d.rank <= 5000) {
-    breakdown.rank += 30;
-  }
+  if (d.rank && d.rank <= 5000) breakdown.rank += 30;
 
-  if (d.reviewCount >= 500) {
-    breakdown.reviews += 5;
-  }
+  if (d.reviewCount >= 500) breakdown.reviews += 5;
+  if (d.reviewCount >= 1000) breakdown.reviews += 5;
 
-  if (d.reviewCount >= 1000) {
-    breakdown.reviews += 5;
-  }
+  if (d.variationCount >= 8) breakdown.variationFamily += 3;
+  if (d.variationCount >= 20) breakdown.variationFamily += 5;
 
-  if (d.variationCount >= 8) {
-    breakdown.variationFamily += 3;
-  }
-
-  if (d.variationCount >= 20) {
-    breakdown.variationFamily += 5;
-  }
-
-  if (d.productAgeDays >= 365) {
-    breakdown.productAge += 3;
-  }
-
-  if (d.productAgeDays >= 730) {
-    breakdown.productAge += 5;
-  }
+  if (d.productAgeDays >= 365) breakdown.productAge += 3;
+  if (d.productAgeDays >= 730) breakdown.productAge += 5;
 
   if (d.category === "deals_for_dudes") {
-    if (d.price >= 20 && d.price <= 150) {
-      breakdown.streamFit += 5;
-    }
+    if (d.price >= 20 && d.price <= 150) breakdown.streamFit += 5;
+    if (d.reviewCount >= 2000) breakdown.streamFit += 5;
+  }
 
-    if (d.reviewCount >= 2000) {
-      breakdown.streamFit += 5;
-    }
+  if (d.spcImported) {
+    breakdown.spc += 10;
   }
 
   const roundedBreakdown = Object.fromEntries(
@@ -236,12 +251,13 @@ function scoreDeal(d) {
   };
 }
 
-function normalizeProduct(p, streamName) {
+function normalizeProduct(p, streamName, sourceMeta = {}) {
   const asin = normalizeAsin(p.asin);
   const parentAsin = getParentAsin(p);
   const variationCount = getVariationCount(p);
   const rank = getSalesRank(p);
   const productAgeDays = getProductAgeDays(p);
+  const spcImported = Boolean(sourceMeta.spcImported);
 
   const deal = {
     asin,
@@ -251,6 +267,11 @@ function normalizeProduct(p, streamName) {
     productAgeDays,
     title: cleanTitle(p.title),
     category: streamName,
+    sources: spcImported
+      ? ["sponsored_products_creators", "keepa"]
+      : ["keepa"],
+    spcImported,
+    spcCapturedAt: sourceMeta.spcCapturedAt || "",
     price: getCurrentPrice(p),
     avg90: getAvg90(p),
     rating: getRating(p),
@@ -284,6 +305,10 @@ function mergeCategories(a, b) {
   )].join(",");
 }
 
+function mergeSources(a = [], b = []) {
+  return [...new Set([...(a || []), ...(b || [])].filter(Boolean))];
+}
+
 function chooseBetterDeal(existing, incoming) {
   if ((incoming.dealScore || 0) > (existing.dealScore || 0)) return incoming;
   if ((incoming.dealScore || 0) < (existing.dealScore || 0)) return existing;
@@ -313,6 +338,9 @@ function dedupeDeals(deals) {
     asinMap.set(deal.asin, {
       ...better,
       category: mergeCategories(existing.category, deal.category),
+      sources: mergeSources(existing.sources, deal.sources),
+      spcImported: Boolean(existing.spcImported || deal.spcImported),
+      spcCapturedAt: existing.spcCapturedAt || deal.spcCapturedAt || "",
       dealScore: Math.max(existing.dealScore || 0, deal.dealScore || 0)
     });
   }
@@ -333,6 +361,9 @@ function dedupeDeals(deals) {
     familyMap.set(familyKey, {
       ...better,
       category: mergeCategories(existing.category, deal.category),
+      sources: mergeSources(existing.sources, deal.sources),
+      spcImported: Boolean(existing.spcImported || deal.spcImported),
+      spcCapturedAt: existing.spcCapturedAt || deal.spcCapturedAt || "",
       siblingAsins: [
         ...new Set([
           ...(existing.siblingAsins || []),
@@ -357,6 +388,13 @@ function removeExpiredDeals(deals) {
     if (!deal.updatedAt) return false;
     return new Date(deal.updatedAt).getTime() > cutoff;
   });
+}
+
+function isActiveDeal(deal) {
+  if (!deal.updatedAt) return false;
+
+  const cutoff = Date.now() - MAX_DEAL_AGE_HOURS * 60 * 60 * 1000;
+  return new Date(deal.updatedAt).getTime() > cutoff;
 }
 
 async function fetchProducts(asins) {
@@ -390,21 +428,76 @@ async function run() {
 
   const discovery = readJson("data/discovered-asins.json", { asins: [] });
   const existingDealsFile = readJson("data/deals.json", { deals: [] });
+  const spcImports = readSpcImports();
 
   const discovered = discovery.asins || [];
+  const existingDeals = existingDealsFile.deals || [];
 
-  const candidates = discovered
+  const activeDealAsins = new Set(
+    existingDeals
+      .filter(isActiveDeal)
+      .map(deal => normalizeAsin(deal.asin))
+      .filter(Boolean)
+  );
+
+  const discoveryCandidates = discovered
     .filter(item => (item.streams || []).includes(STREAM_NAME))
     .filter(item => !ignoredAsins.has(normalizeAsin(item.asin)))
     .filter(item => !item.parentAsin || !ignoredParentAsins.has(normalizeAsin(item.parentAsin)))
     .filter(item => !item.enrichedAt)
-    .slice(0, ENRICH_LIMITS[STREAM_NAME]);
+    .map(item => ({
+      ...item,
+      sourceType: "discovery",
+      spcImported: false
+    }));
+
+  const spcCandidates = spcImports
+    .filter(item => (item.streams || []).includes(STREAM_NAME))
+    .filter(item => !ignoredAsins.has(normalizeAsin(item.asin)))
+    .filter(item => !activeDealAsins.has(normalizeAsin(item.asin)))
+    .map(item => ({
+      ...item,
+      streams: item.streams || [STREAM_NAME],
+      sourceType: "spc",
+      spcImported: true,
+      spcCapturedAt: item.capturedAt || item.importedAt || ""
+    }));
+
+  const candidateMap = new Map();
+
+  for (const item of [...spcCandidates, ...discoveryCandidates]) {
+    const asin = normalizeAsin(item.asin);
+    if (!asin) continue;
+
+    if (!candidateMap.has(asin)) {
+      candidateMap.set(asin, {
+        ...item,
+        asin
+      });
+      continue;
+    }
+
+    const existing = candidateMap.get(asin);
+
+    candidateMap.set(asin, {
+      ...existing,
+      ...item,
+      asin,
+      spcImported: Boolean(existing.spcImported || item.spcImported),
+      spcCapturedAt: existing.spcCapturedAt || item.spcCapturedAt || "",
+      sourceType: existing.sourceType === "spc" ? "spc" : item.sourceType
+    });
+  }
+
+  const candidates = [...candidateMap.values()].slice(0, ENRICH_LIMITS[STREAM_NAME]);
 
   console.log(`Stream: ${STREAM_NAME}`);
   console.log(`Discovery pool: ${discovered.length} total ASINs`);
+  console.log(`SPC import pool: ${spcImports.length} total ASINs`);
   console.log(`Ignored ASINs: ${ignoredAsins.size}`);
   console.log(`Ignored parent ASINs: ${ignoredParentAsins.size}`);
   console.log(`Candidates selected: ${candidates.length}`);
+  console.log(`SPC candidates selected: ${candidates.filter(x => x.spcImported).length}`);
 
   if (!candidates.length) {
     console.log(`No ${STREAM_NAME} ASINs waiting for enrichment.`);
@@ -414,6 +507,16 @@ async function run() {
   const asins = candidates
     .map(item => normalizeAsin(item.asin))
     .filter(Boolean);
+
+  const sourceMetaByAsin = new Map(
+    candidates.map(item => [
+      normalizeAsin(item.asin),
+      {
+        spcImported: Boolean(item.spcImported),
+        spcCapturedAt: item.spcCapturedAt || ""
+      }
+    ])
+  );
 
   const { products, tokensLeft } = await fetchProducts(asins);
 
@@ -429,14 +532,18 @@ async function run() {
 
   const newDeals = products
     .filter(hasEnoughKeepaHistory)
-    .map(p => normalizeProduct(p, STREAM_NAME))
+    .map(p => normalizeProduct(
+      p,
+      STREAM_NAME,
+      sourceMetaByAsin.get(normalizeAsin(p.asin)) || {}
+    ))
     .filter(d => d.asin && d.title && d.price)
     .filter(d => !ignoredAsins.has(d.asin))
     .filter(d => !d.parentAsin || !ignoredParentAsins.has(d.parentAsin));
 
   const mergedDeals = removeExpiredDeals(
     dedupeDeals([
-      ...(existingDealsFile.deals || []),
+      ...existingDeals,
       ...newDeals
     ])
   )
@@ -494,6 +601,7 @@ async function run() {
   });
 
   console.log(`New valid ${STREAM_NAME} deals: ${newDeals.length}`);
+  console.log(`New valid SPC-backed deals: ${newDeals.filter(x => x.spcImported).length}`);
   console.log(`Total active enriched deals after parent-family dedupe: ${mergedDeals.length}`);
   console.log(`Marked ${enrichedSet.size} ASINs as enriched.`);
 }

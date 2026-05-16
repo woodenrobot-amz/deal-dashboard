@@ -1,13 +1,23 @@
 name: Enrich Woodworking Deals
 
 on:
+  schedule:
+    # 6:15 AM Eastern Daylight Time
+    - cron: "15 10 * * *"
+
+    # 9:15 AM EDT
+    - cron: "15 13 * * *"
+
+    # 12:15 PM EDT
+    - cron: "15 16 * * *"
+
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: keepa-enrichment-sync
+  group: keepa-enrich-woodworking
   cancel-in-progress: false
 
 jobs:
@@ -25,16 +35,20 @@ jobs:
         with:
           node-version: 24
 
-      - name: Enrich woodworking deals
+      - name: Run woodworking enrichment
         env:
           KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
-        run: node scripts/enrich-woodworking.js
+        run: node scripts/enrich-stream.js woodworking
 
       - name: Commit enrichment results
         run: |
           git config user.name "keepa-bot"
           git config user.email "keepa-bot@users.noreply.github.com"
-          git add data/deals.json data/discovered-asins.json
+
+          git add data/deals.json
+          git add data/discovered-asins.json
+
           git diff --cached --quiet || git commit -m "enrich woodworking deals"
+
           git pull --rebase origin main
           git push

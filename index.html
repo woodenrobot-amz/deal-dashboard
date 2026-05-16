@@ -184,6 +184,7 @@
     }
 
     .deal-card {
+      position: relative;
       border: 1px solid var(--border);
       background: var(--panel);
       border-radius: 18px;
@@ -191,11 +192,43 @@
       box-shadow: var(--shadow);
     }
 
+    .card-menu-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 3;
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(43, 50, 64, 0.6);
+      border-radius: 999px;
+      background: rgba(23, 26, 33, 0.88);
+      color: var(--text);
+      font-size: 1.15rem;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-menu-button:hover {
+      background: var(--panel-2);
+      border-color: var(--accent);
+    }
+
+    .card-menu-button.active {
+      background: rgba(245, 158, 11, 0.18);
+      border-color: rgba(245, 158, 11, 0.7);
+      color: #fbbf24;
+    }
+
     .image-wrap {
       aspect-ratio: 4 / 3;
       background: #fff;
-      display: grid;
-      place-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 12px;
       max-height: 205px;
       overflow: hidden;
@@ -313,6 +346,71 @@
       border-radius: 999px;
       padding: 4px 8px;
       font-size: 0.74rem;
+    }
+
+    .deal-details {
+      display: none;
+      margin: 0 12px 12px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(31, 36, 48, 0.72);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .deal-card.details-open .deal-details {
+      display: block;
+    }
+
+    .details-title {
+      color: var(--text);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .details-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .detail-row,
+    .score-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+    }
+
+    .detail-row span:first-child,
+    .score-row span:first-child {
+      color: var(--muted);
+    }
+
+    .detail-row span:last-child,
+    .score-row span:last-child {
+      color: var(--text);
+      font-weight: 700;
+      text-align: right;
+      word-break: break-word;
+    }
+
+    .score-breakdown {
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+      margin-top: 8px;
+    }
+
+    .score-breakdown-title {
+      color: var(--text);
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .score-row {
+      padding: 3px 0;
     }
 
     .actions {
@@ -555,9 +653,14 @@
           brand: deal.brand || "",
           tags: tags,
           score: firstValidNumber(deal.score, deal.dealScore, deal.powerScore),
+          scoreBreakdown: deal.scoreBreakdown || {},
+          parentAsin: String(deal.parentAsin || "").trim(),
+          familyKey: String(deal.familyKey || deal.parentAsin || asin).trim(),
+          variationCount: firstValidNumber(deal.variationCount, deal.variations, deal.variationTotal),
+          productAgeDays: firstValidNumber(deal.productAgeDays, deal.trackingDays, deal.daysTracked, deal.keepaTrackingDays),
           reviewCount: firstValidNumber(deal.reviewCount, deal.reviews, deal.ratingCount),
           salesRank: firstValidNumber(deal.salesRank, deal.currentSalesRank, deal.rank),
-          trackingDays: firstValidNumber(deal.trackingDays, deal.daysTracked, deal.keepaTrackingDays)
+          trackingDays: firstValidNumber(deal.trackingDays, deal.daysTracked, deal.keepaTrackingDays, deal.productAgeDays)
         });
       }).filter(function(deal) {
         return deal.asin;
@@ -702,17 +805,22 @@
 
     function renderDealCard(deal) {
       const price = formatPrice(deal.price);
-      const avg90 = shouldShowAvg90(deal.price, deal.avg90) ? '<div class="avg-price" title="90-day average">90-day avg ' + formatPrice(deal.avg90) + '</div>' : "";
+      const avg90 = shouldShowAvg90(deal.price, deal.avg90)
+        ? '<div class="avg-price" title="90-day average">90-day avg ' + formatPrice(deal.avg90) + '</div>'
+        : "";
       const scoreBadge = renderScoreBadge(deal.score);
       const isBookmarked = state.bookmarkedAsins.has(deal.asin);
       const bookmarkLabel = isBookmarked ? "Bookmarked" : "Bookmark";
       const bookmarkClass = isBookmarked ? "bookmark-btn active" : "bookmark-btn";
-      const img = deal.image ? '<img src="' + escapeHtml(deal.image) + '" alt="' + escapeHtml(deal.title) + '" loading="lazy">' : '<span style="color:#111;">No image</span>';
+      const img = deal.image
+        ? '<img src="' + escapeHtml(deal.image) + '" alt="' + escapeHtml(deal.title) + '" loading="lazy">'
+        : '<span style="color:#111;">No image</span>';
       const tags = (deal.tags || []).map(function(tag) {
         return '<span class="mini-tag">' + escapeHtml(tag) + '</span>';
       }).join("");
 
       return '<article class="deal-card" data-asin="' + escapeHtml(deal.asin) + '">' +
+        '<button class="card-menu-button" type="button" data-action="details" data-asin="' + escapeHtml(deal.asin) + '" aria-label="Show deal details" title="Deal details">☰</button>' +
         '<div class="image-wrap">' + img + '</div>' +
         '<div class="card-body">' +
         '<h2 class="title">' + escapeHtml(deal.title) + '</h2>' +
@@ -729,10 +837,78 @@
         '<button class="junk-btn" type="button" data-action="junk" data-asin="' + escapeHtml(deal.asin) + '">Ignore ASIN</button>' +
         '</div>' +
         '</div>' +
+        renderDealDetails(deal) +
         '</article>';
     }
 
+    function renderDealDetails(deal) {
+      const parentAsin = deal.parentAsin || "None";
+      const familyKey = deal.familyKey || deal.parentAsin || deal.asin || "None";
+      const productAge = deal.productAgeDays ? Math.round(Number(deal.productAgeDays)) + " days" : "Unknown";
+      const variationCount = deal.variationCount ? Math.round(Number(deal.variationCount)) : 0;
+      const reviewCount = deal.reviewCount ? Math.round(Number(deal.reviewCount)).toLocaleString("en-US") : "Unknown";
+      const rank = deal.salesRank ? "#" + Math.round(Number(deal.salesRank)).toLocaleString("en-US") : "Unknown";
+
+      return '<div class="deal-details" id="details-' + escapeHtml(deal.asin) + '">' +
+        '<div class="details-title">Deal Deep Dive</div>' +
+        '<div class="details-grid">' +
+        detailRow("Score", Number.isFinite(Number(deal.score)) ? Math.round(Number(deal.score)) : "Unknown") +
+        detailRow("Product Age", productAge) +
+        detailRow("Parent ASIN", parentAsin) +
+        detailRow("Family Key", familyKey) +
+        detailRow("Variations", variationCount) +
+        detailRow("Reviews", reviewCount) +
+        detailRow("Sales Rank", rank) +
+        '</div>' +
+        renderScoreBreakdown(deal.scoreBreakdown) +
+        '</div>';
+    }
+
+    function detailRow(label, value) {
+      return '<div class="detail-row"><span>' + escapeHtml(label) + '</span><span>' + escapeHtml(value) + '</span></div>';
+    }
+
+    function renderScoreBreakdown(breakdown) {
+      if (!breakdown || !Object.keys(breakdown).length) {
+        return '<div class="score-breakdown"><div class="score-breakdown-title">Score Detail</div><div class="score-row"><span>No breakdown stored yet</span><span>—</span></div></div>';
+      }
+
+      const rows = Object.entries(breakdown).map(function(entry) {
+        const key = prettyScoreKey(entry[0]);
+        const value = Number(entry[1]);
+        const displayValue = Number.isFinite(value) ? "+" + Math.round(value) : String(entry[1]);
+
+        return '<div class="score-row"><span>' + escapeHtml(key) + '</span><span>' + escapeHtml(displayValue) + '</span></div>';
+      }).join("");
+
+      return '<div class="score-breakdown"><div class="score-breakdown-title">Score Detail</div>' + rows + '</div>';
+    }
+
+    function prettyScoreKey(key) {
+      return String(key || "")
+        .replace(/([a-z])([A-Z])/g, "$1 $2")
+        .replaceAll("_", " ")
+        .replaceAll("-", " ")
+        .trim()
+        .split(" ")
+        .filter(Boolean)
+        .map(function(word) {
+          return word.charAt(0).toUpperCase() + word.slice(1);
+        })
+        .join(" ");
+    }
+
     function bindCardButtons() {
+      Array.from(els.dealGrid.querySelectorAll('[data-action="details"]')).forEach(function(button) {
+        button.addEventListener("click", function() {
+          const card = button.closest(".deal-card");
+          if (!card) return;
+
+          card.classList.toggle("details-open");
+          button.classList.toggle("active", card.classList.contains("details-open"));
+        });
+      });
+
       Array.from(els.dealGrid.querySelectorAll('[data-action="copy"]')).forEach(function(button) {
         button.addEventListener("click", async function() {
           const asin = button.dataset.asin;

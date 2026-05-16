@@ -252,6 +252,46 @@
       text-decoration-thickness: 1.5px;
     }
 
+    .score-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--panel-2);
+      color: var(--text);
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 5px 8px;
+      margin-top: 4px;
+      white-space: nowrap;
+    }
+
+    .score-post {
+      background: rgba(34, 197, 94, 0.14);
+      border-color: rgba(34, 197, 94, 0.55);
+      color: #86efac;
+    }
+
+    .score-strong {
+      background: rgba(245, 158, 11, 0.14);
+      border-color: rgba(245, 158, 11, 0.55);
+      color: #fbbf24;
+    }
+
+    .score-maybe {
+      background: rgba(148, 163, 184, 0.14);
+      border-color: rgba(148, 163, 184, 0.35);
+      color: #cbd5e1;
+    }
+
+    .score-weak {
+      background: rgba(239, 68, 68, 0.12);
+      border-color: rgba(239, 68, 68, 0.35);
+      color: #fecaca;
+    }
+
     .asin {
       color: var(--muted);
       font-size: 0.75rem;
@@ -513,10 +553,17 @@
           image: deal.image || deal.imageUrl || deal.img || "",
           url: deal.url || deal.amazonUrl || deal.link || asinToAmazonUrl(asin),
           brand: deal.brand || "",
-          tags: tags
+          tags: tags,
+          score: firstValidNumber(deal.score, deal.dealScore, deal.powerScore),
+          reviewCount: firstValidNumber(deal.reviewCount, deal.reviews, deal.ratingCount),
+          salesRank: firstValidNumber(deal.salesRank, deal.currentSalesRank, deal.rank),
+          trackingDays: firstValidNumber(deal.trackingDays, deal.daysTracked, deal.keepaTrackingDays)
         });
       }).filter(function(deal) {
         return deal.asin;
+      }).map(function(deal) {
+        if (deal.score === null) deal.score = scoreDeal(deal);
+        return deal;
       });
     }
 
@@ -656,6 +703,7 @@
     function renderDealCard(deal) {
       const price = formatPrice(deal.price);
       const avg90 = shouldShowAvg90(deal.price, deal.avg90) ? '<div class="avg-price" title="90-day average">90-day avg ' + formatPrice(deal.avg90) + '</div>' : "";
+      const scoreBadge = renderScoreBadge(deal.score);
       const isBookmarked = state.bookmarkedAsins.has(deal.asin);
       const bookmarkLabel = isBookmarked ? "Bookmarked" : "Bookmark";
       const bookmarkClass = isBookmarked ? "bookmark-btn active" : "bookmark-btn";
@@ -669,7 +717,7 @@
         '<div class="card-body">' +
         '<h2 class="title">' + escapeHtml(deal.title) + '</h2>' +
         '<div class="meta-row">' +
-        '<div class="price-stack"><div class="price">' + price + '</div>' + avg90 + '</div>' +
+        '<div class="price-stack"><div class="price">' + price + '</div>' + avg90 + scoreBadge + '</div>' +
         '<div class="asin">' + escapeHtml(deal.asin) + '</div>' +
         '</div>' +
         '<div class="tags">' + tags + '</div>' +
@@ -781,6 +829,91 @@
       if (!Number.isFinite(Number(price)) || !Number.isFinite(Number(avg90))) return false;
       return Number(avg90) > Number(price);
     }
+
+    function renderScoreBadge(score) {
+      const numeric = Number(score);
+      if (!Number.isFinite(numeric)) return "";
+
+      let className = "score-badge score-weak";
+      let label = "Weak";
+
+      if (numeric >= 85) {
+        className = "score-badge score-post";
+        label = "Post";
+      } else if (numeric >= 70) {
+        className = "score-badge score-strong";
+        label = "Strong";
+      } else if (numeric >= 55) {
+        className = "score-badge score-maybe";
+        label = "Maybe";
+      }
+
+      return '<div class="' + className + '" title="Deal score">' + Math.round(numeric) + ' · ' + label + '</div>';
+    }
+
+    function scoreDeal(deal) {
+      let score = 0;
+      const price = Number(deal.price);
+      const avg90 = Number(deal.avg90);
+      const reviewCount = Number(deal.reviewCount || 0);
+      const rank = Number(deal.salesRank || 0);
+      const trackingDays = Number(deal.trackingDays || 0);
+      const brand = String(deal.brand || "").toLowerCase().trim();
+      const tags = (deal.tags || []).map(function(tag) { return String(tag).toLowerCase(); });
+
+      if (price > 0 && avg90 > price) {
+        const discountPct = ((avg90 - price) / avg90) * 100;
+        score += Math.min(35, Math.round(discountPct * 1.15));
+      }
+
+      if (TIER_1_BRANDS.has(brand)) score += 20;
+      else if (TIER_2_BRANDS.has(brand)) score += 12;
+      else if (TIER_3_BRANDS.has(brand)) score += 6;
+
+      if (trackingDays >= 365) score += 15;
+      else if (trackingDays >= 180) score += 11;
+      else if (trackingDays >= 90) score += 7;
+      else if (trackingDays > 0) score += 2;
+
+      if (reviewCount >= 1000) score += 10;
+      else if (reviewCount >= 300) score += 8;
+      else if (reviewCount >= 100) score += 5;
+      else if (reviewCount >= 30) score += 2;
+
+      if (rank > 0 && rank <= 5000) score += 5;
+      else if (rank > 0 && rank <= 20000) score += 3;
+      else if (rank > 0 && rank <= 75000) score += 1;
+
+      if (tags.includes("woodworking")) score += 10;
+      else if (tags.includes("3d printing")) score += 9;
+      else if (tags.includes("edc")) score += 8;
+      else if (tags.includes("grilling")) score += 7;
+      else if (tags.includes("tools")) score += 6;
+
+      if (deal.asin && deal.asin.startsWith("B0") && reviewCount > 0 && reviewCount < 75) score -= 12;
+      if (trackingDays > 0 && trackingDays < 90) score -= 10;
+      if (!brand) score -= 5;
+      if (price > 0 && price < 8) score -= 5;
+
+      return Math.max(0, Math.min(100, Math.round(score)));
+    }
+
+    const TIER_1_BRANDS = new Set([
+      "dewalt", "milwaukee", "makita", "bosch", "festool", "sawstop", "bambu lab",
+      "woodpeckers", "starrett", "knipex", "wera", "wiha", "leatherman", "yeti",
+      "blackstone", "weber", "traeger", "solo stove"
+    ]);
+
+    const TIER_2_BRANDS = new Set([
+      "ridgid", "ryobi", "diablo", "freud", "bessey", "kreg", "rockler", "titebond",
+      "rubio monocoat", "prusa", "creality", "anycubic", "elegoo", "flashforge",
+      "overture", "polymaker", "hatchbox", "esun", "rtic", "stanley", "gerber",
+      "spyderco", "benchmade", "olight", "meater"
+    ]);
+
+    const TIER_3_BRANDS = new Set([
+      "sunlu", "bigtreetech", "micro swiss", "noctua", "klingspor"
+    ]);
 
     function loadSet(key) {
       try {

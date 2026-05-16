@@ -2,17 +2,17 @@ name: Enrich Deals For Dudes
 
 on:
   schedule:
-    # 7:15 AM Eastern Daylight Time
+    # 7:20 AM Eastern Daylight Time
     - cron: "20 11 * * *"
 
-    # 10:15 AM EDT
+    # 10:20 AM EDT
     - cron: "20 14 * * *"
 
-    # 1:15 PM EDT
+    # 1:20 PM EDT
     - cron: "20 17 * * *"
 
-# 4:20 PM EDT
-- cron: "20 20 * * *"
+    # 4:20 PM EDT
+    - cron: "20 20 * * *"
 
   workflow_dispatch:
 

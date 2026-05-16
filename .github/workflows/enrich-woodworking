@@ -1,0 +1,40 @@
+name: Enrich Woodworking Deals
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: keepa-enrichment-sync
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Enrich woodworking deals
+        env:
+          KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+        run: node scripts/enrich-woodworking.js
+
+      - name: Commit enrichment results
+        run: |
+          git config user.name "keepa-bot"
+          git config user.email "keepa-bot@users.noreply.github.com"
+          git add data/deals.json data/discovered-asins.json
+          git diff --cached --quiet || git commit -m "enrich woodworking deals"
+          git pull --rebase origin main
+          git push

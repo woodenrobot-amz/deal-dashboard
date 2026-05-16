@@ -118,9 +118,7 @@ function getParentAsin(p) {
 }
 
 function getVariationCount(p) {
-  if (Array.isArray(p.variationCSV)) {
-    return p.variationCSV.length;
-  }
+  if (Array.isArray(p.variationCSV)) return p.variationCSV.length;
 
   if (typeof p.variationCSV === "string" && p.variationCSV.trim()) {
     return p.variationCSV
@@ -129,37 +127,28 @@ function getVariationCount(p) {
       .filter(Boolean).length;
   }
 
-  if (Array.isArray(p.variations)) {
-    return p.variations.length;
-  }
+  if (Array.isArray(p.variations)) return p.variations.length;
 
   return 0;
 }
 
 function keepaMinutesToDate(value) {
   if (typeof value !== "number" || value <= 0) return null;
-
   return new Date(KEEPA_EPOCH_MS + value * 60 * 1000);
 }
 
 function getProductAgeDays(p) {
   const trackedSince = keepaMinutesToDate(p.trackingSince);
-
   if (!trackedSince) return null;
 
   return Math.floor(
-    (Date.now() - trackedSince.getTime()) /
-      (24 * 60 * 60 * 1000)
+    (Date.now() - trackedSince.getTime()) / (24 * 60 * 60 * 1000)
   );
 }
 
 function hasEnoughKeepaHistory(p) {
   const ageDays = getProductAgeDays(p);
-
-  return (
-    ageDays !== null &&
-    ageDays >= MIN_KEEPA_HISTORY_DAYS
-  );
+  return ageDays !== null && ageDays >= MIN_KEEPA_HISTORY_DAYS;
 }
 
 function getImage(p) {
@@ -170,46 +159,80 @@ function getImage(p) {
   if (Array.isArray(p.images) && p.images.length) {
     const first = p.images[0];
 
-    if (first.l) {
-      return `https://images-na.ssl-images-amazon.com/images/I/${first.l}`;
-    }
-
-    if (first.m) {
-      return `https://images-na.ssl-images-amazon.com/images/I/${first.m}`;
-    }
+    if (first.l) return `https://images-na.ssl-images-amazon.com/images/I/${first.l}`;
+    if (first.m) return `https://images-na.ssl-images-amazon.com/images/I/${first.m}`;
   }
 
   return "";
 }
 
 function scoreDeal(d) {
-  let score = 0;
+  const breakdown = {
+    rating: 0,
+    discount: 0,
+    rank: 0,
+    reviews: 0,
+    variationFamily: 0,
+    productAge: 0,
+    streamFit: 0
+  };
 
   if (d.rating) {
-    score += d.rating * 5;
+    breakdown.rating += d.rating * 5;
   }
 
   if (d.price && d.avg90 && d.avg90 > d.price) {
-    score += ((d.avg90 - d.price) / d.avg90) * 100 * 1.5;
+    breakdown.discount += ((d.avg90 - d.price) / d.avg90) * 100 * 1.5;
   }
 
-  if (d.rank && d.rank <= 5000) score += 30;
+  if (d.rank && d.rank <= 5000) {
+    breakdown.rank += 30;
+  }
 
-  if (d.reviewCount >= 500) score += 5;
-  if (d.reviewCount >= 1000) score += 5;
+  if (d.reviewCount >= 500) {
+    breakdown.reviews += 5;
+  }
 
-  if (d.variationCount >= 8) score += 3;
-  if (d.variationCount >= 20) score += 5;
+  if (d.reviewCount >= 1000) {
+    breakdown.reviews += 5;
+  }
 
-  if (d.productAgeDays >= 365) score += 3;
-  if (d.productAgeDays >= 730) score += 5;
+  if (d.variationCount >= 8) {
+    breakdown.variationFamily += 3;
+  }
+
+  if (d.variationCount >= 20) {
+    breakdown.variationFamily += 5;
+  }
+
+  if (d.productAgeDays >= 365) {
+    breakdown.productAge += 3;
+  }
+
+  if (d.productAgeDays >= 730) {
+    breakdown.productAge += 5;
+  }
 
   if (d.category === "deals_for_dudes") {
-    if (d.price >= 20 && d.price <= 150) score += 5;
-    if (d.reviewCount >= 2000) score += 5;
+    if (d.price >= 20 && d.price <= 150) {
+      breakdown.streamFit += 5;
+    }
+
+    if (d.reviewCount >= 2000) {
+      breakdown.streamFit += 5;
+    }
   }
 
-  return Math.floor(score);
+  const roundedBreakdown = Object.fromEntries(
+    Object.entries(breakdown).map(([key, value]) => [key, Math.floor(value)])
+  );
+
+  const total = Object.values(roundedBreakdown).reduce((sum, value) => sum + value, 0);
+
+  return {
+    total,
+    breakdown: roundedBreakdown
+  };
 }
 
 function normalizeProduct(p, streamName) {
@@ -242,7 +265,10 @@ function normalizeProduct(p, streamName) {
     updatedAt: new Date().toISOString()
   };
 
-  deal.dealScore = scoreDeal(deal);
+  const score = scoreDeal(deal);
+
+  deal.dealScore = score.total;
+  deal.scoreBreakdown = score.breakdown;
 
   return deal;
 }
@@ -258,25 +284,12 @@ function mergeCategories(a, b) {
 }
 
 function chooseBetterDeal(existing, incoming) {
-  if ((incoming.dealScore || 0) > (existing.dealScore || 0)) {
-    return incoming;
-  }
+  if ((incoming.dealScore || 0) > (existing.dealScore || 0)) return incoming;
+  if ((incoming.dealScore || 0) < (existing.dealScore || 0)) return existing;
 
-  if ((incoming.dealScore || 0) < (existing.dealScore || 0)) {
-    return existing;
-  }
-
-  if ((incoming.rank || Infinity) < (existing.rank || Infinity)) {
-    return incoming;
-  }
-
-  if ((incoming.reviewCount || 0) > (existing.reviewCount || 0)) {
-    return incoming;
-  }
-
-  if ((incoming.variationCount || 0) > (existing.variationCount || 0)) {
-    return incoming;
-  }
+  if ((incoming.rank || Infinity) < (existing.rank || Infinity)) return incoming;
+  if ((incoming.reviewCount || 0) > (existing.reviewCount || 0)) return incoming;
+  if ((incoming.variationCount || 0) > (existing.variationCount || 0)) return incoming;
 
   return existing;
 }
@@ -299,21 +312,14 @@ function dedupeDeals(deals) {
     asinMap.set(deal.asin, {
       ...better,
       category: mergeCategories(existing.category, deal.category),
-      dealScore: Math.max(
-        existing.dealScore || 0,
-        deal.dealScore || 0
-      )
+      dealScore: Math.max(existing.dealScore || 0, deal.dealScore || 0)
     });
   }
 
   const familyMap = new Map();
 
   for (const deal of asinMap.values()) {
-    const familyKey =
-      deal.familyKey ||
-      deal.parentAsin ||
-      deal.asin;
-
+    const familyKey = deal.familyKey || deal.parentAsin || deal.asin;
     const existing = familyMap.get(familyKey);
 
     if (!existing) {
@@ -325,10 +331,7 @@ function dedupeDeals(deals) {
 
     familyMap.set(familyKey, {
       ...better,
-      category: mergeCategories(
-        existing.category,
-        deal.category
-      ),
+      category: mergeCategories(existing.category, deal.category),
       siblingAsins: [
         ...new Set([
           ...(existing.siblingAsins || []),
@@ -337,10 +340,7 @@ function dedupeDeals(deals) {
           deal.asin
         ].filter(Boolean))
       ],
-      dealScore: Math.max(
-        existing.dealScore || 0,
-        deal.dealScore || 0
-      )
+      dealScore: Math.max(existing.dealScore || 0, deal.dealScore || 0)
     });
   }
 
@@ -350,16 +350,11 @@ function dedupeDeals(deals) {
 }
 
 function removeExpiredDeals(deals) {
-  const cutoff =
-    Date.now() -
-    MAX_DEAL_AGE_HOURS * 60 * 60 * 1000;
+  const cutoff = Date.now() - MAX_DEAL_AGE_HOURS * 60 * 60 * 1000;
 
   return deals.filter(deal => {
     if (!deal.updatedAt) return false;
-
-    return (
-      new Date(deal.updatedAt).getTime() > cutoff
-    );
+    return new Date(deal.updatedAt).getTime() > cutoff;
   });
 }
 
@@ -371,9 +366,7 @@ async function fetchProducts(asins) {
     };
   }
 
-  console.log(
-    `Enriching ${asins.length} ${STREAM_NAME} ASINs...`
-  );
+  console.log(`Enriching ${asins.length} ${STREAM_NAME} ASINs...`);
 
   const res = await fetch(buildProductUrl(asins));
   const data = await res.json();
@@ -382,9 +375,7 @@ async function fetchProducts(asins) {
     throw new Error(JSON.stringify(data.error));
   }
 
-  console.log(
-    `Tokens consumed: ${data.tokensConsumed}, tokens left: ${data.tokensLeft}`
-  );
+  console.log(`Tokens consumed: ${data.tokensConsumed}, tokens left: ${data.tokensLeft}`);
 
   return {
     products: data.products || [],
@@ -396,54 +387,26 @@ async function run() {
   const ignoredAsins = readIgnoredAsins();
   const ignoredParentAsins = readIgnoredParentAsins();
 
-  const discovery = readJson(
-    "data/discovered-asins.json",
-    { asins: [] }
-  );
-
-  const existingDealsFile = readJson(
-    "data/deals.json",
-    { deals: [] }
-  );
+  const discovery = readJson("data/discovered-asins.json", { asins: [] });
+  const existingDealsFile = readJson("data/deals.json", { deals: [] });
 
   const discovered = discovery.asins || [];
 
   const candidates = discovered
-    .filter(item =>
-      (item.streams || []).includes(STREAM_NAME)
-    )
-    .filter(item =>
-      !ignoredAsins.has(
-        normalizeAsin(item.asin)
-      )
-    )
-    .filter(item =>
-      !item.parentAsin ||
-      !ignoredParentAsins.has(
-        normalizeAsin(item.parentAsin)
-      )
-    )
+    .filter(item => (item.streams || []).includes(STREAM_NAME))
+    .filter(item => !ignoredAsins.has(normalizeAsin(item.asin)))
+    .filter(item => !item.parentAsin || !ignoredParentAsins.has(normalizeAsin(item.parentAsin)))
     .filter(item => !item.enrichedAt)
     .slice(0, ENRICH_LIMITS[STREAM_NAME]);
 
   console.log(`Stream: ${STREAM_NAME}`);
-  console.log(
-    `Discovery pool: ${discovered.length} total ASINs`
-  );
-  console.log(
-    `Ignored ASINs: ${ignoredAsins.size}`
-  );
-  console.log(
-    `Ignored parent ASINs: ${ignoredParentAsins.size}`
-  );
-  console.log(
-    `Candidates selected: ${candidates.length}`
-  );
+  console.log(`Discovery pool: ${discovered.length} total ASINs`);
+  console.log(`Ignored ASINs: ${ignoredAsins.size}`);
+  console.log(`Ignored parent ASINs: ${ignoredParentAsins.size}`);
+  console.log(`Candidates selected: ${candidates.length}`);
 
   if (!candidates.length) {
-    console.log(
-      `No ${STREAM_NAME} ASINs waiting for enrichment.`
-    );
+    console.log(`No ${STREAM_NAME} ASINs waiting for enrichment.`);
     return;
   }
 
@@ -451,21 +414,13 @@ async function run() {
     .map(item => normalizeAsin(item.asin))
     .filter(Boolean);
 
-  const { products, tokensLeft } =
-    await fetchProducts(asins);
+  const { products, tokensLeft } = await fetchProducts(asins);
 
-  if (
-    tokensLeft !== null &&
-    tokensLeft < TOKEN_FLOOR
-  ) {
-    console.log(
-      `Warning: token floor crossed. Tokens left: ${tokensLeft}`
-    );
+  if (tokensLeft !== null && tokensLeft < TOKEN_FLOOR) {
+    console.log(`Warning: token floor crossed. Tokens left: ${tokensLeft}`);
   }
 
-  const tooNewCount = products.filter(
-    p => !hasEnoughKeepaHistory(p)
-  ).length;
+  const tooNewCount = products.filter(p => !hasEnoughKeepaHistory(p)).length;
 
   console.log(
     `Excluded for under ${MIN_KEEPA_HISTORY_DAYS} days Keepa history: ${tooNewCount}`
@@ -476,11 +431,7 @@ async function run() {
     .map(p => normalizeProduct(p, STREAM_NAME))
     .filter(d => d.asin && d.title && d.price)
     .filter(d => !ignoredAsins.has(d.asin))
-    .filter(
-      d =>
-        !d.parentAsin ||
-        !ignoredParentAsins.has(d.parentAsin)
-    );
+    .filter(d => !d.parentAsin || !ignoredParentAsins.has(d.parentAsin));
 
   const mergedDeals = removeExpiredDeals(
     dedupeDeals([
@@ -488,27 +439,13 @@ async function run() {
       ...newDeals
     ])
   )
-    .filter(
-      deal =>
-        !ignoredAsins.has(
-          normalizeAsin(deal.asin)
-        )
-    )
-    .filter(
-      deal =>
-        !deal.parentAsin ||
-        !ignoredParentAsins.has(
-          normalizeAsin(deal.parentAsin)
-        )
-    );
+    .filter(deal => !ignoredAsins.has(normalizeAsin(deal.asin)))
+    .filter(deal => !deal.parentAsin || !ignoredParentAsins.has(normalizeAsin(deal.parentAsin)));
 
   const now = new Date().toISOString();
 
   const productByAsin = new Map(
-    products.map(p => [
-      normalizeAsin(p.asin),
-      p
-    ])
+    products.map(p => [normalizeAsin(p.asin), p])
   );
 
   const enrichedSet = new Set(asins);
@@ -533,10 +470,7 @@ async function run() {
     return {
       ...item,
       asin,
-      parentAsin:
-        parentAsin ||
-        item.parentAsin ||
-        "",
+      parentAsin: parentAsin || item.parentAsin || "",
       familyKey: parentAsin || asin,
       variationCount,
       enrichedAt: now,
@@ -558,17 +492,9 @@ async function run() {
     asins: updatedDiscovery
   });
 
-  console.log(
-    `New valid ${STREAM_NAME} deals: ${newDeals.length}`
-  );
-
-  console.log(
-    `Total active enriched deals after parent-family dedupe: ${mergedDeals.length}`
-  );
-
-  console.log(
-    `Marked ${enrichedSet.size} ASINs as enriched.`
-  );
+  console.log(`New valid ${STREAM_NAME} deals: ${newDeals.length}`);
+  console.log(`Total active enriched deals after parent-family dedupe: ${mergedDeals.length}`);
+  console.log(`Marked ${enrichedSet.size} ASINs as enriched.`);
 }
 
 run().catch(err => {

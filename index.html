@@ -639,7 +639,16 @@
     function normalizeDeals(deals) {
       return deals.filter(Boolean).map(function(deal) {
         const asin = String(deal.asin || deal.ASIN || "").trim();
-        const tags = normalizeTags(deal.tags || deal.tag || deal.categories || deal.category || []);
+        const tags = normalizeTags(
+  deal.tags ||
+  deal.tag ||
+  deal.categories ||
+  deal.category ||
+  deal.stream ||
+  deal.dealStream ||
+  deal.source ||
+  []
+);
         const price = firstValidNumber(deal.price, deal.currentPrice, deal.buyBoxPrice, deal.salePrice, deal.dealPrice);
         const avg90 = getAvg90(deal);
 
@@ -718,8 +727,12 @@
 
       const aliases = {
         "three d printing": "3D Printing",
-        "3 d printing": "3D Printing",
-        "3d printing": "3D Printing",
+"three d printer": "3D Printing",
+"3 d printing": "3D Printing",
+"3d printing": "3D Printing",
+"3d printer": "3D Printing",
+"3d printers": "3D Printing",
+"additive manufacturing": "3D Printing",
         "edc": "EDC",
         "diy": "DIY"
       };

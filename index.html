@@ -595,7 +595,6 @@
     init();
 
     async function init() {
-      // Set initial drop-down selection from state
       els.sortBySelect.value = state.sortBy;
       bindEvents();
       state.deals = normalizeDeals(await getDeals());
@@ -748,4 +747,7 @@
 
       if (deal.keepa) {
         candidates.push(deal.keepa.avg90);
-        if (deal.keepa.stats) candidates.push(dea
+        if (deal.keepa.stats) candidates.push(deal.keepa.stats.avg90);
+      }
+
+      return firstVal

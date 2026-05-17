@@ -2,17 +2,23 @@ name: Enrich Woodworking Deals
 
 on:
   schedule:
-    # 6:20 AM Eastern Daylight Time
+    # 6:20 AM EDT (10:20 UTC)
     - cron: "20 10 * * *"
 
-    # 9:20 AM EDT
+    # 9:20 AM EDT (13:20 UTC)
     - cron: "20 13 * * *"
 
-    # 12:20 PM EDT
+    # 12:20 PM EDT (16:20 UTC)
     - cron: "20 16 * * *"
 
-    # 03:20 PM EDT
+    # 3:20 PM EDT (19:20 UTC)
     - cron: "20 19 * * *"
+
+    # 6:20 PM EDT (22:20 UTC)
+    - cron: "20 22 * * *"
+
+    # 9:20 PM EDT (01:20 UTC next day)
+    - cron: "20 1 * * *"
 
   workflow_dispatch:
 
@@ -36,7 +42,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 22 # Changed to standard LTS for stability, switch back to 24 if strictly required
 
       - name: Run woodworking enrichment
         env:
@@ -51,7 +57,11 @@ jobs:
           git add data/deals.json
           git add data/discovered-asins.json
 
-          git diff --cached --quiet || git commit -m "enrich woodworking deals"
-
-          git pull --rebase origin main
-          git push
+          # Only commit and push if there are actual changes
+          if ! git diff --cached --quiet; then
+            git commit -m "enrich woodworking deals"
+            git pull --rebase origin main
+            git push
+          else
+            echo "No changes to commit"
+          fi

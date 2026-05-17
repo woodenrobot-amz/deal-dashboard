@@ -728,6 +728,7 @@
           deal.inSponsoredProductsPool ||
           deal.sponsoredProductsCreator ||
           sources.includes("sponsored_products_creators")
+    
         );
 
         const tags = normalizeTags(
@@ -1005,14 +1006,35 @@
               ${tagHtml}
             </div>
 
-            <div class="actions">
-              <a href="${escapeAttr(deal.url)}" target="_blank" rel="noopener noreferrer" class="buy-btn">Buy Now</a>
-              <button class="copy-btn" type="button" onclick="copyAsin('${escapeJs(deal.asin)}')">Copy ASIN</button>
-              <button class="bookmark-btn ${isBookmarked ? "active" : ""}" type="button" onclick="toggleBookmark('${escapeJs(deal.asin)}', this)">${isBookmarked ? "Bookmarked" : "Bookmark"}</button>
-              <button class="hide-btn" type="button" onclick="hideAsin('${escapeJs(deal.asin)}')">Hide</button>
-              <button class="junk-btn" type="button" onclick="ignoreAsin('${escapeJs(deal.asin)}')">Ignore Deal</button>
-            </div>
-          </div>
+            <div class='actions'>
+  <a href='${deal.url}' target='_blank' class='buy-btn'>Buy Now</a>
+
+  <button class='copy-btn'
+    onclick='copyAsin("${deal.asin}")'>
+    Copy ASIN
+  </button>
+
+  <button class='bookmark-btn ${isBookmarked ? 'active' : ''}'
+    onclick='toggleBookmark("${deal.asin}", this)'>
+    ${isBookmarked ? 'Bookmarked' : 'Bookmark'}
+  </button>
+
+  <button class='hide-btn'
+    onclick='hideDeal("${deal.asin}")'>
+    Hide
+  </button>
+
+  ${deal.keepaUrl ? `
+    <a href="${deal.keepaUrl}" target="_blank" class="copy-btn">
+      Keepa
+    </a>
+  ` : ''}
+
+  <button class='junk-btn'
+    onclick='ignoreAsin("${deal.asin}")'>
+    Ignore Deal
+  </button>
+</div>
 
           <div class="deal-details">
             <div class="details-title">Deal Properties</div>

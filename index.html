@@ -1083,13 +1083,11 @@
 
     function escapeJs(value) {
       return String(value)
-        .replaceAll("\", "\\")
-        .replaceAll("'", "\'")
+        .replaceAll("\\", "\\\\")
+        .replaceAll("'", "\\'")
         .replaceAll('"', "&quot;")
-        .replaceAll("
-", "")
-        .replaceAll("
-", "");
+        .replaceAll("\n", "")
+        .replaceAll("\r", "");
     }
   </script>
 </body>

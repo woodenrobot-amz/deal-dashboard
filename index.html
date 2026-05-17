@@ -645,9 +645,17 @@
           return;
         }
 
-        const message = ["Ignored ASINs:", "", ignored.join(String.fromCharCode(10)), "", "Tip: use Copy Ignored to paste this list into ChatGPT for search tuning.", "", "Restore all ignored ASINs?"].join(String.fromCharCode(10));
-        const restore = confirm(message);
+        const message = [
+          "Ignored ASINs:",
+          "",
+          ignored.join(String.fromCharCode(10)),
+          "",
+          "Tip: use Copy Ignored to paste this list into ChatGPT for search tuning.",
+          "",
+          "Restore all ignored ASINs?"
+        ].join(String.fromCharCode(10));
 
+        const restore = confirm(message);
         if (restore) {
           state.ignoredAsins.clear();
           saveSet(STORAGE_KEYS.ignoredAsins, state.ignoredAsins);
@@ -684,6 +692,7 @@
           deal.sponsoredProductsCreator ||
           sources.includes("sponsored_products_creators")
         );
+
         const tags = normalizeTags(
           []
             .concat(
@@ -697,6 +706,7 @@
             )
             .concat(spcImported ? ["SPC Op"] : [])
         );
+
         const price = firstValidNumber(deal.price, deal.currentPrice, deal.buyBoxPrice, deal.salePrice, deal.dealPrice);
         const avg90 = getAvg90(deal);
 
@@ -751,190 +761,336 @@
       }
 
       return firstValidNumber.apply(null, candidates);
-}
-​function normalizeSources(value) {
-if (Array.isArray(value)) {
-return value.map(function(source) {
-return String(source || '').trim();
-}).filter(Boolean);
-}
-​if (typeof value === 'string') {
-return value
-.replaceAll('|', ',')
-.split(',')
-.map(function(source) {
-return source.trim();
-})
-.filter(Boolean);
-}
-​return [];
-}
-​function normalizeTags(value) {
-let tags = [];
-if (Array.isArray(value)) {
-tags = value;
-} else if (typeof value === 'string') {
-tags = value.replaceAll('|', ',').split(',');
-}
-​const seen = new Set();
-return tags.map(function(tag) {
-return prettyTagName(String(tag).trim());
-}).filter(function(tag) {
-if (!tag) return false;
-if (seen.has(tag)) return false;
-seen.add(tag);
-return true;
-});
-}
-​function prettyTagName(tag) {
-const normalized = tag.toLowerCase().replaceAll('_', ' ').replaceAll('-', ' ').trim();
-return normalized.split(' ').filter(Boolean).join(' ');
-}
-​function scoreDeal(deal) {
-return deal.score || 0;
-}
-​function firstValidNumber(...args) {
-for (let i = 0; i < args.length; i++) {
-if (typeof args[i] === 'number' && !isNaN(args[i])) return args[i];
-if (typeof args[i] === 'string' && args[i].trim() !== '' && !isNaN(Number(args[i]))) return Number(args[i]);
-}
-return null;
-}
-​function asinToAmazonUrl(asin) {
-return 'https://www.amazon.com/dp/' + asin;
-}
-​function loadSet(key) {
-try {
-const data = localStorage.getItem(key);
-return data ? new Set(JSON.parse(data)) : new Set();
-} catch (e) {
-return new Set();
-}
-}
-​function saveSet(key, set) {
-localStorage.setItem(key, JSON.stringify(Array.from(set)));
-}
-​function clearSearch() {
-state.search = '';
-els.searchInput.value = '';
-els.clearSearchBtn.style.display = 'none';
-renderDeals();
-}
-​async function copyToClipboard(text) {
-try {
-await navigator.clipboard.writeText(text);
-} catch (err) {
-const textArea = document.createElement('textarea');
-textArea.value = text;
-document.body.appendChild(textArea);
-textArea.select();
-document.execCommand('copy');
-document.body.removeChild(textArea);
-}
-}
-​function showToast(msg) {
-els.toast.textContent = msg;
-els.toast.style.display = 'block';
-setTimeout(() => { els.toast.style.display = 'none'; }, 3000);
-}
-​function sortDealsArray(deals) {
-return deals.sort((a, b) => {
-switch (state.sortBy) {
-case 'priceHL':
-return (b.price || 0) - (a.price || 0);
-case 'priceLH':
-return (a.price || 0) - (b.price || 0);
-case 'newest':
-const ageA = a.productAgeDays !== null ? a.productAgeDays : 9999;
-const ageB = b.productAgeDays !== null ? b.productAgeDays : 9999;
-return ageA - ageB;
-case 'bsr':
-const rankA = a.salesRank !== null ? a.salesRank : 99999999;
-const rankB = b.salesRank !== null ? b.salesRank : 99999999;
-return rankA - rankB;
-case 'dealScore':
-default:
-return (b.score || 0) - (a.score || 0);
-}
-});
-}
-​function renderDeals() {
-let filtered = state.deals.filter(deal => {
-if (state.ignoredAsins.has(deal.asin) || state.hiddenAsins.has(deal.asin)) return false;
-if (state.showBookmarksOnly && !state.bookmarkedAsins.has(deal.asin)) return false;
-if (state.selectedTag !== 'All' && !deal.tags.includes(state.selectedTag)) return false;
-​if (state.search) {
-const inTitle = deal.title.toLowerCase().includes(state.search);
-const inAsin = deal.asin.toLowerCase().includes(state.search);
-const inBrand = deal.brand.toLowerCase().includes(state.search);
-if (!inTitle && !inAsin && !inBrand) return false;
-}
-return true;
-});
-​filtered = sortDealsArray(filtered);
-​els.dealCount.textContent = filtered.length + ' deal' + (filtered.length === 1 ? '' : 's');
-els.activeFilterLabel.textContent = state.selectedTag === 'All' ? 'Showing all tags' : 'Filtered by: ' + state.selectedTag;
-​if (filtered.length === 0) {
-els.dealGrid.innerHTML = '';
-els.emptyState.style.display = 'block';
-return;
-}
-els.emptyState.style.display = 'none';
-​els.dealGrid.innerHTML = filtered.map(deal => {
-const isBookmarked = state.bookmarkedAsins.has(deal.asin);
-let scoreClass = 'score-maybe';
-if (deal.score >= 80) scoreClass = 'score-post';
-else if (deal.score >= 50) scoreClass = 'score-strong';
-else if (deal.score < 30) scoreClass = 'score-weak';
-​return <div class='deal-card' id='card-\${deal.asin}'> <button class='card-menu-button' onclick='toggleDetails(&quot;\${deal.asin}&quot;)'>⋮</button> <div class='image-wrap'> <img src='\${deal.image || &quot;[https://via.placeholder.com/150&quot](https://via.placeholder.com/150&quot);}' alt='' loading='lazy'> </div> <div class='card-body'> <div class='title'>\${deal.title}</div> <div class='meta-row'> <div class='price-stack'> <span class='price'>\$\${(deal.price || 0).toFixed(2)}</span> \${deal.avg90 ?<span class='avg-price'>$${deal.avg90.toFixed(2)}</span>: ''} </div> <div style='display:flex; flex-direction:column; align-items:flex-end;'> <span class='score-badge \${scoreClass}'>Score: \${deal.score}</span> <span class='asin'>\${deal.asin}</span> </div> </div> <div class='tags'> \${deal.brand ?<span class='mini-tag mini-tag-spc'>${deal.brand}</span>: ''} \${deal.tags.slice(0, 2).map(t =><span class='mini-tag'>${t}</span>).join('')} </div> <div class='actions'> <a href='\${deal.url}' target='_blank' class='buy-btn'>Buy Now</a> <button class='bookmark-btn \${isBookmarked ? 'active' : ''}' onclick='toggleBookmark(&quot;\${deal.asin}&quot;, this)'> \${isBookmarked ? 'Bookmarked' : 'Bookmark'} </button> <button class='junk-btn' onclick='ignoreAsin(&quot;\${deal.asin}&quot;)'>Ignore Deal</button> </div> </div> <div class='deal-details'> <div class='details-title'>Deal Properties</div> <div class='details-grid'> <div class='detail-row'><span>BSR Rank:</span><span>\${deal.salesRank || 'N/A'}</span></div> <div class='detail-row'><span>Age (Days):</span><span>\${deal.productAgeDays || 'N/A'}</span></div> <div class='detail-row'><span>Reviews:</span><span>\${deal.reviewCount || 'N/A'}</span></div> </div> </div> </div> ;
-}).join('');
-}
-​window.toggleDetails = function(asin) {
-const card = document.getElementById(`card-${asin}`);
-if (card) card.classList.toggle('details-open');
-};
-​window.toggleBookmark = function(asin, btn) {
-if (state.bookmarkedAsins.has(asin)) {
-state.bookmarkedAsins.delete(asin);
-btn.classList.remove('active');
-btn.textContent = 'Bookmark';
-} else {
-state.bookmarkedAsins.add(asin);
-btn.classList.add('active');
-btn.textContent = 'Bookmarked';
-}
-saveSet(STORAGE_KEYS.bookmarkedAsins, state.bookmarkedAsins);
-if (state.showBookmarksOnly) renderDeals();
-};
-​window.ignoreAsin = function(asin) {
-state.ignoredAsins.add(asin);
-saveSet(STORAGE_KEYS.ignoredAsins, state.ignoredAsins);
-showToast(`ASIN ${asin} added to ignore pipeline.`);
-renderDeals();
-};
-​function renderTags() {
-const tagsMap = {};
-state.deals.forEach(d => {
-d.tags.forEach(t => { tagsMap[t] = (tagsMap[t] || 0) + 1; });
-});
-​const sortedTags = Object.keys(tagsMap).sort();
-const allActive = state.selectedTag === 'All' ? 'active' : '';
-​let html = <div class='tag-pill \${allActive}' onclick='setTag(&quot;All&quot;)'>All (\${state.deals.length})</div>;
-html += sortedTags.map(t => {
-const active = state.selectedTag === t ? 'active' : '';
-return <div class='tag-pill \${active}' onclick='setTag(&quot;\${t}&quot;)'>\${t} (\${tagsMap[t]})</div>;
-}).join('');
-​els.tagFilters.innerHTML = html;
-}
-​window.setTag = function(tag) {
-state.selectedTag = tag;
-localStorage.setItem(STORAGE_KEYS.selectedTag, tag);
-render();
-};
-​function render() {
-renderTags();
-renderDeals();
-}
-</script>
+    }
+
+    function normalizeSources(value) {
+      if (Array.isArray(value)) {
+        return value.map(function(source) {
+          return String(source || "").trim();
+        }).filter(Boolean);
+      }
+
+      if (typeof value === "string") {
+        return value
+          .replaceAll("|", ",")
+          .split(",")
+          .map(function(source) {
+            return source.trim();
+          })
+          .filter(Boolean);
+      }
+
+      return [];
+    }
+
+    function normalizeTags(value) {
+      let tags = [];
+      if (Array.isArray(value)) {
+        tags = value;
+      } else if (typeof value === "string") {
+        tags = value.replaceAll("|", ",").split(",");
+      }
+
+      const seen = new Set();
+      return tags.map(function(tag) {
+        return prettyTagName(String(tag).trim());
+      }).filter(function(tag) {
+        if (!tag) return false;
+        if (seen.has(tag)) return false;
+        seen.add(tag);
+        return true;
+      });
+    }
+
+    function prettyTagName(tag) {
+      const normalized = tag.toLowerCase().replaceAll("_", " ").replaceAll("-", " ").trim();
+      if (!normalized) return "";
+      return normalized.split(" ").filter(Boolean).map(function(part) {
+        if (part === "spc") return "SPC";
+        return part.charAt(0).toUpperCase() + part.slice(1);
+      }).join(" ");
+    }
+
+    function scoreDeal(deal) {
+      return deal.score || 0;
+    }
+
+    function firstValidNumber() {
+      for (let i = 0; i < arguments.length; i++) {
+        const value = arguments[i];
+        if (typeof value === "number" && !Number.isNaN(value)) return value;
+        if (typeof value === "string" && value.trim() !== "" && !Number.isNaN(Number(value))) return Number(value);
+      }
+      return null;
+    }
+
+    function asinToAmazonUrl(asin) {
+      return "https://www.amazon.com/dp/" + encodeURIComponent(asin);
+    }
+
+    function loadSet(key) {
+      try {
+        const data = localStorage.getItem(key);
+        return data ? new Set(JSON.parse(data)) : new Set();
+      } catch (error) {
+        return new Set();
+      }
+    }
+
+    function saveSet(key, set) {
+      localStorage.setItem(key, JSON.stringify(Array.from(set)));
+    }
+
+    function clearSearch() {
+      state.search = "";
+      els.searchInput.value = "";
+      els.clearSearchBtn.style.display = "none";
+      renderDeals();
+    }
+
+    async function copyToClipboard(text) {
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch (error) {
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+      }
+    }
+
+    function showToast(message) {
+      els.toast.textContent = message;
+      els.toast.style.display = "block";
+      clearTimeout(showToast.timeout);
+      showToast.timeout = setTimeout(function() {
+        els.toast.style.display = "none";
+      }, 3000);
+    }
+
+    function sortDealsArray(deals) {
+      return deals.sort(function(a, b) {
+        switch (state.sortBy) {
+          case "priceHL":
+            return (b.price || 0) - (a.price || 0);
+          case "priceLH":
+            return (a.price || 0) - (b.price || 0);
+          case "newest": {
+            const ageA = a.productAgeDays !== null ? a.productAgeDays : 9999;
+            const ageB = b.productAgeDays !== null ? b.productAgeDays : 9999;
+            return ageA - ageB;
+          }
+          case "bsr": {
+            const rankA = a.salesRank !== null ? a.salesRank : 99999999;
+            const rankB = b.salesRank !== null ? b.salesRank : 99999999;
+            return rankA - rankB;
+          }
+          case "dealScore":
+          default:
+            return (b.score || 0) - (a.score || 0);
+        }
+      });
+    }
+
+    function renderDeals() {
+      let filtered = state.deals.filter(function(deal) {
+        if (state.ignoredAsins.has(deal.asin) || state.hiddenAsins.has(deal.asin)) return false;
+        if (state.showBookmarksOnly && !state.bookmarkedAsins.has(deal.asin)) return false;
+        if (state.selectedTag !== "All" && !deal.tags.includes(state.selectedTag)) return false;
+
+        if (state.search) {
+          const inTitle = String(deal.title || "").toLowerCase().includes(state.search);
+          const inAsin = String(deal.asin || "").toLowerCase().includes(state.search);
+          const inBrand = String(deal.brand || "").toLowerCase().includes(state.search);
+          if (!inTitle && !inAsin && !inBrand) return false;
+        }
+
+        return true;
+      });
+
+      filtered = sortDealsArray(filtered);
+
+      els.dealCount.textContent = filtered.length + " deal" + (filtered.length === 1 ? "" : "s");
+      els.activeFilterLabel.textContent = state.selectedTag === "All" ? "Showing all tags" : "Filtered by: " + state.selectedTag;
+
+      if (filtered.length === 0) {
+        els.dealGrid.innerHTML = "";
+        els.emptyState.style.display = "block";
+        return;
+      }
+
+      els.emptyState.style.display = "none";
+      els.dealGrid.innerHTML = filtered.map(renderDealCard).join("");
+    }
+
+    function renderDealCard(deal) {
+      const isBookmarked = state.bookmarkedAsins.has(deal.asin);
+      let scoreClass = "score-maybe";
+      if (deal.score >= 80) scoreClass = "score-post";
+      else if (deal.score >= 50) scoreClass = "score-strong";
+      else if (deal.score < 30) scoreClass = "score-weak";
+
+      const imageUrl = deal.image || "https://via.placeholder.com/300x225?text=No+Image";
+      const priceHtml = deal.price !== null ? `$${deal.price.toFixed(2)}` : "N/A";
+      const avg90Html = deal.avg90 !== null ? `<span class="avg-price">$${deal.avg90.toFixed(2)}</span>` : "";
+      const brandHtml = deal.brand ? `<span class="mini-tag mini-tag-spc">${escapeHtml(deal.brand)}</span>` : "";
+      const tagHtml = deal.tags.slice(0, 2).map(function(tag) {
+        return `<span class="mini-tag">${escapeHtml(tag)}</span>`;
+      }).join("");
+
+      return `
+        <div class="deal-card" id="card-${escapeAttr(deal.asin)}">
+          <button class="card-menu-button" type="button" onclick="toggleDetails('${escapeJs(deal.asin)}')" aria-label="Toggle deal details">⋮</button>
+
+          <div class="image-wrap">
+            <img src="${escapeAttr(imageUrl)}" alt="" loading="lazy">
+          </div>
+
+          <div class="card-body">
+            <div class="title">${escapeHtml(deal.title)}</div>
+
+            <div class="meta-row">
+              <div class="price-stack">
+                <span class="price">${priceHtml}</span>
+                ${avg90Html}
+              </div>
+
+              <div style="display:flex; flex-direction:column; align-items:flex-end;">
+                <span class="score-badge ${scoreClass}">Score: ${escapeHtml(String(deal.score ?? 0))}</span>
+                <span class="asin">${escapeHtml(deal.asin)}</span>
+              </div>
+            </div>
+
+            <div class="tags">
+              ${brandHtml}
+              ${tagHtml}
+            </div>
+
+            <div class="actions">
+              <a href="${escapeAttr(deal.url)}" target="_blank" rel="noopener noreferrer" class="buy-btn">Buy Now</a>
+              <button class="bookmark-btn ${isBookmarked ? "active" : ""}" type="button" onclick="toggleBookmark('${escapeJs(deal.asin)}', this)">${isBookmarked ? "Bookmarked" : "Bookmark"}</button>
+              <button class="junk-btn" type="button" onclick="ignoreAsin('${escapeJs(deal.asin)}')">Ignore Deal</button>
+            </div>
+          </div>
+
+          <div class="deal-details">
+            <div class="details-title">Deal Properties</div>
+            <div class="details-grid">
+              <div class="detail-row"><span>BSR Rank:</span><span>${escapeHtml(formatValue(deal.salesRank))}</span></div>
+              <div class="detail-row"><span>Age (Days):</span><span>${escapeHtml(formatValue(deal.productAgeDays))}</span></div>
+              <div class="detail-row"><span>Reviews:</span><span>${escapeHtml(formatValue(deal.reviewCount))}</span></div>
+              <div class="detail-row"><span>Parent ASIN:</span><span>${escapeHtml(deal.parentAsin || "N/A")}</span></div>
+              <div class="detail-row"><span>Tracking Days:</span><span>${escapeHtml(formatValue(deal.trackingDays))}</span></div>
+            </div>
+            ${renderScoreBreakdown(deal.scoreBreakdown)}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderScoreBreakdown(scoreBreakdown) {
+      if (!scoreBreakdown || typeof scoreBreakdown !== "object" || Array.isArray(scoreBreakdown)) return "";
+      const rows = Object.entries(scoreBreakdown);
+      if (!rows.length) return "";
+
+      return `
+        <div class="score-breakdown">
+          <div class="score-breakdown-title">Score Breakdown</div>
+          ${rows.map(function(entry) {
+            return `<div class="score-row"><span>${escapeHtml(prettyTagName(entry[0]))}</span><span>${escapeHtml(formatValue(entry[1]))}</span></div>`;
+          }).join("")}
+        </div>
+      `;
+    }
+
+    function formatValue(value) {
+      if (value === null || value === undefined || value === "") return "N/A";
+      return String(value);
+    }
+
+    function renderTags() {
+      const tagsMap = {};
+      state.deals.forEach(function(deal) {
+        deal.tags.forEach(function(tag) {
+          tagsMap[tag] = (tagsMap[tag] || 0) + 1;
+        });
+      });
+
+      const sortedTags = Object.keys(tagsMap).sort();
+      const allActive = state.selectedTag === "All" ? "active" : "";
+
+      let html = `<div class="tag-pill ${allActive}" onclick="setTag('All')">All (${state.deals.length})</div>`;
+      html += sortedTags.map(function(tag) {
+        const active = state.selectedTag === tag ? "active" : "";
+        return `<div class="tag-pill ${active}" onclick="setTag('${escapeJs(tag)}')">${escapeHtml(tag)} (${tagsMap[tag]})</div>`;
+      }).join("");
+
+      els.tagFilters.innerHTML = html;
+    }
+
+    window.toggleDetails = function(asin) {
+      const card = document.getElementById("card-" + asin);
+      if (card) card.classList.toggle("details-open");
+    };
+
+    window.toggleBookmark = function(asin, button) {
+      if (state.bookmarkedAsins.has(asin)) {
+        state.bookmarkedAsins.delete(asin);
+        button.classList.remove("active");
+        button.textContent = "Bookmark";
+      } else {
+        state.bookmarkedAsins.add(asin);
+        button.classList.add("active");
+        button.textContent = "Bookmarked";
+      }
+
+      saveSet(STORAGE_KEYS.bookmarkedAsins, state.bookmarkedAsins);
+      if (state.showBookmarksOnly) renderDeals();
+    };
+
+    window.ignoreAsin = function(asin) {
+      state.ignoredAsins.add(asin);
+      saveSet(STORAGE_KEYS.ignoredAsins, state.ignoredAsins);
+      showToast("ASIN " + asin + " added to ignore pipeline.");
+      render();
+    };
+
+    window.setTag = function(tag) {
+      state.selectedTag = tag;
+      localStorage.setItem(STORAGE_KEYS.selectedTag, tag);
+      render();
+    };
+
+    function render() {
+      renderTags();
+      renderDeals();
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function escapeAttr(value) {
+      return escapeHtml(value);
+    }
+
+    function escapeJs(value) {
+      return String(value)
+        .replaceAll("\", "\\")
+        .replaceAll("'", "\'")
+        .replaceAll('"', "&quot;")
+        .replaceAll("
+", "")
+        .replaceAll("
+", "");
+    }
+  </script>
 </body>
 </html>

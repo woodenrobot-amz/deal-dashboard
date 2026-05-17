@@ -150,13 +150,33 @@
       backdrop-filter: blur(10px);
       color: var(--muted);
       font-size: 0.86rem;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    #activeFilterLabel {
+      flex: 0 0 auto;
+      max-width: 42%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .toolbar-actions {
       display: flex;
       gap: 8px;
       align-items: center;
+      overflow-x: auto;
+      overflow-y: hidden;
+      min-width: 0;
+      flex: 1 1 auto;
+      justify-content: flex-end;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
     }
+
+    .toolbar-actions::-webkit-scrollbar { display: none; }
 
     .toolbar button,
     .toolbar select {
@@ -509,6 +529,23 @@
       max-width: calc(100% - 28px);
       text-align: center;
       font-size: 0.9rem;
+    }
+
+    @media (max-width: 520px) {
+      .toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      #activeFilterLabel {
+        max-width: 100%;
+      }
+
+      .toolbar-actions {
+        width: 100%;
+        justify-content: flex-start;
+      }
     }
 
     @media (min-width: 760px) {
@@ -970,7 +1007,9 @@
 
             <div class="actions">
               <a href="${escapeAttr(deal.url)}" target="_blank" rel="noopener noreferrer" class="buy-btn">Buy Now</a>
+              <button class="copy-btn" type="button" onclick="copyAsin('${escapeJs(deal.asin)}')">Copy ASIN</button>
               <button class="bookmark-btn ${isBookmarked ? "active" : ""}" type="button" onclick="toggleBookmark('${escapeJs(deal.asin)}', this)">${isBookmarked ? "Bookmarked" : "Bookmark"}</button>
+              <button class="hide-btn" type="button" onclick="hideAsin('${escapeJs(deal.asin)}')">Hide</button>
               <button class="junk-btn" type="button" onclick="ignoreAsin('${escapeJs(deal.asin)}')">Ignore Deal</button>
             </div>
           </div>
@@ -1048,6 +1087,18 @@
 
       saveSet(STORAGE_KEYS.bookmarkedAsins, state.bookmarkedAsins);
       if (state.showBookmarksOnly) renderDeals();
+    };
+
+    window.copyAsin = async function(asin) {
+      await copyToClipboard(asin);
+      showToast(`Copied ASIN ${asin}`);
+    };
+
+    window.hideAsin = function(asin) {
+      state.hiddenAsins.add(asin);
+      saveSet(STORAGE_KEYS.hiddenAsins, state.hiddenAsins);
+      showToast(`ASIN ${asin} hidden on this device.`);
+      renderDeals();
     };
 
     window.ignoreAsin = function(asin) {

@@ -158,7 +158,8 @@
       align-items: center;
     }
 
-    .toolbar button {
+    .toolbar button,
+    .toolbar select {
       border: 1px solid var(--border);
       color: var(--muted);
       background: var(--panel);
@@ -166,9 +167,21 @@
       padding: 8px 11px;
       cursor: pointer;
       white-space: nowrap;
+      font-size: 0.84rem;
     }
 
-    .toolbar button:hover { color: var(--text); }
+    .toolbar select {
+      padding-right: 24px;
+      outline: none;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='%239aa4b2' d='M0 0h10L5 6z'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+    }
+
+    .toolbar button:hover,
+    .toolbar select:hover { color: var(--text); border-color: var(--muted); }
 
     .toolbar button.active {
       background: var(--accent);
@@ -525,6 +538,13 @@
     <div class="toolbar">
       <span id="activeFilterLabel">Showing all tags</span>
       <div class="toolbar-actions">
+        <select id="sortBySelect" aria-label="Sort options">
+          <option value="dealScore">Deal Score</option>
+          <option value="priceHL">Price: H-L</option>
+          <option value="priceLH">Price: L-H</option>
+          <option value="newest">Newest Add</option>
+          <option value="bsr">BSR</option>
+        </select>
         <button id="showBookmarksBtn" type="button">Bookmarks</button>
         <button id="copyIgnoredBtn" type="button">Copy Ignored</button>
         <button id="showIgnoredBtn" type="button">Ignored ASINs</button>
@@ -542,13 +562,15 @@
       ignoredAsins: "woodenRobot.ignoredAsins.v1",
       hiddenAsins: "woodenRobot.hiddenAsins.v1",
       bookmarkedAsins: "woodenRobot.bookmarkedAsins.v1",
-      selectedTag: "woodenRobot.selectedTag.v1"
+      selectedTag: "woodenRobot.selectedTag.v1",
+      sortBy: "woodenRobot.sortBy.v1"
     };
 
     const state = {
       deals: [],
       search: "",
       selectedTag: localStorage.getItem(STORAGE_KEYS.selectedTag) || "All",
+      sortBy: localStorage.getItem(STORAGE_KEYS.sortBy) || "dealScore",
       showBookmarksOnly: false,
       ignoredAsins: loadSet(STORAGE_KEYS.ignoredAsins),
       hiddenAsins: loadSet(STORAGE_KEYS.hiddenAsins),
@@ -563,6 +585,7 @@
       emptyState: document.getElementById("emptyState"),
       dealCount: document.getElementById("dealCount"),
       activeFilterLabel: document.getElementById("activeFilterLabel"),
+      sortBySelect: document.getElementById("sortBySelect"),
       showBookmarksBtn: document.getElementById("showBookmarksBtn"),
       copyIgnoredBtn: document.getElementById("copyIgnoredBtn"),
       showIgnoredBtn: document.getElementById("showIgnoredBtn"),
@@ -572,6 +595,8 @@
     init();
 
     async function init() {
+      // Set initial drop-down selection from state
+      els.sortBySelect.value = state.sortBy;
       bindEvents();
       state.deals = normalizeDeals(await getDeals());
       render();
@@ -590,8 +615,15 @@
 
       els.clearSearchBtn.addEventListener("click", clearSearch);
 
+      els.sortBySelect.addEventListener("change", function(event) {
+        state.sortBy = event.target.value;
+        localStorage.setItem(STORAGE_KEYS.sortBy, state.sortBy);
+        renderDeals();
+      });
+
       els.showBookmarksBtn.addEventListener("click", function() {
         state.showBookmarksOnly = !state.showBookmarksOnly;
+        els.showBookmarksBtn.classList.toggle("active", state.showBookmarksOnly);
         renderDeals();
       });
 
@@ -716,489 +748,4 @@
 
       if (deal.keepa) {
         candidates.push(deal.keepa.avg90);
-        if (deal.keepa.stats) candidates.push(deal.keepa.stats.avg90);
-      }
-
-      return firstValidNumber.apply(null, candidates);
-    }
-
-    function normalizeSources(value) {
-      if (Array.isArray(value)) {
-        return value.map(function(source) {
-          return String(source || "").trim();
-        }).filter(Boolean);
-      }
-
-      if (typeof value === "string") {
-        return value
-          .replaceAll("|", ",")
-          .split(",")
-          .map(function(source) {
-            return source.trim();
-          })
-          .filter(Boolean);
-      }
-
-      return [];
-    }
-
-    function normalizeTags(value) {
-      let tags = [];
-      if (Array.isArray(value)) {
-        tags = value;
-      } else if (typeof value === "string") {
-        tags = value.replaceAll("|", ",").split(",");
-      }
-
-      const seen = new Set();
-      return tags.map(function(tag) {
-        return prettyTagName(String(tag).trim());
-      }).filter(function(tag) {
-        if (!tag) return false;
-        if (seen.has(tag)) return false;
-        seen.add(tag);
-        return true;
-      });
-    }
-
-    function prettyTagName(tag) {
-      const normalized = tag.toLowerCase().replaceAll("_", " ").replaceAll("-", " ").trim();
-      const compacted = normalized.split(" ").filter(Boolean).join(" ");
-
-      const aliases = {
-        "three d printing": "3D Printing",
-"three d printer": "3D Printing",
-"3 d printing": "3D Printing",
-"3d printing": "3D Printing",
-"3d printer": "3D Printing",
-"3d printers": "3D Printing",
-"additive manufacturing": "3D Printing",
-        "edc": "EDC",
-        "diy": "DIY",
-        "spc op": "SPC Op",
-        "sponsored products creators": "SPC Op",
-        "sponsored products creator": "SPC Op",
-        "sponsored products for creators": "SPC Op",
-        "sponsored products creators pool": "SPC Op"
-      };
-
-      if (aliases[compacted]) return aliases[compacted];
-
-      return compacted.split(" ").map(function(word) {
-        if (!word) return "";
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      }).join(" ");
-    }
-
-    function render() {
-      renderTagFilters();
-      renderDeals();
-    }
-
-    function renderTagFilters() {
-      const tags = getAllTags();
-
-      if (!tags.includes(state.selectedTag)) {
-        state.selectedTag = "All";
-        localStorage.setItem(STORAGE_KEYS.selectedTag, state.selectedTag);
-      }
-
-      els.tagFilters.innerHTML = tags.map(function(tag) {
-        const active = tag === state.selectedTag ? "active" : "";
-        return '<button type="button" class="tag-pill ' + active + '" data-tag="' + escapeHtml(tag) + '">' + escapeHtml(tag) + '</button>';
-      }).join("");
-
-      Array.from(els.tagFilters.querySelectorAll(".tag-pill")).forEach(function(button) {
-        button.addEventListener("click", function() {
-          state.selectedTag = button.dataset.tag;
-          localStorage.setItem(STORAGE_KEYS.selectedTag, state.selectedTag);
-          render();
-        });
-      });
-    }
-
-    function getAllTags() {
-      const tags = new Set(["All"]);
-      state.deals.forEach(function(deal) {
-        deal.tags.forEach(function(tag) {
-          tags.add(tag);
-        });
-      });
-
-      return Array.from(tags).sort(function(a, b) {
-        if (a === "All") return -1;
-        if (b === "All") return 1;
-        return a.localeCompare(b);
-      });
-    }
-
-    function renderDeals() {
-      const visibleDeals = getVisibleDeals();
-      els.dealCount.textContent = visibleDeals.length + " " + (visibleDeals.length === 1 ? "deal" : "deals");
-      els.showBookmarksBtn.classList.toggle("active", state.showBookmarksOnly);
-
-      const filterText = state.selectedTag === "All" ? "Showing all tags" : "Filtered by " + state.selectedTag;
-      els.activeFilterLabel.textContent = state.showBookmarksOnly ? filterText + " · Bookmarks only" : filterText;
-
-      els.emptyState.style.display = visibleDeals.length ? "none" : "block";
-      els.dealGrid.innerHTML = visibleDeals.map(renderDealCard).join("");
-      bindCardButtons();
-    }
-
-    function getVisibleDeals() {
-      return state.deals.filter(function(deal) {
-        if (state.ignoredAsins.has(deal.asin)) return false;
-        if (state.hiddenAsins.has(deal.asin)) return false;
-        if (state.showBookmarksOnly && !state.bookmarkedAsins.has(deal.asin)) return false;
-
-        const matchesTag = state.selectedTag === "All" || deal.tags.includes(state.selectedTag);
-        if (!matchesTag) return false;
-
-        if (!state.search) return true;
-
-        const haystack = [deal.title, deal.asin, deal.brand, deal.spcImported ? "SPC Op" : ""]
-          .concat(deal.tags || [])
-          .concat(deal.sources || [])
-          .join(" ")
-          .toLowerCase();
-        return haystack.includes(state.search);
-      });
-    }
-
-    function renderDealCard(deal) {
-      const price = formatPrice(deal.price);
-      const avg90 = shouldShowAvg90(deal.price, deal.avg90)
-        ? '<div class="avg-price" title="90-day average">90-day avg ' + formatPrice(deal.avg90) + '</div>'
-        : "";
-      const scoreBadge = renderScoreBadge(deal.score);
-      const isBookmarked = state.bookmarkedAsins.has(deal.asin);
-      const bookmarkLabel = isBookmarked ? "Bookmarked" : "Bookmark";
-      const bookmarkClass = isBookmarked ? "bookmark-btn active" : "bookmark-btn";
-      const img = deal.image
-        ? '<img src="' + escapeHtml(deal.image) + '" alt="' + escapeHtml(deal.title) + '" loading="lazy">'
-        : '<span style="color:#111;">No image</span>';
-      const tags = (deal.tags || []).map(function(tag) {
-        const tagClass = tag === "SPC Op" ? "mini-tag mini-tag-spc" : "mini-tag";
-        return '<span class="' + tagClass + '">' + escapeHtml(tag) + '</span>';
-      }).join("");
-
-      return '<article class="deal-card" data-asin="' + escapeHtml(deal.asin) + '">' +
-        '<button class="card-menu-button" type="button" data-action="details" data-asin="' + escapeHtml(deal.asin) + '" aria-label="Show deal details" title="Deal details">☰</button>' +
-        '<div class="image-wrap">' + img + '</div>' +
-        '<div class="card-body">' +
-        '<h2 class="title">' + escapeHtml(deal.title) + '</h2>' +
-        '<div class="meta-row">' +
-        '<div class="price-stack"><div class="price">' + price + '</div>' + avg90 + scoreBadge + '</div>' +
-        '<div class="asin">' + escapeHtml(deal.asin) + '</div>' +
-        '</div>' +
-        '<div class="tags">' + tags + '</div>' +
-        '<div class="actions">' +
-        '<a class="buy-btn" href="' + escapeHtml(deal.url) + '" target="_blank" rel="noopener noreferrer">Amazon</a>' +
-        '<button class="copy-btn" type="button" data-action="copy" data-asin="' + escapeHtml(deal.asin) + '">Copy ASIN</button>' +
-        '<button class="' + bookmarkClass + '" type="button" data-action="bookmark" data-asin="' + escapeHtml(deal.asin) + '">' + bookmarkLabel + '</button>' +
-        '<button class="hide-btn" type="button" data-action="hide" data-asin="' + escapeHtml(deal.asin) + '">Hide</button>' +
-        '<button class="junk-btn" type="button" data-action="junk" data-asin="' + escapeHtml(deal.asin) + '">Ignore ASIN</button>' +
-        '</div>' +
-        '</div>' +
-        renderDealDetails(deal) +
-        '</article>';
-    }
-
-    function renderDealDetails(deal) {
-      const parentAsin = deal.parentAsin || "None";
-      const familyKey = deal.familyKey || deal.parentAsin || deal.asin || "None";
-      const productAge = deal.productAgeDays ? Math.round(Number(deal.productAgeDays)) + " days" : "Unknown";
-      const variationCount = deal.variationCount ? Math.round(Number(deal.variationCount)) : 0;
-      const reviewCount = deal.reviewCount ? Math.round(Number(deal.reviewCount)).toLocaleString("en-US") : "Unknown";
-      const rank = deal.salesRank ? "#" + Math.round(Number(deal.salesRank)).toLocaleString("en-US") : "Unknown";
-      const spcStatus = deal.spcImported ? "Yes" : "No";
-      const sourceList = (deal.sources || []).length ? deal.sources.join(", ") : "Unknown";
-
-      return '<div class="deal-details" id="details-' + escapeHtml(deal.asin) + '">' +
-        '<div class="details-title">Deal Deep Dive</div>' +
-        '<div class="details-grid">' +
-        detailRow("Score", Number.isFinite(Number(deal.score)) ? Math.round(Number(deal.score)) : "Unknown") +
-        detailRow("Product Age", productAge) +
-        detailRow("Parent ASIN", parentAsin) +
-        detailRow("Family Key", familyKey) +
-        detailRow("Variations", variationCount) +
-        detailRow("Reviews", reviewCount) +
-        detailRow("Sales Rank", rank) +
-        detailRow("SPC Op", spcStatus) +
-        detailRow("Sources", sourceList) +
-        '</div>' +
-        renderScoreBreakdown(deal.scoreBreakdown) +
-        '</div>';
-    }
-
-    function detailRow(label, value) {
-      return '<div class="detail-row"><span>' + escapeHtml(label) + '</span><span>' + escapeHtml(value) + '</span></div>';
-    }
-
-    function renderScoreBreakdown(breakdown) {
-      if (!breakdown || !Object.keys(breakdown).length) {
-        return '<div class="score-breakdown"><div class="score-breakdown-title">Score Detail</div><div class="score-row"><span>No breakdown stored yet</span><span>—</span></div></div>';
-      }
-
-      const rows = Object.entries(breakdown).map(function(entry) {
-        const key = prettyScoreKey(entry[0]);
-        const value = Number(entry[1]);
-        const displayValue = Number.isFinite(value) ? "+" + Math.round(value) : String(entry[1]);
-
-        return '<div class="score-row"><span>' + escapeHtml(key) + '</span><span>' + escapeHtml(displayValue) + '</span></div>';
-      }).join("");
-
-      return '<div class="score-breakdown"><div class="score-breakdown-title">Score Detail</div>' + rows + '</div>';
-    }
-
-    function prettyScoreKey(key) {
-      return String(key || "")
-        .replace(/([a-z])([A-Z])/g, "$1 $2")
-        .replaceAll("_", " ")
-        .replaceAll("-", " ")
-        .trim()
-        .split(" ")
-        .filter(Boolean)
-        .map(function(word) {
-          return word.charAt(0).toUpperCase() + word.slice(1);
-        })
-        .join(" ");
-    }
-
-    function bindCardButtons() {
-      Array.from(els.dealGrid.querySelectorAll('[data-action="details"]')).forEach(function(button) {
-        button.addEventListener("click", function() {
-          const card = button.closest(".deal-card");
-          if (!card) return;
-
-          card.classList.toggle("details-open");
-          button.classList.toggle("active", card.classList.contains("details-open"));
-        });
-      });
-
-      Array.from(els.dealGrid.querySelectorAll('[data-action="copy"]')).forEach(function(button) {
-        button.addEventListener("click", async function() {
-          const asin = button.dataset.asin;
-          await copyToClipboard(asin);
-          showToast("Copied " + asin);
-        });
-      });
-
-      Array.from(els.dealGrid.querySelectorAll('[data-action="bookmark"]')).forEach(function(button) {
-        button.addEventListener("click", function() {
-          const asin = button.dataset.asin;
-          if (state.bookmarkedAsins.has(asin)) {
-            state.bookmarkedAsins.delete(asin);
-            showToast("Removed " + asin + " from bookmarks.");
-          } else {
-            state.bookmarkedAsins.add(asin);
-            showToast("Bookmarked " + asin + ".");
-          }
-          saveSet(STORAGE_KEYS.bookmarkedAsins, state.bookmarkedAsins);
-          renderDeals();
-        });
-      });
-
-      Array.from(els.dealGrid.querySelectorAll('[data-action="hide"]')).forEach(function(button) {
-        button.addEventListener("click", function() {
-          const asin = button.dataset.asin;
-          state.hiddenAsins.add(asin);
-          saveSet(STORAGE_KEYS.hiddenAsins, state.hiddenAsins);
-          showToast("Hidden " + asin + " for this browser.");
-          renderDeals();
-        });
-      });
-
-      Array.from(els.dealGrid.querySelectorAll('[data-action="junk"]')).forEach(function(button) {
-        button.addEventListener("click", function() {
-          const asin = button.dataset.asin;
-          const confirmed = confirm("Mark " + asin + " as a junk deal? This will hide it and add it to the ignored ASIN list for this browser.");
-          if (!confirmed) return;
-
-          state.ignoredAsins.add(asin);
-          state.hiddenAsins.delete(asin);
-          state.bookmarkedAsins.delete(asin);
-          saveSet(STORAGE_KEYS.ignoredAsins, state.ignoredAsins);
-          saveSet(STORAGE_KEYS.hiddenAsins, state.hiddenAsins);
-          saveSet(STORAGE_KEYS.bookmarkedAsins, state.bookmarkedAsins);
-          showToast(asin + " added to ignored ASINs.");
-          render();
-        });
-      });
-    }
-
-    function clearSearch() {
-      state.search = "";
-      els.searchInput.value = "";
-      els.clearSearchBtn.style.display = "none";
-      els.searchInput.focus();
-      renderDeals();
-    }
-
-    async function copyToClipboard(text) {
-      if (navigator.clipboard && window.isSecureContext) {
-        return navigator.clipboard.writeText(text);
-      }
-
-      const textarea = document.createElement("textarea");
-      textarea.value = text;
-      textarea.style.position = "fixed";
-      textarea.style.left = "-9999px";
-      document.body.appendChild(textarea);
-      textarea.focus();
-      textarea.select();
-      document.execCommand("copy");
-      textarea.remove();
-    }
-
-    function firstValidNumber() {
-      for (let i = 0; i < arguments.length; i++) {
-        const value = arguments[i];
-        if (value === null || value === undefined || value === "") continue;
-
-        if (Array.isArray(value)) {
-          const found = firstValidNumber.apply(null, value);
-          if (found !== null) return found;
-          continue;
-        }
-
-        const numeric = Number(value);
-        if (Number.isFinite(numeric) && numeric > 0) return numeric;
-      }
-      return null;
-    }
-
-    function shouldShowAvg90(price, avg90) {
-      if (!Number.isFinite(Number(price)) || !Number.isFinite(Number(avg90))) return false;
-      return Number(avg90) > Number(price);
-    }
-
-    function renderScoreBadge(score) {
-      const numeric = Number(score);
-      if (!Number.isFinite(numeric)) return "";
-
-      let className = "score-badge score-weak";
-      let label = "Weak";
-
-      if (numeric >= 85) {
-        className = "score-badge score-post";
-        label = "Post";
-      } else if (numeric >= 70) {
-        className = "score-badge score-strong";
-        label = "Strong";
-      } else if (numeric >= 55) {
-        className = "score-badge score-maybe";
-        label = "Maybe";
-      }
-
-      return '<div class="' + className + '" title="Deal score">' + Math.round(numeric) + ' · ' + label + '</div>';
-    }
-
-    function scoreDeal(deal) {
-      let score = 0;
-      const price = Number(deal.price);
-      const avg90 = Number(deal.avg90);
-      const reviewCount = Number(deal.reviewCount || 0);
-      const rank = Number(deal.salesRank || 0);
-      const trackingDays = Number(deal.trackingDays || 0);
-      const brand = String(deal.brand || "").toLowerCase().trim();
-      const tags = (deal.tags || []).map(function(tag) { return String(tag).toLowerCase(); });
-
-      if (price > 0 && avg90 > price) {
-        const discountPct = ((avg90 - price) / avg90) * 100;
-        score += Math.min(35, Math.round(discountPct * 1.15));
-      }
-
-      if (TIER_1_BRANDS.has(brand)) score += 20;
-      else if (TIER_2_BRANDS.has(brand)) score += 12;
-      else if (TIER_3_BRANDS.has(brand)) score += 6;
-
-      if (trackingDays >= 365) score += 15;
-      else if (trackingDays >= 180) score += 11;
-      else if (trackingDays >= 90) score += 7;
-      else if (trackingDays > 0) score += 2;
-
-      if (reviewCount >= 1000) score += 10;
-      else if (reviewCount >= 300) score += 8;
-      else if (reviewCount >= 100) score += 5;
-      else if (reviewCount >= 30) score += 2;
-
-      if (rank > 0 && rank <= 5000) score += 5;
-      else if (rank > 0 && rank <= 20000) score += 3;
-      else if (rank > 0 && rank <= 75000) score += 1;
-
-      if (tags.includes("woodworking")) score += 10;
-      else if (tags.includes("3d printing")) score += 9;
-      else if (tags.includes("edc")) score += 8;
-      else if (tags.includes("grilling")) score += 7;
-      else if (tags.includes("tools")) score += 6;
-
-      if (deal.asin && deal.asin.startsWith("B0") && reviewCount > 0 && reviewCount < 75) score -= 12;
-      if (trackingDays > 0 && trackingDays < 90) score -= 10;
-      if (!brand) score -= 5;
-      if (price > 0 && price < 8) score -= 5;
-
-      return Math.max(0, Math.min(100, Math.round(score)));
-    }
-
-    const TIER_1_BRANDS = new Set([
-      "dewalt", "milwaukee", "makita", "bosch", "festool", "sawstop", "bambu lab",
-      "woodpeckers", "starrett", "knipex", "wera", "wiha", "leatherman", "yeti",
-      "blackstone", "weber", "traeger", "solo stove"
-    ]);
-
-    const TIER_2_BRANDS = new Set([
-      "ridgid", "ryobi", "diablo", "freud", "bessey", "kreg", "rockler", "titebond",
-      "rubio monocoat", "prusa", "creality", "anycubic", "elegoo", "flashforge",
-      "overture", "polymaker", "hatchbox", "esun", "rtic", "stanley", "gerber",
-      "spyderco", "benchmade", "olight", "meater"
-    ]);
-
-    const TIER_3_BRANDS = new Set([
-      "sunlu", "bigtreetech", "micro swiss", "noctua", "klingspor"
-    ]);
-
-    function loadSet(key) {
-      try {
-        return new Set(JSON.parse(localStorage.getItem(key) || "[]"));
-      } catch (error) {
-        return new Set();
-      }
-    }
-
-    function saveSet(key, set) {
-      localStorage.setItem(key, JSON.stringify(Array.from(set)));
-    }
-
-    function formatPrice(value) {
-      if (value === null || value === undefined || value === "") return "See deal";
-      const numeric = Number(value);
-      if (Number.isNaN(numeric)) return String(value);
-      return numeric.toLocaleString("en-US", { style: "currency", currency: "USD" });
-    }
-
-    function asinToAmazonUrl(asin) {
-      return asin ? "https://www.amazon.com/dp/" + encodeURIComponent(asin) : "#";
-    }
-
-    function escapeHtml(value) {
-      return String(value === null || value === undefined ? "" : value)
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll(String.fromCharCode(34), "&quot;")
-        .replaceAll("'", "&#039;");
-    }
-
-    let toastTimeout;
-    function showToast(message) {
-      clearTimeout(toastTimeout);
-      els.toast.textContent = message;
-      els.toast.style.display = "block";
-      toastTimeout = setTimeout(function() {
-        els.toast.style.display = "none";
-      }, 2600);
-    }
-  </script>
-</body>
-</html>
+        if (deal.keepa.stats) candidates.push(dea

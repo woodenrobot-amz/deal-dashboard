@@ -6,7 +6,7 @@ const STREAM_NAME = process.argv[2];
 const ENRICH_LIMITS = {
   woodworking: 100,
   deals_for_dudes: 100,
-  three_d_printing: 50
+  three_d_printing: 10
 };
 
 const SPC_DEFAULT_STREAM = "deals_for_dudes";

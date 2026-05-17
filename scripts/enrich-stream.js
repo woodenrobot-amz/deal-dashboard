@@ -86,7 +86,7 @@ function readSpcImports() {
         ...item,
         asin,
         source: item.source || "sponsored_products_creators",
-        streams: Array.isArray(item.streams) && item.streams.length
+        streams: Array.isArray(item.streams) && item.streams.length > 0
           ? item.streams
           : [SPC_DEFAULT_STREAM]
       };
@@ -440,71 +440,88 @@ async function run() {
       .filter(Boolean)
   );
 
-  const discoveryCandidates = discovered
-    .filter(item => (item.streams || []).includes(STREAM_NAME))
-    .filter(item => !ignoredAsins.has(normalizeAsin(item.asin)))
-    .filter(item => !item.parentAsin || !ignoredParentAsins.has(normalizeAsin(item.parentAsin)))
-    .filter(item => !item.enrichedAt)
-    .map(item => ({
+  // --- GLOBAL CROSS-REFERENCE MAP PRODUCTION ---
+  
+  // 1. Map ALL discovered items globally (unfiltered by current stream)
+  const globalDiscoveryMap = new Map();
+  for (const item of discovered) {
+    const asin = normalizeAsin(item.asin);
+    if (!asin) continue;
+    
+    // Pass baseline global exclusions
+    if (ignoredAsins.has(asin)) continue;
+    if (item.parentAsin && ignoredParentAsins.has(normalizeAsin(item.parentAsin))) continue;
+    if (item.enrichedAt) continue;
+
+    globalDiscoveryMap.set(asin, {
       ...item,
       sourceType: "discovery",
       spcImported: false
-    }));
+    });
+  }
 
-  const spcCandidates = spcImports
-    .filter(item => (item.streams || []).includes(STREAM_NAME))
-    .filter(item => !ignoredAsins.has(normalizeAsin(item.asin)))
-    .filter(item => !activeDealAsins.has(normalizeAsin(item.asin)))
-    .map(item => ({
+  // 2. Map ALL SPC items globally
+  const globalSpcMap = new Map();
+  for (const item of spcImports) {
+    const asin = normalizeAsin(item.asin);
+    if (!asin) continue;
+
+    // Pass baseline global exclusions
+    if (ignoredAsins.has(asin)) continue;
+    if (activeDealAsins.has(asin)) continue;
+
+    globalSpcMap.set(asin, {
       ...item,
-      streams: item.streams || [STREAM_NAME],
+      streams: item.streams || [SPC_DEFAULT_STREAM],
       sourceType: "spc",
       spcImported: true,
       spcCapturedAt: item.capturedAt || item.importedAt || ""
-    }));
+    });
+  }
 
-  // --- BEGIN CROSSOVER PRIORITIZATION LOGIC ---
-  const spcMap = new Map(spcCandidates.map(item => [normalizeAsin(item.asin), item]));
-  const discoveryMap = new Map(discoveryCandidates.map(item => [normalizeAsin(item.asin), item]));
+  const globalCrossovers = [];
+  const globalDiscoveryOnly = [];
 
-  const finalPrioritizedCandidates = [];
-
-  // Pass 1: Handle strict crossovers (ASINs present in both pools)
-  for (const [asin, spcItem] of spcMap.entries()) {
-    if (discoveryMap.has(asin)) {
-      const discItem = discoveryMap.get(asin);
+  // Pass 1: Extract cross-referenced items across ANY of the 3 streams
+  for (const [asin, spcItem] of globalSpcMap.entries()) {
+    if (globalDiscoveryMap.has(asin)) {
+      const discItem = globalDiscoveryMap.get(asin);
+      // Merge categories from both pools to preserve all stream indicators
       const mergedStreams = [...new Set([...(discItem.streams || []), ...(spcItem.streams || [])])];
 
-      finalPrioritizedCandidates.push({
+      globalCrossovers.push({
         ...discItem,
         ...spcItem,
         asin,
         streams: mergedStreams,
         spcImported: true,
-        spcCapturedAt: spcItem.spcCapturedAt || discItem.spcCapturedAt || "",
         sourceType: "spc"
       });
     }
   }
 
-  // Pass 2: Add remaining Discovery items that did not cross over
-  for (const [asin, discItem] of discoveryMap.entries()) {
-    if (!spcMap.has(asin)) {
-      finalPrioritizedCandidates.push(discItem);
+  // Pass 2: Extract remaining pure discovery items
+  for (const [asin, discItem] of globalDiscoveryMap.entries()) {
+    if (!globalSpcMap.has(asin)) {
+      globalDiscoveryOnly.push(discItem);
     }
   }
 
-  // Slice final candidate array down to specified stream configuration limits
-  const candidates = finalPrioritizedCandidates.slice(0, ENRICH_LIMITS[STREAM_NAME]);
-  // --- END CROSSOVER PRIORITIZATION LOGIC ---
+  // --- LOCAL STREAM EXECUTION FILTERS ---
 
-  console.log(`Stream: ${STREAM_NAME}`);
-  console.log(`Discovery pool: ${discovered.length} total ASINs`);
-  console.log(`SPC import pool: ${spcImports.length} total ASINs`);
-  console.log(`Ignored ASINs: ${ignoredAsins.size}`);
-  console.log(`Ignored parent ASINs: ${ignoredParentAsins.size}`);
-  console.log(`Candidates selected: ${candidates.length}`);
-  console.log(`SPC candidates selected: ${candidates.filter(x => x.spcImported).length}`);
+  // Filter prioritized items down to just the active command line stream execution run
+  const localStreamCrossovers = globalCrossovers.filter(item => (item.streams || []).includes(STREAM_NAME));
+  const localStreamDiscoveryOnly = globalDiscoveryOnly.filter(item => (item.streams || []).includes(STREAM_NAME));
+
+  // Combine pools: Line up crossovers first, then fill remainder with pure discovery items
+  const candidates = [...localStreamCrossovers, ...localStreamDiscoveryOnly].slice(0, ENRICH_LIMITS[STREAM_NAME]);
+
+  console.log(`Stream Execution: ${STREAM_NAME}`);
+  console.log(`Global Discovery Pool Size: ${discovered.length}`);
+  console.log(`Global SPC Import Pool Size: ${spcImports.length}`);
+  console.log(`Global Cross-Stream Crossovers Found: ${globalCrossovers.length}`);
+  console.log(`Active Stream Crossovers Scheduled: ${localStreamCrossovers.length}`);
+  console.log(`Total Candidates Chosen for Run: ${candidates.length}`);
 
   if (!candidates.length) {
     console.log(`No ${STREAM_NAME} ASINs waiting for enrichment.`);
@@ -555,7 +572,7 @@ async function run() {
     ])
   )
     .filter(deal => !ignoredAsins.has(normalizeAsin(deal.asin)))
-    .filter(deal => !deal.parentAsin || !ignoredParentAsins.has(normalizeAsin(deal.parentAsin)));
+    .filter(deal => !deal.parentAsin || !ignoredParentAsins.has(deal.parentAsin));
 
   const now = new Date().toISOString();
 

@@ -2,8 +2,9 @@ name: Keepa Discovery Woodworking Core
 
 on:
   schedule:
-    # 4:07 AM Eastern
-    - cron: "7 8 * * *"
+  # 4:05 AM EDT
+  - cron: "5 8 * * *"
+  
   workflow_dispatch:
 
 permissions:

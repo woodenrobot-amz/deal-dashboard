@@ -4,17 +4,68 @@ const KEEPA_API_KEY = process.env.KEEPA_API_KEY;
 const STREAM_NAME = process.argv[2];
 
 const ENRICH_LIMITS = {
+  woodworking_core: 100,
   woodworking: 100,
   deals_for_dudes: 100,
   three_d_printing: 10
 };
 
-const SPC_DEFAULT_STREAM = "deals_for_dudes";
 const TOKEN_FLOOR = 75;
 const MAX_DEAL_AGE_HOURS = 48;
 const MIN_KEEPA_HISTORY_DAYS = 90;
 
 const KEEPA_EPOCH_MS = Date.UTC(2011, 0, 1);
+
+const TOP_TIER_BRANDS = new Set([
+  "dewalt",
+  "milwaukee",
+  "makita",
+  "bosch",
+  "festool",
+  "sawstop",
+  "woodpeckers",
+  "starrett",
+  "bessey",
+  "kreg",
+  "jessem",
+  "incra",
+  "freud",
+  "diablo",
+  "whiteside",
+  "amana tool",
+  "wera",
+  "wiha",
+  "knipex",
+  "titebond",
+  "rubio monocoat",
+  "rockler",
+  "woodriver",
+  "veritas",
+  "lee valley"
+]);
+
+const MID_TIER_BRANDS = new Set([
+  "ridgid",
+  "ryobi",
+  "metabo hpt",
+  "skil",
+  "jet",
+  "powermatic",
+  "grizzly",
+  "laguna",
+  "3m",
+  "mirka",
+  "fastcap",
+  "microjig",
+  "milescraft",
+  "toughbuilt",
+  "packout",
+  "tanos",
+  "klingspor"
+]);
+
+const TOP_TIER_BRAND_BOOST = 20;
+const MID_TIER_BRAND_BOOST = 8;
 
 if (!KEEPA_API_KEY) throw new Error("Missing KEEPA_API_KEY");
 if (!STREAM_NAME) throw new Error("Missing stream argument");
@@ -59,39 +110,6 @@ function readIgnoredParentAsins() {
   }
 
   return new Set((parsed.ignoredParentAsins || []).map(normalizeAsin).filter(Boolean));
-}
-
-function readSpcImports() {
-  const parsed = readJson("data/spc-asins.json", []);
-
-  const rawItems = Array.isArray(parsed)
-    ? parsed
-    : Array.isArray(parsed.asins)
-      ? parsed.asins
-      : [];
-
-  return rawItems
-    .map(item => {
-      if (typeof item === "string") {
-        return {
-          asin: normalizeAsin(item),
-          source: "sponsored_products_creators",
-          streams: [SPC_DEFAULT_STREAM]
-        };
-      }
-
-      const asin = normalizeAsin(item.asin);
-
-      return {
-        ...item,
-        asin,
-        source: item.source || "sponsored_products_creators",
-        streams: Array.isArray(item.streams) && item.streams.length > 0
-          ? item.streams
-          : [SPC_DEFAULT_STREAM]
-      };
-    })
-    .filter(item => item.asin);
 }
 
 function buildProductUrl(asins) {
@@ -201,6 +219,30 @@ function getImage(p) {
   return "";
 }
 
+function normalizeBrand(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase();
+}
+
+function getBrandTier(brand) {
+  const normalized = normalizeBrand(brand);
+
+  if (TOP_TIER_BRANDS.has(normalized)) return "top";
+  if (MID_TIER_BRANDS.has(normalized)) return "mid";
+
+  return "off";
+}
+
+function getBrandBoost(brand) {
+  const tier = getBrandTier(brand);
+
+  if (tier === "top") return TOP_TIER_BRAND_BOOST;
+  if (tier === "mid") return MID_TIER_BRAND_BOOST;
+
+  return 0;
+}
+
 function scoreDeal(d) {
   const breakdown = {
     rating: 0,
@@ -210,7 +252,7 @@ function scoreDeal(d) {
     variationFamily: 0,
     productAge: 0,
     streamFit: 0,
-    spc: 0
+    brand: 0
   };
 
   if (d.rating) breakdown.rating += d.rating * 5;
@@ -235,9 +277,7 @@ function scoreDeal(d) {
     if (d.reviewCount >= 2000) breakdown.streamFit += 5;
   }
 
-  if (d.spcImported) {
-    breakdown.spc += 10;
-  }
+  breakdown.brand += getBrandBoost(d.brand);
 
   const roundedBreakdown = Object.fromEntries(
     Object.entries(breakdown).map(([key, value]) => [key, Math.floor(value)])
@@ -251,13 +291,12 @@ function scoreDeal(d) {
   };
 }
 
-function normalizeProduct(p, streamName, sourceMeta = {}) {
+function normalizeProduct(p, streamName) {
   const asin = normalizeAsin(p.asin);
   const parentAsin = getParentAsin(p);
   const variationCount = getVariationCount(p);
   const rank = getSalesRank(p);
   const productAgeDays = getProductAgeDays(p);
-  const spcImported = Boolean(sourceMeta.spcImported);
 
   const deal = {
     asin,
@@ -266,12 +305,10 @@ function normalizeProduct(p, streamName, sourceMeta = {}) {
     variationCount,
     productAgeDays,
     title: cleanTitle(p.title),
+    brand: cleanTitle(p.brand),
+    brandTier: getBrandTier(p.brand),
     category: streamName,
-    sources: spcImported
-      ? ["sponsored_products_creators", "keepa"]
-      : ["keepa"],
-    spcImported,
-    spcCapturedAt: sourceMeta.spcCapturedAt || "",
+    sources: ["keepa"],
     price: getCurrentPrice(p),
     avg90: getAvg90(p),
     rating: getRating(p),
@@ -283,7 +320,7 @@ function normalizeProduct(p, streamName, sourceMeta = {}) {
     isLowAll: false,
     drop1Day: 0,
     isHot: rank !== null && rank <= 5000,
-    isNameBrand: false,
+    isNameBrand: getBrandTier(p.brand) !== "off",
     updatedAt: new Date().toISOString()
   };
 
@@ -294,7 +331,6 @@ function normalizeProduct(p, streamName, sourceMeta = {}) {
 
   return deal;
 }
-
 function mergeCategories(a, b) {
   return [...new Set(
     String(a || "")
@@ -339,8 +375,6 @@ function dedupeDeals(deals) {
       ...better,
       category: mergeCategories(existing.category, deal.category),
       sources: mergeSources(existing.sources, deal.sources),
-      spcImported: Boolean(existing.spcImported || deal.spcImported),
-      spcCapturedAt: existing.spcCapturedAt || deal.spcCapturedAt || "",
       dealScore: Math.max(existing.dealScore || 0, deal.dealScore || 0)
     });
   }
@@ -428,99 +462,23 @@ async function run() {
 
   const discovery = readJson("data/discovered-asins.json", { asins: [] });
   const existingDealsFile = readJson("data/deals.json", { deals: [] });
-  const spcImports = readSpcImports();
 
   const discovered = discovery.asins || [];
   const existingDeals = existingDealsFile.deals || [];
 
-  const activeDealAsins = new Set(
-    existingDeals
-      .filter(isActiveDeal)
-      .map(deal => normalizeAsin(deal.asin))
-      .filter(Boolean)
-  );
-
-  // --- GLOBAL CROSS-REFERENCE MAP PRODUCTION ---
-  
-  // 1. Map ALL discovered items globally (unfiltered by current stream)
-  const globalDiscoveryMap = new Map();
-  for (const item of discovered) {
-    const asin = normalizeAsin(item.asin);
-    if (!asin) continue;
-    
-    // Pass baseline global exclusions
-    if (ignoredAsins.has(asin)) continue;
-    if (item.parentAsin && ignoredParentAsins.has(normalizeAsin(item.parentAsin))) continue;
-    if (item.enrichedAt) continue;
-
-    globalDiscoveryMap.set(asin, {
-      ...item,
-      sourceType: "discovery",
-      spcImported: false
-    });
-  }
-
-  // 2. Map ALL SPC items globally
-  const globalSpcMap = new Map();
-  for (const item of spcImports) {
-    const asin = normalizeAsin(item.asin);
-    if (!asin) continue;
-
-    // Pass baseline global exclusions
-    if (ignoredAsins.has(asin)) continue;
-    if (activeDealAsins.has(asin)) continue;
-
-    globalSpcMap.set(asin, {
-      ...item,
-      streams: item.streams || [SPC_DEFAULT_STREAM],
-      sourceType: "spc",
-      spcImported: true,
-      spcCapturedAt: item.capturedAt || item.importedAt || ""
-    });
-  }
-
-  const globalCrossovers = [];
-  const globalDiscoveryOnly = [];
-
-  // Pass 1: Extract cross-referenced items across ANY of the 3 streams
-  for (const [asin, spcItem] of globalSpcMap.entries()) {
-    if (globalDiscoveryMap.has(asin)) {
-      const discItem = globalDiscoveryMap.get(asin);
-      // Merge categories from both pools to preserve all stream indicators
-      const mergedStreams = [...new Set([...(discItem.streams || []), ...(spcItem.streams || [])])];
-
-      globalCrossovers.push({
-        ...discItem,
-        ...spcItem,
-        asin,
-        streams: mergedStreams,
-        spcImported: true,
-        sourceType: "spc"
-      });
-    }
-  }
-
-  // Pass 2: Extract remaining pure discovery items
-  for (const [asin, discItem] of globalDiscoveryMap.entries()) {
-    if (!globalSpcMap.has(asin)) {
-      globalDiscoveryOnly.push(discItem);
-    }
-  }
-
-  // --- LOCAL STREAM EXECUTION FILTERS ---
-
-  // Filter prioritized items down to just the active command line stream execution run
-  const localStreamCrossovers = globalCrossovers.filter(item => (item.streams || []).includes(STREAM_NAME));
-  const localStreamDiscoveryOnly = globalDiscoveryOnly.filter(item => (item.streams || []).includes(STREAM_NAME));
-
-  // Combine pools: Line up crossovers first, then fill remainder with pure discovery items
-  const candidates = [...localStreamCrossovers, ...localStreamDiscoveryOnly].slice(0, ENRICH_LIMITS[STREAM_NAME]);
+  const candidates = discovered
+    .filter(item => {
+      const asin = normalizeAsin(item.asin);
+      if (!asin) return false;
+      if (ignoredAsins.has(asin)) return false;
+      if (item.parentAsin && ignoredParentAsins.has(normalizeAsin(item.parentAsin))) return false;
+      if (item.enrichedAt) return false;
+      return (item.streams || []).includes(STREAM_NAME);
+    })
+    .slice(0, ENRICH_LIMITS[STREAM_NAME]);
 
   console.log(`Stream Execution: ${STREAM_NAME}`);
-  console.log(`Global Discovery Pool Size: ${discovered.length}`);
-  console.log(`Global SPC Import Pool Size: ${spcImports.length}`);
-  console.log(`Global Cross-Stream Crossovers Found: ${globalCrossovers.length}`);
-  console.log(`Active Stream Crossovers Scheduled: ${localStreamCrossovers.length}`);
+  console.log(`Discovery Pool Size: ${discovered.length}`);
   console.log(`Total Candidates Chosen for Run: ${candidates.length}`);
 
   if (!candidates.length) {
@@ -531,16 +489,6 @@ async function run() {
   const asins = candidates
     .map(item => normalizeAsin(item.asin))
     .filter(Boolean);
-
-  const sourceMetaByAsin = new Map(
-    candidates.map(item => [
-      normalizeAsin(item.asin),
-      {
-        spcImported: Boolean(item.spcImported),
-        spcCapturedAt: item.spcCapturedAt || ""
-      }
-    ])
-  );
 
   const { products, tokensLeft } = await fetchProducts(asins);
 
@@ -556,11 +504,7 @@ async function run() {
 
   const newDeals = products
     .filter(hasEnoughKeepaHistory)
-    .map(p => normalizeProduct(
-      p,
-      STREAM_NAME,
-      sourceMetaByAsin.get(normalizeAsin(p.asin)) || {}
-    ))
+    .map(p => normalizeProduct(p, STREAM_NAME))
     .filter(d => d.asin && d.title && d.price)
     .filter(d => !ignoredAsins.has(d.asin))
     .filter(d => !d.parentAsin || !ignoredParentAsins.has(d.parentAsin));
@@ -625,7 +569,6 @@ async function run() {
   });
 
   console.log(`New valid ${STREAM_NAME} deals: ${newDeals.length}`);
-  console.log(`New valid SPC-backed deals: ${newDeals.filter(x => x.spcImported).length}`);
   console.log(`Total active enriched deals after parent-family dedupe: ${mergedDeals.length}`);
   console.log(`Marked ${enrichedSet.size} ASINs as enriched.`);
 }

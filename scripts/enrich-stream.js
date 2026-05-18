@@ -291,6 +291,11 @@ function scoreDeal(d) {
   };
 }
 
+function getUiCategory(streamName) {
+  if (streamName.startsWith("woodworking")) return "woodworking";
+  return streamName;
+}
+
 function normalizeProduct(p, streamName) {
   const asin = normalizeAsin(p.asin);
   const parentAsin = getParentAsin(p);
@@ -307,7 +312,8 @@ function normalizeProduct(p, streamName) {
     title: cleanTitle(p.title),
     brand: cleanTitle(p.brand),
     brandTier: getBrandTier(p.brand),
-    category: streamName,
+    category: getUiCategory(streamName),
+    sourceStream: streamName,
     sources: ["keepa"],
     price: getCurrentPrice(p),
     avg90: getAvg90(p),

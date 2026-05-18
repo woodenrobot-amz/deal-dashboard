@@ -11,7 +11,6 @@ if (!STREAM_NAME) throw new Error("Missing stream argument");
 
 const STREAMS = {
 woodworking_core: {
-  woodworking_core: {
   name: "woodworking_core",
   selection: {
     productType: [0],

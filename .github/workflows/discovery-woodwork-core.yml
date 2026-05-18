@@ -2,6 +2,7 @@ name: Keepa Discovery Woodworking Core
 
 on:
   schedule:
+    # 4:07 AM Eastern
     - cron: "7 8 * * *"
   workflow_dispatch:
 
@@ -32,8 +33,14 @@ jobs:
 
       - name: Run woodworking core discovery
         env:
-        KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+          KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
         run: node scripts/keepa-discovery.js woodworking_core
+
+      - name: Upload discovery artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: woodworking-core-discovery-results
+          path: data/discovered-asins.json
 
       - name: Commit discovery results
         run: |

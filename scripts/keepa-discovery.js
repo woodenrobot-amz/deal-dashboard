@@ -11,9 +11,10 @@ if (!STREAM_NAME) throw new Error("Missing stream argument");
 
 const STREAMS = {
 woodworking_core: {
+  woodworking_core: {
   name: "woodworking_core",
   selection: {
-    productType: ["0"],
+    productType: [0],
 
     categories_exclude: [
       "13749581",
@@ -25,10 +26,8 @@ woodworking_core: {
 
     current_SALES_gte: 1,
     current_SALES_lte: 100000,
-
     current_RATING_gte: 43,
     current_COUNT_REVIEWS_gte: 100,
-
     current_BUY_BOX_SHIPPING_gte: 3500,
 
     isLowest90_BUY_BOX_SHIPPING: true,
@@ -53,52 +52,8 @@ woodworking_core: {
     ],
 
     lastRatingUpdate_gte: 7958651,
-
-    perPage: 100,
+    perPage: 1000,
     page: 0
-  }
-},
-  
- woodworking_explore: {
-  name: "woodworking_explore",
-  selection: {
-    categories_exclude: [
-      "13399871","13749581","15569906011","157681011","17515060011",
-      "2225057011","495346","553140","553242","553348","553350",
-      "553392","553406","553422"
-    ],
-
-    current_SALES_gte: 1,
-    current_SALES_lte: 200000,
-
-    current_RATING_gte: 42,
-    current_COUNT_REVIEWS_gte: 50,
-
-    isLowest90_BUY_BOX_SHIPPING: true,
-
-    deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
-    deltaPercent30_BUY_BOX_SHIPPING_gte: 5,
-
-    rootCategory: ["16310091","228013"],
-
-    productType: [0],
-
-    variationReviewCount_gte: 1,
-
-    categories_include: [
-      "2399141011","3116511","551236","551238","552318","552342",
-      "552578","552580","552648","552780","552794","552824","552842",
-      "552866","552910","552940","552942","552962","552964","553022",
-      "553150","553218","553244","553142","383663011","16412291"
-    ],
-
-    sort: [
-      ["current_SALES","asc"],
-      ["monthlySold","desc"]
-    ],
-
-    page: 0,
-    perPage: 3000
   }
 },
   

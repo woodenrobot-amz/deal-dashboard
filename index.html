@@ -381,13 +381,6 @@
       font-size: 0.74rem;
     }
 
-    .mini-tag-spc {
-      background: rgba(245, 158, 11, 0.16);
-      border-color: rgba(245, 158, 11, 0.62);
-      color: #fbbf24;
-      font-weight: 800;
-    }
-
     .deal-details {
       display: none;
       margin: 0 12px 12px;
@@ -723,14 +716,6 @@
       return deals.filter(Boolean).map(function(deal) {
         const asin = String(deal.asin || deal.ASIN || "").trim();
         const sources = normalizeSources(deal.sources || deal.source || []);
-        const spcImported = Boolean(
-          deal.spcImported ||
-          deal.inSponsoredProductsPool ||
-          deal.sponsoredProductsCreator ||
-          sources.includes("sponsored_products_creators")
-    
-        );
-
         const tags = normalizeTags(
           []
             .concat(
@@ -742,7 +727,6 @@
               deal.dealStream ||
               []
             )
-            .concat(spcImported ? ["SPC Op"] : [])
         );
 
         const price = firstValidNumber(deal.price, deal.currentPrice, deal.buyBoxPrice, deal.salePrice, deal.dealPrice);
@@ -757,8 +741,6 @@
           url: deal.url || deal.amazonUrl || deal.link || asinToAmazonUrl(asin),
           brand: deal.brand || "",
           sources: sources,
-          spcImported: spcImported,
-          spcCapturedAt: deal.spcCapturedAt || deal.capturedAt || "",
           tags: tags,
           score: firstValidNumber(deal.score, deal.dealScore, deal.powerScore),
           scoreBreakdown: deal.scoreBreakdown || {},
@@ -866,6 +848,12 @@
       return "https://www.amazon.com/dp/" + encodeURIComponent(asin);
     }
 
+    function getKeepaUrl(deal) {
+  if (deal.keepaUrl) return deal.keepaUrl;
+  if (deal.keepa) return deal.keepa;
+  return "https://keepa.com/#!product/1-" + encodeURIComponent(deal.asin);
+}
+   
     function loadSet(key) {
       try {
         const data = localStorage.getItem(key);
@@ -973,7 +961,7 @@
       const imageUrl = deal.image || "https://via.placeholder.com/300x225?text=No+Image";
       const priceHtml = deal.price !== null ? `$${deal.price.toFixed(2)}` : "N/A";
       const avg90Html = deal.avg90 !== null ? `<span class="avg-price">$${deal.avg90.toFixed(2)}</span>` : "";
-      const brandHtml = deal.brand ? `<span class="mini-tag mini-tag-spc">${escapeHtml(deal.brand)}</span>` : "";
+      const brandHtml = deal.brand ? `<span class="mini-tag">${escapeHtml(deal.brand)}</span>` : "";
       const tagHtml = deal.tags.slice(0, 2).map(function(tag) {
         return `<span class="mini-tag">${escapeHtml(tag)}</span>`;
       }).join("");
@@ -1020,15 +1008,18 @@
   </button>
 
   <button class='hide-btn'
-    onclick='hideDeal("${deal.asin}")'>
+    onclick='hideAsin("${deal.asin}")'>
     Hide
   </button>
 
-  ${deal.keepaUrl ? `
-    <a href="${deal.keepaUrl}" target="_blank" class="copy-btn">
-      Keepa
-    </a>
-  ` : ''}
+ <a
+  href="${escapeAttr(getKeepaUrl(deal))}"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="copy-btn"
+>
+  Keepa
+</a>
 
   <button class='junk-btn'
     onclick='ignoreAsin("${deal.asin}")'>

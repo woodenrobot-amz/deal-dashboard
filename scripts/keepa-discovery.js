@@ -135,7 +135,7 @@ woodworking_core: {
       perPage: 3000
     }
   }
-};
+}
 
 const stream = STREAMS[STREAM_NAME];
 if (!stream) throw new Error(`Unknown stream: ${STREAM_NAME}`);

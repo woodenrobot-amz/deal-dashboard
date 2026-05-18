@@ -2,8 +2,8 @@ name: Keepa Discovery 3D Printing
 
 on:
   schedule:
-    # 6:07 AM Eastern Daylight Time
-    - cron: "7 7 * * *"
+    # 4:50 AM Eastern Daylight Time
+    - cron: "50 8 * * *"
   workflow_dispatch:
 
 permissions:

@@ -30,16 +30,15 @@ jobs:
         with:
           node-version: 22
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
       - name: Run woodworking core discovery
         env:
-          KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+        KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
         run: node scripts/keepa-discovery.js woodworking_core
-
-      - name: Upload discovery artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: woodworking-core-discovery-results
-          path: data/discovered-asins.json
 
       - name: Commit discovery results
         run: |

@@ -506,6 +506,25 @@
       background: rgba(255,255,255,0.02);
     }
 
+.load-more-btn {
+  display: block;
+  width: 100%;
+  margin: 16px 0 32px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.load-more-btn:hover {
+  background: var(--accent);
+  color: #111827;
+}
+    
     .toast {
       position: fixed;
       left: 50%;
@@ -622,6 +641,9 @@
       toast: document.getElementById("toast")
     };
 
+    const DEALS_PER_PAGE = 250;
+    let visibleDealLimit = DEALS_PER_PAGE;
+
     init();
 
     async function init() {
@@ -635,6 +657,7 @@
       els.searchInput.addEventListener("input", function(event) {
         state.search = event.target.value.trim().toLowerCase();
         els.clearSearchBtn.style.display = state.search ? "block" : "none";
+        visibleDealLimit = DEALS_PER_PAGE;
         renderDeals();
       });
 
@@ -871,6 +894,7 @@
       state.search = "";
       els.searchInput.value = "";
       els.clearSearchBtn.style.display = "none";
+      visibleDealLimit = DEALS_PER_PAGE;
       renderDeals();
     }
 
@@ -920,6 +944,31 @@
       });
     }
 
+    function renderLoadMoreButton(totalDealCount) {
+  const existingButton = document.getElementById("loadMoreDealsButton");
+  if (existingButton) existingButton.remove();
+
+  if (visibleDealLimit >= totalDealCount) return;
+
+  const button = document.createElement("button");
+  button.id = "loadMoreDealsButton";
+  button.textContent =
+    "Load more deals (" +
+    Math.min(visibleDealLimit, totalDealCount) +
+    " of " +
+    totalDealCount +
+    ")";
+
+  button.className = "load-more-btn";
+
+  button.addEventListener("click", function () {
+    visibleDealLimit += DEALS_PER_PAGE;
+    render();
+  });
+
+  els.dealGrid.after(button);
+}
+    
     function renderDeals() {
       let filtered = state.deals.filter(function(deal) {
         if (state.ignoredAsins.has(deal.asin) || state.hiddenAsins.has(deal.asin)) return false;
@@ -938,17 +987,27 @@
 
       filtered = sortDealsArray(filtered);
 
-      els.dealCount.textContent = filtered.length + " deal" + (filtered.length === 1 ? "" : "s");
-      els.activeFilterLabel.textContent = state.selectedTag === "All" ? "Showing all tags" : "Filtered by: " + state.selectedTag;
+const totalDealCount = filtered.length;
+const visibleDeals = filtered.slice(0, visibleDealLimit);
 
-      if (filtered.length === 0) {
-        els.dealGrid.innerHTML = "";
-        els.emptyState.style.display = "block";
-        return;
-      }
+els.dealCount.textContent =
+  totalDealCount + " deal" + (totalDealCount === 1 ? "" : "s");
 
-      els.emptyState.style.display = "none";
-      els.dealGrid.innerHTML = filtered.map(renderDealCard).join("");
+els.activeFilterLabel.textContent =
+  state.selectedTag === "All" ? "Showing all tags" : "Filtered by: " + state.selectedTag;
+
+if (totalDealCount === 0) {
+  els.dealGrid.innerHTML = "";
+  els.emptyState.style.display = "block";
+  renderLoadMoreButton(0);
+  return;
+}
+
+els.emptyState.style.display = "none";
+els.dealGrid.innerHTML = visibleDeals.map(renderDealCard).join("");
+
+renderLoadMoreButton(totalDealCount);
+
     }
 
     function renderDealCard(deal) {
@@ -971,7 +1030,7 @@
           <button class="card-menu-button" type="button" onclick="toggleDetails('${escapeJs(deal.asin)}')" aria-label="Toggle deal details">⋮</button>
 
           <div class="image-wrap">
-            <img src="${escapeAttr(imageUrl)}" alt="" loading="lazy">
+            <img src="${escapeAttr(imageUrl)}" alt="" loading="lazy" decoding="async">
           </div>
 
           <div class="card-body">
@@ -1124,6 +1183,7 @@
     window.setTag = function(tag) {
       state.selectedTag = tag;
       localStorage.setItem(STORAGE_KEYS.selectedTag, tag);
+      visibleDealLimit = DEALS_PER_PAGE;
       render();
     };
 

@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const DATA_DIR = path.join(process.cwd(), "data");
-const MAX_AGE_HOURS = 48;
+const MAX_AGE_HOURS = 24;
 
 const now = Date.now();
 const cutoff = now - MAX_AGE_HOURS * 60 * 60 * 1000;

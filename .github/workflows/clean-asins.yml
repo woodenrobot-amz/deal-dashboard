@@ -1,0 +1,33 @@
+name: Clean Discovered ASINs
+
+on:
+  workflow_dispatch: # Allows you to run this manually from the Actions tab
+
+jobs:
+  clean-json:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deduplicate and sort ASINs
+        run: |
+          # Check if the file exists before running
+          if [ -f "discovered-asins.json" ]; then
+            echo "Processing discovered-asins.json..."
+            
+            # Using jq to read the array, unique it (which sorts it), and overwrite the file
+            jq 'unique' discovered-asins.json > temp.json && mv temp.json discovered-asins.json
+            
+            echo "Cleanup complete."
+          else
+            echo "Error: discovered-asins.json not found!"
+            exit 1
+          fi
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: scrubbed and deduplicated discovered-asins.json"
+          file_pattern: 'discovered-asins.json'

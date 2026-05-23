@@ -1,31 +1,28 @@
-name: Clean Discovered ASINs
+name: Scrub Discovered ASINs
 
 on:
-  workflow_dispatch: # Allows you to run this manually from the Actions tab
-  push:
-    paths:
-      - 'data/discovered-asins.json' # Triggers automatically if the file changes
+  workflow_dispatch: # Best kept as a manual trigger so it doesn't accidentally wipe data automatically
 
 jobs:
-  clean-json:
+  clear-json:
     runs-on: ubuntu-latest
     
     permissions:
-      contents: write # Grants permission to push the changes back to your repo
+      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Deduplicate and sort ASINs
+      - name: Reset JSON file to empty array
         run: |
           if [ -f "data/discovered-asins.json" ]; then
-            echo "Processing data/discovered-asins.json..."
+            echo "Wiping data/discovered-asins.json..."
             
-            # Using jq to read the array, unique it (which sorts it), and overwrite the file
-            jq 'unique' data/discovered-asins.json > temp.json && mv temp.json data/discovered-asins.json
+            # This instantly overwrites the file with a clean, empty JSON array
+            echo "[]" > data/discovered-asins.json
             
-            echo "Cleanup complete."
+            echo "Scrub complete. File reset to []"
           else
             echo "Error: data/discovered-asins.json not found!"
             exit 1
@@ -34,5 +31,5 @@ jobs:
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: scrubbed and deduplicated discovered-asins.json"
+          commit_message: "chore: completely scrubbed and reset discovered-asins.json"
           file_pattern: 'data/discovered-asins.json'

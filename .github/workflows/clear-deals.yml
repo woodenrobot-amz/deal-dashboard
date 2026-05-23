@@ -1,0 +1,39 @@
+name: Scrub Deals Data
+
+on:
+  workflow_dispatch: # Kept manual to prevent accidental data loss
+
+jobs:
+  clear-deals-json:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Reset Deals JSON file
+        run: |
+          if [ -f "data/deals.json" ]; then
+            echo "Wiping data/deals.json..."
+            
+            # Resets the file to a clean, empty JSON array
+            echo "[]" > data/deals.json
+            
+            # NOTE: If your app expects an empty object instead of an array, 
+            # uncomment the line below and comment out the line above:
+            # echo "{}" > data/deals.json
+            
+            echo "Scrub complete. File reset to []"
+          else
+            echo "Error: data/deals.json not found!"
+            exit 1
+          fi
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: completely scrubbed and reset deals.json"
+          file_pattern: 'data/deals.json'

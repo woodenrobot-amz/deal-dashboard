@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-05-23T20:10:40.254Z",
+  "generatedAt": "2026-05-23T21:11:00.793Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "woodworking",
-  "dealCount": 638,
+  "lastEnrichmentStream": "woodworking_core",
+  "dealCount": 655,
   "deals": [
     {
       "asin": "B07BBTPQTR",
@@ -908,6 +908,51 @@
         "streamFit": 0,
         "brand": 0
       }
+    },
+    {
+      "asin": "B0CLK7BSLQ",
+      "parentAsin": "B0DJSJY634",
+      "familyKey": "B0DJSJY634",
+      "variationCount": 4,
+      "productAgeDays": 900,
+      "title": "AMZBSAW 60PCS Titanium Oscillating Saw Blades Metal Cutting, 4 Types Multitool Blades Kits for Metal Nails Wood Plastic and Hard Material, Oscillating Tool Blade Fit Milwaukee Dewalt Ryobi Bosch",
+      "brand": "AMZBSAW",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 70.39,
+      "avg90": 101.64,
+      "rating": 4.4,
+      "reviewCount": 2175,
+      "rank": 2402,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/711Q4VSMA0L.jpg",
+      "url": "https://www.amazon.com/dp/B0CLK7BSLQ",
+      "keepa": "https://keepa.com/#!product/1-B0CLK7BSLQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.791Z",
+      "dealScore": 116,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 46,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0CLK8LHD2",
+        "B0CLK7BSLQ"
+      ]
     },
     {
       "asin": "B08DJ95VZQ",
@@ -2667,6 +2712,45 @@
       ]
     },
     {
+      "asin": "B07KHHJ8TC",
+      "parentAsin": "",
+      "familyKey": "B07KHHJ8TC",
+      "variationCount": 0,
+      "productAgeDays": 2747,
+      "title": "CRAFTSMAN V20 Lithium Ion Battery, 2.0-Amp Hour, 2 Pack (CMCB202-2)",
+      "brand": "CRAFTSMAN",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49,
+      "avg90": 84.79,
+      "rating": 4.7,
+      "reviewCount": 2374,
+      "rank": 13106,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61I8ubZ1cqL.jpg",
+      "url": "https://www.amazon.com/dp/B07KHHJ8TC",
+      "keepa": "https://keepa.com/#!product/1-B07KHHJ8TC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.791Z",
+      "dealScore": 104,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 63,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B09MT5N7Z2",
       "parentAsin": "B0DFG6DHQK",
       "familyKey": "B0DFG6DHQK",
@@ -3004,45 +3088,6 @@
       ]
     },
     {
-      "asin": "B07KHHJ8TC",
-      "parentAsin": "",
-      "familyKey": "B07KHHJ8TC",
-      "variationCount": 0,
-      "productAgeDays": 2746,
-      "title": "CRAFTSMAN V20 Lithium Ion Battery, 2.0-Amp Hour, 2 Pack (CMCB202-2)",
-      "brand": "CRAFTSMAN",
-      "brandTier": "off",
-      "category": "woodworking",
-      "sourceStream": "woodworking_core",
-      "sources": [
-        "keepa"
-      ],
-      "price": 50,
-      "avg90": 85.11,
-      "rating": 4.7,
-      "reviewCount": 2373,
-      "rank": 12712,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/61I8ubZ1cqL.jpg",
-      "url": "https://www.amazon.com/dp/B07KHHJ8TC",
-      "keepa": "https://keepa.com/#!product/1-B07KHHJ8TC",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": false,
-      "updatedAt": "2026-05-23T07:43:58.399Z",
-      "dealScore": 102,
-      "scoreBreakdown": {
-        "rating": 23,
-        "discount": 61,
-        "rank": 0,
-        "reviews": 10,
-        "variationFamily": 0,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 0
-      }
-    },
-    {
       "asin": "B0FH9Z145Y",
       "parentAsin": "B0CRDSMSGH",
       "familyKey": "B0CRDSMSGH",
@@ -3325,7 +3370,8 @@
         "B000AMS8IE",
         "B0009H5SCO",
         "B0BR672RC2",
-        "B00461K4T6"
+        "B00461K4T6",
+        "B001AHUACK"
       ]
     },
     {
@@ -4339,7 +4385,7 @@
       "parentAsin": "B0FQVPBMD5",
       "familyKey": "B0FQVPBMD5",
       "variationCount": 44,
-      "productAgeDays": 2858,
+      "productAgeDays": 2859,
       "title": "Ekena Millwork CM18GAWHF Granada Ceiling Medallion fits Canopies up to 6 5/8, Witch Hazel",
       "brand": "Ekena Millwork",
       "brandTier": "off",
@@ -4349,10 +4395,10 @@
         "keepa"
       ],
       "price": 51.55,
-      "avg90": 82.25,
+      "avg90": 82.05,
       "rating": 4.7,
       "reviewCount": 379,
-      "rank": 52181,
+      "rank": 46659,
       "img": "https://images-na.ssl-images-amazon.com/images/I/61zcVDXm+PL.jpg",
       "url": "https://www.amazon.com/dp/B07BF3GCYX",
       "keepa": "https://keepa.com/#!product/1-B07BF3GCYX",
@@ -4360,7 +4406,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-22T21:53:27.023Z",
+      "updatedAt": "2026-05-23T21:11:00.790Z",
       "dealScore": 94,
       "scoreBreakdown": {
         "rating": 23,
@@ -4753,6 +4799,45 @@
         "B09G6B8VVL",
         "B09G66964Z"
       ]
+    },
+    {
+      "asin": "B0FJDMZQQ9",
+      "parentAsin": "B0H1QRK8M7",
+      "familyKey": "B0H1QRK8M7",
+      "variationCount": 8,
+      "productAgeDays": 305,
+      "title": "1 Pack 5000mAh Ultra High Capacity Lithium ion Battery Replacement for EGO 56V Battery Compatible with EGO 56 Volt BA2800 BA2800T BA4200 BA4200T BA1400 BA1400T BA5600T Cordless Power Tools(Green)",
+      "brand": "OHYES BAT",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 70.99,
+      "avg90": 131.15,
+      "rating": 4.4,
+      "reviewCount": 381,
+      "rank": 79037,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61-jux-vU8L.jpg",
+      "url": "https://www.amazon.com/dp/B0FJDMZQQ9",
+      "keepa": "https://keepa.com/#!product/1-B0FJDMZQQ9",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.791Z",
+      "dealScore": 93,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 68,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
     },
     {
       "asin": "B08LCMYT54",
@@ -5480,7 +5565,9 @@
         "B09BG2FR36",
         "B00FXHMN5K",
         "B00FXHKFT6",
-        "B00FXHK0T6"
+        "B00FXHK0T6",
+        "B00FXHM95Y",
+        "B00FXHKYE2"
       ]
     },
     {
@@ -6611,6 +6698,45 @@
       ]
     },
     {
+      "asin": "B08LHKLN9T",
+      "parentAsin": "",
+      "familyKey": "B08LHKLN9T",
+      "variationCount": 0,
+      "productAgeDays": 2027,
+      "title": "DEWALT DCB122 12V MAX* 2AH LITHIUM ION BATTERY",
+      "brand": "DEWALT",
+      "brandTier": "top",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 35,
+      "avg90": 43.86,
+      "rating": 4.7,
+      "reviewCount": 814,
+      "rank": 8704,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41bKLNSjDrL.jpg",
+      "url": "https://www.amazon.com/dp/B08LHKLN9T",
+      "keepa": "https://keepa.com/#!product/1-B08LHKLN9T",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-05-23T21:11:00.791Z",
+      "dealScore": 86,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      }
+    },
+    {
       "asin": "B0BFBRRQ3P",
       "parentAsin": "B0BFRTYJZF",
       "familyKey": "B0BFRTYJZF",
@@ -6779,6 +6905,45 @@
         "B0CZWJG5GZ",
         "B0D6C4316S"
       ]
+    },
+    {
+      "asin": "B000T9SI60",
+      "parentAsin": "B00NQY51ME",
+      "familyKey": "B00NQY51ME",
+      "variationCount": 5,
+      "productAgeDays": 5539,
+      "title": "Wiha 30297 12-Piece Slotted and Phillips Screwdriver Set with Soft Finish Handles",
+      "brand": "Wiha",
+      "brandTier": "top",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 66,
+      "avg90": 81.5,
+      "rating": 4.8,
+      "reviewCount": 566,
+      "rank": 81449,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61iUQ3vX-8L.jpg",
+      "url": "https://www.amazon.com/dp/B000T9SI60",
+      "keepa": "https://keepa.com/#!product/1-B000T9SI60",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-05-23T21:11:00.790Z",
+      "dealScore": 85,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 28,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      }
     },
     {
       "asin": "B08P8FQ4P3",
@@ -8194,7 +8359,7 @@
       "parentAsin": "B0C4WH3YQ1",
       "familyKey": "B0C4WH3YQ1",
       "variationCount": 2,
-      "productAgeDays": 5515,
+      "productAgeDays": 5516,
       "title": "DEWALT Miter Saw Stand Wide Roller Work Support Attachment (DW7027) Large",
       "brand": "DEWALT",
       "brandTier": "top",
@@ -8204,10 +8369,10 @@
         "keepa"
       ],
       "price": 58.55,
-      "avg90": 66.93,
+      "avg90": 66.62,
       "rating": 4.7,
-      "reviewCount": 2230,
-      "rank": 55155,
+      "reviewCount": 2228,
+      "rank": 51113,
       "img": "https://images-na.ssl-images-amazon.com/images/I/41aYe2tavhL.jpg",
       "url": "https://www.amazon.com/dp/B004UOG4V6",
       "keepa": "https://keepa.com/#!product/1-B004UOG4V6",
@@ -8215,7 +8380,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": true,
-      "updatedAt": "2026-05-22T21:53:27.023Z",
+      "updatedAt": "2026-05-23T21:11:00.790Z",
       "dealScore": 79,
       "scoreBreakdown": {
         "rating": 23,
@@ -8510,6 +8675,45 @@
       }
     },
     {
+      "asin": "B01J58O5LM",
+      "parentAsin": "B07BLHCKT7",
+      "familyKey": "B07BLHCKT7",
+      "variationCount": 1,
+      "productAgeDays": 3582,
+      "title": "Makita BL1860B-2 18V LXT Lithium-Ion 6.0Ah Battery, 2/pk, Black",
+      "brand": "Makita",
+      "brandTier": "top",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 248.79,
+      "avg90": 295.81,
+      "rating": 4.5,
+      "reviewCount": 999,
+      "rank": 29938,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/612tSKbWxiL.jpg",
+      "url": "https://www.amazon.com/dp/B01J58O5LM",
+      "keepa": "https://keepa.com/#!product/1-B01J58O5LM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-05-23T21:11:00.791Z",
+      "dealScore": 78,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 23,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      }
+    },
+    {
       "asin": "B0DJ341VBW",
       "parentAsin": "B0GJ37DCSL",
       "familyKey": "B0GJ37DCSL",
@@ -8624,45 +8828,6 @@
         "productAge": 3,
         "streamFit": 0,
         "brand": 0
-      }
-    },
-    {
-      "asin": "B01J58O5LM",
-      "parentAsin": "B07BLHCKT7",
-      "familyKey": "B07BLHCKT7",
-      "variationCount": 1,
-      "productAgeDays": 3581,
-      "title": "Makita BL1860B-2 18V LXT Lithium-Ion 6.0Ah Battery, 2/pk, Black",
-      "brand": "Makita",
-      "brandTier": "top",
-      "category": "woodworking",
-      "sourceStream": "woodworking_core",
-      "sources": [
-        "keepa"
-      ],
-      "price": 251.1,
-      "avg90": 296.53,
-      "rating": 4.5,
-      "reviewCount": 998,
-      "rank": 31073,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/612tSKbWxiL.jpg",
-      "url": "https://www.amazon.com/dp/B01J58O5LM",
-      "keepa": "https://keepa.com/#!product/1-B01J58O5LM",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": true,
-      "updatedAt": "2026-05-22T20:25:13.689Z",
-      "dealScore": 77,
-      "scoreBreakdown": {
-        "rating": 22,
-        "discount": 22,
-        "rank": 0,
-        "reviews": 5,
-        "variationFamily": 0,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 20
       }
     },
     {
@@ -10492,6 +10657,45 @@
       ]
     },
     {
+      "asin": "B01EGB7MT0",
+      "parentAsin": "",
+      "familyKey": "B01EGB7MT0",
+      "variationCount": 0,
+      "productAgeDays": 3611,
+      "title": "Ironton Air Hose Reel - holds 3/8in. x 100ft. Hose",
+      "brand": "Ironton",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 45.26,
+      "avg90": 60.09,
+      "rating": 4.5,
+      "reviewCount": 712,
+      "rank": 47179,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71pcRwXfWcL.jpg",
+      "url": "https://www.amazon.com/dp/B01EGB7MT0",
+      "keepa": "https://keepa.com/#!product/1-B01EGB7MT0",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.790Z",
+      "dealScore": 72,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 37,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0FGD267SS",
       "parentAsin": "B0DBQD79SQ",
       "familyKey": "B0DBQD79SQ",
@@ -11261,6 +11465,45 @@
         "B0B8LD3VSW",
         "B01LYVDWOB"
       ]
+    },
+    {
+      "asin": "B00K90L410",
+      "parentAsin": "B0DH1VWXMR",
+      "familyKey": "B0DH1VWXMR",
+      "variationCount": 15,
+      "productAgeDays": 3514,
+      "title": "Beta 96T/S6 2-6mm Metric T-Handle Hex Key Wrenches | Set of 6 | High Torque Ergonomic Allen Wrench with Dual Hex Tips | Drop Prevention Hole | Industrial Strength | Made in Italy",
+      "brand": "Beta",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 61.74,
+      "avg90": 74.1,
+      "rating": 4.8,
+      "reviewCount": 1126,
+      "rank": 73313,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61SDzVjLp8L.jpg",
+      "url": "https://www.amazon.com/dp/B00K90L410",
+      "keepa": "https://keepa.com/#!product/1-B00K90L410",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.791Z",
+      "dealScore": 70,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 25,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
     },
     {
       "asin": "B089LGWV7F",
@@ -12298,7 +12541,13 @@
         "productAge": 3,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0DZ63DCTR",
+        "B0DMVSYHCV"
+      ]
     },
     {
       "asin": "B016OP6M9C",
@@ -13306,7 +13555,7 @@
       "parentAsin": "B0CQZJQ99L",
       "familyKey": "B0CQZJQ99L",
       "variationCount": 35,
-      "productAgeDays": 1112,
+      "productAgeDays": 1113,
       "title": "GoYonder 4.5 inch Super Thin Diamond Tile Blade, X Teeth Diamond Saw Blades for Cutting Porcelain Tiles Marbles",
       "brand": "GoYonder",
       "brandTier": "off",
@@ -13316,10 +13565,10 @@
         "keepa"
       ],
       "price": 64.22,
-      "avg90": 72.21,
+      "avg90": 72.09,
       "rating": 4.5,
       "reviewCount": 2356,
-      "rank": 72458,
+      "rank": 61679,
       "img": "https://images-na.ssl-images-amazon.com/images/I/611F0nDUZkL.jpg",
       "url": "https://www.amazon.com/dp/B0BX433KGB",
       "keepa": "https://keepa.com/#!product/1-B0BX433KGB",
@@ -13327,7 +13576,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-22T21:53:27.023Z",
+      "updatedAt": "2026-05-23T21:11:00.790Z",
       "dealScore": 64,
       "scoreBreakdown": {
         "rating": 22,
@@ -13342,8 +13591,8 @@
       "spcImported": false,
       "spcCapturedAt": "",
       "siblingAsins": [
-        "B07FFVZHN1",
-        "B0BX433KGB"
+        "B0BX433KGB",
+        "B07FFVZHN1"
       ]
     },
     {
@@ -13479,6 +13728,45 @@
         "B0FSQHZ4BJ",
         "B0FCDN8Y66"
       ]
+    },
+    {
+      "asin": "B0DWFBSPKQ",
+      "parentAsin": "",
+      "familyKey": "B0DWFBSPKQ",
+      "variationCount": 0,
+      "productAgeDays": 458,
+      "title": "DEWALT 5 Gallon 4 HP STEALTHSONIC Shop Vacuum Wet and Dry DXV05S-QTB with 6 Dust Bags Ultra Quiet Stainless Steel Wet/Dry Vacuum Cleaner with Powerful Suction for Garage, Jobsite, and Workshop",
+      "brand": "DEWALT",
+      "brandTier": "top",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 143.95,
+      "avg90": 164.06,
+      "rating": 4.6,
+      "reviewCount": 114,
+      "rank": 34960,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71pTrpFvDQL.jpg",
+      "url": "https://www.amazon.com/dp/B0DWFBSPKQ",
+      "keepa": "https://keepa.com/#!product/1-B0DWFBSPKQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-05-23T21:11:00.790Z",
+      "dealScore": 64,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      }
     },
     {
       "asin": "B0BNPNM7L1",
@@ -14319,7 +14607,7 @@
       "parentAsin": "B0D5HL8M1X",
       "familyKey": "B0D5HL8M1X",
       "variationCount": 8,
-      "productAgeDays": 764,
+      "productAgeDays": 765,
       "title": "POWERTEC 6 x 48 Inch Zirconia Sanding Belts, 6 Each of 36/100/120 Grits, 18PK, Belt Sander Sanding Belt Assortment for Bench Sander, Belt and Disc sander, Woodworking, Metal Grinding (464801Z-P2)",
       "brand": "POWERTEC",
       "brandTier": "off",
@@ -14329,10 +14617,10 @@
         "keepa"
       ],
       "price": 74.26,
-      "avg90": 87.25,
+      "avg90": 87.08,
       "rating": 4.7,
       "reviewCount": 758,
-      "rank": 63443,
+      "rank": 63221,
       "img": "https://images-na.ssl-images-amazon.com/images/I/61aBUvDMJ9L.jpg",
       "url": "https://www.amazon.com/dp/B0D21VX8CP",
       "keepa": "https://keepa.com/#!product/1-B0D21VX8CP",
@@ -14340,7 +14628,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-22T21:53:27.023Z",
+      "updatedAt": "2026-05-23T21:11:00.790Z",
       "dealScore": 61,
       "scoreBreakdown": {
         "rating": 23,
@@ -14471,6 +14759,45 @@
         "rank": 0,
         "reviews": 10,
         "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B002MXS1R2",
+      "parentAsin": "B07VGQ2WZB",
+      "familyKey": "B07VGQ2WZB",
+      "variationCount": 6,
+      "productAgeDays": 4213,
+      "title": "GEARWRENCH 18mm 12 Point XL GearBox Double Box Ratcheting Wrench - 85918",
+      "brand": "GEARWRENCH",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 41.56,
+      "avg90": 47.76,
+      "rating": 4.8,
+      "reviewCount": 1426,
+      "rank": 63854,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51yOfm8QxxL.jpg",
+      "url": "https://www.amazon.com/dp/B002MXS1R2",
+      "keepa": "https://keepa.com/#!product/1-B002MXS1R2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.791Z",
+      "dealScore": 61,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 19,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
         "productAge": 8,
         "streamFit": 0,
         "brand": 0
@@ -14885,7 +15212,7 @@
       "parentAsin": "B0H1W6JPR1",
       "familyKey": "B0H1W6JPR1",
       "variationCount": 2,
-      "productAgeDays": 384,
+      "productAgeDays": 385,
       "title": "Upgraded 6.0Ah 20V Lithium Replacement Battery Compatible with Craftsman V20 Series Cordless Outdoor Tools, Compatible with Craftsman CMCB206, CMCB204, CMCB202 20 Volt MAX V20 Batteries, 2-Pack",
       "brand": "Kekepowtobat",
       "brandTier": "off",
@@ -14895,10 +15222,10 @@
         "keepa"
       ],
       "price": 39.99,
-      "avg90": 53.04,
+      "avg90": 52.94,
       "rating": 4.3,
       "reviewCount": 134,
-      "rank": 14660,
+      "rank": 14390,
       "img": "https://images-na.ssl-images-amazon.com/images/I/612BjKSV+yL.jpg",
       "url": "https://www.amazon.com/dp/B0DWRDDWPK",
       "keepa": "https://keepa.com/#!product/1-B0DWRDDWPK",
@@ -14906,7 +15233,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-23T07:43:58.399Z",
+      "updatedAt": "2026-05-23T21:11:00.791Z",
       "dealScore": 60,
       "scoreBreakdown": {
         "rating": 21,
@@ -15031,6 +15358,45 @@
         "rank": 0,
         "reviews": 5,
         "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B08DK5ZZ1N",
+      "parentAsin": "B0FJHLGWQG",
+      "familyKey": "B0FJHLGWQG",
+      "variationCount": 24,
+      "productAgeDays": 2129,
+      "title": "TEKTON 1/2 Inch Drive Deep 6-Point Impact Socket Set with Case, 17-Piece (5/16-1-1/4 in.) | SID92305",
+      "brand": "TEKTON",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 76.9,
+      "avg90": 85.87,
+      "rating": 4.8,
+      "reviewCount": 779,
+      "rank": 65634,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71GBbaW2WPL.jpg",
+      "url": "https://www.amazon.com/dp/B08DK5ZZ1N",
+      "keepa": "https://keepa.com/#!product/1-B08DK5ZZ1N",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.791Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 8,
         "productAge": 8,
         "streamFit": 0,
         "brand": 0
@@ -15485,6 +15851,51 @@
       }
     },
     {
+      "asin": "B0B6164N69",
+      "parentAsin": "B07SQ85PHD",
+      "familyKey": "B07SQ85PHD",
+      "variationCount": 66,
+      "productAgeDays": 1308,
+      "title": "LTWFITTING Assortment Kit Tube OD (1/4\" 5/16\" 3/8\" 1/2\") x 1/4\" Male NPT Brass Compression Connector Set (Pack of 30)",
+      "brand": "LTWFITTING",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 55.99,
+      "avg90": 62.53,
+      "rating": 4.6,
+      "reviewCount": 630,
+      "rank": 47337,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81y-dj+SVlL.jpg",
+      "url": "https://www.amazon.com/dp/B0B6164N69",
+      "keepa": "https://keepa.com/#!product/1-B0B6164N69",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.790Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B00CHHYGY0",
+        "B0B6164N69"
+      ]
+    },
+    {
       "asin": "B09TT2T6TW",
       "parentAsin": "B0B1HP7B3W",
       "familyKey": "B0B1HP7B3W",
@@ -15729,7 +16140,7 @@
       "parentAsin": "B0D1K18HB9",
       "familyKey": "B0D1K18HB9",
       "variationCount": 36,
-      "productAgeDays": 2177,
+      "productAgeDays": 2178,
       "title": "Diablo Rebar Demon SDS-Max 4-Cutter Full Carbide Head Hammer Drill Bit with Tri-Metal Fusion Welding - 7/8\" Diameter, 29\" Length, 24\" Working Length - DMAMX1190",
       "brand": "Diablo",
       "brandTier": "top",
@@ -15739,10 +16150,10 @@
         "keepa"
       ],
       "price": 101.88,
-      "avg90": 88.79,
+      "avg90": 88.78,
       "rating": 4.5,
       "reviewCount": 203,
-      "rank": 48892,
+      "rank": 45143,
       "img": "https://images-na.ssl-images-amazon.com/images/I/51iTotVja9L.jpg",
       "url": "https://www.amazon.com/dp/B089LDNXRL",
       "keepa": "https://keepa.com/#!product/1-B089LDNXRL",
@@ -15750,7 +16161,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": true,
-      "updatedAt": "2026-05-22T21:53:27.023Z",
+      "updatedAt": "2026-05-23T21:11:00.791Z",
       "dealScore": 58,
       "scoreBreakdown": {
         "rating": 22,
@@ -16534,7 +16945,7 @@
       "parentAsin": "B0DN65L2GC",
       "familyKey": "B0DN65L2GC",
       "variationCount": 12,
-      "productAgeDays": 1631,
+      "productAgeDays": 1632,
       "title": "Drilax 4-1/2 inch Diamond Masonry Hole Saw with Guide | Dry Core Drill Bit for Concrete, Brick & Stone 2\" Depth, 3/8\" Shank for Standard Drills No Pilot Bit Needed",
       "brand": "DRILAX",
       "brandTier": "off",
@@ -16544,10 +16955,10 @@
         "keepa"
       ],
       "price": 39.99,
-      "avg90": 46.04,
+      "avg90": 45.94,
       "rating": 4.3,
       "reviewCount": 728,
-      "rank": 81199,
+      "rank": 80742,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71akXcFmirL.jpg",
       "url": "https://www.amazon.com/dp/B09MYKNVXZ",
       "keepa": "https://keepa.com/#!product/1-B09MYKNVXZ",
@@ -16555,7 +16966,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-22T21:53:27.023Z",
+      "updatedAt": "2026-05-23T21:11:00.790Z",
       "dealScore": 56,
       "scoreBreakdown": {
         "rating": 21,
@@ -17391,6 +17802,45 @@
         "variationFamily": 0,
         "productAge": 8,
         "streamFit": 5,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0BQ5W8STC",
+      "parentAsin": "B0BWHC8WQH",
+      "familyKey": "B0BWHC8WQH",
+      "variationCount": 4,
+      "productAgeDays": 1186,
+      "title": "BOEN 1/2\" Drive Impact Socket Set, 33 Piece Deep & Shallow Metric Socket Set 8mm to 22mm, Includes 5\", 10\" Extension Bars, Universal Joint, 6 Point Design, Cr-V Steel, Meets ANSI Standards",
+      "brand": "boen",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.98,
+      "avg90": 57.22,
+      "rating": 4.7,
+      "reviewCount": 884,
+      "rank": 70720,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71A8lk4ZcmL.jpg",
+      "url": "https://www.amazon.com/dp/B0BQ5W8STC",
+      "keepa": "https://keepa.com/#!product/1-B0BQ5W8STC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.791Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
         "brand": 0
       }
     },
@@ -18511,7 +18961,7 @@
       "parentAsin": "B0H261VD67",
       "familyKey": "B0H261VD67",
       "variationCount": 7,
-      "productAgeDays": 304,
+      "productAgeDays": 305,
       "title": "5000mAh Replacement for EGO 56V Battery Compatible with EGO Battery 5.0Ah High Capacity Lithium Power Tools Compatible with BA2800 BA4200 BA4200T BA1400 BA1400T BA2240 Cordless Power Tool(Green)",
       "brand": "OHYES BAT",
       "brandTier": "off",
@@ -18521,10 +18971,10 @@
         "keepa"
       ],
       "price": 63.98,
-      "avg90": 79.6,
+      "avg90": 79.41,
       "rating": 4.4,
-      "reviewCount": 378,
-      "rank": 16578,
+      "reviewCount": 379,
+      "rank": 17129,
       "img": "https://images-na.ssl-images-amazon.com/images/I/61VDPWfh-oL.jpg",
       "url": "https://www.amazon.com/dp/B0FJD3J8Z4",
       "keepa": "https://keepa.com/#!product/1-B0FJD3J8Z4",
@@ -18532,7 +18982,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-22T21:53:27.024Z",
+      "updatedAt": "2026-05-23T21:11:00.791Z",
       "dealScore": 51,
       "scoreBreakdown": {
         "rating": 22,
@@ -18543,13 +18993,7 @@
         "productAge": 0,
         "streamFit": 0,
         "brand": 0
-      },
-      "spcImported": false,
-      "spcCapturedAt": "",
-      "siblingAsins": [
-        "B0FJD3J8Z4",
-        "B0FY4ZCN8C"
-      ]
+      }
     },
     {
       "asin": "B0F9JT2BN7",
@@ -19030,7 +19474,7 @@
       "parentAsin": "B09KZDB7V4",
       "familyKey": "B09KZDB7V4",
       "variationCount": 31,
-      "productAgeDays": 2254,
+      "productAgeDays": 2255,
       "title": "Lenox Hole Saw Carbide Tipped 5In 127Mm",
       "brand": "Lenox",
       "brandTier": "off",
@@ -19040,10 +19484,10 @@
         "keepa"
       ],
       "price": 89,
-      "avg90": 96.22,
+      "avg90": 96.1,
       "rating": 4.6,
       "reviewCount": 218,
-      "rank": 63720,
+      "rank": 58169,
       "img": "https://images-na.ssl-images-amazon.com/images/I/51eB6EHAtaL.jpg",
       "url": "https://www.amazon.com/dp/B0857STXYR",
       "keepa": "https://keepa.com/#!product/1-B0857STXYR",
@@ -19051,7 +19495,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-22T21:53:27.023Z",
+      "updatedAt": "2026-05-23T21:11:00.790Z",
       "dealScore": 50,
       "scoreBreakdown": {
         "rating": 23,
@@ -19185,6 +19629,45 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 8
+      }
+    },
+    {
+      "asin": "B0CN2VYFPV",
+      "parentAsin": "B0CLD6QMPC",
+      "familyKey": "B0CLD6QMPC",
+      "variationCount": 5,
+      "productAgeDays": 862,
+      "title": "Eapele Bolt Extractor Set, Stripped Nut Remover Twist Sockets, Fit 3/8\" Square Drive with Solid Storage Case(49pcs, Black)",
+      "brand": "Eapele",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 55.99,
+      "avg90": 60.35,
+      "rating": 4.5,
+      "reviewCount": 3958,
+      "rank": 41720,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71IhaDrc6VL.jpg",
+      "url": "https://www.amazon.com/dp/B0CN2VYFPV",
+      "keepa": "https://keepa.com/#!product/1-B0CN2VYFPV",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.791Z",
+      "dealScore": 50,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 10,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
       }
     },
     {
@@ -19822,7 +20305,7 @@
       "parentAsin": "B08G8D4614",
       "familyKey": "B08G8D4614",
       "variationCount": 4,
-      "productAgeDays": 2100,
+      "productAgeDays": 2101,
       "title": "Amazing Items Set of 6 - Personalized Pocket Knife for Groomsmen - 20 Font Option - Custom Engraved Pocket Knives | Groomsman Gifts for Wedding, Groomsmen Proposal Gifts",
       "brand": "Amazing Items",
       "brandTier": "off",
@@ -19832,10 +20315,10 @@
         "keepa"
       ],
       "price": 79.95,
-      "avg90": 86.77,
+      "avg90": 86.67,
       "rating": 4.8,
       "reviewCount": 919,
-      "rank": 59327,
+      "rank": 58844,
       "img": "https://images-na.ssl-images-amazon.com/images/I/91u0OqY5o+L.jpg",
       "url": "https://www.amazon.com/dp/B08G8PP49H",
       "keepa": "https://keepa.com/#!product/1-B08G8PP49H",
@@ -19843,7 +20326,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-22T21:53:27.023Z",
+      "updatedAt": "2026-05-23T21:11:00.790Z",
       "dealScore": 48,
       "scoreBreakdown": {
         "rating": 24,
@@ -19854,13 +20337,7 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 0
-      },
-      "spcImported": false,
-      "spcCapturedAt": "",
-      "siblingAsins": [
-        "B08G8CC6WQ",
-        "B08G8PP49H"
-      ]
+      }
     },
     {
       "asin": "B0DSBLWHJP",
@@ -20146,7 +20623,7 @@
       "parentAsin": "B0DJ6TRF1X",
       "familyKey": "B0DJ6TRF1X",
       "variationCount": 2,
-      "productAgeDays": 606,
+      "productAgeDays": 607,
       "title": "DURATECH 3/8\" Drive Stubby Impact Socket Set, Low Profile Impact Sockets, 19-Piece, Metric, Size Covers 6-24mm, Cr-Mo Steel, Organized in Magnetic Storage Rail",
       "brand": "DURATECH",
       "brandTier": "off",
@@ -20156,10 +20633,10 @@
         "keepa"
       ],
       "price": 49.99,
-      "avg90": 58.28,
+      "avg90": 58.14,
       "rating": 4.7,
       "reviewCount": 286,
-      "rank": 64498,
+      "rank": 50988,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71lIFG2W56L.jpg",
       "url": "https://www.amazon.com/dp/B0CQJSH5XL",
       "keepa": "https://keepa.com/#!product/1-B0CQJSH5XL",
@@ -20167,7 +20644,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-22T21:53:27.024Z",
+      "updatedAt": "2026-05-23T21:11:00.791Z",
       "dealScore": 47,
       "scoreBreakdown": {
         "rating": 23,
@@ -20308,7 +20785,7 @@
       "parentAsin": "B0DSVRRN9V",
       "familyKey": "B0DSVRRN9V",
       "variationCount": 8,
-      "productAgeDays": 106,
+      "productAgeDays": 107,
       "title": "EMENTOL 1/2\" Drive Low Profile Impact Socket Set, 14 Pieces Stubby Nano Sockets, CR-MO, Metric, 17mm -30mm",
       "brand": "EMENTOL",
       "brandTier": "off",
@@ -20318,10 +20795,10 @@
         "keepa"
       ],
       "price": 43.97,
-      "avg90": 51.51,
+      "avg90": 51.34,
       "rating": 4.6,
       "reviewCount": 144,
-      "rank": 76862,
+      "rank": 75080,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71rm0pbJ6tL.jpg",
       "url": "https://www.amazon.com/dp/B0FSDHMFF5",
       "keepa": "https://keepa.com/#!product/1-B0FSDHMFF5",
@@ -20329,7 +20806,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-22T21:53:27.023Z",
+      "updatedAt": "2026-05-23T21:11:00.790Z",
       "dealScore": 47,
       "scoreBreakdown": {
         "rating": 23,
@@ -21428,7 +21905,7 @@
       "parentAsin": "B0DZ1SR3WY",
       "familyKey": "B0DZ1SR3WY",
       "variationCount": 2,
-      "productAgeDays": 672,
+      "productAgeDays": 673,
       "title": "BMWOOD MC-FS8 Woodturning Steady Rest for 10inch and 12inch Swing Size Lathe for Spindle Woodturning.",
       "brand": "BMWOOD",
       "brandTier": "off",
@@ -21438,10 +21915,10 @@
         "keepa"
       ],
       "price": 59.55,
-      "avg90": 68.68,
+      "avg90": 68.45,
       "rating": 4.4,
       "reviewCount": 116,
-      "rank": 75566,
+      "rank": 73163,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71J0WQRLVlL.jpg",
       "url": "https://www.amazon.com/dp/B0D5H581WZ",
       "keepa": "https://keepa.com/#!product/1-B0D5H581WZ",
@@ -21449,7 +21926,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-22T21:53:27.023Z",
+      "updatedAt": "2026-05-23T21:11:00.789Z",
       "dealScore": 44,
       "scoreBreakdown": {
         "rating": 22,
@@ -21464,8 +21941,8 @@
       "spcImported": false,
       "spcCapturedAt": "",
       "siblingAsins": [
-        "B0CR3458H3",
-        "B0D5H581WZ"
+        "B0D5H581WZ",
+        "B0CR3458H3"
       ]
     },
     {
@@ -21665,6 +22142,84 @@
         "reviews": 10,
         "variationFamily": 3,
         "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0GHLJHQNM",
+      "parentAsin": "B0H14P7PV8",
+      "familyKey": "B0H14P7PV8",
+      "variationCount": 14,
+      "productAgeDays": 124,
+      "title": "VEVOR Mechanics Tool Set, 230-Piece Mechanic Tool Kit, 1/4 in, 3/8 in, and 1/2 in Drive, SAE and Metric Socket Set, Wrenches, Screwdriver Bits, Accessories, and Storage Case, for Automotive Repair",
+      "brand": "VEVOR",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.8,
+      "avg90": 109.53,
+      "rating": 4.6,
+      "reviewCount": 998,
+      "rank": 7463,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71d2ywFBGQL.jpg",
+      "url": "https://www.amazon.com/dp/B0GHLJHQNM",
+      "keepa": "https://keepa.com/#!product/1-B0GHLJHQNM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.791Z",
+      "dealScore": 44,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0DNJTNWWW",
+      "parentAsin": "B0DNJSW2Y9",
+      "familyKey": "B0DNJSW2Y9",
+      "variationCount": 118,
+      "productAgeDays": 400,
+      "title": "1-3/16 in x 26 x 31 inch SDS Max Rotary Hammer Drill Bit, 30x800mm Carbide Tip Masonry Drill Bit for Brick, Stone, Concrete, (Shank Dia :18mm / 0.7\")",
+      "brand": "GRIXLEN",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 47.99,
+      "avg90": 52.13,
+      "rating": 4.4,
+      "reviewCount": 105,
+      "rank": 16108,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51sDtz3oMsL.jpg",
+      "url": "https://www.amazon.com/dp/B0DNJTNWWW",
+      "keepa": "https://keepa.com/#!product/1-B0DNJTNWWW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.791Z",
+      "dealScore": 44,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
         "streamFit": 0,
         "brand": 0
       }
@@ -22923,6 +23478,45 @@
       }
     },
     {
+      "asin": "B07SHM65ZW",
+      "parentAsin": "B07TZN8FNY",
+      "familyKey": "B07TZN8FNY",
+      "variationCount": 4,
+      "productAgeDays": 2499,
+      "title": "Slice 10490 Metal-Handle Utility Knife, Finger Friendly Ceramic Blade, 3 Cutting Depths, Comfortable Heavy Metal Grip, Stores Extra Blade - 6 Pack",
+      "brand": "Slice",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 146.94,
+      "avg90": 159.28,
+      "rating": 4.3,
+      "reviewCount": 147,
+      "rank": 69528,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81rfxwGKgDL.jpg",
+      "url": "https://www.amazon.com/dp/B07SHM65ZW",
+      "keepa": "https://keepa.com/#!product/1-B07SHM65ZW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.790Z",
+      "dealScore": 40,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0DCGFLJF7",
       "parentAsin": "B0DLVZZCQC",
       "familyKey": "B0DLVZZCQC",
@@ -23079,11 +23673,50 @@
       }
     },
     {
+      "asin": "B000NICG9M",
+      "parentAsin": "B09V62K5J8",
+      "familyKey": "B09V62K5J8",
+      "variationCount": 10,
+      "productAgeDays": 4412,
+      "title": "GEARWRENCH Long Pattern Combination SAE/Metric Wrench Set 24 Pc., 12 Point - 81900",
+      "brand": "GEARWRENCH",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 119.99,
+      "avg90": 125.73,
+      "rating": 4.5,
+      "reviewCount": 108,
+      "rank": 37279,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71FicZ9HHzL.jpg",
+      "url": "https://www.amazon.com/dp/B000NICG9M",
+      "keepa": "https://keepa.com/#!product/1-B000NICG9M",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.790Z",
+      "dealScore": 39,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 6,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0D93S59VH",
       "parentAsin": "",
       "familyKey": "B0D93S59VH",
       "variationCount": 0,
-      "productAgeDays": 654,
+      "productAgeDays": 655,
       "title": "HOZO NeoRulerGO Digital Tape Measure with Laser, Smart Rechargeable Measuring Tool for Flat, Curved, Odd Shapes | Bluetooth App | Pocket Size | Cool Gadgets for Dad, Men, Husband",
       "brand": "HOZO",
       "brandTier": "off",
@@ -23093,10 +23726,10 @@
         "keepa"
       ],
       "price": 55.99,
-      "avg90": 61.6,
+      "avg90": 61.56,
       "rating": 4.5,
-      "reviewCount": 163,
-      "rank": 91422,
+      "reviewCount": 162,
+      "rank": 76842,
       "img": "https://images-na.ssl-images-amazon.com/images/I/61ZD4K42jkL.jpg",
       "url": "https://www.amazon.com/dp/B0D93S59VH",
       "keepa": "https://keepa.com/#!product/1-B0D93S59VH",
@@ -23104,7 +23737,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-22T21:53:27.023Z",
+      "updatedAt": "2026-05-23T21:11:00.791Z",
       "dealScore": 38,
       "scoreBreakdown": {
         "rating": 22,
@@ -23239,7 +23872,7 @@
       "parentAsin": "B0G65BSD8J",
       "familyKey": "B0G65BSD8J",
       "variationCount": 2,
-      "productAgeDays": 673,
+      "productAgeDays": 674,
       "title": "eJiasu Replacement for Kobalt 24V Battery: 6.0Ah Lithium ion Replace for 24-Volt Max Battery KB624-03 KB524-03 KB424-03 KB224-03 KB124-03 Compatible with All Kobalt 24 V Cordless Power Tool",
       "brand": "eJiasu",
       "brandTier": "off",
@@ -23249,10 +23882,10 @@
         "keepa"
       ],
       "price": 39.99,
-      "avg90": 44.05,
+      "avg90": 44,
       "rating": 4.5,
       "reviewCount": 207,
-      "rank": 79401,
+      "rank": 62145,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71AS0BqQteL.jpg",
       "url": "https://www.amazon.com/dp/B0D9K6NG53",
       "keepa": "https://keepa.com/#!product/1-B0D9K6NG53",
@@ -23260,7 +23893,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-22T21:53:27.023Z",
+      "updatedAt": "2026-05-23T21:11:00.790Z",
       "dealScore": 38,
       "scoreBreakdown": {
         "rating": 22,
@@ -23349,6 +23982,45 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 8
+      }
+    },
+    {
+      "asin": "B0DXP9J9JS",
+      "parentAsin": "",
+      "familyKey": "B0DXP9J9JS",
+      "variationCount": 0,
+      "productAgeDays": 415,
+      "title": "LLNDEI Magnetic Impact Nut Driver Set, 55PCS 1/4 Socket Set with Deep Driver Bit Sets Includes Bit Extension, Pivoting & Wing Nut Setters Compatible with Impact Drills & Deep Drivers",
+      "brand": "LLNDEI",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg90": 44.01,
+      "rating": 4.4,
+      "reviewCount": 110,
+      "rank": 72645,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71jMiSm6JcL.jpg",
+      "url": "https://www.amazon.com/dp/B0DXP9J9JS",
+      "keepa": "https://keepa.com/#!product/1-B0DXP9J9JS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-23T21:11:00.790Z",
+      "dealScore": 38,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
       }
     },
     {
@@ -24532,7 +25204,7 @@
       "parentAsin": "B0H1TZ22NN",
       "familyKey": "B0H1TZ22NN",
       "variationCount": 3,
-      "productAgeDays": 142,
+      "productAgeDays": 143,
       "title": "Aoasur 56v Battery Replacement for EGO Battery (10.0AH-Green)",
       "brand": "Aoasur",
       "brandTier": "off",
@@ -24542,10 +25214,10 @@
         "keepa"
       ],
       "price": 129.99,
-      "avg90": 141.16,
+      "avg90": 140.72,
       "rating": 4.4,
       "reviewCount": 228,
-      "rank": 5663,
+      "rank": 5566,
       "img": "https://images-na.ssl-images-amazon.com/images/I/61NIwApYruL.jpg",
       "url": "https://www.amazon.com/dp/B0G6JYCQX2",
       "keepa": "https://keepa.com/#!product/1-B0G6JYCQX2",
@@ -24553,7 +25225,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-22T17:25:01.103Z",
+      "updatedAt": "2026-05-23T21:11:00.791Z",
       "dealScore": 33,
       "scoreBreakdown": {
         "rating": 22,

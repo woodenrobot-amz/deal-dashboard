@@ -1,12 +1,6 @@
 name: Enrich 3D Printing
 
 on:
-  schedule:
-    # 9:15 AM EDT
-    - cron: "15 13 * * *"
-
-    # 5:15 PM EDT
-    - cron: "15 21 * * *"
 
   workflow_dispatch:
 

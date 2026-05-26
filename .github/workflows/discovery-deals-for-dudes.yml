@@ -1,9 +1,6 @@
 name: Keepa Discovery Deals For Dudes
 
 on:
-  schedule:
-    # 4:35 EDT Eastern Daylight Time
-    - cron: "35 8 * * *"
   workflow_dispatch:
 
 permissions:

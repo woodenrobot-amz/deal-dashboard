@@ -1,8 +1,7 @@
 name: Keepa Discovery Woodworking
 
 on:
-  schedule:
-    - cron: "7 8 * * *"
+  
   workflow_dispatch:
 
 permissions:

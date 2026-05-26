@@ -1,16 +1,6 @@
 name: Enrich Woodworking Deals
 
 on:
-  schedule:
-    # 8:15 AM EDT
-    - cron: "15 12 * * *"
-
-    # 12:15 PM EDT
-    - cron: "15 16 * * *"
-
-    # 4:15 PM EDT
-    - cron: "15 20 * * *"
-
   workflow_dispatch:
 
 permissions:

@@ -105,35 +105,47 @@ woodworking_core: {
     }
   },
 
-  deals_for_dudes: {
-    name: "deals_for_dudes",
-    selection: {
-      categories_exclude: [
-        "172435", "172526", "172574", "3011391011",
-        "3248684011", "502394", "524136", "6684132011"
-      ],
-      current_SALES_gte: 1,
-      current_SALES_lte: 100000,
-      current_RATING_gte: 41,
-      current_COUNT_REVIEWS_gte: 50,
-      isLowest90_BUY_BOX_SHIPPING: true,
-      deltaPercent7_BUY_BOX_SHIPPING_gte: 10,
-      deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
-      rootCategory: [
-        "1055398", "16310091", "16333372011", "172282",
-        "228013", "2617941011", "2972638011"
-      ],
-      categories_include: [
-        "206234609011", "20972781011", "20972798011", "23673182011",
-        "289810", "3180261", "541966", "551242", "552808", "553232", "553760"
-      ],
-      sort: [["current_SALES", "asc"], ["monthlySold", "desc"]],
-      lastRatingUpdate_gte: 7952433,
-      productType: [0],
-      page: 0,
-      perPage: 3000
-    }
+deals_for_dudes: {
+  name: "deals_for_dudes",
+  selection: {
+    categories_exclude: [
+      "172435", "172526", "172574", "3011391011",
+      "3248684011", "502394", "524136", "6684132011",
+
+      // Add more known noisy grilling / computer / tablet categories here
+      // after reviewing Keepa category names
+    ],
+    current_SALES_gte: 1,
+    current_SALES_lte: 150000,
+    current_RATING_gte: 42,
+    current_COUNT_REVIEWS_gte: 75,
+    isLowest90_BUY_BOX_SHIPPING: true,
+    deltaPercent7_BUY_BOX_SHIPPING_gte: 8,
+    deltaPercent90_BUY_BOX_SHIPPING_gte: 12,
+
+    rootCategory: [
+      "228013",
+      "16310091"
+    ],
+
+    categories_include: [
+      "289810",
+      "3180261",
+      "541966",
+      "551242",
+      "552808",
+      "553232",
+      "553760"
+    ],
+
+    sort: [["current_SALES", "asc"], ["monthlySold", "desc"]],
+    lastRatingUpdate_gte: 7952433,
+    productType: [0],
+    page: 0,
+    perPage: 3000
   }
+}  
+        
 };
 
 const stream = STREAMS[STREAM_NAME];

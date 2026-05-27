@@ -34,13 +34,13 @@ jobs:
       - name: Commit enrichment results
         run: |
           git config user.name "keepa-bot"
-git config user.email "keepa-bot@users.noreply.github.com"
+          git config user.email "keepa-bot@users.noreply.github.com"
 
-git pull origin main
+          git pull origin main
 
-git add data/deals.json
-git add data/discovered-asins.json
+          git add data/deals.json
+          git add data/discovered-asins.json
 
-git diff --cached --quiet || git commit -m "enrich deals for dudes"
+          git diff --cached --quiet || git commit -m "enrich deals for dudes"
 
-git push
+          git push

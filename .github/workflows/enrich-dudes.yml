@@ -1,7 +1,6 @@
 name: Enrich Deals For Dudes
 
 on:
-  
   workflow_dispatch:
 
 permissions:
@@ -21,6 +20,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Sync latest main
+        run: |
+          git fetch origin
+          git reset --hard origin/main
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -35,8 +39,6 @@ jobs:
         run: |
           git config user.name "keepa-bot"
           git config user.email "keepa-bot@users.noreply.github.com"
-
-          git pull origin main
 
           git add data/deals.json
           git add data/discovered-asins.json

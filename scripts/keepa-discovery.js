@@ -199,16 +199,22 @@ function mergeDiscovery(existingItems, newItems, now, streamName) {
     if (!asin) continue;
 
     map.set(asin, {
-      asin,
-      streams: Array.isArray(item.streams) ? item.streams : [],
-      discoveredAt: item.discoveredAt || now,
-      lastSeenAt: item.lastSeenAt || item.discoveredAt || now,
-      timesSeen: Number.isFinite(item.timesSeen) ? item.timesSeen : 1,
-      streamStats: item.streamStats || {},
-      ignored: Boolean(item.ignored),
-      lastEnrichedAt: item.lastEnrichedAt || null
-    });
-  }
+  asin,
+  streams: Array.isArray(item.streams) ? item.streams : [],
+  discoveredAt: item.discoveredAt || now,
+  lastSeenAt: item.lastSeenAt || item.discoveredAt || now,
+  timesSeen: Number.isFinite(item.timesSeen) ? item.timesSeen : 1,
+  streamStats: item.streamStats || {},
+  ignored: Boolean(item.ignored),
+
+  lastEnrichedAt: item.lastEnrichedAt || item.enrichedAt || null,
+  enrichedAt: item.enrichedAt || item.lastEnrichedAt || null,
+  lastEnrichedStream: item.lastEnrichedStream || "",
+
+  parentAsin: item.parentAsin || "",
+  familyKey: item.familyKey || item.parentAsin || asin,
+  variationCount: item.variationCount || 0
+});
 
   for (const item of newItems) {
     const asin = String(item.asin || "").trim();

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-05-30T23:04:01.847Z",
+  "generatedAt": "2026-05-30T23:41:26.748Z",
   "source": "keepa-enrichment",
   "lastEnrichmentStream": "woodworking_core",
-  "dealCount": 302,
+  "dealCount": 330,
   "deals": [
     {
       "asin": "B0G3P7MRFM",
@@ -113,6 +113,45 @@
       "scoreBreakdown": {
         "rating": 23,
         "discount": 29,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      }
+    },
+    {
+      "asin": "B0C76CPGC7",
+      "parentAsin": "B0CBHHP5Z1",
+      "familyKey": "B0CBHHP5Z1",
+      "variationCount": 1,
+      "productAgeDays": 1060,
+      "title": "BOSCH GLM100-23 100 Ft BLAZE Laser Distance Measure, Includes 2 AA Batteries",
+      "brand": "Bosch",
+      "brandTier": "top",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49,
+      "avg90": 54.72,
+      "rating": 4.7,
+      "reviewCount": 17540,
+      "rank": 1631,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61RHeNprzML.jpg",
+      "url": "https://www.amazon.com/dp/B0C76CPGC7",
+      "keepa": "https://keepa.com/#!product/1-B0C76CPGC7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 106,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 15,
         "rank": 30,
         "reviews": 10,
         "variationFamily": 0,
@@ -256,6 +295,45 @@
         "B073PT2R64",
         "B01BNENC7O"
       ]
+    },
+    {
+      "asin": "B0CCHPZ99H",
+      "parentAsin": "B0D1QHGBDW",
+      "familyKey": "B0D1QHGBDW",
+      "variationCount": 2,
+      "productAgeDays": 1003,
+      "title": "6-Inch Bench Vise Heavy duty Vice for Workbench, Utility Combination Pipe Table Vise Forged Steel Construction and Swivel Base",
+      "brand": "Gottinfurt",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 44.99,
+      "avg90": 85.4,
+      "rating": 4.4,
+      "reviewCount": 211,
+      "rank": 38899,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/91ZdQX9i1XL.jpg",
+      "url": "https://www.amazon.com/dp/B0CCHPZ99H",
+      "keepa": "https://keepa.com/#!product/1-B0CCHPZ99H",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 100,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 70,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
     },
     {
       "asin": "B00461K4QO",
@@ -505,7 +583,13 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0BJVH4J6Q",
+        "B0BJVHJKP2"
+      ]
     },
     {
       "asin": "B000FAPOE2",
@@ -760,6 +844,45 @@
       ]
     },
     {
+      "asin": "B07MHZJVM4",
+      "parentAsin": "B07XRY4KJQ",
+      "familyKey": "B07XRY4KJQ",
+      "variationCount": 1,
+      "productAgeDays": 1427,
+      "title": "CRAFTSMAN V20 Cordless Vacuum Cleaner, Shop Vac Wet/Dry, 2 Gallon, 7ft Hose, Bare Tool Only (CMCV002B)",
+      "brand": "CRAFTSMAN",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 77,
+      "avg90": 114.13,
+      "rating": 4.6,
+      "reviewCount": 1242,
+      "rank": 14658,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81KuEXAhUIL.jpg",
+      "url": "https://www.amazon.com/dp/B07MHZJVM4",
+      "keepa": "https://keepa.com/#!product/1-B07MHZJVM4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.746Z",
+      "dealScore": 89,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 48,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0CN2DBC1M",
       "parentAsin": "B0G2C4H88L",
       "familyKey": "B0G2C4H88L",
@@ -835,7 +958,13 @@
         "productAge": 3,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0DZVFBDHS",
+        "B0G2L57HPZ"
+      ]
     },
     {
       "asin": "B079JGGSNK",
@@ -1567,7 +1696,13 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 20
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B000P4OOYY",
+        "B00286PICY"
+      ]
     },
     {
       "asin": "B00LIV0QJU",
@@ -1733,6 +1868,45 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 0
+      }
+    },
+    {
+      "asin": "B00R2HHMTG",
+      "parentAsin": "B011NSXGUS",
+      "familyKey": "B011NSXGUS",
+      "variationCount": 10,
+      "productAgeDays": 3551,
+      "title": "Makita B-43309 Hollow Socket, 9/16 x 6-Inch",
+      "brand": "Makita",
+      "brandTier": "top",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 35.19,
+      "avg90": 39.27,
+      "rating": 4.8,
+      "reviewCount": 2476,
+      "rank": 39633,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/418K1bqRMxL.jpg",
+      "url": "https://www.amazon.com/dp/B00R2HHMTG",
+      "keepa": "https://keepa.com/#!product/1-B00R2HHMTG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 80,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
       }
     },
     {
@@ -2006,6 +2180,84 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 20
+      }
+    },
+    {
+      "asin": "B0002TUFCM",
+      "parentAsin": "B00VWSX3X0",
+      "familyKey": "B00VWSX3X0",
+      "variationCount": 5,
+      "productAgeDays": 5546,
+      "title": "Freud LU87R012: 12\" x 30T Thin Kerf Rip Blade",
+      "brand": "Freud",
+      "brandTier": "top",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 57.56,
+      "avg90": 65.19,
+      "rating": 4.7,
+      "reviewCount": 2239,
+      "rank": 52131,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/712dpgSzxrL.jpg",
+      "url": "https://www.amazon.com/dp/B0002TUFCM",
+      "keepa": "https://keepa.com/#!product/1-B0002TUFCM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 78,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      }
+    },
+    {
+      "asin": "B00CDR6K8E",
+      "parentAsin": "B0C9V88CBJ",
+      "familyKey": "B0C9V88CBJ",
+      "variationCount": 27,
+      "productAgeDays": 3235,
+      "title": "Evolution Power Tools 15BLADEST Steel Cutting Saw Blade, 15-Inch x 70-Tooth , Blue",
+      "brand": "EVOLUTION",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 140.99,
+      "avg90": 150.81,
+      "rating": 4.7,
+      "reviewCount": 130,
+      "rank": 4239,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81lQh9CGQ+L.jpg",
+      "url": "https://www.amazon.com/dp/B00CDR6K8E",
+      "keepa": "https://keepa.com/#!product/1-B00CDR6K8E",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.746Z",
+      "dealScore": 78,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 9,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
       }
     },
     {
@@ -2567,6 +2819,45 @@
       }
     },
     {
+      "asin": "B0D14GPKSC",
+      "parentAsin": "B0H36GWKK6",
+      "familyKey": "B0H36GWKK6",
+      "variationCount": 5,
+      "productAgeDays": 682,
+      "title": "BULL-TECH 40V 4000Mah Battery Replacement for Kobalt 40V 4.0ah Rechargeable Lithium Ion Cordless Power Equipment Battery,Compatible with All Kobalt 40V max Team Tools",
+      "brand": "BULL-TECH",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 69.99,
+      "avg90": 101.87,
+      "rating": 4.5,
+      "reviewCount": 67,
+      "rank": 7507,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61niFQTR7bL.jpg",
+      "url": "https://www.amazon.com/dp/B0D14GPKSC",
+      "keepa": "https://keepa.com/#!product/1-B0D14GPKSC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 71,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 46,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B001HWQAI6",
       "parentAsin": "B0BJQLD6QK",
       "familyKey": "B0BJQLD6QK",
@@ -2688,7 +2979,7 @@
       "parentAsin": "B0DZS8NDGJ",
       "familyKey": "B0DZS8NDGJ",
       "variationCount": 6,
-      "productAgeDays": 4433,
+      "productAgeDays": 4434,
       "title": "Victorinox Huntsman Swiss Army Knife, 15 Functions, Swiss Made Pocket Knife with Large Blade, Screwdriver, Scissors and Wood Saw - Black",
       "brand": "Victorinox",
       "brandTier": "off",
@@ -2698,10 +2989,10 @@
         "keepa"
       ],
       "price": 39.99,
-      "avg90": 49.03,
+      "avg90": 48.89,
       "rating": 4.8,
-      "reviewCount": 26288,
-      "rank": 27975,
+      "reviewCount": 26292,
+      "rank": 31879,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71h9HA+Fr-L.jpg",
       "url": "https://www.amazon.com/dp/B000MLU73W",
       "keepa": "https://keepa.com/#!product/1-B000MLU73W",
@@ -2709,7 +3000,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-29T21:00:27.874Z",
+      "updatedAt": "2026-05-30T23:41:26.746Z",
       "dealScore": 69,
       "scoreBreakdown": {
         "rating": 24,
@@ -3092,6 +3383,45 @@
       }
     },
     {
+      "asin": "B0F7R9DQHY",
+      "parentAsin": "",
+      "familyKey": "B0F7R9DQHY",
+      "variationCount": 0,
+      "productAgeDays": 374,
+      "title": "Wera 05049056001 Tool-Check PLUS 2, 39 pieces",
+      "brand": "Wera",
+      "brandTier": "top",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 98.9,
+      "avg90": 115.01,
+      "rating": 4.8,
+      "reviewCount": 171,
+      "rank": 13015,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61EC-UR0N8L.jpg",
+      "url": "https://www.amazon.com/dp/B0F7R9DQHY",
+      "keepa": "https://keepa.com/#!product/1-B0F7R9DQHY",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      }
+    },
+    {
       "asin": "B000GR37WU",
       "parentAsin": "B0779NCM48",
       "familyKey": "B0779NCM48",
@@ -3329,6 +3659,84 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 20
+      }
+    },
+    {
+      "asin": "B01BNELI48",
+      "parentAsin": "B0DQ64CCFR",
+      "familyKey": "B0DQ64CCFR",
+      "variationCount": 46,
+      "productAgeDays": 2929,
+      "title": "Fein Starlock E-Cut Long-Life Saw Blade - Precision Cutting for Wood, Drywall & Plastics, Bimetal with Teeth Set, 1-3/8\" Medium Width, 2\" Length, 50-Pack - 63502160250",
+      "brand": "Fein",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 400,
+      "avg90": 495.49,
+      "rating": 4.7,
+      "reviewCount": 104,
+      "rank": 14543,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51eWxbHPw1L.jpg",
+      "url": "https://www.amazon.com/dp/B01BNELI48",
+      "keepa": "https://keepa.com/#!product/1-B01BNELI48",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.746Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 28,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0BNPNM7L1",
+      "parentAsin": "B0GFPLJVQX",
+      "familyKey": "B0GFPLJVQX",
+      "variationCount": 9,
+      "productAgeDays": 1275,
+      "title": "VEVOR Shop Vac Wet and Dry Vacuum Cleaner 4 Gallon 5 Peak HP - Powerful Suction with Blower Function & Attachments 3-in-1 Crevice Nozzle - Perfect for Car Carpet Debris Pet Hair Black/Yellow",
+      "brand": "VEVOR",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 62.9,
+      "avg90": 60.83,
+      "rating": 4.3,
+      "reviewCount": 937,
+      "rank": 2639,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71Wzh46TEyL.jpg",
+      "url": "https://www.amazon.com/dp/B0BNPNM7L1",
+      "keepa": "https://keepa.com/#!product/1-B0BNPNM7L1",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 5,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
       }
     },
     {
@@ -3859,45 +4267,6 @@
       }
     },
     {
-      "asin": "B0002TUFCM",
-      "parentAsin": "B00VWSX3X0",
-      "familyKey": "B00VWSX3X0",
-      "variationCount": 5,
-      "productAgeDays": 5545,
-      "title": "Freud LU87R012: 12\" x 30T Thin Kerf Rip Blade",
-      "brand": "Freud",
-      "brandTier": "top",
-      "category": "woodworking",
-      "sourceStream": "woodworking_core",
-      "sources": [
-        "keepa"
-      ],
-      "price": 63.91,
-      "avg90": 65.31,
-      "rating": 4.7,
-      "reviewCount": 2238,
-      "rank": 51761,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/712dpgSzxrL.jpg",
-      "url": "https://www.amazon.com/dp/B0002TUFCM",
-      "keepa": "https://keepa.com/#!product/1-B0002TUFCM",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": true,
-      "updatedAt": "2026-05-30T00:21:02.381Z",
-      "dealScore": 64,
-      "scoreBreakdown": {
-        "rating": 23,
-        "discount": 3,
-        "rank": 0,
-        "reviews": 10,
-        "variationFamily": 0,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 20
-      }
-    },
-    {
       "asin": "B07Q32PYP3",
       "parentAsin": "B07GTYS41H",
       "familyKey": "B07GTYS41H",
@@ -4021,6 +4390,45 @@
       }
     },
     {
+      "asin": "B0DS2636V8",
+      "parentAsin": "B0GR4H4PWG",
+      "familyKey": "B0GR4H4PWG",
+      "variationCount": 7,
+      "productAgeDays": 509,
+      "title": "Ecarke 200W Portable Power Inverter Compatible with Milwaukee 18V Battery, DC 18V to AC 110V Power Station with 1 AC Outlet, 2 USB, 1 Type-C & LED Light, for Outdoor Emergency Use (No Battery)(2-Pack)",
+      "brand": "Ecarke",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 54.99,
+      "avg90": 51.8,
+      "rating": 4.3,
+      "reviewCount": 1983,
+      "rank": 1902,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71CVvxIHXPL.jpg",
+      "url": "https://www.amazon.com/dp/B0DS2636V8",
+      "keepa": "https://keepa.com/#!product/1-B0DS2636V8",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 64,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0DWFBSPKQ",
       "parentAsin": "",
       "familyKey": "B0DWFBSPKQ",
@@ -4057,6 +4465,45 @@
         "productAge": 3,
         "streamFit": 0,
         "brand": 20
+      }
+    },
+    {
+      "asin": "B00FXHA06O",
+      "parentAsin": "B01E0WE2JS",
+      "familyKey": "B01E0WE2JS",
+      "variationCount": 132,
+      "productAgeDays": 3446,
+      "title": "Drill America DWDCO25/64P6 25/64\" Cobalt Drill Bit (Pack of 6), DWDCO Series",
+      "brand": "Drill America",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 45.38,
+      "avg90": 52.21,
+      "rating": 4.6,
+      "reviewCount": 798,
+      "rank": 11337,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71xcTcJaimL.jpg",
+      "url": "https://www.amazon.com/dp/B00FXHA06O",
+      "keepa": "https://keepa.com/#!product/1-B00FXHA06O",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.746Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 19,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
       }
     },
     {
@@ -4379,6 +4826,45 @@
       }
     },
     {
+      "asin": "B0D18Q41PZ",
+      "parentAsin": "B0D238HTNK",
+      "familyKey": "B0D238HTNK",
+      "variationCount": 5,
+      "productAgeDays": 780,
+      "title": "Klein Tools 32910RCHT Impact Driver, 7-in-1 SAE Impact Socket Set with Ratcheting Handle, Flip Socket with 1/4, 5/16, 3/8, 7/16, 1/2 and 9/16-Inch Nut Driver Sizes and 1/4-Inch Bit Holder",
+      "brand": "KLEIN TOOLS",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.98,
+      "avg90": 39.65,
+      "rating": 4.8,
+      "reviewCount": 242,
+      "rank": 3860,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71IGwWeBQLL.jpg",
+      "url": "https://www.amazon.com/dp/B0D18Q41PZ",
+      "keepa": "https://keepa.com/#!product/1-B0D18Q41PZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 62,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B001O2UOBS",
       "parentAsin": "B01M6V1Z0M",
       "familyKey": "B01M6V1Z0M",
@@ -4491,6 +4977,45 @@
         "reviews": 0,
         "variationFamily": 0,
         "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0GHCSNXKF",
+      "parentAsin": "B0B44XY3VY",
+      "familyKey": "B0B44XY3VY",
+      "variationCount": 2,
+      "productAgeDays": 106,
+      "title": "IRWIN VISE-GRIP Wire Stripper,2 inch Jaw,Cuts 10-24 AWG,ProTouch Grip for Maximum Comfort (2078300),(Pack of 2)",
+      "brand": "IRWIN",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 40.46,
+      "avg90": 49.97,
+      "rating": 4.6,
+      "reviewCount": 17927,
+      "rank": 10797,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61rKDsSKqUL.jpg",
+      "url": "https://www.amazon.com/dp/B0GHCSNXKF",
+      "keepa": "https://keepa.com/#!product/1-B0GHCSNXKF",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.746Z",
+      "dealScore": 61,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 28,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 0,
         "streamFit": 0,
         "brand": 0
       }
@@ -4625,6 +5150,45 @@
       ]
     },
     {
+      "asin": "B0DQXTYM37",
+      "parentAsin": "B0F913GDQN",
+      "familyKey": "B0F913GDQN",
+      "variationCount": 3,
+      "productAgeDays": 437,
+      "title": "Cheerlark Upgrade 8000mAh High Capacity Replacement for Ryobi 18V Battery P108 P104 P105 P102 P103 P122 P109 Li-ION Compatible with Ryobi 18V ONE+ System Cordless Power Tools and Charger,2Pack",
+      "brand": "Cheerlark",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 55.99,
+      "avg90": 51.82,
+      "rating": 4.4,
+      "reviewCount": 622,
+      "rank": 2046,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71L9h6IbBbL.jpg",
+      "url": "https://www.amazon.com/dp/B0DQXTYM37",
+      "keepa": "https://keepa.com/#!product/1-B0DQXTYM37",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B00FXIEJEW",
       "parentAsin": "B01DALT2TA",
       "familyKey": "B01DALT2TA",
@@ -4706,14 +5270,20 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B000LNRJEQ",
+        "B0000224V8"
+      ]
     },
     {
       "asin": "B001P81OJW",
       "parentAsin": "B0BD7WD2X4",
       "familyKey": "B0BD7WD2X4",
       "variationCount": 1,
-      "productAgeDays": 5545,
+      "productAgeDays": 5546,
       "title": "RIDGID 30088 RC-2375 Aluminum 2\" Ratchet Action Pipe and Tubing Cutter for Plastic and Multilayer Tubing, 1/8\" to 2-3/8\" O.D. Capacity, Small",
       "brand": "RIDGID",
       "brandTier": "mid",
@@ -4723,10 +5293,10 @@
         "keepa"
       ],
       "price": 80.99,
-      "avg90": 90.44,
+      "avg90": 90.4,
       "rating": 4.7,
       "reviewCount": 909,
-      "rank": 34122,
+      "rank": 28046,
       "img": "https://images-na.ssl-images-amazon.com/images/I/7157b2EiIML.jpg",
       "url": "https://www.amazon.com/dp/B001P81OJW",
       "keepa": "https://keepa.com/#!product/1-B001P81OJW",
@@ -4734,7 +5304,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": true,
-      "updatedAt": "2026-05-30T00:21:02.380Z",
+      "updatedAt": "2026-05-30T23:41:26.747Z",
       "dealScore": 59,
       "scoreBreakdown": {
         "rating": 23,
@@ -5371,6 +5941,123 @@
       }
     },
     {
+      "asin": "B00WBR8LJ2",
+      "parentAsin": "B0CP68P2FJ",
+      "familyKey": "B0CP68P2FJ",
+      "variationCount": 8,
+      "productAgeDays": 3920,
+      "title": "LEATHERMAN, Signal, 19-in-1 Multi-tool for Outdoors, Camping, Hiking, Fishing, Survival, Durable & Lightweight EDC, Made in the USA, Stainless Steel",
+      "brand": "Leatherman",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 134.99,
+      "avg90": 149.15,
+      "rating": 4.7,
+      "reviewCount": 4354,
+      "rank": 5537,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71vCmFxz7hL.jpg",
+      "url": "https://www.amazon.com/dp/B00WBR8LJ2",
+      "keepa": "https://keepa.com/#!product/1-B00WBR8LJ2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B00FXHJIO4",
+      "parentAsin": "B01EHYEI1Q",
+      "familyKey": "B01EHYEI1Q",
+      "variationCount": 216,
+      "productAgeDays": 4575,
+      "title": "Drill America 5/8\" x 12\" High Speed Steel Extra Long Drill Bit with 1/2\"Shank, DWDDL Series",
+      "brand": "Drill America",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 41.98,
+      "avg90": 44.95,
+      "rating": 4.6,
+      "reviewCount": 1409,
+      "rank": 8150,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/414sDlnuFfL.jpg",
+      "url": "https://www.amazon.com/dp/B00FXHJIO4",
+      "keepa": "https://keepa.com/#!product/1-B00FXHJIO4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 9,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B002MXS1R2",
+      "parentAsin": "B07VGQ2WZB",
+      "familyKey": "B07VGQ2WZB",
+      "variationCount": 6,
+      "productAgeDays": 4220,
+      "title": "GEARWRENCH 18mm 12 Point XL GearBox Double Box Ratcheting Wrench - 85918",
+      "brand": "GEARWRENCH",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 42.05,
+      "avg90": 47.22,
+      "rating": 4.8,
+      "reviewCount": 1431,
+      "rank": 47194,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51yOfm8QxxL.jpg",
+      "url": "https://www.amazon.com/dp/B002MXS1R2",
+      "keepa": "https://keepa.com/#!product/1-B002MXS1R2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0C7GX2JRG",
       "parentAsin": "B0FQ4VDH43",
       "familyKey": "B0FQ4VDH43",
@@ -5738,6 +6425,45 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 8
+      }
+    },
+    {
+      "asin": "B096N3TZLX",
+      "parentAsin": "",
+      "familyKey": "B096N3TZLX",
+      "variationCount": 0,
+      "productAgeDays": 1808,
+      "title": "DEWALT Dust Separator with 10 Gallon Stainless Steel Tank, 99.5% Efficiency Cyclone Dust Collector, High-Performance Cycle Powder Collector Filter, DXVCS003, White",
+      "brand": "DEWALT",
+      "brandTier": "top",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 133.05,
+      "avg90": 123.79,
+      "rating": 4.7,
+      "reviewCount": 507,
+      "rank": 21045,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61dP9uj4DCL.jpg",
+      "url": "https://www.amazon.com/dp/B096N3TZLX",
+      "keepa": "https://keepa.com/#!product/1-B096N3TZLX",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 56,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
       }
     },
     {
@@ -6449,6 +7175,45 @@
       }
     },
     {
+      "asin": "B0006G5F1M",
+      "parentAsin": "B0GMM79LSN",
+      "familyKey": "B0GMM79LSN",
+      "variationCount": 9,
+      "productAgeDays": 5498,
+      "title": "Gerber Gear 07530N Needle Nose Pliers Multitool MP600 Multi-Plier, Stainless",
+      "brand": "Gerber",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 81.91,
+      "avg90": 88.17,
+      "rating": 4.6,
+      "reviewCount": 8322,
+      "rank": 13221,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71Fh5ykowiL.jpg",
+      "url": "https://www.amazon.com/dp/B0006G5F1M",
+      "keepa": "https://keepa.com/#!product/1-B0006G5F1M",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.746Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 10,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B002GQEZRA",
       "parentAsin": "B0FDQB4KSJ",
       "familyKey": "B0FDQB4KSJ",
@@ -6771,7 +7536,7 @@
       "parentAsin": "B0756HN4KX",
       "familyKey": "B0756HN4KX",
       "variationCount": 2,
-      "productAgeDays": 5426,
+      "productAgeDays": 5427,
       "title": "3M Dry Guide Coat Kit 05861, Carbon Black Powder, No Ripples, No Masking, 1.75 oz (50 g)",
       "brand": "3M",
       "brandTier": "mid",
@@ -6781,10 +7546,10 @@
         "keepa"
       ],
       "price": 56.69,
-      "avg90": 61.85,
+      "avg90": 61.76,
       "rating": 4.8,
       "reviewCount": 168,
-      "rank": 97478,
+      "rank": 91021,
       "img": "https://images-na.ssl-images-amazon.com/images/I/713n0jcedfL.jpg",
       "url": "https://www.amazon.com/dp/B000PENEMM",
       "keepa": "https://keepa.com/#!product/1-B000PENEMM",
@@ -6792,7 +7557,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": true,
-      "updatedAt": "2026-05-30T02:40:24.821Z",
+      "updatedAt": "2026-05-30T23:41:26.747Z",
       "dealScore": 52,
       "scoreBreakdown": {
         "rating": 24,
@@ -7057,7 +7822,7 @@
       "parentAsin": "",
       "familyKey": "B0001P154Y",
       "variationCount": 0,
-      "productAgeDays": 2639,
+      "productAgeDays": 2640,
       "title": "Victorinox Swiss Army Swiss Card, Translucent Sapphire",
       "brand": "Victorinox",
       "brandTier": "off",
@@ -7066,11 +7831,11 @@
       "sources": [
         "keepa"
       ],
-      "price": 38.69,
-      "avg90": 43.18,
+      "price": 38.67,
+      "avg90": 43.12,
       "rating": 4.7,
-      "reviewCount": 712,
-      "rank": 25307,
+      "reviewCount": 714,
+      "rank": 26727,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71VC8+-uK4L.jpg",
       "url": "https://www.amazon.com/dp/B0001P154Y",
       "keepa": "https://keepa.com/#!product/1-B0001P154Y",
@@ -7078,7 +7843,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-30T00:21:02.380Z",
+      "updatedAt": "2026-05-30T23:41:26.746Z",
       "dealScore": 51,
       "scoreBreakdown": {
         "rating": 23,
@@ -7647,6 +8412,84 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 8
+      }
+    },
+    {
+      "asin": "B08VWHVZ1P",
+      "parentAsin": "",
+      "familyKey": "B08VWHVZ1P",
+      "variationCount": 0,
+      "productAgeDays": 1941,
+      "title": "Klein Tools 80020 Plier Set, Made in USA, Lineman's Pliers, Diagonal Cutters, and Needle Nose, Induction Hardened Knives, 3-Piece",
+      "brand": "KLEIN TOOLS",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 63.99,
+      "avg90": 67.87,
+      "rating": 4.8,
+      "reviewCount": 2167,
+      "rank": 13652,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51kqQEiBSnL.jpg",
+      "url": "https://www.amazon.com/dp/B08VWHVZ1P",
+      "keepa": "https://keepa.com/#!product/1-B08VWHVZ1P",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 50,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 8,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B07Z696ZJW",
+      "parentAsin": "",
+      "familyKey": "B07Z696ZJW",
+      "variationCount": 0,
+      "productAgeDays": 2415,
+      "title": "VINIDA Upgraded 2 Packs PCC685L 7.0Ah Replacement for Porter Cable 20V Battery Compatible with Porter Cable Batteries PCC680L PCC682L PCCK602L2 PCC600 PCC640",
+      "brand": "VINIDA",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 43.99,
+      "avg90": 47.77,
+      "rating": 4.3,
+      "reviewCount": 1204,
+      "rank": 142123,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81wCquCpamL.jpg",
+      "url": "https://www.amazon.com/dp/B07Z696ZJW",
+      "keepa": "https://keepa.com/#!product/1-B07Z696ZJW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 50,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
       }
     },
     {
@@ -8785,12 +9628,12 @@
       ]
     },
     {
-      "asin": "B0000BYDNE",
+      "asin": "B0026TFRQ0",
       "parentAsin": "B0BN2H5W7X",
       "familyKey": "B0BN2H5W7X",
       "variationCount": 4,
-      "productAgeDays": 5487,
-      "title": "Klein Tools J2000-9NE Side Cutter Linemans Pliers, Made in USA, High Leverage 9-Inch Pliers Cut ACSR, Screws, Nails, Wire",
+      "productAgeDays": 5546,
+      "title": "Klein Tools J2000-9NECRTP Side Cutter Linemans Pliers, Made in USA, with Tape Pulling and Wire Crimping, High Leverage, 9-Inch",
       "brand": "KLEIN TOOLS",
       "brandTier": "off",
       "category": "woodworking",
@@ -8798,30 +9641,36 @@
       "sources": [
         "keepa"
       ],
-      "price": 35.1,
-      "avg90": 39.24,
+      "price": 54.65,
+      "avg90": 56.85,
       "rating": 4.8,
-      "reviewCount": 432,
-      "rank": 30381,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/41dGhIDxkNL.jpg",
-      "url": "https://www.amazon.com/dp/B0000BYDNE",
-      "keepa": "https://keepa.com/#!product/1-B0000BYDNE",
+      "reviewCount": 1121,
+      "rank": 29179,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41UCaoS4PlL.jpg",
+      "url": "https://www.amazon.com/dp/B0026TFRQ0",
+      "keepa": "https://keepa.com/#!product/1-B0026TFRQ0",
       "isLowAll": false,
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-30T16:09:24.482Z",
+      "updatedAt": "2026-05-30T23:41:26.747Z",
       "dealScore": 47,
       "scoreBreakdown": {
         "rating": 24,
-        "discount": 15,
+        "discount": 5,
         "rank": 0,
-        "reviews": 0,
+        "reviews": 10,
         "variationFamily": 0,
         "productAge": 8,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0000BYDNE",
+        "B0026TFRQ0"
+      ]
     },
     {
       "asin": "B001JEQ5KK",
@@ -9266,6 +10115,45 @@
       }
     },
     {
+      "asin": "B00V92MIIU",
+      "parentAsin": "B082FNNS9R",
+      "familyKey": "B082FNNS9R",
+      "variationCount": 6,
+      "productAgeDays": 4035,
+      "title": "Narex 50 mm (2 Inch) Woodworking Cabinetmaker's Chisel with Beech Handle 810150",
+      "brand": "Narex",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 45,
+      "avg90": 48.35,
+      "rating": 4.7,
+      "reviewCount": 501,
+      "rank": 96975,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/618lfwTQ1VS.jpg",
+      "url": "https://www.amazon.com/dp/B00V92MIIU",
+      "keepa": "https://keepa.com/#!product/1-B00V92MIIU",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 46,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 10,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0009H5C5M",
       "parentAsin": "B0BZS2F2CZ",
       "familyKey": "B0BZS2F2CZ",
@@ -9387,7 +10275,7 @@
       "parentAsin": "B0H2VVHZFZ",
       "familyKey": "B0H2VVHZFZ",
       "variationCount": 2,
-      "productAgeDays": 115,
+      "productAgeDays": 116,
       "title": "Enermall BA2800T 56V 7500mAh Replacement for EGO Battery Compatible with EGO 56V Battery Lithium-Ion Power Tools",
       "brand": "Enermall",
       "brandTier": "off",
@@ -9397,10 +10285,10 @@
         "keepa"
       ],
       "price": 85.96,
-      "avg90": 102.04,
+      "avg90": 101.9,
       "rating": 4.4,
       "reviewCount": 101,
-      "rank": 98435,
+      "rank": 94542,
       "img": "https://images-na.ssl-images-amazon.com/images/I/6132AdRCIHL.jpg",
       "url": "https://www.amazon.com/dp/B0GL7N84JJ",
       "keepa": "https://keepa.com/#!product/1-B0GL7N84JJ",
@@ -9408,7 +10296,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-30T02:40:24.821Z",
+      "updatedAt": "2026-05-30T23:41:26.747Z",
       "dealScore": 45,
       "scoreBreakdown": {
         "rating": 22,
@@ -9419,13 +10307,7 @@
         "productAge": 0,
         "streamFit": 0,
         "brand": 0
-      },
-      "spcImported": false,
-      "spcCapturedAt": "",
-      "siblingAsins": [
-        "B0GL7N84JJ",
-        "B0G2LP14TX"
-      ]
+      }
     },
     {
       "asin": "B00AGJNBR4",
@@ -10109,45 +10991,6 @@
       ]
     },
     {
-      "asin": "B00V92MIIU",
-      "parentAsin": "B082FNNS9R",
-      "familyKey": "B082FNNS9R",
-      "variationCount": 6,
-      "productAgeDays": 4034,
-      "title": "Narex 50 mm (2 Inch) Woodworking Cabinetmaker's Chisel with Beech Handle 810150",
-      "brand": "Narex",
-      "brandTier": "off",
-      "category": "woodworking",
-      "sourceStream": "woodworking_core",
-      "sources": [
-        "keepa"
-      ],
-      "price": 45.81,
-      "avg90": 48.36,
-      "rating": 4.7,
-      "reviewCount": 501,
-      "rank": 91706,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/618lfwTQ1VS.jpg",
-      "url": "https://www.amazon.com/dp/B00V92MIIU",
-      "keepa": "https://keepa.com/#!product/1-B00V92MIIU",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": false,
-      "updatedAt": "2026-05-30T02:40:24.820Z",
-      "dealScore": 43,
-      "scoreBreakdown": {
-        "rating": 23,
-        "discount": 7,
-        "rank": 0,
-        "reviews": 5,
-        "variationFamily": 0,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 0
-      }
-    },
-    {
       "asin": "B0F5DDRKCB",
       "parentAsin": "B0F49DP7FF",
       "familyKey": "B0F49DP7FF",
@@ -10661,6 +11504,45 @@
       ]
     },
     {
+      "asin": "B00SX523HM",
+      "parentAsin": "B08KJLHXYS",
+      "familyKey": "B08KJLHXYS",
+      "variationCount": 3,
+      "productAgeDays": 4035,
+      "title": "Spyderco Matriarch 2 Emerson Opener Folding Pocket Knife with 3\" VG-10 Steel Blade and FRN Handle - EDC Knife for Men and Women, Perfect for Hunting, Tactical, Camping - SpyderEdge - C12SBBK2W",
+      "brand": "Spyderco",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 114.96,
+      "avg90": 123.4,
+      "rating": 4.8,
+      "reviewCount": 415,
+      "rank": 71619,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51JnQ5U-6QL.jpg",
+      "url": "https://www.amazon.com/dp/B00SX523HM",
+      "keepa": "https://keepa.com/#!product/1-B00SX523HM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.746Z",
+      "dealScore": 42,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 10,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B07YD5TR78",
       "parentAsin": "B08KHZ6DJ7",
       "familyKey": "B08KHZ6DJ7",
@@ -11007,6 +11889,45 @@
         "reviews": 0,
         "variationFamily": 0,
         "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0D5H581WZ",
+      "parentAsin": "B0DZ1SR3WY",
+      "familyKey": "B0DZ1SR3WY",
+      "variationCount": 2,
+      "productAgeDays": 680,
+      "title": "BMWOOD MC-FS8 Woodturning Steady Rest for 10inch and 12inch Swing Size Lathe for Spindle Woodturning.",
+      "brand": "BMWOOD",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 59.55,
+      "avg90": 66.84,
+      "rating": 4.4,
+      "reviewCount": 120,
+      "rank": 110603,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71J0WQRLVlL.jpg",
+      "url": "https://www.amazon.com/dp/B0D5H581WZ",
+      "keepa": "https://keepa.com/#!product/1-B0D5H581WZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 41,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
         "streamFit": 0,
         "brand": 0
       }
@@ -11519,45 +12440,6 @@
       }
     },
     {
-      "asin": "B00SX523HM",
-      "parentAsin": "B08KJLHXYS",
-      "familyKey": "B08KJLHXYS",
-      "variationCount": 3,
-      "productAgeDays": 4035,
-      "title": "Spyderco Matriarch 2 Emerson Opener Folding Pocket Knife with 3\" VG-10 Steel Blade and FRN Handle - EDC Knife for Men and Women, Perfect for Hunting, Tactical, Camping - SpyderEdge - C12SBBK2W",
-      "brand": "Spyderco",
-      "brandTier": "off",
-      "category": "woodworking",
-      "sourceStream": "woodworking_core",
-      "sources": [
-        "keepa"
-      ],
-      "price": 119.4,
-      "avg90": 123.6,
-      "rating": 4.8,
-      "reviewCount": 415,
-      "rank": 84409,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51JnQ5U-6QL.jpg",
-      "url": "https://www.amazon.com/dp/B00SX523HM",
-      "keepa": "https://keepa.com/#!product/1-B00SX523HM",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": false,
-      "updatedAt": "2026-05-30T02:40:24.820Z",
-      "dealScore": 37,
-      "scoreBreakdown": {
-        "rating": 24,
-        "discount": 5,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 0,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 0
-      }
-    },
-    {
       "asin": "B00QMTMHNG",
       "parentAsin": "",
       "familyKey": "B00QMTMHNG",
@@ -11718,7 +12600,7 @@
       "parentAsin": "B0DGQ43MVQ",
       "familyKey": "B0DGQ43MVQ",
       "variationCount": 3,
-      "productAgeDays": 639,
+      "productAgeDays": 640,
       "title": "CASOMAN 13PCS 3/8\"Drive Magnetic Impact Socket Set, Deep, 6-Point, Metric, 7mm to 19mm, CR-MO",
       "brand": "CASOMAN",
       "brandTier": "off",
@@ -11728,10 +12610,10 @@
         "keepa"
       ],
       "price": 37.77,
-      "avg90": 40.87,
+      "avg90": 40.81,
       "rating": 4.5,
-      "reviewCount": 393,
-      "rank": 40886,
+      "reviewCount": 395,
+      "rank": 49653,
       "img": "https://images-na.ssl-images-amazon.com/images/I/51cqya8lyfL.jpg",
       "url": "https://www.amazon.com/dp/B0CZ6RMPRG",
       "keepa": "https://keepa.com/#!product/1-B0CZ6RMPRG",
@@ -11739,7 +12621,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-05-30T00:21:02.381Z",
+      "updatedAt": "2026-05-30T23:41:26.747Z",
       "dealScore": 36,
       "scoreBreakdown": {
         "rating": 22,
@@ -11825,6 +12707,84 @@
         "rank": 0,
         "reviews": 0,
         "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0DPHFCR25",
+      "parentAsin": "",
+      "familyKey": "B0DPHFCR25",
+      "variationCount": 0,
+      "productAgeDays": 487,
+      "title": "6.0Ah Replacement for Kobalt 40v Battery KB240-06 KB2540C-06 KB240-03 KB440-03 KB640-03 KB640-06 KB245-06 KRC40-06 KB440C-06 KB340C-06, Compatible with Kobalt 40 Volt Max Cordless Power Tools&Chargers",
+      "brand": "TenHutt",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 59.99,
+      "avg90": 65.28,
+      "rating": 4.3,
+      "reviewCount": 100,
+      "rank": 48781,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71VWDODI-eL.jpg",
+      "url": "https://www.amazon.com/dp/B0DPHFCR25",
+      "keepa": "https://keepa.com/#!product/1-B0DPHFCR25",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 36,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0GHLJHQNM",
+      "parentAsin": "B0H14P7PV8",
+      "familyKey": "B0H14P7PV8",
+      "variationCount": 14,
+      "productAgeDays": 131,
+      "title": "VEVOR Mechanics Tool Set, 230-Piece Mechanic Tool Kit, 1/4 in, 3/8 in, and 1/2 in Drive, SAE and Metric Socket Set, Wrenches, Screwdriver Bits, Accessories, and Storage Case, for Automotive Repair",
+      "brand": "VEVOR",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 110.99,
+      "avg90": 108.9,
+      "rating": 4.6,
+      "reviewCount": 1015,
+      "rank": 8713,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71d2ywFBGQL.jpg",
+      "url": "https://www.amazon.com/dp/B0GHLJHQNM",
+      "keepa": "https://keepa.com/#!product/1-B0GHLJHQNM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 36,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 3,
         "productAge": 0,
         "streamFit": 0,
         "brand": 0
@@ -12104,6 +13064,129 @@
       }
     },
     {
+      "asin": "B0FMXW3FDN",
+      "parentAsin": "B0H2DNT4Y2",
+      "familyKey": "B0H2DNT4Y2",
+      "variationCount": 1,
+      "productAgeDays": 114,
+      "title": "Forrat 2Pack 5000mAh 56V Replacement Battery for EGO 56V Battery Lithium ion Compatible with EGO Battery 56Volt Cordless Tools (Green)",
+      "brand": "Forrat",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 115.98,
+      "avg90": 124.7,
+      "rating": 4.4,
+      "reviewCount": 168,
+      "rank": 47280,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71jvqbGM4hL.jpg",
+      "url": "https://www.amazon.com/dp/B0FMXW3FDN",
+      "keepa": "https://keepa.com/#!product/1-B0FMXW3FDN",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 32,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 10,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0F9NXM2FS",
+      "parentAsin": "B0FC22G7X7",
+      "familyKey": "B0FC22G7X7",
+      "variationCount": 5,
+      "productAgeDays": 369,
+      "title": "VEVOR Bar Clamps for Woodworking, 4-Pack 36 inch Opening, Lockable F-Clamp with 600 lbs Load Limit, 2-1/2 inch Depth, Cast Iron and Carbon Steel, Easy to Use, Wood Clamps for Woodworking Metal Working",
+      "brand": "VEVOR",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 42.9,
+      "avg90": 40.55,
+      "rating": 4.6,
+      "reviewCount": 893,
+      "rank": 9738,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61LglGVkFGL.jpg",
+      "url": "https://www.amazon.com/dp/B0F9NXM2FS",
+      "keepa": "https://keepa.com/#!product/1-B0F9NXM2FS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 31,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0DZ2P89BS",
+      "parentAsin": "B0GRV3R8N9",
+      "familyKey": "B0GRV3R8N9",
+      "variationCount": 3,
+      "productAgeDays": 407,
+      "title": "Chisel Sharpening Jig, Wood Honing Guide for Chisels and Planes Width 0.1\" to 2.8\" with Sharpening Angle Fixture, Angle Gauge from 10° to 45°(With 1 Sharpening Stone)",
+      "brand": "Gohelper",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg90": 48.02,
+      "rating": 4.6,
+      "reviewCount": 642,
+      "rank": 19292,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71cwV-gzNWL.jpg",
+      "url": "https://www.amazon.com/dp/B0DZ2P89BS",
+      "keepa": "https://keepa.com/#!product/1-B0DZ2P89BS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.747Z",
+      "dealScore": 31,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0DZ2P89BS",
+        "B0FPLGW45W"
+      ]
+    },
+    {
       "asin": "B0C7Q2CT3Y",
       "parentAsin": "B0DPZ9BM37",
       "familyKey": "B0DPZ9BM37",
@@ -12138,6 +13221,45 @@
         "reviews": 0,
         "variationFamily": 0,
         "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0F17RV3NZ",
+      "parentAsin": "B0F17XWBPW",
+      "familyKey": "B0F17XWBPW",
+      "variationCount": 3,
+      "productAgeDays": 275,
+      "title": "Thatool 139-Piece Tool Set - Tool Kit with 8V Cordless Drill Driver in ToolBox Storage Case, General Household Drill Set for Home Repairs, Handyman, DIY Projects",
+      "brand": "Thatool",
+      "brandTier": "off",
+      "category": "woodworking",
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.99,
+      "avg90": 62.23,
+      "rating": 4.7,
+      "reviewCount": 269,
+      "rank": 15221,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71tywctRoXL.jpg",
+      "url": "https://www.amazon.com/dp/B0F17RV3NZ",
+      "keepa": "https://keepa.com/#!product/1-B0F17RV3NZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-05-30T23:41:26.746Z",
+      "dealScore": 23,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
         "streamFit": 0,
         "brand": 0
       }

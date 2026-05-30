@@ -478,7 +478,7 @@ async function run() {
       if (!asin) return false;
       if (ignoredAsins.has(asin)) return false;
       if (item.parentAsin && ignoredParentAsins.has(normalizeAsin(item.parentAsin))) return false;
-      if (item.enrichedAt) return false;
+      if (item.enrichedAt || item.lastEnrichedAt) return false;
       return (item.streams || []).includes(STREAM_NAME);
     })
     .slice(0, ENRICH_LIMITS[STREAM_NAME]);

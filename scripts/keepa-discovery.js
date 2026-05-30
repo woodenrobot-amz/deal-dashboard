@@ -215,6 +215,7 @@ function mergeDiscovery(existingItems, newItems, now, streamName) {
   familyKey: item.familyKey || item.parentAsin || asin,
   variationCount: item.variationCount || 0
 });
+}
 
   for (const item of newItems) {
     const asin = String(item.asin || "").trim();

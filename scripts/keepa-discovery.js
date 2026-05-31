@@ -263,7 +263,7 @@ deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
   "streamlight",
   "olight",
   "garmin"
-  ]
+  ],
 
   title_exclude_any: [
     "case for",

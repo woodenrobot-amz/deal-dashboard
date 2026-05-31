@@ -10,51 +10,106 @@ if (!KEEPA_API_KEY) throw new Error("Missing KEEPA_API_KEY");
 if (!STREAM_NAME) throw new Error("Missing stream argument");
 
 const STREAMS = {
-woodworking_core: {
-  name: "woodworking_core",
-  selection: {
-    productType: [0],
+  woodworking_core: {
+    name: "woodworking_core",
+    selection: {
+      productType: [0],
 
-    categories_exclude: [
-      "13749581",
-      "3754161",
-      "495224",
-      "551240",
-      "680350011"
+      rootCategory: ["228013"],
+
+      categories_exclude: [
+        "13749581",
+        "3754161",
+        "495224",
+        "551240",
+        "680350011"
+      ],
+
+      current_SALES_gte: 1,
+      current_SALES_lte: 75000,
+      current_RATING_gte: 43,
+      current_COUNT_REVIEWS_gte: 75,
+      current_BUY_BOX_SHIPPING_gte: 3500,
+
+      isLowest90_BUY_BOX_SHIPPING: true,
+      deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
+
+      categories_include: [
+        "552262",
+        "553244",
+        "553332",
+        "979147011"
+      ],
+
+      sort: [
+        ["deltaPercent90_BUY_BOX_SHIPPING", "desc"],
+        ["current_SALES", "asc"]
+      ],
+
+      perPage: 1000,
+      page: 0
+    },
+
+    title_include_any: [
+      "woodworking",
+      "woodworker",
+      "wood",
+      "table saw",
+      "miter saw",
+      "track saw",
+      "circular saw",
+      "jigsaw",
+      "bandsaw",
+      "router",
+      "router bit",
+      "planer",
+      "jointer",
+      "sander",
+      "orbital sander",
+      "belt sander",
+      "dust collector",
+      "clamp",
+      "parallel clamp",
+      "bar clamp",
+      "chisel",
+      "hand plane",
+      "drill press",
+      "pocket hole",
+      "dowel",
+      "tenon",
+      "mortise",
+      "saw blade",
+      "diablo",
+      "freud",
+      "kreg",
+      "bessey",
+      "woodpeckers",
+      "rockler",
+      "titebond"
     ],
 
-    current_SALES_gte: 1,
-    current_SALES_lte: 100000,
-    current_RATING_gte: 43,
-    current_COUNT_REVIEWS_gte: 100,
-    current_BUY_BOX_SHIPPING_gte: 3500,
-
-    isLowest90_BUY_BOX_SHIPPING: true,
-    deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
-
-    rootCategory: ["228013"],
-
-    categories_include: [
-      "3116511",
-      "551238",
-      "552262",
-      "552286",
-      "553022",
-      "553244",
-      "553332",
-      "979147011"
-    ],
-
-    sort: [
-      ["current_SALES", "asc"],
-      ["monthlySold", "desc"]
-    ],
-
-    lastRatingUpdate_gte: 7958651,
-    perPage: 1000,
-    page: 0
+    title_exclude_any: [
+      "bathroom",
+      "kitchen faucet",
+      "toilet",
+      "shower",
+      "plumbing",
+      "electrical outlet",
+      "light fixture",
+      "ceiling fan",
+      "door lock",
+      "thermostat",
+      "air filter",
+      "hvac",
+      "tile",
+      "concrete",
+      "masonry",
+      "welding",
+      "automotive",
+      "garage door"
+    ]
   }
-},
+};
   
   woodworking: {
     name: "woodworking",

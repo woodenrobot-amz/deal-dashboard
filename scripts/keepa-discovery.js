@@ -163,25 +163,32 @@ const STREAMS = {
 deals_for_dudes: {
   name: "deals_for_dudes",
   selection: {
-    categories_exclude: [
-      "172435", "172526", "172574", "3011391011",
-      "3248684011", "502394", "524136", "6684132011",
-
-      // Add more known noisy grilling / computer / tablet categories here
-      // after reviewing Keepa category names
-    ],
-    current_SALES_gte: 1,
-    current_SALES_lte: 150000,
-    current_RATING_gte: 42,
-    current_COUNT_REVIEWS_gte: 75,
-    isLowest90_BUY_BOX_SHIPPING: true,
-    deltaPercent7_BUY_BOX_SHIPPING_gte: 8,
-    deltaPercent90_BUY_BOX_SHIPPING_gte: 12,
+    productType: [0],
 
     rootCategory: [
       "228013",
       "16310091"
     ],
+
+    categories_exclude: [
+      "172435",
+      "172526",
+      "172574",
+      "3011391011",
+      "3248684011",
+      "502394",
+      "524136",
+      "6684132011"
+    ],
+
+    current_SALES_gte: 1,
+    current_SALES_lte: 100000,
+    current_RATING_gte: 43,
+    current_COUNT_REVIEWS_gte: 100,
+    current_BUY_BOX_SHIPPING_gte: 2500,
+
+    isLowest90_BUY_BOX_SHIPPING: true,
+    deltaPercent90_BUY_BOX_SHIPPING_gte: 15,
 
     categories_include: [
       "289810",
@@ -193,13 +200,91 @@ deals_for_dudes: {
       "553760"
     ],
 
-    sort: [["current_SALES", "asc"], ["monthlySold", "desc"]],
-    lastRatingUpdate_gte: 7952433,
-    productType: [0],
+    sort: [
+      ["deltaPercent90_BUY_BOX_SHIPPING", "desc"],
+      ["current_SALES", "asc"]
+    ],
+
     page: 0,
-    perPage: 3000
-  }
-}  
+    perPage: 500
+  },
+
+  title_include_any: [
+    "knife",
+    "multitool",
+    "multi-tool",
+    "flashlight",
+    "headlamp",
+    "edc",
+    "wallet",
+    "backpack",
+    "cooler",
+    "grill",
+    "griddle",
+    "smoker",
+    "thermometer",
+    "meat thermometer",
+    "pellet grill",
+    "portable power",
+    "power station",
+    "solar generator",
+    "charger",
+    "power bank",
+    "bluetooth speaker",
+    "headphones",
+    "earbuds",
+    "gaming",
+    "controller",
+    "monitor",
+    "keyboard",
+    "mouse",
+    "dash cam",
+    "car jump starter",
+    "air compressor",
+    "ratchet",
+    "socket set",
+    "tool bag",
+    "work light",
+    "garage",
+    "camping",
+    "hiking",
+    "tactical",
+    "rangefinder",
+    "binoculars",
+    "watch",
+    "smartwatch"
+  ],
+
+  title_exclude_any: [
+    "case for",
+    "screen protector",
+    "replacement",
+    "refill",
+    "filter replacement",
+    "cover only",
+    "for kids",
+    "baby",
+    "toddler",
+    "women",
+    "girls",
+    "makeup",
+    "skincare",
+    "hair",
+    "nail",
+    "toilet",
+    "faucet",
+    "shower",
+    "curtain",
+    "pillow",
+    "blanket",
+    "decor",
+    "party",
+    "costume",
+    "pet",
+    "dog",
+    "cat"
+  ]
+}
         
 };
 

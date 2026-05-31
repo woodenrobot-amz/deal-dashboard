@@ -108,7 +108,7 @@ const STREAMS = {
       "automotive",
       "garage door"
     ]
-  };
+  },
 
   
   woodworking: {

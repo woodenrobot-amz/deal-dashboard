@@ -61,7 +61,10 @@ const MID_TIER_BRANDS = new Set([
   "toughbuilt",
   "packout",
   "tanos",
-  "klingspor"
+  "klingspor",
+"fein",
+"workpro",
+"spetool",
 ]);
 
 const TOP_TIER_BRAND_BOOST = 20;

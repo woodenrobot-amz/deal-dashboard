@@ -108,8 +108,8 @@ const STREAMS = {
       "automotive",
       "garage door"
     ]
-  }
-};
+  };
+
   
   woodworking: {
     name: "woodworking",

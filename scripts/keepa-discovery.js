@@ -14,56 +14,34 @@ dudes_power: {
   name: "dudes_power",
   selection: {
     productType: [0],
+    singleVariation: true,
 
-    rootCategory: ["172282"],
+    categories_exclude: [
+      "7073956011"
+    ],
 
-categories_exclude: [
-  // laptops
-  "565108",
-  "13896615011",
+    current_BUY_BOX_SHIPPING_gte: 3000,
 
-  // tablets
-  "1232597011",
+    isLowest90_BUY_BOX_SHIPPING: true,
 
-  // headphones
-  "172541",
-  "12097478011",
-  "24046923011",
+    brand: [
+      "anker",
+      "bluetti",
+      "ecoflow",
+      "goal zero",
+      "jackery",
+      "zendure"
+    ],
 
-  // smart watches
-  "7939901011",
-  "10048700011",
+    sort: [
+      ["current_SALES", "asc"],
+      ["monthlySold", "desc"]
+    ],
 
-  // dvd players
-  "172521",
-  "172623"
-],
-
-current_SALES_gte: 1,
-current_SALES_lte: 150000,
-current_RATING_gte: 42,
-current_COUNT_REVIEWS_gte: 75,
-current_BUY_BOX_SHIPPING_gte: 3000,
-
-isLowest90_BUY_BOX_SHIPPING: true,
-deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
-
-categories_exclude: [
-  "172435",
-  "3011391011",
-  "502394",
-  "524136"
-],
-
-sort: [
-  ["deltaPercent90_BUY_BOX_SHIPPING", "desc"],
-  ["current_SALES", "asc"]
-],
-
-page: 0,
-perPage: 500
+    perPage: 1000,
+    page: 0
+  }
 }
-},
 
   woodworking_core: {
     name: "woodworking_core",

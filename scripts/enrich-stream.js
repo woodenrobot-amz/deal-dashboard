@@ -42,7 +42,19 @@ const TOP_TIER_BRANDS = new Set([
   "rockler",
   "woodriver",
   "veritas",
-  "lee valley"
+  "lee valley",
+"Anker",
+      "UGREEN",
+      "Baseus",
+      "Jackery",
+      "EcoFlow",
+      "BLUETTI",
+      "Goal Zero",
+      "Zendure",
+      "Belkin",
+      "Kasa",
+      "TP-Link",
+      "Govee"
 ]);
 
 const MID_TIER_BRANDS = new Set([

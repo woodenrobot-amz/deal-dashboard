@@ -202,7 +202,7 @@ deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
   "551242",
   "552808",
   "553760"
-]
+],
 
     sort: [
       ["deltaPercent90_BUY_BOX_SHIPPING", "desc"],

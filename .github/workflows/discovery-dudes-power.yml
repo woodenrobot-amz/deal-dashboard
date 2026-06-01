@@ -32,7 +32,7 @@ jobs:
       - name: Run dudes power discovery
         env:
           KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
-        run: node scripts/keepa-discovery.js woodworking_core
+        run: node scripts/keepa-discovery.js dudes_power
 
       - name: Upload discovery artifact
         uses: actions/upload-artifact@v4

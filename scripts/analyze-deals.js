@@ -3,6 +3,13 @@ const fs = require("fs");
 const data = JSON.parse(fs.readFileSync("data/deals.json", "utf8"));
 const deals = data.deals || [];
 
+const report = [];
+
+function line(text = "") {
+  report.push(text);
+  console.log(text);
+}
+
 function countBy(keyFn) {
   const map = new Map();
 
@@ -12,28 +19,27 @@ function countBy(keyFn) {
     map.set(key, (map.get(key) || 0) + 1);
   }
 
-  return [...map.entries()]
-    .sort((a, b) => b[1] - a[1]);
+  return [...map.entries()].sort((a, b) => b[1] - a[1]);
 }
 
-console.log(`Generated: ${data.generatedAt}`);
-console.log(`Deals: ${deals.length}`);
+line(`Generated: ${data.generatedAt}`);
+line(`Deals: ${deals.length}`);
 
-console.log("\nTop Brands:");
+line("\nTop Brands:");
 for (const [brand, count] of countBy(d => d.brand).slice(0, 25)) {
-  console.log(`${count.toString().padStart(4)}  ${brand}`);
+  line(`${count.toString().padStart(4)}  ${brand}`);
 }
 
-console.log("\nTop Leaf Categories:");
+line("\nTop Leaf Categories:");
 for (const [cat, count] of countBy(d => {
   const tree = d.keepaCategoryTree || [];
   const leaf = tree[tree.length - 1];
   return leaf ? `${leaf.id} - ${leaf.name}` : "";
 }).slice(0, 30)) {
-  console.log(`${count.toString().padStart(4)}  ${cat}`);
+  line(`${count.toString().padStart(4)}  ${cat}`);
 }
 
-console.log("\nTop All Categories:");
+line("\nTop All Categories:");
 const allCategoryCounts = new Map();
 
 for (const deal of deals) {
@@ -44,10 +50,10 @@ for (const deal of deals) {
 }
 
 for (const [cat, count] of [...allCategoryCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 40)) {
-  console.log(`${count.toString().padStart(4)}  ${cat}`);
+  line(`${count.toString().padStart(4)}  ${cat}`);
 }
 
-console.log("\nBrand x Leaf Category:");
+line("\nBrand x Leaf Category:");
 const comboCounts = new Map();
 
 for (const deal of deals) {
@@ -61,5 +67,9 @@ for (const deal of deals) {
 }
 
 for (const [combo, count] of [...comboCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 40)) {
-  console.log(`${count.toString().padStart(4)}  ${combo}`);
+  line(`${count.toString().padStart(4)}  ${combo}`);
 }
+
+fs.writeFileSync("analysis-report.txt", report.join("\n"));
+
+console.log("\nReport written to analysis-report.txt");

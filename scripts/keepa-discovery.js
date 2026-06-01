@@ -41,7 +41,7 @@ dudes_power: {
     perPage: 1000,
     page: 0
   }
-}
+},
 
   woodworking_core: {
     name: "woodworking_core",

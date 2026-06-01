@@ -25,7 +25,7 @@ dudes_power: {
     current_SALES_lte: 150000,
     current_RATING_gte: 42,
     current_COUNT_REVIEWS_gte: 75,
-    current_BUY_BOX_SHIPPING_gte: 2000,
+    current_BUY_BOX_SHIPPING_gte: 7500,
 
     isLowest90_BUY_BOX_SHIPPING: true,
     deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
@@ -39,10 +39,6 @@ dudes_power: {
       "BLUETTI",
       "Goal Zero",
       "Zendure",
-      "Belkin",
-      "Kasa",
-      "TP-Link",
-      "Govee"
     ],
 
     categories_exclude: [

@@ -17,6 +17,28 @@ dudes_power: {
 
     rootCategory: ["172282"],
 
+categories_exclude: [
+  // laptops
+  "565108",
+  "13896615011",
+
+  // tablets
+  "1232597011",
+
+  // headphones
+  "172541",
+  "12097478011",
+  "24046923011",
+
+  // smart watches
+  "7939901011",
+  "10048700011",
+
+  // dvd players
+  "172521",
+  "172623"
+],
+
 current_SALES_gte: 1,
 current_SALES_lte: 150000,
 current_RATING_gte: 42,

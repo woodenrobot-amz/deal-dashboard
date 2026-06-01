@@ -17,7 +17,9 @@ dudes_power: {
     singleVariation: true,
 
     categories_exclude: [
-      "7073956011"
+      "7073956011",    // Portable Bluetooth Speakers
+        "464394",      // USB Cables
+  "3011391011"   // Laptop Accessories
     ],
 
     current_BUY_BOX_SHIPPING_gte: 3000,

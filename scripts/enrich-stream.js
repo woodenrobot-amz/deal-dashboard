@@ -8,6 +8,7 @@ const ENRICH_LIMITS = {
   woodworking: 100,
   deals_for_dudes: 100,
   three_d_printing: 10
+deals_for_dudes: 100,
 };
 
 const TOKEN_FLOOR = 75;

@@ -10,6 +10,58 @@ if (!KEEPA_API_KEY) throw new Error("Missing KEEPA_API_KEY");
 if (!STREAM_NAME) throw new Error("Missing stream argument");
 
 const STREAMS = {
+dudes_power: {
+  name: "dudes_power",
+  selection: {
+    productType: [0],
+
+    rootCategory: [
+      "172282",   // Electronics
+      "228013",   // Tools & Home Improvement
+      "16310091"  // Industrial & Scientific
+    ],
+
+    current_SALES_gte: 1,
+    current_SALES_lte: 150000,
+    current_RATING_gte: 42,
+    current_COUNT_REVIEWS_gte: 75,
+    current_BUY_BOX_SHIPPING_gte: 2000,
+
+    isLowest90_BUY_BOX_SHIPPING: true,
+    deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
+
+    brand: [
+      "Anker",
+      "UGREEN",
+      "Baseus",
+      "Jackery",
+      "EcoFlow",
+      "BLUETTI",
+      "Goal Zero",
+      "Zendure",
+      "Belkin",
+      "Kasa",
+      "TP-Link",
+      "Govee"
+    ],
+
+    categories_exclude: [
+      "172435",     // cases/covers if this is the noisy one in your data
+      "3011391011", // screen protectors/accessories if noisy
+      "502394",
+      "524136"
+    ],
+
+    sort: [
+      ["deltaPercent90_BUY_BOX_SHIPPING", "desc"],
+      ["current_SALES", "asc"]
+    ],
+
+    page: 0,
+    perPage: 500
+  }
+},
+
   woodworking_core: {
     name: "woodworking_core",
     selection: {

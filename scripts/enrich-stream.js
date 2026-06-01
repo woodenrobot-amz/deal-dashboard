@@ -173,6 +173,28 @@ function getParentAsin(p) {
   return normalizeAsin(p.parentAsin || p.parentASIN || "");
 }
 
+function getKeepaCategoryIds(p) {
+  return [
+    ...(Array.isArray(p.categories) ? p.categories : []),
+    p.categoryTree?.[0]?.catId,
+    p.categoryTree?.[1]?.catId,
+    p.categoryTree?.[2]?.catId,
+    p.categoryTree?.[3]?.catId
+  ]
+    .map(value => String(value || "").trim())
+    .filter(Boolean)
+    .filter((value, index, arr) => arr.indexOf(value) === index);
+}
+
+function getKeepaCategoryTree(p) {
+  if (!Array.isArray(p.categoryTree)) return [];
+
+  return p.categoryTree.map(cat => ({
+    id: String(cat.catId || "").trim(),
+    name: String(cat.name || "").trim()
+  })).filter(cat => cat.id || cat.name);
+}
+
 function getVariationCount(p) {
   if (Array.isArray(p.variationCSV)) return p.variationCSV.length;
 
@@ -306,6 +328,7 @@ function normalizeProduct(p, streamName) {
   const rank = getSalesRank(p);
   const productAgeDays = getProductAgeDays(p);
 
+
   const deal = {
     asin,
     parentAsin: parentAsin || "",
@@ -316,6 +339,8 @@ function normalizeProduct(p, streamName) {
     brand: cleanTitle(p.brand),
     brandTier: getBrandTier(p.brand),
     category: getUiCategory(streamName),
+keepaCategoryIds: getKeepaCategoryIds(p),
+keepaCategoryTree: getKeepaCategoryTree(p),
     sourceStream: streamName,
     sources: ["keepa"],
     price: getCurrentPrice(p),

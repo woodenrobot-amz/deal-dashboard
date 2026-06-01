@@ -197,14 +197,12 @@ deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
    
 
     categories_include: [
-      "289810",
-      "3180261",
-      "541966",
-      "551242",
-      "552808",
-      "553232",
-      "553760"
-    ],
+  "289810",
+  "541966",
+  "551242",
+  "552808",
+  "553760"
+]
 
     sort: [
       ["deltaPercent90_BUY_BOX_SHIPPING", "desc"],

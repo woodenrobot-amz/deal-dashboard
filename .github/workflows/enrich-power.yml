@@ -33,7 +33,7 @@ jobs:
       - name: Run dude power enrichment
         env:
           KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
-        run: node scripts/enrich-stream.js deals_for_dudes
+        run: node scripts/enrich-stream.js dudes_power
 
       - name: Commit enrichment results
         run: |

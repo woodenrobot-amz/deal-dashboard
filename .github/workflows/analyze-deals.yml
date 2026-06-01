@@ -1,31 +1,29 @@
 name: Analyze Deals
 
 on:
-workflow_dispatch:
+  workflow_dispatch:
 
 permissions:
-contents: read
+  contents: read
 
 jobs:
-analyze:
-runs-on: ubuntu-latest
+  analyze:
+    runs-on: ubuntu-latest
 
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-steps:
-  - name: Checkout repo
-    uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-  - name: Setup Node
-    uses: actions/setup-node@v4
-    with:
-      node-version: 20
+      - name: Analyze deals
+        run: node scripts/analyze-deals.js
 
-  - name: Analyze deals
-    run: node scripts/analyze-deals.js
-
-  - name: Upload analysis report
-    uses: actions/upload-artifact@v4
-    with:
-      name: deal-analysis-report
-      path: analysis-report.txt
-
+      - name: Upload analysis report
+        uses: actions/upload-artifact@v4
+        with:
+          name: deal-analysis-report
+          path: analysis-report.txt

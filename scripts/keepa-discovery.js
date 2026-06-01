@@ -26,8 +26,8 @@ dudes_power: {
     current_RATING_gte: 42,
     current_COUNT_REVIEWS_gte: 75,
     current_BUY_BOX_SHIPPING_gte: 7500,
-
-    deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
+   isLowest90_BUY_BOX_SHIPPING: true
+    deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
 
     brand: [
   "Jackery",

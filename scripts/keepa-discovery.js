@@ -31,14 +31,7 @@ dudes_power: {
     deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
 
     brand: [
-      "Anker",
-      "UGREEN",
-      "Baseus",
-      "Jackery",
-      "EcoFlow",
-      "BLUETTI",
-      "Goal Zero",
-      "Zendure",
+      "Anker"
     ],
 
     categories_exclude: [

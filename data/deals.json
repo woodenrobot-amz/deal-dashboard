@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-01T13:54:34.893Z",
+  "generatedAt": "2026-06-01T14:34:52.818Z",
   "source": "keepa-enrichment",
   "lastEnrichmentStream": "dudes_power",
-  "dealCount": 239,
+  "dealCount": 298,
   "deals": [
     {
       "asin": "B0D1CVQQTC",
@@ -70,7 +70,13 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0D1CVQQTC",
+        "B0CB72FQ44"
+      ]
     },
     {
       "asin": "B0GH7F19J4",
@@ -480,7 +486,8 @@
       "spcCapturedAt": "",
       "siblingAsins": [
         "B07CPCTMXF",
-        "B01M6Z8GIM"
+        "B01M6Z8GIM",
+        "B078X2HG68"
       ]
     },
     {
@@ -987,7 +994,13 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0C7977CDQ",
+        "B0CG7PYYS1"
+      ]
     },
     {
       "asin": "B0BKPRCS6W",
@@ -1376,7 +1389,8 @@
       "spcCapturedAt": "",
       "siblingAsins": [
         "B09YDS8BHK",
-        "B09YF58P7Q"
+        "B09YF58P7Q",
+        "B09ZBN6NQY"
       ]
     },
     {
@@ -1762,7 +1776,17 @@
         "productAge": 0,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FKQW8LTZ",
+        "B0FKQNDMNQ",
+        "B0FKQSJLF4",
+        "B0FKQCV32B",
+        "B0FKQQC15K",
+        "B0FKQGHNWS"
+      ]
     },
     {
       "asin": "B07DGNX7V5",
@@ -2221,7 +2245,13 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0CFKPRPHY",
+        "B0F8BHNWB3"
+      ]
     },
     {
       "asin": "B0CMX8SLF6",
@@ -2297,7 +2327,9 @@
         "B0CMXBMVT1",
         "B0CMZC4WCY",
         "B0CMX8SLF6",
-        "B0CMZBVZQ6"
+        "B0CMZBVZQ6",
+        "B0CMZG41T1",
+        "B0CMZ45888"
       ]
     },
     {
@@ -2941,6 +2973,69 @@
       ]
     },
     {
+      "asin": "B09GJJJ8YW",
+      "parentAsin": "B0D4WS2HHW",
+      "familyKey": "B0D4WS2HHW",
+      "variationCount": 10,
+      "productAgeDays": 1641,
+      "title": "JBL Flip 6 - Portable Bluetooth Speaker, powerful sound and deep bass, IPX7 waterproof, 12 hours of playtime, JBL PartyBoost for multiple speaker pairing for home, outdoor and travel (Green)",
+      "brand": "JBL",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "7073956011",
+        "172282",
+        "172623",
+        "689637011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "172623",
+          "name": "Portable Audio & Video"
+        },
+        {
+          "id": "689637011",
+          "name": "Portable Speakers & Docks"
+        },
+        {
+          "id": "7073956011",
+          "name": "Portable Bluetooth Speakers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 89.95,
+      "avg90": 111.94,
+      "rating": 4.7,
+      "reviewCount": 21668,
+      "rank": 313,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/617hqWIpGpL.jpg",
+      "url": "https://www.amazon.com/dp/B09GJJJ8YW",
+      "keepa": "https://keepa.com/#!product/1-B09GJJJ8YW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 103,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 29,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B072MM9WK9",
       "parentAsin": "",
       "familyKey": "B072MM9WK9",
@@ -3271,6 +3366,69 @@
       }
     },
     {
+      "asin": "B0CXKSCY1G",
+      "parentAsin": "B0FDX9MJJ1",
+      "familyKey": "B0FDX9MJJ1",
+      "variationCount": 9,
+      "productAgeDays": 780,
+      "title": "Sony ULT Field 1 Waterproof Portable Bluetooth Speaker, Enhanced Bass, 12h Battery, IP67 Rated Dustproof Shockproof Rustproof, Detachable Strap, SRSULT10D, Orange",
+      "brand": "Sony",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "7073956011",
+        "172282",
+        "172623",
+        "689637011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "172623",
+          "name": "Portable Audio & Video"
+        },
+        {
+          "id": "689637011",
+          "name": "Portable Speakers & Docks"
+        },
+        {
+          "id": "7073956011",
+          "name": "Portable Bluetooth Speakers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 88,
+      "avg90": 108.62,
+      "rating": 4.7,
+      "reviewCount": 2480,
+      "rank": 2386,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61OP8vKpyAL.jpg",
+      "url": "https://www.amazon.com/dp/B0CXKSCY1G",
+      "keepa": "https://keepa.com/#!product/1-B0CXKSCY1G",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 102,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 28,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0FWR118TS",
       "parentAsin": "B0GVJCMHMC",
       "familyKey": "B0GVJCMHMC",
@@ -3331,7 +3489,8 @@
       "spcCapturedAt": "",
       "siblingAsins": [
         "B0FWR118TS",
-        "B0FR7N29MC"
+        "B0FR7N29MC",
+        "B0FR8LVQ3G"
       ]
     },
     {
@@ -3530,8 +3689,77 @@
       "spcCapturedAt": "",
       "siblingAsins": [
         "B0CZ8QXNGQ",
-        "B0DFBCJ5WF"
+        "B0DFBCJ5WF",
+        "B0D4739LFX"
       ]
+    },
+    {
+      "asin": "B08863DHR3",
+      "parentAsin": "B0H1GTYS59",
+      "familyKey": "B0H1GTYS59",
+      "variationCount": 3,
+      "productAgeDays": 2155,
+      "title": "PERLESMITH Universal Swivel TV Stand-Table Top TV Stand for 32-65 inch TV-Height Adjustable TV Base with Heavy-Duty Tempered Glass Base, VESA 400x400mm up to 88lbs, PSTVS17",
+      "brand": "PERLESMITH",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "21217995011",
+        "172282",
+        "1266092011",
+        "3230976011",
+        "21217994011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "1266092011",
+          "name": "Television & Video"
+        },
+        {
+          "id": "3230976011",
+          "name": "Accessories"
+        },
+        {
+          "id": "21217994011",
+          "name": "TV Mounts, Stands & Turntables"
+        },
+        {
+          "id": "21217995011",
+          "name": "TV Mount Stands"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 34.98,
+      "avg90": 43.52,
+      "rating": 4.7,
+      "reviewCount": 28138,
+      "rank": 469,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61vHsaVhLPL.jpg",
+      "url": "https://www.amazon.com/dp/B08863DHR3",
+      "keepa": "https://keepa.com/#!product/1-B08863DHR3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 100,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 29,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
     },
     {
       "asin": "B0D41NQQ1Y",
@@ -3587,6 +3815,122 @@
         "reviews": 10,
         "variationFamily": 0,
         "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0CP7XRW9S",
+      "parentAsin": "B0GVYPBZPH",
+      "familyKey": "B0GVYPBZPH",
+      "variationCount": 2,
+      "productAgeDays": 907,
+      "title": "Ingnok Portable Monitor, Ultra Slim 15.6 Inch FHD IPS Laptop Screen Extender with Adjustable Stand, USB C Compatible, Ideal for Travel and Office",
+      "brand": "Ingnok",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "1292115011",
+        "172282",
+        "541966"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "1292115011",
+          "name": "Monitors"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 65.97,
+      "avg90": 81.97,
+      "rating": 4.5,
+      "reviewCount": 3700,
+      "rank": 1335,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71mqjfuT4HL.jpg",
+      "url": "https://www.amazon.com/dp/B0CP7XRW9S",
+      "keepa": "https://keepa.com/#!product/1-B0CP7XRW9S",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 99,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 29,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B09BB5T7FV",
+      "parentAsin": "",
+      "familyKey": "B09BB5T7FV",
+      "variationCount": 0,
+      "productAgeDays": 1744,
+      "title": "KYY Portable Monitor 15.6'' 1080P FHD USB-C Laptop Monitors w/Smart Cover & Dual Speaker, HDMI Computer Display IPS HDR External Gaming Monitor for PC Phone Mac Xbox PS4 Switch[Upgraded]",
+      "brand": "KYY",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "1292115011",
+        "172282",
+        "541966"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "1292115011",
+          "name": "Monitors"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 71.99,
+      "avg90": 89.54,
+      "rating": 4.4,
+      "reviewCount": 2310,
+      "rank": 4965,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71ggPtTkqVL.jpg",
+      "url": "https://www.amazon.com/dp/B09BB5T7FV",
+      "keepa": "https://keepa.com/#!product/1-B09BB5T7FV",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 99,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 29,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
         "streamFit": 0,
         "brand": 0
       }
@@ -3786,6 +4130,69 @@
         "B0FJF86ZNC",
         "B0FXB2T54B"
       ]
+    },
+    {
+      "asin": "B0CY6TTR3C",
+      "parentAsin": "B0D3WJDD8Z",
+      "familyKey": "B0D3WJDD8Z",
+      "variationCount": 2,
+      "productAgeDays": 745,
+      "title": "Sonos Roam 2 - White - Portable Waterproof Bluetooth Speaker",
+      "brand": "Sonos",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "7073956011",
+        "172282",
+        "172623",
+        "689637011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "172623",
+          "name": "Portable Audio & Video"
+        },
+        {
+          "id": "689637011",
+          "name": "Portable Speakers & Docks"
+        },
+        {
+          "id": "7073956011",
+          "name": "Portable Bluetooth Speakers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 134,
+      "avg90": 165.84,
+      "rating": 4.4,
+      "reviewCount": 1498,
+      "rank": 454,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71bWYTTIe1L.jpg",
+      "url": "https://www.amazon.com/dp/B0CY6TTR3C",
+      "keepa": "https://keepa.com/#!product/1-B0CY6TTR3C",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 98,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 28,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
     },
     {
       "asin": "B07GPZYNKT",
@@ -4110,6 +4517,70 @@
       "siblingAsins": [
         "B0D792MQDS",
         "B0G4L9M4D5"
+      ]
+    },
+    {
+      "asin": "B0DSC8GLRX",
+      "parentAsin": "B0G6FSBV3W",
+      "familyKey": "B0G6FSBV3W",
+      "variationCount": 15,
+      "productAgeDays": 510,
+      "title": "Garmin Instinct® 3 50mm, AMOLED Display, Rugged Outdoor GPS Smartwatch, Metal-Reinforced Bezel, Built-in Flashlight, Up to 18 Days of Battery Life, Charcoal",
+      "brand": "Garmin",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "7939901011",
+        "172282",
+        "10048700011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "10048700011",
+          "name": "Wearable Technology"
+        },
+        {
+          "id": "7939901011",
+          "name": "Smartwatches"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 349.99,
+      "avg90": 437.28,
+      "rating": 4.5,
+      "reviewCount": 1034,
+      "rank": 332,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71OIMZu4ylL.jpg",
+      "url": "https://www.amazon.com/dp/B0DSC8GLRX",
+      "keepa": "https://keepa.com/#!product/1-B0DSC8GLRX",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 97,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 29,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0DSC2YZCR",
+        "B0DSC8GLRX"
       ]
     },
     {
@@ -4486,6 +4957,132 @@
         "rank": 30,
         "reviews": 0,
         "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0DM88VR3K",
+      "parentAsin": "B0G4D86WLR",
+      "familyKey": "B0G4D86WLR",
+      "variationCount": 4,
+      "productAgeDays": 570,
+      "title": "FOFUN NC95 Hybrid Active Noise Cancelling Headphones with Knob Control, 120H Playtime Over Ear Headphones Wireless Bluetooth 6.0, App Control, Hi-Res Audio, Comfort Fit, Clear Calls for Travel/Workout",
+      "brand": "FOFUN",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "12097479011",
+        "172282",
+        "24046923011",
+        "172541"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "24046923011",
+          "name": "Headphones, Earbuds & Accessories"
+        },
+        {
+          "id": "172541",
+          "name": "Headphones & Earbuds"
+        },
+        {
+          "id": "12097479011",
+          "name": "Over-Ear Headphones"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 44.76,
+      "avg90": 56.82,
+      "rating": 4.4,
+      "reviewCount": 1379,
+      "rank": 2866,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51LyJPq6YgL.jpg",
+      "url": "https://www.amazon.com/dp/B0DM88VR3K",
+      "keepa": "https://keepa.com/#!product/1-B0DM88VR3K",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.814Z",
+      "dealScore": 96,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 31,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0DCFKV22N",
+      "parentAsin": "B0D4TVW4YB",
+      "familyKey": "B0D4TVW4YB",
+      "variationCount": 8,
+      "productAgeDays": 650,
+      "title": "Mehomeli Kids Headphones, Bluetooth 5.2 Air Conduction Open Ear Headphones, 85dB Volume Limiting, Blue Pink",
+      "brand": "Mehomeli",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "99530371011",
+        "172282",
+        "24046923011",
+        "172541"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "24046923011",
+          "name": "Headphones, Earbuds & Accessories"
+        },
+        {
+          "id": "172541",
+          "name": "Headphones & Earbuds"
+        },
+        {
+          "id": "99530371011",
+          "name": "Open-Ear Headphones"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 32.48,
+      "avg90": 40.58,
+      "rating": 4.2,
+      "reviewCount": 2177,
+      "rank": 2030,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61jf-9lzWML.jpg",
+      "url": "https://www.amazon.com/dp/B0DCFKV22N",
+      "keepa": "https://keepa.com/#!product/1-B0DCFKV22N",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 96,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 29,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
         "productAge": 3,
         "streamFit": 0,
         "brand": 0
@@ -5509,6 +6106,132 @@
       }
     },
     {
+      "asin": "B0BBZ28LL5",
+      "parentAsin": "B0GXBV6P1B",
+      "familyKey": "B0GXBV6P1B",
+      "variationCount": 5,
+      "productAgeDays": 1348,
+      "title": "Denon AVR-S970H 8K Ultra HD 7.2 Channel (90W X 7) AV Home Audio Receiver, Built for Gaming, Music Streaming, 3D Audio & Video, Alexa + HEOS, Black, Bluetooth Amplifier",
+      "brand": "Denon",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "14269301",
+        "172282",
+        "667846011",
+        "9977442011",
+        "281053"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "667846011",
+          "name": "Home Audio"
+        },
+        {
+          "id": "9977442011",
+          "name": "Home Theater"
+        },
+        {
+          "id": "281053",
+          "name": "Receivers & Amplifiers"
+        },
+        {
+          "id": "14269301",
+          "name": "Receivers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 699.99,
+      "avg90": 886.98,
+      "rating": 4.5,
+      "reviewCount": 395,
+      "rank": 2611,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61gugk3H2dL.jpg",
+      "url": "https://www.amazon.com/dp/B0BBZ28LL5",
+      "keepa": "https://keepa.com/#!product/1-B0BBZ28LL5",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.814Z",
+      "dealScore": 91,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 31,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0DRP28HZW",
+      "parentAsin": "B0F6CPX778",
+      "familyKey": "B0F6CPX778",
+      "variationCount": 7,
+      "productAgeDays": 407,
+      "title": "WhatPlus Portable CD Player with Bluetooth 5.2, Rechargeable Battery & Built-in Speakers – Hi-Fi Retro Suitcase Design for Home Decor, AUX/TF Card Support – Ideal Gift (Black & Pink)",
+      "brand": "whatplus",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "465608",
+        "172282",
+        "172623"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "172623",
+          "name": "Portable Audio & Video"
+        },
+        {
+          "id": "465608",
+          "name": "Portable CD Players"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 59.99,
+      "avg90": 75.76,
+      "rating": 4.5,
+      "reviewCount": 524,
+      "rank": 2926,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61SB00gDutL.jpg",
+      "url": "https://www.amazon.com/dp/B0DRP28HZW",
+      "keepa": "https://keepa.com/#!product/1-B0DRP28HZW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.814Z",
+      "dealScore": 91,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 31,
+        "rank": 30,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B09ZQTSTPC",
       "parentAsin": "",
       "familyKey": "B09ZQTSTPC",
@@ -5627,7 +6350,14 @@
         "productAge": 3,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0DNJMTMF2",
+        "B0F5HDWNHN",
+        "B0F5HD5BDV"
+      ]
     },
     {
       "asin": "B0GBTXJ3V2",
@@ -5814,6 +6544,69 @@
         "reviews": 0,
         "variationFamily": 8,
         "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0DF55WXGZ",
+      "parentAsin": "B0GQYWMM4M",
+      "familyKey": "B0GQYWMM4M",
+      "variationCount": 14,
+      "productAgeDays": 539,
+      "title": "Power Strip with Wireless Charger, Flat Plug Surge Protector with 10FT Extension Cord, 12 AC Multiple Outlets, 4 USB (2 USB C), 15W Wireless Charging Power Tower for Home Office Dorm, White",
+      "brand": "UWIWUTEI",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "10967801",
+        "172282",
+        "281407",
+        "17854127011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "281407",
+          "name": "Accessories & Supplies"
+        },
+        {
+          "id": "17854127011",
+          "name": "Power Strips & Surge Protectors"
+        },
+        {
+          "id": "10967801",
+          "name": "Power Strips"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 30.41,
+      "avg90": 38.07,
+      "rating": 4.7,
+      "reviewCount": 333,
+      "rank": 75,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61oKy-n9S8L.jpg",
+      "url": "https://www.amazon.com/dp/B0DF55WXGZ",
+      "keepa": "https://keepa.com/#!product/1-B0DF55WXGZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 89,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 30,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
         "streamFit": 0,
         "brand": 0
       }
@@ -6013,19 +6806,20 @@
       }
     },
     {
-      "asin": "B0DSC2YZCR",
-      "parentAsin": "B0G6FSBV3W",
-      "familyKey": "B0G6FSBV3W",
-      "variationCount": 15,
-      "productAgeDays": 510,
-      "title": "Garmin Instinct® E 40mm, Rugged Outdoor GPS Smartwatch, 24/7 Health Monitoring, Wrist-Based Heart Rate, Up to 16 Days of Battery Life, Charcoal",
-      "brand": "Garmin",
+      "asin": "B077R9RBGG",
+      "parentAsin": "B07J4Z96MG",
+      "familyKey": "B07J4Z96MG",
+      "variationCount": 2,
+      "productAgeDays": 1383,
+      "title": "Bose SoundTrue Ultra in-ear headphones - Apple devices, Frost (Renewed)",
+      "brand": "Bose",
       "brandTier": "off",
       "category": "dudes",
       "keepaCategoryIds": [
-        "7939901011",
+        "12097478011",
         "172282",
-        "10048700011"
+        "24046923011",
+        "172541"
       ],
       "keepaCategoryTree": [
         {
@@ -6033,39 +6827,43 @@
           "name": "Electronics"
         },
         {
-          "id": "10048700011",
-          "name": "Wearable Technology"
+          "id": "24046923011",
+          "name": "Headphones, Earbuds & Accessories"
         },
         {
-          "id": "7939901011",
-          "name": "Smartwatches"
+          "id": "172541",
+          "name": "Headphones & Earbuds"
+        },
+        {
+          "id": "12097478011",
+          "name": "Earbud Headphones"
         }
       ],
       "sourceStream": "dudes_power",
       "sources": [
         "keepa"
       ],
-      "price": 199.99,
-      "avg90": 251.04,
-      "rating": 4.5,
-      "reviewCount": 421,
-      "rank": 331,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/61Kl2QPU3oL.jpg",
-      "url": "https://www.amazon.com/dp/B0DSC2YZCR",
-      "keepa": "https://keepa.com/#!product/1-B0DSC2YZCR",
+      "price": 45.99,
+      "avg90": 76.63,
+      "rating": 4.2,
+      "reviewCount": 133,
+      "rank": 10005,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61OoMz+ZqYL.jpg",
+      "url": "https://www.amazon.com/dp/B077R9RBGG",
+      "keepa": "https://keepa.com/#!product/1-B077R9RBGG",
       "isLowAll": false,
       "drop1Day": 0,
-      "isHot": true,
+      "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-06-01T13:54:34.891Z",
+      "updatedAt": "2026-06-01T14:34:52.815Z",
       "dealScore": 88,
       "scoreBreakdown": {
-        "rating": 22,
-        "discount": 30,
-        "rank": 30,
+        "rating": 21,
+        "discount": 59,
+        "rank": 0,
         "reviews": 0,
-        "variationFamily": 3,
-        "productAge": 3,
+        "variationFamily": 0,
+        "productAge": 8,
         "streamFit": 0,
         "brand": 0
       }
@@ -6334,7 +7132,13 @@
         "productAge": 3,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0D7LQNNN9",
+        "B0DDK77QYV"
+      ]
     },
     {
       "asin": "B0BL8731Y3",
@@ -6471,7 +7275,9 @@
       "siblingAsins": [
         "B0D3J5ZCGL",
         "B0D3J8GTPB",
-        "B0D3J7XYYM"
+        "B0D3J7XYYM",
+        "B0D3J6DGTV",
+        "B0D3J75PYR"
       ]
     },
     {
@@ -6917,6 +7723,64 @@
         "reviews": 0,
         "variationFamily": 0,
         "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0FB3X3CM3",
+      "parentAsin": "B0H1MHMR74",
+      "familyKey": "B0H1MHMR74",
+      "variationCount": 8,
+      "productAgeDays": 323,
+      "title": "1.85\" Kids Watch, AI(Translation/Q&A/Watch Face/Image Recognition)Smartwatches with Heart Rate,Sleep Monitor,Video Music Pedometer,NO APP/Phone, Gifts for 3-12 Years old Boys Girls(Built-in AI, Black)",
+      "brand": "Monowul",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "7939901011",
+        "172282",
+        "10048700011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "10048700011",
+          "name": "Wearable Technology"
+        },
+        {
+          "id": "7939901011",
+          "name": "Smartwatches"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 32.39,
+      "avg90": 40.57,
+      "rating": 4.3,
+      "reviewCount": 116,
+      "rank": 1052,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71M4xQ69ErL.jpg",
+      "url": "https://www.amazon.com/dp/B0FB3X3CM3",
+      "keepa": "https://keepa.com/#!product/1-B0FB3X3CM3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 84,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 30,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
         "streamFit": 0,
         "brand": 0
       }
@@ -7501,6 +8365,71 @@
         "reviews": 10,
         "variationFamily": 8,
         "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B07MMTYFML",
+        "B07MMVSC4B"
+      ]
+    },
+    {
+      "asin": "B0FPRGSK6J",
+      "parentAsin": "B0DWT4Z252",
+      "familyKey": "B0DWT4Z252",
+      "variationCount": 4,
+      "productAgeDays": 260,
+      "title": "Lenovo L22-4e - Office Monitor - 21.5\" FHD IPS Display - 100Hz Refresh Rate - 4 ms MPRT - 99% sRGB - Raven Black - Tilt Stand",
+      "brand": "Lenovo",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "1292115011",
+        "16310161",
+        "172282",
+        "541966"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "1292115011",
+          "name": "Monitors"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 69.99,
+      "avg90": 87.04,
+      "rating": 4.6,
+      "reviewCount": 88,
+      "rank": 2392,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71ayWwdCU-L.jpg",
+      "url": "https://www.amazon.com/dp/B0FPRGSK6J",
+      "keepa": "https://keepa.com/#!product/1-B0FPRGSK6J",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 82,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 29,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
         "streamFit": 0,
         "brand": 0
       }
@@ -8241,6 +9170,69 @@
       }
     },
     {
+      "asin": "B0BJDR23T1",
+      "parentAsin": "B0G6ZHS3JR",
+      "familyKey": "B0G6ZHS3JR",
+      "variationCount": 40,
+      "productAgeDays": 1302,
+      "title": "MioHHR Stainless Steel Watch Band with Case Compatible with Apple Watch Ultra3 2 1(49mm), Rugged Strap with Metal Protective Bumper Cover for iWatch Band Men(Gold)",
+      "brand": "MioHHR",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "23739098011",
+        "172282",
+        "10048700011",
+        "10048712011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "10048700011",
+          "name": "Wearable Technology"
+        },
+        {
+          "id": "10048712011",
+          "name": "Arm & Wristband Accessories"
+        },
+        {
+          "id": "23739098011",
+          "name": "Cases with Band"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 30.99,
+      "avg90": 39.23,
+      "rating": 4.4,
+      "reviewCount": 3780,
+      "rank": 21203,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71yEpEEntwL.jpg",
+      "url": "https://www.amazon.com/dp/B0BJDR23T1",
+      "keepa": "https://keepa.com/#!product/1-B0BJDR23T1",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 79,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 31,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0C6WY6628",
       "parentAsin": "B0BZ7XJ3B5",
       "familyKey": "B0BZ7XJ3B5",
@@ -8499,7 +9491,8 @@
         "B0GJJ3X3KY",
         "B0GLYZ9LKR",
         "B0G52239GV",
-        "B0GJJVPYHT"
+        "B0GJJVPYHT",
+        "B0G5255ZSL"
       ]
     },
     {
@@ -10337,6 +11330,74 @@
       }
     },
     {
+      "asin": "B07CLXGH2B",
+      "parentAsin": "",
+      "familyKey": "B07CLXGH2B",
+      "variationCount": 0,
+      "productAgeDays": 2866,
+      "title": "PERLESMITH Corner TV Wall Mount Bracket for 26-60 inch LED LCD Flat Curved Screen TVs up to 99 lbs, Full Motion Corner TV Mount with Dual Articulating Arms, Swivel, Tilt, Extension, Max VESA 400x400mm",
+      "brand": "PERLESMITH",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "760796",
+        "172282",
+        "1266092011",
+        "3230976011",
+        "21217994011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "1266092011",
+          "name": "Television & Video"
+        },
+        {
+          "id": "3230976011",
+          "name": "Accessories"
+        },
+        {
+          "id": "21217994011",
+          "name": "TV Mounts, Stands & Turntables"
+        },
+        {
+          "id": "760796",
+          "name": "TV Wall & Ceiling Mounts"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg90": 50.22,
+      "rating": 4.7,
+      "reviewCount": 1982,
+      "rank": 27894,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71yvhIMMbrL.jpg",
+      "url": "https://www.amazon.com/dp/B07CLXGH2B",
+      "keepa": "https://keepa.com/#!product/1-B07CLXGH2B",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.817Z",
+      "dealScore": 71,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0G3NTB21W",
       "parentAsin": "B0GZ3MRFFH",
       "familyKey": "B0GZ3MRFFH",
@@ -10594,6 +11655,142 @@
       }
     },
     {
+      "asin": "B000KKB5YK",
+      "parentAsin": "B0C4Q9NCG5",
+      "familyKey": "B0C4Q9NCG5",
+      "variationCount": 1,
+      "productAgeDays": 4437,
+      "title": "Lowrance 000-0106-72 HST-WSBL Transom-Mount Skimmer Transducer – 83/200 kHz with Built-in Temperature Sensor, 7-Pin Connector, Black",
+      "brand": "Lowrance",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "551460",
+        "172282",
+        "3248684011",
+        "319574011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "3248684011",
+          "name": "Car & Vehicle Electronics"
+        },
+        {
+          "id": "319574011",
+          "name": "Marine Electronics"
+        },
+        {
+          "id": "551460",
+          "name": "Fish Finders & Depth Finders"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 48.05,
+      "avg90": 60.16,
+      "rating": 4.5,
+      "reviewCount": 1032,
+      "rank": 7136,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61D9XC8mOmL.jpg",
+      "url": "https://www.amazon.com/dp/B000KKB5YK",
+      "keepa": "https://keepa.com/#!product/1-B000KKB5YK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 70,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B00H3SEJLS",
+      "parentAsin": "B0H3HQXV76",
+      "familyKey": "B0H3HQXV76",
+      "variationCount": 3,
+      "productAgeDays": 4041,
+      "title": "QPower Pack of 2 Single 10-Inch Sealed Subwoofer Boxes, 0.9 Cubic Feet of Airspace Per Box, Solid 5/8-Inch MDF Construction",
+      "brand": "Q Power",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "3009181",
+        "10981061",
+        "172282",
+        "3248684011",
+        "1077068",
+        "226184"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "3248684011",
+          "name": "Car & Vehicle Electronics"
+        },
+        {
+          "id": "1077068",
+          "name": "Car Electronics"
+        },
+        {
+          "id": "226184",
+          "name": "Car Audio"
+        },
+        {
+          "id": "3009141",
+          "name": "Subwoofers"
+        },
+        {
+          "id": "3009181",
+          "name": "Enclosed Subwoofer Systems"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 54.99,
+      "avg90": 68.92,
+      "rating": 4.5,
+      "reviewCount": 1123,
+      "rank": 18066,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71MCOT+9PPL.jpg",
+      "url": "https://www.amazon.com/dp/B00H3SEJLS",
+      "keepa": "https://keepa.com/#!product/1-B00H3SEJLS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.817Z",
+      "dealScore": 70,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B00DXYRKLW",
       "parentAsin": "B017ROFVE6",
       "familyKey": "B017ROFVE6",
@@ -10776,6 +11973,248 @@
         "discount": 33,
         "rank": 0,
         "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0CPL3R2ZX",
+      "parentAsin": "B0GFN7BLH4",
+      "familyKey": "B0GFN7BLH4",
+      "variationCount": 4,
+      "productAgeDays": 908,
+      "title": "KEFEYA Laptop Screen Extender, 14.2\" Portable Triple Monitor for Laptop with Full HD IPS Display, Monitor Extender Compatible with Mac, Windows, Chrome, Fits 13-17 Inch Laptops",
+      "brand": "KEFEYA",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "1292115011",
+        "172282",
+        "541966"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "1292115011",
+          "name": "Monitors"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 180.49,
+      "avg90": 226.82,
+      "rating": 4.3,
+      "reviewCount": 2512,
+      "rank": 7626,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71tFybrxoEL.jpg",
+      "url": "https://www.amazon.com/dp/B0CPL3R2ZX",
+      "keepa": "https://keepa.com/#!product/1-B0CPL3R2ZX",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B07VNX4ZWY",
+      "parentAsin": "B0GD763184",
+      "familyKey": "B0GD763184",
+      "variationCount": 2,
+      "productAgeDays": 2495,
+      "title": "ROADOM 7’’ Raspberry Pi Screen, IPS1024×600,Responsive Smooth Touch,Dual Built-in Speakers,HDMI Input,Compatible with Raspberry Pi 5/4/3,Driver Free",
+      "brand": "ROADOM",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "1292115011",
+        "172282",
+        "541966"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "1292115011",
+          "name": "Monitors"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 59.98,
+      "avg90": 75.56,
+      "rating": 4.3,
+      "reviewCount": 1464,
+      "rank": 10506,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/713xwY82fAL.jpg",
+      "url": "https://www.amazon.com/dp/B07VNX4ZWY",
+      "keepa": "https://keepa.com/#!product/1-B07VNX4ZWY",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0C37VVL59",
+      "parentAsin": "B0H3CM3S8T",
+      "familyKey": "B0H3CM3S8T",
+      "variationCount": 5,
+      "productAgeDays": 1136,
+      "title": "JBL Wind 3 FM Bluetooth Handlebar Speaker (Blue)",
+      "brand": "JBL",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "7073956011",
+        "172282",
+        "172623",
+        "689637011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "172623",
+          "name": "Portable Audio & Video"
+        },
+        {
+          "id": "689637011",
+          "name": "Portable Speakers & Docks"
+        },
+        {
+          "id": "7073956011",
+          "name": "Portable Bluetooth Speakers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 71.95,
+      "avg90": 89.57,
+      "rating": 4.4,
+      "reviewCount": 1271,
+      "rank": 5902,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71AENHsK91L.jpg",
+      "url": "https://www.amazon.com/dp/B0C37VVL59",
+      "keepa": "https://keepa.com/#!product/1-B0C37VVL59",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B081RPZJM3",
+      "parentAsin": "B0H21HSY9Z",
+      "familyKey": "B0H21HSY9Z",
+      "variationCount": 1,
+      "productAgeDays": 2352,
+      "title": "W-KING Portable Bluetooth Speakers Wireless, (60W Peak) 30W RMS IPX6 Waterproof Outdoor Loud Speaker Boombox, 24H, EQ, AUX, TF Card, USB Playback, Powerful Bass Speaker for Home, Party, Camping, Pool",
+      "brand": "W-KING",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "7073956011",
+        "172282",
+        "172623",
+        "689637011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "172623",
+          "name": "Portable Audio & Video"
+        },
+        {
+          "id": "689637011",
+          "name": "Portable Speakers & Docks"
+        },
+        {
+          "id": "7073956011",
+          "name": "Portable Bluetooth Speakers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 43.98,
+      "avg90": 54.88,
+      "rating": 4.5,
+      "reviewCount": 2371,
+      "rank": 9157,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71JiWw8Bb3L.jpg",
+      "url": "https://www.amazon.com/dp/B081RPZJM3",
+      "keepa": "https://keepa.com/#!product/1-B081RPZJM3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 10,
         "variationFamily": 0,
         "productAge": 8,
         "streamFit": 0,
@@ -12822,6 +14261,404 @@
       }
     },
     {
+      "asin": "B0916VWL46",
+      "parentAsin": "",
+      "familyKey": "B0916VWL46",
+      "variationCount": 0,
+      "productAgeDays": 1890,
+      "title": "Wireless Backup Camera Solar Magnetic for RV Car Trailer Truck Camper 5th Wheels Hitch Towing No Wiring No Drilling Rechargeable Night Vision Portable Backup Camera with 5\" 1080P HD 2-Split Monitor",
+      "brand": "DOUXURY",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "1253823011",
+        "172282",
+        "3248684011",
+        "1077068",
+        "3008971"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "3248684011",
+          "name": "Car & Vehicle Electronics"
+        },
+        {
+          "id": "1077068",
+          "name": "Car Electronics"
+        },
+        {
+          "id": "3008971",
+          "name": "Car Safety & Security"
+        },
+        {
+          "id": "1253823011",
+          "name": "Vehicle Backup Cameras"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.99,
+      "avg90": 127.02,
+      "rating": 4.3,
+      "reviewCount": 731,
+      "rank": 9351,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/710ngs0SobL.jpg",
+      "url": "https://www.amazon.com/dp/B0916VWL46",
+      "keepa": "https://keepa.com/#!product/1-B0916VWL46",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 31,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B09D2HV564",
+      "parentAsin": "",
+      "familyKey": "B09D2HV564",
+      "variationCount": 0,
+      "productAgeDays": 1735,
+      "title": "SAMSUNG Galaxy Watch 4 Classic R890 46mm Smartwatch GPS WiFi (International Model) (Black)",
+      "brand": "Samsung",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "7939901011",
+        "6358539011",
+        "172282",
+        "10048700011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "10048700011",
+          "name": "Wearable Technology"
+        },
+        {
+          "id": "7939901011",
+          "name": "Smartwatches"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 129,
+      "avg90": 162.17,
+      "rating": 4.5,
+      "reviewCount": 792,
+      "rank": 108528,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51PzK+RgRIL.jpg",
+      "url": "https://www.amazon.com/dp/B09D2HV564",
+      "keepa": "https://keepa.com/#!product/1-B09D2HV564",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0DKXVGG1S",
+      "parentAsin": "B0DDX4C1GW",
+      "familyKey": "B0DDX4C1GW",
+      "variationCount": 3,
+      "productAgeDays": 543,
+      "title": "EarFun Air Pro 4 Adaptive Hybrid Noise Canceling Wireless Earbuds, Qualcomm Snapdragon Sound, aptX Lossless, 6 Mics AI CVC 8.0 Call, LDAC Hi-Res Audio, 52H Playtime, Bluetooth 5.4 (Glossy White)",
+      "brand": "EarFun",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "12097478011",
+        "172282",
+        "24046923011",
+        "172541"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "24046923011",
+          "name": "Headphones, Earbuds & Accessories"
+        },
+        {
+          "id": "172541",
+          "name": "Headphones & Earbuds"
+        },
+        {
+          "id": "12097478011",
+          "name": "Earbud Headphones"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 89.99,
+      "avg90": 85.26,
+      "rating": 4.4,
+      "reviewCount": 6453,
+      "rank": 641,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51PhaSV7DhL.jpg",
+      "url": "https://www.amazon.com/dp/B0DKXVGG1S",
+      "keepa": "https://keepa.com/#!product/1-B0DKXVGG1S",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B01MRG2KSA",
+      "parentAsin": "B07QGL5CT5",
+      "familyKey": "B07QGL5CT5",
+      "variationCount": 5,
+      "productAgeDays": 3227,
+      "title": "GEARit 12 Gauge Speaker Wire Cable,UL CL2 Rated 12 Gauge Wire 250ft,Copper Wire with Polarity Mark,Audio Cable for In-Wall Home Theater,Home,Car Stereo,Commercial Audio Systems,OFC(White,2-Conductors)",
+      "brand": "GEARit",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "464416",
+        "172282",
+        "1266092011",
+        "3230976011",
+        "464418"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "1266092011",
+          "name": "Television & Video"
+        },
+        {
+          "id": "3230976011",
+          "name": "Accessories"
+        },
+        {
+          "id": "464418",
+          "name": "Cables"
+        },
+        {
+          "id": "464416",
+          "name": "Speaker"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 132,
+      "avg90": 164.16,
+      "rating": 4.7,
+      "reviewCount": 969,
+      "rank": 9408,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81mug2pzA1L.jpg",
+      "url": "https://www.amazon.com/dp/B01MRG2KSA",
+      "keepa": "https://keepa.com/#!product/1-B01MRG2KSA",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B07NSBHSNQ",
+      "parentAsin": "B0FY6WWBBR",
+      "familyKey": "B0FY6WWBBR",
+      "variationCount": 1,
+      "productAgeDays": 2614,
+      "title": "KICKER 46CST204 CS-Series CST20 .75-inch (20mm) Tweeters with Crossovers, 4-Ohm (Pair)",
+      "brand": "KICKER",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "10980941",
+        "172282",
+        "3248684011",
+        "1077068",
+        "226184"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "3248684011",
+          "name": "Car & Vehicle Electronics"
+        },
+        {
+          "id": "1077068",
+          "name": "Car Electronics"
+        },
+        {
+          "id": "226184",
+          "name": "Car Audio"
+        },
+        {
+          "id": "760560",
+          "name": "Speakers"
+        },
+        {
+          "id": "10980941",
+          "name": "Tweeters"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 55.96,
+      "avg90": 69.79,
+      "rating": 4.6,
+      "reviewCount": 597,
+      "rank": 24870,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71Z38r6Q5tL.jpg",
+      "url": "https://www.amazon.com/dp/B07NSBHSNQ",
+      "keepa": "https://keepa.com/#!product/1-B07NSBHSNQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.817Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B09X2B5TYJ",
+      "parentAsin": "B0G2VK39M4",
+      "familyKey": "B0G2VK39M4",
+      "variationCount": 2,
+      "productAgeDays": 1510,
+      "title": "HP Victus 15.6\" Gaming Laptop PC, NVIDIA GeForce RTX 3050 Ti, AMD Ryzen 7 5800H, Refined 1080p IPS Display, Compact Design, All-in-One Keyboard with Enlarged Touchpad, HD Webcam (15-fb0028nr, 2022)",
+      "brand": "HP",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "13896615011",
+        "172282",
+        "541966",
+        "13896617011",
+        "565108"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "13896617011",
+          "name": "Computers & Tablets"
+        },
+        {
+          "id": "565108",
+          "name": "Laptops"
+        },
+        {
+          "id": "13896615011",
+          "name": "Traditional Laptops"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 825.42,
+      "avg90": 1036.85,
+      "rating": 4.4,
+      "reviewCount": 670,
+      "rank": 41897,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61LlugRqUwL.jpg",
+      "url": "https://www.amazon.com/dp/B09X2B5TYJ",
+      "keepa": "https://keepa.com/#!product/1-B09X2B5TYJ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.817Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0GCGX4SZG",
       "parentAsin": "B0H33S5TRT",
       "familyKey": "B0H33S5TRT",
@@ -13398,6 +15235,142 @@
       }
     },
     {
+      "asin": "B07KX7Z4TS",
+      "parentAsin": "B0GZ9PT9VB",
+      "familyKey": "B0GZ9PT9VB",
+      "variationCount": 6,
+      "productAgeDays": 2703,
+      "title": "Kanto PDC650 Full Motion Corner TV Mount for 37-inch to 70-inch TVs | Supports up to 125 lbs | Swivel 40° | Tilt +15°/-3° | Black",
+      "brand": "Kanto",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "760796",
+        "172282",
+        "1266092011",
+        "3230976011",
+        "21217994011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "1266092011",
+          "name": "Television & Video"
+        },
+        {
+          "id": "3230976011",
+          "name": "Accessories"
+        },
+        {
+          "id": "21217994011",
+          "name": "TV Mounts, Stands & Turntables"
+        },
+        {
+          "id": "760796",
+          "name": "TV Wall & Ceiling Mounts"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 139.99,
+      "avg90": 164.4,
+      "rating": 4.7,
+      "reviewCount": 1264,
+      "rank": 34156,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71yOTKhoMVL.jpg",
+      "url": "https://www.amazon.com/dp/B07KX7Z4TS",
+      "keepa": "https://keepa.com/#!product/1-B07KX7Z4TS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B07VT254P6",
+      "parentAsin": "B0FDRB3N9H",
+      "familyKey": "B0FDRB3N9H",
+      "variationCount": 5,
+      "productAgeDays": 2474,
+      "title": "ASUS Chromebook C425 Clamshell Laptop, 14\" FHD 4-Way NanoEdge, Intel Core m3-8100Y Processor, 8GB RAM, 64GB eMMC Storage, Backlit KB, Silver, Chrome OS, C425TA-DH384",
+      "brand": "ASUS",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "13896615011",
+        "172282",
+        "541966",
+        "13896617011",
+        "565108"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "13896617011",
+          "name": "Computers & Tablets"
+        },
+        {
+          "id": "565108",
+          "name": "Laptops"
+        },
+        {
+          "id": "13896615011",
+          "name": "Traditional Laptops"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 199,
+      "avg90": 248.37,
+      "rating": 4.3,
+      "reviewCount": 657,
+      "rank": 6830,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71uKYKW95hL.jpg",
+      "url": "https://www.amazon.com/dp/B07VT254P6",
+      "keepa": "https://keepa.com/#!product/1-B07VT254P6",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0F6LQX3HH",
       "parentAsin": "B0FJXK64XK",
       "familyKey": "B0FJXK64XK",
@@ -13658,6 +15631,64 @@
       }
     },
     {
+      "asin": "B0F7QKTGQS",
+      "parentAsin": "B0H3HG3Y79",
+      "familyKey": "B0H3HG3Y79",
+      "variationCount": 19,
+      "productAgeDays": 335,
+      "title": "KTC 24 inch Gaming Monitor QHD 180Hz, Fast IPS 1440p Computer Monitor, Up to 185Hz, 1ms, G-Sync/FreeSync, HDR400, Height Adjustable, 2 x HDMI, 1 x DP H24T7",
+      "brand": "KTC",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "1292115011",
+        "172282",
+        "541966"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "1292115011",
+          "name": "Monitors"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 140.99,
+      "avg90": 176.05,
+      "rating": null,
+      "reviewCount": null,
+      "rank": 1161,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/714cMwbaB+L.jpg",
+      "url": "https://www.amazon.com/dp/B0F7QKTGQS",
+      "keepa": "https://keepa.com/#!product/1-B0F7QKTGQS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 62,
+      "scoreBreakdown": {
+        "rating": 0,
+        "discount": 29,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0G437W88Z",
       "parentAsin": "B0G4VPC2NZ",
       "familyKey": "B0G4VPC2NZ",
@@ -13723,7 +15754,13 @@
         "productAge": 0,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0G437W88Z",
+        "B0F65KT7MG"
+      ]
     },
     {
       "asin": "B0GD6GG75Q",
@@ -13989,6 +16026,195 @@
       }
     },
     {
+      "asin": "B004W4EB9G",
+      "parentAsin": "",
+      "familyKey": "B004W4EB9G",
+      "variationCount": 0,
+      "productAgeDays": 4138,
+      "title": "JBL Professional CSS8008 Commercial Series Round Ceiling Speaker, 8”. 5-Watt Multi-Tap Transformer for 100V, 70V and 25V Distributed Lines. Single Speaker. White and Paintable",
+      "brand": "JBL",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "12097474011",
+        "172282",
+        "667846011",
+        "172563"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "667846011",
+          "name": "Home Audio"
+        },
+        {
+          "id": "172563",
+          "name": "Speakers"
+        },
+        {
+          "id": "12097474011",
+          "name": "Ceiling & In-Wall Speakers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 36.36,
+      "avg90": 45.81,
+      "rating": 4.6,
+      "reviewCount": 266,
+      "rank": 23259,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81s1n3NdZAL.jpg",
+      "url": "https://www.amazon.com/dp/B004W4EB9G",
+      "keepa": "https://keepa.com/#!product/1-B004W4EB9G",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 61,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0934CH89P",
+      "parentAsin": "B0FR6SZTRF",
+      "familyKey": "B0FR6SZTRF",
+      "variationCount": 2,
+      "productAgeDays": 1858,
+      "title": "Polk Audio Reserve Series R700 Tower Speaker, 1\" Tweeter, 6.5\" Woofers & Dual 8\" Long-Throw Drivers, Hi-Res Certified, Dolby Atmos & IMAX Enhanced for Dynamic Home Theater Audio, Black",
+      "brand": "Polk Audio",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "3236453011",
+        "172282",
+        "667846011",
+        "172563"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "667846011",
+          "name": "Home Audio"
+        },
+        {
+          "id": "172563",
+          "name": "Speakers"
+        },
+        {
+          "id": "3236453011",
+          "name": "Floorstanding Speakers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 934.99,
+      "avg90": 1175.27,
+      "rating": 4.6,
+      "reviewCount": 96,
+      "rank": 36701,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61-EaGRkaVL.jpg",
+      "url": "https://www.amazon.com/dp/B0934CH89P",
+      "keepa": "https://keepa.com/#!product/1-B0934CH89P",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 61,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0002S31E2",
+      "parentAsin": "B0F7QZ4PPD",
+      "familyKey": "B0F7QZ4PPD",
+      "variationCount": 2,
+      "productAgeDays": 4560,
+      "title": "Roland RH-200 Stereo Monitor Headphones Black Coiled Cable – Clear, Accurate and Comfortable for Studio-Quality Monitoring",
+      "brand": "Roland",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "12097479011",
+        "172282",
+        "24046923011",
+        "172541"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "24046923011",
+          "name": "Headphones, Earbuds & Accessories"
+        },
+        {
+          "id": "172541",
+          "name": "Headphones & Earbuds"
+        },
+        {
+          "id": "12097479011",
+          "name": "Over-Ear Headphones"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 119.99,
+      "avg90": 151.64,
+      "rating": 4.4,
+      "reviewCount": 488,
+      "rank": 147960,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/516iq+P2hzL.jpg",
+      "url": "https://www.amazon.com/dp/B0002S31E2",
+      "keepa": "https://keepa.com/#!product/1-B0002S31E2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 61,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 31,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0G9317261",
       "parentAsin": "B0H3HB4XKK",
       "familyKey": "B0H3HB4XKK",
@@ -14248,6 +16474,273 @@
       }
     },
     {
+      "asin": "B0CNRHXGDY",
+      "parentAsin": "B0GHS12LKV",
+      "familyKey": "B0GHS12LKV",
+      "variationCount": 3,
+      "productAgeDays": 882,
+      "title": "KYY Portable Monitor for Laptop, 14\" FHD 1080P Travel Monitor, USB-C & HDMI Computer Gaming Screen with VESA Mount & Smart Cover, Dual Speakers, for Mac PC Phone Xbox PS5 Switch",
+      "brand": "KYY",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "1292115011",
+        "172282",
+        "541966"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "1292115011",
+          "name": "Monitors"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 62.99,
+      "avg90": 79.06,
+      "rating": 4.4,
+      "reviewCount": 345,
+      "rank": 7480,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61M63een3uL.jpg",
+      "url": "https://www.amazon.com/dp/B0CNRHXGDY",
+      "keepa": "https://keepa.com/#!product/1-B0CNRHXGDY",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FMF6W4GW",
+        "B0CNRHXGDY"
+      ]
+    },
+    {
+      "asin": "B07VHFS7N5",
+      "parentAsin": "B0FR996BG6",
+      "familyKey": "B0FR996BG6",
+      "variationCount": 6,
+      "productAgeDays": 2497,
+      "title": "Lenovo Think Center M700 Tiny Desktop PC, Intel Quad Core I5-6500T 2.5GHz up to 3.1G, 8G, 240G SSD, WiFi, BT 4.0, HDMI, USB 3.0, DP Port, W10P64 (Renewed)",
+      "brand": "Lenovo",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "13896591011",
+        "172282",
+        "541966",
+        "13896617011",
+        "565098"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "13896617011",
+          "name": "Computers & Tablets"
+        },
+        {
+          "id": "565098",
+          "name": "Desktops"
+        },
+        {
+          "id": "13896591011",
+          "name": "Minis"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 129.5,
+      "avg90": 162.33,
+      "rating": 4.4,
+      "reviewCount": 248,
+      "rank": 38208,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61He7hWFgiL.jpg",
+      "url": "https://www.amazon.com/dp/B07VHFS7N5",
+      "keepa": "https://keepa.com/#!product/1-B07VHFS7N5",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.817Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0829243B5",
+      "parentAsin": "",
+      "familyKey": "B0829243B5",
+      "variationCount": 0,
+      "productAgeDays": 2372,
+      "title": "Garmin (Refurbished) Forerunner 935 Sleek Sport Watch Running GPS Unit -Black (Renewed)",
+      "brand": "Garmin",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "617647011",
+        "172282",
+        "172526",
+        "219536011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "172526",
+          "name": "GPS, Finders & Accessories"
+        },
+        {
+          "id": "219536011",
+          "name": "Sports & Handheld GPS"
+        },
+        {
+          "id": "617647011",
+          "name": "Running GPS Units"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 129.95,
+      "avg90": 162.57,
+      "rating": 4.4,
+      "reviewCount": 75,
+      "rank": 47273,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71trCk+mk4L.jpg",
+      "url": "https://www.amazon.com/dp/B0829243B5",
+      "keepa": "https://keepa.com/#!product/1-B0829243B5",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.817Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B07NSCZ6SP",
+      "parentAsin": "",
+      "familyKey": "B07NSCZ6SP",
+      "variationCount": 0,
+      "productAgeDays": 2636,
+      "title": "KICKER 46CSS654 CS-Series CSS65 6.5-Inch (160mm) Component System with .75-inch tweeters, 4-Ohm (Pair)",
+      "brand": "KICKER",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "10980771",
+        "172282",
+        "3248684011",
+        "1077068",
+        "226184"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "3248684011",
+          "name": "Car & Vehicle Electronics"
+        },
+        {
+          "id": "1077068",
+          "name": "Car Electronics"
+        },
+        {
+          "id": "226184",
+          "name": "Car Audio"
+        },
+        {
+          "id": "760560",
+          "name": "Speakers"
+        },
+        {
+          "id": "10980771",
+          "name": "Coaxial Speakers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 143.96,
+      "avg90": 179.65,
+      "rating": 4.6,
+      "reviewCount": 189,
+      "rank": 48291,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81H-DXP9IzL.jpg",
+      "url": "https://www.amazon.com/dp/B07NSCZ6SP",
+      "keepa": "https://keepa.com/#!product/1-B07NSCZ6SP",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.817Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0FZF9CZKN",
       "parentAsin": "B0H2JTG8KN",
       "familyKey": "B0H2JTG8KN",
@@ -14432,6 +16925,311 @@
       }
     },
     {
+      "asin": "B06XH4RF7J",
+      "parentAsin": "B0D849RG7X",
+      "familyKey": "B0D849RG7X",
+      "variationCount": 2,
+      "productAgeDays": 3367,
+      "title": "beats by Dr. Dre EP On-Ear Headphones - Black (Renewed)",
+      "brand": "Beats",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "12097480011",
+        "172282",
+        "24046923011",
+        "172541"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "24046923011",
+          "name": "Headphones, Earbuds & Accessories"
+        },
+        {
+          "id": "172541",
+          "name": "Headphones & Earbuds"
+        },
+        {
+          "id": "12097480011",
+          "name": "On-Ear Headphones"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 59.99,
+      "avg90": 69.24,
+      "rating": 4.2,
+      "reviewCount": 1652,
+      "rank": 21681,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51cQqUVl+UL.jpg",
+      "url": "https://www.amazon.com/dp/B06XH4RF7J",
+      "keepa": "https://keepa.com/#!product/1-B06XH4RF7J",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 20,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B07R6NXKQZ",
+      "parentAsin": "B09BW4G9TL",
+      "familyKey": "B09BW4G9TL",
+      "variationCount": 3,
+      "productAgeDays": 2537,
+      "title": "Epson Pro EX9210 1080p Plus WUXGA 3,400 lumens Color Brightness (Color Light Output) 3,400 lumens White Brightness (White Light Output) Wireless HDMI MHL 3LCD Projector (Renewed)",
+      "brand": "Epson",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "300334",
+        "172282"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "300334",
+          "name": "Video Projectors"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 499,
+      "avg90": 620.77,
+      "rating": 4.4,
+      "reviewCount": 181,
+      "rank": 52555,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Kbbu9PhQL.jpg",
+      "url": "https://www.amazon.com/dp/B07R6NXKQZ",
+      "keepa": "https://keepa.com/#!product/1-B07R6NXKQZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B09LCFWSM2",
+      "parentAsin": "",
+      "familyKey": "B09LCFWSM2",
+      "variationCount": 0,
+      "productAgeDays": 1662,
+      "title": "2021 HP Envy x360 2-in-1 Laptop, 15.6\" Full HD Touchscreen, AMD Ryzen 5 5500U Processor up to 4.6GHz, 8GB Memory, 256GB PCIe SSD, Backlit Keyboard, HDMI, Wi-Fi, Windows 11 Home, Nightfall Black",
+      "brand": "HP",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "13896609011",
+        "172282",
+        "541966",
+        "13896617011",
+        "565108"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "13896617011",
+          "name": "Computers & Tablets"
+        },
+        {
+          "id": "565108",
+          "name": "Laptops"
+        },
+        {
+          "id": "13896609011",
+          "name": "2 in 1 Laptops"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 549,
+      "avg90": 686.78,
+      "rating": 4.2,
+      "reviewCount": 161,
+      "rank": 82261,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41BZdQruEzL.jpg",
+      "url": "https://www.amazon.com/dp/B09LCFWSM2",
+      "keepa": "https://keepa.com/#!product/1-B09LCFWSM2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0BPNMY2XC",
+      "parentAsin": "",
+      "familyKey": "B0BPNMY2XC",
+      "variationCount": 0,
+      "productAgeDays": 1269,
+      "title": "Vinyl Record Player Bluetooth Turntable with 2 Built-in Speakers 3-Speed Vintage LP Player, Support Bluetooth in RCA Out Aux in Headphone Jack",
+      "brand": "Kedok",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "3003611",
+        "172282",
+        "667846011",
+        "9977443011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "667846011",
+          "name": "Home Audio"
+        },
+        {
+          "id": "9977443011",
+          "name": "Turntables & Accessories"
+        },
+        {
+          "id": "3003611",
+          "name": "Turntables"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg90": 49.62,
+      "rating": 4.4,
+      "reviewCount": 160,
+      "rank": 92826,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61oUZ0X5bfL.jpg",
+      "url": "https://www.amazon.com/dp/B0BPNMY2XC",
+      "keepa": "https://keepa.com/#!product/1-B0BPNMY2XC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0D2P3XPKN",
+      "parentAsin": "",
+      "familyKey": "B0D2P3XPKN",
+      "variationCount": 0,
+      "productAgeDays": 746,
+      "title": "POFOTO 17.5” Portable DVD Player with 15.6” Large HD Screen, 6 Hours Rechargeable Battery, Dual Speakers, Region Free, Remote Control, Support Multi-Format Sync TV, USB/SD, Black",
+      "brand": "pofoto",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "172521",
+        "172282",
+        "172623"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "172623",
+          "name": "Portable Audio & Video"
+        },
+        {
+          "id": "172521",
+          "name": "Portable DVD Players"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 89.98,
+      "avg90": 112.12,
+      "rating": 4.5,
+      "reviewCount": 480,
+      "rank": 8814,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/719UmIbCIXL.jpg",
+      "url": "https://www.amazon.com/dp/B0D2P3XPKN",
+      "keepa": "https://keepa.com/#!product/1-B0D2P3XPKN",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0FP93BRPR",
       "parentAsin": "B0GKG3RD34",
       "familyKey": "B0GKG3RD34",
@@ -14481,64 +17279,6 @@
       "scoreBreakdown": {
         "rating": 21,
         "discount": 37,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 0,
-        "productAge": 0,
-        "streamFit": 0,
-        "brand": 0
-      }
-    },
-    {
-      "asin": "B0FMF6W4GW",
-      "parentAsin": "B0GHS12LKV",
-      "familyKey": "B0GHS12LKV",
-      "variationCount": 3,
-      "productAgeDays": 252,
-      "title": "KYY 4K Portable Monitor – 15.6\" UHD IPS Travel Display, Slim & Lightweight Design, HDMI & USB-C Inputs, Perfect for PS5, Xbox, Switch, Laptops, Phones, and On-the-Go Professionals, K5",
-      "brand": "KYY",
-      "brandTier": "off",
-      "category": "dudes",
-      "keepaCategoryIds": [
-        "1292115011",
-        "172282",
-        "541966"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "172282",
-          "name": "Electronics"
-        },
-        {
-          "id": "541966",
-          "name": "Computers & Accessories"
-        },
-        {
-          "id": "1292115011",
-          "name": "Monitors"
-        }
-      ],
-      "sourceStream": "dudes_power",
-      "sources": [
-        "keepa"
-      ],
-      "price": 178.19,
-      "avg90": 234.76,
-      "rating": 4.4,
-      "reviewCount": 345,
-      "rank": 7667,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71iVihOChpL.jpg",
-      "url": "https://www.amazon.com/dp/B0FMF6W4GW",
-      "keepa": "https://keepa.com/#!product/1-B0FMF6W4GW",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": false,
-      "updatedAt": "2026-06-01T12:31:09.526Z",
-      "dealScore": 58,
-      "scoreBreakdown": {
-        "rating": 22,
-        "discount": 36,
         "rank": 0,
         "reviews": 0,
         "variationFamily": 0,
@@ -14611,6 +17351,138 @@
         "reviews": 0,
         "variationFamily": 0,
         "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0BYPMMLTR",
+      "parentAsin": "B0DCGT2PMB",
+      "familyKey": "B0DCGT2PMB",
+      "variationCount": 2,
+      "productAgeDays": 1081,
+      "title": "Sony QD-OLED 77 inch BRAVIA XR A95L Series 4K Ultra HD TV: Smart Google TV with Dolby Vision HDR and Exclusive Gaming Features for The PlayStation® 5 XR77A95L- Latest Model,Black",
+      "brand": "Sony",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "6459737011",
+        "172282",
+        "1266092011",
+        "172659"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "1266092011",
+          "name": "Television & Video"
+        },
+        {
+          "id": "172659",
+          "name": "Televisions"
+        },
+        {
+          "id": "6459737011",
+          "name": "LED & LCD TVs"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 3498,
+      "avg90": 4358.31,
+      "rating": 4.2,
+      "reviewCount": 276,
+      "rank": 26933,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81G+fnlLWcL.jpg",
+      "url": "https://www.amazon.com/dp/B0BYPMMLTR",
+      "keepa": "https://keepa.com/#!product/1-B0BYPMMLTR",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.817Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B07JKM5937",
+      "parentAsin": "",
+      "familyKey": "B07JKM5937",
+      "variationCount": 0,
+      "productAgeDays": 2775,
+      "title": "Kuryakyn 2720 MTX Road Thunder Weather Resistant Motorcycle Sound Bar Plus: 300 Watt Handlebar Mounted Audio Speakers with Bluetooth, USB Power Charger, Satin Black",
+      "brand": "Kuryakyn",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "3248692011",
+        "2407781011",
+        "172282",
+        "3248684011",
+        "10981291",
+        "10981681"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "3248684011",
+          "name": "Car & Vehicle Electronics"
+        },
+        {
+          "id": "10981291",
+          "name": "Vehicle Electronics Accessories"
+        },
+        {
+          "id": "10981681",
+          "name": "Audio & Video Accessories"
+        },
+        {
+          "id": "3248692011",
+          "name": "Speaker Systems"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 449,
+      "avg90": 516.57,
+      "rating": 4.2,
+      "reviewCount": 1893,
+      "rank": 49218,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/512-UE2jcTL.jpg",
+      "url": "https://www.amazon.com/dp/B07JKM5937",
+      "keepa": "https://keepa.com/#!product/1-B07JKM5937",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.817Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 19,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
         "streamFit": 0,
         "brand": 0
       }
@@ -14807,6 +17679,122 @@
       }
     },
     {
+      "asin": "B0DT71XLBT",
+      "parentAsin": "B0GQK8QHVG",
+      "familyKey": "B0GQK8QHVG",
+      "variationCount": 4,
+      "productAgeDays": 464,
+      "title": "qaf 15.6 Inch Portable Monitor 1080P USB-C HDMI Display, Ultra-Thin IPS Screen, 100% sRGB, Travel Second Monitor for Laptop Mac PC Phone PS5 Xbox, Built-in Speakers, Space Gray",
+      "brand": "qaf",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "1292115011",
+        "172282",
+        "541966"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "1292115011",
+          "name": "Monitors"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg90": 51.51,
+      "rating": 4.3,
+      "reviewCount": 92,
+      "rank": 7589,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71qpTmVkhqL.jpg",
+      "url": "https://www.amazon.com/dp/B0DT71XLBT",
+      "keepa": "https://keepa.com/#!product/1-B0DT71XLBT",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 57,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 33,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B00069RB1Q",
+      "parentAsin": "B00XI7R816",
+      "familyKey": "B00XI7R816",
+      "variationCount": 1,
+      "productAgeDays": 5547,
+      "title": "Pyramid Universal Compact Bench Power Supply - 5 Amp Linear Regulated Home Lab Benchtop AC-to-DC 12V Converter w/ 13.8 Volt DC 115V AC 70 Watt Power Input, Screw Type Terminals, Cooling Fan - PS7KX",
+      "brand": "Pyramid",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "10967761",
+        "172282",
+        "21608215011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "21608215011",
+          "name": "Power Accessories"
+        },
+        {
+          "id": "10967761",
+          "name": "Power Converters"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 42.99,
+      "avg90": 52.18,
+      "rating": 4.6,
+      "reviewCount": 488,
+      "rank": 155768,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61j-aVGionL.jpg",
+      "url": "https://www.amazon.com/dp/B00069RB1Q",
+      "keepa": "https://keepa.com/#!product/1-B00069RB1Q",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 57,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 26,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0F2H9ZJK1",
       "parentAsin": "B0GXZS9J1N",
       "familyKey": "B0GXZS9J1N",
@@ -14860,6 +17848,127 @@
         "reviews": 0,
         "variationFamily": 0,
         "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0FP2M6QWX",
+      "parentAsin": "B0FSJJJB18",
+      "familyKey": "B0FSJJJB18",
+      "variationCount": 3,
+      "productAgeDays": 250,
+      "title": "Smart Watches for Men, Military Smart Watch with 100 Days Battery/Flashlight/Heart Rate/Sleep/SpO2 Monitor/Call/110+ Sports Mode, 5 ATM Rugged Men's Fitness Tracker Watch for Android iPhone Compatible",
+      "brand": "BANLVS",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "7939901011",
+        "172282",
+        "10048700011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "10048700011",
+          "name": "Wearable Technology"
+        },
+        {
+          "id": "7939901011",
+          "name": "Smartwatches"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg90": 50,
+      "rating": 4.3,
+      "reviewCount": 540,
+      "rank": 6922,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81CMnSI-awL.jpg",
+      "url": "https://www.amazon.com/dp/B0FP2M6QWX",
+      "keepa": "https://keepa.com/#!product/1-B0FP2M6QWX",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 56,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0CHJ87V95",
+      "parentAsin": "B0CYTJLPN1",
+      "familyKey": "B0CYTJLPN1",
+      "variationCount": 3,
+      "productAgeDays": 998,
+      "title": "Hisense 65” Class U6 Series ULED 4K UHD Smart Fire TV (65U6HF, 2024) - QLED, Full Array Local Dimming, 600-Nit, Dolby Vision HDR 10+, HDMI 2.1, MEMC, 240 Motion Rate with VRR, Alexa Compatibility",
+      "brand": "Hisense",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "21489946011",
+        "172282",
+        "1266092011",
+        "172659"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "1266092011",
+          "name": "Television & Video"
+        },
+        {
+          "id": "172659",
+          "name": "Televisions"
+        },
+        {
+          "id": "21489946011",
+          "name": "QLED TVs"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 398.99,
+      "avg90": 452.96,
+      "rating": 4.2,
+      "reviewCount": 4848,
+      "rank": 23363,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71oAhtaqY1L.jpg",
+      "url": "https://www.amazon.com/dp/B0CHJ87V95",
+      "keepa": "https://keepa.com/#!product/1-B0CHJ87V95",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.817Z",
+      "dealScore": 56,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
         "streamFit": 0,
         "brand": 0
       }
@@ -15041,6 +18150,133 @@
         "productAge": 0,
         "streamFit": 0,
         "brand": 0
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0F9PDZKGK",
+        "B0FPFMQN36"
+      ]
+    },
+    {
+      "asin": "B0GNM36ZV2",
+      "parentAsin": "B0GXF9S8XK",
+      "familyKey": "B0GXF9S8XK",
+      "variationCount": 4,
+      "productAgeDays": 104,
+      "title": "Lenovo Ultra Portable Student Laptop Computer, 14\" HD Display, 20GB RAM, 256GB SSD, 500GB External HDD, Office 365, Intel Dual-Core, WiFi, Bluetooth, USB-C, Win 11",
+      "brand": "Lenovo",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "13896617011",
+        "172282",
+        "541966"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "13896617011",
+          "name": "Computers & Tablets"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 499.99,
+      "avg90": 636.28,
+      "rating": 4.4,
+      "reviewCount": 244,
+      "rank": 113238,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/813fa3RbMYL.jpg",
+      "url": "https://www.amazon.com/dp/B0GNM36ZV2",
+      "keepa": "https://keepa.com/#!product/1-B0GNM36ZV2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 32,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0DFZG2LG1",
+      "parentAsin": "B0DFZ4V1P8",
+      "familyKey": "B0DFZ4V1P8",
+      "variationCount": 1,
+      "productAgeDays": 621,
+      "title": "Portable Bluetooth Speaker 100W Big Powerful Wireless Boombox TWS Pairing Loud Stereo Sound Deep Bass Large Party Speakers with Subwoofer LED Lights for Outdoor Home Camping",
+      "brand": "TYOTY",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "7073956011",
+        "172282",
+        "172623",
+        "689637011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "172623",
+          "name": "Portable Audio & Video"
+        },
+        {
+          "id": "689637011",
+          "name": "Portable Speakers & Docks"
+        },
+        {
+          "id": "7073956011",
+          "name": "Portable Bluetooth Speakers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 66.41,
+      "avg90": 83.04,
+      "rating": 4.3,
+      "reviewCount": 354,
+      "rank": 12830,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71Gc3E9WsvL.jpg",
+      "url": "https://www.amazon.com/dp/B0DFZG2LG1",
+      "keepa": "https://keepa.com/#!product/1-B0DFZG2LG1",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
       }
     },
     {
@@ -15102,6 +18338,525 @@
         "reviews": 0,
         "variationFamily": 0,
         "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0DXN3RB8Z",
+      "parentAsin": "B0F1N5H8H7",
+      "familyKey": "B0F1N5H8H7",
+      "variationCount": 5,
+      "productAgeDays": 432,
+      "title": "Samsung 75-Inch Class Neo QLED 4K QN80F Series, Vision AI, Mini LED Smart TV (2025 Model, 75QN80F) Neo Quantum HDR, Object Tracking Sound Lite w/Dolby Atmos, NQ4 AI Gen2 Processor, Alexa Built-in",
+      "brand": "Samsung",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "21489946011",
+        "172282",
+        "1266092011",
+        "172659"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "1266092011",
+          "name": "Television & Video"
+        },
+        {
+          "id": "172659",
+          "name": "Televisions"
+        },
+        {
+          "id": "21489946011",
+          "name": "QLED TVs"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1087.99,
+      "avg90": 1357.11,
+      "rating": 4.2,
+      "reviewCount": 172,
+      "rank": 7682,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/91blSirEjOL.jpg",
+      "url": "https://www.amazon.com/dp/B0DXN3RB8Z",
+      "keepa": "https://keepa.com/#!product/1-B0DXN3RB8Z",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 53,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0GKNXWRZK",
+      "parentAsin": "B0GX9KBZZS",
+      "familyKey": "B0GX9KBZZS",
+      "variationCount": 2,
+      "productAgeDays": 113,
+      "title": "Yonvim 2.5K Dash Cam Front and Rear with 64GB Card, Car Camera with 3.39\" IPS Screen, WDR Night Vision, Parking Monitor, G-Sensor Dash Camera",
+      "brand": "Yonvim",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "3248689011",
+        "172282",
+        "3248684011",
+        "1077068",
+        "10980521"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "3248684011",
+          "name": "Car & Vehicle Electronics"
+        },
+        {
+          "id": "1077068",
+          "name": "Car Electronics"
+        },
+        {
+          "id": "10980521",
+          "name": "Car Video"
+        },
+        {
+          "id": "3248689011",
+          "name": "On-Dash Cameras"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 46.99,
+      "avg90": 59.61,
+      "rating": 4.5,
+      "reviewCount": 328,
+      "rank": 26972,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/810DiHShMTL.jpg",
+      "url": "https://www.amazon.com/dp/B0GKNXWRZK",
+      "keepa": "https://keepa.com/#!product/1-B0GKNXWRZK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 53,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 31,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0D89DZNX3",
+      "parentAsin": "",
+      "familyKey": "B0D89DZNX3",
+      "variationCount": 0,
+      "productAgeDays": 692,
+      "title": "KICKER 51HS10 Hideaway Compact Powered Subwoofer, 10-Inch",
+      "brand": "KICKER",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "1294866011",
+        "172282",
+        "3248684011",
+        "1077068",
+        "226184"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "3248684011",
+          "name": "Car & Vehicle Electronics"
+        },
+        {
+          "id": "1077068",
+          "name": "Car Electronics"
+        },
+        {
+          "id": "226184",
+          "name": "Car Audio"
+        },
+        {
+          "id": "3009141",
+          "name": "Subwoofers"
+        },
+        {
+          "id": "1294866011",
+          "name": "Component Subwoofers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 319.96,
+      "avg90": 395.16,
+      "rating": 4.4,
+      "reviewCount": 125,
+      "rank": 18292,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81XNWBqKHcL.jpg",
+      "url": "https://www.amazon.com/dp/B0D89DZNX3",
+      "keepa": "https://keepa.com/#!product/1-B0D89DZNX3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 53,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 28,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0FFH2WV3M",
+      "parentAsin": "B0G1TQS2CQ",
+      "familyKey": "B0G1TQS2CQ",
+      "variationCount": 3,
+      "productAgeDays": 220,
+      "title": "Vinyl Record Player with Built-in Speakers 3-Speed Vintage Record Player Bluetooth Portable Suitcase Turntable Belt-Driven LP Player Support RCA Output and Headphone Output (Pink)",
+      "brand": "RetroAudio",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "3003611",
+        "172282",
+        "667846011",
+        "9977443011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "667846011",
+          "name": "Home Audio"
+        },
+        {
+          "id": "9977443011",
+          "name": "Turntables & Accessories"
+        },
+        {
+          "id": "3003611",
+          "name": "Turntables"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg90": 62.98,
+      "rating": 4.4,
+      "reviewCount": 361,
+      "rank": 9553,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71G+vRnlPYL.jpg",
+      "url": "https://www.amazon.com/dp/B0FFH2WV3M",
+      "keepa": "https://keepa.com/#!product/1-B0FFH2WV3M",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 52,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0FQBQVJ5W",
+      "parentAsin": "B0GBV25317",
+      "familyKey": "B0GBV25317",
+      "variationCount": 2,
+      "productAgeDays": 219,
+      "title": "Vinyl Record Player Bluetooth Turntable with Built in Stereo Speakers Belt Drive 3 Speeds Vintage Turntables for Vinyl Records Support RCA Output, Aux in, Auto Stop, Light Walnut",
+      "brand": "RetroAudio",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "3003611",
+        "172282",
+        "667846011",
+        "9977443011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "667846011",
+          "name": "Home Audio"
+        },
+        {
+          "id": "9977443011",
+          "name": "Turntables & Accessories"
+        },
+        {
+          "id": "3003611",
+          "name": "Turntables"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 59.98,
+      "avg90": 75.92,
+      "rating": 4.3,
+      "reviewCount": 256,
+      "rank": 15493,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Vu9i6qt2L.jpg",
+      "url": "https://www.amazon.com/dp/B0FQBQVJ5W",
+      "keepa": "https://keepa.com/#!product/1-B0FQBQVJ5W",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.815Z",
+      "dealScore": 52,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 31,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0GFVV5DXZ",
+      "parentAsin": "B0GZPRV9S3",
+      "familyKey": "B0GZPRV9S3",
+      "variationCount": 3,
+      "productAgeDays": 95,
+      "title": "2026 Android tablet 10 inch, Android 15 Tablet with Keyboard, 24GB+256GB+2TB Expand, 2 in 1 Tablets with Gemini AI, 8-Core, 8000mAh, Widevine L1, GMS, Tablets PC with Case, Mouse, Stylus (Black Case)",
+      "brand": "Suicoey",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "1232597011",
+        "172282",
+        "541966",
+        "13896617011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "13896617011",
+          "name": "Computers & Tablets"
+        },
+        {
+          "id": "1232597011",
+          "name": "Tablets"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.99,
+      "avg90": 125.5,
+      "rating": 4.2,
+      "reviewCount": 153,
+      "rank": 16853,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81jv9fP4Q-L.jpg",
+      "url": "https://www.amazon.com/dp/B0GFVV5DXZ",
+      "keepa": "https://keepa.com/#!product/1-B0GFVV5DXZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 51,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0GFW38WLY",
+        "B0GFVV5DXZ"
+      ]
+    },
+    {
+      "asin": "B0FQHGNVY1",
+      "parentAsin": "B0GVSCZN7J",
+      "familyKey": "B0GVSCZN7J",
+      "variationCount": 4,
+      "productAgeDays": 249,
+      "title": "AOKER One Cable Connection Triple Laptop Screen Extender - Ultra Thin 14\" Monitor IPS FHD 1080P Lightweight Portable Display for 13\"-17\" Laptops Compatible with Windows Mac Chrome Travel Work Setup",
+      "brand": "AOKER",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "1292115011",
+        "172282",
+        "541966"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "1292115011",
+          "name": "Monitors"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 260.99,
+      "avg90": 326.73,
+      "rating": 4.3,
+      "reviewCount": 315,
+      "rank": 9876,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71idi4rjMrL.jpg",
+      "url": "https://www.amazon.com/dp/B0FQHGNVY1",
+      "keepa": "https://keepa.com/#!product/1-B0FQHGNVY1",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.816Z",
+      "dealScore": 51,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0DD7YY41Z",
+      "parentAsin": "B0GTGSTZNC",
+      "familyKey": "B0GTGSTZNC",
+      "variationCount": 3,
+      "productAgeDays": 642,
+      "title": "Yistao Bone Conduction Headphones, Open Ear Headphones Wireless Earphones, 32GB MP3, 8 Hours Playtime, Bluetooth 5.3, IP68 Waterproof Earphones for Running and Fitness Workout - Red",
+      "brand": "Yistao",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "99530371011",
+        "172282",
+        "24046923011",
+        "172541"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "24046923011",
+          "name": "Headphones, Earbuds & Accessories"
+        },
+        {
+          "id": "172541",
+          "name": "Headphones & Earbuds"
+        },
+        {
+          "id": "99530371011",
+          "name": "Open-Ear Headphones"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 43.69,
+      "avg90": 50.82,
+      "rating": 4.2,
+      "reviewCount": 523,
+      "rank": 26086,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51irb5r9SaL.jpg",
+      "url": "https://www.amazon.com/dp/B0DD7YY41Z",
+      "keepa": "https://keepa.com/#!product/1-B0DD7YY41Z",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.817Z",
+      "dealScore": 50,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
         "streamFit": 0,
         "brand": 0
       }
@@ -15223,6 +18978,64 @@
       "dealScore": 40,
       "scoreBreakdown": {
         "rating": 22,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B01KJVERF8",
+      "parentAsin": "B0BTBTFRNK",
+      "familyKey": "B0BTBTFRNK",
+      "variationCount": 3,
+      "productAgeDays": 3515,
+      "title": "Eyoyo 12\" Inch TFT LCD Monitor with AV HDMI BNC VGA Input 1366x768 Portable Mini HD Color Screen Display with Built-in Speaker",
+      "brand": "Eyoyo",
+      "brandTier": "off",
+      "category": "dudes",
+      "keepaCategoryIds": [
+        "1292115011",
+        "172282",
+        "541966"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "Electronics"
+        },
+        {
+          "id": "541966",
+          "name": "Computers & Accessories"
+        },
+        {
+          "id": "1292115011",
+          "name": "Monitors"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.99,
+      "avg90": 99.67,
+      "rating": 4.2,
+      "reviewCount": 1141,
+      "rank": 30755,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/712PkngAYcL.jpg",
+      "url": "https://www.amazon.com/dp/B01KJVERF8",
+      "keepa": "https://keepa.com/#!product/1-B01KJVERF8",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-01T14:34:52.817Z",
+      "dealScore": 39,
+      "scoreBreakdown": {
+        "rating": 21,
         "discount": 0,
         "rank": 0,
         "reviews": 10,

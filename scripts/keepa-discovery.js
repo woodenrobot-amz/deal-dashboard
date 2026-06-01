@@ -15,35 +15,32 @@ dudes_power: {
   selection: {
     productType: [0],
 
-    rootCategory: [
-      "172282",   // Electronics
-    ],
+    rootCategory: ["172282"],
 
-    current_SALES_gte: 1,
-    current_SALES_lte: 150000,
-    current_RATING_gte: 42,
-    current_COUNT_REVIEWS_gte: 75,
-    current_BUY_BOX_SHIPPING_gte: 7500,
-   isLowest90_BUY_BOX_SHIPPING: true,
-    deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
+current_SALES_gte: 1,
+current_SALES_lte: 150000,
+current_RATING_gte: 42,
+current_COUNT_REVIEWS_gte: 75,
+current_BUY_BOX_SHIPPING_gte: 3000,
 
-    
+isLowest90_BUY_BOX_SHIPPING: true,
+deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
 
-    categories_exclude: [
-      "172435",     // cases/covers if this is the noisy one in your data
-      "3011391011", // screen protectors/accessories if noisy
-      "502394",
-      "524136"
-    ],
+categories_exclude: [
+  "172435",
+  "3011391011",
+  "502394",
+  "524136"
+],
 
-    sort: [
-      ["deltaPercent90_BUY_BOX_SHIPPING", "desc"],
-      ["current_SALES", "asc"]
-    ],
+sort: [
+  ["deltaPercent90_BUY_BOX_SHIPPING", "desc"],
+  ["current_SALES", "asc"]
+],
 
-    page: 0,
-    perPage: 500
-  }
+page: 0,
+perPage: 500
+}
 },
 
   woodworking_core: {

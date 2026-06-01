@@ -10,7 +10,7 @@ jobs:
 analyze:
 runs-on: ubuntu-latest
 
-```
+
 steps:
   - name: Checkout repo
     uses: actions/checkout@v4
@@ -28,4 +28,4 @@ steps:
     with:
       name: deal-analysis-report
       path: analysis-report.txt
-```
+

@@ -17,8 +17,6 @@ dudes_power: {
 
     rootCategory: [
       "172282",   // Electronics
-      "228013",   // Tools & Home Improvement
-      "16310091"  // Industrial & Scientific
     ],
 
     current_SALES_gte: 1,
@@ -29,13 +27,7 @@ dudes_power: {
    isLowest90_BUY_BOX_SHIPPING: true,
     deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
 
-    brand: [
-  "Jackery",
-  "EcoFlow",
-  "BLUETTI",
-  "Goal Zero",
-  "Zendure"
-],
+    
 
     categories_exclude: [
       "172435",     // cases/covers if this is the noisy one in your data

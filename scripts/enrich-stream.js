@@ -43,18 +43,11 @@ const TOP_TIER_BRANDS = new Set([
   "woodriver",
   "veritas",
   "lee valley",
-"Anker",
-      "UGREEN",
-      "Baseus",
-      "Jackery",
-      "EcoFlow",
-      "BLUETTI",
-      "Goal Zero",
-      "Zendure",
-      "Belkin",
-      "Kasa",
-      "TP-Link",
-      "Govee"
+"anker",
+      "jackery",
+      "ecoflow",
+      "bluetti",
+"govee"
 ]);
 
 const MID_TIER_BRANDS = new Set([
@@ -78,6 +71,13 @@ const MID_TIER_BRANDS = new Set([
 "fein",
 "workpro",
 "spetool",
+"ugreen",
+"baseus",
+"belkin",
+"kasa",
+"tp-link",
+"zendure",
+"goal zero"
 ]);
 
 const TOP_TIER_BRAND_BOOST = 20;
@@ -331,10 +331,6 @@ function scoreDeal(d) {
 
 function getUiCategory(streamName) {
   if (streamName.startsWith("woodworking")) return "woodworking";
-  return streamName;
-}
-
-function getUiCategory(streamName) {
   if (streamName.startsWith("dudes")) return "dudes";
   return streamName;
 }

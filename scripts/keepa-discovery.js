@@ -292,7 +292,20 @@ deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
     "costume",
     "pet",
     "dog",
-    "cat"
+    "cat",
+"flashlight",
+  "flash light",
+  "headlamp",
+  "head lamp",
+  "work light",
+  "inspection light",
+  "tactical light",
+  "pocket knife",
+  "folding knife",
+  "knife",
+  "knives",
+  "blade",
+  "edc"
   ]
 }
         

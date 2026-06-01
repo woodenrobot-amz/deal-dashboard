@@ -334,6 +334,11 @@ function getUiCategory(streamName) {
   return streamName;
 }
 
+function getUiCategory(streamName) {
+  if (streamName.startsWith("dudes")) return "dudes";
+  return streamName;
+}
+
 function normalizeProduct(p, streamName) {
   const asin = normalizeAsin(p.asin);
   const parentAsin = getParentAsin(p);

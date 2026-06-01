@@ -6,7 +6,7 @@ const STREAM_NAME = process.argv[2];
 const ENRICH_LIMITS = {
   woodworking_core: 100,
   woodworking: 100,
-  deals_for_dudes: 100,
+  dudes_power: 100,
   three_d_printing: 10,
 deals_for_dudes: 100,
 };

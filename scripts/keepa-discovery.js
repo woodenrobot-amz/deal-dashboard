@@ -27,12 +27,15 @@ dudes_power: {
     current_COUNT_REVIEWS_gte: 75,
     current_BUY_BOX_SHIPPING_gte: 7500,
 
-    isLowest90_BUY_BOX_SHIPPING: true,
     deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
 
     brand: [
-      "Anker"
-    ],
+  "Jackery",
+  "EcoFlow",
+  "BLUETTI",
+  "Goal Zero",
+  "Zendure"
+],
 
     categories_exclude: [
       "172435",     // cases/covers if this is the noisy one in your data

@@ -139,11 +139,13 @@ function buildProductUrl(asins) {
   );
 }
 
-function cleanTitle(value) {
+function cleanText(value) {
   return String(value || "")
     .replace(/^"+|"+$/g, "")
     .replace(/""/g, '"')
-    .trim();
+    .trim()
+    .toLowerCase();
+
 }
 
 function priceFrom(values = []) {
@@ -204,7 +206,7 @@ function getKeepaCategoryTree(p) {
 
   return p.categoryTree.map(cat => ({
     id: String(cat.catId || "").trim(),
-    name: String(cat.name || "").trim()
+    name: String(cat.name || "").trim().toLowerCase()
   })).filter(cat => cat.id || cat.name);
 }
 
@@ -330,9 +332,7 @@ function scoreDeal(d) {
 }
 
 function getUiCategory(streamName) {
-  if (streamName.startsWith("woodworking")) return "woodworking";
-  if (streamName.startsWith("dudes")) return "dudes";
-  return streamName;
+  return String(streamName || "").toLowerCase();
 }
 
 function normalizeProduct(p, streamName) {
@@ -349,8 +349,8 @@ function normalizeProduct(p, streamName) {
     familyKey: parentAsin || asin,
     variationCount,
     productAgeDays,
-    title: cleanTitle(p.title),
-    brand: cleanTitle(p.brand),
+    title: cleanText(p.title),
+    brand: cleanText(p.brand),
     brandTier: getBrandTier(p.brand),
     category: getUiCategory(streamName),
 keepaCategoryIds: getKeepaCategoryIds(p),

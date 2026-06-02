@@ -213,7 +213,7 @@ three_d_printing: {
     perPage: 1000,
     page: 0
   }
-}  
+},
 
 deals_for_dudes: {
   name: "deals_for_dudes",

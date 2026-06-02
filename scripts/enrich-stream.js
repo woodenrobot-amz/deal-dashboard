@@ -508,20 +508,38 @@ async function fetchProducts(asins) {
     };
   }
 
-  console.log(`Enriching ${asins.length} ${STREAM_NAME} ASINs...`);
+  const MAX_BATCH_SIZE = 100;
+  const allProducts = [];
+  let latestTokensLeft = null;
 
-  const res = await fetch(buildProductUrl(asins));
-  const data = await res.json();
+  for (let i = 0; i < asins.length; i += MAX_BATCH_SIZE) {
+    const batch = asins.slice(i, i + MAX_BATCH_SIZE);
 
-  if (data.error) {
-    throw new Error(JSON.stringify(data.error));
+    console.log(
+      `Enriching batch ${Math.floor(i / MAX_BATCH_SIZE) + 1}: ${batch.length} ${STREAM_NAME} ASINs...`
+    );
+
+    const res = await fetch(buildProductUrl(batch));
+    const data = await res.json();
+
+    if (data.error) {
+      throw new Error(JSON.stringify(data.error));
+    }
+
+    console.log(`Tokens consumed: ${data.tokensConsumed}, tokens left: ${data.tokensLeft}`);
+
+    allProducts.push(...(data.products || []));
+    latestTokensLeft = data.tokensLeft;
+
+    if (latestTokensLeft !== null && latestTokensLeft < TOKEN_FLOOR) {
+      console.log(`Token floor reached. Stopping after this batch. Tokens left: ${latestTokensLeft}`);
+      break;
+    }
   }
 
-  console.log(`Tokens consumed: ${data.tokensConsumed}, tokens left: ${data.tokensLeft}`);
-
   return {
-    products: data.products || [],
-    tokensLeft: data.tokensLeft
+    products: allProducts,
+    tokensLeft: latestTokensLeft
   };
 }
 

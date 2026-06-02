@@ -177,23 +177,43 @@ dudes_power: {
     }
   },
 
-  three_d_printing: {
-    name: "three_d_printing",
-    selection: {
-      categories_exclude: ["8481415011"],
-      current_SALES_gte: 1,
-      current_SALES_lte: 200000,
-      isLowest_BUY_BOX_SHIPPING: true,
-      isLowest90_BUY_BOX_SHIPPING: true,
-      deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
-      rootCategory: ["16310091"],
-      categories_include: ["6066126011"],
-      sort: [["current_SALES", "asc"], ["monthlySold", "desc"]],
-      productType: [0],
-      page: 0,
-      perPage: 3000
-    }
-  },
+three_d_printing: {
+  name: "three_d_printing",
+  selection: {
+    productType: [0],
+
+    singleVariation: true,
+
+    current_BUY_BOX_SHIPPING_gte: 2000,
+
+    isLowest90_BUY_BOX_SHIPPING: true,
+
+    brand: [
+      "bambu lab",
+      "prusa",
+      "creality",
+      "elegoo",
+      "anycubic",
+      "flashforge",
+      "qidi tech",
+      "sunlu",
+      "esun",
+      "polymaker",
+      "overture",
+      "hatchbox",
+      "micro swiss",
+      "bigtreetech"
+    ],
+
+    sort: [
+      ["current_SALES", "asc"],
+      ["monthlySold", "desc"]
+    ],
+
+    perPage: 1000,
+    page: 0
+  }
+}  
 
 deals_for_dudes: {
   name: "deals_for_dudes",

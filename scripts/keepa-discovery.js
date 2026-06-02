@@ -188,6 +188,10 @@ three_d_printing: {
 
     isLowest90_BUY_BOX_SHIPPING: true,
 
+    categories_exclude: [
+  "6066131011"
+],
+
     brand: [
       "bambu lab",
       "prusa",

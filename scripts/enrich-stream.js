@@ -11,7 +11,7 @@ const ENRICH_LIMITS = {
   deals_for_dudes: 125,
 };
 
-const TOKEN_FLOOR = 75;
+const TOKEN_FLOOR = 55;
 const MAX_DEAL_AGE_HOURS = 48;
 const MIN_KEEPA_HISTORY_DAYS = 90;
 

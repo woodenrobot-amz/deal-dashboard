@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-02T20:59:28.407Z",
+  "generatedAt": "2026-06-03T00:14:21.142Z",
   "source": "keepa-enrichment",
   "lastEnrichmentStream": "woodworking_core",
-  "dealCount": 84,
+  "dealCount": 112,
   "deals": [
     {
       "asin": "B00KQU1ENG",
@@ -571,7 +571,9 @@
         "B00461K4T6",
         "B0009H5SCO",
         "B0009H5SKG",
-        "B001AHT0TE"
+        "B001AHT0TE",
+        "B001AHUACK",
+        "B000AMS8IE"
       ]
     },
     {
@@ -725,7 +727,11 @@
         "B09BG1FFNT",
         "B09BG37RJ9",
         "B09BG23WRP",
-        "B09BG1Q8ZW"
+        "B09BG1Q8ZW",
+        "B09BG2PRNH",
+        "B09BG3SDFB",
+        "B09BG1MHWP",
+        "B09BG27BHS"
       ]
     },
     {
@@ -1080,7 +1086,9 @@
       "siblingAsins": [
         "B0000TZX76",
         "B000AMS7SA",
-        "B0000TZX7Q"
+        "B0000TZX7Q",
+        "B0000TZX5I",
+        "B000WAAOGS"
       ]
     },
     {
@@ -1294,6 +1302,78 @@
       }
     },
     {
+      "asin": "B003K2UGTA",
+      "parentAsin": "B073FYCVBW",
+      "familyKey": "B073FYCVBW",
+      "variationCount": 22,
+      "productAgeDays": 5533,
+      "title": "bosch hdg3 3 in. diamond hole saw",
+      "brand": "bosch",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "256292011",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552402",
+          "name": "hole saws & accessories"
+        },
+        {
+          "id": "256292011",
+          "name": "hole saws"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 43.49,
+      "avg90": 48.49,
+      "rating": 4.6,
+      "reviewCount": 2216,
+      "rank": 50538,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61IppQeAJqL.jpg",
+      "url": "https://www.amazon.com/dp/B003K2UGTA",
+      "keepa": "https://keepa.com/#!product/1-B003K2UGTA",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-03T00:14:21.142Z",
+      "dealScore": 84,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      }
+    },
+    {
       "asin": "B0BF5H7WX3",
       "parentAsin": "B0FM3PPYFW",
       "familyKey": "B0FM3PPYFW",
@@ -1362,17 +1442,215 @@
       }
     },
     {
-      "asin": "B0000TZYF2",
+      "asin": "B0DRFSMF8N",
+      "parentAsin": "B0DHH11HH4",
+      "familyKey": "B0DHH11HH4",
+      "variationCount": 4,
+      "productAgeDays": 506,
+      "title": "220w azocek power inverter compatible with milwau-kee 18v battery, dc 18v to ac 110v portable power station with 1 ac outlet, 2 usb ports & 1 type-c fast charging, 400lm led work light (2-pack)",
+      "brand": "azocek",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "8106530011",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552376",
+          "name": "charger & converters"
+        },
+        {
+          "id": "8106530011",
+          "name": "battery converters"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 54.98,
+      "avg90": 60.92,
+      "rating": 4.5,
+      "reviewCount": 1376,
+      "rank": 1751,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/718WKX0bLJL.jpg",
+      "url": "https://www.amazon.com/dp/B0DRFSMF8N",
+      "keepa": "https://keepa.com/#!product/1-B0DRFSMF8N",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 79,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 14,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B07R8NTSGP",
+      "parentAsin": "B0B42LNR1K",
+      "familyKey": "B0B42LNR1K",
+      "variationCount": 3,
+      "productAgeDays": 2567,
+      "title": "zozen measuring wheel digital display high precision, premium measure wheel with backlit display, multifunction-metric/imperial/hold/save/memory etc.",
+      "brand": "zozen",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "3753421",
+        "228013",
+        "553244"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "3753421",
+          "name": "measuring wheels"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 69.99,
+      "avg90": 77.92,
+      "rating": 4.3,
+      "reviewCount": 688,
+      "rank": 2383,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61GFcJwpHjL.jpg",
+      "url": "https://www.amazon.com/dp/B07R8NTSGP",
+      "keepa": "https://keepa.com/#!product/1-B07R8NTSGP",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 79,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 15,
+        "rank": 30,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B09WHC5R2T",
+      "parentAsin": "B0BNR4QWTS",
+      "familyKey": "B0BNR4QWTS",
+      "variationCount": 9,
+      "productAgeDays": 1515,
+      "title": "craftsman cmxzvbe38776 genuine fine dust wet dry vac replacement vacuum filter for most 5 to 20 gallon craftsman shop vacuums, easy installation and traps fine particles, 2-pack",
+      "brand": "craftsman",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "8106803011",
+        "228013",
+        "328182011",
+        "552262",
+        "552648"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552648",
+          "name": "vacuum & dust collector accessories"
+        },
+        {
+          "id": "8106803011",
+          "name": "filters"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 42.28,
+      "avg90": 45.56,
+      "rating": 4.6,
+      "reviewCount": 830,
+      "rank": 4099,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81XE7ul1AoL.jpg",
+      "url": "https://www.amazon.com/dp/B09WHC5R2T",
+      "keepa": "https://keepa.com/#!product/1-B09WHC5R2T",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 79,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 10,
+        "rank": 30,
+        "reviews": 5,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B00EMFOKLY",
       "parentAsin": "B09MBYJCWK",
       "familyKey": "B09MBYJCWK",
       "variationCount": 17,
-      "productAgeDays": 5408,
-      "title": "bosch hc8506 1-3/4-inch x 17-inch x 22-inch -inchthe wave sds max 1-piece core cutter",
+      "productAgeDays": 4268,
+      "title": "bosch hc8517 2-1/4-inch x 22-inch sds-max rotary hammer core bit, gray",
       "brand": "bosch",
       "brandTier": "top",
       "category": "woodworking_core",
       "keepaCategoryIds": [
-        "256268011",
+        "8906591011",
         "228013",
         "328182011",
         "552262",
@@ -1400,27 +1678,31 @@
           "name": "drill bits"
         },
         {
-          "id": "256268011",
-          "name": "masonry core drill bits"
+          "id": "256276011",
+          "name": "masonry drill bits"
+        },
+        {
+          "id": "8906591011",
+          "name": "rotary hammer drill bits"
         }
       ],
       "sourceStream": "woodworking_core",
       "sources": [
         "keepa"
       ],
-      "price": 105.99,
-      "avg90": 117.65,
+      "price": 135.99,
+      "avg90": 151.1,
       "rating": 4.7,
-      "reviewCount": 1561,
-      "rank": 35605,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51EahzIIdmL.jpg",
-      "url": "https://www.amazon.com/dp/B0000TZYF2",
-      "keepa": "https://keepa.com/#!product/1-B0000TZYF2",
+      "reviewCount": 1562,
+      "rank": 23152,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Dxi7vaxGL.jpg",
+      "url": "https://www.amazon.com/dp/B00EMFOKLY",
+      "keepa": "https://keepa.com/#!product/1-B00EMFOKLY",
       "isLowAll": false,
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": true,
-      "updatedAt": "2026-06-02T20:59:28.406Z",
+      "updatedAt": "2026-06-03T00:14:21.142Z",
       "dealScore": 78,
       "scoreBreakdown": {
         "rating": 23,
@@ -1436,7 +1718,8 @@
       "spcCapturedAt": "",
       "siblingAsins": [
         "B0000TZYES",
-        "B0000TZYF2"
+        "B0000TZYF2",
+        "B00EMFOKLY"
       ]
     },
     {
@@ -1642,6 +1925,69 @@
         "reviews": 0,
         "variationFamily": 0,
         "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      }
+    },
+    {
+      "asin": "B0DNR7ZP6M",
+      "parentAsin": "B0FRCZLXLW",
+      "familyKey": "B0FRCZLXLW",
+      "variationCount": 1,
+      "productAgeDays": 558,
+      "title": "kreg pocket-hole jig - kphj520pro2 - new model - premium carpentry & woodworking tool - for materials 1/2-1 1/2 inches thick - includes 60 pocket-hole screws",
+      "brand": "kreg",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552488",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552488",
+          "name": "jig accessories"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 84,
+      "avg90": 93.4,
+      "rating": 4.7,
+      "reviewCount": 1127,
+      "rank": 15925,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71+TW5LQV4L.jpg",
+      "url": "https://www.amazon.com/dp/B0DNR7ZP6M",
+      "keepa": "https://keepa.com/#!product/1-B0DNR7ZP6M",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 71,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 3,
         "streamFit": 0,
         "brand": 20
       }
@@ -1932,7 +2278,13 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 20
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0886ZHPNM",
+        "B0886Z6NZ8"
+      ]
     },
     {
       "asin": "B0D48PVR93",
@@ -2208,6 +2560,69 @@
         "productAge": 8,
         "streamFit": 0,
         "brand": 0
+      }
+    },
+    {
+      "asin": "B09V87ZDNH",
+      "parentAsin": "",
+      "familyKey": "B09V87ZDNH",
+      "variationCount": 0,
+      "productAgeDays": 1539,
+      "title": "kreg kphj920 pocket-hole jig xl - drill pocket-hole jig - for 2x4 or 4x4 boards - use with kreg xl pocket-hole screws - sturdy pocket-hole joinery jig",
+      "brand": "kreg",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552488",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552488",
+          "name": "jig accessories"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49,
+      "avg90": 55.27,
+      "rating": 4.6,
+      "reviewCount": 346,
+      "rank": 16920,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71NgJRoM1TL.jpg",
+      "url": "https://www.amazon.com/dp/B09V87ZDNH",
+      "keepa": "https://keepa.com/#!product/1-B09V87ZDNH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-03T00:14:21.140Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
       }
     },
     {
@@ -2705,6 +3120,74 @@
       }
     },
     {
+      "asin": "B01BGBMVZS",
+      "parentAsin": "B0DQ64CCFR",
+      "familyKey": "B0DQ64CCFR",
+      "variationCount": 45,
+      "productAgeDays": 3520,
+      "title": "fein starlock plus e-cut precision saw blade - precision cutting for wood, drywall & soft plastics, bimetal with double-row japanese teeth, extra-wide, 2-1/2\" width, 2\" length, 3-pack - 63502208270",
+      "brand": "fein",
+      "brandTier": "mid",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "8106524011",
+        "228013",
+        "328182011",
+        "552262",
+        "8106522011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106522011",
+          "name": "oscillating tool accessories"
+        },
+        {
+          "id": "8106524011",
+          "name": "blades"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 46.48,
+      "avg90": 52.06,
+      "rating": 4.6,
+      "reviewCount": 88,
+      "rank": 15529,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51GatC2WUuL.jpg",
+      "url": "https://www.amazon.com/dp/B01BGBMVZS",
+      "keepa": "https://keepa.com/#!product/1-B01BGBMVZS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-03T00:14:21.139Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      }
+    },
+    {
       "asin": "B00FXHA06O",
       "parentAsin": "B01E0WE2JS",
       "familyKey": "B01E0WE2JS",
@@ -2936,7 +3419,8 @@
       "siblingAsins": [
         "B0D177GQ33",
         "B0DK8WNRHW",
-        "B0DK8VZV53"
+        "B0DK8VZV53",
+        "B0D17J1641"
       ]
     },
     {
@@ -3438,6 +3922,141 @@
       ]
     },
     {
+      "asin": "B003871APG",
+      "parentAsin": "B08L6BCVGM",
+      "familyKey": "B08L6BCVGM",
+      "variationCount": 3,
+      "productAgeDays": 4620,
+      "title": "trend diamond abrasive lapping fluid, 17 fl oz, sharpening fluid for diamond stones, reduces loading and improves cutting performance, dws/lf/500",
+      "brand": "trend",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552518",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552518",
+          "name": "lubricants"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 35,
+      "avg90": 39.41,
+      "rating": 4.6,
+      "reviewCount": 3068,
+      "rank": 29913,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61JiQnOQMdL.jpg",
+      "url": "https://www.amazon.com/dp/B003871APG",
+      "keepa": "https://keepa.com/#!product/1-B003871APG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 57,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0BDLB47ZJ",
+      "parentAsin": "B07RWXZY2H",
+      "familyKey": "B07RWXZY2H",
+      "variationCount": 21,
+      "productAgeDays": 1361,
+      "title": "shdiatool diamond turbo blade 10 - inch super thin cutting disc for porcelain ceramic tile granite dia 250mm",
+      "brand": "shdiatool",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552304",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552304",
+          "name": "diamond blades"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 37.99,
+      "avg90": 40.59,
+      "rating": 4.4,
+      "reviewCount": 1131,
+      "rank": 20222,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71wgYoP2W5L.jpg",
+      "url": "https://www.amazon.com/dp/B0BDLB47ZJ",
+      "keepa": "https://keepa.com/#!product/1-B0BDLB47ZJ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 57,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 9,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0G2BW1M38",
       "parentAsin": "B0H33CS18P",
       "familyKey": "B0H33CS18P",
@@ -3503,7 +4122,13 @@
         "productAge": 0,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0G2BW1M38",
+        "B0G2C4XJ63"
+      ]
     },
     {
       "asin": "B0CRJS3J73",
@@ -3723,6 +4348,78 @@
       }
     },
     {
+      "asin": "B0C7GX2JRG",
+      "parentAsin": "B0FQ4VDH43",
+      "familyKey": "B0FQ4VDH43",
+      "variationCount": 1,
+      "productAgeDays": 1063,
+      "title": "wetols corner clamp for woodworking 4pcs 90 degree right angle clamp with adjustable aluminum alloy swing jaw, single handle clamps for woodworking, photo framing, gifts for men dad",
+      "brand": "wetols",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "553152",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "553150",
+          "name": "clamps"
+        },
+        {
+          "id": "553152",
+          "name": "angle clamps"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 43.94,
+      "avg90": 49.23,
+      "rating": 4.5,
+      "reviewCount": 3119,
+      "rank": 71624,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Npm6bBeAL.jpg",
+      "url": "https://www.amazon.com/dp/B0C7GX2JRG",
+      "keepa": "https://keepa.com/#!product/1-B0C7GX2JRG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 56,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0CZCPVBVC",
       "parentAsin": "B0D5YLDZK5",
       "familyKey": "B0D5YLDZK5",
@@ -3873,6 +4570,74 @@
       }
     },
     {
+      "asin": "B0C9TWFJ6T",
+      "parentAsin": "B0GJZSWNJC",
+      "familyKey": "B0GJZSWNJC",
+      "variationCount": 5,
+      "productAgeDays": 978,
+      "title": "trivd frol 100pcs oscillating saw blades, professional universal titanium multitool blades for wood plastics metal, quick release multi tool blades kits fit dewalt ryobi milwaukee rockwell fein",
+      "brand": "trivd frol",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "8106524011",
+        "228013",
+        "328182011",
+        "552262",
+        "8106522011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106522011",
+          "name": "oscillating tool accessories"
+        },
+        {
+          "id": "8106524011",
+          "name": "blades"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 42.29,
+      "avg90": 47.27,
+      "rating": 4.5,
+      "reviewCount": 1057,
+      "rank": 12430,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81H4bISxAsL.jpg",
+      "url": "https://www.amazon.com/dp/B0C9TWFJ6T",
+      "keepa": "https://keepa.com/#!product/1-B0C9TWFJ6T",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 55,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0DRFJ439R",
       "parentAsin": "B0F9P4SP6B",
       "familyKey": "B0F9P4SP6B",
@@ -4013,6 +4778,74 @@
       }
     },
     {
+      "asin": "B078YP71Z4",
+      "parentAsin": "B07PL36KSV",
+      "familyKey": "B07PL36KSV",
+      "variationCount": 7,
+      "productAgeDays": 2846,
+      "title": "maxworks hybrid air hose 1/4\" x 100 ft 300 psi flexible all-weather kink-resistant compressor hose with brass fittings & bend restrictors 80786",
+      "brand": "maxworks",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552280",
+        "228013",
+        "328182011",
+        "552262",
+        "552274"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552274",
+          "name": "air tool parts & accessories"
+        },
+        {
+          "id": "552280",
+          "name": "hoses"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 35.99,
+      "avg90": 39.76,
+      "rating": 4.5,
+      "reviewCount": 2543,
+      "rank": 73563,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/710Y3cfmUAL.jpg",
+      "url": "https://www.amazon.com/dp/B078YP71Z4",
+      "keepa": "https://keepa.com/#!product/1-B078YP71Z4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.142Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B081525XYG",
       "parentAsin": "",
       "familyKey": "B081525XYG",
@@ -4076,6 +4909,78 @@
         "reviews": 5,
         "variationFamily": 0,
         "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0FHB8DDZ6",
+      "parentAsin": "B0FMD8T3VQ",
+      "familyKey": "B0FMD8T3VQ",
+      "variationCount": 115,
+      "productAgeDays": 309,
+      "title": "metallixity bi-metal hole saw 10\", m42 hss circular head 254mm hole cutter with center drill bit - for stainless steel hard steel sheet, black",
+      "brand": "metallixity",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "256292011",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552402",
+          "name": "hole saws & accessories"
+        },
+        {
+          "id": "256292011",
+          "name": "hole saws"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 38.49,
+      "avg90": 45.79,
+      "rating": 4.4,
+      "reviewCount": 85,
+      "rank": 49607,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51NYhLVp0uL.jpg",
+      "url": "https://www.amazon.com/dp/B0FHB8DDZ6",
+      "keepa": "https://keepa.com/#!product/1-B0FHB8DDZ6",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.142Z",
+      "dealScore": 53,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 23,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 0,
         "streamFit": 0,
         "brand": 0
       }
@@ -4831,6 +5736,75 @@
       }
     },
     {
+      "asin": "B0D3QHWPNB",
+      "parentAsin": "B0H2WW3S29",
+      "familyKey": "B0H2WW3S29",
+      "variationCount": 5,
+      "productAgeDays": 754,
+      "title": "powertec 70295-p6 4-inch integrated blast gate clog resistant, anti gap tapered abs plastic fitting for dust collection systems – 6 pack (patented)",
+      "brand": "powertec",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "10425161011",
+        "9022420011",
+        "228013",
+        "328182011",
+        "552262",
+        "552648"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552648",
+          "name": "vacuum & dust collector accessories"
+        },
+        {
+          "id": "10425161011",
+          "name": "vacuum & dust collector parts"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 43.11,
+      "avg90": 48.22,
+      "rating": 4.7,
+      "reviewCount": 499,
+      "rank": 41166,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61dGYqwTmLL.jpg",
+      "url": "https://www.amazon.com/dp/B0D3QHWPNB",
+      "keepa": "https://keepa.com/#!product/1-B0D3QHWPNB",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 46,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0DPWJJFRF",
       "parentAsin": "B0DPWQ1DRS",
       "familyKey": "B0DPWQ1DRS",
@@ -4898,6 +5872,218 @@
         "reviews": 0,
         "variationFamily": 0,
         "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0G5YRYCH2",
+      "parentAsin": "B0H3L1JZXH",
+      "familyKey": "B0H3L1JZXH",
+      "variationCount": 2,
+      "productAgeDays": 153,
+      "title": "2 pack upgrade 8000mah high capacity p108 replacement for ryobi 18v battery lithium ion compatible with ryobi 18 volt battery p102 p103 p104 p105 p107 p108 p109 p122 cordless tool batteries (green)",
+      "brand": "boetpcr",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552354",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552354",
+          "name": "battery packs"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 40.99,
+      "avg90": 45.44,
+      "rating": 4.3,
+      "reviewCount": 1128,
+      "rank": 17989,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61qshagjDGL.jpg",
+      "url": "https://www.amazon.com/dp/B0G5YRYCH2",
+      "keepa": "https://keepa.com/#!product/1-B0G5YRYCH2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 45,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0BMKW6KGV",
+      "parentAsin": "B0D726XMJ5",
+      "familyKey": "B0D726XMJ5",
+      "variationCount": 5,
+      "productAgeDays": 1236,
+      "title": "fewell 9 inch diamond blade, segmented general purpose blade dry/wet cutting concrete, masonry, brick, block，stone (3 packs)",
+      "brand": "fewell",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552304",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552304",
+          "name": "diamond blades"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 41.39,
+      "avg90": 45.93,
+      "rating": 4.7,
+      "reviewCount": 241,
+      "rank": 18994,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71SWFWAJhuL.jpg",
+      "url": "https://www.amazon.com/dp/B0BMKW6KGV",
+      "keepa": "https://keepa.com/#!product/1-B0BMKW6KGV",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 45,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0BV16HPB9",
+      "parentAsin": "B0CRR3RBMX",
+      "familyKey": "B0CRR3RBMX",
+      "variationCount": 5,
+      "productAgeDays": 1064,
+      "title": "3-pack combo 10-inch 32t & 60t & 80t woodworking saw blades with 5/8\" arbor, .095\" thin kerf alternating top bevel tungsten carbide teeth miter/table saw blade ideal for various woods cutting",
+      "brand": "janchi",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552292",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552292",
+          "name": "circular saw blades"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 38.99,
+      "avg90": 43.15,
+      "rating": 4.7,
+      "reviewCount": 449,
+      "rank": 47122,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71oAa87EE3L.jpg",
+      "url": "https://www.amazon.com/dp/B0BV16HPB9",
+      "keepa": "https://keepa.com/#!product/1-B0BV16HPB9",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.142Z",
+      "dealScore": 45,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
         "streamFit": 0,
         "brand": 0
       }
@@ -4971,6 +6157,74 @@
       }
     },
     {
+      "asin": "B0B1ZJQWMW",
+      "parentAsin": "",
+      "familyKey": "B0B1ZJQWMW",
+      "variationCount": 0,
+      "productAgeDays": 1391,
+      "title": "workess portable table saw stand, 330 lbs load capacity rolling foldable table saw table with 8 inch wheels, heavy duty construction for easy storage, universal for most brands of table saws",
+      "brand": "workess",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552620",
+        "228013",
+        "328182011",
+        "552262",
+        "8106315011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106315011",
+          "name": "stands & mobile bases"
+        },
+        {
+          "id": "552620",
+          "name": "stands"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 127.49,
+      "avg90": 141.36,
+      "rating": 4.5,
+      "reviewCount": 443,
+      "rank": 25692,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Iy8r0YV2L.jpg",
+      "url": "https://www.amazon.com/dp/B0B1ZJQWMW",
+      "keepa": "https://keepa.com/#!product/1-B0B1ZJQWMW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 44,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0GD1H2267",
       "parentAsin": "B0GF9NK5ZR",
       "familyKey": "B0GF9NK5ZR",
@@ -5036,7 +6290,14 @@
         "productAge": 0,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0GD1H2267",
+        "B0GD1SHZGC",
+        "B0GD1MVS6Q"
+      ]
     },
     {
       "asin": "B0DMSM2DJZ",
@@ -5243,6 +6504,223 @@
       }
     },
     {
+      "asin": "B08FDR687B",
+      "parentAsin": "B09SKSWN6R",
+      "familyKey": "B09SKSWN6R",
+      "variationCount": 3,
+      "productAgeDays": 1769,
+      "title": "276pc titanium twist drill bit set with s2 bits 135° tip high speed steel, size from 1/16\" up to 1/2\", ideal in wood cast iron aluminum alloy plastic fiberglass, clear lid case",
+      "brand": "platinumedge",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "256275011",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552388",
+          "name": "drill bits"
+        },
+        {
+          "id": "552416",
+          "name": "twist drill bits"
+        },
+        {
+          "id": "256275011",
+          "name": "jobber drill bits"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 36.99,
+      "avg90": 39.32,
+      "rating": 4.4,
+      "reviewCount": 860,
+      "rank": 48932,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/91ZYyXwk26L.jpg",
+      "url": "https://www.amazon.com/dp/B08FDR687B",
+      "keepa": "https://keepa.com/#!product/1-B08FDR687B",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 43,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 8,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0DDP2FRQ5",
+      "parentAsin": "B0DSP1Q6XP",
+      "familyKey": "B0DSP1Q6XP",
+      "variationCount": 9,
+      "productAgeDays": 533,
+      "title": "thinkwork m35 cobalt spiral flute step drill bit set, 5 pcs single size hss step bits (1/8\"-3/4\"), small size edc unibit with 1/4\" shank step bits for metal, aluminum, steel, wood plastic",
+      "brand": "thinkwork",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552388",
+        "256287011",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552388",
+          "name": "drill bits"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.98,
+      "avg90": 55.72,
+      "rating": 4.4,
+      "reviewCount": 138,
+      "rank": 12298,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/616qZ0RUGyL.jpg",
+      "url": "https://www.amazon.com/dp/B0DDP2FRQ5",
+      "keepa": "https://keepa.com/#!product/1-B0DDP2FRQ5",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 43,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0D3DBFGHK",
+      "parentAsin": "B09W2H49KH",
+      "familyKey": "B09W2H49KH",
+      "variationCount": 3,
+      "productAgeDays": 664,
+      "title": "workess universal miter saw stand with grid tabletop 300 lbs load capacity 6-level height adjustment table saw stand wk-ms046",
+      "brand": "workess",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552942",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "13708781",
+          "name": "accessories"
+        },
+        {
+          "id": "552942",
+          "name": "miter saw accessories"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 125.99,
+      "avg90": 139.49,
+      "rating": 4.3,
+      "reviewCount": 836,
+      "rank": 27467,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61sq88oatnL.jpg",
+      "url": "https://www.amazon.com/dp/B0D3DBFGHK",
+      "keepa": "https://keepa.com/#!product/1-B0D3DBFGHK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 43,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0GF1TW77D",
       "parentAsin": "B0D14TG142",
       "familyKey": "B0D14TG142",
@@ -5387,7 +6865,13 @@
         "productAge": 0,
         "streamFit": 0,
         "brand": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FBRXT1PS",
+        "B0FBWSPKZW"
+      ]
     },
     {
       "asin": "B0D7W17WYT",
@@ -5584,6 +7068,222 @@
       }
     },
     {
+      "asin": "B0FSDK1XCN",
+      "parentAsin": "B0GY4JJK1P",
+      "familyKey": "B0GY4JJK1P",
+      "variationCount": 14,
+      "productAgeDays": 181,
+      "title": "toolant 3/16\" serrated eccentric masonry drill bit set(20pcs),four edge concrete drill bits for glass, tile, brick, cement concrete plastic,industrial strength carbide drill bit tip",
+      "brand": "toolant",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "8906589011",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552388",
+          "name": "drill bits"
+        },
+        {
+          "id": "256276011",
+          "name": "masonry drill bits"
+        },
+        {
+          "id": "8906589011",
+          "name": "masonry drill bit sets"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 36.54,
+      "avg90": 40.6,
+      "rating": 4.4,
+      "reviewCount": 78,
+      "rank": 29801,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81l66gqHqkL.jpg",
+      "url": "https://www.amazon.com/dp/B0FSDK1XCN",
+      "keepa": "https://keepa.com/#!product/1-B0FSDK1XCN",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 40,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0DHZHGC5L",
+      "parentAsin": "B0G2S8HPJX",
+      "familyKey": "B0G2S8HPJX",
+      "variationCount": 2,
+      "productAgeDays": 550,
+      "title": "xavito replacement for kobalt 40v battery 6.0ah, new upgraded 5x longer runtime, compatible with kobalt 40v cordless power tool, for 40v max battery kb440-03 kb2540c-06 kb240-03 krc60",
+      "brand": "xavito",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552354",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552354",
+          "name": "battery packs"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 61.19,
+      "avg90": 67.82,
+      "rating": 4.6,
+      "reviewCount": 216,
+      "rank": 27085,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/8173adcSpyL.jpg",
+      "url": "https://www.amazon.com/dp/B0DHZHGC5L",
+      "keepa": "https://keepa.com/#!product/1-B0DHZHGC5L",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 40,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0F28ZQKC2",
+      "parentAsin": "",
+      "familyKey": "B0F28ZQKC2",
+      "variationCount": 0,
+      "productAgeDays": 435,
+      "title": "ezarc hole saw kit, 16pcs bi-metal hole saw set with 3/4\"-2-1/2\"(19-64mm), mandrels, drill bits, installation plate, hex key with storage case, ideal for wood, metal, plywood, pvc board",
+      "brand": "ezarc",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "8106328011",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552402",
+          "name": "hole saws & accessories"
+        },
+        {
+          "id": "8106328011",
+          "name": "hole saw sets"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.49,
+      "avg90": 54.89,
+      "rating": 4.6,
+      "reviewCount": 252,
+      "rank": 23051,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71+BVl2ckdL.jpg",
+      "url": "https://www.amazon.com/dp/B0F28ZQKC2",
+      "keepa": "https://keepa.com/#!product/1-B0F28ZQKC2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 40,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0F5PV1N4N",
       "parentAsin": "B0DFC8TDP8",
       "familyKey": "B0DFC8TDP8",
@@ -5724,6 +7424,137 @@
       }
     },
     {
+      "asin": "B0D6K89M6L",
+      "parentAsin": "",
+      "familyKey": "B0D6K89M6L",
+      "variationCount": 0,
+      "productAgeDays": 593,
+      "title": "fske 6.5ah replacement for kobalt 40v battery kb540-06 kb440-06 kb640-03 - compatible with 40 volt kobalt batteries power tools",
+      "brand": "fske",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552354",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552354",
+          "name": "battery packs"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 59.39,
+      "avg90": 65.97,
+      "rating": 4.3,
+      "reviewCount": 90,
+      "rank": 22936,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/7187Y3hkLEL.jpg",
+      "url": "https://www.amazon.com/dp/B0D6K89M6L",
+      "keepa": "https://keepa.com/#!product/1-B0D6K89M6L",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 38,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B0F8VK22X3",
+      "parentAsin": "B0FYX16XHG",
+      "familyKey": "B0FYX16XHG",
+      "variationCount": 1,
+      "productAgeDays": 306,
+      "title": "laser level 4x360° self leveling with tripod & lcd touch screen, 4d lazer leveler tool green cross lazer level line laser with 2x2400mah rechargeable battery for constuctions, picture hanging indoor",
+      "brand": "asobris",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "553266",
+        "228013",
+        "553244",
+        "11646386011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "11646386011",
+          "name": "laser levels & accessories"
+        },
+        {
+          "id": "553266",
+          "name": "line lasers"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 50.99,
+      "avg90": 56.86,
+      "rating": 4.6,
+      "reviewCount": 133,
+      "rank": 71799,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61iUqWWSeQL.jpg",
+      "url": "https://www.amazon.com/dp/B0F8VK22X3",
+      "keepa": "https://keepa.com/#!product/1-B0F8VK22X3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.142Z",
+      "dealScore": 38,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
       "asin": "B0D2XNMSHT",
       "parentAsin": "B0GXW3XHTS",
       "familyKey": "B0GXW3XHTS",
@@ -5791,6 +7622,151 @@
         "reviews": 0,
         "variationFamily": 8,
         "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0D2XNMSHT",
+        "B0DM1T77Y3"
+      ]
+    },
+    {
+      "asin": "B0F8VC5STQ",
+      "parentAsin": "B0FPX37C6W",
+      "familyKey": "B0FPX37C6W",
+      "variationCount": 1,
+      "productAgeDays": 344,
+      "title": "11-hole shelf pin jig and hinge jig 2-in-1,1/4 inch and 5mm shelf pin drilling jig,self-contained clamping function shelf jig and cabinet hardware jig tool drill guide",
+      "brand": "hontaituo",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552488",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552488",
+          "name": "jig accessories"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 45.98,
+      "avg90": 51.36,
+      "rating": 4.5,
+      "reviewCount": 125,
+      "rank": 40278,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81vGtznad0L.jpg",
+      "url": "https://www.amazon.com/dp/B0F8VC5STQ",
+      "keepa": "https://keepa.com/#!product/1-B0F8VC5STQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.141Z",
+      "dealScore": 37,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      }
+    },
+    {
+      "asin": "B085CBGV1H",
+      "parentAsin": "B085CBRN9F",
+      "familyKey": "B085CBRN9F",
+      "variationCount": 8,
+      "productAgeDays": 1785,
+      "title": "signi 25pcs 3 inch coarse abrasive non woven nylon quick change surface conditioning disc for finishing cleaning deburring lapping with r-type for rust paint removal (brown coarse, 3 inch)",
+      "brand": "signi",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "256179011",
+        "228013",
+        "328182011",
+        "552262",
+        "8106314011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106314011",
+          "name": "power finishing tool parts & accessories"
+        },
+        {
+          "id": "552582",
+          "name": "power sander parts & accessories"
+        },
+        {
+          "id": "552588",
+          "name": "sanding discs"
+        },
+        {
+          "id": "256179011",
+          "name": "quick change discs"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.3,
+      "avg90": 39.27,
+      "rating": 4.4,
+      "reviewCount": 154,
+      "rank": 43773,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51+IQtddmFL.jpg",
+      "url": "https://www.amazon.com/dp/B085CBGV1H",
+      "keepa": "https://keepa.com/#!product/1-B085CBGV1H",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-03T00:14:21.142Z",
+      "dealScore": 33,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
         "streamFit": 0,
         "brand": 0
       }

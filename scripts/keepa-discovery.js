@@ -45,106 +45,69 @@ dudes_power: {
   }
 },
 
-  woodworking_core: {
-    name: "woodworking_core",
-    selection: {
-      productType: [0],
+woodworking_core: {
+  name: "woodworking_core",
+  selection: {
+    productType: [0],
+    singleVariation: true,
 
-      rootCategory: ["228013"],
+    current_BUY_BOX_SHIPPING_gte: 3000,
 
-      categories_exclude: [
-        "13749581",
-        "3754161",
-        "495224",
-        "551240",
-        "680350011"
-      ],
+    isLowest90_BUY_BOX_SHIPPING: true,
 
-      current_SALES_gte: 1,
-      current_SALES_lte: 75000,
-      current_RATING_gte: 43,
-      current_COUNT_REVIEWS_gte: 75,
-      current_BUY_BOX_SHIPPING_gte: 3500,
-
-      isLowest90_BUY_BOX_SHIPPING: true,
-      deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
-
-      categories_include: [
-        "552262",
-        "553244",
-        "553332",
-        "979147011"
-      ],
-
-      sort: [
-        ["deltaPercent90_BUY_BOX_SHIPPING", "desc"],
-        ["current_SALES", "asc"]
-      ],
-
-      perPage: 1000,
-      page: 0
-    },
-
-    title_include_any: [
-      "woodworking",
-      "woodworker",
-      "wood",
-      "table saw",
-      "miter saw",
-      "track saw",
-      "circular saw",
-      "jigsaw",
-      "bandsaw",
-      "router",
-      "router bit",
-      "planer",
-      "jointer",
-      "sander",
-      "orbital sander",
-      "belt sander",
-      "dust collector",
-      "clamp",
-      "parallel clamp",
-      "bar clamp",
-      "chisel",
-      "hand plane",
-      "drill press",
-      "pocket hole",
-      "dowel",
-      "tenon",
-      "mortise",
-      "saw blade",
-      "diablo",
-      "freud",
-      "kreg",
-      "bessey",
+    brand: [
+      "dewalt",
+      "milwaukee",
+      "makita",
+      "bosch",
+      "festool",
+      "sawstop",
       "woodpeckers",
+      "starrett",
+      "bessey",
+      "kreg",
+      "jessem",
+      "incra",
+      "freud",
+      "diablo",
+      "whiteside",
+      "amana tool",
+      "titebond",
       "rockler",
-      "titebond"
+      "woodriver",
+      "veritas",
+      "lee valley",
+      "ridgid",
+      "ryobi",
+      "metabo hpt",
+      "skil",
+      "jet",
+      "powermatic",
+      "grizzly",
+      "laguna",
+      "mirka",
+      "fastcap",
+      "microjig",
+      "milescraft",
+      "toughbuilt",
+      "klingspor",
+      "fein",
+      "spetool"
     ],
 
-    title_exclude_any: [
-      "bathroom",
-      "kitchen faucet",
-      "toilet",
-      "shower",
-      "plumbing",
-      "electrical outlet",
-      "light fixture",
-      "ceiling fan",
-      "door lock",
-      "thermostat",
-      "air filter",
-      "hvac",
-      "tile",
-      "concrete",
-      "masonry",
-      "welding",
-      "automotive",
-      "garage door"
-    ]
-  },
+    categories_exclude: [
+      // add after category report
+    ],
 
+    sort: [
+      ["current_SALES", "asc"],
+      ["monthlySold", "desc"]
+    ],
+
+    perPage: 1000,
+    page: 0
+  }
+},  
   
   woodworking: {
     name: "woodworking",

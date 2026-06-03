@@ -53,7 +53,8 @@ woodworking_core: {
 
     current_BUY_BOX_SHIPPING_gte: 3000,
 
-    isLowest90_BUY_BOX_SHIPPING: true,
+    isLowest90_BUY_BOX_SHIPPING: true
+deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
 
     brand: [
       "dewalt",

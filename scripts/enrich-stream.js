@@ -305,7 +305,7 @@ function getBrandBoost(brand) {
 }
 
 function scoreDeal(d) {
-  const breakdown = {
+  const oldBreakdown = {
     rating: 0,
     discount: 0,
     rank: 0,
@@ -316,39 +316,99 @@ function scoreDeal(d) {
     brand: 0
   };
 
-  if (d.rating) breakdown.rating += d.rating * 5;
+  if (d.rating) oldBreakdown.rating += d.rating * 5;
 
   if (d.price && d.avg90 && d.avg90 > d.price) {
-    breakdown.discount += ((d.avg90 - d.price) / d.avg90) * 100 * 1.5;
+    oldBreakdown.discount += ((d.avg90 - d.price) / d.avg90) * 100 * 1.5;
   }
 
-  if (d.rank && d.rank <= 5000) breakdown.rank += 30;
+  if (d.rank && d.rank <= 5000) oldBreakdown.rank += 30;
 
-  if (d.reviewCount >= 500) breakdown.reviews += 5;
-  if (d.reviewCount >= 1000) breakdown.reviews += 5;
+  if (d.reviewCount >= 500) oldBreakdown.reviews += 5;
+  if (d.reviewCount >= 1000) oldBreakdown.reviews += 5;
 
-  if (d.variationCount >= 8) breakdown.variationFamily += 3;
-  if (d.variationCount >= 20) breakdown.variationFamily += 5;
+  if (d.variationCount >= 8) oldBreakdown.variationFamily += 3;
+  if (d.variationCount >= 20) oldBreakdown.variationFamily += 5;
 
-  if (d.productAgeDays >= 365) breakdown.productAge += 3;
-  if (d.productAgeDays >= 730) breakdown.productAge += 5;
+  if (d.productAgeDays >= 365) oldBreakdown.productAge += 3;
+  if (d.productAgeDays >= 730) oldBreakdown.productAge += 5;
 
   if (d.category === "deals_for_dudes") {
-    if (d.price >= 20 && d.price <= 150) breakdown.streamFit += 5;
-    if (d.reviewCount >= 2000) breakdown.streamFit += 5;
+    if (d.price >= 20 && d.price <= 150) oldBreakdown.streamFit += 5;
+    if (d.reviewCount >= 2000) oldBreakdown.streamFit += 5;
   }
 
-  breakdown.brand += getBrandBoost(d.brand);
+  oldBreakdown.brand += getBrandBoost(d.brand);
 
-  const roundedBreakdown = Object.fromEntries(
-    Object.entries(breakdown).map(([key, value]) => [key, Math.floor(value)])
+  const roundedOldBreakdown = Object.fromEntries(
+    Object.entries(oldBreakdown).map(([key, value]) => [key, Math.floor(value)])
   );
 
-  const total = Object.values(roundedBreakdown).reduce((sum, value) => sum + value, 0);
+  const oldTotal = Object.values(roundedOldBreakdown).reduce((sum, value) => sum + value, 0);
+
+  const normalizedBreakdown = {
+    discount: 0,   // max 25
+    brand: 0,      // max 20
+    demand: 0,     // max 20
+    reviews: 0,    // max 15
+    rating: 0,     // max 10
+    priceTier: 0   // max 10
+  };
+
+  const discountPercent =
+    d.price && d.avg90 && d.avg90 > d.price
+      ? ((d.avg90 - d.price) / d.avg90) * 100
+      : 0;
+
+  if (discountPercent >= 40) normalizedBreakdown.discount = 25;
+  else if (discountPercent >= 30) normalizedBreakdown.discount = 22;
+  else if (discountPercent >= 25) normalizedBreakdown.discount = 20;
+  else if (discountPercent >= 20) normalizedBreakdown.discount = 18;
+  else if (discountPercent >= 15) normalizedBreakdown.discount = 14;
+  else if (discountPercent >= 10) normalizedBreakdown.discount = 10;
+  else if (discountPercent >= 8) normalizedBreakdown.discount = 6;
+
+  const brandTier = getBrandTier(d.brand);
+  if (brandTier === "top") normalizedBreakdown.brand = 20;
+  else if (brandTier === "mid") normalizedBreakdown.brand = 12;
+
+  if (d.rank && d.rank <= 1000) normalizedBreakdown.demand = 20;
+  else if (d.rank && d.rank <= 5000) normalizedBreakdown.demand = 18;
+  else if (d.rank && d.rank <= 10000) normalizedBreakdown.demand = 16;
+  else if (d.rank && d.rank <= 25000) normalizedBreakdown.demand = 12;
+  else if (d.rank && d.rank <= 50000) normalizedBreakdown.demand = 8;
+  else if (d.rank && d.rank <= 100000) normalizedBreakdown.demand = 4;
+
+  if (d.reviewCount >= 2000) normalizedBreakdown.reviews = 15;
+  else if (d.reviewCount >= 1000) normalizedBreakdown.reviews = 13;
+  else if (d.reviewCount >= 500) normalizedBreakdown.reviews = 11;
+  else if (d.reviewCount >= 250) normalizedBreakdown.reviews = 8;
+  else if (d.reviewCount >= 100) normalizedBreakdown.reviews = 6;
+  else if (d.reviewCount >= 50) normalizedBreakdown.reviews = 3;
+
+  if (d.rating >= 4.8) normalizedBreakdown.rating = 10;
+  else if (d.rating >= 4.7) normalizedBreakdown.rating = 9;
+  else if (d.rating >= 4.6) normalizedBreakdown.rating = 8;
+  else if (d.rating >= 4.5) normalizedBreakdown.rating = 7;
+  else if (d.rating >= 4.4) normalizedBreakdown.rating = 5;
+  else if (d.rating >= 4.3) normalizedBreakdown.rating = 3;
+
+  if (d.price >= 300) normalizedBreakdown.priceTier = 10;
+  else if (d.price >= 200) normalizedBreakdown.priceTier = 8;
+  else if (d.price >= 100) normalizedBreakdown.priceTier = 6;
+  else if (d.price >= 50) normalizedBreakdown.priceTier = 4;
+  else if (d.price >= 35) normalizedBreakdown.priceTier = 2;
+
+  const normalizedTotal = Object.values(normalizedBreakdown).reduce(
+    (sum, value) => sum + value,
+    0
+  );
 
   return {
-    total,
-    breakdown: roundedBreakdown
+    total: oldTotal,
+    breakdown: roundedOldBreakdown,
+    normalizedTotal,
+    normalizedBreakdown
   };
 }
 
@@ -374,8 +434,8 @@ function normalizeProduct(p, streamName) {
     brand: cleanText(p.brand),
     brandTier: getBrandTier(p.brand),
     category: getUiCategory(streamName),
-keepaCategoryIds: getKeepaCategoryIds(p),
-keepaCategoryTree: getKeepaCategoryTree(p),
+    keepaCategoryIds: getKeepaCategoryIds(p),
+    keepaCategoryTree: getKeepaCategoryTree(p),
     sourceStream: streamName,
     sources: ["keepa"],
     price: getCurrentPrice(p),
@@ -398,6 +458,9 @@ keepaCategoryTree: getKeepaCategoryTree(p),
   deal.dealScore = score.total;
   deal.scoreBreakdown = score.breakdown;
 
+  deal.normalizedScore = score.normalizedTotal;
+  deal.normalizedScoreBreakdown = score.normalizedBreakdown;
+
   return deal;
 }
 function mergeCategories(a, b) {
@@ -415,6 +478,9 @@ function mergeSources(a = [], b = []) {
 }
 
 function chooseBetterDeal(existing, incoming) {
+  if ((incoming.normalizedScore || 0) > (existing.normalizedScore || 0)) return incoming;
+  if ((incoming.normalizedScore || 0) < (existing.normalizedScore || 0)) return existing;
+
   if ((incoming.dealScore || 0) > (existing.dealScore || 0)) return incoming;
   if ((incoming.dealScore || 0) < (existing.dealScore || 0)) return existing;
 
@@ -479,9 +545,11 @@ function dedupeDeals(deals) {
     });
   }
 
-  return [...familyMap.values()].sort(
-    (a, b) => (b.dealScore || 0) - (a.dealScore || 0)
-  );
+ return [...familyMap.values()].sort(
+  (a, b) =>
+    (b.normalizedScore || 0) - (a.normalizedScore || 0) ||
+    (b.dealScore || 0) - (a.dealScore || 0)
+);
 }
 
 function removeExpiredDeals(deals) {

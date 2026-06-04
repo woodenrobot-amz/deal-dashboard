@@ -12,8 +12,9 @@ function line(text = "") {
 
 function getDealScore(deal) {
   const value =
+    deal.normalizedScore ??
+    deal.normalized_score ??
     deal.calculated_deal_score ??
-    deal.calculatedDealScore ??
     deal.dealScore ??
     deal.score ??
     deal.scoring?.total ??

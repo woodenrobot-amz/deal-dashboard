@@ -77,7 +77,6 @@ woodworking_core: {
 deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
 
     brand: [
-     [
   "woodpeckers",
   "jessem",
   "incra",
@@ -92,7 +91,6 @@ deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
   "diablo",
   "mirka",
   "titebond"
-]
     ],
 
     categories_exclude: [

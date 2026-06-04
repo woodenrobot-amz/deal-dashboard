@@ -115,16 +115,15 @@ woodworking_test: {
 
   selection: {
     productType: [0],
-
     singleVariation: true,
 
     current_BUY_BOX_SHIPPING_gte: 3000,
 
     isLowest90_BUY_BOX_SHIPPING: true,
 
-    deltaPercent90_BUY_BOX_SHIPPING_lte: -10,
+    deltaPercent90_BUY_BOX_SHIPPING_lte: 10,
 
-    deltaPercent30_BUY_BOX_SHIPPING_lte: -5,
+    deltaPercent30_BUY_BOX_SHIPPING_lte: 5,
 
     salesRankReference: 16310101,
     current_SALES_gte: 1,

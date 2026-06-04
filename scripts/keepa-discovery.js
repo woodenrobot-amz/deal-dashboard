@@ -70,7 +70,7 @@ woodworking_core: {
   256268011, // Masonry Core Drill Bits
   256276011, // Masonry Drill Bits
   8906591011, // Rotary Hammer Drill Bits
-];
+],
 
       
     isLowest90_BUY_BOX_SHIPPING: true,

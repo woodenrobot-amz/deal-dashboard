@@ -125,9 +125,9 @@ woodworking_test: {
 
     deltaPercent30_BUY_BOX_SHIPPING_lte: 5,
 
-    salesRankReference: 16310101,
-    current_SALES_gte: 1,
-    current_SALES_lte: 100000,
+    // salesRankReference: 16310101
+   // current_SALES_gte: 1
+  //  current_SALES_lte: 100000
 
     categories_exclude: [
       15684181,   // Automotive

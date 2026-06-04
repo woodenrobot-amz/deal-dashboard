@@ -77,18 +77,23 @@ woodworking_core: {
 deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
 
     brand: [
-  "woodpeckers",
-  "jessem",
-  "incra",
-  "bessey",
-  "fastcap",
-  "woodriver",
-  "rockler",
-  "amana tool",
-  "whiteside",
-  "freud",
-  "mirka",
-  "titebond"
+      "woodpeckers",
+      "jessem",
+      "incra",
+      "bessey",
+      "fastcap",
+      "amana tool",
+      "whiteside",
+      "freud",
+      "mirka",
+      "titebond",
+      "bora",
+      "pony",
+      "jorgensen",
+      "trend",
+      "suizan",
+      "festool",
+      "microjig"
     ],
 
     categories_exclude: [
@@ -104,7 +109,44 @@ deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
     page: 0
   }
 },  
-  
+
+woodworking_test: {
+  name: "woodworking_test",
+
+  selection: {
+    productType: [0],
+
+    singleVariation: true,
+
+    current_BUY_BOX_SHIPPING_gte: 3000,
+
+    isLowest90_BUY_BOX_SHIPPING: true,
+
+    deltaPercent90_BUY_BOX_SHIPPING_lte: -10,
+
+    deltaPercent30_BUY_BOX_SHIPPING_lte: -5,
+
+    salesRankReference: 16310101,
+    current_SALES_gte: 1,
+    current_SALES_lte: 100000,
+
+    categories_exclude: [
+      15684181,   // Automotive
+      15719731,   // Replacement Parts
+      9022420011, // Power Tool Replacement Parts
+      3754161,    // Kitchen & Bath
+      1063498,    // Appliances
+      2972638011, // Lawn & Garden
+      228013,     // Industrial
+      16310091,   // Electrical
+      228239,     // Plumbing
+      3180231,    // HVAC
+      7141123011, // Safety & PPE
+      7147440011, // Workwear
+    ]
+  }
+},
+
   woodworking: {
     name: "woodworking",
     selection: {

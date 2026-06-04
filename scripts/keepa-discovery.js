@@ -121,22 +121,9 @@ woodworking_test: {
 
     isLowest90_BUY_BOX_SHIPPING: true,
     deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
+    deltaPercent30_BUY_BOX_SHIPPINH_gte: 10,
 
-    brand: [
-      "festool",
-      "sawstop",
-      "woodpeckers",
-      "starrett",
-      "bessey",
-      "kreg",
-      "jessem",
-      "incra",
-      "freud",
-      "diablo",
-      "whiteside",
-      "amana tool",
-      "titebond"
-    ],
+    rootCategory: 228013,
 
     categories_exclude: [
       15684181,

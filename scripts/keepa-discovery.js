@@ -110,7 +110,7 @@ deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
   }
 },  
 
-woodworking_general: {
+woodworking_test: {
   name: "woodworking_test",
 
   selection: {

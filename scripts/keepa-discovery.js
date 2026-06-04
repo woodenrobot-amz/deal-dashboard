@@ -52,7 +52,27 @@ woodworking_core: {
     singleVariation: true,
 
     current_BUY_BOX_SHIPPING_gte: 3000,
+    categories_exclude: [
+     15684181, // Automotive
+  15719731, // Replacement Parts
+  15721631, // Brake System
+  15730551, // Sensors
+  15730891, // Oxygen Sensors
+  15721811, // Brake Pads
+  46244011, // Rotors
+  15728151, // Electric Fuel Pumps
+  9425850011, // Automotive Replacement Parts
 
+  // Tool noise / low-intent replacement parts
+  9022420011, // Power Tools Replacement Parts
+
+  // Optional noise reducers
+  256268011, // Masonry Core Drill Bits
+  256276011, // Masonry Drill Bits
+  8906591011, // Rotary Hammer Drill Bits
+];
+
+      
     isLowest90_BUY_BOX_SHIPPING: true,
 deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
 

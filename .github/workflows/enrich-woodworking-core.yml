@@ -33,18 +33,13 @@ jobs:
 
       - name: Commit enrichment results
         run: |
-            git config user.name "keepa-bot"
-            git config user.email "keepa-bot@users.noreply.github.com"
+          git config user.name "keepa-bot"
+          git config user.email "keepa-bot@users.noreply.github.com"
 
-            git add data/deals.json
-            git add data/discovered-asins.json
+          git add data/deals.json
+          git add data/discovered-asins.json
 
-            if git diff --cached --quiet; then
-                echo "No changes to commit"
-                exit 0
-            fi
+          git diff --cached --quiet || git commit -m "enrich deals"
 
-            git commit -m "enrich deals"
-
-            git pull --rebase origin main
-            git push
+          git pull --rebase --autostash origin main
+          git push

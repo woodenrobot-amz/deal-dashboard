@@ -1,9 +1,81 @@
 {
-  "generatedAt": "2026-06-04T21:50:29.022Z",
+  "generatedAt": "2026-06-04T21:56:43.051Z",
   "source": "keepa-enrichment",
   "lastEnrichmentStream": "woodworking_test",
-  "dealCount": 47,
+  "dealCount": 84,
   "deals": [
+    {
+      "asin": "B09PRB1MZM",
+      "parentAsin": "B0F537N88Y",
+      "familyKey": "B0F537N88Y",
+      "variationCount": 11,
+      "productAgeDays": 1611,
+      "title": "tp-link deco x55 ax3000 wifi 6 mesh system - covers up to 6500 sq.ft, replaces wireless router and extender, 3 gigabit ports per unit, supports ethernet backhaul, deco x55(3-pack)",
+      "brand": "tp-link",
+      "brandTier": "mid",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "17935294011",
+        "172282",
+        "541966",
+        "172504"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "541966",
+          "name": "computers & accessories"
+        },
+        {
+          "id": "172504",
+          "name": "networking products"
+        },
+        {
+          "id": "17935294011",
+          "name": "whole home & mesh wi-fi systems"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 149.98,
+      "avg90": 158.03,
+      "rating": 4.4,
+      "reviewCount": 17227,
+      "rank": 2,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61D7vtclcsL.jpg",
+      "url": "https://www.amazon.com/dp/B09PRB1MZM",
+      "keepa": "https://keepa.com/#!product/1-B09PRB1MZM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-04T21:56:43.049Z",
+      "dealScore": 88,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 7,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 12,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 6
+      }
+    },
     {
       "asin": "B07BR6529F",
       "parentAsin": "B0FKWCYD6N",
@@ -222,6 +294,289 @@
         "demand": 20,
         "reviews": 15,
         "rating": 8,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B07V3L7P3P",
+      "parentAsin": "B0GRD98DRS",
+      "familyKey": "B0GRD98DRS",
+      "variationCount": 5,
+      "productAgeDays": 2520,
+      "title": "vortex optics crossfire hd 8x42 binoculars - hd optical system, tripod adaptable, rubber armor, waterproof, fogproof, shockproof, included glasspak - unlimited, unconditional warranty",
+      "brand": "vortex",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "297842",
+        "172282",
+        "502394",
+        "499320"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "502394",
+          "name": "camera & photo"
+        },
+        {
+          "id": "499320",
+          "name": "binoculars & scopes"
+        },
+        {
+          "id": "297842",
+          "name": "binoculars"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 139,
+      "avg90": 138.54,
+      "rating": 4.8,
+      "reviewCount": 9982,
+      "rank": 6,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/91qe50c4eJL.jpg",
+      "url": "https://www.amazon.com/dp/B07V3L7P3P",
+      "keepa": "https://keepa.com/#!product/1-B07V3L7P3P",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 72,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 51,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 10,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0CFPTK5JG",
+      "parentAsin": "B0DFYWDGW6",
+      "familyKey": "B0DFYWDGW6",
+      "variationCount": 12,
+      "productAgeDays": 610,
+      "title": "amazon kindle paperwhite 16gb (newest model) – 20% faster, with new 7\" glare-free display and weeks of battery life – raspberry",
+      "brand": "amazon",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "2642129011",
+        "172282",
+        "2642125011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "2642125011",
+          "name": "ebook readers & accessories"
+        },
+        {
+          "id": "2642129011",
+          "name": "ebook readers"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 159.99,
+      "avg90": 152.39,
+      "rating": 4.7,
+      "reviewCount": 18813,
+      "rank": 3,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61JVv3GDLPL.jpg",
+      "url": "https://www.amazon.com/dp/B0CFPTK5JG",
+      "keepa": "https://keepa.com/#!product/1-B0CFPTK5JG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.049Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 50,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0C888NWQK",
+      "parentAsin": "B0D6394QY2",
+      "familyKey": "B0D6394QY2",
+      "variationCount": 33,
+      "productAgeDays": 1078,
+      "title": "pampers swaddlers diapers, size 8 (30+ lbs), 76 count, hypoallergenic, absorbent, keeps baby dry and comfortable, skin safe disposable baby diaper",
+      "brand": "pampers",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "6104957011",
+        "165796011",
+        "166764011",
+        "166772011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "165796011",
+          "name": "baby products"
+        },
+        {
+          "id": "166764011",
+          "name": "diapering"
+        },
+        {
+          "id": "166772011",
+          "name": "disposable diapers"
+        },
+        {
+          "id": "6104957011",
+          "name": "baby diapers"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 56.99,
+      "avg90": 59.79,
+      "rating": 4.8,
+      "reviewCount": 129608,
+      "rank": 1,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81otTeY8ZyL.jpg",
+      "url": "https://www.amazon.com/dp/B0C888NWQK",
+      "keepa": "https://keepa.com/#!product/1-B0C888NWQK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.047Z",
+      "dealScore": 87,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 7,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 10,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0DLZMH2WF",
+      "parentAsin": "B0CWRX39FV",
+      "familyKey": "B0CWRX39FV",
+      "variationCount": 39,
+      "productAgeDays": 499,
+      "title": "huggies size 2 diapers, little snugglers baby diapers, size 2 (12-18 lbs), 186 count (3 packs of 62), packaging may vary",
+      "brand": "huggies",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "6104957011",
+        "165796011",
+        "166764011",
+        "166772011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "165796011",
+          "name": "baby products"
+        },
+        {
+          "id": "166764011",
+          "name": "diapering"
+        },
+        {
+          "id": "166772011",
+          "name": "disposable diapers"
+        },
+        {
+          "id": "6104957011",
+          "name": "baby diapers"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 52.99,
+      "avg90": 55.54,
+      "rating": 4.8,
+      "reviewCount": 87839,
+      "rank": 6,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81iA-GMMlyL.jpg",
+      "url": "https://www.amazon.com/dp/B0DLZMH2WF",
+      "keepa": "https://keepa.com/#!product/1-B0DLZMH2WF",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 81,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 6,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 10,
         "priceTier": 4
       }
     },
@@ -519,6 +874,83 @@
       }
     },
     {
+      "asin": "B01LR5SIRI",
+      "parentAsin": "B09Q3YJW2P",
+      "familyKey": "B09Q3YJW2P",
+      "variationCount": 15,
+      "productAgeDays": 3145,
+      "title": "amazon basics neoprene coated hexagonal dumbbell hand weights for workout, 20 pounds, pair, dark green",
+      "brand": "amazon basics",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "3408401",
+        "3375251",
+        "3407731",
+        "3408271",
+        "23533919011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3407731",
+          "name": "exercise & fitness"
+        },
+        {
+          "id": "3408271",
+          "name": "strength training equipment"
+        },
+        {
+          "id": "23533919011",
+          "name": "weights & accessories"
+        },
+        {
+          "id": "3408401",
+          "name": "dumbbells"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 59.05,
+      "avg90": 56.56,
+      "rating": 4.8,
+      "reviewCount": 126990,
+      "rank": 2,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61ohBaDyfuL.jpg",
+      "url": "https://www.amazon.com/dp/B01LR5SIRI",
+      "keepa": "https://keepa.com/#!product/1-B01LR5SIRI",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.048Z",
+      "dealScore": 75,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 10,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B078HVD4FR",
       "parentAsin": "B0CPW96WP9",
       "familyKey": "B0CPW96WP9",
@@ -740,6 +1172,217 @@
       }
     },
     {
+      "asin": "B085WSCTS4",
+      "parentAsin": "B08GB83F7C",
+      "familyKey": "B08GB83F7C",
+      "variationCount": 10,
+      "productAgeDays": 2080,
+      "title": "amazon eero 6 mesh wifi system - supports internet plans up to 500 mbps, coverage up to 4,500 sq. ft., connect 75+ devices, 3-pack (1 router + 2 extenders)",
+      "brand": "eero",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "17935294011",
+        "172282",
+        "541966",
+        "172504"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "541966",
+          "name": "computers & accessories"
+        },
+        {
+          "id": "172504",
+          "name": "networking products"
+        },
+        {
+          "id": "17935294011",
+          "name": "whole home & mesh wi-fi systems"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 199.99,
+      "avg90": 176.66,
+      "rating": 4.5,
+      "reviewCount": 28759,
+      "rank": 4,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/412FFoC11ML.jpg",
+      "url": "https://www.amazon.com/dp/B085WSCTS4",
+      "keepa": "https://keepa.com/#!product/1-B085WSCTS4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 73,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0D932FPF7",
+      "parentAsin": "B0CRLCLK1M",
+      "familyKey": "B0CRLCLK1M",
+      "variationCount": 8,
+      "productAgeDays": 682,
+      "title": "waterwipes sensitive+ newborn & baby wipes, 3-in-1 cleans, cares, protects, 99.9% water, unscented & hypoallergenic, 1080 count (18 packs)",
+      "brand": "waterwipes",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "166776011",
+        "165796011",
+        "166764011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "165796011",
+          "name": "baby products"
+        },
+        {
+          "id": "166764011",
+          "name": "diapering"
+        },
+        {
+          "id": "166776011",
+          "name": "wipes & holders"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 65.99,
+      "avg90": 63.42,
+      "rating": 4.7,
+      "reviewCount": 85404,
+      "rank": 5,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81mfYif+TmL.jpg",
+      "url": "https://www.amazon.com/dp/B0D932FPF7",
+      "keepa": "https://keepa.com/#!product/1-B0D932FPF7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B07YXNCYLW",
+      "parentAsin": "B0GW8JTTW6",
+      "familyKey": "B0GW8JTTW6",
+      "variationCount": 26,
+      "productAgeDays": 2412,
+      "title": "the honest company hypoallergenic multi-use baby wipes for sensitive skin, balance blues, 576 count",
+      "brand": "the honest company",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "677974011",
+        "165796011",
+        "166764011",
+        "166776011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "165796011",
+          "name": "baby products"
+        },
+        {
+          "id": "166764011",
+          "name": "diapering"
+        },
+        {
+          "id": "166776011",
+          "name": "wipes & holders"
+        },
+        {
+          "id": "677974011",
+          "name": "wipes & refills"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 37.99,
+      "avg90": 39.19,
+      "rating": 4.8,
+      "reviewCount": 53491,
+      "rank": 3,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81YgvEHkeIL.jpg",
+      "url": "https://www.amazon.com/dp/B07YXNCYLW",
+      "keepa": "https://keepa.com/#!product/1-B07YXNCYLW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.049Z",
+      "dealScore": 84,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 4,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 47,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 10,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B018APNBCK",
       "parentAsin": "B0GY5FKK33",
       "familyKey": "B0GY5FKK33",
@@ -817,6 +1460,232 @@
       }
     },
     {
+      "asin": "B0DQYQKZQ2",
+      "parentAsin": "B0CT5WBY8Q",
+      "familyKey": "B0CT5WBY8Q",
+      "variationCount": 6,
+      "productAgeDays": 489,
+      "title": "bounty quick-size paper towels, white, 12 family triple = 40 regular rolls",
+      "brand": "bounty",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "15347401",
+        "3760901",
+        "15342811",
+        "15342841"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3760901",
+          "name": "health & household"
+        },
+        {
+          "id": "15342811",
+          "name": "household supplies"
+        },
+        {
+          "id": "15342841",
+          "name": "paper & plastic"
+        },
+        {
+          "id": "15347401",
+          "name": "paper towels"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 38.99,
+      "avg90": 41.39,
+      "rating": 4.8,
+      "reviewCount": 232644,
+      "rank": 1,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81jCqCxTbjL.jpg",
+      "url": "https://www.amazon.com/dp/B0DQYQKZQ2",
+      "keepa": "https://keepa.com/#!product/1-B0DQYQKZQ2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.048Z",
+      "dealScore": 75,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 8,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 47,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 10,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B00U036ZY2",
+      "parentAsin": "B0DW5LVZR1",
+      "familyKey": "B0DW5LVZR1",
+      "variationCount": 10,
+      "productAgeDays": 4088,
+      "title": "hp printer paper | 8.5 x 11 paper | copy &print 20 lb | 4 bulk pack case - 3000 sheets | 92 bright | fsc certified | 200030c",
+      "brand": "hp papers",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "1069712",
+        "1064954",
+        "1069242",
+        "1069664",
+        "21328370011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "1064954",
+          "name": "office products"
+        },
+        {
+          "id": "1069242",
+          "name": "office & school supplies"
+        },
+        {
+          "id": "1069664",
+          "name": "paper"
+        },
+        {
+          "id": "21328370011",
+          "name": "copy & printing paper"
+        },
+        {
+          "id": "1069712",
+          "name": "copy & multipurpose paper"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 40.39,
+      "avg90": 39.92,
+      "rating": 4.8,
+      "reviewCount": 100673,
+      "rank": 3,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71PW+nGxFsL.jpg",
+      "url": "https://www.amazon.com/dp/B00U036ZY2",
+      "keepa": "https://keepa.com/#!product/1-B00U036ZY2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.049Z",
+      "dealScore": 75,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 47,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 10,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0FG7YWW1R",
+      "parentAsin": "B0FQ3W1G3N",
+      "familyKey": "B0FQ3W1G3N",
+      "variationCount": 41,
+      "productAgeDays": 269,
+      "title": "zeerun weighted vest for women & men with reflective stripe and adjustable buckle, comfortable & durable rucking vest for walking, running & strength training, 30lbs-gray",
+      "brand": "zeerun",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "3408561",
+        "3375251",
+        "3407731",
+        "3408271",
+        "23533919011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3407731",
+          "name": "exercise & fitness"
+        },
+        {
+          "id": "3408271",
+          "name": "strength training equipment"
+        },
+        {
+          "id": "23533919011",
+          "name": "weights & accessories"
+        },
+        {
+          "id": "3408561",
+          "name": "weight vests"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 64.99,
+      "avg90": 67.19,
+      "rating": 4.6,
+      "reviewCount": 2044,
+      "rank": 6,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81SLdMkP0TL.jpg",
+      "url": "https://www.amazon.com/dp/B0FG7YWW1R",
+      "keepa": "https://keepa.com/#!product/1-B0FG7YWW1R",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 75,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 4,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 47,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B01DDIRDZA",
       "parentAsin": "B0FLKGDVDV",
       "familyKey": "B0FLKGDVDV",
@@ -891,6 +1760,318 @@
         "reviews": 15,
         "rating": 8,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0FSG8TBWG",
+      "parentAsin": "B0CZVW45BT",
+      "familyKey": "B0CZVW45BT",
+      "variationCount": 9,
+      "productAgeDays": 242,
+      "title": "earth rated 3x protect dog poop bag rolls, odor blocking leak proof extra thick, unscented, 240 count",
+      "brand": "earth rated",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "3052413011",
+        "2619533011",
+        "2975312011",
+        "2975405011",
+        "2975411011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2619533011",
+          "name": "pet supplies"
+        },
+        {
+          "id": "2975312011",
+          "name": "dogs"
+        },
+        {
+          "id": "2975405011",
+          "name": "litter & housebreaking"
+        },
+        {
+          "id": "2975411011",
+          "name": "pooper scoopers & bags"
+        },
+        {
+          "id": "3052413011",
+          "name": "bags"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg90": 41.61,
+      "rating": 4.8,
+      "reviewCount": 247247,
+      "rank": 4,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61w-FrMNiIL.jpg",
+      "url": "https://www.amazon.com/dp/B0FSG8TBWG",
+      "keepa": "https://keepa.com/#!product/1-B0FSG8TBWG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 72,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 5,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 47,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 10,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0DGHMNQ5Z",
+      "parentAsin": "B0GGJGSPPP",
+      "familyKey": "B0GGJGSPPP",
+      "variationCount": 4,
+      "productAgeDays": 632,
+      "title": "apple airpods 4 wireless earbuds, bluetooth headphones, personalized spatial audio, sweat and water resistant, usb-c charging case, h2 chip, up to 30 hours of battery life, effortless setup for iphone",
+      "brand": "apple",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "12097478011",
+        "172282",
+        "24046923011",
+        "172541"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "24046923011",
+          "name": "headphones, earbuds & accessories"
+        },
+        {
+          "id": "172541",
+          "name": "headphones & earbuds"
+        },
+        {
+          "id": "12097478011",
+          "name": "earbud headphones"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99,
+      "avg90": 103.78,
+      "rating": 4.6,
+      "reviewCount": 30162,
+      "rank": 4,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61iBtxCUabL.jpg",
+      "url": "https://www.amazon.com/dp/B0DGHMNQ5Z",
+      "keepa": "https://keepa.com/#!product/1-B0DGHMNQ5Z",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 72,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 6,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 47,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0BZYFFLQG",
+      "parentAsin": "B0FLKGX4B7",
+      "familyKey": "B0FLKGX4B7",
+      "variationCount": 62,
+      "productAgeDays": 1161,
+      "title": "owala freesip insulated stainless steel water bottle with straw, bpa-free sports water bottle, great for travel, 40 oz, denim",
+      "brand": "owala",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "13880501",
+        "9630569011",
+        "1055398",
+        "284507",
+        "510136",
+        "21613418011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "1055398",
+          "name": "home & kitchen"
+        },
+        {
+          "id": "284507",
+          "name": "kitchen & dining"
+        },
+        {
+          "id": "510136",
+          "name": "storage & organization"
+        },
+        {
+          "id": "21613418011",
+          "name": "thermoses"
+        },
+        {
+          "id": "21613420011",
+          "name": "insulated beverage containers"
+        },
+        {
+          "id": "13880501",
+          "name": "thermoses"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.98,
+      "avg90": 36.64,
+      "rating": 4.7,
+      "reviewCount": 122838,
+      "rank": 1,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61k6Lw6z8jL.jpg",
+      "url": "https://www.amazon.com/dp/B0BZYFFLQG",
+      "keepa": "https://keepa.com/#!product/1-B0BZYFFLQG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.048Z",
+      "dealScore": 79,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0CK9PT53B",
+      "parentAsin": "B0DG5KQ24H",
+      "familyKey": "B0DG5KQ24H",
+      "variationCount": 189,
+      "productAgeDays": 970,
+      "title": "stanley quencher h2.0 tumbler with handle and straw 30 oz | flowstate 3-position lid | cup holder compatible for travel | insulated stainless steel cup | bpa-free | frost",
+      "brand": "stanley",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "21613423011",
+        "1055398",
+        "284507",
+        "510136",
+        "21613418011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "1055398",
+          "name": "home & kitchen"
+        },
+        {
+          "id": "284507",
+          "name": "kitchen & dining"
+        },
+        {
+          "id": "510136",
+          "name": "storage & organization"
+        },
+        {
+          "id": "21613418011",
+          "name": "thermoses"
+        },
+        {
+          "id": "21613420011",
+          "name": "insulated beverage containers"
+        },
+        {
+          "id": "21613423011",
+          "name": "tumblers"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.9,
+      "avg90": 31.25,
+      "rating": 4.7,
+      "reviewCount": 98804,
+      "rank": 2,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51zzngj1AbL.jpg",
+      "url": "https://www.amazon.com/dp/B0CK9PT53B",
+      "keepa": "https://keepa.com/#!product/1-B0CK9PT53B",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.048Z",
+      "dealScore": 79,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 2
       }
     },
     {
@@ -1115,6 +2296,157 @@
       }
     },
     {
+      "asin": "B09B93ZDG4",
+      "parentAsin": "B0BF73CTQF",
+      "familyKey": "B0BF73CTQF",
+      "variationCount": 3,
+      "productAgeDays": 1345,
+      "title": "amazon echo dot (newest model) - vibrant sounding speaker, designed for alexa+, great for bedrooms, dining rooms and offices, deep sea blue",
+      "brand": "amazon",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "3236451011",
+        "12097482011",
+        "18238261011",
+        "172282",
+        "667846011",
+        "172563"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "667846011",
+          "name": "home audio"
+        },
+        {
+          "id": "172563",
+          "name": "speakers"
+        },
+        {
+          "id": "3236451011",
+          "name": "bookshelf speakers"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg90": 47.68,
+      "rating": 4.7,
+      "reviewCount": 193257,
+      "rank": 5,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/615mmVM4qQL.jpg",
+      "url": "https://www.amazon.com/dp/B09B93ZDG4",
+      "keepa": "https://keepa.com/#!product/1-B09B93ZDG4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 71,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0B879FZBZ",
+      "parentAsin": "B0FPMN9D69",
+      "familyKey": "B0FPMN9D69",
+      "variationCount": 5,
+      "productAgeDays": 1399,
+      "title": "biodance bio-collagen real deep mask, hydrating overnight hydrogel face mask, pore minimizing, plumping, elasticity improvement, korean skin care, self care gifts for women | 1.19oz(34g) x 16ea",
+      "brand": "biodance",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "11061121",
+        "3760911",
+        "11060451",
+        "11060711",
+        "11062031"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3760911",
+          "name": "beauty & personal care"
+        },
+        {
+          "id": "11060451",
+          "name": "skin care"
+        },
+        {
+          "id": "11060711",
+          "name": "face"
+        },
+        {
+          "id": "11062031",
+          "name": "treatments & masks"
+        },
+        {
+          "id": "11061121",
+          "name": "masks"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 62,
+      "avg90": 59.11,
+      "rating": 4.5,
+      "reviewCount": 45105,
+      "rank": 6,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/519Liw+ABwL.jpg",
+      "url": "https://www.amazon.com/dp/B0B879FZBZ",
+      "keepa": "https://keepa.com/#!product/1-B0B879FZBZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 70,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B00Q2SXFG0",
       "parentAsin": "B0D3FDYQ5P",
       "familyKey": "B0D3FDYQ5P",
@@ -1189,6 +2521,83 @@
         "reviews": 15,
         "rating": 8,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B00KWGWNMA",
+      "parentAsin": "B0FDL43BSP",
+      "familyKey": "B0FDL43BSP",
+      "variationCount": 38,
+      "productAgeDays": 4319,
+      "title": "ernie ball super slinky nickel wound electric guitar strings 6-pack, 9-42 gauge (p03023)",
+      "brand": "ernie ball",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "11968641",
+        "11091801",
+        "11965871",
+        "11967641",
+        "486420011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "11091801",
+          "name": "musical instruments"
+        },
+        {
+          "id": "11965871",
+          "name": "instrument accessories"
+        },
+        {
+          "id": "11967641",
+          "name": "guitar & bass accessories"
+        },
+        {
+          "id": "486420011",
+          "name": "strings"
+        },
+        {
+          "id": "11968641",
+          "name": "electric guitar strings"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 34.98,
+      "avg90": 34.98,
+      "rating": 4.8,
+      "reviewCount": 33462,
+      "rank": 1,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81Cwori8AyL.jpg",
+      "url": "https://www.amazon.com/dp/B00KWGWNMA",
+      "keepa": "https://keepa.com/#!product/1-B00KWGWNMA",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.048Z",
+      "dealScore": 80,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 45,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 10,
+        "priceTier": 0
       }
     },
     {
@@ -1413,6 +2822,146 @@
       }
     },
     {
+      "asin": "B08L5KQWWP",
+      "parentAsin": "B0GWK2P6DN",
+      "familyKey": "B0GWK2P6DN",
+      "variationCount": 15,
+      "productAgeDays": 2054,
+      "title": "bicycle jumbo index playing cards, 12 pack bulk set of large print poker size cards, red & blue backs, for easy reading, family card games, classrooms, and casino play",
+      "brand": "bicycle",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "166244011",
+        "165793011",
+        "166220011",
+        "166239011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "165793011",
+          "name": "toys & games"
+        },
+        {
+          "id": "166220011",
+          "name": "games & accessories"
+        },
+        {
+          "id": "166239011",
+          "name": "card games"
+        },
+        {
+          "id": "166244011",
+          "name": "standard playing card decks"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 32.5,
+      "avg90": 27.51,
+      "rating": 4.8,
+      "reviewCount": 39355,
+      "rank": 4,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61dV7xoEArL.jpg",
+      "url": "https://www.amazon.com/dp/B08L5KQWWP",
+      "keepa": "https://keepa.com/#!product/1-B08L5KQWWP",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 75,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 45,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0BG19B99Y",
+      "parentAsin": "B0BPRQR2DH",
+      "familyKey": "B0BPRQR2DH",
+      "variationCount": 10,
+      "productAgeDays": 1288,
+      "title": "ibayam 8 '' multipurpose heavy duty scissors bulk 24-pack, 2.5mm thickness ultra sharp blade shears with comfort-grip handles for household school office supplies, right/left hand tools",
+      "brand": "ibayam",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "490579011",
+        "689392011",
+        "1064954",
+        "1069242"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "1064954",
+          "name": "office products"
+        },
+        {
+          "id": "1069242",
+          "name": "office & school supplies"
+        },
+        {
+          "id": "490579011",
+          "name": "cutting & measuring devices"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 31.99,
+      "avg90": 29.39,
+      "rating": 4.8,
+      "reviewCount": 85953,
+      "rank": 6,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/714QUz6U1rL.jpg",
+      "url": "https://www.amazon.com/dp/B0BG19B99Y",
+      "keepa": "https://keepa.com/#!product/1-B0BG19B99Y",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 75,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 45,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B0F1GCBNYQ",
       "parentAsin": "B0GZFJSF3Q",
       "familyKey": "B0GZFJSF3Q",
@@ -1485,6 +3034,155 @@
       }
     },
     {
+      "asin": "B0GPZPSG9Z",
+      "parentAsin": "B0D89H2ZHD",
+      "familyKey": "B0D89H2ZHD",
+      "variationCount": 36,
+      "productAgeDays": 96,
+      "title": "hydrojug traveler - 40 oz water bottle with handle & flip straw - fits in cup holder, leak resistant tumbler-reusable insulated stainless steel & rubber base - gifts for women & men, primrose",
+      "brand": "hydrojug",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "13218451",
+        "1055398",
+        "284507",
+        "13162311",
+        "13217501"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "1055398",
+          "name": "home & kitchen"
+        },
+        {
+          "id": "284507",
+          "name": "kitchen & dining"
+        },
+        {
+          "id": "13162311",
+          "name": "dining & entertaining"
+        },
+        {
+          "id": "13217501",
+          "name": "glassware & drinkware"
+        },
+        {
+          "id": "13218451",
+          "name": "tumblers & water glasses"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 44.99,
+      "avg90": 44.76,
+      "rating": 4.6,
+      "reviewCount": 19255,
+      "rank": 4,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51V-WJ4He4L.jpg",
+      "url": "https://www.amazon.com/dp/B0GPZPSG9Z",
+      "keepa": "https://keepa.com/#!product/1-B0GPZPSG9Z",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.049Z",
+      "dealScore": 71,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 45,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0DYV4TGG9",
+      "parentAsin": "B0FF3HM91H",
+      "familyKey": "B0FF3HM91H",
+      "variationCount": 17,
+      "productAgeDays": 455,
+      "title": "scott comfortplus toilet paper, 2 packs of 18 mega rolls, 310 sheets per roll, septic-safe, 1-ply toilet tissue",
+      "brand": "scott",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "15342981",
+        "3760901",
+        "15342811",
+        "23700319011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3760901",
+          "name": "health & household"
+        },
+        {
+          "id": "15342811",
+          "name": "household supplies"
+        },
+        {
+          "id": "23700319011",
+          "name": "tissues, toilet paper & sprays"
+        },
+        {
+          "id": "15342981",
+          "name": "toilet paper"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 36.99,
+      "avg90": 35.38,
+      "rating": 4.6,
+      "reviewCount": 140359,
+      "rank": 2,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81fTs3YGsXL.jpg",
+      "url": "https://www.amazon.com/dp/B0DYV4TGG9",
+      "keepa": "https://keepa.com/#!product/1-B0DYV4TGG9",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.049Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 45,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0G9F7DQXD",
       "parentAsin": "B0GYFKD5B4",
       "familyKey": "B0GYFKD5B4",
@@ -1535,6 +3233,73 @@
       "isHot": true,
       "isNameBrand": false,
       "updatedAt": "2026-06-04T21:50:29.021Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 45,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0F7Z4QZTT",
+      "parentAsin": "B0CDR2MSVC",
+      "familyKey": "B0CDR2MSVC",
+      "variationCount": 1,
+      "productAgeDays": 243,
+      "title": "amazon fire tv stick 4k plus (newest model) with ai-powered fire tv search, wi-fi 6, stream hundreds of thousands of movies and shows, free & live tv, find shows faster with alexa+",
+      "brand": "amazon",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "13447451",
+        "172282",
+        "1266092011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "1266092011",
+          "name": "television & video"
+        },
+        {
+          "id": "13447451",
+          "name": "streaming media players"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg90": 36.45,
+      "rating": 4.6,
+      "reviewCount": 109653,
+      "rank": 2,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51WtNy0OxLL.jpg",
+      "url": "https://www.amazon.com/dp/B0F7Z4QZTT",
+      "keepa": "https://keepa.com/#!product/1-B0F7Z4QZTT",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.049Z",
       "dealScore": 63,
       "scoreBreakdown": {
         "rating": 23,
@@ -1701,6 +3466,155 @@
       }
     },
     {
+      "asin": "B07D9TS92K",
+      "parentAsin": "B0BMHSMG2H",
+      "familyKey": "B0BMHSMG2H",
+      "variationCount": 33,
+      "productAgeDays": 802,
+      "title": "purina fancy feast grain free pate wet kitten food variety pack, kitten classic pate collection chicken & salmon - (2 packs of 12) 3 oz. cans",
+      "brand": "fancy feast",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "6514357011",
+        "2619533011",
+        "2975241011",
+        "2975265011",
+        "2975267011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2619533011",
+          "name": "pet supplies"
+        },
+        {
+          "id": "2975241011",
+          "name": "cats"
+        },
+        {
+          "id": "2975265011",
+          "name": "food"
+        },
+        {
+          "id": "2975267011",
+          "name": "wet"
+        },
+        {
+          "id": "6514357011",
+          "name": "canned"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 40.93,
+      "avg90": 41.05,
+      "rating": 4.7,
+      "reviewCount": 1388,
+      "rank": 2,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81nwM8IQDYL.jpg",
+      "url": "https://www.amazon.com/dp/B07D9TS92K",
+      "keepa": "https://keepa.com/#!product/1-B07D9TS92K",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.049Z",
+      "dealScore": 79,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 13,
+        "rating": 9,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B09JVCD7J4",
+      "parentAsin": "B0D5BZDH7Y",
+      "familyKey": "B0D5BZDH7Y",
+      "variationCount": 349,
+      "productAgeDays": 1554,
+      "title": "king size 4 piece sheet set - comfy breathable & cooling sheets - hotel luxury bed sheets for women & men - deep pockets, easy-fit, extra soft and wrinkle free sheets - khaki oeko-tex bed sheet set",
+      "brand": "cgk unlimited",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "3732781",
+        "1055398",
+        "1063252",
+        "1063274"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "1055398",
+          "name": "home & kitchen"
+        },
+        {
+          "id": "1063252",
+          "name": "bedding"
+        },
+        {
+          "id": "1063274",
+          "name": "sheets & pillowcases"
+        },
+        {
+          "id": "3732781",
+          "name": "sheet & pillowcase sets"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 37.99,
+      "avg90": 37.35,
+      "rating": 4.5,
+      "reviewCount": 440273,
+      "rank": 2,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61syREWB+7L.jpg",
+      "url": "https://www.amazon.com/dp/B09JVCD7J4",
+      "keepa": "https://keepa.com/#!product/1-B09JVCD7J4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.048Z",
+      "dealScore": 78,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0013T5YO4",
       "parentAsin": "B0FY39RS61",
       "familyKey": "B0FY39RS61",
@@ -1855,6 +3769,83 @@
       }
     },
     {
+      "asin": "B07QB79SN6",
+      "parentAsin": "B0DC6GLPN4",
+      "familyKey": "B0DC6GLPN4",
+      "variationCount": 3,
+      "productAgeDays": 2592,
+      "title": "elikliv microscope, lcd digital coin microscope 1000x, coin magnifier with 8 adjustable led lights, pc view compatible with windows/macbook, edm4, 4.3-inch",
+      "brand": "elikliv",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "2742273011",
+        "172282",
+        "502394",
+        "499320",
+        "499170"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "502394",
+          "name": "camera & photo"
+        },
+        {
+          "id": "499320",
+          "name": "binoculars & scopes"
+        },
+        {
+          "id": "499170",
+          "name": "microscopes"
+        },
+        {
+          "id": "2742273011",
+          "name": "usb microscopes"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg90": 34.63,
+      "rating": 4.5,
+      "reviewCount": 11338,
+      "rank": 5,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61AjJNpELNL.jpg",
+      "url": "https://www.amazon.com/dp/B07QB79SN6",
+      "keepa": "https://keepa.com/#!product/1-B07QB79SN6",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 70,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0DD1RCVTY",
       "parentAsin": "B0F5SL8D1F",
       "familyKey": "B0F5SL8D1F",
@@ -1924,6 +3915,73 @@
         "reviews": 11,
         "rating": 9,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0FK4KQH8X",
+      "parentAsin": "B0C14N8SCT",
+      "familyKey": "B0C14N8SCT",
+      "variationCount": 14,
+      "productAgeDays": 304,
+      "title": "tessan israel adapter plug 2 pack, 7 in 1 us to israel power adapter with 3 usb ports (1 usb c port) 4 american outlets, type h travel adaptor for usa to jerusalem",
+      "brand": "tessan",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "10967761",
+        "172282",
+        "21608215011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "21608215011",
+          "name": "power accessories"
+        },
+        {
+          "id": "10967761",
+          "name": "power converters"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 31.5,
+      "avg90": 28.82,
+      "rating": 4.7,
+      "reviewCount": 13641,
+      "rank": 4,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61vqKE7PdAL.jpg",
+      "url": "https://www.amazon.com/dp/B0FK4KQH8X",
+      "keepa": "https://keepa.com/#!product/1-B0FK4KQH8X",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.049Z",
+      "dealScore": 66,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 0
       }
     },
     {
@@ -2054,6 +4112,78 @@
       "isHot": true,
       "isNameBrand": false,
       "updatedAt": "2026-06-04T21:50:29.021Z",
+      "dealScore": 74,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 43,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B089PM6FRC",
+      "parentAsin": "B0F5BXVQ3T",
+      "familyKey": "B0F5BXVQ3T",
+      "variationCount": 12,
+      "productAgeDays": 2179,
+      "title": "fresh step advanced odor shield multi cat clumping litter with febreze freshness, low dust, odor control with ammonia block tech, compatible in automatic litter boxes, 37 lb. (2 x 18.5 lb.)",
+      "brand": "fresh step",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "2975298011",
+        "2619533011",
+        "2975241011",
+        "2975296011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2619533011",
+          "name": "pet supplies"
+        },
+        {
+          "id": "2975241011",
+          "name": "cats"
+        },
+        {
+          "id": "2975296011",
+          "name": "litter & housebreaking"
+        },
+        {
+          "id": "2975298011",
+          "name": "litter"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 33.59,
+      "avg90": 33.02,
+      "rating": 4.6,
+      "reviewCount": 140564,
+      "rank": 6,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81WCDaEoIbL.jpg",
+      "url": "https://www.amazon.com/dp/B089PM6FRC",
+      "keepa": "https://keepa.com/#!product/1-B089PM6FRC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
       "dealScore": 74,
       "scoreBreakdown": {
         "rating": 23,
@@ -2287,6 +4417,74 @@
       }
     },
     {
+      "asin": "B0CZ8XMWXV",
+      "parentAsin": "B0GXDBNYR9",
+      "familyKey": "B0GXDBNYR9",
+      "variationCount": 9,
+      "productAgeDays": 776,
+      "title": "euhomy countertop ice maker machine with handle, 26lbs per day, 9 ice cubes ready in 6 mins, auto-cleaning portable ice maker with basket and scoop, for home/kitchen/camping/rv (white)",
+      "brand": "euhomy",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "2399939011",
+        "16310161",
+        "2619525011",
+        "17921061011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2619525011",
+          "name": "appliances"
+        },
+        {
+          "id": "17921061011",
+          "name": "refrigerators, freezers & ice makers"
+        },
+        {
+          "id": "2399939011",
+          "name": "ice makers"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 74.99,
+      "avg90": 74.89,
+      "rating": 4.3,
+      "reviewCount": 12345,
+      "rank": 1,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61czbjS-6tL.jpg",
+      "url": "https://www.amazon.com/dp/B0CZ8XMWXV",
+      "keepa": "https://keepa.com/#!product/1-B0CZ8XMWXV",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.048Z",
+      "dealScore": 72,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 42,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 3,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B07MQ68LLC",
       "parentAsin": "B09QTL4NMJ",
       "familyKey": "B09QTL4NMJ",
@@ -2438,6 +4636,222 @@
         "reviews": 13,
         "rating": 8,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B08264XDKC",
+      "parentAsin": "B0GZ4P1SPP",
+      "familyKey": "B0GZ4P1SPP",
+      "variationCount": 11,
+      "productAgeDays": 2366,
+      "title": "apple 2019 ipad 10.2-inch, wi-fi, 128gb - space gray (renewed)",
+      "brand": "apple",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "1232597011",
+        "172282",
+        "541966",
+        "13896617011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "541966",
+          "name": "computers & accessories"
+        },
+        {
+          "id": "13896617011",
+          "name": "computers & tablets"
+        },
+        {
+          "id": "1232597011",
+          "name": "tablets"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 162.18,
+      "avg90": 160.25,
+      "rating": 4.2,
+      "reviewCount": 14842,
+      "rank": 2,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81IjVvOXGdL.jpg",
+      "url": "https://www.amazon.com/dp/B08264XDKC",
+      "keepa": "https://keepa.com/#!product/1-B08264XDKC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.049Z",
+      "dealScore": 72,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 41,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 0,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0GR1FSY63",
+      "parentAsin": "B0GR7XPC4V",
+      "familyKey": "B0GR7XPC4V",
+      "variationCount": 24,
+      "productAgeDays": 93,
+      "title": "apple 2026 macbook air 13-inch laptop with m5 chip: built for ai, 13.6-inch liquid retina display, 16gb unified memory, 1tb ssd, 12mp center stage camera, touch id, wi-fi 7; midnight",
+      "brand": "apple",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "13896615011",
+        "172282",
+        "541966",
+        "13896617011",
+        "565108"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "541966",
+          "name": "computers & accessories"
+        },
+        {
+          "id": "13896617011",
+          "name": "computers & tablets"
+        },
+        {
+          "id": "565108",
+          "name": "laptops"
+        },
+        {
+          "id": "13896615011",
+          "name": "traditional laptops"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1149,
+      "avg90": 1197.1,
+      "rating": 4.6,
+      "reviewCount": 58,
+      "rank": 5,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71pkfQGcMKL.jpg",
+      "url": "https://www.amazon.com/dp/B0GR1FSY63",
+      "keepa": "https://keepa.com/#!product/1-B0GR1FSY63",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 6,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 41,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 3,
+        "rating": 8,
+        "priceTier": 10
+      }
+    },
+    {
+      "asin": "B0G3Q4Y676",
+      "parentAsin": "B0GXX19CZP",
+      "familyKey": "B0GXX19CZP",
+      "variationCount": 4,
+      "productAgeDays": 191,
+      "title": "euhomy nugget ice maker countertop with handle, ready in 6 mins, 38lbs/day, removable top cover, self-cleaning, portable chewable ice maker with basket, scoop, for home/rv/party/camping (black)",
+      "brand": "euhomy",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "2399939011",
+        "2619525011",
+        "17921061011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2619525011",
+          "name": "appliances"
+        },
+        {
+          "id": "17921061011",
+          "name": "refrigerators, freezers & ice makers"
+        },
+        {
+          "id": "2399939011",
+          "name": "ice makers"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 147.16,
+      "avg90": 155.37,
+      "rating": 4.1,
+      "reviewCount": 16746,
+      "rank": 5,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/710He0DdtnL.jpg",
+      "url": "https://www.amazon.com/dp/B0G3Q4Y676",
+      "keepa": "https://keepa.com/#!product/1-B0G3Q4Y676",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 20,
+        "discount": 7,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 41,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 0,
+        "priceTier": 6
       }
     },
     {
@@ -2816,6 +5230,74 @@
       }
     },
     {
+      "asin": "B07G8SQ2S3",
+      "parentAsin": "B07DHYJ2S5",
+      "familyKey": "B07DHYJ2S5",
+      "variationCount": 7,
+      "productAgeDays": 2831,
+      "title": "bitdefender total security 2026 – complete antivirus and internet security suite – 5 devices | 1 year subscription | pc/mac | activation code by mail",
+      "brand": "bitdefender",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "2251986011",
+        "2251987011",
+        "229534",
+        "229677"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "229534",
+          "name": "software"
+        },
+        {
+          "id": "229677",
+          "name": "antivirus & security"
+        },
+        {
+          "id": "2251986011",
+          "name": "antivirus"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 33.99,
+      "avg90": 35.12,
+      "rating": 4.3,
+      "reviewCount": 3796,
+      "rank": 6,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61LKM7+acPL.jpg",
+      "url": "https://www.amazon.com/dp/B07G8SQ2S3",
+      "keepa": "https://keepa.com/#!product/1-B07G8SQ2S3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 73,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 4,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 38,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 3,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B071G65YD8",
       "parentAsin": "B0FHRRTV9V",
       "familyKey": "B0FHRRTV9V",
@@ -2956,6 +5438,73 @@
         "demand": 20,
         "reviews": 6,
         "rating": 7,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0G259S2QJ",
+      "parentAsin": "B0G256G2YC",
+      "familyKey": "B0G256G2YC",
+      "variationCount": 8,
+      "productAgeDays": 201,
+      "title": "newbulig ice makers countertop with handle, portable ice machine, 9 bullet cubes in 6 mins, 26lbs in 24hrs, auto-cleaning, with basket and scoop, for home, kitchen, rv, camping, black",
+      "brand": "newbulig",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "2399939011",
+        "2619525011",
+        "17921061011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2619525011",
+          "name": "appliances"
+        },
+        {
+          "id": "17921061011",
+          "name": "refrigerators, freezers & ice makers"
+        },
+        {
+          "id": "2399939011",
+          "name": "ice makers"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 63.89,
+      "avg90": 46.07,
+      "rating": 4.2,
+      "reviewCount": 1308,
+      "rank": 4,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71CY7jBsudL.jpg",
+      "url": "https://www.amazon.com/dp/B0G259S2QJ",
+      "keepa": "https://keepa.com/#!product/1-B0G259S2QJ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.049Z",
+      "dealScore": 64,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 37,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 13,
+        "rating": 0,
         "priceTier": 4
       }
     },
@@ -3335,6 +5884,83 @@
       }
     },
     {
+      "asin": "B0F6TRHYDS",
+      "parentAsin": "B0FGJZW2S3",
+      "familyKey": "B0FGJZW2S3",
+      "variationCount": 1,
+      "productAgeDays": 373,
+      "title": "2024-25 topps chrome basketball - factory sealed - value box",
+      "brand": "topps",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "9430236011",
+        "4991425011",
+        "3250697011",
+        "3311070011",
+        "9430235011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "4991425011",
+          "name": "collectibles & fine art"
+        },
+        {
+          "id": "3250697011",
+          "name": "sports"
+        },
+        {
+          "id": "3311070011",
+          "name": "trading cards"
+        },
+        {
+          "id": "9430235011",
+          "name": "packs & boxes"
+        },
+        {
+          "id": "9430236011",
+          "name": "boxes"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 35.27,
+      "avg90": 32.55,
+      "rating": 4.3,
+      "reviewCount": 392,
+      "rank": 5,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81TgfiVenvL.jpg",
+      "url": "https://www.amazon.com/dp/B0F6TRHYDS",
+      "keepa": "https://keepa.com/#!product/1-B0F6TRHYDS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 33,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 8,
+        "rating": 3,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0FP48NHVZ",
       "parentAsin": "B0DYL64KDF",
       "familyKey": "B0DYL64KDF",
@@ -3474,6 +6100,83 @@
         "brand": 0,
         "demand": 20,
         "reviews": 8,
+        "rating": 0,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0G6DKKKFN",
+      "parentAsin": "B0GY3VZRJT",
+      "familyKey": "B0GY3VZRJT",
+      "variationCount": 7,
+      "productAgeDays": 135,
+      "title": "maybesta 2 pack wireless mini microphone with charging case - ai noise reduction for iphone andriod phone, studio quality audio for video recording vlog youtube interview(white)",
+      "brand": "maybesta",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "11974741",
+        "11091801",
+        "11974521",
+        "8882489011",
+        "11974711"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "11091801",
+          "name": "musical instruments"
+        },
+        {
+          "id": "11974521",
+          "name": "microphones & accessories"
+        },
+        {
+          "id": "8882489011",
+          "name": "microphones"
+        },
+        {
+          "id": "11974711",
+          "name": "wireless microphones & systems"
+        },
+        {
+          "id": "11974741",
+          "name": "wireless headset microphones"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg90": 39.33,
+      "rating": 3,
+      "reviewCount": 2,
+      "rank": 5,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51MlmBokmmL.jpg",
+      "url": "https://www.amazon.com/dp/B0G6DKKKFN",
+      "keepa": "https://keepa.com/#!product/1-B0G6DKKKFN",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-04T21:56:43.050Z",
+      "dealScore": 45,
+      "scoreBreakdown": {
+        "rating": 15,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 22,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 0,
         "rating": 0,
         "priceTier": 2
       }

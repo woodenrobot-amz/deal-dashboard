@@ -119,15 +119,15 @@ woodworking_test: {
 
     current_BUY_BOX_SHIPPING_gte: 3000,
 
-    // isLowest90_BUY_BOX_SHIPPING: true
+    // isLowest90_BUY_BOX_SHIPPING: true,
 
     deltaPercent90_BUY_BOX_SHIPPING_lte: 10,
 
     deltaPercent30_BUY_BOX_SHIPPING_lte: 5,
 
-    // salesRankReference: 16310101
-   // current_SALES_gte: 1
-  //  current_SALES_lte: 100000
+    // salesRankReference: 16310101,
+   // current_SALES_gte: 1,
+  //  current_SALES_lte: 100000,
 
     categories_exclude: [
       15684181,   // Automotive

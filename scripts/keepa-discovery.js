@@ -110,20 +110,33 @@ deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
   }
 },  
 
-woodworking_test: {
-  name: "woodworking_test",
+woodworking_general: {
+  name: "woodworking_general",
 
   selection: {
     productType: [0],
     singleVariation: true,
 
+    perPage: 1000,
+    page: 0,
+
     current_BUY_BOX_SHIPPING_gte: 3000,
 
     isLowest90_BUY_BOX_SHIPPING: true,
     deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
-    deltaPercent30_BUY_BOX_SHIPPINH_gte: 10,
 
-    rootCategory: 228013,
+    categories_include: [
+      551236, // power tools
+      552876, // sanders
+      552888, // random-orbit sanders
+      328182011, // power & hand tools
+      552262, // power tool parts & accessories
+      8106522011, // oscillating tool accessories
+      8106524011, // blades
+      511228, // hardware
+      511286, // hinges
+      13399701 // spray paint - optional, maybe remove later
+    ],
 
     categories_exclude: [
       15684181,
@@ -132,11 +145,13 @@ woodworking_test: {
       3754161,
       1063498,
       2972638011,
-      16310091,
-      228239,
-      3180231,
+      495224,
+      495346,
+      495266,
+      495236,
+      495238,
       7141123011,
-      7147440011,
+      7147440011
     ]
   }
 },

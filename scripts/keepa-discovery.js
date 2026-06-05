@@ -124,6 +124,9 @@ isLowest90_BUY_BOX_SHIPPING: true,
 deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
 deltaPercent30_BUY_BOX_SHIPPING_gte: 5,
 
+  current_RATING_gte: 43,
+  current_COUNT_REVIEWS_gte: 100,
+
 categories_include: [
   // Clamping & Workholding
   553158,      // C-Clamps

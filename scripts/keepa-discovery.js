@@ -110,51 +110,70 @@ deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
   }
 },  
 
+
 woodworking_test: {
-  name: "woodworking_test",
+name: "woodworking_test",
+selection: {
+productType: [0],
+singleVariation: true,
 
-  selection: {
-    productType: [0],
-    singleVariation: true,
+current_BUY_BOX_SHIPPING_gte: 3000,
 
-    perPage: 1000,
-    page: 0,
+isLowest90_BUY_BOX_SHIPPING: true,
 
-    current_BUY_BOX_SHIPPING_gte: 3000,
+deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
+deltaPercent30_BUY_BOX_SHIPPING_gte: 5,
 
-    isLowest90_BUY_BOX_SHIPPING: true,
-    deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
+categories_include: [
+  // Clamping & Workholding
+  553158,      // C-Clamps
+  3207128011,  // Bar Clamps
+  553152,      // Angle Clamps
+  553153,      // Bench Clamps
+  5739459011,  // Bench Vises
 
-    categories_include: [
-      551236, // power tools
-      552876, // sanders
-      552888, // random-orbit sanders
-      328182011, // power & hand tools
-      552262, // power tool parts & accessories
-      8106522011, // oscillating tool accessories
-      8106524011, // blades
-      511228, // hardware
-      511286, // hinges
-      13399701 // spray paint - optional, maybe remove later
-    ],
+  // Routers
+  552866,      // Routers
 
-    categories_exclude: [
-      15684181,
-      15719731,
-      9022420011,
-      3754161,
-      1063498,
-      2972638011,
-      495224,
-      495346,
-      495266,
-      495236,
-      495238,
-      7141123011,
-      7147440011
-    ]
-  }
+  // Sanders
+  552888,      // Random-Orbit Sanders
+  552880,      // Detail Sanders
+  552886,      // Drum Sanders
+  552882,      // Combination Disc & Belt Sanders
+  552884,      // Disc Sanders
+
+  // Cutting Tools
+  552962,      // Table Saws
+  552910,      // Band Saws
+  552940,      // Miter Saws
+  553220,      // Handsaws
+
+  // Specialty Tools
+  2445476011,  // Oscillating Tools
+  8906593011,  // Wood Drill Bit Sets
+  552936,      // Jig Accessories
+
+  // Hand Tools
+  21213614011, // Block Planes
+  21213620011, // Smoothing Planes
+
+  // Dust Collection
+  553020,      // Dust Collectors & Air Cleaners
+  553022,      // Wet-Dry Shop Vacuums
+
+  // Shop Furniture
+  553602       // Workbenches
+],
+
+sort: [
+  ["current_SALES", "asc"]
+],
+
+page: 0,
+perPage: 1000
+
 },
+
 
   woodworking: {
     name: "woodworking",

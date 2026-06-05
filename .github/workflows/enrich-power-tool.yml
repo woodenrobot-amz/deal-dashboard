@@ -1,0 +1,47 @@
+name: Enric Power Tool Deals
+on:
+  power_tools_main:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: keepa-enrich-power_tools_main
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync latest main
+        run: |
+          git fetch origin
+          git reset --hard origin/main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run power tool enrichment
+        env:
+          KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+        run: node scripts/enrich-stream.js power_tool_deals
+
+      - name: Commit enrichment results
+        run: |
+          git config user.name "keepa-bot"
+          git config user.email "keepa-bot@users.noreply.github.com"
+
+          git add data/deals.json
+          git add data/discovered-asins.json
+
+          git diff --cached --quiet || git commit -m "enrich dude power deals"
+
+          git push

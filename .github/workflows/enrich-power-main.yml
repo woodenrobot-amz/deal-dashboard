@@ -1,4 +1,4 @@
-name: Enrich Power Tool Main
+name: Enrich Power Tools Main
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: keepa-enrich-power-tool-main
+  group: keepa-enrich-power-tools-main
   cancel-in-progress: false
 
 jobs:
@@ -33,7 +33,7 @@ jobs:
       - name: Run power tool enrichment
         env:
           KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
-        run: node scripts/enrich-stream.js power_tool_main
+        run: node scripts/enrich-stream.js power_tools_main
 
       - name: Commit enrichment results
         run: |
@@ -43,6 +43,6 @@ jobs:
           git add data/deals.json
           git add data/discovered-asins.json
 
-          git diff --cached --quiet || git commit -m "enrich power tool main deals"
+          git diff --cached --quiet || git commit -m "enrich power tools main deals"
 
           git push

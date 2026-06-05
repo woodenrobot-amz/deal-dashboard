@@ -28,6 +28,16 @@ const STREAMS = {
 
     rootCategory: [228013],
 
+    "categories_exclude": [
+        "553336",    //screwdrivers
+        "553284",    //tape measures
+        "553578",    //tool bags
+        "553350",    //socket sets
+        "553406",    //wrenches
+        "553232",    //pocket knives
+        "553612"     //kneepads
+    ],
+
     brand: [
       "dewalt",
       "flex",

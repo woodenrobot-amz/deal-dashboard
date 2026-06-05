@@ -10,7 +10,45 @@ if (!KEEPA_API_KEY) throw new Error("Missing KEEPA_API_KEY");
 if (!STREAM_NAME) throw new Error("Missing stream argument");
 
 const STREAMS = {
-dudes_power: {
+
+  power_tools_main: {
+  name: "power_tools_main",
+  selection: {
+    productType: [0],
+    singleVariation: true,
+
+    rootCategory: [60], // Tools & Home Improvement
+
+    current_BUY_BOX_SHIPPING_gte: 3000,
+
+    isLowest90_BUY_BOX_SHIPPING: true,
+
+    
+    deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
+    deltaPercent30_BUY_BOX_SHIPPING_gte: 5,
+      
+    current_SALES_gte: 1,
+    current_SALES_lte: 100000,
+
+    rating_gte: 42,
+    reviewCount_gte: 100,
+
+    brand: [
+      "dewalt",
+      "milwaukee",
+      "makita",
+      "metabo hpt",
+      "skil",
+      "estwing",
+      "irwin",
+      "flex",
+      "wen"
+    ]
+  }
+},
+  
+  
+  dudes_power: {
   name: "dudes_power",
   selection: {
     productType: [0],

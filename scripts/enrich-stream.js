@@ -69,6 +69,7 @@ const TOP_TIER_BRANDS = new Set([
 ]);
 
 const MID_TIER_BRANDS = new Set([
+  "flex",
   "ridgid",
   "ryobi",
   "metabo hpt",

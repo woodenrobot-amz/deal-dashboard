@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: keepa-discovery-power_tool_main
+  group: keepa-discovery-power-tool-main
   cancel-in-progress: false
 
 jobs:
@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Run woodworking test discovery
+      - name: Run power tool main discovery
         env:
           KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
         run: node scripts/keepa-discovery.js power_tool_main

@@ -121,8 +121,27 @@ current_BUY_BOX_SHIPPING_gte: 3000,
 
 isLowest90_BUY_BOX_SHIPPING: true,
 
-deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
-deltaPercent30_BUY_BOX_SHIPPING_gte: 5,
+deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
+deltaPercent30_BUY_BOX_SHIPPING_gte: 8,
+
+categories_exclude: [
+  511228,      // Hardware
+  511276,      // Door Hardware & Locks
+  2380871011,  // Cabinet Hardware
+  511260,      // Pulls
+  573760011,   // Door Levers
+  573759011,   // Door Knobs
+  511286,      // Hinges
+  511240,      // Hinges
+  511396,      // Tarps
+  13399701,    // Spray Paint
+  511382,      // Combination Padlocks
+  511306,      // Deadbolts
+  9628891011,  // Brackets
+  335116011    // Bathroom Shelves
+],
+
+salesRank_lte: 100000,
 
   current_RATING_gte: 43,
   current_COUNT_REVIEWS_gte: 100,

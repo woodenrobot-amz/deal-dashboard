@@ -1,4 +1,4 @@
-name: Disco Power Tool Main
+name: Disco Power Tools Main
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: keepa-discovery-power-tool-main
+  group: keepa-discovery-power-tools-main
   cancel-in-progress: false
 
 jobs:
@@ -28,15 +28,15 @@ jobs:
         with:
           node-version: 22
 
-      - name: Run power tool main discovery
+      - name: Run power tools main discovery
         env:
           KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
-        run: node scripts/keepa-discovery.js power_tool_main
+        run: node scripts/keepa-discovery.js power_tools_main
 
       - name: Upload discovery artifact
         uses: actions/upload-artifact@v4
         with:
-          name: power_tool_main-discovery-results
+          name: power_tools_main-discovery-results
           path: data/discovered-asins.json
 
       - name: Commit discovery results
@@ -44,5 +44,5 @@ jobs:
           git config user.name "keepa-bot"
           git config user.email "keepa-bot@users.noreply.github.com"
           git add data/discovered-asins.json
-          git diff --cached --quiet || git commit -m "update power tool main discovery"
+          git diff --cached --quiet || git commit -m "update power tools main discovery"
           git push

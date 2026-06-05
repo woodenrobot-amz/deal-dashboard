@@ -17,33 +17,30 @@ const STREAMS = {
     productType: [0],
     singleVariation: true,
 
-    rootCategory: [60], // Tools & Home Improvement
-
-    current_BUY_BOX_SHIPPING_gte: 3000,
-
-    isLowest90_BUY_BOX_SHIPPING: true,
-
-    
-    deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
-    deltaPercent30_BUY_BOX_SHIPPING_gte: 5,
-      
     current_SALES_gte: 1,
     current_SALES_lte: 100000,
 
-    rating_gte: 42,
-    reviewCount_gte: 100,
+    current_BUY_BOX_SHIPPING_gte: 2000,
+
+    isLowest90_BUY_BOX_SHIPPING: true,
+    deltaPercent30_BUY_BOX_SHIPPING_gte: 5,
+    deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
+
+    rootCategory: [228013],
 
     brand: [
       "dewalt",
-      "milwaukee",
+      "flex",
       "makita",
       "metabo hpt",
+      "milwaukee",
       "skil",
-      "estwing",
-      "irwin",
-      "flex",
+      "skilsaw",
       "wen"
-    ]
+    ],
+
+    perPage: 1000,
+    page: 0
   }
 },
   

@@ -9,7 +9,8 @@ const ENRICH_LIMITS = {
   dudes_power: 125,
   three_d_printing: 125,
   deals_for_dudes: 125,
-  woodworking_test: 125
+  woodworking_test: 125,
+  power_tools_main: 125
 };
 
 const TOKEN_FLOOR = 55;

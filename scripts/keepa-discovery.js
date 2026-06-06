@@ -98,7 +98,7 @@ woodworking_core: {
 
     current_BUY_BOX_SHIPPING_gte: 3000,
     categories_exclude: [
-     15684181, // Automotive
+  15684181, // Automotive
   15719731, // Replacement Parts
   15721631, // Brake System
   15730551, // Sensors
@@ -107,11 +107,10 @@ woodworking_core: {
   46244011, // Rotors
   15728151, // Electric Fuel Pumps
   9425850011, // Automotive Replacement Parts
-
-  // Tool noise / low-intent replacement parts
-  9022420011, // Power Tools Replacement Parts
-
-  // Optional noise reducers
+  552594, // sanding sheets
+  552890, // sheet sanders
+  401518011, // abrasive mounted points
+  401505011, // bands / abrasive bands
   256268011, // Masonry Core Drill Bits
   256276011, // Masonry Drill Bits
   8906591011, // Rotary Hammer Drill Bits
@@ -139,10 +138,6 @@ deltaPercent90_BUY_BOX_SHIPPING_gte: 8,
       "suizan",
       "festool",
       "microjig"
-    ],
-
-    categories_exclude: [
-      // add after category report
     ],
 
     sort: [

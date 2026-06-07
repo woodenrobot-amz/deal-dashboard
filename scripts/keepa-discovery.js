@@ -70,6 +70,8 @@ const STREAMS = {
     current_BUY_BOX_SHIPPING_gte: 3000,
 
     isLowest90_BUY_BOX_SHIPPING: true,
+deltaPercent30_BUY_BOX_SHIPPING_gte: 8,
+    deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
 
     brand: [
       "anker",

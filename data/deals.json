@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-08T10:25:03.515Z",
+  "generatedAt": "2026-06-08T11:43:03.578Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 218,
+  "lastEnrichmentStream": "woodworking_test",
+  "dealCount": 221,
   "deals": [
     {
       "asin": "B01MF4YEIF",
@@ -9203,6 +9203,79 @@
       }
     },
     {
+      "asin": "B0FBW3YF8N",
+      "parentAsin": "B0FVSXXC29",
+      "familyKey": "B0FVSXXC29",
+      "variationCount": 2,
+      "productAgeDays": 325,
+      "title": "dreame h12 pro gen2 vacuum mop, 0 tangle wet dry vacuum cleaner, cordless vacuum mop all-in-one for hard floors, 180° lie-flat floor cleaner machine with 194°f hot self-cleaning, 50mins runtime",
+      "brand": "dreame",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553022",
+        "3256984011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "553022",
+          "name": "wet-dry shop vacuums"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 272.99,
+      "avg90": 308.26,
+      "rating": 4.7,
+      "reviewCount": 94,
+      "rank": 7984,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61MRNVd2O9L.jpg",
+      "url": "https://www.amazon.com/dp/B0FBW3YF8N",
+      "keepa": "https://keepa.com/#!product/1-B0FBW3YF8N",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-08T11:43:03.577Z",
+      "dealScore": 40,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 3,
+        "rating": 9,
+        "priceTier": 8
+      }
+    },
+    {
       "asin": "B00PTX62Q4",
       "parentAsin": "B01M6VB0X3",
       "familyKey": "B01M6VB0X3",
@@ -10078,6 +10151,79 @@
         "reviews": 8,
         "rating": 5,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0CW686Y2T",
+      "parentAsin": "",
+      "familyKey": "B0CW686Y2T",
+      "variationCount": 0,
+      "productAgeDays": 761,
+      "title": "shop-vac 5801411 14-gallon wet/dry shop vacuum, 5.5 peak hp, 2.5 inch diameter x 7 foot hose, 20 foot cord, ideal for home, garage, and workshop cleaning",
+      "brand": "shop-vac",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553022",
+        "3256984011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "553022",
+          "name": "wet-dry shop vacuums"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 119,
+      "avg90": 148.54,
+      "rating": 4.6,
+      "reviewCount": 83,
+      "rank": 13982,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71kzxecTaNL.jpg",
+      "url": "https://www.amazon.com/dp/B0CW686Y2T",
+      "keepa": "https://keepa.com/#!product/1-B0CW686Y2T",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-08T11:43:03.577Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 43,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 3,
+        "rating": 8,
+        "priceTier": 6
       }
     },
     {
@@ -13998,7 +14144,13 @@
         "reviews": 6,
         "rating": 5,
         "priceTier": 2
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0G3LYGQK1",
+        "B0F5N54PBW"
+      ]
     },
     {
       "asin": "B07H2CG5YX",
@@ -15111,6 +15263,78 @@
         "reviews": 3,
         "rating": 0,
         "priceTier": 10
+      }
+    },
+    {
+      "asin": "B0FDR142VD",
+      "parentAsin": "B0GTYR71P5",
+      "familyKey": "B0GTYR71P5",
+      "variationCount": 9,
+      "productAgeDays": 353,
+      "title": "enjoywood 48\" x 20\" heavy duty workbench with wheels, adjustable height garage work table with solid rubberwood top, pegboard & power outlets for workshop, home & office",
+      "brand": "enjoywood",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 165.98,
+      "avg90": 200.81,
+      "rating": 4.4,
+      "reviewCount": 89,
+      "rank": 137303,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61I6Rg9m1ML.jpg",
+      "url": "https://www.amazon.com/dp/B0FDR142VD",
+      "keepa": "https://keepa.com/#!product/1-B0FDR142VD",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-08T11:43:03.578Z",
+      "dealScore": 51,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 26,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 28,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 5,
+        "priceTier": 6
       }
     },
     {

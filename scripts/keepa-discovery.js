@@ -183,7 +183,7 @@ categories_exclude: [
   335116011    // Bathroom Shelves
 ],
 
-salesRank_lte: 250000,
+salesRank_lte: 450000,
 
   current_RATING_gte: 43,
   current_COUNT_REVIEWS_gte: 100,

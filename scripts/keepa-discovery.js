@@ -183,10 +183,10 @@ categories_exclude: [
   335116011    // Bathroom Shelves
 ],
 
-salesRank_lte: 450000,
+    current_SALES_lte: 450000,
 
   current_RATING_gte: 43,
-  current_COUNT_REVIEWS_gte: 100,
+  current_COUNT_REVIEWS_gte: 80,
 
 categories_include: [
   // Clamping & Workholding

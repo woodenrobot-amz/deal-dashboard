@@ -1,9 +1,158 @@
 {
-  "generatedAt": "2026-06-11T15:18:13.050Z",
+  "generatedAt": "2026-06-12T10:45:50.417Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "woodworking_core",
-  "dealCount": 248,
+  "lastEnrichmentStream": "woodworking_test",
+  "dealCount": 279,
   "deals": [
+    {
+      "asin": "B085B253MD",
+      "parentAsin": "B0GFLHMYM3",
+      "familyKey": "B0GFLHMYM3",
+      "variationCount": 2,
+      "productAgeDays": 2234,
+      "title": "dewalt 20v max xr oscillating tool kit with blades, 3 speed cordless brushless multitool, up to 20,000 opm, led light, battery and charger included (dcs356c1)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "2445476011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2445476011",
+          "name": "oscillating tools"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99,
+      "avg90": 140.34,
+      "rating": 4.8,
+      "reviewCount": 17876,
+      "rank": 890,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81Q8G3zu0yL.jpg",
+      "url": "https://www.amazon.com/dp/B085B253MD",
+      "keepa": "https://keepa.com/#!product/1-B085B253MD",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-12T10:45:50.414Z",
+      "dealScore": 136,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 44,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 89,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 10,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B004323NNC",
+      "parentAsin": "B01MEEDI1C",
+      "familyKey": "B01MEEDI1C",
+      "variationCount": 1,
+      "productAgeDays": 5558,
+      "title": "bosch gcm12sd 12 in. dual-bevel glide sliding compound miter saw",
+      "brand": "bosch",
+      "brandTier": "top",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552940",
+        "228013",
+        "328182011",
+        "551236",
+        "552894"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552894",
+          "name": "saws"
+        },
+        {
+          "id": "552940",
+          "name": "miter saws"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 499,
+      "avg90": 703.57,
+      "rating": 4.7,
+      "reviewCount": 2036,
+      "rank": 39827,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61mBd2jE2bL.jpg",
+      "url": "https://www.amazon.com/dp/B004323NNC",
+      "keepa": "https://keepa.com/#!product/1-B004323NNC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-12T10:45:50.415Z",
+      "dealScore": 104,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 43,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 82,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 10
+      }
+    },
     {
       "asin": "B075X1Z6QB",
       "parentAsin": "B07R9QJ1C1",
@@ -245,6 +394,83 @@
         "reviews": 15,
         "rating": 9,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0DHS4RHR8",
+      "parentAsin": "B0FD9S2V2D",
+      "familyKey": "B0FD9S2V2D",
+      "variationCount": 5,
+      "productAgeDays": 623,
+      "title": "skil 15 amp 8-1/4\" compact portable jobsite table saw (stand sfs0001 sold separately)-ts6308-00",
+      "brand": "skil",
+      "brandTier": "mid",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552962",
+        "228013",
+        "328182011",
+        "551236",
+        "552894"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552894",
+          "name": "saws"
+        },
+        {
+          "id": "552962",
+          "name": "table saws"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 219,
+      "avg90": 265.28,
+      "rating": 4.6,
+      "reviewCount": 105,
+      "rank": 6293,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Wy9+IXAeL.jpg",
+      "url": "https://www.amazon.com/dp/B0DHS4RHR8",
+      "keepa": "https://keepa.com/#!product/1-B0DHS4RHR8",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-12T10:45:50.415Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 26,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 64,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 12,
+        "demand": 16,
+        "reviews": 6,
+        "rating": 8,
+        "priceTier": 8
       }
     },
     {
@@ -1426,6 +1652,236 @@
         "reviews": 11,
         "rating": 5,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B07H84CNG9",
+      "parentAsin": "B099YKQQS4",
+      "familyKey": "B099YKQQS4",
+      "variationCount": 6,
+      "productAgeDays": 2831,
+      "title": "craftsman cmxevbe17595 16 gallon 6.5 peak hp wet dry vac, heavy-duty shop vacuum wet and dry with filter, dust bag, hose and attachments for home projects & renovations",
+      "brand": "craftsman",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553022",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "553022",
+          "name": "wet-dry shop vacuums"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 118.94,
+      "avg90": 134.99,
+      "rating": 4.7,
+      "reviewCount": 8549,
+      "rank": 1752,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61gkGL84eRL.jpg",
+      "url": "https://www.amazon.com/dp/B07H84CNG9",
+      "keepa": "https://keepa.com/#!product/1-B07H84CNG9",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.415Z",
+      "dealScore": 88,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 17,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 18,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B08GXDK9Z3",
+      "parentAsin": "B0DD3HKFT6",
+      "familyKey": "B0DD3HKFT6",
+      "variationCount": 1,
+      "productAgeDays": 2098,
+      "title": "makita xbp04z 18v lxt® lithium-ion compact brushless cordless band saw, tool only",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552910",
+        "228013",
+        "328182011",
+        "551236",
+        "552894"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552894",
+          "name": "saws"
+        },
+        {
+          "id": "552910",
+          "name": "band saws"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 279.99,
+      "avg90": 338.06,
+      "rating": 4.8,
+      "reviewCount": 187,
+      "rank": 136368,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/610Hq-dNcEL.jpg",
+      "url": "https://www.amazon.com/dp/B08GXDK9Z3",
+      "keepa": "https://keepa.com/#!product/1-B08GXDK9Z3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 77,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 25,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 10,
+        "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0DRFJ439R",
+      "parentAsin": "B0F9P4SP6B",
+      "familyKey": "B0F9P4SP6B",
+      "variationCount": 3,
+      "productAgeDays": 520,
+      "title": "vevor bench vise, 5\" jaw width, 5\" max jaw opening multipurpose vise with 360° swivel locking base, 2.8\" throat depth, heavy duty ductile iron workbench vise with anvil, for clamping round pipes",
+      "brand": "vevor",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "5739459011",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "19502224011",
+          "name": "vises"
+        },
+        {
+          "id": "5739459011",
+          "name": "bench vises"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 50.63,
+      "avg90": 60.38,
+      "rating": 4.7,
+      "reviewCount": 2392,
+      "rank": 6589,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71fIuwAL4KL.jpg",
+      "url": "https://www.amazon.com/dp/B0DRFJ439R",
+      "keepa": "https://keepa.com/#!product/1-B0DRFJ439R",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.415Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 24,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 4
       }
     },
     {
@@ -3022,6 +3478,78 @@
       }
     },
     {
+      "asin": "B0851MTW42",
+      "parentAsin": "",
+      "familyKey": "B0851MTW42",
+      "variationCount": 0,
+      "productAgeDays": 2296,
+      "title": "ryobi p343 18v one+ cordless oscillating multi-tool (bare tool)",
+      "brand": "ryobi",
+      "brandTier": "mid",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "2445476011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2445476011",
+          "name": "oscillating tools"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg90": 59.11,
+      "rating": 4.5,
+      "reviewCount": 1390,
+      "rank": 59116,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/714Od0LeYqL.jpg",
+      "url": "https://www.amazon.com/dp/B0851MTW42",
+      "keepa": "https://keepa.com/#!product/1-B0851MTW42",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 71,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 23,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 12,
+        "demand": 4,
+        "reviews": 13,
+        "rating": 7,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0BWKG78TS",
       "parentAsin": "",
       "familyKey": "B0BWKG78TS",
@@ -3248,6 +3776,78 @@
         "demand": 0,
         "reviews": 0,
         "rating": 7,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B09LHZNHNF",
+      "parentAsin": "B09P1Z3W1G",
+      "familyKey": "B09P1Z3W1G",
+      "variationCount": 2,
+      "productAgeDays": 1670,
+      "title": "worx nitro wx031l 20v 2.1 gal cordless wet/dry vacuum, black",
+      "brand": "worx",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553022",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "553022",
+          "name": "wet-dry shop vacuums"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 119.24,
+      "avg90": 204.79,
+      "rating": 4.4,
+      "reviewCount": 207,
+      "rank": 48698,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61WrCqUPZwL.jpg",
+      "url": "https://www.amazon.com/dp/B09LHZNHNF",
+      "keepa": "https://keepa.com/#!product/1-B09LHZNHNF",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 92,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 62,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 50,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 6,
+        "rating": 5,
         "priceTier": 6
       }
     },
@@ -5088,6 +5688,83 @@
       }
     },
     {
+      "asin": "B00N1JC7HQ",
+      "parentAsin": "",
+      "familyKey": "B00N1JC7HQ",
+      "variationCount": 0,
+      "productAgeDays": 3598,
+      "title": "zfe random orbital sander 5\" & 6\" pneumatic palm sander with extra 5\" backing plate, sponge polishing pads, sandpapers low vibration and heavy duty for wood, composites, metal",
+      "brand": "zfe",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552888",
+        "228013",
+        "328182011",
+        "551236",
+        "552876"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552876",
+          "name": "sanders"
+        },
+        {
+          "id": "552888",
+          "name": "random-orbit sanders"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 35.63,
+      "avg90": 44.27,
+      "rating": 4.4,
+      "reviewCount": 2073,
+      "rank": 11350,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71RnJBOItDL.jpg",
+      "url": "https://www.amazon.com/dp/B00N1JC7HQ",
+      "keepa": "https://keepa.com/#!product/1-B00N1JC7HQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.415Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B002VN117K",
       "parentAsin": "",
       "familyKey": "B002VN117K",
@@ -5243,6 +5920,78 @@
         "reviews": 0,
         "rating": 10,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0C7GRQFW9",
+      "parentAsin": "B0CRKH61YH",
+      "familyKey": "B0CRKH61YH",
+      "variationCount": 3,
+      "productAgeDays": 1099,
+      "title": "vevor folding work platform, 30\"×12\"×20\" aluminum drywall stool ladder, 330 lbs load capacity heavy duty work bench w/non-slip feet, ideal for washing vehicles, cleaning, painting, decorating",
+      "brand": "vevor",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 40.79,
+      "avg90": 52.6,
+      "rating": 4.6,
+      "reviewCount": 308,
+      "rank": 23709,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51XF-dmV6xL.jpg",
+      "url": "https://www.amazon.com/dp/B0C7GRQFW9",
+      "keepa": "https://keepa.com/#!product/1-B0C7GRQFW9",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.415Z",
+      "dealScore": 64,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 33,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 2
       }
     },
     {
@@ -6344,6 +7093,87 @@
       }
     },
     {
+      "asin": "B000VJSQ7O",
+      "parentAsin": "B078BDHJLS",
+      "familyKey": "B078BDHJLS",
+      "variationCount": 3,
+      "productAgeDays": 4503,
+      "title": "olympia tools bench vise 38-606, 6 inches",
+      "brand": "olympia tools",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "5739459011",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "19502224011",
+          "name": "vises"
+        },
+        {
+          "id": "5739459011",
+          "name": "bench vises"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 110.31,
+      "avg90": 138.38,
+      "rating": 4.3,
+      "reviewCount": 2507,
+      "rank": 54246,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81VOaRI1a-L.jpg",
+      "url": "https://www.amazon.com/dp/B000VJSQ7O",
+      "keepa": "https://keepa.com/#!product/1-B000VJSQ7O",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 15,
+        "rating": 3,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B08CBXWW1F",
       "parentAsin": "",
       "familyKey": "B08CBXWW1F",
@@ -6944,6 +7774,78 @@
         "demand": 0,
         "reviews": 0,
         "rating": 0,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B00PTX62Q4",
+      "parentAsin": "B01M6VB0X3",
+      "familyKey": "B01M6VB0X3",
+      "variationCount": 2,
+      "productAgeDays": 4191,
+      "title": "black+decker portable workbench, workmate folding workbench, 550 lb. capacity with clamps for woodworking (wm425-a)",
+      "brand": "black+decker",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 125.99,
+      "avg90": 168.27,
+      "rating": 4.3,
+      "reviewCount": 3298,
+      "rank": 110816,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71m6C34VnrL.jpg",
+      "url": "https://www.amazon.com/dp/B00PTX62Q4",
+      "keepa": "https://keepa.com/#!product/1-B00PTX62Q4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 76,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 37,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 15,
+        "rating": 3,
         "priceTier": 6
       }
     },
@@ -8207,6 +9109,87 @@
       }
     },
     {
+      "asin": "B073QSF8JR",
+      "parentAsin": "",
+      "familyKey": "B073QSF8JR",
+      "variationCount": 0,
+      "productAgeDays": 3195,
+      "title": "peachtree woodworking supply 2 pack of 4 way pressure clamps for clamping panels from all four directions. for woodworkers, cabinet and furniture makers (2 four way pressure clamps)",
+      "brand": "peachtree woodworking supply",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "3207128011",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "553150",
+          "name": "clamps"
+        },
+        {
+          "id": "3207128011",
+          "name": "bar clamps"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 45.07,
+      "avg90": 58.61,
+      "rating": 4.5,
+      "reviewCount": 951,
+      "rank": 61953,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71d+YHUuIpL.jpg",
+      "url": "https://www.amazon.com/dp/B073QSF8JR",
+      "keepa": "https://keepa.com/#!product/1-B073QSF8JR",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 34,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 42,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B004BG5EU0",
       "parentAsin": "B09ZBT1S4F",
       "familyKey": "B09ZBT1S4F",
@@ -8617,6 +9600,79 @@
         "reviews": 11,
         "rating": 10,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B095VT6ZWD",
+      "parentAsin": "",
+      "familyKey": "B095VT6ZWD",
+      "variationCount": 0,
+      "productAgeDays": 1830,
+      "title": "shop-vac 5801611 wet dry vac with svx2 motor technology, 16 gallon, 2-1/2 inch x 8 foot lock-on hose, 150 cfm, (1-pack) , black",
+      "brand": "shop-vac",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553022",
+        "3256984011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "553022",
+          "name": "wet-dry shop vacuums"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 119,
+      "avg90": 141.68,
+      "rating": 4.5,
+      "reviewCount": 129,
+      "rank": 33231,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71coHsAzAgL.jpg",
+      "url": "https://www.amazon.com/dp/B095VT6ZWD",
+      "keepa": "https://keepa.com/#!product/1-B095VT6ZWD",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.415Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 24,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 41,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 6,
+        "rating": 7,
+        "priceTier": 6
       }
     },
     {
@@ -10258,6 +11314,78 @@
       }
     },
     {
+      "asin": "B07DQHWZYS",
+      "parentAsin": "B0BHYFKV1D",
+      "familyKey": "B0BHYFKV1D",
+      "variationCount": 1,
+      "productAgeDays": 2898,
+      "title": "gladiator 28\" hardwood top, gaac28hwgx",
+      "brand": "gladiator",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 59.94,
+      "avg90": 78.11,
+      "rating": 4.6,
+      "reviewCount": 251,
+      "rank": 335047,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Ak5eIS2VL.jpg",
+      "url": "https://www.amazon.com/dp/B07DQHWZYS",
+      "keepa": "https://keepa.com/#!product/1-B07DQHWZYS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 34,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 38,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B00004VWOV",
       "parentAsin": "",
       "familyKey": "B00004VWOV",
@@ -10491,6 +11619,78 @@
         "reviews": 0,
         "rating": 10,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B07D5RT689",
+      "parentAsin": "",
+      "familyKey": "B07D5RT689",
+      "variationCount": 0,
+      "productAgeDays": 2942,
+      "title": "notch 18’ pole saw set with rust-resistant chrome-plated heavy-duty double thick 15“ blade with impulse-hardened teeth & 8\" cut capacity, 3 x 6 ft. yellow fiberglass poles (40207)",
+      "brand": "notch",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553220",
+        "228013",
+        "328182011",
+        "551238"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553220",
+          "name": "handsaws"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 170.99,
+      "avg90": 194.59,
+      "rating": 4.7,
+      "reviewCount": 1614,
+      "rank": 172254,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51F3rOUCzJL.jpg",
+      "url": "https://www.amazon.com/dp/B07D5RT689",
+      "keepa": "https://keepa.com/#!product/1-B07D5RT689",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 38,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 13,
+        "rating": 9,
+        "priceTier": 6
       }
     },
     {
@@ -11033,6 +12233,83 @@
       }
     },
     {
+      "asin": "B0F2837XPL",
+      "parentAsin": "B0F4CWQ54W",
+      "familyKey": "B0F4CWQ54W",
+      "variationCount": 6,
+      "productAgeDays": 410,
+      "title": "16.8v cordless electric sander with 36pcs sandpapers, 3500 rpm, 2pcs 3.0ah batteries, lightweight & compact design for wood, metal, paint removal, and diy projects",
+      "brand": "vkndoynt",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552880",
+        "228013",
+        "328182011",
+        "551236",
+        "552876"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552876",
+          "name": "sanders"
+        },
+        {
+          "id": "552880",
+          "name": "detail sanders"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 42.39,
+      "avg90": 50.79,
+      "rating": 4.4,
+      "reviewCount": 364,
+      "rank": 30747,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81ic6deeoTL.jpg",
+      "url": "https://www.amazon.com/dp/B0F2837XPL",
+      "keepa": "https://keepa.com/#!product/1-B0F2837XPL",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.415Z",
+      "dealScore": 49,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 24,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 37,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B004FG91TG",
       "parentAsin": "",
       "familyKey": "B004FG91TG",
@@ -11266,6 +12543,87 @@
       }
     },
     {
+      "asin": "B0053YCN5I",
+      "parentAsin": "B0FD8WJB6S",
+      "familyKey": "B0FD8WJB6S",
+      "variationCount": 1,
+      "productAgeDays": 4169,
+      "title": "conbraco apollo pex 69ptbj0010c 3/8-inch - 1-inch one hand cinch clamp tool,black",
+      "brand": "conbraco",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553158",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "553150",
+          "name": "clamps"
+        },
+        {
+          "id": "553158",
+          "name": "c-clamps"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 54.98,
+      "avg90": 66.26,
+      "rating": 4.5,
+      "reviewCount": 978,
+      "rank": 214898,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71AnV+gOUgL.jpg",
+      "url": "https://www.amazon.com/dp/B0053YCN5I",
+      "keepa": "https://keepa.com/#!product/1-B0053YCN5I",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 25,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 36,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B07KB1PYH5",
       "parentAsin": "B0GYSH38XN",
       "familyKey": "B0GYSH38XN",
@@ -11424,6 +12782,78 @@
         "demand": 0,
         "reviews": 0,
         "rating": 10,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0GPWX55YK",
+      "parentAsin": "B0GRTC4133",
+      "familyKey": "B0GRTC4133",
+      "variationCount": 1,
+      "productAgeDays": 106,
+      "title": "kimo 20v cordless oscillating tool kit w/ 26pcs accessories, max 21000 opm, 6 speeds & 3°oscillating angle, led light, battery powered oscillating multi-tool for cutting wood/nailing/scraping/sanding",
+      "brand": "kimo",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "2445476011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2445476011",
+          "name": "oscillating tools"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 54.71,
+      "avg90": 65.16,
+      "rating": 4.3,
+      "reviewCount": 2281,
+      "rank": 170618,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71Yo9M-Qb2L.jpg",
+      "url": "https://www.amazon.com/dp/B0GPWX55YK",
+      "keepa": "https://keepa.com/#!product/1-B0GPWX55YK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 55,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 24,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 36,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 15,
+        "rating": 3,
         "priceTier": 4
       }
     },
@@ -11828,6 +13258,236 @@
       }
     },
     {
+      "asin": "B0DCGFJKX7",
+      "parentAsin": "B0GT8V78JV",
+      "familyKey": "B0GT8V78JV",
+      "variationCount": 11,
+      "productAgeDays": 631,
+      "title": "enjoywood 60\" heavy duty workbench with power outlet, adjustable height work table, 2500 lbs capacity with 1.2\" solid rubberwood top, pegboard storage for garage, workshop, home & office",
+      "brand": "enjoywood",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 175.98,
+      "avg90": 226.85,
+      "rating": 4.4,
+      "reviewCount": 164,
+      "rank": 113596,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61FT6UGcc2L.jpg",
+      "url": "https://www.amazon.com/dp/B0DCGFJKX7",
+      "keepa": "https://keepa.com/#!product/1-B0DCGFJKX7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 61,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 33,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 35,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 5,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B000PDUKU2",
+      "parentAsin": "B0F49DP7FF",
+      "familyKey": "B0F49DP7FF",
+      "variationCount": 12,
+      "productAgeDays": 4939,
+      "title": "wilton c-clamp, 4-1/4\" opening, 3-1/4\" throat, 6200 lbs. clamping force (model 404)",
+      "brand": "wilton",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553158",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "553150",
+          "name": "clamps"
+        },
+        {
+          "id": "553158",
+          "name": "c-clamps"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 36.99,
+      "avg90": 44.61,
+      "rating": 4.7,
+      "reviewCount": 144,
+      "rank": 99676,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71amsZNXBoL.jpg",
+      "url": "https://www.amazon.com/dp/B000PDUKU2",
+      "keepa": "https://keepa.com/#!product/1-B000PDUKU2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 25,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 35,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 9,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B00065TPK0",
+      "parentAsin": "",
+      "familyKey": "B00065TPK0",
+      "variationCount": 0,
+      "productAgeDays": 5558,
+      "title": "dynabrade (59020) dynorbital-spirit 5\" (127 mm) diameter random orbital sander, non-vacuum | 3/16\" (5 mm) diameter orbit | 12000 rpm pneumatic motor",
+      "brand": "dynabrade",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552888",
+        "228013",
+        "328182011",
+        "551236",
+        "552876"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552876",
+          "name": "sanders"
+        },
+        {
+          "id": "552888",
+          "name": "random-orbit sanders"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 181.53,
+      "avg90": 211.33,
+      "rating": 4.7,
+      "reviewCount": 173,
+      "rank": 90164,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Ly2qYxSjL.jpg",
+      "url": "https://www.amazon.com/dp/B00065TPK0",
+      "keepa": "https://keepa.com/#!product/1-B00065TPK0",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 52,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 35,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 9,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0BG98LXC1",
       "parentAsin": "B0FGKSBVXT",
       "familyKey": "B0FGKSBVXT",
@@ -11897,6 +13557,87 @@
         "reviews": 8,
         "rating": 9,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0F9P1GR21",
+      "parentAsin": "B0D4FGHS83",
+      "familyKey": "B0D4FGHS83",
+      "variationCount": 4,
+      "productAgeDays": 382,
+      "title": "vevor bar clamps for woodworking, 2-pack 30 inch parallel clamp set, f-clamp with 1500 lbs load limit, even pressure, high-strength plastic and carbon steel, for woodworking metal working, orange",
+      "brand": "vevor",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "3207128011",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "553150",
+          "name": "clamps"
+        },
+        {
+          "id": "3207128011",
+          "name": "bar clamps"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 54.98,
+      "avg90": 62.43,
+      "rating": 4.5,
+      "reviewCount": 194,
+      "rank": 39874,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/614F0HHq-ZL.jpg",
+      "url": "https://www.amazon.com/dp/B0F9P1GR21",
+      "keepa": "https://keepa.com/#!product/1-B0F9P1GR21",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.415Z",
+      "dealScore": 42,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 35,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 6,
+        "rating": 7,
+        "priceTier": 4
       }
     },
     {
@@ -12393,6 +14134,87 @@
       }
     },
     {
+      "asin": "B081V7W4M5",
+      "parentAsin": "B081V8D8R9",
+      "familyKey": "B081V8D8R9",
+      "variationCount": 4,
+      "productAgeDays": 2238,
+      "title": "forward bench vise 8 inch ductile iron bench vice with 360 degree swivel base and channel steel guide bar 30808 (8\")",
+      "brand": "forward",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "5739459011",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "19502224011",
+          "name": "vises"
+        },
+        {
+          "id": "5739459011",
+          "name": "bench vises"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 169.99,
+      "avg90": 187.29,
+      "rating": 4.7,
+      "reviewCount": 1073,
+      "rank": 145352,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61dGiivwmKL.jpg",
+      "url": "https://www.amazon.com/dp/B081V7W4M5",
+      "keepa": "https://keepa.com/#!product/1-B081V7W4M5",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 34,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 13,
+        "rating": 9,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0GQYGDFNN",
       "parentAsin": "",
       "familyKey": "B0GQYGDFNN",
@@ -12777,6 +14599,78 @@
       }
     },
     {
+      "asin": "B0DYNTB7KL",
+      "parentAsin": "B0GQ98NTMQ",
+      "familyKey": "B0GQ98NTMQ",
+      "variationCount": 1,
+      "productAgeDays": 183,
+      "title": "enventor 20v cordless oscillating multi tool, brushless oscillating saw with 28pcs accessories, fast charger, 6 variable speeds, 4° oscillation angle for scraping, sanding",
+      "brand": "enventor",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "2445476011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2445476011",
+          "name": "oscillating tools"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 46.19,
+      "avg90": 63.48,
+      "rating": 4.3,
+      "reviewCount": 289,
+      "rank": 110634,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71XqtMKI7KL.jpg",
+      "url": "https://www.amazon.com/dp/B0DYNTB7KL",
+      "keepa": "https://keepa.com/#!product/1-B0DYNTB7KL",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 61,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 40,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 33,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 3,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B004BGCG6A",
       "parentAsin": "",
       "familyKey": "B004BGCG6A",
@@ -13017,6 +14911,87 @@
         "reviews": 3,
         "rating": 8,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0BZHXNZMW",
+      "parentAsin": "B0DHGS47R8",
+      "familyKey": "B0DHGS47R8",
+      "variationCount": 4,
+      "productAgeDays": 975,
+      "title": "forward 1305 5 inch home vise ductile iron 5\" bench vise homeowner's vice with anvil and swivel base",
+      "brand": "forward",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "5739459011",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "19502224011",
+          "name": "vises"
+        },
+        {
+          "id": "5739459011",
+          "name": "bench vises"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 55.99,
+      "avg90": 63.64,
+      "rating": 4.7,
+      "reviewCount": 226,
+      "rank": 86060,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71aOqPm2cFL.jpg",
+      "url": "https://www.amazon.com/dp/B0BZHXNZMW",
+      "keepa": "https://keepa.com/#!product/1-B0BZHXNZMW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 49,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 33,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 9,
+        "priceTier": 4
       }
     },
     {
@@ -14079,6 +16054,79 @@
       }
     },
     {
+      "asin": "B0G3LYGQK1",
+      "parentAsin": "B0FKMQGP2R",
+      "familyKey": "B0FKMQGP2R",
+      "variationCount": 4,
+      "productAgeDays": 194,
+      "title": "router tool 800w for woodworking tools with 12pcs 1/4\" router bits 31000r/min 110v,tool box (us10)",
+      "brand": "liunxdromic",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552866",
+        "16310161",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552866",
+          "name": "routers"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 46.99,
+      "avg90": 61.05,
+      "rating": 4.4,
+      "reviewCount": 108,
+      "rank": 175540,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61FWm233euL.jpg",
+      "url": "https://www.amazon.com/dp/B0G3LYGQK1",
+      "keepa": "https://keepa.com/#!product/1-B0G3LYGQK1",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 56,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 34,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 31,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0000223SD",
       "parentAsin": "B0BZS2QHBQ",
       "familyKey": "B0BZS2QHBQ",
@@ -14864,6 +16912,83 @@
       }
     },
     {
+      "asin": "B001L1F796",
+      "parentAsin": "",
+      "familyKey": "B001L1F796",
+      "variationCount": 0,
+      "productAgeDays": 5542,
+      "title": "3m™ non-vacuum random orbital sander 20325, 6 in, 3/16 in orbit, 1 ea/case",
+      "brand": "cubitron",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552888",
+        "228013",
+        "328182011",
+        "551236",
+        "552876"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552876",
+          "name": "sanders"
+        },
+        {
+          "id": "552888",
+          "name": "random-orbit sanders"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 220.9,
+      "avg90": 245.29,
+      "rating": 4.8,
+      "reviewCount": 172,
+      "rank": 117915,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51TqNGjYEDL.jpg",
+      "url": "https://www.amazon.com/dp/B001L1F796",
+      "keepa": "https://keepa.com/#!product/1-B001L1F796",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 46,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 10,
+        "priceTier": 8
+      }
+    },
+    {
       "asin": "B001J9FCEK",
       "parentAsin": "",
       "familyKey": "B001J9FCEK",
@@ -15350,6 +17475,78 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0FDR142VD",
+      "parentAsin": "B0GTYR71P5",
+      "familyKey": "B0GTYR71P5",
+      "variationCount": 13,
+      "productAgeDays": 357,
+      "title": "enjoywood 48\" workbench on wheels with power outlet, adjustable height heavy duty work table, 2500 lbs capacity with solid rubberwood top, pegboard storage for garage, workshop, home & office",
+      "brand": "enjoywood",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 165.98,
+      "avg90": 199.05,
+      "rating": 4.4,
+      "reviewCount": 89,
+      "rank": 169603,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61I6Rg9m1ML.jpg",
+      "url": "https://www.amazon.com/dp/B0FDR142VD",
+      "keepa": "https://keepa.com/#!product/1-B0FDR142VD",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 49,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 24,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 28,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 5,
+        "priceTier": 6
       }
     },
     {
@@ -16756,6 +18953,159 @@
         "demand": 0,
         "reviews": 0,
         "rating": 0,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B09TP7GZL9",
+      "parentAsin": "B0CPT98CYJ",
+      "familyKey": "B0CPT98CYJ",
+      "variationCount": 3,
+      "productAgeDays": 1558,
+      "title": "[upgraded version] multi-purpose bench vise 3.3\", table vice for workbench, universal clamping vise with heavy duty cast iron, multi-jaw, swivel base, easy adjustment for woodworking (3.3 inch)",
+      "brand": "goehner's",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "5739459011",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "19502224011",
+          "name": "vises"
+        },
+        {
+          "id": "5739459011",
+          "name": "bench vises"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 33.97,
+      "avg90": 38.83,
+      "rating": 4.5,
+      "reviewCount": 474,
+      "rank": 106168,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81OQd8+Ga+L.jpg",
+      "url": "https://www.amazon.com/dp/B09TP7GZL9",
+      "keepa": "https://keepa.com/#!product/1-B09TP7GZL9",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 48,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 25,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B07P7HT1KW",
+      "parentAsin": "",
+      "familyKey": "B07P7HT1KW",
+      "variationCount": 0,
+      "productAgeDays": 2638,
+      "title": "samurai ichiban gc-240-lh 9-1/2\" (240mm) curved hand saw + carrying case. made in japan",
+      "brand": "samurai",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553220",
+        "228013",
+        "328182011",
+        "551238"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553220",
+          "name": "handsaws"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 30.68,
+      "avg90": 34.81,
+      "rating": 4.7,
+      "reviewCount": 200,
+      "rank": 233479,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71D0dTsNbqL.jpg",
+      "url": "https://www.amazon.com/dp/B07P7HT1KW",
+      "keepa": "https://keepa.com/#!product/1-B07P7HT1KW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-12T10:45:50.416Z",
+      "dealScore": 48,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 25,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 9,
         "priceTier": 0
       }
     },

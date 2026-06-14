@@ -449,24 +449,6 @@ function normalizeProduct(p, streamName) {
   const rank = getSalesRank(p);
   const productAgeDays = getProductAgeDays(p);
 
-  if (normalizeAsin(p.asin)) {
-  console.log("DEBUG ASIN:", normalizeAsin(p.asin));
-  console.log("STATS KEYS:", Object.keys(p.stats || {}));
-  console.log("AVG RAW:", {
-    avg: p.stats?.avg,
-
-    avg30: p.stats?.avg30,
-    avg90: p.stats?.avg90,
-    avg180: p.stats?.avg180,
-    avg365: p.stats?.avg365
-  });
-  console.log("MIN RAW:", {
-    min: p.stats?.min,
-    minInInterval: p.stats?.minInInterval,
-    minInIntervalDate: p.stats?.minInIntervalDate
-  });
-}
-
   const deal = {
     asin,
     parentAsin: parentAsin || "",

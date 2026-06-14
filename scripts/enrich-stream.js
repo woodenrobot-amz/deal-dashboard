@@ -8,6 +8,7 @@ const ENRICH_LIMITS = {
   woodworking: 125,
   dudes_power: 125,
   three_d_printing: 125,
+  
   deals_for_dudes: 125,
   woodworking_test: 125,
   power_tools_main: 125,
@@ -158,7 +159,7 @@ function buildProductUrl(asins) {
     `https://api.keepa.com/product?key=${KEEPA_API_KEY}` +
     `&domain=1` +
     `&asin=${asins.join(",")}` +
-    `&stats=90` +
+    `&stats=365` +
     `&rating=1` +
     `&history=1`
   );
@@ -186,6 +187,16 @@ function getCurrentPrice(p) {
 function getAvg90(p) {
   const a = p.stats?.avg90 || [];
   return priceFrom([a[10], a[1], a[2], a[0]]);
+}
+
+function getAvg7(p) {
+  const a = p.stats?.avg7 || [];
+  return priceFrom([a[10], a[1], a[2], a[0]]);
+}
+
+function getLow365(p) {
+  const m = p.stats?.minInInterval || [];
+  return priceFrom([m[10], m[1], m[2], m[0]]);
 }
 
 function getRating(p) {
@@ -443,7 +454,9 @@ function normalizeProduct(p, streamName) {
     sourceStream: streamName,
     sources: ["keepa"],
     price: getCurrentPrice(p),
+    avg7: getAvg7(p),
     avg90: getAvg90(p),
+    low365: getLow365(p),
     rating: getRating(p),
     reviewCount: getReviewCount(p),
     rank,

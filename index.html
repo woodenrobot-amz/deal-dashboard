@@ -311,12 +311,11 @@
       font-weight: 800;
     }
 
-    .avg-price {
-      color: var(--muted);
-      font-size: 0.82rem;
-      text-decoration: line-through;
-      text-decoration-thickness: 1.5px;
-    }
+.avg-price {
+  color: var(--muted);
+  font-size: 0.78rem;
+  display: block;
+}
 
     .score-badge {
       display: inline-flex;
@@ -753,7 +752,9 @@
         );
 
         const price = firstValidNumber(deal.price, deal.currentPrice, deal.buyBoxPrice, deal.salePrice, deal.dealPrice);
+        const avg30 = getAvg30(deal);
         const avg90 = getAvg90(deal);
+        const low365 = getLow365(deal);
 
         return Object.assign({}, deal, {
           asin: asin,
@@ -806,6 +807,40 @@
       return firstValidNumber.apply(null, candidates);
     }
 
+function getAvg30(deal) {
+  const candidates = [
+    deal.avg30,
+    deal.average30,
+    deal.avg30Price,
+    deal.avg30DayPrice,
+    deal.thirtyDayAverage,
+    deal.thirtyDayAvg
+  ];
+
+  if (deal.stats) {
+    candidates.push(deal.stats.avg30);
+  }
+
+  if (deal.keepa) {
+    candidates.push(deal.keepa.avg30);
+    if (deal.keepa.stats) candidates.push(deal.keepa.stats.avg30);
+  }
+
+  return firstValidNumber.apply(null, candidates);
+}
+
+function getLow365(deal) {
+  const candidates = [
+    deal.low365,
+    deal.lowYear,
+    deal.low364,
+    deal.yearLow,
+    deal.low365Price
+  ];
+
+  return firstValidNumber.apply(null, candidates);
+}
+    
     function normalizeSources(value) {
       if (Array.isArray(value)) {
         return value.map(function(source) {
@@ -1019,7 +1054,17 @@ renderLoadMoreButton(totalDealCount);
 
       const imageUrl = deal.image || "https://via.placeholder.com/300x225?text=No+Image";
       const priceHtml = deal.price !== null ? `$${deal.price.toFixed(2)}` : "N/A";
-      const avg90Html = deal.avg90 !== null ? `<span class="avg-price">$${deal.avg90.toFixed(2)}</span>` : "";
+      const avg30Html = deal.avg30 !== null
+        ? `<span class="avg-price">30D: $${deal.avg30.toFixed(2)}</span>`
+        : "";
+
+      const avg90Html = deal.avg90 !== null
+        ? `<span class="avg-price">90D: $${deal.avg90.toFixed(2)}</span>`
+        : "";
+
+      const low365Html = deal.low365 !== null
+        ? `<span class="avg-price">Low: $${deal.low365.toFixed(2)}</span>`
+        : "";
       const brandHtml = deal.brand ? `<span class="mini-tag">${escapeHtml(deal.brand)}</span>` : "";
       const tagHtml = deal.tags.slice(0, 2).map(function(tag) {
         return `<span class="mini-tag">${escapeHtml(tag)}</span>`;
@@ -1037,10 +1082,12 @@ renderLoadMoreButton(totalDealCount);
             <div class="title">${escapeHtml(deal.title)}</div>
 
             <div class="meta-row">
-              <div class="price-stack">
-                <span class="price">${priceHtml}</span>
-                ${avg90Html}
-              </div>
+             <div class="price-stack">
+              <span class="price">${priceHtml}</span>
+                ${avg30Html}
+                ${avg90Html}  
+                ${low365Html}
+             </div>
 
               <div style="display:flex; flex-direction:column; align-items:flex-end;">
                 <span class="score-badge ${scoreClass}">Score: ${escapeHtml(String(deal.score ?? 0))}</span>

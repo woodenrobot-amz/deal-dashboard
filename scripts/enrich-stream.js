@@ -4,7 +4,7 @@ const KEEPA_API_KEY = process.env.KEEPA_API_KEY;
 const STREAM_NAME = process.argv[2];
 
 const ENRICH_LIMITS = {
-  woodworking_core: 125,
+  woodworking_core: 25,
   woodworking: 125,
   dudes_power: 125,
   three_d_printing: 125,
@@ -438,6 +438,23 @@ function normalizeProduct(p, streamName) {
   const rank = getSalesRank(p);
   const productAgeDays = getProductAgeDays(p);
 
+  if (normalizeAsin(p.asin)) {
+  console.log("DEBUG ASIN:", normalizeAsin(p.asin));
+  console.log("STATS KEYS:", Object.keys(p.stats || {}));
+  console.log("AVG RAW:", {
+    avg: p.stats?.avg,
+    avg7: p.stats?.avg7,
+    avg30: p.stats?.avg30,
+    avg90: p.stats?.avg90,
+    avg180: p.stats?.avg180,
+    avg365: p.stats?.avg365
+  });
+  console.log("MIN RAW:", {
+    min: p.stats?.min,
+    minInInterval: p.stats?.minInInterval,
+    minInIntervalDate: p.stats?.minInIntervalDate
+  });
+}
 
   const deal = {
     asin,

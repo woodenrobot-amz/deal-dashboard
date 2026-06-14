@@ -11,6 +11,44 @@ if (!STREAM_NAME) throw new Error("Missing stream argument");
 
 const STREAMS = {
 
+trusted_sellers: {
+  name: "trusted_sellers",
+  selection: {
+    "productType": ["0"],
+    
+    "current_BUY_BOX_SHIPPING_gte": 2000,
+    "isLowest90_BUY_BOX_SHIPPING": true,
+    "deltaPercent90_BUY_BOX_SHIPPING_gte": 8,
+    "singleVariation": true,
+    
+      "categories_exclude": [
+        "13398401" // Hardware
+    ],
+    "buyBoxSellerId": [
+        "A2F8KAB7F15GZF", 
+        "A2EJCTH67GJMT3",
+        "A4ZSBADJP7DJM",
+        "AUEUXQQV6YS3R",
+        "A3U8XSBQ9122LC",
+        "A1DR7HYJVQI5BJ",
+        "A29JP04ZKKF9MP",
+        "A1WO0LWTFI0BL8"
+    ],
+    "rootCategory": [
+        "228013" //Tools & Home Improvement
+    ],
+    "sort": [
+        [
+            "lastPriceChange",
+            "desc"
+        ]
+    ],
+    "perPage": 100,
+    "page": 0
+  }
+},
+
+  
   power_tools_main: {
   name: "power_tools_main",
   selection: {

@@ -4,7 +4,7 @@ const KEEPA_API_KEY = process.env.KEEPA_API_KEY;
 const STREAM_NAME = process.argv[2];
 
 const ENRICH_LIMITS = {
-  woodworking_core: 25,
+  woodworking_core: 125,
   woodworking: 125,
   dudes_power: 125,
   three_d_printing: 125,

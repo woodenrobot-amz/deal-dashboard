@@ -1054,17 +1054,17 @@ renderLoadMoreButton(totalDealCount);
 
       const imageUrl = deal.image || "https://via.placeholder.com/300x225?text=No+Image";
       const priceHtml = deal.price !== null ? `$${deal.price.toFixed(2)}` : "N/A";
-      const avg30Html = deal.avg30 !== null
-        ? `<span class="avg-price">30D: $${deal.avg30.toFixed(2)}</span>`
-        : "";
+      const avg30Html = typeof deal.avg30 === "number"
+  ? `<span class="avg-price">30D: $${deal.avg30.toFixed(2)}</span>`
+  : "";
 
-      const avg90Html = deal.avg90 !== null
-        ? `<span class="avg-price">90D: $${deal.avg90.toFixed(2)}</span>`
-        : "";
+const avg90Html = typeof deal.avg90 === "number"
+  ? `<span class="avg-price">90D: $${deal.avg90.toFixed(2)}</span>`
+  : "";
 
-      const low365Html = deal.low365 !== null
-        ? `<span class="avg-price">Low: $${deal.low365.toFixed(2)}</span>`
-        : "";
+const low365Html = typeof deal.low365 === "number"
+  ? `<span class="avg-price">Low: $${deal.low365.toFixed(2)}</span>`
+  : "";
       const brandHtml = deal.brand ? `<span class="mini-tag">${escapeHtml(deal.brand)}</span>` : "";
       const tagHtml = deal.tags.slice(0, 2).map(function(tag) {
         return `<span class="mini-tag">${escapeHtml(tag)}</span>`;

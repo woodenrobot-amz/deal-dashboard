@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-14T16:40:20.681Z",
+  "generatedAt": "2026-06-14T16:48:03.737Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 135,
+  "lastEnrichmentStream": "woodworking_core",
+  "dealCount": 159,
   "deals": [
     {
       "asin": "B085B253MD",
@@ -821,6 +821,75 @@
       }
     },
     {
+      "asin": "B007J2JJYK",
+      "parentAsin": "B00O97QO28",
+      "familyKey": "B00O97QO28",
+      "variationCount": 5,
+      "productAgeDays": 4438,
+      "title": "fastcap kaizen foam 57 mm black",
+      "brand": "fastcap",
+      "brandTier": "mid",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "6469723011",
+        "16310091",
+        "16310191"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "16310091",
+          "name": "industrial & scientific"
+        },
+        {
+          "id": "16310191",
+          "name": "raw materials"
+        },
+        {
+          "id": "6469723011",
+          "name": "foam"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg7": null,
+      "avg90": 64.6,
+      "low365": null,
+      "rating": 4.6,
+      "reviewCount": 1837,
+      "rank": 37652,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61MMCsANIDL.jpg",
+      "url": "https://www.amazon.com/dp/B007J2JJYK",
+      "keepa": "https://keepa.com/#!product/1-B007J2JJYK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.729Z",
+      "dealScore": 82,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 33,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 61,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 12,
+        "demand": 8,
+        "reviews": 13,
+        "rating": 8,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B01BGBMMA2",
       "parentAsin": "B0DQ64CCFR",
       "familyKey": "B0DQ64CCFR",
@@ -897,6 +966,163 @@
         "reviews": 6,
         "rating": 9,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0BGYJVWH4",
+      "parentAsin": "B0BGYJ27TZ",
+      "familyKey": "B0BGYJ27TZ",
+      "variationCount": 14,
+      "productAgeDays": 1313,
+      "title": "circle wood sign blank, 18 inch diameter, pack of 5 canvas panels for crafts & resin by woodpeckers",
+      "brand": "woodpeckers",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "262716011",
+        "2617941011",
+        "378733011",
+        "262715011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2617941011",
+          "name": "arts, crafts & sewing"
+        },
+        {
+          "id": "378733011",
+          "name": "crafting"
+        },
+        {
+          "id": "262715011",
+          "name": "woodcrafts"
+        },
+        {
+          "id": "262716011",
+          "name": "unfinished wood"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 84.99,
+      "avg7": null,
+      "avg90": 97.26,
+      "low365": null,
+      "rating": 4.7,
+      "reviewCount": 142,
+      "rank": 24047,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41-kNJ4CMeL.jpg",
+      "url": "https://www.amazon.com/dp/B0BGYJVWH4",
+      "keepa": "https://keepa.com/#!product/1-B0BGYJVWH4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.725Z",
+      "dealScore": 72,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 61,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 6,
+        "rating": 9,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B00ECCN37E",
+      "parentAsin": "B09X6M1VP9",
+      "familyKey": "B09X6M1VP9",
+      "variationCount": 8,
+      "productAgeDays": 3421,
+      "title": "amana tool 82 degree countersink with drill bit depth stop and no-thrust ball bearing, 55228, 3/8 d x 9/64 drill d x 1/4 inch quick release hex shank",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552396",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552388",
+          "name": "drill bits"
+        },
+        {
+          "id": "552396",
+          "name": "countersink drill bits"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 48.71,
+      "avg7": null,
+      "avg90": 53.73,
+      "low365": null,
+      "rating": 4.7,
+      "reviewCount": 2569,
+      "rank": 25301,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71KzdmghUjL.jpg",
+      "url": "https://www.amazon.com/dp/B00ECCN37E",
+      "keepa": "https://keepa.com/#!product/1-B00ECCN37E",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.726Z",
+      "dealScore": 78,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 60,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 2
       }
     },
     {
@@ -1202,6 +1428,80 @@
       }
     },
     {
+      "asin": "B002MYMZJQ",
+      "parentAsin": "",
+      "familyKey": "B002MYMZJQ",
+      "variationCount": 0,
+      "productAgeDays": 5561,
+      "title": "festool 466357 carrying case for fs guide rails",
+      "brand": "festool",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "15782421",
+        "228013",
+        "328182011",
+        "13400691"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "13400691",
+          "name": "tool organizers"
+        },
+        {
+          "id": "15782421",
+          "name": "bucket organizers"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 71.99,
+      "avg7": null,
+      "avg90": 81.11,
+      "low365": null,
+      "rating": 4.6,
+      "reviewCount": 693,
+      "rank": 126977,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51+3oF6RR6L.jpg",
+      "url": "https://www.amazon.com/dp/B002MYMZJQ",
+      "keepa": "https://keepa.com/#!product/1-B002MYMZJQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.736Z",
+      "dealScore": 72,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 53,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 11,
+        "rating": 8,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B0D34S4T12",
       "parentAsin": "",
       "familyKey": "B0D34S4T12",
@@ -1427,6 +1727,90 @@
       }
     },
     {
+      "asin": "B001307R7A",
+      "parentAsin": "B00VWT19BM",
+      "familyKey": "B00VWT19BM",
+      "variationCount": 5,
+      "productAgeDays": 5252,
+      "title": "freud p408: 8\" 34t premier fusion general purpose blade for crosscuts (3/8\" to 3-1/2\") & rips (3/4\" to 1-1/2\") wood, laminate, veneered plywood, hardwoods & melamine.",
+      "brand": "freud",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552292",
+        "16310161",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552292",
+          "name": "circular saw blades"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 64.65,
+      "avg7": null,
+      "avg90": 73.3,
+      "low365": null,
+      "rating": 5,
+      "reviewCount": 3,
+      "rank": 71880,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/91DYGd1Sf8L.jpg",
+      "url": "https://www.amazon.com/dp/B001307R7A",
+      "keepa": "https://keepa.com/#!product/1-B001307R7A",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.731Z",
+      "dealScore": 70,
+      "scoreBreakdown": {
+        "rating": 25,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B00N1JC7HQ",
       "parentAsin": "",
       "familyKey": "B00N1JC7HQ",
@@ -1501,6 +1885,80 @@
         "reviews": 15,
         "rating": 5,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0DBR14QC6",
+      "parentAsin": "B0FW2X4JYX",
+      "familyKey": "B0FW2X4JYX",
+      "variationCount": 3,
+      "productAgeDays": 590,
+      "title": "jessem 07413 stainless steel 24 inch precision ruler with patented flex grip and fade resistant markings",
+      "brand": "jessem",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "553278",
+        "228013",
+        "553244",
+        "11646393011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "11646393011",
+          "name": "linear measurement"
+        },
+        {
+          "id": "553278",
+          "name": "rulers"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 54.99,
+      "avg7": null,
+      "avg90": 64.93,
+      "low365": null,
+      "rating": 4.8,
+      "reviewCount": 17,
+      "rank": 133809,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61vu3kuWnaL.jpg",
+      "url": "https://www.amazon.com/dp/B0DBR14QC6",
+      "keepa": "https://keepa.com/#!product/1-B0DBR14QC6",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.736Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 4
       }
     },
     {
@@ -1879,6 +2337,163 @@
         "reviews": 6,
         "rating": 5,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B07KKJ5NLX",
+      "parentAsin": "B0GZLRP3T4",
+      "familyKey": "B0GZLRP3T4",
+      "variationCount": 7,
+      "productAgeDays": 2750,
+      "title": "amana tool 82 degree countersink with tapered drill bit and adjustable depth stop, 55152, 3/8 d x 9/64 drill d x 1/4 inch quick release hex shank",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552396",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552388",
+          "name": "drill bits"
+        },
+        {
+          "id": "552396",
+          "name": "countersink drill bits"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 48.71,
+      "avg7": null,
+      "avg90": 54.8,
+      "low365": null,
+      "rating": 4.3,
+      "reviewCount": 395,
+      "rank": 78749,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61CSu6KlX9L.jpg",
+      "url": "https://www.amazon.com/dp/B07KKJ5NLX",
+      "keepa": "https://keepa.com/#!product/1-B07KKJ5NLX",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.732Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 47,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 3,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0DZFWT93Q",
+      "parentAsin": "B09T79ZL5H",
+      "familyKey": "B09T79ZL5H",
+      "variationCount": 98,
+      "productAgeDays": 460,
+      "title": "narrow wood canvas 12 x 36 x 1-1/2-inch, wooden sign blanks with frame for panoramic style photo display, by woodpeckers",
+      "brand": "woodpeckers",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "12896351",
+        "2617941011",
+        "2747968011",
+        "12896211"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2617941011",
+          "name": "arts, crafts & sewing"
+        },
+        {
+          "id": "2747968011",
+          "name": "painting, drawing & art supplies"
+        },
+        {
+          "id": "12896211",
+          "name": "boards & canvas"
+        },
+        {
+          "id": "12896351",
+          "name": "wood art boards"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 37.31,
+      "avg7": null,
+      "avg90": 38.28,
+      "low365": null,
+      "rating": 4.5,
+      "reviewCount": 130,
+      "rank": 24740,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41WQUKYG3aL.jpg",
+      "url": "https://www.amazon.com/dp/B0DZFWT93Q",
+      "keepa": "https://keepa.com/#!product/1-B0DZFWT93Q",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.726Z",
+      "dealScore": 56,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 3,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 47,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 6,
+        "rating": 7,
+        "priceTier": 2
       }
     },
     {
@@ -2298,6 +2913,89 @@
       }
     },
     {
+      "asin": "B08M94RSZG",
+      "parentAsin": "B0GYSJYLFD",
+      "familyKey": "B0GYSJYLFD",
+      "variationCount": 5,
+      "productAgeDays": 1892,
+      "title": "jorgensen 48-inch bar clamps, 90°cabinet master parallel jaw bar clamp set, 2-pack",
+      "brand": "jorgensen",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "3207128011",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "553150",
+          "name": "clamps"
+        },
+        {
+          "id": "3207128011",
+          "name": "bar clamps"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 93.33,
+      "avg7": null,
+      "avg90": 105.13,
+      "low365": null,
+      "rating": 4.8,
+      "reviewCount": 1369,
+      "rank": 32244,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Vr9QPKM8L.jpg",
+      "url": "https://www.amazon.com/dp/B08M94RSZG",
+      "keepa": "https://keepa.com/#!product/1-B08M94RSZG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-14T16:48:03.727Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 45,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 13,
+        "rating": 10,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B095VT6ZWD",
       "parentAsin": "",
       "familyKey": "B095VT6ZWD",
@@ -2524,6 +3222,93 @@
       }
     },
     {
+      "asin": "B0002DSVAG",
+      "parentAsin": "B0B2KJ76F8",
+      "familyKey": "B0B2KJ76F8",
+      "variationCount": 33,
+      "productAgeDays": 3356,
+      "title": "amana tool - 45434 carbide tipped straight plunge 5/8 dia x 1-1/2 x 1/2\" shank",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "686957011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686957011",
+          "name": "straight"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 33.77,
+      "avg7": null,
+      "avg90": 36.2,
+      "low365": null,
+      "rating": 4.7,
+      "reviewCount": 422,
+      "rank": 76850,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/31r1NRvTITL.jpg",
+      "url": "https://www.amazon.com/dp/B0002DSVAG",
+      "keepa": "https://keepa.com/#!product/1-B0002DSVAG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.731Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 10,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 41,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B0000DD2U8",
       "parentAsin": "B00N0OYEL4",
       "familyKey": "B00N0OYEL4",
@@ -2681,6 +3466,154 @@
       }
     },
     {
+      "asin": "B00G357SQK",
+      "parentAsin": "B0FGVX5W5R",
+      "familyKey": "B0FGVX5W5R",
+      "variationCount": 5,
+      "productAgeDays": 4510,
+      "title": "trend diamond sharpening bench stone, 6 x 2 inch, double sided (300/1000 grit) bench stone with cleaning block & non-slip mat, dws/w6/fc",
+      "brand": "trend",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "553346",
+        "228013",
+        "328182011",
+        "551238"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553346",
+          "name": "sharpening stones"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 33.99,
+      "avg7": null,
+      "avg90": 57.28,
+      "low365": null,
+      "rating": 4.4,
+      "reviewCount": 137,
+      "rank": 60241,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/711Br4d6sQL.jpg",
+      "url": "https://www.amazon.com/dp/B00G357SQK",
+      "keepa": "https://keepa.com/#!product/1-B00G357SQK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-14T16:48:03.730Z",
+      "dealScore": 90,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 60,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 40,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0FS8RV255",
+      "parentAsin": "",
+      "familyKey": "B0FS8RV255",
+      "variationCount": 0,
+      "productAgeDays": 263,
+      "title": "jessem 06300 precision box joint jig for router tables, professional woodworking jig for perfect finger joints with 1/4\", 3/8\", 1/2\" aluminum indexing keys and smooth bearing glide system",
+      "brand": "jessem",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552488",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552488",
+          "name": "jig accessories"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 199.99,
+      "avg7": null,
+      "avg90": 216.94,
+      "low365": null,
+      "rating": 4.8,
+      "reviewCount": 38,
+      "rank": 98052,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71JfbSyL49L.jpg",
+      "url": "https://www.amazon.com/dp/B0FS8RV255",
+      "keepa": "https://keepa.com/#!product/1-B0FS8RV255",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.734Z",
+      "dealScore": 55,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 40,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0FKDF3ZXQ",
       "parentAsin": "",
       "familyKey": "B0FKDF3ZXQ",
@@ -2757,6 +3690,385 @@
         "reviews": 0,
         "rating": 5,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B07MHLDR12",
+      "parentAsin": "",
+      "familyKey": "B07MHLDR12",
+      "variationCount": 0,
+      "productAgeDays": 2613,
+      "title": "festool 204275 jigsaw blade, multicolour",
+      "brand": "festool",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552306",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552306",
+          "name": "jig saw blades"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 47.99,
+      "avg7": null,
+      "avg90": 51.95,
+      "low365": null,
+      "rating": 4.7,
+      "reviewCount": 394,
+      "rank": 109542,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51FfndEpxSL.jpg",
+      "url": "https://www.amazon.com/dp/B07MHLDR12",
+      "keepa": "https://keepa.com/#!product/1-B07MHLDR12",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.735Z",
+      "dealScore": 62,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 39,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0D6H26QVZ",
+      "parentAsin": "B0D6BPXRZT",
+      "familyKey": "B0D6BPXRZT",
+      "variationCount": 31,
+      "productAgeDays": 723,
+      "title": "narrow wood canvas 12 x 36 x 3/4-inch wooden sign blanks with frame for panoramic style photo display, by woodpeckers",
+      "brand": "woodpeckers",
+      "brandTier": "top",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "12896351",
+        "2617941011",
+        "2747968011",
+        "12896211"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2617941011",
+          "name": "arts, crafts & sewing"
+        },
+        {
+          "id": "2747968011",
+          "name": "painting, drawing & art supplies"
+        },
+        {
+          "id": "12896211",
+          "name": "boards & canvas"
+        },
+        {
+          "id": "12896351",
+          "name": "wood art boards"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 33.49,
+      "avg7": null,
+      "avg90": 35.6,
+      "low365": null,
+      "rating": 4.4,
+      "reviewCount": 109,
+      "rank": 37511,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41ZrWgbBTYL.jpg",
+      "url": "https://www.amazon.com/dp/B0D6H26QVZ",
+      "keepa": "https://keepa.com/#!product/1-B0D6H26QVZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.728Z",
+      "dealScore": 61,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 8,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 39,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 6,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0GJ6T48DL",
+      "parentAsin": "B0GSX6ZYRV",
+      "familyKey": "B0GSX6ZYRV",
+      "variationCount": 4,
+      "productAgeDays": 134,
+      "title": "bora pro compact metal pocket hole jig kit, 3 inch face clamp & 350pc screw set auto adjust drill guide, durable pocket hole jig for woodworking & tight spaces - for materials 1/2 in - 1-1/2 in thick",
+      "brand": "bora",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552488",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552488",
+          "name": "jig accessories"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.99,
+      "avg7": null,
+      "avg90": 128.5,
+      "low365": null,
+      "rating": 4.4,
+      "reviewCount": 26,
+      "rank": 15042,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81uuB9oFdDL.jpg",
+      "url": "https://www.amazon.com/dp/B0GJ6T48DL",
+      "keepa": "https://keepa.com/#!product/1-B0GJ6T48DL",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-14T16:48:03.723Z",
+      "dealScore": 55,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 33,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 39,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 0,
+        "rating": 5,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B003871APG",
+      "parentAsin": "B08L6BCVGM",
+      "familyKey": "B08L6BCVGM",
+      "variationCount": 3,
+      "productAgeDays": 4631,
+      "title": "trend diamond abrasive lapping fluid, 17 fl oz, sharpening fluid for diamond stones, reduces loading and improves cutting performance, dws/lf/500",
+      "brand": "trend",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552518",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552518",
+          "name": "lubricants"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 35,
+      "avg7": null,
+      "avg90": 38.64,
+      "low365": null,
+      "rating": 4.6,
+      "reviewCount": 3072,
+      "rank": 34313,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61JiQnOQMdL.jpg",
+      "url": "https://www.amazon.com/dp/B003871APG",
+      "keepa": "https://keepa.com/#!product/1-B003871APG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-14T16:48:03.727Z",
+      "dealScore": 55,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 39,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0BG98LXC1",
+      "parentAsin": "B0FGKSBVXT",
+      "familyKey": "B0FGKSBVXT",
+      "variationCount": 5,
+      "productAgeDays": 1357,
+      "title": "bora centipede portable workbench folding work table for garage heavy duty collapsible workbench foldable work bench 4x6 ft 4500 lb capacity woodworking bench mesa de trabajo portátil ct12",
+      "brand": "bora",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 214.99,
+      "avg7": null,
+      "avg90": 235.97,
+      "low365": null,
+      "rating": 4.7,
+      "reviewCount": 366,
+      "rank": 45742,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71we52QPAhL.jpg",
+      "url": "https://www.amazon.com/dp/B0BG98LXC1",
+      "keepa": "https://keepa.com/#!product/1-B0BG98LXC1",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-14T16:48:03.729Z",
+      "dealScore": 44,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 39,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 8
       }
     },
     {
@@ -2912,6 +4224,93 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B00TUO2A9G",
+      "parentAsin": "",
+      "familyKey": "B00TUO2A9G",
+      "variationCount": 0,
+      "productAgeDays": 3858,
+      "title": "mirka backup pad 5\" hook and loop / 28 holes / 1 pcs/medium / 915gv28",
+      "brand": "mirka",
+      "brandTier": "mid",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "256177011",
+        "228013",
+        "328182011",
+        "552262",
+        "8106314011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106314011",
+          "name": "power finishing tool parts & accessories"
+        },
+        {
+          "id": "552582",
+          "name": "power sander parts & accessories"
+        },
+        {
+          "id": "552588",
+          "name": "sanding discs"
+        },
+        {
+          "id": "256177011",
+          "name": "hook & loop discs"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 40,
+      "avg7": null,
+      "avg90": 44.86,
+      "low365": null,
+      "rating": 4.9,
+      "reviewCount": 50,
+      "rank": 108449,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81+pcnOxOaL.jpg",
+      "url": "https://www.amazon.com/dp/B00TUO2A9G",
+      "keepa": "https://keepa.com/#!product/1-B00TUO2A9G",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.735Z",
+      "dealScore": 56,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 37,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 12,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 2
       }
     },
     {
@@ -4529,6 +5928,89 @@
       }
     },
     {
+      "asin": "B0CDQRZCTS",
+      "parentAsin": "B0CHT32RTZ",
+      "familyKey": "B0CHT32RTZ",
+      "variationCount": 1,
+      "productAgeDays": 1035,
+      "title": "bora ngx 5pc deluxe clamp edge set - 50 inch guide rail + 50 inch rail extension, ngx saw plate, t-square attachment & track clamps - track saw system for circular saw - 544550",
+      "brand": "bora",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552924",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "13708781",
+          "name": "accessories"
+        },
+        {
+          "id": "552924",
+          "name": "circular saw accessories"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 119.99,
+      "avg7": null,
+      "avg90": 165.59,
+      "low365": null,
+      "rating": 4.1,
+      "reviewCount": 64,
+      "rank": 56435,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81i2J3le3UL.jpg",
+      "url": "https://www.amazon.com/dp/B0CDQRZCTS",
+      "keepa": "https://keepa.com/#!product/1-B0CDQRZCTS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-14T16:48:03.730Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 20,
+        "discount": 41,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 33,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 3,
+        "rating": 0,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0039ZYQLW",
       "parentAsin": "",
       "familyKey": "B0039ZYQLW",
@@ -4922,6 +6404,75 @@
       }
     },
     {
+      "asin": "B09RGCT3MH",
+      "parentAsin": "B09NB58PK5",
+      "familyKey": "B09NB58PK5",
+      "variationCount": 11,
+      "productAgeDays": 1579,
+      "title": "fastcap 2p-10 - thick – high performance heavy-duty super glue - ca (cyanoacrylate adhesive) -10 oz/283g. perfect gap filling projects. 2-part adhesive. activator sold separately (2-bottle)",
+      "brand": "fastcap",
+      "brandTier": "mid",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "256243011",
+        "16310091",
+        "256225011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "16310091",
+          "name": "industrial & scientific"
+        },
+        {
+          "id": "256225011",
+          "name": "adhesives, sealants & lubricants"
+        },
+        {
+          "id": "256243011",
+          "name": "cyanoacrylate adhesives"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.99,
+      "avg7": null,
+      "avg90": 108.15,
+      "low365": null,
+      "rating": 4.6,
+      "reviewCount": 56,
+      "rank": 92493,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71RCbdfT+AL.jpg",
+      "url": "https://www.amazon.com/dp/B09RGCT3MH",
+      "keepa": "https://keepa.com/#!product/1-B09RGCT3MH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.733Z",
+      "dealScore": 53,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 31,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 12,
+        "demand": 4,
+        "reviews": 3,
+        "rating": 8,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B0812BCGQT",
       "parentAsin": "B0F9B9QZ41",
       "familyKey": "B0F9B9QZ41",
@@ -5157,6 +6708,80 @@
         "reviews": 6,
         "rating": 10,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0GJ6VKQDN",
+      "parentAsin": "B0GR7NFP7L",
+      "familyKey": "B0GR7NFP7L",
+      "variationCount": 7,
+      "productAgeDays": 135,
+      "title": "bora automatic pocket hole jig with 800 pc fine thread screws, auto adjusting drill guide, pocket hole jig kit for woodworking - for materials 1/2 inch to 1 1/2 inch thick, power tool accessory jigs",
+      "brand": "bora",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "552488",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552488",
+          "name": "jig accessories"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 149.99,
+      "avg7": null,
+      "avg90": 205.64,
+      "low365": null,
+      "rating": null,
+      "reviewCount": null,
+      "rank": 87019,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/817euuSVePL.jpg",
+      "url": "https://www.amazon.com/dp/B0GJ6VKQDN",
+      "keepa": "https://keepa.com/#!product/1-B0GJ6VKQDN",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-14T16:48:03.733Z",
+      "dealScore": 40,
+      "scoreBreakdown": {
+        "rating": 0,
+        "discount": 40,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 6
       }
     },
     {
@@ -7072,6 +8697,80 @@
       }
     },
     {
+      "asin": "B08S475LLB",
+      "parentAsin": "B0FV5GBC65",
+      "familyKey": "B0FV5GBC65",
+      "variationCount": 5,
+      "productAgeDays": 1918,
+      "title": "bora centipede folding table top for bora centipede work stand saw horses - 24 inch x 48 inch - includes wood top + 6 quick-twist locks for a portable, quick setup work table or workbench, ct22n brown",
+      "brand": "bora",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 72.89,
+      "avg7": null,
+      "avg90": 79.61,
+      "low365": null,
+      "rating": 4.2,
+      "reviewCount": 172,
+      "rank": 29405,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61udSagBAUL.jpg",
+      "url": "https://www.amazon.com/dp/B08S475LLB",
+      "keepa": "https://keepa.com/#!product/1-B08S475LLB",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-14T16:48:03.726Z",
+      "dealScore": 41,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 24,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 6,
+        "rating": 0,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B0012JI88E",
       "parentAsin": "",
       "familyKey": "B0012JI88E",
@@ -7793,6 +9492,80 @@
         "reviews": 0,
         "rating": 8,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0FHK7SFWQ",
+      "parentAsin": "B0FXYBBLKV",
+      "familyKey": "B0FXYBBLKV",
+      "variationCount": 3,
+      "productAgeDays": 263,
+      "title": "bora 800 pocket hole screws assortment kit self tapping coarse thread color coated wood screws for indoor and outdoor use square drive - 200 1\", 200 1-1/4\" 200 1-1/2\", 100 2\", 100 2-1/2",
+      "brand": "bora",
+      "brandTier": "off",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "16410631",
+        "16310091",
+        "383599011",
+        "17290023011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "16310091",
+          "name": "industrial & scientific"
+        },
+        {
+          "id": "383599011",
+          "name": "fasteners"
+        },
+        {
+          "id": "17290023011",
+          "name": "screws"
+        },
+        {
+          "id": "16410631",
+          "name": "wood screws"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.98,
+      "avg7": null,
+      "avg90": 54.66,
+      "low365": null,
+      "rating": 4.9,
+      "reviewCount": 9,
+      "rank": 75719,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71crk63+JzL.jpg",
+      "url": "https://www.amazon.com/dp/B0FHK7SFWQ",
+      "keepa": "https://keepa.com/#!product/1-B0FHK7SFWQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-14T16:48:03.732Z",
+      "dealScore": 36,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 22,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 2
       }
     },
     {
@@ -8691,6 +10464,93 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B00I5QVYI8",
+      "parentAsin": "B09ZBSTHNB",
+      "familyKey": "B09ZBSTHNB",
+      "variationCount": 11,
+      "productAgeDays": 4321,
+      "title": "mirka abranet net grip disc / 3 inch/grit 180 / sandpaper sanding discs hook and loop / 50 pcs/dust free sanding / 9a-203-180",
+      "brand": "mirka",
+      "brandTier": "mid",
+      "category": "woodworking_core",
+      "keepaCategoryIds": [
+        "256177011",
+        "228013",
+        "328182011",
+        "552262",
+        "8106314011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106314011",
+          "name": "power finishing tool parts & accessories"
+        },
+        {
+          "id": "552582",
+          "name": "power sander parts & accessories"
+        },
+        {
+          "id": "552588",
+          "name": "sanding discs"
+        },
+        {
+          "id": "256177011",
+          "name": "hook & loop discs"
+        }
+      ],
+      "sourceStream": "woodworking_core",
+      "sources": [
+        "keepa"
+      ],
+      "price": 41,
+      "avg7": null,
+      "avg90": 42.55,
+      "low365": null,
+      "rating": 4,
+      "reviewCount": 6,
+      "rank": 95016,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/91oNwZ898fL.jpg",
+      "url": "https://www.amazon.com/dp/B00I5QVYI8",
+      "keepa": "https://keepa.com/#!product/1-B00I5QVYI8",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-14T16:48:03.734Z",
+      "dealScore": 44,
+      "scoreBreakdown": {
+        "rating": 20,
+        "discount": 5,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 18,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 12,
+        "demand": 4,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 2
       }
     },
     {

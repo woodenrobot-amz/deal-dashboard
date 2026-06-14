@@ -189,14 +189,25 @@ function getAvg90(p) {
   return priceFrom([a[10], a[1], a[2], a[0]]);
 }
 
-function getAvg7(p) {
-  const a = p.stats?.avg7 || [];
+function getAvg30(p) {
+  const a = p.stats?.avg30 || [];
   return priceFrom([a[10], a[1], a[2], a[0]]);
+}
+
+function priceFromKeepaMin(values = []) {
+  const val = values.find(
+    item =>
+      Array.isArray(item) &&
+      typeof item[1] === "number" &&
+      item[1] > 0
+  );
+
+  return val ? val[1] / 100 : null;
 }
 
 function getLow365(p) {
   const m = p.stats?.minInInterval || [];
-  return priceFrom([m[10], m[1], m[2], m[0]]);
+  return priceFromKeepaMin([m[10], m[1], m[2], m[0]]);
 }
 
 function getRating(p) {
@@ -443,7 +454,7 @@ function normalizeProduct(p, streamName) {
   console.log("STATS KEYS:", Object.keys(p.stats || {}));
   console.log("AVG RAW:", {
     avg: p.stats?.avg,
-    avg7: p.stats?.avg7,
+
     avg30: p.stats?.avg30,
     avg90: p.stats?.avg90,
     avg180: p.stats?.avg180,
@@ -471,7 +482,7 @@ function normalizeProduct(p, streamName) {
     sourceStream: streamName,
     sources: ["keepa"],
     price: getCurrentPrice(p),
-    avg7: getAvg7(p),
+    avg30: getAvg30(p),
     avg90: getAvg90(p),
     low365: getLow365(p),
     rating: getRating(p),

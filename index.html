@@ -266,8 +266,13 @@
       max-height: 205px;
       overflow: hidden;
     }
+    
+    .image-wrap a {
+      display: block;
+    }
 
     .image-wrap img {
+      cursor: pointer;
       display: block;
       max-width: 100%;
       max-height: 100%;
@@ -1074,9 +1079,11 @@ const low365Html = typeof deal.low365 === "number"
         <div class="deal-card" id="card-${escapeAttr(deal.asin)}">
           <button class="card-menu-button" type="button" onclick="toggleDetails('${escapeJs(deal.asin)}')" aria-label="Toggle deal details">⋮</button>
 
-          <div class="image-wrap">
+         <div class="image-wrap">
+          <a href="${escapeAttr(deal.url)}" target="_blank" rel="noopener noreferrer">
             <img src="${escapeAttr(imageUrl)}" alt="" loading="lazy" decoding="async">
-          </div>
+          </a>
+        </div>
 
           <div class="card-body">
             <div class="title">${escapeHtml(deal.title)}</div>

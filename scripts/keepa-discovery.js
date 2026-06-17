@@ -14,18 +14,24 @@ const STREAMS = {
 trusted_sellers: {
   name: "trusted_sellers",
   selection: {
-    "productType": ["0"],
-    
+    "productType": [
+        "0"
+    ],
+    "singleVariation": true,
+    "categories_exclude": [
+        "13398401",
+        "13399631",
+        "17881622011",
+        "511228"
+    ],
+    "current_RATING_gte": 40,
+    "current_COUNT_REVIEWS_gte": 50,
     "current_BUY_BOX_SHIPPING_gte": 2000,
     "isLowest90_BUY_BOX_SHIPPING": true,
     "deltaPercent90_BUY_BOX_SHIPPING_gte": 8,
-    "singleVariation": true,
-    
-      "categories_exclude": [
-        "13398401" // Hardware
-    ],
     "buyBoxSellerId": [
-        "A2F8KAB7F15GZF", 
+        "A243EQ592JSXT3",
+        "A2F8KAB7F15GZF",
         "A2EJCTH67GJMT3",
         "A4ZSBADJP7DJM",
         "AUEUXQQV6YS3R",
@@ -35,7 +41,10 @@ trusted_sellers: {
         "A1WO0LWTFI0BL8"
     ],
     "rootCategory": [
-        "228013" //Tools & Home Improvement
+        "228013"
+    ],
+    "brand": [
+        "✜fein"
     ],
     "sort": [
         [
@@ -43,9 +52,9 @@ trusted_sellers: {
             "desc"
         ]
     ],
+    "lastRatingUpdate_gte": 8000779,
     "perPage": 100,
     "page": 0
-  }
 },
 
   

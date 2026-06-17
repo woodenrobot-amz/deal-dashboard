@@ -38,7 +38,8 @@ trusted_sellers: {
         "A3U8XSBQ9122LC",
         "A1DR7HYJVQI5BJ",
         "A29JP04ZKKF9MP",
-        "A1WO0LWTFI0BL8"
+        "A1WO0LWTFI0BL8",
+        "A2O561G1SPZ87O"
     ],
     "rootCategory": [
         "228013"

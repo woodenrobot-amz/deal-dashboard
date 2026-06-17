@@ -330,6 +330,8 @@ three_d_printing: {
 
     current_BUY_BOX_SHIPPING_gte: 2000,
 
+    deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
+    deltaPercent30_BUY_BOX_SHIPPING_gte: 8,
     isLowest90_BUY_BOX_SHIPPING: true,
 
     categories_exclude: [

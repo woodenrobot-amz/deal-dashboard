@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-28T01:01:00.336Z",
+  "generatedAt": "2026-06-29T11:04:40.395Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 121,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 128,
   "deals": [
     {
       "asin": "B004GIO0F8",
@@ -1730,6 +1730,87 @@
       }
     },
     {
+      "asin": "B000VE0QNQ",
+      "parentAsin": "B0FK6Y1FQ4",
+      "familyKey": "B0FK6Y1FQ4",
+      "variationCount": 27,
+      "productAgeDays": 1152,
+      "title": "starrett spring tempered steel rule with satin chrome finish, quick reading, millimeter and inch graduation - 39-1/4\" length, 36 graduation type, 1.2mm thickness - c636-1000",
+      "brand": "starrett",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553278",
+        "16310161",
+        "228013",
+        "553244",
+        "11646393011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "11646393011",
+          "name": "linear measurement"
+        },
+        {
+          "id": "553278",
+          "name": "rulers"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 362.12,
+      "avg30": 393.72,
+      "avg90": 393.89,
+      "low365": 362.12,
+      "rating": 4.8,
+      "reviewCount": 1175,
+      "rank": 68458,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/613UB8-HKoL.jpg",
+      "url": "https://www.amazon.com/dp/B000VE0QNQ",
+      "keepa": "https://keepa.com/#!product/1-B000VE0QNQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-29T11:04:40.394Z",
+      "dealScore": 91,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 63,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 13,
+        "rating": 10,
+        "priceTier": 10
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0002FULGQ",
+        "B000VE0QNQ"
+      ]
+    },
+    {
       "asin": "B08D34HH6B",
       "parentAsin": "",
       "familyKey": "B08D34HH6B",
@@ -2270,6 +2351,89 @@
         "reviews": 13,
         "rating": 10,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0761VMMRV",
+      "parentAsin": "B0FQ89H2BQ",
+      "familyKey": "B0FQ89H2BQ",
+      "variationCount": 7,
+      "productAgeDays": 3135,
+      "title": "diablo steel demon/demo demon reciprocating saw blade set, cuts nail-embedded wood & thick metal - carbide teeth, 6\"/9\" lengths, 5-pieces blade variety pack - ds005sc",
+      "brand": "diablo",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552332",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552332",
+          "name": "reciprocating saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 41.99,
+      "avg30": 45.56,
+      "avg90": 46.2,
+      "low365": 31,
+      "rating": 4.8,
+      "reviewCount": 2451,
+      "rank": 41471,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51R9RBUCqwL.jpg",
+      "url": "https://www.amazon.com/dp/B0761VMMRV",
+      "keepa": "https://keepa.com/#!product/1-B0761VMMRV",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-29T11:04:40.393Z",
+      "dealScore": 75,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 61,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 15,
+        "rating": 10,
+        "priceTier": 2
       }
     },
     {
@@ -2903,80 +3067,6 @@
       }
     },
     {
-      "asin": "B0002FULGQ",
-      "parentAsin": "B0FK6Y1FQ4",
-      "familyKey": "B0FK6Y1FQ4",
-      "variationCount": 27,
-      "productAgeDays": 5574,
-      "title": "starrett spring tempered steel rule with satin chrome finish, quick reading, and inch graduation - 6\" length, 4r graduation type, 3/64\" thickness - c604r-6",
-      "brand": "starrett",
-      "brandTier": "top",
-      "category": "trusted_sellers",
-      "keepaCategoryIds": [
-        "553278",
-        "228013",
-        "553244",
-        "11646393011"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "228013",
-          "name": "tools & home improvement"
-        },
-        {
-          "id": "553244",
-          "name": "measuring & layout tools"
-        },
-        {
-          "id": "11646393011",
-          "name": "linear measurement"
-        },
-        {
-          "id": "553278",
-          "name": "rulers"
-        }
-      ],
-      "sourceStream": "trusted_sellers",
-      "sources": [
-        "keepa"
-      ],
-      "price": 33.24,
-      "avg30": 37.99,
-      "avg90": 38.66,
-      "low365": 32.66,
-      "rating": 4.8,
-      "reviewCount": 1175,
-      "rank": 76916,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51fyNMkkxXL.jpg",
-      "url": "https://www.amazon.com/dp/B0002FULGQ",
-      "keepa": "https://keepa.com/#!product/1-B0002FULGQ",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": true,
-      "updatedAt": "2026-06-28T01:00:42.087Z",
-      "dealScore": 91,
-      "scoreBreakdown": {
-        "rating": 24,
-        "discount": 21,
-        "rank": 0,
-        "reviews": 10,
-        "variationFamily": 8,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 57,
-      "normalizedScoreBreakdown": {
-        "discount": 10,
-        "brand": 20,
-        "demand": 4,
-        "reviews": 13,
-        "rating": 10,
-        "priceTier": 0
-      }
-    },
-    {
       "asin": "B07QYX6Y6R",
       "parentAsin": "",
       "familyKey": "B07QYX6Y6R",
@@ -3429,6 +3519,82 @@
         "rating": 5,
         "priceTier": 4
       }
+    },
+    {
+      "asin": "B0002FULOS",
+      "parentAsin": "B0FD588Z1B",
+      "familyKey": "B0FD588Z1B",
+      "variationCount": 8,
+      "productAgeDays": 4651,
+      "title": "starrett blade only for combination squares, sets or bevel protractors - ideal for woodworking and metalworking - 600mm length, satin chrome finish, 36 graduation - cb600-36",
+      "brand": "starrett",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "3006710011",
+        "16310161",
+        "228013",
+        "553244"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "3006710011",
+          "name": "carpentry squares"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 198.68,
+      "avg30": 204.89,
+      "avg90": 234.98,
+      "low365": 198.31,
+      "rating": 4.7,
+      "reviewCount": 138,
+      "rank": 383391,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41lkHNi9q8L.jpg",
+      "url": "https://www.amazon.com/dp/B0002FULOS",
+      "keepa": "https://keepa.com/#!product/1-B0002FULOS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-29T11:04:40.394Z",
+      "dealScore": 77,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 23,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 9,
+        "priceTier": 6
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0002FUM24",
+        "B0002FULOS"
+      ]
     },
     {
       "asin": "B07WFQT4PM",
@@ -5379,76 +5545,6 @@
       }
     },
     {
-      "asin": "B0002FUM24",
-      "parentAsin": "B0FD588Z1B",
-      "familyKey": "B0FD588Z1B",
-      "variationCount": 8,
-      "productAgeDays": 5266,
-      "title": "starrett blade only for combination squares, sets and bevel protractors - ideal for woodworking and metalworking - 24\" length, satin chrome finish, 16r graduation - cb24-16r",
-      "brand": "starrett",
-      "brandTier": "top",
-      "category": "trusted_sellers",
-      "keepaCategoryIds": [
-        "3006710011",
-        "16310161",
-        "228013",
-        "553244"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "228013",
-          "name": "tools & home improvement"
-        },
-        {
-          "id": "553244",
-          "name": "measuring & layout tools"
-        },
-        {
-          "id": "3006710011",
-          "name": "carpentry squares"
-        }
-      ],
-      "sourceStream": "trusted_sellers",
-      "sources": [
-        "keepa"
-      ],
-      "price": 185.92,
-      "avg30": 205.31,
-      "avg90": 202.69,
-      "low365": 181.73,
-      "rating": 4.7,
-      "reviewCount": 138,
-      "rank": 319210,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51l1UuMsIdL.jpg",
-      "url": "https://www.amazon.com/dp/B0002FUM24",
-      "keepa": "https://keepa.com/#!product/1-B0002FUM24",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": true,
-      "updatedAt": "2026-06-28T01:00:42.087Z",
-      "dealScore": 66,
-      "scoreBreakdown": {
-        "rating": 23,
-        "discount": 12,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 3,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 47,
-      "normalizedScoreBreakdown": {
-        "discount": 6,
-        "brand": 20,
-        "demand": 0,
-        "reviews": 6,
-        "rating": 9,
-        "priceTier": 6
-      }
-    },
-    {
       "asin": "B0DQYLN2RV",
       "parentAsin": "",
       "familyKey": "B0DQYLN2RV",
@@ -6148,6 +6244,93 @@
       }
     },
     {
+      "asin": "B01M2X1YC9",
+      "parentAsin": "B09Y29N57D",
+      "familyKey": "B09Y29N57D",
+      "variationCount": 25,
+      "productAgeDays": 2929,
+      "title": "amana tool - hss1623 high speed steel (hss) single flute spiral aluminum cutting 1/4 dia x",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686958011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686958011",
+          "name": "spiral"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.33,
+      "avg30": 23.66,
+      "avg90": 26.22,
+      "low365": 18.45,
+      "rating": 4.5,
+      "reviewCount": 156,
+      "rank": 210885,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/21G2FhCPy7L.jpg",
+      "url": "https://www.amazon.com/dp/B01M2X1YC9",
+      "keepa": "https://keepa.com/#!product/1-B01M2X1YC9",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-29T11:04:40.394Z",
+      "dealScore": 74,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 43,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B00C9V579C",
       "parentAsin": "B08T7PNX9L",
       "familyKey": "B08T7PNX9L",
@@ -6532,11 +6715,98 @@
       }
     },
     {
+      "asin": "B000K2FDQE",
+      "parentAsin": "B0B2KJ76F8",
+      "familyKey": "B0B2KJ76F8",
+      "variationCount": 33,
+      "productAgeDays": 3410,
+      "title": "amana tool - 45410 carbide tipped straight plunge high production 5/16 dia x 3/4 x 1/2 inc",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686957011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686957011",
+          "name": "straight"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 26.78,
+      "avg30": 26.78,
+      "avg90": 28.36,
+      "low365": 22.13,
+      "rating": 4.7,
+      "reviewCount": 425,
+      "rank": 90215,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/311n0ozQqpL.jpg",
+      "url": "https://www.amazon.com/dp/B000K2FDQE",
+      "keepa": "https://keepa.com/#!product/1-B000K2FDQE",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-29T11:04:40.394Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 8,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 41,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B079V1M2RX",
       "parentAsin": "",
       "familyKey": "B079V1M2RX",
       "variationCount": 0,
-      "productAgeDays": 3038,
+      "productAgeDays": 3039,
       "title": "dewalt dw511r 1/2in (13mm) 7.8 amp vsr hammerdrill (renewed)",
       "brand": "dewalt",
       "brandTier": "top",
@@ -6579,12 +6849,12 @@
         "keepa"
       ],
       "price": 78.29,
-      "avg30": 85.97,
-      "avg90": 86.65,
+      "avg30": 85.55,
+      "avg90": 86.51,
       "low365": 78.29,
       "rating": 4.4,
       "reviewCount": 208,
-      "rank": 109180,
+      "rank": 101049,
       "img": "https://images-na.ssl-images-amazon.com/images/I/41jrKUzQwjL.jpg",
       "url": "https://www.amazon.com/dp/B079V1M2RX",
       "keepa": "https://keepa.com/#!product/1-B079V1M2RX",
@@ -6592,7 +6862,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": true,
-      "updatedAt": "2026-06-28T01:00:42.087Z",
+      "updatedAt": "2026-06-29T11:04:40.393Z",
       "dealScore": 64,
       "scoreBreakdown": {
         "rating": 22,
@@ -6619,7 +6889,7 @@
       "parentAsin": "",
       "familyKey": "B01N4SFKJS",
       "variationCount": 0,
-      "productAgeDays": 3038,
+      "productAgeDays": 3039,
       "title": "festool 202096 angled piece to connect chip collection bag to ts55",
       "brand": "festool",
       "brandTier": "top",
@@ -6663,7 +6933,7 @@
       "low365": 30.99,
       "rating": 4.5,
       "reviewCount": 146,
-      "rank": 689821,
+      "rank": 685552,
       "img": "https://images-na.ssl-images-amazon.com/images/I/61crI8WUZML.jpg",
       "url": "https://www.amazon.com/dp/B01N4SFKJS",
       "keepa": "https://keepa.com/#!product/1-B01N4SFKJS",
@@ -6671,7 +6941,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": true,
-      "updatedAt": "2026-06-28T01:00:42.086Z",
+      "updatedAt": "2026-06-29T11:04:40.393Z",
       "dealScore": 62,
       "scoreBreakdown": {
         "rating": 22,
@@ -6847,6 +7117,89 @@
       }
     },
     {
+      "asin": "B07PH1DDQW",
+      "parentAsin": "",
+      "familyKey": "B07PH1DDQW",
+      "variationCount": 0,
+      "productAgeDays": 2412,
+      "title": "dewalt dwfp12233r 18-gauge precision point 2-1/8 in. brad nailer (renewed)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552696",
+        "228013",
+        "328182011",
+        "551236",
+        "552838"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552838",
+          "name": "nailers & staplers"
+        },
+        {
+          "id": "686960011",
+          "name": "nailers"
+        },
+        {
+          "id": "552696",
+          "name": "brad nailers"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 76.49,
+      "avg30": 83.31,
+      "avg90": 84.43,
+      "low365": 76.49,
+      "rating": 4.2,
+      "reviewCount": 109,
+      "rank": 96697,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61X9ozC4UWL.jpg",
+      "url": "https://www.amazon.com/dp/B07PH1DDQW",
+      "keepa": "https://keepa.com/#!product/1-B07PH1DDQW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-29T11:04:40.394Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 40,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 0,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B09RGYBCHG",
       "parentAsin": "",
       "familyKey": "B09RGYBCHG",
@@ -7004,7 +7357,7 @@
       "parentAsin": "B0FBMQXJ3Q",
       "familyKey": "B0FBMQXJ3Q",
       "variationCount": 4,
-      "productAgeDays": 5558,
+      "productAgeDays": 5559,
       "title": "starrett center head only for 6\" combination squares - ideal for wood workers and metal workers - black wrinkle-finished, cast iron steel center head - c11-6",
       "brand": "starrett",
       "brandTier": "top",
@@ -7034,12 +7387,12 @@
         "keepa"
       ],
       "price": 61.86,
-      "avg30": 62.77,
+      "avg30": 62.32,
       "avg90": 62.77,
       "low365": 61.62,
       "rating": 4.7,
       "reviewCount": 190,
-      "rank": 580101,
+      "rank": 555320,
       "img": "https://images-na.ssl-images-amazon.com/images/I/513uKerJMkL.jpg",
       "url": "https://www.amazon.com/dp/B003XU7BM4",
       "keepa": "https://keepa.com/#!product/1-B003XU7BM4",
@@ -7047,7 +7400,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": true,
-      "updatedAt": "2026-06-28T01:00:42.087Z",
+      "updatedAt": "2026-06-29T11:04:40.394Z",
       "dealScore": 53,
       "scoreBreakdown": {
         "rating": 23,
@@ -7312,93 +7665,6 @@
         "reviews": 6,
         "rating": 0,
         "priceTier": 6
-      }
-    },
-    {
-      "asin": "B000K2FDQE",
-      "parentAsin": "B0B2KJ76F8",
-      "familyKey": "B0B2KJ76F8",
-      "variationCount": 33,
-      "productAgeDays": 3409,
-      "title": "amana tool - 45410 carbide tipped straight plunge high production 5/16 dia x 3/4 x 1/2 inc",
-      "brand": "amana tool",
-      "brandTier": "top",
-      "category": "trusted_sellers",
-      "keepaCategoryIds": [
-        "686957011",
-        "228013",
-        "328182011",
-        "552262",
-        "552566"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "228013",
-          "name": "tools & home improvement"
-        },
-        {
-          "id": "328182011",
-          "name": "power & hand tools"
-        },
-        {
-          "id": "552262",
-          "name": "power tool parts & accessories"
-        },
-        {
-          "id": "552566",
-          "name": "router parts & accessories"
-        },
-        {
-          "id": "3116511",
-          "name": "router bits"
-        },
-        {
-          "id": "3116571",
-          "name": "straight, spiral & trim bits"
-        },
-        {
-          "id": "686957011",
-          "name": "straight"
-        }
-      ],
-      "sourceStream": "trusted_sellers",
-      "sources": [
-        "keepa"
-      ],
-      "price": 26.78,
-      "avg30": 26.78,
-      "avg90": 28.36,
-      "low365": 22.13,
-      "rating": 4.7,
-      "reviewCount": 425,
-      "rank": 112299,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/311n0ozQqpL.jpg",
-      "url": "https://www.amazon.com/dp/B000K2FDQE",
-      "keepa": "https://keepa.com/#!product/1-B000K2FDQE",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": true,
-      "updatedAt": "2026-06-28T01:00:42.087Z",
-      "dealScore": 67,
-      "scoreBreakdown": {
-        "rating": 23,
-        "discount": 8,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 8,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 37,
-      "normalizedScoreBreakdown": {
-        "discount": 0,
-        "brand": 20,
-        "demand": 0,
-        "reviews": 8,
-        "rating": 9,
-        "priceTier": 0
       }
     },
     {
@@ -7722,21 +7988,21 @@
       }
     },
     {
-      "asin": "B07PH1DDQW",
+      "asin": "B06XH47S7P",
       "parentAsin": "",
-      "familyKey": "B07PH1DDQW",
+      "familyKey": "B06XH47S7P",
       "variationCount": 0,
-      "productAgeDays": 2411,
-      "title": "dewalt dwfp12233r 18-gauge precision point 2-1/8 in. brad nailer (renewed)",
-      "brand": "dewalt",
-      "brandTier": "top",
+      "productAgeDays": 3198,
+      "title": "wilton b.a.s.h ball pein hammer kit (11110)",
+      "brand": "wilton",
+      "brandTier": "off",
       "category": "trusted_sellers",
       "keepaCategoryIds": [
-        "552696",
+        "553192",
         "228013",
         "328182011",
-        "551236",
-        "552838"
+        "551238",
+        "553190"
       ],
       "keepaCategoryTree": [
         {
@@ -7748,60 +8014,56 @@
           "name": "power & hand tools"
         },
         {
-          "id": "551236",
-          "name": "power tools"
+          "id": "551238",
+          "name": "hand tools"
         },
         {
-          "id": "552838",
-          "name": "nailers & staplers"
+          "id": "553190",
+          "name": "hammers"
         },
         {
-          "id": "686960011",
-          "name": "nailers"
-        },
-        {
-          "id": "552696",
-          "name": "brad nailers"
+          "id": "553192",
+          "name": "ball-peen hammers"
         }
       ],
       "sourceStream": "trusted_sellers",
       "sources": [
         "keepa"
       ],
-      "price": 76.49,
-      "avg30": 83.71,
-      "avg90": 84.56,
-      "low365": 76.49,
-      "rating": 4.2,
-      "reviewCount": 109,
-      "rank": 106395,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/61X9ozC4UWL.jpg",
-      "url": "https://www.amazon.com/dp/B07PH1DDQW",
-      "keepa": "https://keepa.com/#!product/1-B07PH1DDQW",
+      "price": 114.41,
+      "avg30": 140.24,
+      "avg90": 137.5,
+      "low365": 114.41,
+      "rating": 4.7,
+      "reviewCount": 116,
+      "rank": 155407,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71TiKVb28CL.jpg",
+      "url": "https://www.amazon.com/dp/B06XH47S7P",
+      "keepa": "https://keepa.com/#!product/1-B06XH47S7P",
       "isLowAll": false,
       "drop1Day": 0,
       "isHot": false,
-      "isNameBrand": true,
-      "updatedAt": "2026-06-28T01:00:42.086Z",
-      "dealScore": 63,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-29T11:04:40.393Z",
+      "dealScore": 56,
       "scoreBreakdown": {
-        "rating": 21,
-        "discount": 14,
+        "rating": 23,
+        "discount": 25,
         "rank": 0,
         "reviews": 0,
         "variationFamily": 0,
         "productAge": 8,
         "streamFit": 0,
-        "brand": 20
+        "brand": 0
       },
-      "normalizedScore": 36,
+      "normalizedScore": 35,
       "normalizedScoreBreakdown": {
-        "discount": 6,
-        "brand": 20,
+        "discount": 14,
+        "brand": 0,
         "demand": 0,
         "reviews": 6,
-        "rating": 0,
-        "priceTier": 4
+        "rating": 9,
+        "priceTier": 6
       }
     },
     {
@@ -7809,7 +8071,7 @@
       "parentAsin": "B07VH24H2L",
       "familyKey": "B07VH24H2L",
       "variationCount": 20,
-      "productAgeDays": 1985,
+      "productAgeDays": 1986,
       "title": "tajima micro chalk - white 32-oz (907g) ultra-fine snap-line chalk with durable bottle & easy-fill nozzle - plc2-w900",
       "brand": "tajima",
       "brandTier": "off",
@@ -7848,7 +8110,7 @@
       "low365": 21.83,
       "rating": 4.6,
       "reviewCount": 2641,
-      "rank": 14381,
+      "rank": 11927,
       "img": "https://images-na.ssl-images-amazon.com/images/I/418EQF6NcWL.jpg",
       "url": "https://www.amazon.com/dp/B08PC9RHH2",
       "keepa": "https://keepa.com/#!product/1-B08PC9RHH2",
@@ -7856,7 +8118,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-06-28T01:00:42.087Z",
+      "updatedAt": "2026-06-29T11:04:40.394Z",
       "dealScore": 53,
       "scoreBreakdown": {
         "rating": 23,
@@ -7957,7 +8219,7 @@
       "parentAsin": "B0BRYF3CR8",
       "familyKey": "B0BRYF3CR8",
       "variationCount": 26,
-      "productAgeDays": 3381,
+      "productAgeDays": 3383,
       "title": "amana tool - 201052 carbide tipped brad pt. boring bit r/h 5.2mm dia x 57mm long x 10mm",
       "brand": "amana tool",
       "brandTier": "top",
@@ -8001,11 +8263,11 @@
       ],
       "price": 21.98,
       "avg30": 21.98,
-      "avg90": 23.76,
+      "avg90": 23.72,
       "low365": 17.68,
       "rating": 4.6,
       "reviewCount": 101,
-      "rank": 154556,
+      "rank": 115624,
       "img": "https://images-na.ssl-images-amazon.com/images/I/318oS-sNlZL.jpg",
       "url": "https://www.amazon.com/dp/B000P4UNB2",
       "keepa": "https://keepa.com/#!product/1-B000P4UNB2",
@@ -8013,7 +8275,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": true,
-      "updatedAt": "2026-06-28T01:00:42.087Z",
+      "updatedAt": "2026-06-29T11:04:40.394Z",
       "dealScore": 70,
       "scoreBreakdown": {
         "rating": 23,
@@ -8033,6 +8295,80 @@
         "reviews": 6,
         "rating": 8,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0CVS55Q7B",
+      "parentAsin": "",
+      "familyKey": "B0CVS55Q7B",
+      "variationCount": 0,
+      "productAgeDays": 835,
+      "title": "dewalt 20v max xr impact driver, brushless, 1/4\", 3-speed, bare tool only (dcf845b), yellow, black (renewed), black,yellow",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "2399141011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2399141011",
+          "name": "impact drivers"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.99,
+      "avg30": 106.7,
+      "avg90": 107.63,
+      "low365": 98,
+      "rating": 4.5,
+      "reviewCount": 52,
+      "rank": 110226,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/619QWv4724L.jpg",
+      "url": "https://www.amazon.com/dp/B0CVS55Q7B",
+      "keepa": "https://keepa.com/#!product/1-B0CVS55Q7B",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-29T11:04:40.393Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 10,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 34,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 7,
+        "priceTier": 4
       }
     },
     {
@@ -8264,6 +8600,89 @@
       }
     },
     {
+      "asin": "B00DP5DHV6",
+      "parentAsin": "B0F498VWKQ",
+      "familyKey": "B0F498VWKQ",
+      "variationCount": 7,
+      "productAgeDays": 3949,
+      "title": "wilton regular-duty f-clamp, 8\" opening, 4-3/4\" throat, 1800 lbs. clamping force (1800s-8)",
+      "brand": "wilton",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "3207128011",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "553150",
+          "name": "clamps"
+        },
+        {
+          "id": "3207128011",
+          "name": "bar clamps"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 51.41,
+      "avg30": 61.96,
+      "avg90": 61.72,
+      "low365": 51.41,
+      "rating": 4.8,
+      "reviewCount": 70,
+      "rank": 504349,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61lH8tiy8HL.jpg",
+      "url": "https://www.amazon.com/dp/B00DP5DHV6",
+      "keepa": "https://keepa.com/#!product/1-B00DP5DHV6",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-29T11:04:40.394Z",
+      "dealScore": 57,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 25,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 31,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B0FBPYPH7K",
       "parentAsin": "B0FH6B8823",
       "familyKey": "B0FH6B8823",
@@ -8421,7 +8840,7 @@
       "parentAsin": "",
       "familyKey": "B0012RTZCE",
       "variationCount": 0,
-      "productAgeDays": 4717,
+      "productAgeDays": 4718,
       "title": "rothenberger wapu spk 12\" water pump pliers - quick-adjustable, self-clamping jaws for pipes up to 38 mm - induction-hardened teeth, anti-slip handles - 70523",
       "brand": "rothenberger",
       "brandTier": "off",
@@ -8460,12 +8879,12 @@
         "keepa"
       ],
       "price": 42.74,
-      "avg30": 47.56,
-      "avg90": 50.84,
+      "avg30": 47.29,
+      "avg90": 50.68,
       "low365": 35.77,
       "rating": 4.5,
       "reviewCount": 122,
-      "rank": 1113028,
+      "rank": 1110500,
       "img": "https://images-na.ssl-images-amazon.com/images/I/51n0lwqIJgL.jpg",
       "url": "https://www.amazon.com/dp/B0012RTZCE",
       "keepa": "https://keepa.com/#!product/1-B0012RTZCE",
@@ -8473,7 +8892,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-06-28T01:00:42.087Z",
+      "updatedAt": "2026-06-29T11:04:40.394Z",
       "dealScore": 53,
       "scoreBreakdown": {
         "rating": 22,
@@ -8912,7 +9331,7 @@
       "parentAsin": "",
       "familyKey": "B0BFXTWXGN",
       "variationCount": 0,
-      "productAgeDays": 1327,
+      "productAgeDays": 1329,
       "title": "yorkshire grit original abrasive paste for woods and resins",
       "brand": "yorkshire grit",
       "brandTier": "off",
@@ -8955,12 +9374,12 @@
         "keepa"
       ],
       "price": 23.39,
-      "avg30": 23.69,
-      "avg90": 25.4,
+      "avg30": 23.56,
+      "avg90": 25.36,
       "low365": 19.99,
       "rating": 4.8,
       "reviewCount": 250,
-      "rank": 67803,
+      "rank": 59840,
       "img": "https://images-na.ssl-images-amazon.com/images/I/61Kqpop5biL.jpg",
       "url": "https://www.amazon.com/dp/B0BFXTWXGN",
       "keepa": "https://keepa.com/#!product/1-B0BFXTWXGN",
@@ -8968,7 +9387,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-06-28T01:00:42.087Z",
+      "updatedAt": "2026-06-29T11:04:40.394Z",
       "dealScore": 43,
       "scoreBreakdown": {
         "rating": 24,
@@ -8995,7 +9414,7 @@
       "parentAsin": "",
       "familyKey": "B0BFZ2JW2W",
       "variationCount": 0,
-      "productAgeDays": 1323,
+      "productAgeDays": 1325,
       "title": "yorkshire grit microfine abrasive sanding paste for wood and resins",
       "brand": "yorkshire grit",
       "brandTier": "off",
@@ -9039,12 +9458,12 @@
         "keepa"
       ],
       "price": 23.39,
-      "avg30": 23.76,
-      "avg90": 25.24,
+      "avg30": 23.63,
+      "avg90": 25.2,
       "low365": 19.99,
       "rating": 4.8,
       "reviewCount": 131,
-      "rank": 92045,
+      "rank": 73936,
       "img": "https://images-na.ssl-images-amazon.com/images/I/51ROOZ49nuL.jpg",
       "url": "https://www.amazon.com/dp/B0BFZ2JW2W",
       "keepa": "https://keepa.com/#!product/1-B0BFZ2JW2W",
@@ -9052,7 +9471,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-06-28T01:00:42.087Z",
+      "updatedAt": "2026-06-29T11:04:40.394Z",
       "dealScore": 42,
       "scoreBreakdown": {
         "rating": 24,
@@ -9166,7 +9585,7 @@
       "parentAsin": "",
       "familyKey": "B077GH8162",
       "variationCount": 0,
-      "productAgeDays": 3079,
+      "productAgeDays": 3081,
       "title": "vacmaster avpf3 ash vacuum filter",
       "brand": "vacmaster",
       "brandTier": "off",
@@ -9201,12 +9620,12 @@
         "keepa"
       ],
       "price": 25,
-      "avg30": 25.29,
-      "avg90": 29.41,
+      "avg30": 25,
+      "avg90": 29.31,
       "low365": 24.99,
       "rating": 4.4,
       "reviewCount": 81,
-      "rank": 489263,
+      "rank": 479206,
       "img": "https://images-na.ssl-images-amazon.com/images/I/91Noy4vkRBL.jpg",
       "url": "https://www.amazon.com/dp/B077GH8162",
       "keepa": "https://keepa.com/#!product/1-B077GH8162",
@@ -9214,7 +9633,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-06-28T01:00:42.087Z",
+      "updatedAt": "2026-06-29T11:04:40.394Z",
       "dealScore": 52,
       "scoreBreakdown": {
         "rating": 22,
@@ -9241,7 +9660,7 @@
       "parentAsin": "",
       "familyKey": "B0051TA11S",
       "variationCount": 0,
-      "productAgeDays": 4653,
+      "productAgeDays": 4655,
       "title": "rayovac led flashlight 3 pack, rubber grip flash light set with batteries included - perfect for power outages, emergency situations, camping, hiking, dog walking (3 pack)",
       "brand": "rayovac",
       "brandTier": "off",
@@ -9275,12 +9694,12 @@
         "keepa"
       ],
       "price": 20.8,
-      "avg30": 22.34,
-      "avg90": 23.62,
+      "avg30": 22.09,
+      "avg90": 23.56,
       "low365": 20.8,
       "rating": 4.2,
-      "reviewCount": 228,
-      "rank": 226625,
+      "reviewCount": 229,
+      "rank": 131459,
       "img": "https://images-na.ssl-images-amazon.com/images/I/71D26DAEWXL.jpg",
       "url": "https://www.amazon.com/dp/B0051TA11S",
       "keepa": "https://keepa.com/#!product/1-B0051TA11S",
@@ -9288,7 +9707,7 @@
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-06-28T01:00:42.087Z",
+      "updatedAt": "2026-06-29T11:04:40.394Z",
       "dealScore": 46,
       "scoreBreakdown": {
         "rating": 21,
@@ -9394,6 +9813,89 @@
       }
     },
     {
+      "asin": "B0017Z5IZE",
+      "parentAsin": "",
+      "familyKey": "B0017Z5IZE",
+      "variationCount": 0,
+      "productAgeDays": 5575,
+      "title": "hobart 770095 welding oxy-acetylene goggle - flip front 2-inch x 4 1/4-inch",
+      "brand": "hobart",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "2681345011",
+        "228013",
+        "3180231",
+        "486555011",
+        "553560"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "486555011",
+          "name": "personal protective equipment"
+        },
+        {
+          "id": "553560",
+          "name": "eye protection"
+        },
+        {
+          "id": "2681344011",
+          "name": "safety goggles & glasses"
+        },
+        {
+          "id": "2681345011",
+          "name": "safety goggles"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 22.48,
+      "avg30": 22.48,
+      "avg90": 22.55,
+      "low365": 11.99,
+      "rating": 4.4,
+      "reviewCount": 656,
+      "rank": 273689,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61BxTFuFr0L.jpg",
+      "url": "https://www.amazon.com/dp/B0017Z5IZE",
+      "keepa": "https://keepa.com/#!product/1-B0017Z5IZE",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-29T11:04:40.394Z",
+      "dealScore": 35,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 16,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 11,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B000P4SPV2",
       "parentAsin": "B0BHNZYX9N",
       "familyKey": "B0BHNZYX9N",
@@ -9474,6 +9976,89 @@
         "reviews": 3,
         "rating": 7,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B002MMMS5O",
+      "parentAsin": "",
+      "familyKey": "B002MMMS5O",
+      "variationCount": 0,
+      "productAgeDays": 5560,
+      "title": "forstner bit sharpening kit",
+      "brand": "eze-lap",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552398",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552388",
+          "name": "drill bits"
+        },
+        {
+          "id": "552398",
+          "name": "forstner drill bits"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.99,
+      "avg30": 24.98,
+      "avg90": 27.07,
+      "low365": 24.99,
+      "rating": 4.2,
+      "reviewCount": 67,
+      "rank": 754291,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71wW5AveQAL.jpg",
+      "url": "https://www.amazon.com/dp/B002MMMS5O",
+      "keepa": "https://keepa.com/#!product/1-B002MMMS5O",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-29T11:04:40.393Z",
+      "dealScore": 40,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 3,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 0,
+        "priceTier": 0
       }
     }
   ]

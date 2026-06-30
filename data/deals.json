@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-30T16:22:08.287Z",
+  "generatedAt": "2026-06-30T16:32:59.668Z",
   "source": "keepa-enrichment",
   "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 346,
+  "dealCount": 347,
   "deals": [
     {
       "asin": "B0C3PPW4JY",
@@ -4575,6 +4575,89 @@
         "reviews": 13,
         "rating": 8,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0CT1MZB3K",
+      "parentAsin": "B0H2BDL7L9",
+      "familyKey": "B0H2BDL7L9",
+      "variationCount": 8,
+      "productAgeDays": 880,
+      "title": "flex 24v brushless cordless 1/2-inch 750 in-lbs torque 2-speed hammer drill tool only, battery and charger not included - fx1251-z",
+      "brand": "flex",
+      "brandTier": "mid",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552802",
+        "228013",
+        "328182011",
+        "551236",
+        "552794"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552794",
+          "name": "drills"
+        },
+        {
+          "id": "9022393011",
+          "name": "demolition drills & hammers"
+        },
+        {
+          "id": "552802",
+          "name": "hammer drills"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 100,
+      "avg30": 107.5,
+      "avg90": 126.72,
+      "low365": 97,
+      "rating": 5,
+      "reviewCount": 3,
+      "rank": 48031,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Eb+Bf+YFL.jpg",
+      "url": "https://www.amazon.com/dp/B0CT1MZB3K",
+      "keepa": "https://keepa.com/#!product/1-B0CT1MZB3K",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-30T16:32:59.667Z",
+      "dealScore": 75,
+      "scoreBreakdown": {
+        "rating": 25,
+        "discount": 31,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 54,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 12,
+        "demand": 8,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 6
       }
     },
     {

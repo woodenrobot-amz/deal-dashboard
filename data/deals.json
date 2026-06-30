@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-30T16:16:07.162Z",
+  "generatedAt": "2026-06-30T16:19:48.620Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "woodworking_test",
-  "dealCount": 307,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 312,
   "deals": [
     {
       "asin": "B0C3PPW4JY",
@@ -1101,6 +1101,85 @@
         "reviews": 11,
         "rating": 8,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B015PVDCBM",
+      "parentAsin": "B0787K1MLG",
+      "familyKey": "B0787K1MLG",
+      "variationCount": 3,
+      "productAgeDays": 3897,
+      "title": "makita bl1840b 18v lxt lithium-ion 4.0ah battery, black",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552354",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552354",
+          "name": "battery packs"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 64.89,
+      "avg30": 78.5,
+      "avg90": 72.14,
+      "low365": 58,
+      "rating": 4.6,
+      "reviewCount": 1569,
+      "rank": 24818,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51qQIA7QUrL.jpg",
+      "url": "https://www.amazon.com/dp/B015PVDCBM",
+      "keepa": "https://keepa.com/#!product/1-B015PVDCBM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-30T16:19:48.617Z",
+      "dealScore": 76,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 67,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 13,
+        "rating": 8,
+        "priceTier": 4
       }
     },
     {
@@ -7746,6 +7825,89 @@
       }
     },
     {
+      "asin": "B01G2Z3NEG",
+      "parentAsin": "B08B5GY3JN",
+      "familyKey": "B08B5GY3JN",
+      "variationCount": 69,
+      "productAgeDays": 3383,
+      "title": "starrett tungsten carbide tipped stainless steel sheet metal hole saw - ideal for stainless, high alloy steel, non-ferrous metals, reinforced fabrics - 1-1/4'' diameter - sm32",
+      "brand": "starrett",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "256292011",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552402",
+          "name": "hole saws & accessories"
+        },
+        {
+          "id": "256292011",
+          "name": "hole saws"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 33.65,
+      "avg30": 34.69,
+      "avg90": 36.23,
+      "low365": 32.25,
+      "rating": 4.7,
+      "reviewCount": 1065,
+      "rank": 183033,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51EMYQkf1cL.jpg",
+      "url": "https://www.amazon.com/dp/B01G2Z3NEG",
+      "keepa": "https://keepa.com/#!product/1-B01G2Z3NEG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-30T16:19:48.618Z",
+      "dealScore": 79,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 10,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 42,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 13,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B08P2GB7VT",
       "parentAsin": "B0BHBLY7HG",
       "familyKey": "B0BHBLY7HG",
@@ -8555,6 +8717,93 @@
         "reviews": 0,
         "rating": 5,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0112TPFEI",
+      "parentAsin": "B0BCRWXMHQ",
+      "familyKey": "B0BCRWXMHQ",
+      "variationCount": 7,
+      "productAgeDays": 3142,
+      "title": "amana tool - 51202xl high performance solid carbide altin coated panel pilot bevel trim 7",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686959011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686959011",
+          "name": "trim"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.55,
+      "avg30": 23.55,
+      "avg90": 26.76,
+      "low365": 7.59,
+      "rating": 4.6,
+      "reviewCount": 93,
+      "rank": 198521,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41kgLtsiDhL.jpg",
+      "url": "https://www.amazon.com/dp/B0112TPFEI",
+      "keepa": "https://keepa.com/#!product/1-B0112TPFEI",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-06-30T16:19:48.617Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 41,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 8,
+        "priceTier": 0
       }
     },
     {
@@ -15071,6 +15320,75 @@
         "reviews": 0,
         "rating": 5,
         "priceTier": 10
+      }
+    },
+    {
+      "asin": "B00C9V56S4",
+      "parentAsin": "B08T7PNX9L",
+      "familyKey": "B08T7PNX9L",
+      "variationCount": 6,
+      "productAgeDays": 2868,
+      "title": "ox pro 2 foot level 24 inch with rubber grip and all aluminum construction - 2ft level with thru handle - leveler tool ox-p024406",
+      "brand": "ox",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553256",
+        "228013",
+        "553244"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "553256",
+          "name": "levels"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 59.21,
+      "avg30": 58.54,
+      "avg90": 67.6,
+      "low365": 49.99,
+      "rating": 4.6,
+      "reviewCount": 1437,
+      "rank": 137845,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51ecr8yi3BL.jpg",
+      "url": "https://www.amazon.com/dp/B00C9V56S4",
+      "keepa": "https://keepa.com/#!product/1-B00C9V56S4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-30T16:19:48.618Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 35,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 13,
+        "rating": 8,
+        "priceTier": 4
       }
     },
     {
@@ -24635,6 +24953,89 @@
         "reviews": 6,
         "rating": 0,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B00AI9DK96",
+      "parentAsin": "",
+      "familyKey": "B00AI9DK96",
+      "variationCount": 0,
+      "productAgeDays": 3765,
+      "title": "timber wolf bandsaw blade 3/4\" x 131.5\", 2-3 tpi",
+      "brand": "timber wolf",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552288",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552288",
+          "name": "band saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 48.41,
+      "avg30": 50.15,
+      "avg90": 51.93,
+      "low365": 44.91,
+      "rating": 4.6,
+      "reviewCount": 219,
+      "rank": 109908,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71tp17xvrXL.jpg",
+      "url": "https://www.amazon.com/dp/B00AI9DK96",
+      "keepa": "https://keepa.com/#!product/1-B00AI9DK96",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-06-30T16:19:48.618Z",
+      "dealScore": 41,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 10,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 16,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 8,
+        "priceTier": 2
       }
     },
     {

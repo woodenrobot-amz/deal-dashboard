@@ -1,39 +1,55 @@
-- name: Run Pipeline
-  env:
-    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  run: |
-    workflows=(
-      "disco-power-tools-main.yml"
-      "enrich-power-main.yml"
-      "disco-trusted-sellers.yml"
-      "enrich-trusted-sellers.yml"
-      "discovery-dudes-power.yml"
-      "enrich-power.yml"
-      "discovery-woodworking-core.yml"
-      "enrich-woodworking-core.yml"
-      "disco-woodworking-test.yml"
-      "enrich-woodworking-test.yml"
-    )
+name: Big Run
 
-    for workflow in "${workflows[@]}"; do
-      echo "Starting $workflow..."
+on:
+  workflow_dispatch:
 
-      gh workflow run "$workflow"
+permissions:
+  actions: write
+  contents: read
 
-      run_id=$(gh run list \
-        --workflow "$workflow" \
-        --limit 1 \
-        --json databaseId \
-        --jq '.[0].databaseId')
+jobs:
+  big-run:
+    runs-on: ubuntu-latest
 
-      gh run watch "$run_id"
+    steps:
+      - name: Run Pipeline
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          workflows=(
+            "disco-power-tools-main.yml"
+            "enrich-power-main.yml"
+            "disco-trusted-sellers.yml"
+            "enrich-trusted-sellers.yml"
+            "discovery-dudes-power.yml"
+            "enrich-power.yml"
+            "discovery-woodworking-core.yml"
+            "enrich-woodworking-core.yml"
+            "disco-woodworking-test.yml"
+            "enrich-woodworking-test.yml"
+          )
 
-      conclusion=$(gh run view "$run_id" --json conclusion --jq '.conclusion')
+          for workflow in "${workflows[@]}"; do
+            echo "Starting $workflow..."
 
-      if [[ "$conclusion" != "success" ]]; then
-        echo "$workflow failed."
-        exit 1
-      fi
+            gh workflow run "$workflow"
 
-      echo "$workflow complete."
-    done
+            sleep 10
+
+            run_id=$(gh run list \
+              --workflow "$workflow" \
+              --limit 1 \
+              --json databaseId \
+              --jq '.[0].databaseId')
+
+            gh run watch "$run_id"
+
+            conclusion=$(gh run view "$run_id" --json conclusion --jq '.conclusion')
+
+            if [[ "$conclusion" != "success" ]]; then
+              echo "$workflow failed."
+              exit 1
+            fi
+
+            echo "$workflow complete."
+          done

@@ -12,9 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
       - name: Run Pipeline
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
         run: |
           workflows=(
             "disco-power-tools-main.yml"
@@ -32,12 +36,13 @@ jobs:
           for workflow in "${workflows[@]}"; do
             echo "Starting $workflow..."
 
-            gh workflow run "$workflow"
+            gh workflow run "$workflow" --ref "${{ github.ref_name }}"
 
             sleep 10
 
             run_id=$(gh run list \
               --workflow "$workflow" \
+              --branch "${{ github.ref_name }}" \
               --limit 1 \
               --json databaseId \
               --jq '.[0].databaseId')
@@ -47,7 +52,7 @@ jobs:
             conclusion=$(gh run view "$run_id" --json conclusion --jq '.conclusion')
 
             if [[ "$conclusion" != "success" ]]; then
-              echo "$workflow failed."
+              echo "$workflow failed with conclusion: $conclusion"
               exit 1
             fi
 

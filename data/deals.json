@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-05T19:51:21.544Z",
+  "generatedAt": "2026-07-05T19:51:57.451Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 148,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 150,
   "deals": [
     {
       "asin": "B004GIO0F8",
@@ -7687,6 +7687,89 @@
       }
     },
     {
+      "asin": "B06XKK7Q97",
+      "parentAsin": "B0G1ZL1873",
+      "familyKey": "B0G1ZL1873",
+      "variationCount": 27,
+      "productAgeDays": 3388,
+      "title": "diablo carbide teeth hole saw for wood and metal - fits with snap-lock plus mandrel system, tool-free plug ejection - 2\" diameter, 2-3/8\" length - dhs2000ct",
+      "brand": "diablo",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "256292011",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552402",
+          "name": "hole saws & accessories"
+        },
+        {
+          "id": "256292011",
+          "name": "hole saws"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.08,
+      "avg30": 23.07,
+      "avg90": 22.61,
+      "low365": 19.49,
+      "rating": 4.7,
+      "reviewCount": 391,
+      "rank": 44803,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51GjVqvTJyL.jpg",
+      "url": "https://www.amazon.com/dp/B06XKK7Q97",
+      "keepa": "https://keepa.com/#!product/1-B06XKK7Q97",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-05T19:51:57.449Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 10,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 45,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B0CYVCPXWG",
       "parentAsin": "B0CYVQ1QZF",
       "familyKey": "B0CYVQ1QZF",
@@ -9413,6 +9496,85 @@
         "reviews": 8,
         "rating": 9,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B000C0144E",
+      "parentAsin": "",
+      "familyKey": "B000C0144E",
+      "variationCount": 0,
+      "productAgeDays": 5519,
+      "title": "mr longarm 6618 6-feet to 18-feet alumi glass extension pole",
+      "brand": "mr. long arm",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "17881636011",
+        "228013",
+        "228899",
+        "17881623011",
+        "17881631011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "228899",
+          "name": "paint, wall treatments & supplies"
+        },
+        {
+          "id": "17881623011",
+          "name": "painting supplies & tools"
+        },
+        {
+          "id": "17881631011",
+          "name": "paint application tools"
+        },
+        {
+          "id": "17881636011",
+          "name": "paint roller extension poles"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 56.48,
+      "avg30": 61.4,
+      "avg90": 74.84,
+      "low365": 44.99,
+      "rating": 4.5,
+      "reviewCount": 256,
+      "rank": 259369,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41+Qv6oWzRL.jpg",
+      "url": "https://www.amazon.com/dp/B000C0144E",
+      "keepa": "https://keepa.com/#!product/1-B000C0144E",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-05T19:51:57.450Z",
+      "dealScore": 66,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 36,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 37,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 7,
+        "priceTier": 4
       }
     },
     {

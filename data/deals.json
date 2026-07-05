@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-05T19:51:57.451Z",
+  "generatedAt": "2026-07-05T19:52:35.008Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
+  "lastEnrichmentStream": "dudes_power",
   "dealCount": 150,
   "deals": [
     {
@@ -2735,7 +2735,13 @@
         "reviews": 0,
         "rating": 10,
         "priceTier": 10
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FGHLKGPW",
+        "B0FGHWSZDS"
+      ]
     },
     {
       "asin": "B001J31PJM",
@@ -3921,7 +3927,13 @@
         "reviews": 0,
         "rating": 7,
         "priceTier": 10
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0DMT2MHWG",
+        "B0FY2VZSDL"
+      ]
     },
     {
       "asin": "B09Z8CKBCM",
@@ -4003,6 +4015,81 @@
       }
     },
     {
+      "asin": "B0G8YVL3SL",
+      "parentAsin": "B0GCCC98DP",
+      "familyKey": "B0GCCC98DP",
+      "variationCount": 6,
+      "productAgeDays": 192,
+      "title": "bluetti elite 400 solar generator and ac charging cable, 3840wh lfp batttery backup with 2600w ac outlets, high capacity portable power station with wheels for home backup, outage, camping",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1348.97,
+      "avg30": 1672.98,
+      "avg90": 1555.69,
+      "low365": 1348.97,
+      "rating": 5,
+      "reviewCount": 2,
+      "rank": 36357,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81PB0jQu+KL.jpg",
+      "url": "https://www.amazon.com/dp/B0G8YVL3SL",
+      "keepa": "https://keepa.com/#!product/1-B0G8YVL3SL",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-05T19:52:35.007Z",
+      "dealScore": 64,
+      "scoreBreakdown": {
+        "rating": 25,
+        "discount": 19,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 10
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0G8XDJSNG",
+        "B0G8YVL3SL"
+      ]
+    },
+    {
       "asin": "B0FJ1XXXGD",
       "parentAsin": "B0GPVLKJTX",
       "familyKey": "B0GPVLKJTX",
@@ -4057,75 +4144,6 @@
         "rank": 0,
         "reviews": 0,
         "variationFamily": 3,
-        "productAge": 0,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 58,
-      "normalizedScoreBreakdown": {
-        "discount": 10,
-        "brand": 20,
-        "demand": 8,
-        "reviews": 0,
-        "rating": 10,
-        "priceTier": 10
-      }
-    },
-    {
-      "asin": "B0G8XDJSNG",
-      "parentAsin": "B0GCCC98DP",
-      "familyKey": "B0GCCC98DP",
-      "variationCount": 6,
-      "productAgeDays": 192,
-      "title": "bluetti elite 400 portable power station with charger 1 (ship separately), 560w dc-dc alternator charger, 7.5h full charge via car, 3840wh 2600w lfp batttery backup for home backup, outage, rv life",
-      "brand": "bluetti",
-      "brandTier": "top",
-      "category": "dudes_power",
-      "keepaCategoryIds": [
-        "348967011",
-        "2972638011",
-        "552808"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "2972638011",
-          "name": "patio, lawn & garden"
-        },
-        {
-          "id": "552808",
-          "name": "generators & portable power"
-        },
-        {
-          "id": "348967011",
-          "name": "generators"
-        }
-      ],
-      "sourceStream": "dudes_power",
-      "sources": [
-        "keepa"
-      ],
-      "price": 1599,
-      "avg30": 1762.74,
-      "avg90": 1798.25,
-      "low365": 1498.98,
-      "rating": 5,
-      "reviewCount": 2,
-      "rank": 36365,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/81NiGGAXsvL.jpg",
-      "url": "https://www.amazon.com/dp/B0G8XDJSNG",
-      "keepa": "https://keepa.com/#!product/1-B0G8XDJSNG",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": true,
-      "updatedAt": "2026-07-05T12:24:34.566Z",
-      "dealScore": 61,
-      "scoreBreakdown": {
-        "rating": 25,
-        "discount": 16,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 0,
         "productAge": 0,
         "streamFit": 0,
         "brand": 20
@@ -7770,18 +7788,17 @@
       }
     },
     {
-      "asin": "B0CYVCPXWG",
+      "asin": "B0CVDXDXHR",
       "parentAsin": "B0CYVQ1QZF",
       "familyKey": "B0CYVQ1QZF",
       "variationCount": 2,
-      "productAgeDays": 833,
-      "title": "goal zero alta 80, portable fridge and portable freezer, energy efficient, 78 l, dual zone compartments",
+      "productAgeDays": 826,
+      "title": "goal zero alta 50, portable fridge and portable freezer, energy efficient, 53l",
       "brand": "goal zero",
       "brandTier": "mid",
       "category": "dudes_power",
       "keepaCategoryIds": [
         "678542011",
-        "15735671",
         "1055398",
         "284507",
         "289913"
@@ -7808,25 +7825,25 @@
       "sources": [
         "keepa"
       ],
-      "price": 749.88,
-      "avg30": 939.65,
-      "avg90": 933.6,
-      "low365": 698.89,
+      "price": 599.88,
+      "avg30": 751.37,
+      "avg90": 752.08,
+      "low365": 558.89,
       "rating": 4.4,
       "reviewCount": 24,
-      "rank": 90063,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51OlHa1PNeL.jpg",
-      "url": "https://www.amazon.com/dp/B0CYVCPXWG",
-      "keepa": "https://keepa.com/#!product/1-B0CYVCPXWG",
+      "rank": 118045,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61nHHGrzuJL.jpg",
+      "url": "https://www.amazon.com/dp/B0CVDXDXHR",
+      "keepa": "https://keepa.com/#!product/1-B0CVDXDXHR",
       "isLowAll": false,
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": true,
-      "updatedAt": "2026-07-05T12:24:34.566Z",
-      "dealScore": 67,
+      "updatedAt": "2026-07-05T19:52:35.007Z",
+      "dealScore": 68,
       "scoreBreakdown": {
         "rating": 22,
-        "discount": 29,
+        "discount": 30,
         "rank": 0,
         "reviews": 0,
         "variationFamily": 0,
@@ -7836,13 +7853,19 @@
       },
       "normalizedScore": 45,
       "normalizedScoreBreakdown": {
-        "discount": 14,
+        "discount": 18,
         "brand": 12,
-        "demand": 4,
+        "demand": 0,
         "reviews": 0,
         "rating": 5,
         "priceTier": 10
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0CYVCPXWG",
+        "B0CVDXDXHR"
+      ]
     },
     {
       "asin": "B0CKKPKZCD",

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-05T12:24:34.567Z",
+  "generatedAt": "2026-07-05T19:51:21.544Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "dudes_power",
-  "dealCount": 140,
+  "lastEnrichmentStream": "power_tools_main",
+  "dealCount": 148,
   "deals": [
     {
       "asin": "B004GIO0F8",
@@ -1300,6 +1300,89 @@
       }
     },
     {
+      "asin": "B088Y413MP",
+      "parentAsin": "",
+      "familyKey": "B088Y413MP",
+      "variationCount": 0,
+      "productAgeDays": 2188,
+      "title": "dewalt dcn45rnd1 20v 15 degrees lithium-ion cordless coil roofing nailer kit",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552706",
+        "228013",
+        "328182011",
+        "551236",
+        "552838"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552838",
+          "name": "nailers & staplers"
+        },
+        {
+          "id": "686960011",
+          "name": "nailers"
+        },
+        {
+          "id": "552706",
+          "name": "roofing nailers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 310,
+      "avg30": 393.97,
+      "avg90": 418.91,
+      "low365": 199.67,
+      "rating": 4.5,
+      "reviewCount": 206,
+      "rank": 70732,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Jcgaow-qL.jpg",
+      "url": "https://www.amazon.com/dp/B088Y413MP",
+      "keepa": "https://keepa.com/#!product/1-B088Y413MP",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-05T19:51:21.543Z",
+      "dealScore": 88,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 38,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 67,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 7,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B00G9CL83Q",
       "parentAsin": "B0F7ZS5KZ9",
       "familyKey": "B0F7ZS5KZ9",
@@ -1879,6 +1962,91 @@
         "rating": 10,
         "priceTier": 8
       }
+    },
+    {
+      "asin": "B0DHS4RHR8",
+      "parentAsin": "B0FD9S2V2D",
+      "familyKey": "B0FD9S2V2D",
+      "variationCount": 5,
+      "productAgeDays": 646,
+      "title": "skil 15 amp 8-1/4\" compact portable jobsite table saw (stand sfs0001 sold separately)-ts6308-00",
+      "brand": "skil",
+      "brandTier": "mid",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552962",
+        "228013",
+        "328182011",
+        "551236",
+        "552894"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552894",
+          "name": "saws"
+        },
+        {
+          "id": "552962",
+          "name": "table saws"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 219,
+      "avg30": 257.66,
+      "avg90": 271.88,
+      "low365": 219,
+      "rating": 4.6,
+      "reviewCount": 119,
+      "rank": 6277,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Wy9+IXAeL.jpg",
+      "url": "https://www.amazon.com/dp/B0DHS4RHR8",
+      "keepa": "https://keepa.com/#!product/1-B0DHS4RHR8",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-05T19:51:21.542Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 64,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 12,
+        "demand": 16,
+        "reviews": 6,
+        "rating": 8,
+        "priceTier": 8
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0DK57PSVC",
+        "B0DHS4RHR8"
+      ]
     },
     {
       "asin": "B0BFWH2CGK",
@@ -3210,7 +3378,13 @@
         "reviews": 13,
         "rating": 8,
         "priceTier": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B00004RGZL",
+        "B00004RGZF"
+      ]
     },
     {
       "asin": "B07WFQT4PM",
@@ -4491,7 +4665,13 @@
         "reviews": 6,
         "rating": 8,
         "priceTier": 6
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0CRYYLPZC",
+        "B0D8VHXZZ5"
+      ]
     },
     {
       "asin": "B093XYKW5P",
@@ -4852,6 +5032,85 @@
         "reviews": 11,
         "rating": 10,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B07TWK2S22",
+      "parentAsin": "",
+      "familyKey": "B07TWK2S22",
+      "variationCount": 0,
+      "productAgeDays": 2547,
+      "title": "dewalt xtreme 12v max* cordless screwdriver, 1/4-inch, tool only (dcf601b)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "9022390011",
+        "228013",
+        "328182011",
+        "551236",
+        "9022389011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "9022389011",
+          "name": "screw guns & screwdrivers"
+        },
+        {
+          "id": "9022390011",
+          "name": "power screwdrivers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 95.36,
+      "avg30": 102.49,
+      "avg90": 106.47,
+      "low365": 95.36,
+      "rating": 4.7,
+      "reviewCount": 447,
+      "rank": 64829,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61kd6LUjFqL.jpg",
+      "url": "https://www.amazon.com/dp/B07TWK2S22",
+      "keepa": "https://keepa.com/#!product/1-B07TWK2S22",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-05T19:51:21.543Z",
+      "dealScore": 66,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 4
       }
     },
     {
@@ -5258,6 +5517,89 @@
         "demand": 0,
         "reviews": 6,
         "rating": 9,
+        "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0BRTC5VN7",
+      "parentAsin": "B0BWG3653J",
+      "familyKey": "B0BWG3653J",
+      "variationCount": 1,
+      "productAgeDays": 1268,
+      "title": "metabo hpt 18v multivolt brushless compact cordless brad nailer kit, 18 gauge nailer with power tool 2.0ah lithium ion battery, drives 5/8\" to 2\" brad nails, nt1850dft",
+      "brand": "metabo hpt",
+      "brandTier": "mid",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552696",
+        "228013",
+        "328182011",
+        "551236",
+        "552838"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552838",
+          "name": "nailers & staplers"
+        },
+        {
+          "id": "686960011",
+          "name": "nailers"
+        },
+        {
+          "id": "552696",
+          "name": "brad nailers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 209,
+      "avg30": 256.15,
+      "avg90": 259.6,
+      "low365": 149,
+      "rating": 4.5,
+      "reviewCount": 499,
+      "rank": 76027,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71N94ToykCL.jpg",
+      "url": "https://www.amazon.com/dp/B0BRTC5VN7",
+      "keepa": "https://keepa.com/#!product/1-B0BRTC5VN7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-05T19:51:21.543Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 53,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 12,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 7,
         "priceTier": 8
       }
     },
@@ -6559,7 +6901,13 @@
         "reviews": 3,
         "rating": 7,
         "priceTier": 4
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0CT11RKH6",
+        "B0C69WPXH7"
+      ]
     },
     {
       "asin": "B00AZL8MO0",
@@ -6725,6 +7073,80 @@
         "reviews": 6,
         "rating": 8,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0CBB6QLQJ",
+      "parentAsin": "",
+      "familyKey": "B0CBB6QLQJ",
+      "variationCount": 0,
+      "productAgeDays": 928,
+      "title": "flex stack pack storage system organizer box - fs1301",
+      "brand": "flex",
+      "brandTier": "mid",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "13400721",
+        "228013",
+        "328182011",
+        "13400691"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "13400691",
+          "name": "tool organizers"
+        },
+        {
+          "id": "13400721",
+          "name": "tool boxes"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg30": 58.85,
+      "avg90": 58.95,
+      "low365": 49,
+      "rating": 4.8,
+      "reviewCount": 116,
+      "rank": 59433,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51ErVErk2ZL.jpg",
+      "url": "https://www.amazon.com/dp/B0CBB6QLQJ",
+      "keepa": "https://keepa.com/#!product/1-B0CBB6QLQJ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-05T19:51:21.543Z",
+      "dealScore": 62,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 12,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 10,
+        "priceTier": 2
       }
     },
     {
@@ -7191,21 +7613,20 @@
       }
     },
     {
-      "asin": "B0DK57PSVC",
-      "parentAsin": "B0FD9S2V2D",
-      "familyKey": "B0FD9S2V2D",
-      "variationCount": 5,
-      "productAgeDays": 622,
-      "title": "skil table saw folding stand for ts6308-00-sfs0001",
+      "asin": "B088B8NZ1C",
+      "parentAsin": "B0DMW79C23",
+      "familyKey": "B0DMW79C23",
+      "variationCount": 4,
+      "productAgeDays": 2248,
+      "title": "skil 100ft self-leveling green cross line laser with rechargeable battery, tripod & bag - ll9322g-01",
       "brand": "skil",
       "brandTier": "mid",
       "category": "power_tools_main",
       "keepaCategoryIds": [
-        "552964",
+        "11646388011",
         "228013",
-        "328182011",
-        "552262",
-        "8106311011"
+        "553244",
+        "11646386011"
       ],
       "keepaCategoryTree": [
         {
@@ -7213,64 +7634,56 @@
           "name": "tools & home improvement"
         },
         {
-          "id": "328182011",
-          "name": "power & hand tools"
+          "id": "553244",
+          "name": "measuring & layout tools"
         },
         {
-          "id": "552262",
-          "name": "power tool parts & accessories"
+          "id": "11646386011",
+          "name": "laser levels & accessories"
         },
         {
-          "id": "8106311011",
-          "name": "saw blades, parts & accessories"
-        },
-        {
-          "id": "13708781",
-          "name": "accessories"
-        },
-        {
-          "id": "552964",
-          "name": "table saw accessories"
+          "id": "11646388011",
+          "name": "horizontal & vertical lasers"
         }
       ],
       "sourceStream": "power_tools_main",
       "sources": [
         "keepa"
       ],
-      "price": 69,
-      "avg30": 73.66,
-      "avg90": 83.59,
-      "low365": 69,
-      "rating": 3.6,
-      "reviewCount": 16,
-      "rank": 6262,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/61o6Pb9igXL.jpg",
-      "url": "https://www.amazon.com/dp/B0DK57PSVC",
-      "keepa": "https://keepa.com/#!product/1-B0DK57PSVC",
+      "price": 143.01,
+      "avg30": 158.28,
+      "avg90": 158.76,
+      "low365": 99,
+      "rating": 4.5,
+      "reviewCount": 676,
+      "rank": 51929,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/615jrqHpoXL.jpg",
+      "url": "https://www.amazon.com/dp/B088B8NZ1C",
+      "keepa": "https://keepa.com/#!product/1-B088B8NZ1C",
       "isLowAll": false,
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": true,
-      "updatedAt": "2026-07-05T12:23:24.207Z",
-      "dealScore": 55,
+      "updatedAt": "2026-07-05T19:51:21.542Z",
+      "dealScore": 57,
       "scoreBreakdown": {
-        "rating": 18,
-        "discount": 26,
+        "rating": 22,
+        "discount": 14,
         "rank": 0,
-        "reviews": 0,
+        "reviews": 5,
         "variationFamily": 0,
-        "productAge": 3,
+        "productAge": 8,
         "streamFit": 0,
         "brand": 8
       },
       "normalizedScore": 46,
       "normalizedScoreBreakdown": {
-        "discount": 14,
+        "discount": 6,
         "brand": 12,
-        "demand": 16,
-        "reviews": 0,
-        "rating": 0,
-        "priceTier": 4
+        "demand": 4,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 6
       }
     },
     {
@@ -8675,7 +9088,13 @@
         "reviews": 0,
         "rating": 5,
         "priceTier": 4
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0GRH4FMXS",
+        "B0GRGYT1HH"
+      ]
     },
     {
       "asin": "B003XU7BM4",
@@ -8997,6 +9416,81 @@
       }
     },
     {
+      "asin": "B08BZWY887",
+      "parentAsin": "B0CP4X2WCN",
+      "familyKey": "B0CP4X2WCN",
+      "variationCount": 2,
+      "productAgeDays": 2174,
+      "title": "wen pocket hole jig kit, metal, step drill bit, self-tapping screws, and l-base (wa1527)",
+      "brand": "wen",
+      "brandTier": "off",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552488",
+        "16310161",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552488",
+          "name": "jig accessories"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 43.02,
+      "avg30": 51.93,
+      "avg90": 55.06,
+      "low365": 37.28,
+      "rating": 4.4,
+      "reviewCount": 407,
+      "rank": 85096,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81McB1q3QqL.jpg",
+      "url": "https://www.amazon.com/dp/B08BZWY887",
+      "keepa": "https://keepa.com/#!product/1-B08BZWY887",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-05T19:51:21.543Z",
+      "dealScore": 62,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 32,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 37,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B08SQW8GNL",
       "parentAsin": "B0DVS4J79N",
       "familyKey": "B0DVS4J79N",
@@ -9239,6 +9733,80 @@
         "reviews": 6,
         "rating": 0,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B07SQ42PGZ",
+      "parentAsin": "",
+      "familyKey": "B07SQ42PGZ",
+      "variationCount": 0,
+      "productAgeDays": 1204,
+      "title": "dewalt dcf787 20v 20 volt max li-ion 1/4” hex brushless impact drill driver",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "2399141011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2399141011",
+          "name": "impact drivers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 75,
+      "avg30": 78.37,
+      "avg90": 77.69,
+      "low365": 75,
+      "rating": 4.6,
+      "reviewCount": 40,
+      "rank": 93512,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/512b45qNEuL.jpg",
+      "url": "https://www.amazon.com/dp/B07SQ42PGZ",
+      "keepa": "https://keepa.com/#!product/1-B07SQ42PGZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-05T19:51:21.543Z",
+      "dealScore": 56,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 5,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 36,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 0,
+        "rating": 8,
+        "priceTier": 4
       }
     },
     {
@@ -9702,6 +10270,85 @@
       "normalizedScoreBreakdown": {
         "discount": 18,
         "brand": 0,
+        "demand": 4,
+        "reviews": 3,
+        "rating": 5,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0938615X7",
+      "parentAsin": "B09L4WBW1Z",
+      "familyKey": "B09L4WBW1Z",
+      "variationCount": 1,
+      "productAgeDays": 1889,
+      "title": "metabo hpt 18v 4-1/2 in slide switch angle grinder, g18dsl2q4",
+      "brand": "metabo hpt",
+      "brandTier": "mid",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552812",
+        "228013",
+        "328182011",
+        "551236",
+        "552810"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552810",
+          "name": "grinders"
+        },
+        {
+          "id": "552812",
+          "name": "angle grinders"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99,
+      "avg30": 107.45,
+      "avg90": 108.48,
+      "low365": 92.5,
+      "rating": 4.4,
+      "reviewCount": 80,
+      "rank": 97996,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61guCdSmPXL.jpg",
+      "url": "https://www.amazon.com/dp/B0938615X7",
+      "keepa": "https://keepa.com/#!product/1-B0938615X7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-05T19:51:21.543Z",
+      "dealScore": 51,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 34,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 12,
         "demand": 4,
         "reviews": 3,
         "rating": 5,

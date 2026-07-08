@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-08T10:34:37.099Z",
+  "generatedAt": "2026-07-08T10:35:14.522Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 411,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 418,
   "deals": [
     {
       "asin": "B0F9NK4M7Q",
@@ -590,7 +590,13 @@
         "reviews": 13,
         "rating": 10,
         "priceTier": 6
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B000VDZFQA",
+        "B000VE0QNQ"
+      ]
     },
     {
       "asin": "B00JQ74VL2",
@@ -2966,6 +2972,89 @@
       }
     },
     {
+      "asin": "B07SPFNKKZ",
+      "parentAsin": "B0H2MPDHS7",
+      "familyKey": "B0H2MPDHS7",
+      "variationCount": 2,
+      "productAgeDays": 2589,
+      "title": "diablo demo demon carbide teeth reciprocating saw blade - 9\" length, 3 tpi",
+      "brand": "diablo",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552332",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552332",
+          "name": "reciprocating saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.55,
+      "avg30": 47.7,
+      "avg90": 40.36,
+      "low365": 9.47,
+      "rating": 4.7,
+      "reviewCount": 367,
+      "rank": 223185,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/418bs7LiYCL.jpg",
+      "url": "https://www.amazon.com/dp/B07SPFNKKZ",
+      "keepa": "https://keepa.com/#!product/1-B07SPFNKKZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-08T10:35:14.520Z",
+      "dealScore": 113,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 62,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 62,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B00SKOD77G",
       "parentAsin": "B0148TNEM4",
       "familyKey": "B0148TNEM4",
@@ -4389,6 +4478,85 @@
         "demand": 0,
         "reviews": 0,
         "rating": 10,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B07Z5M1MZL",
+      "parentAsin": "",
+      "familyKey": "B07Z5M1MZL",
+      "variationCount": 0,
+      "productAgeDays": 2415,
+      "title": "metabo hpt multivolt battery | 36v/18v, 4.0 ah/8.0 ah, lithium ion, slide style | 372121m",
+      "brand": "metabo hpt",
+      "brandTier": "mid",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552354",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552354",
+          "name": "battery packs"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 105.49,
+      "avg30": 170.9,
+      "avg90": 176.55,
+      "low365": 95.66,
+      "rating": 4.5,
+      "reviewCount": 471,
+      "rank": 201002,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51BO+vecbeL.jpg",
+      "url": "https://www.amazon.com/dp/B07Z5M1MZL",
+      "keepa": "https://keepa.com/#!product/1-B07Z5M1MZL",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-08T10:35:14.520Z",
+      "dealScore": 98,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 60,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 12,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 7,
         "priceTier": 6
       }
     },
@@ -9974,6 +10142,89 @@
       }
     },
     {
+      "asin": "B0148SH5ZC",
+      "parentAsin": "",
+      "familyKey": "B0148SH5ZC",
+      "variationCount": 0,
+      "productAgeDays": 3478,
+      "title": "diablo ultra finish carbide saw blade - 7-1/4\" dia., 60 atb teeth, 2-pack",
+      "brand": "diablo",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552292",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552292",
+          "name": "circular saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 40.22,
+      "avg30": 43.89,
+      "avg90": 44.14,
+      "low365": 19.97,
+      "rating": 4.7,
+      "reviewCount": 279,
+      "rank": 72529,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/615rbbI3tmL.jpg",
+      "url": "https://www.amazon.com/dp/B0148SH5ZC",
+      "keepa": "https://keepa.com/#!product/1-B0148SH5ZC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-08T10:35:14.520Z",
+      "dealScore": 64,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B07KKXNY26",
       "parentAsin": "B0B9J4M122",
       "familyKey": "B0B9J4M122",
@@ -14081,6 +14332,80 @@
       }
     },
     {
+      "asin": "B0CVS55Q7B",
+      "parentAsin": "",
+      "familyKey": "B0CVS55Q7B",
+      "variationCount": 0,
+      "productAgeDays": 844,
+      "title": "dewalt 20v max xr impact driver, brushless, 1/4\", 3-speed, bare tool only (dcf845b), yellow, black (renewed), black,yellow",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "2399141011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2399141011",
+          "name": "impact drivers"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.99,
+      "avg30": 115.09,
+      "avg90": 111.38,
+      "low365": 98,
+      "rating": 4.5,
+      "reviewCount": 54,
+      "rank": 295698,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/619QWv4724L.jpg",
+      "url": "https://www.amazon.com/dp/B0CVS55Q7B",
+      "keepa": "https://keepa.com/#!product/1-B0CVS55Q7B",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-08T10:35:14.520Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 7,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B0FS6FWHCW",
       "parentAsin": "B0GCS53DG5",
       "familyKey": "B0GCS53DG5",
@@ -17775,6 +18100,81 @@
       }
     },
     {
+      "asin": "B00C9V579C",
+      "parentAsin": "B08T7PNX9L",
+      "familyKey": "B08T7PNX9L",
+      "variationCount": 6,
+      "productAgeDays": 3278,
+      "title": "ox pro 3 foot level 36 inch with rubber grip and all aluminum construction - 3 ft level with thru handle - leveler tool ox-p024409",
+      "brand": "ox",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553256",
+        "228013",
+        "553244"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "553256",
+          "name": "levels"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 81.87,
+      "avg30": 93.47,
+      "avg90": 99.43,
+      "low365": 66.74,
+      "rating": 4.6,
+      "reviewCount": 1437,
+      "rank": 123286,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51TxpOC6pqL.jpg",
+      "url": "https://www.amazon.com/dp/B00C9V579C",
+      "keepa": "https://keepa.com/#!product/1-B00C9V579C",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-08T10:35:14.520Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 26,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 39,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 13,
+        "rating": 8,
+        "priceTier": 4
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B00C9V56S4",
+        "B00C9V579C"
+      ]
+    },
+    {
       "asin": "B000K9J908",
       "parentAsin": "",
       "familyKey": "B000K9J908",
@@ -21413,75 +21813,6 @@
         "reviews": 3,
         "rating": 8,
         "priceTier": 0
-      }
-    },
-    {
-      "asin": "B00C9V56S4",
-      "parentAsin": "B08T7PNX9L",
-      "familyKey": "B08T7PNX9L",
-      "variationCount": 6,
-      "productAgeDays": 2875,
-      "title": "ox pro 2 foot level 24 inch with rubber grip and all aluminum construction - 2ft level with thru handle - leveler tool ox-p024406",
-      "brand": "ox",
-      "brandTier": "off",
-      "category": "trusted_sellers",
-      "keepaCategoryIds": [
-        "553256",
-        "228013",
-        "553244"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "228013",
-          "name": "tools & home improvement"
-        },
-        {
-          "id": "553244",
-          "name": "measuring & layout tools"
-        },
-        {
-          "id": "553256",
-          "name": "levels"
-        }
-      ],
-      "sourceStream": "trusted_sellers",
-      "sources": [
-        "keepa"
-      ],
-      "price": 59.21,
-      "avg30": 58.59,
-      "avg90": 66.24,
-      "low365": 49.99,
-      "rating": 4.6,
-      "reviewCount": 1437,
-      "rank": 178584,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51ecr8yi3BL.jpg",
-      "url": "https://www.amazon.com/dp/B00C9V56S4",
-      "keepa": "https://keepa.com/#!product/1-B00C9V56S4",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": false,
-      "updatedAt": "2026-07-07T10:42:58.639Z",
-      "dealScore": 56,
-      "scoreBreakdown": {
-        "rating": 23,
-        "discount": 15,
-        "rank": 0,
-        "reviews": 10,
-        "variationFamily": 0,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 0
-      },
-      "normalizedScore": 35,
-      "normalizedScoreBreakdown": {
-        "discount": 10,
-        "brand": 0,
-        "demand": 0,
-        "reviews": 13,
-        "rating": 8,
-        "priceTier": 4
       }
     },
     {
@@ -28550,6 +28881,93 @@
       }
     },
     {
+      "asin": "B000K29T64",
+      "parentAsin": "",
+      "familyKey": "B000K29T64",
+      "variationCount": 0,
+      "productAgeDays": 5567,
+      "title": "whiteside rd2100 spiral downcut straight router bit: 1/4 inch cutting diameter, 1/4 inch shank, 1 inch cutting length",
+      "brand": "whiteside router bits",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686958011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686958011",
+          "name": "spiral"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.71,
+      "avg30": 27.96,
+      "avg90": 25.84,
+      "low365": 15.37,
+      "rating": 4.8,
+      "reviewCount": 685,
+      "rank": 105437,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71EmFaDnPnL.jpg",
+      "url": "https://www.amazon.com/dp/B000K29T64",
+      "keepa": "https://keepa.com/#!product/1-B000K29T64",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-08T10:35:14.519Z",
+      "dealScore": 49,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 27,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 11,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B08P2D5W3L",
       "parentAsin": "B09XRF15N5",
       "familyKey": "B09XRF15N5",
@@ -32636,6 +33054,164 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B00ILC71MO",
+      "parentAsin": "B087C8Y34X",
+      "familyKey": "B087C8Y34X",
+      "variationCount": 3,
+      "productAgeDays": 3866,
+      "title": "spyderco clipitool multi-functional stainless steel utility pocket knife with 2\" steel blade and screwdriver/bottle opener - plainedge - c175p",
+      "brand": "spyderco",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553232",
+        "3412851",
+        "228013",
+        "328182011",
+        "551238",
+        "23642827011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "23642827011",
+          "name": "knives, parts & accessories"
+        },
+        {
+          "id": "553222",
+          "name": "knives"
+        },
+        {
+          "id": "553232",
+          "name": "pocket knives & folding knives"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.77,
+      "avg30": 43.7,
+      "avg90": 43.17,
+      "low365": 28,
+      "rating": 4.5,
+      "reviewCount": 314,
+      "rank": 169563,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51XK38YY4rL.jpg",
+      "url": "https://www.amazon.com/dp/B00ILC71MO",
+      "keepa": "https://keepa.com/#!product/1-B00ILC71MO",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-08T10:35:14.520Z",
+      "dealScore": 41,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 17,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 7,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0051TA11S",
+      "parentAsin": "",
+      "familyKey": "B0051TA11S",
+      "variationCount": 0,
+      "productAgeDays": 4664,
+      "title": "rayovac led flashlight 3 pack, rubber grip flash light set with batteries included - perfect for power outages, emergency situations, camping, hiking, dog walking (3 pack)",
+      "brand": "rayovac",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "2445457011",
+        "228013",
+        "3180231",
+        "3180261"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "3180261",
+          "name": "flashlights"
+        },
+        {
+          "id": "2445457011",
+          "name": "handheld flashlights"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 20.8,
+      "avg30": 21.37,
+      "avg90": 23.29,
+      "low365": 20.8,
+      "rating": 4.2,
+      "reviewCount": 229,
+      "rank": 172731,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71D26DAEWXL.jpg",
+      "url": "https://www.amazon.com/dp/B0051TA11S",
+      "keepa": "https://keepa.com/#!product/1-B0051TA11S",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-08T10:35:14.520Z",
+      "dealScore": 45,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 16,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 0,
+        "priceTier": 0
       }
     },
     {

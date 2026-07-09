@@ -1,9 +1,89 @@
 {
-  "generatedAt": "2026-07-09T10:28:06.727Z",
+  "generatedAt": "2026-07-09T10:28:46.398Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 685,
+  "lastEnrichmentStream": "dudes_power",
+  "dealCount": 686,
   "deals": [
+    {
+      "asin": "B0F9L265KF",
+      "parentAsin": "B0G2MLHBVC",
+      "familyKey": "B0G2MLHBVC",
+      "variationCount": 2,
+      "productAgeDays": 259,
+      "title": "anker prime 3-in-1 qi2.2 magsafe compatible 25w wireless charging station",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "12557639011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "12557639011",
+          "name": "charging stations"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 134.99,
+      "avg30": 220.24,
+      "avg90": 195.14,
+      "low365": 134.99,
+      "rating": 4.6,
+      "reviewCount": 695,
+      "rank": 1232,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/613YeSDGaSL.jpg",
+      "url": "https://www.amazon.com/dp/B0F9L265KF",
+      "keepa": "https://keepa.com/#!product/1-B0F9L265KF",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-09T10:28:46.395Z",
+      "dealScore": 124,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 46,
+        "rank": 30,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 85,
+      "normalizedScoreBreakdown": {
+        "discount": 22,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 11,
+        "rating": 8,
+        "priceTier": 6
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0F9L1PPPJ",
+        "B0F9L265KF"
+      ]
+    },
     {
       "asin": "B0F9NK4M7Q",
       "parentAsin": "",
@@ -153,17 +233,17 @@
       }
     },
     {
-      "asin": "B0F9L1PPPJ",
-      "parentAsin": "B0G2MLHBVC",
-      "familyKey": "B0G2MLHBVC",
-      "variationCount": 2,
-      "productAgeDays": 282,
-      "title": "anker prime 3-in-1 qi2.2 magsafe compatible 25w wireless charging station",
+      "asin": "B0DSZF8HNJ",
+      "parentAsin": "B0G1MBNFW3",
+      "familyKey": "B0G1MBNFW3",
+      "variationCount": 8,
+      "productAgeDays": 518,
+      "title": "anker zolo power bank (2025 upgraded version), 45w max fast charging, 20,000mah battery pack, dual built-in usb-c cables, usb-c&a port, for iphone 17/16 series, galaxy, macbook, and more",
       "brand": "anker",
       "brandTier": "top",
       "category": "dudes_power",
       "keepaCategoryIds": [
-        "12557639011",
+        "7073960011",
         "2335752011",
         "2407755011",
         "2407761011"
@@ -182,56 +262,62 @@
           "name": "chargers & power adapters"
         },
         {
-          "id": "12557639011",
-          "name": "charging stations"
+          "id": "7073960011",
+          "name": "portable power banks"
         }
       ],
       "sourceStream": "dudes_power",
       "sources": [
         "keepa"
       ],
-      "price": 139.99,
-      "avg30": 222.42,
-      "avg90": 196.25,
-      "low365": 139.99,
+      "price": 37.99,
+      "avg30": 48.81,
+      "avg90": 47.74,
+      "low365": 34.99,
       "rating": 4.6,
-      "reviewCount": 686,
-      "rank": 1831,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/61nZaKC+I6L.jpg",
-      "url": "https://www.amazon.com/dp/B0F9L1PPPJ",
-      "keepa": "https://keepa.com/#!product/1-B0F9L1PPPJ",
+      "reviewCount": 1442,
+      "rank": 338,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61yx0Atz5UL.jpg",
+      "url": "https://www.amazon.com/dp/B0DSZF8HNJ",
+      "keepa": "https://keepa.com/#!product/1-B0DSZF8HNJ",
       "isLowAll": false,
       "drop1Day": 0,
       "isHot": true,
       "isNameBrand": true,
-      "updatedAt": "2026-07-07T10:43:36.199Z",
-      "dealScore": 121,
+      "updatedAt": "2026-07-09T10:28:46.394Z",
+      "dealScore": 119,
       "scoreBreakdown": {
         "rating": 23,
-        "discount": 43,
+        "discount": 30,
         "rank": 30,
-        "reviews": 5,
-        "variationFamily": 0,
-        "productAge": 0,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 3,
         "streamFit": 0,
         "brand": 20
       },
-      "normalizedScore": 83,
+      "normalizedScore": 81,
       "normalizedScoreBreakdown": {
-        "discount": 20,
+        "discount": 18,
         "brand": 20,
-        "demand": 18,
-        "reviews": 11,
+        "demand": 20,
+        "reviews": 13,
         "rating": 8,
-        "priceTier": 6
-      }
+        "priceTier": 2
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0DSZKKJTK",
+        "B0DSZF8HNJ"
+      ]
     },
     {
-      "asin": "B0FHWK3W1S",
+      "asin": "B0FHWLHMSN",
       "parentAsin": "B0GVNNKJNM",
       "familyKey": "B0GVNNKJNM",
       "variationCount": 2,
-      "productAgeDays": 159,
+      "productAgeDays": 160,
       "title": "anker prime foldable magsafe charger, 25w qi2.2-certified palm-sized travel-ready 3-in-1 charging station, aircool wireless charger, for iphone 17, apple watch, airpods (non-battery, with adapter)",
       "brand": "anker",
       "brandTier": "top",
@@ -265,20 +351,20 @@
         "keepa"
       ],
       "price": 99.74,
-      "avg30": 148.09,
-      "avg90": 142.36,
+      "avg30": 144.88,
+      "avg90": 141.29,
       "low365": 99.74,
       "rating": 4.7,
-      "reviewCount": 478,
-      "rank": 568,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/61wk-mE6-PL.jpg",
-      "url": "https://www.amazon.com/dp/B0FHWK3W1S",
-      "keepa": "https://keepa.com/#!product/1-B0FHWK3W1S",
+      "reviewCount": 486,
+      "rank": 308,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61sVExnW28L.jpg",
+      "url": "https://www.amazon.com/dp/B0FHWLHMSN",
+      "keepa": "https://keepa.com/#!product/1-B0FHWLHMSN",
       "isLowAll": false,
       "drop1Day": 0,
       "isHot": true,
       "isNameBrand": true,
-      "updatedAt": "2026-07-07T10:43:36.199Z",
+      "updatedAt": "2026-07-09T10:28:46.394Z",
       "dealScore": 117,
       "scoreBreakdown": {
         "rating": 23,
@@ -298,7 +384,13 @@
         "reviews": 8,
         "rating": 9,
         "priceTier": 4
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FHWK3W1S",
+        "B0FHWLHMSN"
+      ]
     },
     {
       "asin": "B08KYM6GW6",
@@ -446,81 +538,13 @@
         "reviews": 0,
         "rating": 10,
         "priceTier": 10
-      }
-    },
-    {
-      "asin": "B0DSZKKJTK",
-      "parentAsin": "B0G1MBNFW3",
-      "familyKey": "B0G1MBNFW3",
-      "variationCount": 8,
-      "productAgeDays": 530,
-      "title": "anker zolo power bank (2025 upgraded version), 45w max fast charging, 20,000mah battery pack, dual built-in usb-c cables, usb-c&a port, for iphone 17/16 series, galaxy, macbook, and more",
-      "brand": "anker",
-      "brandTier": "top",
-      "category": "dudes_power",
-      "keepaCategoryIds": [
-        "7073960011",
-        "2335752011",
-        "2407755011",
-        "2407761011"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "2335752011",
-          "name": "cell phones & accessories"
-        },
-        {
-          "id": "2407755011",
-          "name": "accessories"
-        },
-        {
-          "id": "2407761011",
-          "name": "chargers & power adapters"
-        },
-        {
-          "id": "7073960011",
-          "name": "portable power banks"
-        }
-      ],
-      "sourceStream": "dudes_power",
-      "sources": [
-        "keepa"
-      ],
-      "price": 37.99,
-      "avg30": 49.53,
-      "avg90": 46.37,
-      "low365": 34.99,
-      "rating": 4.6,
-      "reviewCount": 1416,
-      "rank": 684,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71iQIOCsEzL.jpg",
-      "url": "https://www.amazon.com/dp/B0DSZKKJTK",
-      "keepa": "https://keepa.com/#!product/1-B0DSZKKJTK",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": true,
-      "isNameBrand": true,
-      "updatedAt": "2026-07-07T10:43:36.199Z",
-      "dealScore": 116,
-      "scoreBreakdown": {
-        "rating": 23,
-        "discount": 27,
-        "rank": 30,
-        "reviews": 10,
-        "variationFamily": 3,
-        "productAge": 3,
-        "streamFit": 0,
-        "brand": 20
       },
-      "normalizedScore": 77,
-      "normalizedScoreBreakdown": {
-        "discount": 14,
-        "brand": 20,
-        "demand": 20,
-        "reviews": 13,
-        "rating": 8,
-        "priceTier": 2
-      }
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FSL6HRRJ",
+        "B0G1SN57ZK"
+      ]
     },
     {
       "asin": "B00BF4VUKO",
@@ -1758,7 +1782,13 @@
         "reviews": 3,
         "rating": 5,
         "priceTier": 10
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0DCJXQQYH",
+        "B0FSJM6NZC"
+      ]
     },
     {
       "asin": "B078W41ZQG",
@@ -1961,7 +1991,7 @@
       "isHot": false,
       "isNameBrand": true,
       "updatedAt": "2026-07-08T10:35:56.705Z",
-      "dealScore": 70,
+      "dealScore": 71,
       "scoreBreakdown": {
         "rating": 24,
         "discount": 20,
@@ -1985,8 +2015,88 @@
       "spcCapturedAt": "",
       "siblingAsins": [
         "B0FGHWSZDS",
-        "B0FFSLWRK1"
+        "B0FFSLWRK1",
+        "B0FFSN3FM9"
       ]
+    },
+    {
+      "asin": "B0CX8M7LMH",
+      "parentAsin": "B0CW5BPLL6",
+      "familyKey": "B0CW5BPLL6",
+      "variationCount": 2,
+      "productAgeDays": 834,
+      "title": "anker solix bp3800 emergency expansion battery, 3840wh lifepo4 with 10-year lifespan, extra battery for home, rv, black",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "552354",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552354",
+          "name": "battery packs"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1259.99,
+      "avg30": 1438.69,
+      "avg90": 1412.43,
+      "low365": 1259.99,
+      "rating": 5,
+      "reviewCount": 3,
+      "rank": 6331,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Ofx2yCVKL.jpg",
+      "url": "https://www.amazon.com/dp/B0CX8M7LMH",
+      "keepa": "https://keepa.com/#!product/1-B0CX8M7LMH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-09T10:28:46.395Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 25,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 66,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 10
+      }
     },
     {
       "asin": "B000VD3TYK",
@@ -6291,6 +6401,81 @@
         "rating": 7,
         "priceTier": 6
       }
+    },
+    {
+      "asin": "B0GK5LZGN6",
+      "parentAsin": "B0GWHWP3D6",
+      "familyKey": "B0GWHWP3D6",
+      "variationCount": 9,
+      "productAgeDays": 160,
+      "title": "anker solix c1000 portable power station with alternator charger, 1800w (peak 2400w) solar generator, full charge in 58 min, 1056wh lifepo4 battery for home backup, power outages, and outdoor camping",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 728.99,
+      "avg30": 884.22,
+      "avg90": 854.67,
+      "low365": 696.98,
+      "rating": null,
+      "reviewCount": null,
+      "rank": 3932,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61QnI2UBHIL.jpg",
+      "url": "https://www.amazon.com/dp/B0GK5LZGN6",
+      "keepa": "https://keepa.com/#!product/1-B0GK5LZGN6",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-09T10:28:46.395Z",
+      "dealScore": 94,
+      "scoreBreakdown": {
+        "rating": 0,
+        "discount": 22,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0CDGLKF3D",
+        "B0GK5LZGN6"
+      ]
     },
     {
       "asin": "B005HVX3NS",
@@ -10856,75 +11041,6 @@
       }
     },
     {
-      "asin": "B0CDGLKF3D",
-      "parentAsin": "B0GWHWP3D6",
-      "familyKey": "B0GWHWP3D6",
-      "variationCount": 9,
-      "productAgeDays": 1028,
-      "title": "anker solix c1000 portable power station with 400w solar panel, 1800w solar generator, 1056wh lfp (lifepo4) battery, 6 ac outlets, up to 2400w for home, power outages, and outdoor camping",
-      "brand": "anker",
-      "brandTier": "top",
-      "category": "dudes_power",
-      "keepaCategoryIds": [
-        "348967011",
-        "2972638011",
-        "552808"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "2972638011",
-          "name": "patio, lawn & garden"
-        },
-        {
-          "id": "552808",
-          "name": "generators & portable power"
-        },
-        {
-          "id": "348967011",
-          "name": "generators"
-        }
-      ],
-      "sourceStream": "dudes_power",
-      "sources": [
-        "keepa"
-      ],
-      "price": 829.99,
-      "avg30": 916.3,
-      "avg90": 900.02,
-      "low365": 797.99,
-      "rating": 4.4,
-      "reviewCount": 47,
-      "rank": 4206,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71gDRbnGAjL.jpg",
-      "url": "https://www.amazon.com/dp/B0CDGLKF3D",
-      "keepa": "https://keepa.com/#!product/1-B0CDGLKF3D",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": true,
-      "isNameBrand": true,
-      "updatedAt": "2026-07-07T10:43:36.199Z",
-      "dealScore": 94,
-      "scoreBreakdown": {
-        "rating": 22,
-        "discount": 11,
-        "rank": 30,
-        "reviews": 0,
-        "variationFamily": 3,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 53,
-      "normalizedScoreBreakdown": {
-        "discount": 0,
-        "brand": 20,
-        "demand": 18,
-        "reviews": 0,
-        "rating": 5,
-        "priceTier": 10
-      }
-    },
-    {
       "asin": "B00020JOBO",
       "parentAsin": "",
       "familyKey": "B00020JOBO",
@@ -12846,7 +12962,13 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 10
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0DXF76179",
+        "B0FG7SHVT8"
+      ]
     },
     {
       "asin": "B0F5PWYPXS",

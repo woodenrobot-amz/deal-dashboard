@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-09T10:27:22.890Z",
+  "generatedAt": "2026-07-09T10:28:06.727Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 684,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 685,
   "deals": [
     {
       "asin": "B0F9NK4M7Q",
@@ -26201,6 +26201,80 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B004XQYK76",
+      "parentAsin": "B0H229Y48L",
+      "familyKey": "B0H229Y48L",
+      "variationCount": 1,
+      "productAgeDays": 5503,
+      "title": "little giant spdk sump pump discharge hose kit, 1-1/4-inch hose – 1-1/2 inch and 1-1/4 inch adaptors, 24-feet",
+      "brand": "little giant",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "680336011",
+        "228013",
+        "13749581",
+        "601479011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "13749581",
+          "name": "plumbing"
+        },
+        {
+          "id": "601479011",
+          "name": "water pumps, parts & accessories"
+        },
+        {
+          "id": "680336011",
+          "name": "pump accessories"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.48,
+      "avg30": 31.75,
+      "avg90": 32.98,
+      "low365": 16.49,
+      "rating": 4.4,
+      "reviewCount": 2497,
+      "rank": 232758,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81rBuAimMuL.jpg",
+      "url": "https://www.amazon.com/dp/B004XQYK76",
+      "keepa": "https://keepa.com/#!product/1-B004XQYK76",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-09T10:28:06.725Z",
+      "dealScore": 78,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 38,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 40,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 0
       }
     },
     {

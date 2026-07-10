@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-10T10:15:12.371Z",
+  "generatedAt": "2026-07-10T10:15:52.899Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 484,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 487,
   "deals": [
     {
       "asin": "B0F9L265KF",
@@ -9260,6 +9260,89 @@
       }
     },
     {
+      "asin": "B07V2JR2DY",
+      "parentAsin": "B0G1ZL1873",
+      "familyKey": "B0G1ZL1873",
+      "variationCount": 27,
+      "productAgeDays": 2300,
+      "title": "diablo carbide teeth hole saw for wood and metal - fits with snap-lock plus mandrel system, tool-free plug ejection - 4\" diameter, 2-3/8\" length - dhs4000ct",
+      "brand": "diablo",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "256292011",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552402",
+          "name": "hole saws & accessories"
+        },
+        {
+          "id": "256292011",
+          "name": "hole saws"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 40.06,
+      "avg30": 44.64,
+      "avg90": 45.26,
+      "low365": 34.99,
+      "rating": 4.7,
+      "reviewCount": 391,
+      "rank": 43683,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51FYQqS9FXL.jpg",
+      "url": "https://www.amazon.com/dp/B07V2JR2DY",
+      "keepa": "https://keepa.com/#!product/1-B07V2JR2DY",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-10T10:15:52.898Z",
+      "dealScore": 76,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 57,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0GLYRN3WW",
       "parentAsin": "",
       "familyKey": "B0GLYRN3WW",
@@ -10403,6 +10486,89 @@
         "reviews": 6,
         "rating": 8,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0000225V7",
+      "parentAsin": "B00VWSVP08",
+      "familyKey": "B00VWSVP08",
+      "variationCount": 11,
+      "productAgeDays": 5425,
+      "title": "freud combination blade - 12\" dia., 60 teeth, .126\" kerf, comb grind",
+      "brand": "freud",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552292",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552292",
+          "name": "circular saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 111.7,
+      "avg30": 113.17,
+      "avg90": 108.57,
+      "low365": 69,
+      "rating": 4.7,
+      "reviewCount": 1014,
+      "rank": 42447,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71Mye9T+DmL.jpg",
+      "url": "https://www.amazon.com/dp/B0000225V7",
+      "keepa": "https://keepa.com/#!product/1-B0000225V7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-10T10:15:52.898Z",
+      "dealScore": 64,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 56,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 13,
+        "rating": 9,
+        "priceTier": 6
       }
     },
     {
@@ -28699,6 +28865,93 @@
         "B07BWZD7KZ",
         "B078ZG6GVR"
       ]
+    },
+    {
+      "asin": "B07MXLMJP3",
+      "parentAsin": "B0BVWGDQ77",
+      "familyKey": "B0BVWGDQ77",
+      "variationCount": 21,
+      "productAgeDays": 2724,
+      "title": "amana tool cnc solid carbide spiral o flute up-cut, aluminum cutting router bit, zrn coated, 51481-z, 1/4 d x 1-1/4 ch x 1/4 shk x 3 inch l",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686958011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686958011",
+          "name": "spiral"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 62.81,
+      "avg30": 66.21,
+      "avg90": 64.8,
+      "low365": 58.1,
+      "rating": 4.4,
+      "reviewCount": 84,
+      "rank": 149822,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51ceOHgadGL.jpg",
+      "url": "https://www.amazon.com/dp/B07MXLMJP3",
+      "keepa": "https://keepa.com/#!product/1-B07MXLMJP3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-10T10:15:52.897Z",
+      "dealScore": 62,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 4,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 32,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 5,
+        "priceTier": 4
+      }
     },
     {
       "asin": "B001MQ3MHO",

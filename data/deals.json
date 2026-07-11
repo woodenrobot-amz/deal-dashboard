@@ -1,9 +1,379 @@
 {
-  "generatedAt": "2026-07-11T19:20:04.717Z",
+  "generatedAt": "2026-07-11T19:20:35.995Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 97,
+  "lastEnrichmentStream": "dudes_power",
+  "dealCount": 128,
   "deals": [
+    {
+      "asin": "B0F9NK4M7Q",
+      "parentAsin": "",
+      "familyKey": "B0F9NK4M7Q",
+      "variationCount": 0,
+      "productAgeDays": 372,
+      "title": "anker prime charger,160w 3-port compact gan usb c charger,smart display,touch control,up to 140w fast charging for one device,for macbook pro,laptop,iphone 17 series(cable not included,non-battery)",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "12557637011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "12557637011",
+          "name": "wall chargers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.99,
+      "avg30": 140.86,
+      "avg90": 140.11,
+      "low365": 99.99,
+      "rating": 4.7,
+      "reviewCount": 943,
+      "rank": 285,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61v81vu+rxL.jpg",
+      "url": "https://www.amazon.com/dp/B0F9NK4M7Q",
+      "keepa": "https://keepa.com/#!product/1-B0F9NK4M7Q",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.992Z",
+      "dealScore": 123,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 42,
+        "rank": 30,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 84,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 11,
+        "rating": 9,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0FHWK3W1S",
+      "parentAsin": "B0GVNNKJNM",
+      "familyKey": "B0GVNNKJNM",
+      "variationCount": 2,
+      "productAgeDays": 163,
+      "title": "anker prime foldable magsafe charger, 25w qi2.2-certified palm-sized travel-ready 3-in-1 charging station, aircool wireless charger, for iphone 17, apple watch, airpods (non-battery, with adapter)",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "12557639011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "12557639011",
+          "name": "charging stations"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.74,
+      "avg30": 140.79,
+      "avg90": 139.93,
+      "low365": 99.74,
+      "rating": 4.7,
+      "reviewCount": 505,
+      "rank": 347,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61wk-mE6-PL.jpg",
+      "url": "https://www.amazon.com/dp/B0FHWK3W1S",
+      "keepa": "https://keepa.com/#!product/1-B0FHWK3W1S",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.992Z",
+      "dealScore": 121,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 43,
+        "rank": 30,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 84,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 11,
+        "rating": 9,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0F9L1PPPJ",
+      "parentAsin": "B0G2MLHBVC",
+      "familyKey": "B0G2MLHBVC",
+      "variationCount": 2,
+      "productAgeDays": 286,
+      "title": "anker prime 3-in-1 qi2.2 magsafe compatible 25w wireless charging station",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "12557639011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "12557639011",
+          "name": "charging stations"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 139.99,
+      "avg30": 211.65,
+      "avg90": 191.89,
+      "low365": 139.99,
+      "rating": 4.6,
+      "reviewCount": 709,
+      "rank": 1447,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61nZaKC+I6L.jpg",
+      "url": "https://www.amazon.com/dp/B0F9L1PPPJ",
+      "keepa": "https://keepa.com/#!product/1-B0F9L1PPPJ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.993Z",
+      "dealScore": 118,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 40,
+        "rank": 30,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 83,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 11,
+        "rating": 8,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0CZ7BL16W",
+      "parentAsin": "",
+      "familyKey": "B0CZ7BL16W",
+      "variationCount": 0,
+      "productAgeDays": 771,
+      "title": "anker iphone 17 usb-c car charger, 167.5w max 3-port ultra-compact type-c fast car charger for macbook pro/air, iphone 17/16/15 series, samsung s25/s26, ipad pro, airpods and more",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "2407770011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "2407770011",
+          "name": "automobile chargers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 33.99,
+      "avg30": 45.64,
+      "avg90": 42.46,
+      "low365": 33.99,
+      "rating": 4.8,
+      "reviewCount": 2992,
+      "rank": 352,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61GFUi161hL.jpg",
+      "url": "https://www.amazon.com/dp/B0CZ7BL16W",
+      "keepa": "https://keepa.com/#!product/1-B0CZ7BL16W",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.992Z",
+      "dealScore": 121,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 29,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 79,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B094FMWPPM",
+      "parentAsin": "B0DMNVG344",
+      "familyKey": "B0DMNVG344",
+      "variationCount": 2,
+      "productAgeDays": 1839,
+      "title": "anker iphone 16 wireless charging stand, powerwave 2-in-1 magnetic stand lite with usb-c cable, for iphone 16/16 pro/16 plus/16 pro max/15/14/13 series, airpods 2/pro (no ac adapter)",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "21209124011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "21209124011",
+          "name": "wireless chargers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 34.99,
+      "avg30": 47.37,
+      "avg90": 49.07,
+      "low365": 34.99,
+      "rating": 4.5,
+      "reviewCount": 9089,
+      "rank": 8126,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61m5dpLy+FL.jpg",
+      "url": "https://www.amazon.com/dp/B094FMWPPM",
+      "keepa": "https://keepa.com/#!product/1-B094FMWPPM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.993Z",
+      "dealScore": 103,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 43,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 78,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
     {
       "asin": "B081M6NMRX",
       "parentAsin": "",
@@ -76,6 +446,80 @@
         "reviews": 8,
         "rating": 9,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0DSZJ7GJ9",
+      "parentAsin": "B0G1MBNFW3",
+      "familyKey": "B0G1MBNFW3",
+      "variationCount": 8,
+      "productAgeDays": 403,
+      "title": "anker zolo power bank (2025 upgraded version), 45w max fast charging, 20,000mah battery pack, dual built-in usb-c cables, usb-c&a port, for iphone 17/16 series, galaxy, macbook, and more",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "7073960011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "7073960011",
+          "name": "portable power banks"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 37.99,
+      "avg30": 47.84,
+      "avg90": 46.42,
+      "low365": 34.99,
+      "rating": 4.6,
+      "reviewCount": 1442,
+      "rank": 423,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61PeHrkX8KL.jpg",
+      "url": "https://www.amazon.com/dp/B0DSZJ7GJ9",
+      "keepa": "https://keepa.com/#!product/1-B0DSZJ7GJ9",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.993Z",
+      "dealScore": 116,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 27,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 77,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 13,
+        "rating": 8,
+        "priceTier": 2
       }
     },
     {
@@ -228,6 +672,75 @@
       }
     },
     {
+      "asin": "B0FSLD3K55",
+      "parentAsin": "B0GL24MVBZ",
+      "familyKey": "B0GL24MVBZ",
+      "variationCount": 10,
+      "productAgeDays": 280,
+      "title": "jackery homepower 3600 plus portable power station with ac cable, 3600w ac output, 3584wh lfp solar generator, expandable up to 21kwh, essential home backup for home use (solar panel optional)",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1799,
+      "avg30": 2116.36,
+      "avg90": 2500.88,
+      "low365": 1599,
+      "rating": 4.5,
+      "reviewCount": 30,
+      "rank": 5912,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71uDPD2Hb9L.jpg",
+      "url": "https://www.amazon.com/dp/B0FSLD3K55",
+      "keepa": "https://keepa.com/#!product/1-B0FSLD3K55",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.993Z",
+      "dealScore": 87,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 42,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 73,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 0,
+        "rating": 7,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B07RJDRS6Y",
       "parentAsin": "B08PBWYQVV",
       "familyKey": "B08PBWYQVV",
@@ -294,6 +807,228 @@
         "reviews": 15,
         "rating": 5,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0B468XB1P",
+      "parentAsin": "B0BQ38FN5K",
+      "familyKey": "B0BQ38FN5K",
+      "variationCount": 8,
+      "productAgeDays": 1369,
+      "title": "anker 622 magnetic battery (maggo), 5,000mah foldable magnetic wireless portable charger with stand and usb-c port (on the side), magsafe-compatible for iphone 16/15/14/13 series",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "7073960011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "7073960011",
+          "name": "portable power banks"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 35.99,
+      "avg30": 41.31,
+      "avg90": 40.44,
+      "low365": 27.99,
+      "rating": 4.3,
+      "reviewCount": 15157,
+      "rank": 836,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61ODG-I-yvL.jpg",
+      "url": "https://www.amazon.com/dp/B0B468XB1P",
+      "keepa": "https://keepa.com/#!product/1-B0B468XB1P",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.993Z",
+      "dealScore": 108,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 16,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 70,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 3,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0DCJXQQYH",
+      "parentAsin": "B0G4CSZMX3",
+      "familyKey": "B0G4CSZMX3",
+      "variationCount": 8,
+      "productAgeDays": 681,
+      "title": "bluetti elite 200 v2 portable power station with solar charging cable, 2073.6wh lfp battery backup w/ 4 2600w ac outlets, 17-year lifespan, solar generator for camping, off-grid",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 798.97,
+      "avg30": 1006.02,
+      "avg90": 1030.79,
+      "low365": 798.97,
+      "rating": 4.5,
+      "reviewCount": 70,
+      "rank": 11994,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81wRRuaZEaL.jpg",
+      "url": "https://www.amazon.com/dp/B0DCJXQQYH",
+      "keepa": "https://keepa.com/#!product/1-B0DCJXQQYH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 81,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 33,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 70,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 3,
+        "rating": 7,
+        "priceTier": 10
+      }
+    },
+    {
+      "asin": "B0CX8M7LMH",
+      "parentAsin": "B0CW5BPLL6",
+      "familyKey": "B0CW5BPLL6",
+      "variationCount": 2,
+      "productAgeDays": 836,
+      "title": "anker solix bp3800 emergency expansion battery, 3840wh lifepo4 with 10-year lifespan, extra battery for home, rv, black",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "552354",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552354",
+          "name": "battery packs"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1259.99,
+      "avg30": 1427.68,
+      "avg90": 1408.76,
+      "low365": 1259.99,
+      "rating": 5,
+      "reviewCount": 3,
+      "rank": 3002,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Ofx2yCVKL.jpg",
+      "url": "https://www.amazon.com/dp/B0CX8M7LMH",
+      "keepa": "https://keepa.com/#!product/1-B0CX8M7LMH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.993Z",
+      "dealScore": 98,
+      "scoreBreakdown": {
+        "rating": 25,
+        "discount": 15,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 68,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 10
       }
     },
     {
@@ -377,6 +1112,75 @@
         "reviews": 13,
         "rating": 9,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0FMHB6XXL",
+      "parentAsin": "B0FKBHB3WS",
+      "familyKey": "B0FKBHB3WS",
+      "variationCount": 8,
+      "productAgeDays": 310,
+      "title": "bluetti elite 30 v2 portable power station, 288wh lifepo4 battery with 600w ac outlet (power lifting 1500w), fast charge solar generator, ups backup power for outage, camping, road trip",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 219,
+      "avg30": 258.44,
+      "avg90": 270.6,
+      "low365": 189.05,
+      "rating": 4.5,
+      "reviewCount": 24,
+      "rank": 2420,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Oi+gxyYtL.jpg",
+      "url": "https://www.amazon.com/dp/B0FMHB6XXL",
+      "keepa": "https://keepa.com/#!product/1-B0FMHB6XXL",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.993Z",
+      "dealScore": 103,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 28,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 67,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 0,
+        "rating": 7,
+        "priceTier": 8
       }
     },
     {
@@ -537,6 +1341,75 @@
       }
     },
     {
+      "asin": "B0FHWFXYM5",
+      "parentAsin": "B0GCQKSZK6",
+      "familyKey": "B0GCQKSZK6",
+      "variationCount": 6,
+      "productAgeDays": 358,
+      "title": "bluetti elite 100 v2 portable power station and solar cable, 1024wh lfp battery backup w/ 4 1800w ac ports (3600w surge), 35% smaller, fast charge and ups solar generator for camping, road trip",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 449,
+      "avg30": 498.68,
+      "avg90": 512.69,
+      "low365": 398.99,
+      "rating": 4.7,
+      "reviewCount": 30,
+      "rank": 6884,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81bSug-KY-L.jpg",
+      "url": "https://www.amazon.com/dp/B0FHWFXYM5",
+      "keepa": "https://keepa.com/#!product/1-B0FHWFXYM5",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.993Z",
+      "dealScore": 61,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 65,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 0,
+        "rating": 9,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B0D1TVLWPM",
       "parentAsin": "B0G1YDL2SG",
       "familyKey": "B0G1YDL2SG",
@@ -608,6 +1481,75 @@
         "reviews": 8,
         "rating": 8,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0FS6LST8G",
+      "parentAsin": "B0FZ9QMSGJ",
+      "familyKey": "B0FZ9QMSGJ",
+      "variationCount": 4,
+      "productAgeDays": 283,
+      "title": "bluetti solar generator elite 10 with 60w solar panel included (ship separately), 128wh mini power station with 200w ac outlet, palm-size portable power for camping, outages, and ups backup",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 218.99,
+      "avg30": 266.94,
+      "avg90": 257.68,
+      "low365": 218.99,
+      "rating": 5,
+      "reviewCount": 2,
+      "rank": 18973,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81AG8qrhq9L.jpg",
+      "url": "https://www.amazon.com/dp/B0FS6LST8G",
+      "keepa": "https://keepa.com/#!product/1-B0FS6LST8G",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 25,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 64,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 8
       }
     },
     {
@@ -687,6 +1629,75 @@
         "reviews": 13,
         "rating": 10,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0CZ6FHZD4",
+      "parentAsin": "B0D7W2F2F5",
+      "familyKey": "B0D7W2F2F5",
+      "variationCount": 3,
+      "productAgeDays": 833,
+      "title": "bluetti ac50b solar generator with 100w solar panel included (ships separately), 448wh/700w portable power station, 65w usb-c pd output, lifepo4 battery backup for travel, camping, outage",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 434.99,
+      "avg30": 475.38,
+      "avg90": 512.26,
+      "low365": 399,
+      "rating": 4.5,
+      "reviewCount": 43,
+      "rank": 21004,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71WFiTDEJFL.jpg",
+      "url": "https://www.amazon.com/dp/B0CZ6FHZD4",
+      "keepa": "https://keepa.com/#!product/1-B0CZ6FHZD4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 72,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 63,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 0,
+        "rating": 7,
+        "priceTier": 10
       }
     },
     {
@@ -1076,6 +2087,75 @@
         "reviews": 6,
         "rating": 8,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0G8XDJSNG",
+      "parentAsin": "B0GCCC98DP",
+      "familyKey": "B0GCCC98DP",
+      "variationCount": 6,
+      "productAgeDays": 198,
+      "title": "bluetti elite 400 portable power station with charger 1 (ship separately), 560w dc-dc alternator charger, 7.5h full charge via car, 3840wh 2600w lfp batttery backup for home backup, outage, rv life",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1498.97,
+      "avg30": 1664.99,
+      "avg90": 1779.59,
+      "low365": 1498.97,
+      "rating": 5,
+      "reviewCount": 2,
+      "rank": 34267,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81NiGGAXsvL.jpg",
+      "url": "https://www.amazon.com/dp/B0G8XDJSNG",
+      "keepa": "https://keepa.com/#!product/1-B0G8XDJSNG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 25,
+        "discount": 23,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 62,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 10
       }
     },
     {
@@ -1705,6 +2785,75 @@
       }
     },
     {
+      "asin": "B0FCSCXD6X",
+      "parentAsin": "B0H11FSNNN",
+      "familyKey": "B0H11FSNNN",
+      "variationCount": 11,
+      "productAgeDays": 390,
+      "title": "jackery explorer 2000 v2 portable power station with explorer 300, 2042wh lifepo4 battery, 2200w solar generator, usb-c pd 100w fast charging for camping, home use(solar panel optional)",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 998.99,
+      "avg30": 1219.46,
+      "avg90": 1084.49,
+      "low365": 869,
+      "rating": 5,
+      "reviewCount": 4,
+      "rank": 3390,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61YHco348bL.jpg",
+      "url": "https://www.amazon.com/dp/B0FCSCXD6X",
+      "keepa": "https://keepa.com/#!product/1-B0FCSCXD6X",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.993Z",
+      "dealScore": 92,
+      "scoreBreakdown": {
+        "rating": 25,
+        "discount": 11,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B0CRYYLPZC",
       "parentAsin": "B0D91XLSD1",
       "familyKey": "B0D91XLSD1",
@@ -1785,6 +2934,75 @@
         "reviews": 6,
         "rating": 8,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0GK5LZGN6",
+      "parentAsin": "B0GWHWP3D6",
+      "familyKey": "B0GWHWP3D6",
+      "variationCount": 9,
+      "productAgeDays": 162,
+      "title": "anker solix c1000 portable power station with alternator charger, 1800w (peak 2400w) solar generator, full charge in 58 min, 1056wh lifepo4 battery for home backup, power outages, and outdoor camping",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 728.99,
+      "avg30": 880.28,
+      "avg90": 853.35,
+      "low365": 696.98,
+      "rating": null,
+      "reviewCount": null,
+      "rank": 3997,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61QnI2UBHIL.jpg",
+      "url": "https://www.amazon.com/dp/B0GK5LZGN6",
+      "keepa": "https://keepa.com/#!product/1-B0GK5LZGN6",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.993Z",
+      "dealScore": 74,
+      "scoreBreakdown": {
+        "rating": 0,
+        "discount": 21,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
       }
     },
     {
@@ -1941,6 +3159,213 @@
       }
     },
     {
+      "asin": "B0FR555DVH",
+      "parentAsin": "B0GHRXGH64",
+      "familyKey": "B0GHRXGH64",
+      "variationCount": 4,
+      "productAgeDays": 296,
+      "title": "jackery explorer 500 v2 portable power station, 512wh lifepo4 battery, 500w ac/1000w peak, solar generator for camping, outdoors, and power outages",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 319,
+      "avg30": 349.68,
+      "avg90": 348.14,
+      "low365": 296,
+      "rating": 4.5,
+      "reviewCount": 61,
+      "rank": 13414,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61cDB-aF5GL.jpg",
+      "url": "https://www.amazon.com/dp/B0FR555DVH",
+      "keepa": "https://keepa.com/#!product/1-B0FR555DVH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 3,
+        "rating": 7,
+        "priceTier": 10
+      }
+    },
+    {
+      "asin": "B0FXB188B8",
+      "parentAsin": "B0H5CRPSL9",
+      "familyKey": "B0H5CRPSL9",
+      "variationCount": 9,
+      "productAgeDays": 240,
+      "title": "jackery explorer 240d power bank (80,000mah), lifepo4 battery 256wh portable power station, usb-c cable included,200w dc output,1-hour fast charging, compact for outdoor camping, travel, emergencies",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 128.99,
+      "avg30": 145.71,
+      "avg90": 139.4,
+      "low365": 128.99,
+      "rating": 4.6,
+      "reviewCount": 95,
+      "rank": 509,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71KVhBABCmL.jpg",
+      "url": "https://www.amazon.com/dp/B0FXB188B8",
+      "keepa": "https://keepa.com/#!product/1-B0FXB188B8",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.993Z",
+      "dealScore": 87,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 11,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 57,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 3,
+        "rating": 8,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0CG3D72QC",
+      "parentAsin": "B0D2H7GR1T",
+      "familyKey": "B0D2H7GR1T",
+      "variationCount": 2,
+      "productAgeDays": 1057,
+      "title": "bluetti ac180 portable power station, 1152wh solar generator w/ 4 1800w (2700w peak) ac outlets, 0-80% in 45 min, lifepo4 battery backup for camping, road trip, outages, home backup",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 448.98,
+      "avg30": 523.88,
+      "avg90": 578.25,
+      "low365": 448.98,
+      "rating": 4.7,
+      "reviewCount": 40,
+      "rank": 154200,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81I-o4zon7L.jpg",
+      "url": "https://www.amazon.com/dp/B0CG3D72QC",
+      "keepa": "https://keepa.com/#!product/1-B0CG3D72QC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 84,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 33,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 57,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 0,
+        "rating": 9,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B07V2JR2DY",
       "parentAsin": "B0G1ZL1873",
       "familyKey": "B0G1ZL1873",
@@ -2021,6 +3446,80 @@
         "reviews": 8,
         "rating": 9,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B09B9RJLM7",
+      "parentAsin": "B0D2H6W795",
+      "familyKey": "B0D2H6W795",
+      "variationCount": 5,
+      "productAgeDays": 1771,
+      "title": "bluetti 200w solar panel for solar generator eb3a ac2a ac50b ac70 ac180 ac200l elite 200 v2 ac300 ac500 b300k, foldable solar charger with adjustable kickstands for rv, camping, blackout",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "2236628011",
+        "2972638011",
+        "552808",
+        "3236381"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "3236381",
+          "name": "solar & wind power"
+        },
+        {
+          "id": "2236628011",
+          "name": "solar panels"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 348.99,
+      "avg30": 383.46,
+      "avg90": 382.07,
+      "low365": 329,
+      "rating": 4.4,
+      "reviewCount": 448,
+      "rank": 29234,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71whi3FVXOL.jpg",
+      "url": "https://www.amazon.com/dp/B09B9RJLM7",
+      "keepa": "https://keepa.com/#!product/1-B09B9RJLM7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 62,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 57,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 10
       }
     },
     {
@@ -2323,6 +3822,75 @@
         "discount": 14,
         "brand": 20,
         "demand": 12,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
+      }
+    },
+    {
+      "asin": "B0GD5M8XPW",
+      "parentAsin": "B0FXPZZVSJ",
+      "familyKey": "B0FXPZZVSJ",
+      "variationCount": 8,
+      "productAgeDays": 188,
+      "title": "bluetti ac200pl solar generator with 2 200w solar panel (ship separately), 2304wh portable power station, expandable to 8448wh, 4 2400w ac outlets (3600w power lifting), tt30 output for rv, outage",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1548.99,
+      "avg30": 1728.86,
+      "avg90": 1810.15,
+      "low365": 1299,
+      "rating": null,
+      "reviewCount": null,
+      "rank": 8186,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71aiy3gWB4L.jpg",
+      "url": "https://www.amazon.com/dp/B0GD5M8XPW",
+      "keepa": "https://keepa.com/#!product/1-B0GD5M8XPW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.993Z",
+      "dealScore": 44,
+      "scoreBreakdown": {
+        "rating": 0,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 56,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 16,
         "reviews": 0,
         "rating": 0,
         "priceTier": 10
@@ -2863,6 +4431,81 @@
       }
     },
     {
+      "asin": "B0BNZW5HJY",
+      "parentAsin": "",
+      "familyKey": "B0BNZW5HJY",
+      "variationCount": 0,
+      "productAgeDays": 1306,
+      "title": "anker usb c hub (10-in-1), dual monitor with 4k hdmi, max 100w power delivery, dual 4k hdmi ports, 4 usb-a/usb-c data ports, ethernet and sd card reader for dell laptop, thinkpad, and more",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "17387627011",
+        "16310161",
+        "172282",
+        "541966",
+        "172456"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "541966",
+          "name": "computers & accessories"
+        },
+        {
+          "id": "172456",
+          "name": "computer accessories & peripherals"
+        },
+        {
+          "id": "17387627011",
+          "name": "usb hubs"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 65.99,
+      "avg30": 107.8,
+      "avg90": 108.36,
+      "low365": 58.99,
+      "rating": 4.2,
+      "reviewCount": 257,
+      "rank": null,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/614ItqC4F2L.jpg",
+      "url": "https://www.amazon.com/dp/B0BNZW5HJY",
+      "keepa": "https://keepa.com/#!product/1-B0BNZW5HJY",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 107,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 58,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 54,
+      "normalizedScoreBreakdown": {
+        "discount": 22,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 0,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B07MDDT2LV",
       "parentAsin": "B0F63FC2GW",
       "familyKey": "B0F63FC2GW",
@@ -3348,6 +4991,75 @@
       }
     },
     {
+      "asin": "B0DLGZPKF7",
+      "parentAsin": "B0H4HHGHN5",
+      "familyKey": "B0H4HHGHN5",
+      "variationCount": 10,
+      "productAgeDays": 610,
+      "title": "anker solix f3800 portable power station with home power panel, 120v/240v dual voltage, 3840wh whole-home backup, 6000w ac output, solar generator, rv, emergencies, power outages",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 2599.99,
+      "avg30": 3307.6,
+      "avg90": 3055.26,
+      "low365": 2599.99,
+      "rating": 4,
+      "reviewCount": 3,
+      "rank": 23210,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61g+YxaHh+L.jpg",
+      "url": "https://www.amazon.com/dp/B0DLGZPKF7",
+      "keepa": "https://keepa.com/#!product/1-B0DLGZPKF7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 20,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B0000225V7",
       "parentAsin": "B00VWSVP08",
       "familyKey": "B00VWSVP08",
@@ -3505,6 +5217,80 @@
       }
     },
     {
+      "asin": "B0CTC2L6FP",
+      "parentAsin": "",
+      "familyKey": "B0CTC2L6FP",
+      "variationCount": 0,
+      "productAgeDays": 894,
+      "title": "anker everfrost 50 powered cooler, 53l portable refrigerator for car, powered cooler with 299wh battery, powered by ac/dc or solar, for outdoor camping, travel, and fishing, fits in trucks",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "15735671",
+        "15684181",
+        "15857501",
+        "15735661"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "15857501",
+          "name": "interior accessories"
+        },
+        {
+          "id": "15735661",
+          "name": "electrical appliances"
+        },
+        {
+          "id": "15735671",
+          "name": "coolers & refrigerators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 499.99,
+      "avg30": 565.63,
+      "avg90": 597.28,
+      "low365": 499.99,
+      "rating": 4.5,
+      "reviewCount": 2,
+      "rank": 248396,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/616AhDYqucL.jpg",
+      "url": "https://www.amazon.com/dp/B0CTC2L6FP",
+      "keepa": "https://keepa.com/#!product/1-B0CTC2L6FP",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 74,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 24,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 51,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 0,
+        "rating": 7,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B00ZUKZYFQ",
       "parentAsin": "B0135MYDE8",
       "familyKey": "B0135MYDE8",
@@ -3650,6 +5436,75 @@
         "reviews": 6,
         "rating": 9,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0FFS8G84S",
+      "parentAsin": "B0H113C2TB",
+      "familyKey": "B0H113C2TB",
+      "variationCount": 9,
+      "productAgeDays": 372,
+      "title": "jackery homepower 3000 portable power station and transfer switch with 2x 200w panels, 3600w (surge 7200w) output, 3072wh lfp battery solar generator, usb-a/c for essential home backup, emergencies",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 2058.99,
+      "avg30": 2438.4,
+      "avg90": 2277,
+      "low365": 1619.1,
+      "rating": 4.3,
+      "reviewCount": 15,
+      "rank": 10682,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81dNMWi2UBL.jpg",
+      "url": "https://www.amazon.com/dp/B0FFS8G84S",
+      "keepa": "https://keepa.com/#!product/1-B0FFS8G84S",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 61,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 51,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 0,
+        "rating": 3,
+        "priceTier": 10
       }
     },
     {
@@ -4061,6 +5916,80 @@
         "reviews": 6,
         "rating": 8,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0DXF76179",
+      "parentAsin": "B0GLPTN5G4",
+      "familyKey": "B0GLPTN5G4",
+      "variationCount": 7,
+      "productAgeDays": 499,
+      "title": "anker solix everfrost 2 58l cooler with road trip kit, 61 qt car refrigerator, electric cooler with 288wh battery, powered by ac/dc or solar, for camping, travel, fishing (only 1 battery included)",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "15735671",
+        "15684181",
+        "15857501",
+        "15735661"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "15857501",
+          "name": "interior accessories"
+        },
+        {
+          "id": "15735661",
+          "name": "electrical appliances"
+        },
+        {
+          "id": "15735671",
+          "name": "coolers & refrigerators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 899.99,
+      "avg30": 1036.93,
+      "avg90": 1012.3,
+      "low365": 769,
+      "rating": 4.1,
+      "reviewCount": 29,
+      "rank": 28580,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61+pepQGx3L.jpg",
+      "url": "https://www.amazon.com/dp/B0DXF76179",
+      "keepa": "https://keepa.com/#!product/1-B0DXF76179",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 20,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
       }
     },
     {
@@ -4527,6 +6456,75 @@
       }
     },
     {
+      "asin": "B0FJ1XLM9H",
+      "parentAsin": "B0FK9VBYWY",
+      "familyKey": "B0FK9VBYWY",
+      "variationCount": 4,
+      "productAgeDays": 358,
+      "title": "bluetti apex 300 solar generator with 2 200w solar panels, 2764.8wh lfp battery backup with 6 3840w ac outlets (7680w surge), 120v/240v dual voltage, ideal for camping and off-grid living",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 2048.99,
+      "avg30": 2310.16,
+      "avg90": 2390.01,
+      "low365": 1799,
+      "rating": 4.4,
+      "reviewCount": 6,
+      "rank": 298562,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81P2t9+ADCL.jpg",
+      "url": "https://www.amazon.com/dp/B0FJ1XLM9H",
+      "keepa": "https://keepa.com/#!product/1-B0FJ1XLM9H",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 45,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 0,
+        "rating": 5,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B097S8X5X9",
       "parentAsin": "B0FRNQK1Q2",
       "familyKey": "B0FRNQK1Q2",
@@ -4606,6 +6604,75 @@
         "demand": 4,
         "reviews": 6,
         "rating": 3,
+        "priceTier": 10
+      }
+    },
+    {
+      "asin": "B0FS6FWHCW",
+      "parentAsin": "B0GCS53DG5",
+      "familyKey": "B0GCS53DG5",
+      "variationCount": 3,
+      "productAgeDays": 286,
+      "title": "bluetti 51.2v 100ah lifepo4 lithium battery with bluetooth, built-in 200a bms, self-heating, 6000+ cycles, ip65 waterproof & dustproof, 10-year lifespan for rv, boat, solar off-grid",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1899,
+      "avg30": 2189.5,
+      "avg90": 2262.99,
+      "low365": 1699,
+      "rating": 3.8,
+      "reviewCount": 4,
+      "rank": 602751,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61NSwgXBA-L.jpg",
+      "url": "https://www.amazon.com/dp/B0FS6FWHCW",
+      "keepa": "https://keepa.com/#!product/1-B0FS6FWHCW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 19,
+        "discount": 24,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 0,
+        "rating": 0,
         "priceTier": 10
       }
     },
@@ -5416,6 +7483,145 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0G13DFFL5",
+      "parentAsin": "",
+      "familyKey": "B0G13DFFL5",
+      "variationCount": 0,
+      "productAgeDays": 247,
+      "title": "bluetti rvsolar system, all-in-one 5000w 5120wh rv power kit: rv5 power hub + 51.2v 100ah lifepo₄ battery with 6000+ cycles for camper van, fifth-wheel trailer, motorhome, boat, off-grid (basic kit)",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "2504395011",
+        "348967011",
+        "15684181",
+        "2258019011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "2258019011",
+          "name": "rv parts & accessories"
+        },
+        {
+          "id": "2504395011",
+          "name": "electronics"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 3299,
+      "avg30": 3613.68,
+      "avg90": 3830.01,
+      "low365": 2799,
+      "rating": null,
+      "reviewCount": null,
+      "rank": 840807,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81oDcALBfLL.jpg",
+      "url": "https://www.amazon.com/dp/B0G13DFFL5",
+      "keepa": "https://keepa.com/#!product/1-B0G13DFFL5",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 40,
+      "scoreBreakdown": {
+        "rating": 0,
+        "discount": 20,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 40,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
+      }
+    },
+    {
+      "asin": "B0F42554XX",
+      "parentAsin": "B0GPVLKJTX",
+      "familyKey": "B0GPVLKJTX",
+      "variationCount": 14,
+      "productAgeDays": 358,
+      "title": "bluetti apex 300 solar generator with 3 200w solar panels, 2764.8wh lfp battery backup with 6 3840w ac outlets (7680w surge), 120v/240v dual voltage, ideal for camping and off-grid living",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 2399,
+      "avg30": 2689.8,
+      "avg90": 2649.77,
+      "low365": 2124,
+      "rating": null,
+      "reviewCount": null,
+      "rank": 59445,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81wxp4YVTzL.jpg",
+      "url": "https://www.amazon.com/dp/B0F42554XX",
+      "keepa": "https://keepa.com/#!product/1-B0F42554XX",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-11T19:20:35.994Z",
+      "dealScore": 37,
+      "scoreBreakdown": {
+        "rating": 0,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 40,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
       }
     },
     {

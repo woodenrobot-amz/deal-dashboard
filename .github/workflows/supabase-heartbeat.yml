@@ -1,0 +1,66 @@
+name: Supabase Project Heartbeat
+
+on:
+  schedule:
+    # Every 3 days at 9:17 AM UTC
+    - cron: "17 9 */3 * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Supabase and update heartbeat
+        shell: bash
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          set -euo pipefail
+
+          echo "Reading active deal count..."
+
+          RESPONSE_HEADERS=$(mktemp)
+
+          curl --fail-with-body --silent --show-error \
+            --dump-header "$RESPONSE_HEADERS" \
+            "${SUPABASE_URL}/rest/v1/deals?status=eq.active&select=id" \
+            -H "apikey: ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "Prefer: count=exact" \
+            -H "Range: 0-0" \
+            -o /dev/null
+
+          CONTENT_RANGE=$(grep -i '^content-range:' "$RESPONSE_HEADERS" | tr -d '\r')
+          ACTIVE_DEAL_COUNT=$(echo "$CONTENT_RANGE" | sed -E 's|.*/([0-9]+).*|\1|')
+
+          if ! [[ "$ACTIVE_DEAL_COUNT" =~ ^[0-9]+$ ]]; then
+            echo "Could not determine active deal count."
+            cat "$RESPONSE_HEADERS"
+            exit 1
+          fi
+
+          echo "Active deals: ${ACTIVE_DEAL_COUNT}"
+          echo "Updating heartbeat record..."
+
+          curl --fail-with-body --silent --show-error \
+            --request POST \
+            "${SUPABASE_URL}/rest/v1/project_heartbeat?on_conflict=id" \
+            -H "apikey: ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "Content-Type: application/json" \
+            -H "Prefer: resolution=merge-duplicates,return=representation" \
+            --data "{
+              \"id\": 1,
+              \"checked_at\": \"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\",
+              \"active_deal_count\": ${ACTIVE_DEAL_COUNT},
+              \"source\": \"github-actions\"
+            }"
+
+          echo
+          echo "Supabase heartbeat completed successfully."

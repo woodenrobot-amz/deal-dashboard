@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-14T11:02:43.365Z",
+  "generatedAt": "2026-07-14T11:03:22.559Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "dudes_power",
-  "dealCount": 415,
+  "lastEnrichmentStream": "woodworking_test",
+  "dealCount": 419,
   "deals": [
     {
       "asin": "B00SOU6LR4",
@@ -5907,6 +5907,86 @@
         "rating": 10,
         "priceTier": 8
       }
+    },
+    {
+      "asin": "B0F2YN5TCN",
+      "parentAsin": "B0H79FRMRR",
+      "familyKey": "B0H79FRMRR",
+      "variationCount": 13,
+      "productAgeDays": 467,
+      "title": "specraft 96\" red adjustable heavy duty workbench with 4 ac outlet and 2 usb ports power outlets, 6000 lbs capacity, rubber wood top for garage, workshop, office",
+      "brand": "specraft",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 287.99,
+      "avg30": 373.23,
+      "avg90": 386.41,
+      "low365": 287.99,
+      "rating": 4.6,
+      "reviewCount": 256,
+      "rank": 16337,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61-qeHkRk2L.jpg",
+      "url": "https://www.amazon.com/dp/B0F2YN5TCN",
+      "keepa": "https://keepa.com/#!product/1-B0F2YN5TCN",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-14T11:03:22.557Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 38,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 56,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 8
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0DG5TF2Z2",
+        "B0F2YN5TCN"
+      ]
     },
     {
       "asin": "B0CLQT9F2J",
@@ -12420,6 +12500,80 @@
       }
     },
     {
+      "asin": "B07DDNPRP4",
+      "parentAsin": "",
+      "familyKey": "B07DDNPRP4",
+      "variationCount": 0,
+      "productAgeDays": 2962,
+      "title": "huskytools workbench, extra deep 46 in. 9-drawer mobile, wood, black, 200 lb load capacity",
+      "brand": "huskytools",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 799.99,
+      "avg30": 1302.67,
+      "avg90": 1442.42,
+      "low365": 799.99,
+      "rating": 4.4,
+      "reviewCount": 145,
+      "rank": 435164,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61pSBQ61knL.jpg",
+      "url": "https://www.amazon.com/dp/B07DDNPRP4",
+      "keepa": "https://keepa.com/#!product/1-B07DDNPRP4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-14T11:03:22.558Z",
+      "dealScore": 96,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 66,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 5,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B01901C7JQ",
       "parentAsin": "",
       "familyKey": "B01901C7JQ",
@@ -13701,7 +13855,13 @@
         "reviews": 15,
         "rating": 7,
         "priceTier": 2
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0C1GNBKK4",
+        "B0C1GP2NWB"
+      ]
     },
     {
       "asin": "B0G43LTQ9X",
@@ -14869,80 +15029,6 @@
         "demand": 0,
         "reviews": 0,
         "rating": 0,
-        "priceTier": 6
-      }
-    },
-    {
-      "asin": "B0DG5TF2Z2",
-      "parentAsin": "B0H79FRMRR",
-      "familyKey": "B0H79FRMRR",
-      "variationCount": 13,
-      "productAgeDays": 643,
-      "title": "specraft adjustable heavy duty workbench with 4 ac outlet and 2 usb ports power outlets, 2000 lbs capacity, rubber wood top for garage, workshop, office",
-      "brand": "specraft",
-      "brandTier": "off",
-      "category": "woodworking_test",
-      "keepaCategoryIds": [
-        "553602",
-        "228013",
-        "551240",
-        "553516"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "228013",
-          "name": "tools & home improvement"
-        },
-        {
-          "id": "551240",
-          "name": "building supplies"
-        },
-        {
-          "id": "553516",
-          "name": "material handling"
-        },
-        {
-          "id": "553602",
-          "name": "workbenches"
-        }
-      ],
-      "sourceStream": "woodworking_test",
-      "sources": [
-        "keepa"
-      ],
-      "price": 118.99,
-      "avg30": 135.04,
-      "avg90": 138.03,
-      "low365": 111.99,
-      "rating": 4.6,
-      "reviewCount": 256,
-      "rank": 14397,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/61gKg-aspCL.jpg",
-      "url": "https://www.amazon.com/dp/B0DG5TF2Z2",
-      "keepa": "https://keepa.com/#!product/1-B0DG5TF2Z2",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": false,
-      "updatedAt": "2026-07-13T10:37:44.192Z",
-      "dealScore": 49,
-      "scoreBreakdown": {
-        "rating": 23,
-        "discount": 20,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 3,
-        "productAge": 3,
-        "streamFit": 0,
-        "brand": 0
-      },
-      "normalizedScore": 44,
-      "normalizedScoreBreakdown": {
-        "discount": 10,
-        "brand": 0,
-        "demand": 12,
-        "reviews": 8,
-        "rating": 8,
         "priceTier": 6
       }
     },
@@ -18764,6 +18850,80 @@
       }
     },
     {
+      "asin": "B0DW3MH4W8",
+      "parentAsin": "B0FM2SG9Z6",
+      "familyKey": "B0FM2SG9Z6",
+      "variationCount": 3,
+      "productAgeDays": 472,
+      "title": "walmann space saving wall mounted folding workbench, heavy duty folding wall table/desk for garage, workshop, holds up to 550 lbs(tabletop size: 47.25 x 22.75inch)",
+      "brand": "walmann",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.9,
+      "avg30": 129.79,
+      "avg90": 127.83,
+      "low365": 99.9,
+      "rating": 4.8,
+      "reviewCount": 80,
+      "rank": 84587,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61-6GPzDMIL.jpg",
+      "url": "https://www.amazon.com/dp/B0DW3MH4W8",
+      "keepa": "https://keepa.com/#!product/1-B0DW3MH4W8",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-14T11:03:22.557Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 32,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 39,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B003XU7BM4",
       "parentAsin": "B0FBMQXJ3Q",
       "familyKey": "B0FBMQXJ3Q",
@@ -19731,7 +19891,13 @@
         "reviews": 13,
         "rating": 9,
         "priceTier": 6
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B081V8Q93F",
+        "B081V7LR2S"
+      ]
     },
     {
       "asin": "B00AGJNBQA",
@@ -23574,6 +23740,86 @@
       }
     },
     {
+      "asin": "B07JJ6TWXZ",
+      "parentAsin": "B0DJCGQVXB",
+      "familyKey": "B0DJCGQVXB",
+      "variationCount": 28,
+      "productAgeDays": 2777,
+      "title": "amgood stainless steel work table open base | nsf kitchen island food prep | laundry garage utility bench (96\" long x 24\" deep)",
+      "brand": "amgood",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 799.95,
+      "avg30": 888.25,
+      "avg90": 896.05,
+      "low365": 799.95,
+      "rating": 4.5,
+      "reviewCount": 217,
+      "rank": 138286,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/619sVZBNOYL.jpg",
+      "url": "https://www.amazon.com/dp/B07JJ6TWXZ",
+      "keepa": "https://keepa.com/#!product/1-B07JJ6TWXZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-14T11:03:22.557Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 33,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 7,
+        "priceTier": 10
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B07JJJTD9X",
+        "B07JJ6TWXZ"
+      ]
+    },
+    {
       "asin": "B0131R6FOS",
       "parentAsin": "B07R9864RV",
       "familyKey": "B07R9864RV",
@@ -27163,6 +27409,89 @@
       }
     },
     {
+      "asin": "B0CT3CXSH7",
+      "parentAsin": "B0FQ4P8FD4",
+      "familyKey": "B0FQ4P8FD4",
+      "variationCount": 2,
+      "productAgeDays": 848,
+      "title": "shall 12 in heavy-duty bar clamps, 4-pack drop forged steel welding f clamps, all-steel thick rail wood clamps with 1200lbs load limit for woodworking, welding, metal working | 4-3/4\" throat",
+      "brand": "shall",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "3207128011",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "553150",
+          "name": "clamps"
+        },
+        {
+          "id": "3207128011",
+          "name": "bar clamps"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 62.99,
+      "avg30": 73.74,
+      "avg90": 73.74,
+      "low365": 62.99,
+      "rating": 4.4,
+      "reviewCount": 92,
+      "rank": 46919,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71cN31xd1vL.jpg",
+      "url": "https://www.amazon.com/dp/B0CT3CXSH7",
+      "keepa": "https://keepa.com/#!product/1-B0CT3CXSH7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-14T11:03:22.557Z",
+      "dealScore": 51,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 3,
+        "rating": 5,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B000P4LJNI",
       "parentAsin": "B0BRQTHBVM",
       "familyKey": "B0BRQTHBVM",
@@ -28172,80 +28501,6 @@
         "reviews": 0,
         "rating": 7,
         "priceTier": 2
-      }
-    },
-    {
-      "asin": "B07JJJTD9X",
-      "parentAsin": "B0DJCGQVXB",
-      "familyKey": "B0DJCGQVXB",
-      "variationCount": 28,
-      "productAgeDays": 2776,
-      "title": "amgood stainless steel work table open base | nsf kitchen island food prep | laundry garage utility bench (96\" long x 30\" deep)",
-      "brand": "amgood",
-      "brandTier": "off",
-      "category": "woodworking_test",
-      "keepaCategoryIds": [
-        "553602",
-        "228013",
-        "551240",
-        "553516"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "228013",
-          "name": "tools & home improvement"
-        },
-        {
-          "id": "551240",
-          "name": "building supplies"
-        },
-        {
-          "id": "553516",
-          "name": "material handling"
-        },
-        {
-          "id": "553602",
-          "name": "workbenches"
-        }
-      ],
-      "sourceStream": "woodworking_test",
-      "sources": [
-        "keepa"
-      ],
-      "price": 899.95,
-      "avg30": 983.17,
-      "avg90": 994.35,
-      "low365": 899.95,
-      "rating": 4.5,
-      "reviewCount": 217,
-      "rank": 143092,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/5162da20f9L.jpg",
-      "url": "https://www.amazon.com/dp/B07JJJTD9X",
-      "keepa": "https://keepa.com/#!product/1-B07JJJTD9X",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": false,
-      "updatedAt": "2026-07-13T10:37:44.193Z",
-      "dealScore": 52,
-      "scoreBreakdown": {
-        "rating": 22,
-        "discount": 14,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 8,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 0
-      },
-      "normalizedScore": 29,
-      "normalizedScoreBreakdown": {
-        "discount": 6,
-        "brand": 0,
-        "demand": 0,
-        "reviews": 6,
-        "rating": 7,
-        "priceTier": 10
       }
     },
     {
@@ -31657,6 +31912,80 @@
         "reviews": 0,
         "rating": 7,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B08X1ZSSW2",
+      "parentAsin": "B09DV85MFR",
+      "familyKey": "B09DV85MFR",
+      "variationCount": 4,
+      "productAgeDays": 1823,
+      "title": "seville classics ultrahd heavy duty rolling cabinet workbench table w/solid wood top, workstation for garage, warehouse, office, workshop, 77\" w x 20\" d x 37.5\" h, granite, 11-drawer",
+      "brand": "seville classics",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 839.15,
+      "avg30": 860.86,
+      "avg90": 830.83,
+      "low365": 600,
+      "rating": 4.4,
+      "reviewCount": 468,
+      "rank": 216739,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71DFcs4hutL.jpg",
+      "url": "https://www.amazon.com/dp/B08X1ZSSW2",
+      "keepa": "https://keepa.com/#!product/1-B08X1ZSSW2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-14T11:03:22.558Z",
+      "dealScore": 30,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 23,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 10
       }
     },
     {

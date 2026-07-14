@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-14T11:02:00.030Z",
+  "generatedAt": "2026-07-14T11:02:43.365Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
+  "lastEnrichmentStream": "dudes_power",
   "dealCount": 415,
   "deals": [
     {
@@ -372,7 +372,13 @@
         "reviews": 11,
         "rating": 8,
         "priceTier": 4
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FHWLHMSN",
+        "B0FHWK3W1S"
+      ]
     },
     {
       "asin": "B01M0J08MF",
@@ -749,6 +755,81 @@
         "rating": 10,
         "priceTier": 2
       }
+    },
+    {
+      "asin": "B0FCXYF7ZH",
+      "parentAsin": "B0H5CRPSL9",
+      "familyKey": "B0H5CRPSL9",
+      "variationCount": 9,
+      "productAgeDays": 396,
+      "title": "jackery portable power station explorer 300 dune white, 292wh backup lifepo4 battery, solar generator for outdoors camping travel hunting blackout (solar panel optional)",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 209,
+      "avg30": 249.92,
+      "avg90": 271.03,
+      "low365": 209,
+      "rating": 4.7,
+      "reviewCount": 22,
+      "rank": 664,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61mYhbgHk6L.jpg",
+      "url": "https://www.amazon.com/dp/B0FCXYF7ZH",
+      "keepa": "https://keepa.com/#!product/1-B0FCXYF7ZH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-14T11:02:43.364Z",
+      "dealScore": 113,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 34,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 75,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 0,
+        "rating": 9,
+        "priceTier": 8
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FXB188B8",
+        "B0FCXYF7ZH"
+      ]
     },
     {
       "asin": "B094FMWPPM",
@@ -1251,7 +1332,13 @@
         "reviews": 15,
         "rating": 3,
         "priceTier": 2
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0B469LWF4",
+        "B0B4683SG9"
+      ]
     },
     {
       "asin": "B0GX1GHYMM",
@@ -2643,6 +2730,81 @@
       }
     },
     {
+      "asin": "B0FGHLKGPW",
+      "parentAsin": "B0H113C2TB",
+      "familyKey": "B0H113C2TB",
+      "variationCount": 10,
+      "productAgeDays": 368,
+      "title": "jackery homepower 3000 portable power station with hand truck, 3600w (surge 7200w) output, 3072wh lfp battery solar generator, essential backup for home use, power outage, rv, emergencies",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1298.99,
+      "avg30": 1689.77,
+      "avg90": 1483.57,
+      "low365": 1019,
+      "rating": 5,
+      "reviewCount": 8,
+      "rank": 21881,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51UWv8vwOIL.jpg",
+      "url": "https://www.amazon.com/dp/B0FGHLKGPW",
+      "keepa": "https://keepa.com/#!product/1-B0FGHLKGPW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-14T11:02:43.364Z",
+      "dealScore": 70,
+      "scoreBreakdown": {
+        "rating": 25,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 62,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 10
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FFSN3FM9",
+        "B0FGHLKGPW"
+      ]
+    },
+    {
       "asin": "B0BF4HLRQ5",
       "parentAsin": "B0BJ86QSZH",
       "familyKey": "B0BJ86QSZH",
@@ -2797,75 +2959,6 @@
         "reviews": 13,
         "rating": 10,
         "priceTier": 4
-      }
-    },
-    {
-      "asin": "B0FFSN3FM9",
-      "parentAsin": "B0H113C2TB",
-      "familyKey": "B0H113C2TB",
-      "variationCount": 10,
-      "productAgeDays": 373,
-      "title": "jackery homepower 3000 portable power station with 4x 100w prime panels, 3600w (surge 7200w) output, 3072wh lfp battery solar generator, usb a/c, essential backup for home use, rv, emergencies, black",
-      "brand": "jackery",
-      "brandTier": "top",
-      "category": "dudes_power",
-      "keepaCategoryIds": [
-        "348967011",
-        "2972638011",
-        "552808"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "2972638011",
-          "name": "patio, lawn & garden"
-        },
-        {
-          "id": "552808",
-          "name": "generators & portable power"
-        },
-        {
-          "id": "348967011",
-          "name": "generators"
-        }
-      ],
-      "sourceStream": "dudes_power",
-      "sources": [
-        "keepa"
-      ],
-      "price": 1878.98,
-      "avg30": 2428.7,
-      "avg90": 2218.58,
-      "low365": 1444,
-      "rating": 4.4,
-      "reviewCount": 3,
-      "rank": 15903,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/611dTwDiG6L.jpg",
-      "url": "https://www.amazon.com/dp/B0FFSN3FM9",
-      "keepa": "https://keepa.com/#!product/1-B0FFSN3FM9",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": true,
-      "updatedAt": "2026-07-13T10:37:06.165Z",
-      "dealScore": 70,
-      "scoreBreakdown": {
-        "rating": 22,
-        "discount": 22,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 3,
-        "productAge": 3,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 61,
-      "normalizedScoreBreakdown": {
-        "discount": 14,
-        "brand": 20,
-        "demand": 12,
-        "reviews": 0,
-        "rating": 5,
-        "priceTier": 10
       }
     },
     {
@@ -3710,7 +3803,13 @@
         "reviews": 8,
         "rating": 7,
         "priceTier": 6
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B099WTPN8H",
+        "B09B9RJLM7"
+      ]
     },
     {
       "asin": "B00LIV0QJU",
@@ -3859,6 +3958,86 @@
         "rating": 9,
         "priceTier": 6
       }
+    },
+    {
+      "asin": "B0DRCNQW2C",
+      "parentAsin": "B0GLPTN5G4",
+      "familyKey": "B0GLPTN5G4",
+      "variationCount": 7,
+      "productAgeDays": 512,
+      "title": "anker solix everfrost 2 58l cooler, 61 qt car refrigerator, electric cooler with 288wh battery, powered by ac/dc or solar,for outdoor camping, travel, and fishing, fits in trucks",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "15735671",
+        "15684181",
+        "15857501",
+        "15735661"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "15857501",
+          "name": "interior accessories"
+        },
+        {
+          "id": "15735661",
+          "name": "electrical appliances"
+        },
+        {
+          "id": "15735671",
+          "name": "coolers & refrigerators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 799.98,
+      "avg30": 925.04,
+      "avg90": 962.7,
+      "low365": 719,
+      "rating": 4.1,
+      "reviewCount": 55,
+      "rank": 14827,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61GZ8caLu9L.jpg",
+      "url": "https://www.amazon.com/dp/B0DRCNQW2C",
+      "keepa": "https://keepa.com/#!product/1-B0DRCNQW2C",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-14T11:02:43.364Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 20,
+        "discount": 25,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 59,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 3,
+        "rating": 0,
+        "priceTier": 10
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FG7SHVT8",
+        "B0DRCNQW2C"
+      ]
     },
     {
       "asin": "B09ZF2FFYB",
@@ -4715,75 +4894,6 @@
         "reviews": 0,
         "rating": 8,
         "priceTier": 4
-      }
-    },
-    {
-      "asin": "B0FXB188B8",
-      "parentAsin": "B0H5CRPSL9",
-      "familyKey": "B0H5CRPSL9",
-      "variationCount": 9,
-      "productAgeDays": 242,
-      "title": "jackery explorer 240d power bank (80,000mah), lifepo4 battery 256wh portable power station, usb-c cable included,200w dc output,1-hour fast charging, compact for outdoor camping, travel, emergencies",
-      "brand": "jackery",
-      "brandTier": "top",
-      "category": "dudes_power",
-      "keepaCategoryIds": [
-        "348967011",
-        "2972638011",
-        "552808"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "2972638011",
-          "name": "patio, lawn & garden"
-        },
-        {
-          "id": "552808",
-          "name": "generators & portable power"
-        },
-        {
-          "id": "348967011",
-          "name": "generators"
-        }
-      ],
-      "sourceStream": "dudes_power",
-      "sources": [
-        "keepa"
-      ],
-      "price": 128.99,
-      "avg30": 145.71,
-      "avg90": 139.4,
-      "low365": 128.99,
-      "rating": 4.6,
-      "reviewCount": 95,
-      "rank": 660,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71KVhBABCmL.jpg",
-      "url": "https://www.amazon.com/dp/B0FXB188B8",
-      "keepa": "https://keepa.com/#!product/1-B0FXB188B8",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": true,
-      "isNameBrand": true,
-      "updatedAt": "2026-07-13T10:37:06.164Z",
-      "dealScore": 87,
-      "scoreBreakdown": {
-        "rating": 23,
-        "discount": 11,
-        "rank": 30,
-        "reviews": 0,
-        "variationFamily": 3,
-        "productAge": 0,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 57,
-      "normalizedScoreBreakdown": {
-        "discount": 0,
-        "brand": 20,
-        "demand": 20,
-        "reviews": 3,
-        "rating": 8,
-        "priceTier": 6
       }
     },
     {
@@ -5873,75 +5983,6 @@
       }
     },
     {
-      "asin": "B0GK5LZGN6",
-      "parentAsin": "B0GWHWP3D6",
-      "familyKey": "B0GWHWP3D6",
-      "variationCount": 9,
-      "productAgeDays": 164,
-      "title": "anker solix c1000 portable power station with alternator charger, 1800w (peak 2400w) solar generator, full charge in 58 min, 1056wh lifepo4 battery for home backup, power outages, and outdoor camping",
-      "brand": "anker",
-      "brandTier": "top",
-      "category": "dudes_power",
-      "keepaCategoryIds": [
-        "348967011",
-        "2972638011",
-        "552808"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "2972638011",
-          "name": "patio, lawn & garden"
-        },
-        {
-          "id": "552808",
-          "name": "generators & portable power"
-        },
-        {
-          "id": "348967011",
-          "name": "generators"
-        }
-      ],
-      "sourceStream": "dudes_power",
-      "sources": [
-        "keepa"
-      ],
-      "price": 728.99,
-      "avg30": 877.55,
-      "avg90": 852.44,
-      "low365": 696.98,
-      "rating": null,
-      "reviewCount": null,
-      "rank": 5540,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/61QnI2UBHIL.jpg",
-      "url": "https://www.amazon.com/dp/B0GK5LZGN6",
-      "keepa": "https://keepa.com/#!product/1-B0GK5LZGN6",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": true,
-      "updatedAt": "2026-07-13T10:37:06.165Z",
-      "dealScore": 44,
-      "scoreBreakdown": {
-        "rating": 0,
-        "discount": 21,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 3,
-        "productAge": 0,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 56,
-      "normalizedScoreBreakdown": {
-        "discount": 10,
-        "brand": 20,
-        "demand": 16,
-        "reviews": 0,
-        "rating": 0,
-        "priceTier": 10
-      }
-    },
-    {
       "asin": "B0GD5M8XPW",
       "parentAsin": "B0FXPZZVSJ",
       "familyKey": "B0FXPZZVSJ",
@@ -5984,6 +6025,81 @@
       "img": "https://images-na.ssl-images-amazon.com/images/I/71aiy3gWB4L.jpg",
       "url": "https://www.amazon.com/dp/B0GD5M8XPW",
       "keepa": "https://keepa.com/#!product/1-B0GD5M8XPW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-13T10:37:06.165Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 0,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 56,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0GD5M8XPW",
+        "B0CYBY2Y4P"
+      ]
+    },
+    {
+      "asin": "B0GK5LZGN6",
+      "parentAsin": "B0GWHWP3D6",
+      "familyKey": "B0GWHWP3D6",
+      "variationCount": 9,
+      "productAgeDays": 164,
+      "title": "anker solix c1000 portable power station with alternator charger, 1800w (peak 2400w) solar generator, full charge in 58 min, 1056wh lifepo4 battery for home backup, power outages, and outdoor camping",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 728.99,
+      "avg30": 877.55,
+      "avg90": 852.44,
+      "low365": 696.98,
+      "rating": null,
+      "reviewCount": null,
+      "rank": 5540,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61QnI2UBHIL.jpg",
+      "url": "https://www.amazon.com/dp/B0GK5LZGN6",
+      "keepa": "https://keepa.com/#!product/1-B0GK5LZGN6",
       "isLowAll": false,
       "drop1Day": 0,
       "isHot": false,
@@ -11528,80 +11644,6 @@
         "reviews": 3,
         "rating": 7,
         "priceTier": 4
-      }
-    },
-    {
-      "asin": "B0FG7SHVT8",
-      "parentAsin": "B0GLPTN5G4",
-      "familyKey": "B0GLPTN5G4",
-      "variationCount": 7,
-      "productAgeDays": 376,
-      "title": "anker solix everfrost 2 23l cooler,61 qt car refrigerator, electric cooler with 288wh battery, powered by ac/dc or solar,for outdoor camping, travel, and fishing, fits in trucks",
-      "brand": "anker",
-      "brandTier": "top",
-      "category": "dudes_power",
-      "keepaCategoryIds": [
-        "15735671",
-        "15684181",
-        "15857501",
-        "15735661"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "15684181",
-          "name": "automotive"
-        },
-        {
-          "id": "15857501",
-          "name": "interior accessories"
-        },
-        {
-          "id": "15735661",
-          "name": "electrical appliances"
-        },
-        {
-          "id": "15735671",
-          "name": "coolers & refrigerators"
-        }
-      ],
-      "sourceStream": "dudes_power",
-      "sources": [
-        "keepa"
-      ],
-      "price": 649.99,
-      "avg30": 725.56,
-      "avg90": 708.51,
-      "low365": 579,
-      "rating": 4,
-      "reviewCount": 4,
-      "rank": 21324,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/61+7m+39DWL.jpg",
-      "url": "https://www.amazon.com/dp/B0FG7SHVT8",
-      "keepa": "https://keepa.com/#!product/1-B0FG7SHVT8",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": true,
-      "updatedAt": "2026-07-13T10:37:06.165Z",
-      "dealScore": 55,
-      "scoreBreakdown": {
-        "rating": 20,
-        "discount": 12,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 0,
-        "productAge": 3,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 48,
-      "normalizedScoreBreakdown": {
-        "discount": 6,
-        "brand": 20,
-        "demand": 12,
-        "reviews": 0,
-        "rating": 0,
-        "priceTier": 10
       }
     },
     {

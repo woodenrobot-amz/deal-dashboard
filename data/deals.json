@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-16T10:32:17.717Z",
+  "generatedAt": "2026-07-16T10:32:56.853Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 232,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 235,
   "deals": [
     {
       "asin": "B0CYLL8Y89",
@@ -7889,6 +7889,89 @@
       }
     },
     {
+      "asin": "B0000225V7",
+      "parentAsin": "B00VWSVP08",
+      "familyKey": "B00VWSVP08",
+      "variationCount": 11,
+      "productAgeDays": 5431,
+      "title": "freud combination blade - 12\" dia., 60 teeth, .126\" kerf, comb grind",
+      "brand": "freud",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552292",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552292",
+          "name": "circular saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 111.7,
+      "avg30": 112.81,
+      "avg90": 109.01,
+      "low365": 69,
+      "rating": 4.7,
+      "reviewCount": 1014,
+      "rank": 49004,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71Mye9T+DmL.jpg",
+      "url": "https://www.amazon.com/dp/B0000225V7",
+      "keepa": "https://keepa.com/#!product/1-B0000225V7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-16T10:32:56.853Z",
+      "dealScore": 64,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 56,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 13,
+        "rating": 9,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0D9GBM8RF",
       "parentAsin": "",
       "familyKey": "B0D9GBM8RF",
@@ -14786,6 +14869,75 @@
       }
     },
     {
+      "asin": "B0C69TPBB8",
+      "parentAsin": "",
+      "familyKey": "B0C69TPBB8",
+      "variationCount": 0,
+      "productAgeDays": 1125,
+      "title": "flex stack pack 41-piece impact driver bit set - fam10102-41",
+      "brand": "flex",
+      "brandTier": "mid",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552262",
+        "228013",
+        "328182011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 28.04,
+      "avg30": 33.2,
+      "avg90": 33.06,
+      "low365": 28.04,
+      "rating": 4.5,
+      "reviewCount": 55,
+      "rank": 322818,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71dJq61VI4L.jpg",
+      "url": "https://www.amazon.com/dp/B0C69TPBB8",
+      "keepa": "https://keepa.com/#!product/1-B0C69TPBB8",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-16T10:32:56.853Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 36,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 12,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B00B19MA84",
       "parentAsin": "",
       "familyKey": "B00B19MA84",
@@ -17350,6 +17502,90 @@
         "reviews": 3,
         "rating": 3,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B00ILC71MO",
+      "parentAsin": "B087C8Y34X",
+      "familyKey": "B087C8Y34X",
+      "variationCount": 3,
+      "productAgeDays": 3874,
+      "title": "spyderco clipitool multi-functional stainless steel utility pocket knife with 2\" steel blade and screwdriver/bottle opener - plainedge - c175p",
+      "brand": "spyderco",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553232",
+        "3412851",
+        "228013",
+        "328182011",
+        "551238",
+        "23642827011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "23642827011",
+          "name": "knives, parts & accessories"
+        },
+        {
+          "id": "553222",
+          "name": "knives"
+        },
+        {
+          "id": "553232",
+          "name": "pocket knives & folding knives"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.77,
+      "avg30": 42.96,
+      "avg90": 43.37,
+      "low365": 28,
+      "rating": 4.5,
+      "reviewCount": 314,
+      "rank": 176811,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51XK38YY4rL.jpg",
+      "url": "https://www.amazon.com/dp/B00ILC71MO",
+      "keepa": "https://keepa.com/#!product/1-B00ILC71MO",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-16T10:32:56.852Z",
+      "dealScore": 42,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 23,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 7,
+        "priceTier": 2
       }
     },
     {

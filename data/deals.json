@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-16T00:07:54.935Z",
+  "generatedAt": "2026-07-16T00:08:30.692Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 156,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 157,
   "deals": [
     {
       "asin": "B00SOU6LR4",
@@ -5773,6 +5773,89 @@
         "reviews": 0,
         "rating": 10,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B00004T7M5",
+      "parentAsin": "",
+      "familyKey": "B00004T7M5",
+      "variationCount": 0,
+      "productAgeDays": 5443,
+      "title": "freud dish carving bit for decorative edge treatment - ideal for removing stock for bowls, trays, coasters & raised letter signs - 1/4\" radius, 1/2\" shank, 2-1/16\" length - 99-026",
+      "brand": "freud",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "3116541",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116541",
+          "name": "edge treatment & grooving bits"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 37.84,
+      "avg30": 41.36,
+      "avg90": 42.01,
+      "low365": 30.99,
+      "rating": 4.6,
+      "reviewCount": 66,
+      "rank": 764988,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61WH5glqhVL.jpg",
+      "url": "https://www.amazon.com/dp/B00004T7M5",
+      "keepa": "https://keepa.com/#!product/1-B00004T7M5",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-16T00:08:30.691Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 39,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 8,
+        "priceTier": 2
       }
     },
     {

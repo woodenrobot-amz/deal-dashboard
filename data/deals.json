@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-17T15:08:09.193Z",
+  "generatedAt": "2026-07-17T15:08:55.769Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 252,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 254,
   "deals": [
     {
       "asin": "B0CYLL8Y89",
@@ -16091,6 +16091,90 @@
       }
     },
     {
+      "asin": "B076HCJL4B",
+      "parentAsin": "",
+      "familyKey": "B076HCJL4B",
+      "variationCount": 0,
+      "productAgeDays": 3194,
+      "title": "diablo finish trim saw blade - ideal for portable and low powered saws - 5-3/8\" diameter, 36 atb teeth, 10mm arbor, .049\" kerf, 2° hook angle, 12000 max rpm, 2-pack - d0536x",
+      "brand": "freud",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552292",
+        "16310161",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552292",
+          "name": "circular saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 37.28,
+      "avg30": 39.34,
+      "avg90": 39.96,
+      "low365": 34.25,
+      "rating": 4.5,
+      "reviewCount": 110,
+      "rank": 362716,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61HBiOgAoRL.jpg",
+      "url": "https://www.amazon.com/dp/B076HCJL4B",
+      "keepa": "https://keepa.com/#!product/1-B076HCJL4B",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-07-17T15:08:55.766Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 10,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 35,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 7,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B00B19MA84",
       "parentAsin": "",
       "familyKey": "B00B19MA84",
@@ -17906,6 +17990,89 @@
         "demand": 0,
         "reviews": 0,
         "rating": 0,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B005CR74AU",
+      "parentAsin": "",
+      "familyKey": "B005CR74AU",
+      "variationCount": 0,
+      "productAgeDays": 4027,
+      "title": "channellock lock back utility knife (300112)",
+      "brand": "channellock",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553240",
+        "228013",
+        "328182011",
+        "551238",
+        "23642827011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "23642827011",
+          "name": "knives, parts & accessories"
+        },
+        {
+          "id": "553222",
+          "name": "knives"
+        },
+        {
+          "id": "553240",
+          "name": "utility knives"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 27.67,
+      "avg30": 31.52,
+      "avg90": 35.3,
+      "low365": 20.01,
+      "rating": 4.6,
+      "reviewCount": 81,
+      "rank": 594987,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71UgbKsHkeL.jpg",
+      "url": "https://www.amazon.com/dp/B005CR74AU",
+      "keepa": "https://keepa.com/#!product/1-B005CR74AU",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-07-17T15:08:55.766Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 32,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 29,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 8,
         "priceTier": 0
       }
     },

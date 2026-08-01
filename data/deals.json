@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-01T10:21:09.572Z",
+  "generatedAt": "2026-08-01T10:21:54.355Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 79,
+  "lastEnrichmentStream": "dudes_power",
+  "dealCount": 98,
   "deals": [
     {
       "asin": "B01M751WC3",
@@ -81,6 +81,80 @@
         "reviews": 15,
         "rating": 9,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0CT2NQ7WG",
+      "parentAsin": "",
+      "familyKey": "B0CT2NQ7WG",
+      "variationCount": 0,
+      "productAgeDays": 919,
+      "title": "anker prime charging station, 200w 6-port gan desktop charger",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "12557639011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "12557639011",
+          "name": "charging stations"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 55.99,
+      "avg30": 67.64,
+      "avg90": 72.65,
+      "low365": 49.99,
+      "rating": 4.7,
+      "reviewCount": 3311,
+      "rank": 339,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71-68+RF+8L.jpg",
+      "url": "https://www.amazon.com/dp/B0CT2NQ7WG",
+      "keepa": "https://keepa.com/#!product/1-B0CT2NQ7WG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 125,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 34,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 86,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 4
       }
     },
     {
@@ -163,6 +237,302 @@
       }
     },
     {
+      "asin": "B0DCNKDS5B",
+      "parentAsin": "B0H3V1HBX5",
+      "familyKey": "B0H3V1HBX5",
+      "variationCount": 4,
+      "productAgeDays": 717,
+      "title": "anker zolo magnetic power bank,10,000mah magsafe portable charger",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "7073960011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "7073960011",
+          "name": "portable power banks"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 34.99,
+      "avg30": 47.43,
+      "avg90": 48.72,
+      "low365": 26.99,
+      "rating": 4.6,
+      "reviewCount": 4388,
+      "rank": 759,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61NmRnphNJL.jpg",
+      "url": "https://www.amazon.com/dp/B0DCNKDS5B",
+      "keepa": "https://keepa.com/#!product/1-B0DCNKDS5B",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 128,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 42,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 83,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0CF54FWFL",
+      "parentAsin": "B0CRHFD9S6",
+      "familyKey": "B0CRHFD9S6",
+      "variationCount": 2,
+      "productAgeDays": 992,
+      "title": "anker maggo 3-in-1 magsafe-compatible qi2 15w foldable charging station",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "21209124011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "21209124011",
+          "name": "wireless chargers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 79.99,
+      "avg30": 104.89,
+      "avg90": 103.64,
+      "low365": 72.99,
+      "rating": 4.4,
+      "reviewCount": 4096,
+      "rank": 1806,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61xZ5YjTzbL.jpg",
+      "url": "https://www.amazon.com/dp/B0CF54FWFL",
+      "keepa": "https://keepa.com/#!product/1-B0CF54FWFL",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 124,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 34,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 80,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B09P8DSRVB",
+      "parentAsin": "B0B1D5ZH9V",
+      "familyKey": "B0B1D5ZH9V",
+      "variationCount": 3,
+      "productAgeDays": 1403,
+      "title": "anker 633 magnetic power bank with stand, 10,000mah portable charger",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "7073960011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "7073960011",
+          "name": "portable power banks"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 45.99,
+      "avg30": 54.82,
+      "avg90": 57.55,
+      "low365": 35.99,
+      "rating": 4.4,
+      "reviewCount": 11567,
+      "rank": 903,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51c2uuW935L.jpg",
+      "url": "https://www.amazon.com/dp/B09P8DSRVB",
+      "keepa": "https://keepa.com/#!product/1-B09P8DSRVB",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 120,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 30,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 80,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0FKN6DGLV",
+      "parentAsin": "B0GMZT8D9N",
+      "familyKey": "B0GMZT8D9N",
+      "variationCount": 5,
+      "productAgeDays": 365,
+      "title": "anker nano power bank, 45w 10,000mah portable charger, iphone battery pack",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "7073960011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "7073960011",
+          "name": "portable power banks"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg30": 59,
+      "avg90": 59.5,
+      "low365": 49.99,
+      "rating": 4.6,
+      "reviewCount": 2878,
+      "rank": 346,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61FmGAWuTLL.jpg",
+      "url": "https://www.amazon.com/dp/B0FKN6DGLV",
+      "keepa": "https://keepa.com/#!product/1-B0FKN6DGLV",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 109,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 23,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 79,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B08P3SRT5P",
       "parentAsin": "",
       "familyKey": "B08P3SRT5P",
@@ -234,6 +604,154 @@
         "reviews": 13,
         "rating": 10,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0D8PYWHZR",
+      "parentAsin": "B0DGTJC5W7",
+      "familyKey": "B0DGTJC5W7",
+      "variationCount": 6,
+      "productAgeDays": 697,
+      "title": "anker maggo ufo 3-in-1 magsafe compatible qi2 15w charging station",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "21209124011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "21209124011",
+          "name": "wireless chargers"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 67.49,
+      "avg30": 80.96,
+      "avg90": 85.2,
+      "low365": 57.49,
+      "rating": 4.4,
+      "reviewCount": 1907,
+      "rank": 1641,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/610zBFjK0oL.jpg",
+      "url": "https://www.amazon.com/dp/B0D8PYWHZR",
+      "keepa": "https://keepa.com/#!product/1-B0D8PYWHZR",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 116,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 31,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 78,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 13,
+        "rating": 5,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B09FJ7LWX4",
+      "parentAsin": "",
+      "familyKey": "B09FJ7LWX4",
+      "variationCount": 0,
+      "productAgeDays": 1790,
+      "title": "anker powerconf s330 usb speakerphone for home office, plug and play",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "11038701",
+        "1064954",
+        "172574",
+        "172606"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "1064954",
+          "name": "office products"
+        },
+        {
+          "id": "172574",
+          "name": "office electronics"
+        },
+        {
+          "id": "172606",
+          "name": "telephones & accessories"
+        },
+        {
+          "id": "11038701",
+          "name": "audio conferencing"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 71.99,
+      "avg30": 88.16,
+      "avg90": 98.7,
+      "low365": 55.99,
+      "rating": 4.4,
+      "reviewCount": 1840,
+      "rank": 6348,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71NlQdsorLL.jpg",
+      "url": "https://www.amazon.com/dp/B09FJ7LWX4",
+      "keepa": "https://keepa.com/#!product/1-B09FJ7LWX4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 100,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 40,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 78,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 13,
+        "rating": 5,
+        "priceTier": 4
       }
     },
     {
@@ -400,6 +918,80 @@
       }
     },
     {
+      "asin": "B0DFH1DNNT",
+      "parentAsin": "B0FK4Z89LP",
+      "familyKey": "B0FK4Z89LP",
+      "variationCount": 2,
+      "productAgeDays": 386,
+      "title": "anker nano charging station, 100w 7-in-1 power strip, retractable charger",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "12557639011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "12557639011",
+          "name": "charging stations"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 59.98,
+      "avg30": 71.9,
+      "avg90": 74.18,
+      "low365": 59.98,
+      "rating": 4.6,
+      "reviewCount": 708,
+      "rank": 658,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/611JGamsGbL.jpg",
+      "url": "https://www.amazon.com/dp/B0DFH1DNNT",
+      "keepa": "https://keepa.com/#!product/1-B0DFH1DNNT",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 109,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 28,
+        "rank": 30,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 77,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 11,
+        "rating": 8,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B00HDG0EP0",
       "parentAsin": "B0FHKP23HR",
       "familyKey": "B0FHKP23HR",
@@ -476,6 +1068,80 @@
         "reviews": 15,
         "rating": 9,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0CSFQ8PBD",
+      "parentAsin": "B0D7H1YDWM",
+      "familyKey": "B0D7H1YDWM",
+      "variationCount": 2,
+      "productAgeDays": 831,
+      "title": "anker desktop charger, 9-in-1 power strip with 300j surge protector, 100w",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "10967801",
+        "172282",
+        "281407",
+        "17854127011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "281407",
+          "name": "accessories & supplies"
+        },
+        {
+          "id": "17854127011",
+          "name": "power strips & surge protectors"
+        },
+        {
+          "id": "10967801",
+          "name": "power strips"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 33.99,
+      "avg30": 38.98,
+      "avg90": 38.72,
+      "low365": 29.99,
+      "rating": 4.7,
+      "reviewCount": 2759,
+      "rank": 315,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Pi3wxOLLL.jpg",
+      "url": "https://www.amazon.com/dp/B0CSFQ8PBD",
+      "keepa": "https://keepa.com/#!product/1-B0CSFQ8PBD",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.353Z",
+      "dealScore": 109,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 18,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 74,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 0
       }
     },
     {
@@ -629,6 +1295,80 @@
         "reviews": 13,
         "rating": 8,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0CFDSMNT7",
+      "parentAsin": "B0D2VVY39P",
+      "familyKey": "B0D2VVY39P",
+      "variationCount": 5,
+      "productAgeDays": 947,
+      "title": "anker maggo power bank, 10,000mah qi2-certified 15w max portable charger",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "7073960011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "7073960011",
+          "name": "portable power banks"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 75.99,
+      "avg30": 84.97,
+      "avg90": 88.31,
+      "low365": 54.99,
+      "rating": 4.3,
+      "reviewCount": 8552,
+      "rank": 579,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61pgxR8gy7L.jpg",
+      "url": "https://www.amazon.com/dp/B0CFDSMNT7",
+      "keepa": "https://keepa.com/#!product/1-B0CFDSMNT7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 109,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 20,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 72,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 3,
+        "priceTier": 4
       }
     },
     {
@@ -939,6 +1679,80 @@
         "reviews": 6,
         "rating": 10,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0F66QJ9WQ",
+      "parentAsin": "",
+      "familyKey": "B0F66QJ9WQ",
+      "variationCount": 0,
+      "productAgeDays": 332,
+      "title": "anker charging base for prime power banks with pogo pin, 150w max",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "12557639011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "12557639011",
+          "name": "charging stations"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 79.99,
+      "avg30": 96.66,
+      "avg90": 95.78,
+      "low365": 79.99,
+      "rating": 4.8,
+      "reviewCount": 209,
+      "rank": 5597,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61tOImhsMqL.jpg",
+      "url": "https://www.amazon.com/dp/B0F66QJ9WQ",
+      "keepa": "https://keepa.com/#!product/1-B0F66QJ9WQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 24,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 70,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 6,
+        "rating": 10,
+        "priceTier": 4
       }
     },
     {
@@ -1328,6 +2142,80 @@
         "reviews": 3,
         "rating": 10,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0899S421T",
+      "parentAsin": "B09QQDSHCD",
+      "familyKey": "B09QQDSHCD",
+      "variationCount": 1,
+      "productAgeDays": 382,
+      "title": "anker powerconf s3 speakerphone with 6 mics, enhanced voice pickup, 24h call time, app control, bluetooth 5, usb c, conference speaker compatible with leading platforms, home office",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "11038701",
+        "1064954",
+        "172574",
+        "172606"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "1064954",
+          "name": "office products"
+        },
+        {
+          "id": "172574",
+          "name": "office electronics"
+        },
+        {
+          "id": "172606",
+          "name": "telephones & accessories"
+        },
+        {
+          "id": "11038701",
+          "name": "audio conferencing"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.99,
+      "avg30": 112.04,
+      "avg90": 124.89,
+      "low365": 75.99,
+      "rating": 4.4,
+      "reviewCount": 5884,
+      "rank": 59201,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71BQHpmIP7L.jpg",
+      "url": "https://www.amazon.com/dp/B0899S421T",
+      "keepa": "https://keepa.com/#!product/1-B0899S421T",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 84,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 62,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 4
       }
     },
     {
@@ -1956,6 +2844,89 @@
       }
     },
     {
+      "asin": "B0DDQDG6GF",
+      "parentAsin": "B0DKNCV3CY",
+      "familyKey": "B0DKNCV3CY",
+      "variationCount": 2,
+      "productAgeDays": 659,
+      "title": "anker prime thunderbolt 4 cable, 3.3ft usb-c to usb-c cable, 240w charging",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "6795232011",
+        "172282",
+        "541966",
+        "172456",
+        "23666438011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "541966",
+          "name": "computers & accessories"
+        },
+        {
+          "id": "172456",
+          "name": "computer accessories & peripherals"
+        },
+        {
+          "id": "23666438011",
+          "name": "cables & accessories"
+        },
+        {
+          "id": "172463",
+          "name": "cables & interconnects"
+        },
+        {
+          "id": "6795232011",
+          "name": "thunderbolt cables"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 34.99,
+      "avg30": 41.6,
+      "avg90": 44.52,
+      "low365": 29.59,
+      "rating": 4.7,
+      "reviewCount": 555,
+      "rank": null,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61vGEYgRFrL.jpg",
+      "url": "https://www.amazon.com/dp/B0DDQDG6GF",
+      "keepa": "https://keepa.com/#!product/1-B0DDQDG6GF",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 83,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 32,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 11,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B0G1CGVCY5",
       "parentAsin": "",
       "familyKey": "B0G1CGVCY5",
@@ -2123,6 +3094,75 @@
         "reviews": 8,
         "rating": 8,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0CRB3MQT5",
+      "parentAsin": "B0H9XSGL6L",
+      "familyKey": "B0H9XSGL6L",
+      "variationCount": 9,
+      "productAgeDays": 940,
+      "title": "anker solix f3800 portable power station and 400w solar panel, 3,840wh",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1999.98,
+      "avg30": 2160.94,
+      "avg90": 2256.68,
+      "low365": 1999.98,
+      "rating": 4.5,
+      "reviewCount": 82,
+      "rank": 29208,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/618Wz9sDojL.jpg",
+      "url": "https://www.amazon.com/dp/B0CRB3MQT5",
+      "keepa": "https://keepa.com/#!product/1-B0CRB3MQT5",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 70,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 3,
+        "rating": 7,
+        "priceTier": 10
       }
     },
     {
@@ -2427,6 +3467,75 @@
       }
     },
     {
+      "asin": "B0GD5M8XPW",
+      "parentAsin": "B0FXPZZVSJ",
+      "familyKey": "B0FXPZZVSJ",
+      "variationCount": 7,
+      "productAgeDays": 209,
+      "title": "bluetti ac200pl solar generator & 2x200w solar panel included 2304wh lfp",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1548.98,
+      "avg30": 1704,
+      "avg90": 1801.86,
+      "low365": 1299,
+      "rating": null,
+      "reviewCount": null,
+      "rank": 8359,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71aiy3gWB4L.jpg",
+      "url": "https://www.amazon.com/dp/B0GD5M8XPW",
+      "keepa": "https://keepa.com/#!product/1-B0GD5M8XPW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 41,
+      "scoreBreakdown": {
+        "rating": 0,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 56,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B09X1ZD8MH",
       "parentAsin": "",
       "familyKey": "B09X1ZD8MH",
@@ -2503,6 +3612,80 @@
         "reviews": 8,
         "rating": 5,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0G3W9WTQM",
+      "parentAsin": "",
+      "familyKey": "B0G3W9WTQM",
+      "variationCount": 0,
+      "productAgeDays": 245,
+      "title": "anker maggo power bank, 5,000mah qi2-certified 15w max portable charger",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "7073960011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "7073960011",
+          "name": "portable power banks"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 35.99,
+      "avg30": 44.78,
+      "avg90": 45.17,
+      "low365": 35.99,
+      "rating": 4.1,
+      "reviewCount": 85,
+      "rank": 16032,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51pFWxHQdQL.jpg",
+      "url": "https://www.amazon.com/dp/B0G3W9WTQM",
+      "keepa": "https://keepa.com/#!product/1-B0G3W9WTQM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 70,
+      "scoreBreakdown": {
+        "rating": 20,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 3,
+        "rating": 0,
+        "priceTier": 2
       }
     },
     {
@@ -2747,6 +3930,89 @@
       }
     },
     {
+      "asin": "B0DXZCXK2C",
+      "parentAsin": "B0F9WSNJJK",
+      "familyKey": "B0F9WSNJJK",
+      "variationCount": 2,
+      "productAgeDays": 522,
+      "title": "anker prime thunderbolt 5 cable, 3.3ft usb-c to usb-c cable, 240w charging",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "6795232011",
+        "172282",
+        "541966",
+        "172456",
+        "23666438011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "541966",
+          "name": "computers & accessories"
+        },
+        {
+          "id": "172456",
+          "name": "computer accessories & peripherals"
+        },
+        {
+          "id": "23666438011",
+          "name": "cables & accessories"
+        },
+        {
+          "id": "172463",
+          "name": "cables & interconnects"
+        },
+        {
+          "id": "6795232011",
+          "name": "thunderbolt cables"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 37.99,
+      "avg30": 42.78,
+      "avg90": 43.67,
+      "low365": 35.99,
+      "rating": 4.7,
+      "reviewCount": 547,
+      "rank": null,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61V3yWe7kUL.jpg",
+      "url": "https://www.amazon.com/dp/B0DXZCXK2C",
+      "keepa": "https://keepa.com/#!product/1-B0DXZCXK2C",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 70,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 19,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 11,
+        "rating": 9,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B07F9Z6DF7",
       "parentAsin": "",
       "familyKey": "B07F9Z6DF7",
@@ -2906,6 +4172,75 @@
         "reviews": 6,
         "rating": 5,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0G1SN57ZK",
+      "parentAsin": "B0GL24MVBZ",
+      "familyKey": "B0GL24MVBZ",
+      "variationCount": 9,
+      "productAgeDays": 262,
+      "title": "jackery homepower 3600 plus portable power station with 500x solar panels, 3600w ac output, 3584wh lfp solar generator, expandable up to 21kwh, essential home backup for home use, emergencies, rv",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 2699,
+      "avg30": 2650.83,
+      "avg90": 2695.16,
+      "low365": 2199,
+      "rating": 4.3,
+      "reviewCount": 7,
+      "rank": 4142,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71zZ6m6P1cL.jpg",
+      "url": "https://www.amazon.com/dp/B0G1SN57ZK",
+      "keepa": "https://keepa.com/#!product/1-B0G1SN57ZK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 74,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 51,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 0,
+        "rating": 3,
+        "priceTier": 10
       }
     },
     {
@@ -4252,6 +5587,80 @@
         "reviews": 0,
         "rating": 3,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0CVDXDXHR",
+      "parentAsin": "B0CYVQ1QZF",
+      "familyKey": "B0CYVQ1QZF",
+      "variationCount": 2,
+      "productAgeDays": 853,
+      "title": "goal zero alta 50 portable fridge/freezer, 53l, energy efficient, usa-based",
+      "brand": "goal zero",
+      "brandTier": "mid",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "678542011",
+        "1055398",
+        "284507",
+        "289913"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "1055398",
+          "name": "home & kitchen"
+        },
+        {
+          "id": "284507",
+          "name": "kitchen & dining"
+        },
+        {
+          "id": "289913",
+          "name": "small appliances"
+        },
+        {
+          "id": "678542011",
+          "name": "compact refrigerators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 599.88,
+      "avg30": 722.5,
+      "avg90": 733.82,
+      "low365": 559.89,
+      "rating": 4.4,
+      "reviewCount": 14,
+      "rank": 121847,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61nHHGrzuJL.jpg",
+      "url": "https://www.amazon.com/dp/B0CVDXDXHR",
+      "keepa": "https://keepa.com/#!product/1-B0CVDXDXHR",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-01T10:21:54.354Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 27,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 41,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 12,
+        "demand": 0,
+        "reviews": 0,
+        "rating": 5,
+        "priceTier": 10
       }
     },
     {

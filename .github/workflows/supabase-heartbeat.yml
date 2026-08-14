@@ -2,8 +2,9 @@ name: Supabase Project Heartbeat
 
 on:
   schedule:
-    # Every 3 days at 9:17 AM UTC
-    - cron: "17 9 */3 * *"
+    # Four lightweight database requests per day, spaced six hours apart.
+    # Avoid the top of the hour because scheduled Actions are more likely to be delayed there.
+    - cron: "17 4,10,16,22 * * *"
 
   workflow_dispatch:
 
@@ -13,54 +14,71 @@ permissions:
 jobs:
   heartbeat:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
-      - name: Check Supabase and update heartbeat
+      - name: Query Supabase
         shell: bash
         env:
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: |
           set -euo pipefail
 
-          echo "Reading active deal count..."
-
-          RESPONSE_HEADERS=$(mktemp)
-
-          curl --fail-with-body --silent --show-error \
-            --dump-header "$RESPONSE_HEADERS" \
-            "${SUPABASE_URL}/rest/v1/deals?status=eq.active&select=id" \
-            -H "apikey: ${SUPABASE_SERVICE_ROLE_KEY}" \
-            -H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}" \
-            -H "Prefer: count=exact" \
-            -H "Range: 0-0" \
-            -o /dev/null
-
-          CONTENT_RANGE=$(grep -i '^content-range:' "$RESPONSE_HEADERS" | tr -d '\r')
-          ACTIVE_DEAL_COUNT=$(echo "$CONTENT_RANGE" | sed -E 's|.*/([0-9]+).*|\1|')
-
-          if ! [[ "$ACTIVE_DEAL_COUNT" =~ ^[0-9]+$ ]]; then
-            echo "Could not determine active deal count."
-            cat "$RESPONSE_HEADERS"
+          if [[ -z "${SUPABASE_SERVICE_ROLE_KEY:-}" ]]; then
+            echo "::error::Missing GitHub Actions secret SUPABASE_SERVICE_ROLE_KEY."
             exit 1
           fi
 
-          echo "Active deals: ${ACTIVE_DEAL_COUNT}"
-          echo "Updating heartbeat record..."
+          # SUPABASE_URL is not sensitive, but keep supporting it as a repository secret.
+          # If it is absent, legacy Supabase service-role JWTs contain the project ref,
+          # which lets us reconstruct https://<project-ref>.supabase.co without another secret.
+          if [[ -z "${SUPABASE_URL:-}" ]]; then
+            JWT_PAYLOAD="$(printf '%s' "$SUPABASE_SERVICE_ROLE_KEY" | cut -d. -f2)"
+            JWT_PAYLOAD="${JWT_PAYLOAD//-/+}"
+            JWT_PAYLOAD="${JWT_PAYLOAD//_/\/}"
 
-          curl --fail-with-body --silent --show-error \
-            --request POST \
-            "${SUPABASE_URL}/rest/v1/project_heartbeat?on_conflict=id" \
+            case $((${#JWT_PAYLOAD} % 4)) in
+              2) JWT_PAYLOAD="${JWT_PAYLOAD}==" ;;
+              3) JWT_PAYLOAD="${JWT_PAYLOAD}=" ;;
+              1)
+                echo "::error::Could not decode the service-role key. Add a SUPABASE_URL repository secret."
+                exit 1
+                ;;
+            esac
+
+            PROJECT_REF="$(printf '%s' "$JWT_PAYLOAD" | base64 --decode 2>/dev/null | jq -r '.ref // empty' || true)"
+
+            if [[ -z "$PROJECT_REF" ]]; then
+              echo "::error::SUPABASE_URL is not configured and the project ref could not be derived from the service-role key. Add a SUPABASE_URL repository secret."
+              exit 1
+            fi
+
+            SUPABASE_URL="https://${PROJECT_REF}.supabase.co"
+            echo "Resolved Supabase project URL from the service-role key."
+          fi
+
+          SUPABASE_URL="${SUPABASE_URL%/}"
+          RESPONSE_BODY="$(mktemp)"
+
+          HTTP_CODE="$(curl \
+            --silent \
+            --show-error \
+            --connect-timeout 15 \
+            --max-time 30 \
+            --retry 2 \
+            --retry-all-errors \
+            --output "$RESPONSE_BODY" \
+            --write-out '%{http_code}' \
+            "${SUPABASE_URL}/rest/v1/deals?select=id&limit=1" \
             -H "apikey: ${SUPABASE_SERVICE_ROLE_KEY}" \
             -H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}" \
-            -H "Content-Type: application/json" \
-            -H "Prefer: resolution=merge-duplicates,return=representation" \
-            --data "{
-              \"id\": 1,
-              \"checked_at\": \"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\",
-              \"active_deal_count\": ${ACTIVE_DEAL_COUNT},
-              \"source\": \"github-actions\"
-            }"
+            -H "Accept: application/json")"
 
-          echo
-          echo "Supabase heartbeat completed successfully."
+          if [[ "$HTTP_CODE" != "200" && "$HTTP_CODE" != "206" ]]; then
+            echo "::error::Supabase heartbeat request failed with HTTP ${HTTP_CODE}."
+            cat "$RESPONSE_BODY"
+            exit 1
+          fi
+
+          echo "Supabase heartbeat completed successfully at $(date -u +'%Y-%m-%dT%H:%M:%SZ') (HTTP ${HTTP_CODE})."

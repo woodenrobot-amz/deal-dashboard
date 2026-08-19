@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-19T21:29:44.888Z",
+  "generatedAt": "2026-08-19T21:30:27.598Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 25,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 32,
   "deals": [
     {
       "asin": "B07TYGKHHS",
@@ -1661,6 +1661,80 @@
       }
     },
     {
+      "asin": "B0DY1WV2XX",
+      "parentAsin": "B0FSSM35CM",
+      "familyKey": "B0FSSM35CM",
+      "variationCount": 10,
+      "productAgeDays": 511,
+      "title": "ox drywall tool belt + pouches - leather tool belts for men - size xl",
+      "brand": "ox",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553580",
+        "228013",
+        "328182011",
+        "13400691"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "13400691",
+          "name": "tool organizers"
+        },
+        {
+          "id": "553580",
+          "name": "tool belts"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 144.99,
+      "avg30": 156.14,
+      "avg90": 181.72,
+      "low365": 127.49,
+      "rating": 4.6,
+      "reviewCount": 182,
+      "rank": 27570,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61mcxg8al+L.jpg",
+      "url": "https://www.amazon.com/dp/B0DY1WV2XX",
+      "keepa": "https://keepa.com/#!product/1-B0DY1WV2XX",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-08-19T21:30:27.597Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 6,
+        "rating": 8,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0DG5XM45Z",
       "parentAsin": "",
       "familyKey": "B0DG5XM45Z",
@@ -1735,6 +1809,93 @@
       }
     },
     {
+      "asin": "B0749KSR5Y",
+      "parentAsin": "B0B5FHJ1G6",
+      "familyKey": "B0B5FHJ1G6",
+      "variationCount": 40,
+      "productAgeDays": 3223,
+      "title": "amana tool - 46102-s solid carbide spiral plunge 1/4 dia x 3/4 x 1/4\" shank up-cut",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686958011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686958011",
+          "name": "spiral"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 28.54,
+      "avg30": 38.67,
+      "avg90": 31.91,
+      "low365": 28.54,
+      "rating": 4.5,
+      "reviewCount": 229,
+      "rank": 188954,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/31mJ0q852DL.jpg",
+      "url": "https://www.amazon.com/dp/B0749KSR5Y",
+      "keepa": "https://keepa.com/#!product/1-B0749KSR5Y",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-19T21:30:27.598Z",
+      "dealScore": 73,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 43,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B0CL912KQ3",
       "parentAsin": "",
       "familyKey": "B0CL912KQ3",
@@ -1800,6 +1961,93 @@
         "demand": 4,
         "reviews": 0,
         "rating": 10,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B07B9Q5LJW",
+      "parentAsin": "B09X621T2T",
+      "familyKey": "B09X621T2T",
+      "variationCount": 33,
+      "productAgeDays": 2743,
+      "title": "amana tool spektra coated solid carbide cnc spiral single o-flute router bit, 51412-k, 3/16 d x 5/8 ch x 3/16 shk x 2 inch l up-cut mirror finish",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686958011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686958011",
+          "name": "spiral"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 42.53,
+      "avg30": 42.53,
+      "avg90": 43.73,
+      "low365": 38.28,
+      "rating": 4.5,
+      "reviewCount": 294,
+      "rank": 70000,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51tTGvE1s8L.jpg",
+      "url": "https://www.amazon.com/dp/B07B9Q5LJW",
+      "keepa": "https://keepa.com/#!product/1-B07B9Q5LJW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-19T21:30:27.598Z",
+      "dealScore": 62,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 4,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 41,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 7,
         "priceTier": 2
       }
     },
@@ -1883,6 +2131,81 @@
       }
     },
     {
+      "asin": "B07GLG9N9C",
+      "parentAsin": "B07SMW3DH7",
+      "familyKey": "B07SMW3DH7",
+      "variationCount": 3,
+      "productAgeDays": 2858,
+      "title": "door stud pro series door installation hardware tool kit",
+      "brand": "door stud",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553518",
+        "256375011",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553518",
+          "name": "drywall lifts"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 199,
+      "avg30": 250.99,
+      "avg90": 236.81,
+      "low365": 199,
+      "rating": 4.3,
+      "reviewCount": 314,
+      "rank": 94984,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Ya393+peL.jpg",
+      "url": "https://www.amazon.com/dp/B07GLG9N9C",
+      "keepa": "https://keepa.com/#!product/1-B07GLG9N9C",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-08-19T21:30:27.598Z",
+      "dealScore": 52,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 23,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 35,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 3,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B01N5CY6Y9",
       "parentAsin": "",
       "familyKey": "B01N5CY6Y9",
@@ -1959,6 +2282,247 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0011MUT7K",
+      "parentAsin": "B078MZW6X6",
+      "familyKey": "B078MZW6X6",
+      "variationCount": 7,
+      "productAgeDays": 3522,
+      "title": "bon tool 62-445 edger - ss 6\" x 6\" lip cgd handle, 3/8\" x 1/2\" depth",
+      "brand": "bon",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "13399581",
+        "228013",
+        "328182011",
+        "551238",
+        "13399471"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "13399471",
+          "name": "masonry tools"
+        },
+        {
+          "id": "13399581",
+          "name": "trowels"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.24,
+      "avg30": 24.38,
+      "avg90": 26.93,
+      "low365": 13.3,
+      "rating": 4.6,
+      "reviewCount": 92,
+      "rank": 399953,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/619YPURPJxL.jpg",
+      "url": "https://www.amazon.com/dp/B0011MUT7K",
+      "keepa": "https://keepa.com/#!product/1-B0011MUT7K",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-08-19T21:30:27.598Z",
+      "dealScore": 51,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 20,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 21,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0011MO4LM",
+      "parentAsin": "B078JXX7M5",
+      "familyKey": "B078JXX7M5",
+      "variationCount": 13,
+      "productAgeDays": 4831,
+      "title": "bon 62-440 6-inch by 4-inch stainless steel concrete sidewalk edger with 1/2-inch radius and 5/8-inch deep comfort grip handle",
+      "brand": "bon",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "13399581",
+        "228013",
+        "328182011",
+        "551238",
+        "13399471"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "13399471",
+          "name": "masonry tools"
+        },
+        {
+          "id": "13399581",
+          "name": "trowels"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.29,
+      "avg30": 23.21,
+      "avg90": 24.2,
+      "low365": 12.07,
+      "rating": 4.5,
+      "reviewCount": 90,
+      "rank": 596204,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41c+iA3BBoL.jpg",
+      "url": "https://www.amazon.com/dp/B0011MO4LM",
+      "keepa": "https://keepa.com/#!product/1-B0011MO4LM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-08-19T21:30:27.597Z",
+      "dealScore": 51,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 20,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B00R1CFBEU",
+      "parentAsin": "",
+      "familyKey": "B00R1CFBEU",
+      "variationCount": 0,
+      "productAgeDays": 3935,
+      "title": "honeywell rth111b1016/e1 white digital non-programmable thermostat",
+      "brand": "honeywell",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "2054379011",
+        "228013",
+        "551240",
+        "495346",
+        "1296436011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "495346",
+          "name": "hvac"
+        },
+        {
+          "id": "1296436011",
+          "name": "thermostats & accessories"
+        },
+        {
+          "id": "495354",
+          "name": "thermostats"
+        },
+        {
+          "id": "2054379011",
+          "name": "nonprogrammable"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.4,
+      "avg30": 27.9,
+      "avg90": 28.6,
+      "low365": 18.57,
+      "rating": 4.1,
+      "reviewCount": 114,
+      "rank": 179917,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/31bguRgyYJL.jpg",
+      "url": "https://www.amazon.com/dp/B00R1CFBEU",
+      "keepa": "https://keepa.com/#!product/1-B00R1CFBEU",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-08-19T21:30:27.598Z",
+      "dealScore": 50,
+      "scoreBreakdown": {
+        "rating": 20,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 16,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 0,
+        "priceTier": 0
       }
     }
   ]

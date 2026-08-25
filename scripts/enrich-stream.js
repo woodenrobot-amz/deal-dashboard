@@ -7,6 +7,7 @@ const ENRICH_LIMITS = {
   woodworking_core: 125,
   woodworking: 125,
   dudes_power: 125,
+  dad_impulse: 125,
   three_d_printing: 125,
   
   deals_for_dudes: 125,

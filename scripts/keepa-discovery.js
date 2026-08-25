@@ -322,6 +322,35 @@ perPage: 1000
     }
   },
 
+dad_impulse: {
+  name: "dad_impulse",
+  selection: {
+    productType: [0],
+    singleVariation: true,
+
+    current_SALES_gte: 1,
+    current_SALES_lte: 100000,
+
+    current_RATING_gte: 42,
+    current_COUNT_REVIEWS_gte: 100,
+
+    current_BUY_BOX_SHIPPING_gte: 1500,
+    current_BUY_BOX_SHIPPING_lte: 5000,
+
+    isLowest90_BUY_BOX_SHIPPING: true,
+    deltaPercent90_BUY_BOX_SHIPPING_gte: 20,
+    deltaPercent30_BUY_BOX_SHIPPING_gte: 15,
+
+    sort: [
+      ["monthlySold", "desc"],
+      ["current_SALES", "asc"]
+    ],
+
+    perPage: 1000,
+    page: 0
+  }
+},
+
 three_d_printing: {
   name: "three_d_printing",
   selection: {

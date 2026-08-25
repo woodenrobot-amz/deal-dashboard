@@ -1,0 +1,52 @@
+name: Enrich Dad Impulse Deals
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: keepa-enrich-dad-impulse
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Pull latest
+        run: git pull --rebase origin main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run dad impulse enrichment
+        env:
+          KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+        run: node scripts/enrich-stream.js dad_impulse
+
+      - name: Commit enrichment results
+        run: |
+          git config user.name "keepa-bot"
+          git config user.email "keepa-bot@users.noreply.github.com"
+
+          git add data/deals.json
+          git add data/discovered-asins.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "enrich dad impulse deals"
+
+          git pull --rebase origin main
+          git push

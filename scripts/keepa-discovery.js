@@ -328,6 +328,17 @@ dad_impulse: {
     productType: [0],
     singleVariation: true,
 
+    categories_exclude: [
+      "165796011",   // Baby Products
+      "3760911",     // Beauty & Personal Care
+      "3760901",     // Health & Household
+      "16310101",    // Grocery & Gourmet Food
+      "2619533011",  // Pet Supplies
+      "2617941011",  // Arts, Crafts & Sewing
+      "7141123011",  // Clothing, Shoes & Jewelry
+      "283155"        // Books
+    ],
+
     current_SALES_gte: 1,
     current_SALES_lte: 100000,
 

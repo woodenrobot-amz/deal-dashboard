@@ -328,6 +328,16 @@ dad_impulse: {
     productType: [0],
     singleVariation: true,
 
+    rootCategory: [
+      "15684181",    // Automotive
+      "172282",      // Electronics
+      "2335752011",  // Cell Phones & Accessories
+      "2972638011",  // Patio, Lawn & Garden
+      "3375251",     // Sports & Outdoors
+      "541966",      // Computers
+      "228013"       // Tools & Home Improvement
+    ],
+
     categories_exclude: [
       "165796011",   // Baby Products
       "3760911",     // Beauty & Personal Care

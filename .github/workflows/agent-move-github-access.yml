@@ -1,0 +1,45 @@
+name: Agent Move GitHub Access Card
+
+on:
+  push:
+    branches:
+      - agent/move-github-access-stage
+    paths:
+      - .github/workflows/agent-move-github-access.yml
+
+permissions:
+  contents: write
+
+jobs:
+  move:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/move-github-access-stage
+          fetch-depth: 0
+
+      - name: Move GitHub access card
+        run: node scripts/agent-move-github-access.js
+
+      - name: Validate inline JavaScript
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          html = Path('index.html').read_text()
+          match = re.search(r'<script>([\s\S]*?)</script>', html)
+          if not match:
+              raise SystemExit('No inline script found')
+          Path('/tmp/app.js').write_text(match.group(1))
+          PY
+          node --check /tmp/app.js
+
+      - name: Commit change
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet && exit 0
+          git commit -m "Move GitHub access controls to bottom"
+          git push origin HEAD:agent/move-github-access-stage

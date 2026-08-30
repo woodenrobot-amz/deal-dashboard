@@ -14,7 +14,7 @@ async function run() {
   const response = await fetch(url);
   const data = await response.json();
 
-  if (!writeKeepaStatus(data, "token_check")) {
+  if (!writeKeepaStatus(data, "token_check", true)) {
     throw new Error("Keepa response did not include token status.");
   }
 

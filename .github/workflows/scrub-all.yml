@@ -1,0 +1,52 @@
+name: Scrub
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  scrub:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run scrub workflows sequentially
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          workflows=(
+            "clear-deals.yml"
+            "clean-asins.yml"
+          )
+
+          for workflow in "${workflows[@]}"; do
+            echo "Starting $workflow..."
+
+            gh workflow run "$workflow" --ref "${{ github.ref_name }}"
+
+            sleep 10
+
+            run_id=$(gh run list \
+              --workflow "$workflow" \
+              --branch "${{ github.ref_name }}" \
+              --event workflow_dispatch \
+              --limit 1 \
+              --json databaseId \
+              --jq '.[0].databaseId')
+
+            if [[ -z "$run_id" || "$run_id" == "null" ]]; then
+              echo "Could not find the workflow run for $workflow"
+              exit 1
+            fi
+
+            gh run watch "$run_id" --exit-status
+            echo "$workflow complete."
+          done

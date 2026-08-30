@@ -1292,7 +1292,7 @@
       els.workflowStatus.classList.remove("success", "running", "error");
       if (type) els.workflowStatus.classList.add(type);
       const link = runUrl
-        ? " <a href="" + escapeAttr(runUrl) + "" target="_blank" rel="noopener noreferrer">View run</a>"
+        ? ' <a href="' + escapeAttr(runUrl) + '" target="_blank" rel="noopener noreferrer">View run</a>'
         : "";
       els.workflowStatus.innerHTML = "<strong>Status:</strong> " + escapeHtml(message) + link;
     }

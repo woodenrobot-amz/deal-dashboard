@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-28T20:22:48.152Z",
+  "generatedAt": "2026-08-30T11:47:00.219Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "woodworking_test",
-  "dealCount": 365,
+  "lastEnrichmentStream": "power_tools_main",
+  "dealCount": 379,
   "deals": [
     {
       "asin": "B0CYLL8Y89",
@@ -533,6 +533,75 @@
         "demand": 18,
         "reviews": 13,
         "rating": 5,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B00VQCBTXS",
+      "parentAsin": "B095YCMN9X",
+      "familyKey": "B095YCMN9X",
+      "variationCount": 2,
+      "productAgeDays": 3341,
+      "title": "dewalt screwdriver bit set, 100 pc impact driver bit set with drill bits, magnetic holder and nut drivers, flextorq impact ready, toughcase included (dwa2fts100)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552262",
+        "228013",
+        "328182011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 54,
+      "avg30": 58.88,
+      "avg90": 63.58,
+      "low365": 44.4,
+      "rating": 4.7,
+      "reviewCount": 9246,
+      "rank": 8346,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81MPaVjEHjL.jpg",
+      "url": "https://www.amazon.com/dp/B00VQCBTXS",
+      "keepa": "https://keepa.com/#!product/1-B00VQCBTXS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 83,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 78,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 15,
+        "rating": 9,
         "priceTier": 4
       }
     },
@@ -1769,6 +1838,89 @@
         "reviews": 8,
         "rating": 9,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B09ZF2YQN9",
+      "parentAsin": "B0G48XCDKZ",
+      "familyKey": "B0G48XCDKZ",
+      "variationCount": 5,
+      "productAgeDays": 1579,
+      "title": "dewalt table saw blade, 10 in, 60 tooth, fine finish, ultra sharp carbide (dwa11060)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552292",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552292",
+          "name": "circular saw blades"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 32.65,
+      "avg30": 37.85,
+      "avg90": 37.05,
+      "low365": 32.26,
+      "rating": 4.8,
+      "reviewCount": 1432,
+      "rank": 6833,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/711nc2yIOmL.jpg",
+      "url": "https://www.amazon.com/dp/B09ZF2YQN9",
+      "keepa": "https://keepa.com/#!product/1-B09ZF2YQN9",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 79,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 69,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 13,
+        "rating": 10,
+        "priceTier": 0
       }
     },
     {
@@ -5747,6 +5899,159 @@
       }
     },
     {
+      "asin": "B00NO8NT4O",
+      "parentAsin": "",
+      "familyKey": "B00NO8NT4O",
+      "variationCount": 0,
+      "productAgeDays": 3966,
+      "title": "cordless polisher, no battery included",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "2445477011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2445477011",
+          "name": "polishers & buffers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 129.9,
+      "avg30": 135.46,
+      "avg90": 144.97,
+      "low365": 117.47,
+      "rating": 4.6,
+      "reviewCount": 854,
+      "rank": 26024,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/31NmnzS4GwL.jpg",
+      "url": "https://www.amazon.com/dp/B00NO8NT4O",
+      "keepa": "https://keepa.com/#!product/1-B00NO8NT4O",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 71,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 63,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 11,
+        "rating": 8,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B00BQHLJ4M",
+      "parentAsin": "B0GJC9YCLG",
+      "familyKey": "B0GJC9YCLG",
+      "variationCount": 2,
+      "productAgeDays": 4756,
+      "title": "dewalt 20v max battery, premium 4.0ah (dcb204)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552354",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552354",
+          "name": "battery packs"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 53.99,
+      "avg30": 57.62,
+      "avg90": 57.2,
+      "low365": 49.99,
+      "rating": 4.6,
+      "reviewCount": 4651,
+      "rank": 8396,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61o2B9f1kHL.jpg",
+      "url": "https://www.amazon.com/dp/B00BQHLJ4M",
+      "keepa": "https://keepa.com/#!product/1-B00BQHLJ4M",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 8,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 63,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B0F42TNLVH",
       "parentAsin": "B0GWH1LFHD",
       "familyKey": "B0GWH1LFHD",
@@ -6584,6 +6889,85 @@
         "reviews": 6,
         "rating": 10,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B00OXUPKHG",
+      "parentAsin": "B0DD3GPD77",
+      "familyKey": "B0DD3GPD77",
+      "variationCount": 1,
+      "productAgeDays": 4323,
+      "title": "makita xsf03z 18v lxt lithium-ion brushless cordless drywall screwdriver (bare tool only)",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "9022390011",
+        "228013",
+        "328182011",
+        "551236",
+        "9022389011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "9022389011",
+          "name": "screw guns & screwdrivers"
+        },
+        {
+          "id": "9022390011",
+          "name": "power screwdrivers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 107.96,
+      "avg30": 136.25,
+      "avg90": 131.31,
+      "low365": 105,
+      "rating": 4.5,
+      "reviewCount": 689,
+      "rank": 54294,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51FjE5W8oRL.jpg",
+      "url": "https://www.amazon.com/dp/B00OXUPKHG",
+      "keepa": "https://keepa.com/#!product/1-B00OXUPKHG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 81,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 26,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 62,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 6
       }
     },
     {
@@ -7490,6 +7874,85 @@
         "reviews": 15,
         "rating": 8,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0FH5K1T3Q",
+      "parentAsin": "",
+      "familyKey": "B0FH5K1T3Q",
+      "variationCount": 0,
+      "productAgeDays": 416,
+      "title": "dewalt 20v max xr brushless cordless 1/2 in. drill driver kit with dewalt powerpack batteries and charger (dcd801qq2)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "9022404011",
+        "228013",
+        "328182011",
+        "551236",
+        "552794"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552794",
+          "name": "drills"
+        },
+        {
+          "id": "9022404011",
+          "name": "drill drivers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 214.99,
+      "avg30": 221.72,
+      "avg90": 259.61,
+      "low365": 199,
+      "rating": 4.7,
+      "reviewCount": 144,
+      "rank": 91919,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81ZDgU4VPSL.jpg",
+      "url": "https://www.amazon.com/dp/B0FH5K1T3Q",
+      "keepa": "https://keepa.com/#!product/1-B0FH5K1T3Q",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 71,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 25,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 61,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 9,
+        "priceTier": 8
       }
     },
     {
@@ -17788,6 +18251,89 @@
       }
     },
     {
+      "asin": "B0008ELQ0G",
+      "parentAsin": "B07SK9QQCS",
+      "familyKey": "B07SK9QQCS",
+      "variationCount": 1,
+      "productAgeDays": 2770,
+      "title": "dewalt hammer drill, 1/2-inch, 7.8-amp (dw511)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552802",
+        "228013",
+        "328182011",
+        "551236",
+        "552794"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552794",
+          "name": "drills"
+        },
+        {
+          "id": "9022393011",
+          "name": "demolition drills & hammers"
+        },
+        {
+          "id": "552802",
+          "name": "hammer drills"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 100.3,
+      "avg30": 106.63,
+      "avg90": 109.7,
+      "low365": 69.99,
+      "rating": 4.5,
+      "reviewCount": 718,
+      "rank": 60102,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51S4dkdd4kL.jpg",
+      "url": "https://www.amazon.com/dp/B0008ELQ0G",
+      "keepa": "https://keepa.com/#!product/1-B0008ELQ0G",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 54,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0DGSKRD48",
       "parentAsin": "B0G91PWGRM",
       "familyKey": "B0G91PWGRM",
@@ -18845,6 +19391,89 @@
         "reviews": 11,
         "rating": 5,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B073GVKSM3",
+      "parentAsin": "",
+      "familyKey": "B073GVKSM3",
+      "variationCount": 0,
+      "productAgeDays": 3300,
+      "title": "dewalt dcn650b nailer angled finish 20v 15ga",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552700",
+        "228013",
+        "328182011",
+        "551236",
+        "552838"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552838",
+          "name": "nailers & staplers"
+        },
+        {
+          "id": "686960011",
+          "name": "nailers"
+        },
+        {
+          "id": "552700",
+          "name": "finish nailers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 319.99,
+      "avg30": 334.96,
+      "avg90": 347.73,
+      "low365": 258,
+      "rating": 4.5,
+      "reviewCount": 853,
+      "rank": 50170,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61BRfywQmlL.jpg",
+      "url": "https://www.amazon.com/dp/B073GVKSM3",
+      "keepa": "https://keepa.com/#!product/1-B073GVKSM3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 66,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 10
       }
     },
     {
@@ -21840,6 +22469,85 @@
       }
     },
     {
+      "asin": "B0BMKTCPDY",
+      "parentAsin": "",
+      "familyKey": "B0BMKTCPDY",
+      "variationCount": 0,
+      "productAgeDays": 1381,
+      "title": "milwaukee electric tool m18 fuel 4-1/2\" / 5\" variable",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552812",
+        "228013",
+        "328182011",
+        "551236",
+        "552810"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552810",
+          "name": "grinders"
+        },
+        {
+          "id": "552812",
+          "name": "angle grinders"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 143,
+      "avg30": 149.18,
+      "avg90": 156.33,
+      "low365": 137.64,
+      "rating": 4.7,
+      "reviewCount": 96,
+      "rank": 93344,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41e-5une8SL.jpg",
+      "url": "https://www.amazon.com/dp/B0BMKTCPDY",
+      "keepa": "https://keepa.com/#!product/1-B0BMKTCPDY",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 3,
+        "rating": 9,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B00N1JC7HQ",
       "parentAsin": "B0HCNTSGZB",
       "familyKey": "B0HCNTSGZB",
@@ -22447,6 +23155,82 @@
       }
     },
     {
+      "asin": "B0F5NBMPST",
+      "parentAsin": "",
+      "familyKey": "B0F5NBMPST",
+      "variationCount": 0,
+      "productAgeDays": 497,
+      "title": "milwaukee electric - m18 compact brushless 1/4 inch hex 3-speed impact",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "2399141011",
+        "15707071",
+        "15735451",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2399141011",
+          "name": "impact drivers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 82.9,
+      "avg30": 88.81,
+      "avg90": 90.73,
+      "low365": 69.9,
+      "rating": 4.3,
+      "reviewCount": 111,
+      "rank": 29286,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51z-MnPqpQL.jpg",
+      "url": "https://www.amazon.com/dp/B0F5NBMPST",
+      "keepa": "https://keepa.com/#!product/1-B0F5NBMPST",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 56,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 47,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 6,
+        "rating": 3,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B0G6KMRNJ5",
       "parentAsin": "B0HFZGVN1Z",
       "familyKey": "B0HFZGVN1Z",
@@ -22513,6 +23297,80 @@
         "reviews": 8,
         "rating": 0,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0BH6SFQBJ",
+      "parentAsin": "",
+      "familyKey": "B0BH6SFQBJ",
+      "variationCount": 0,
+      "productAgeDays": 1425,
+      "title": "metabo hpt 18v cordless brushless, impact driver kit, wh18dex",
+      "brand": "metabo hpt",
+      "brandTier": "mid",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "2399141011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2399141011",
+          "name": "impact drivers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 83.7,
+      "avg30": 95.41,
+      "avg90": 110.23,
+      "low365": 83.7,
+      "rating": 4.6,
+      "reviewCount": 40,
+      "rank": 71334,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71mFPtS7fuL.jpg",
+      "url": "https://www.amazon.com/dp/B0BH6SFQBJ",
+      "keepa": "https://keepa.com/#!product/1-B0BH6SFQBJ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 75,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 36,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 12,
+        "demand": 4,
+        "reviews": 0,
+        "rating": 8,
+        "priceTier": 4
       }
     },
     {
@@ -23495,6 +24353,89 @@
         "brand": 0,
         "demand": 18,
         "reviews": 8,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B07NPVSMBG",
+      "parentAsin": "",
+      "familyKey": "B07NPVSMBG",
+      "variationCount": 0,
+      "productAgeDays": 2735,
+      "title": "milwaukee extreme thin metal band saw bl",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552288",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552288",
+          "name": "band saw blades"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 25,
+      "avg30": 25.11,
+      "avg90": 27.24,
+      "low365": 17.99,
+      "rating": 4.6,
+      "reviewCount": 114,
+      "rank": 57331,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81fJkh0wuAL.jpg",
+      "url": "https://www.amazon.com/dp/B07NPVSMBG",
+      "keepa": "https://keepa.com/#!product/1-B07NPVSMBG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 6,
         "rating": 8,
         "priceTier": 0
       }
@@ -26718,6 +27659,81 @@
       }
     },
     {
+      "asin": "B0GFY587M7",
+      "parentAsin": "B0GVFZKL5L",
+      "familyKey": "B0GVFZKL5L",
+      "variationCount": 4,
+      "productAgeDays": 196,
+      "title": "skil pwr core 20 brushless 20v 1/2-inch compact drill driver kit, includes 2.0ah usb-c battery and 45w usb-c pd charger - dl6293b-1c",
+      "brand": "skil",
+      "brandTier": "mid",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552796",
+        "9022404011",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 89.99,
+      "avg30": 96.74,
+      "avg90": 94.98,
+      "low365": 81.39,
+      "rating": 5,
+      "reviewCount": 2,
+      "rank": 89465,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61hQg0oy-jL.jpg",
+      "url": "https://www.amazon.com/dp/B0GFY587M7",
+      "keepa": "https://keepa.com/#!product/1-B0GFY587M7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 40,
+      "scoreBreakdown": {
+        "rating": 25,
+        "discount": 7,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 12,
+        "demand": 4,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B0C69TPBB8",
       "parentAsin": "",
       "familyKey": "B0C69TPBB8",
@@ -27884,6 +28900,85 @@
         "reviews": 8,
         "rating": 3,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B08MFZK76N",
+      "parentAsin": "B081L3PD19",
+      "familyKey": "B081L3PD19",
+      "variationCount": 1,
+      "productAgeDays": 2123,
+      "title": "wen ct1065 10-amp plunge cut circular track saw + wen 36053c 6\" quick release track saw clamps",
+      "brand": "wen",
+      "brandTier": "off",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552922",
+        "228013",
+        "328182011",
+        "551236",
+        "552894"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552894",
+          "name": "saws"
+        },
+        {
+          "id": "552922",
+          "name": "circular saws"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 116.61,
+      "avg30": 116.6,
+      "avg90": 126.07,
+      "low365": 127.71,
+      "rating": 4.2,
+      "reviewCount": 46,
+      "rank": 45825,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51lAXzwwntL.jpg",
+      "url": "https://www.amazon.com/dp/B08MFZK76N",
+      "keepa": "https://keepa.com/#!product/1-B08MFZK76N",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-08-30T11:47:00.218Z",
+      "dealScore": 40,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 14,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 6
       }
     }
   ]

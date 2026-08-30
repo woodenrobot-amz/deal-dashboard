@@ -654,7 +654,13 @@
 
     .workflow-status strong { color: var(--text); }
     .workflow-status.success { border-color: rgba(34, 197, 94, 0.5); color: #86efac; }
+    .workflow-status.running { border-color: rgba(245, 158, 11, 0.5); color: #fbbf24; }
     .workflow-status.error { border-color: rgba(239, 68, 68, 0.5); color: #fecaca; }
+    .workflow-status a {
+      color: inherit;
+      font-weight: 800;
+      margin-left: 6px;
+    }
 
     .app-tabbar {
       position: fixed;
@@ -852,7 +858,8 @@
       bookmarkedAsins: "woodenRobot.bookmarkedAsins.v1",
       selectedTag: "woodenRobot.selectedTag.v1",
       sortBy: "woodenRobot.sortBy.v1",
-      githubActionsToken: "woodenRobot.githubActionsToken.v1"
+      githubActionsToken: "woodenRobot.githubActionsToken.v1",
+      activeWorkflow: "woodenRobot.activeWorkflow.v1"
     };
 
     const GITHUB_REPO = "woodenrobot-amz/deal-dashboard";
@@ -895,6 +902,7 @@
 
     const DEALS_PER_PAGE = 250;
     let visibleDealLimit = DEALS_PER_PAGE;
+    let activeTrackingPromise = null;
 
     init();
 
@@ -904,6 +912,7 @@
       updateGithubAccessState();
       state.deals = normalizeDeals(await getDeals());
       render();
+      resumeActiveWorkflow();
 
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("./sw.js").catch(function(error) {
@@ -1005,7 +1014,7 @@
       const connected = Boolean(getGithubToken());
       els.githubAccessState.textContent = connected ? "GitHub connected" : "GitHub not connected";
       els.githubAccessState.classList.toggle("connected", connected);
-      els.forgetGithubTokenBtn.disabled = !connected;
+      els.forgetGithubTokenBtn.disabled = !connected || Boolean(getActiveWorkflow());
     }
 
     function setGithubToken() {
@@ -1025,67 +1034,267 @@
       localStorage.setItem(STORAGE_KEYS.githubActionsToken, token);
       updateGithubAccessState();
       showToast("GitHub Actions token saved on this device.");
+      if (getActiveWorkflow()) resumeActiveWorkflow();
       return true;
     }
 
     function forgetGithubToken() {
+      const active = getActiveWorkflow();
+      if (active) {
+        setWorkflowStatus(active.label + " is still being tracked. Wait for it to finish before removing the token.", "running", active.htmlUrl);
+        showToast("Wait for the active workflow to finish.");
+        return;
+      }
+
       localStorage.removeItem(STORAGE_KEYS.githubActionsToken);
       updateGithubAccessState();
       setWorkflowStatus("Ready. GitHub token removed from this device.", "");
       showToast("GitHub token removed.");
     }
 
-    async function runWorkflow(workflowFile, label, button) {
-      let token = getGithubToken();
-      if (!token) {
-        const saved = setGithubToken();
-        if (!saved) return;
-        token = getGithubToken();
-      }
-
-      button.disabled = true;
-      setWorkflowStatus("Triggering " + label + "...", "");
-
+    function getActiveWorkflow() {
       try {
-        const response = await fetch(
-          "https://api.github.com/repos/" + GITHUB_REPO + "/actions/workflows/" + encodeURIComponent(workflowFile) + "/dispatches",
-          {
-            method: "POST",
-            headers: {
-              "Accept": "application/vnd.github+json",
-              "Authorization": "Bearer " + token,
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ ref: GITHUB_REF })
-          }
-        );
-
-        if (!response.ok) {
-          let detail = "GitHub returned HTTP " + response.status + ".";
-          try {
-            const data = await response.json();
-            if (data && data.message) detail = data.message;
-          } catch (error) {
-            // Keep the HTTP fallback above.
-          }
-          throw new Error(detail);
-        }
-
-        setWorkflowStatus(label + " triggered successfully. You can leave this screen; GitHub will continue the run.", "success");
-        showToast(label + " started.");
+        const raw = localStorage.getItem(STORAGE_KEYS.activeWorkflow);
+        if (!raw) return null;
+        const active = JSON.parse(raw);
+        if (!active || !active.workflowFile || !active.label || !active.dispatchStartedAt) return null;
+        return active;
       } catch (error) {
-        console.error(error);
-        setWorkflowStatus(label + " could not be triggered: " + error.message, "error");
-        showToast("Could not start " + label + ".");
-      } finally {
-        button.disabled = false;
+        return null;
       }
     }
 
-    function setWorkflowStatus(message, type) {
-      els.workflowStatus.classList.remove("success", "error");
+    function saveActiveWorkflow(active) {
+      localStorage.setItem(STORAGE_KEYS.activeWorkflow, JSON.stringify(active));
+      updateGithubAccessState();
+    }
+
+    function clearActiveWorkflow() {
+      localStorage.removeItem(STORAGE_KEYS.activeWorkflow);
+      updateGithubAccessState();
+    }
+
+    function setWorkflowControlsLocked(locked, activeWorkflowFile, phase) {
+      els.workflowButtons.forEach(function(button) {
+        button.disabled = locked;
+        if (locked && button.dataset.workflow === activeWorkflowFile) {
+          button.textContent = phase === "queued" ? "Queued..." : "Running...";
+        } else {
+          button.textContent = button.dataset.label;
+        }
+      });
+
+      els.forgetGithubTokenBtn.disabled = locked || !Boolean(getGithubToken());
+    }
+
+    async function githubActionsRequest(path, options) {
+      const token = getGithubToken();
+      if (!token) throw new Error("GitHub token is missing.");
+
+      const settings = options || {};
+      const response = await fetch("https://api.github.com/repos/" + GITHUB_REPO + path, {
+        method: settings.method || "GET",
+        headers: {
+          "Accept": "application/vnd.github+json",
+          "Authorization": "Bearer " + token,
+          "Content-Type": "application/json"
+        },
+        body: settings.body ? JSON.stringify(settings.body) : undefined
+      });
+
+      if (!response.ok) {
+        let detail = "GitHub returned HTTP " + response.status + ".";
+        try {
+          const data = await response.json();
+          if (data && data.message) detail = data.message;
+        } catch (error) {
+          // Keep the HTTP fallback above.
+        }
+        throw new Error(detail);
+      }
+
+      if (response.status === 204) return null;
+      return response.json();
+    }
+
+    async function listWorkflowRuns(workflowFile) {
+      const path = "/actions/workflows/" + encodeURIComponent(workflowFile) +
+        "/runs?event=workflow_dispatch&branch=" + encodeURIComponent(GITHUB_REF) + "&per_page=20";
+      const data = await githubActionsRequest(path);
+      return Array.isArray(data && data.workflow_runs) ? data.workflow_runs : [];
+    }
+
+    async function runWorkflow(workflowFile, label) {
+      const existing = getActiveWorkflow();
+      if (existing) {
+        setWorkflowControlsLocked(true, existing.workflowFile, existing.runId ? "running" : "queued");
+        setWorkflowStatus(existing.label + " is still active. Wait for GitHub to finish before starting another action.", "running", existing.htmlUrl);
+        return;
+      }
+
+      if (!getGithubToken()) {
+        const saved = setGithubToken();
+        if (!saved) return;
+      }
+
+      let previousRuns;
+      try {
+        previousRuns = await listWorkflowRuns(workflowFile);
+      } catch (error) {
+        console.error(error);
+        setWorkflowStatus("Could not check GitHub before starting " + label + ": " + error.message, "error");
+        return;
+      }
+
+      const active = {
+        workflowFile: workflowFile,
+        label: label,
+        dispatchStartedAt: new Date().toISOString(),
+        knownRunIds: previousRuns.map(function(run) { return run.id; }),
+        runId: null,
+        htmlUrl: ""
+      };
+
+      saveActiveWorkflow(active);
+      setWorkflowControlsLocked(true, workflowFile, "queued");
+      setWorkflowStatus("Queuing " + label + " in GitHub...", "running");
+
+      try {
+        await githubActionsRequest(
+          "/actions/workflows/" + encodeURIComponent(workflowFile) + "/dispatches",
+          { method: "POST", body: { ref: GITHUB_REF } }
+        );
+      } catch (error) {
+        console.error(error);
+        clearActiveWorkflow();
+        setWorkflowControlsLocked(false);
+        setWorkflowStatus(label + " could not be triggered: " + error.message, "error");
+        showToast("Could not start " + label + ".");
+        return;
+      }
+
+      setWorkflowStatus(label + " queued. Waiting for the GitHub run to appear...", "running");
+      showToast(label + " started.");
+
+      try {
+        await startTrackingActiveWorkflow(active);
+      } catch (error) {
+        console.error(error);
+        setWorkflowStatus("Status tracking paused for " + label + ": " + error.message + " The controls remain locked; refresh to resume checking.", "error", active.htmlUrl);
+      }
+    }
+
+    function startTrackingActiveWorkflow(active) {
+      if (activeTrackingPromise) return activeTrackingPromise;
+      activeTrackingPromise = trackActiveWorkflow(active).finally(function() {
+        activeTrackingPromise = null;
+      });
+      return activeTrackingPromise;
+    }
+
+    async function resumeActiveWorkflow() {
+      const active = getActiveWorkflow();
+      if (!active) {
+        setWorkflowControlsLocked(false);
+        return;
+      }
+
+      setWorkflowControlsLocked(true, active.workflowFile, active.runId ? "running" : "queued");
+
+      if (!getGithubToken()) {
+        setWorkflowStatus(active.label + " may still be running. Add the GitHub token again to resume status checks.", "error", active.htmlUrl);
+        return;
+      }
+
+      setWorkflowStatus("Reconnecting to " + active.label + "...", "running", active.htmlUrl);
+      try {
+        await startTrackingActiveWorkflow(active);
+      } catch (error) {
+        console.error(error);
+        setWorkflowStatus("Status tracking paused for " + active.label + ": " + error.message + " The controls remain locked; refresh to resume checking.", "error", active.htmlUrl);
+      }
+    }
+
+    async function waitForWorkflowRun(active) {
+      const knownIds = new Set(Array.isArray(active.knownRunIds) ? active.knownRunIds : []);
+      const earliest = Date.parse(active.dispatchStartedAt) - 10000;
+
+      for (let attempt = 0; attempt < 24; attempt++) {
+        const runs = await listWorkflowRuns(active.workflowFile);
+        const matches = runs.filter(function(run) {
+          return !knownIds.has(run.id) && Date.parse(run.created_at) >= earliest;
+        }).sort(function(a, b) {
+          return Date.parse(a.created_at) - Date.parse(b.created_at);
+        });
+
+        if (matches.length) return matches[0];
+        await delay(2500);
+      }
+
+      throw new Error("GitHub accepted the dispatch, but the new run has not appeared yet.");
+    }
+
+    async function trackActiveWorkflow(active) {
+      if (!active.runId) {
+        setWorkflowControlsLocked(true, active.workflowFile, "queued");
+        const run = await waitForWorkflowRun(active);
+        active.runId = run.id;
+        active.htmlUrl = run.html_url || "";
+        saveActiveWorkflow(active);
+      }
+
+      let consecutiveErrors = 0;
+
+      while (true) {
+        try {
+          const run = await githubActionsRequest("/actions/runs/" + encodeURIComponent(active.runId));
+          consecutiveErrors = 0;
+          active.htmlUrl = run.html_url || active.htmlUrl || "";
+          saveActiveWorkflow(active);
+
+          if (run.status === "completed") {
+            const succeeded = run.conclusion === "success";
+            clearActiveWorkflow();
+            setWorkflowControlsLocked(false);
+
+            if (succeeded) {
+              setWorkflowStatus(active.label + " completed successfully. Safe to start the next action.", "success", active.htmlUrl);
+              showToast(active.label + " finished successfully.");
+            } else {
+              setWorkflowStatus(active.label + " finished with " + (run.conclusion || "an unknown result") + ". Check the run before starting the next action.", "error", active.htmlUrl);
+              showToast(active.label + " did not finish successfully.");
+            }
+            return;
+          }
+
+          const queued = run.status === "queued" || run.status === "waiting" || run.status === "pending";
+          setWorkflowControlsLocked(true, active.workflowFile, queued ? "queued" : "running");
+          setWorkflowStatus(
+            active.label + (queued ? " is queued." : " is running.") + " Other actions are locked until it finishes.",
+            "running",
+            active.htmlUrl
+          );
+          await delay(5000);
+        } catch (error) {
+          consecutiveErrors += 1;
+          setWorkflowStatus("Having trouble checking " + active.label + ". Other actions remain locked while the PWA retries.", "error", active.htmlUrl);
+          if (consecutiveErrors >= 12) throw error;
+          await delay(5000);
+        }
+      }
+    }
+
+    function delay(ms) {
+      return new Promise(function(resolve) { setTimeout(resolve, ms); });
+    }
+
+    function setWorkflowStatus(message, type, runUrl) {
+      els.workflowStatus.classList.remove("success", "running", "error");
       if (type) els.workflowStatus.classList.add(type);
-      els.workflowStatus.innerHTML = "<strong>Status:</strong> " + escapeHtml(message);
+      const link = runUrl
+        ? " <a href="" + escapeAttr(runUrl) + "" target="_blank" rel="noopener noreferrer">View run</a>"
+        : "";
+      els.workflowStatus.innerHTML = "<strong>Status:</strong> " + escapeHtml(message) + link;
     }
 
     async function getDeals() {

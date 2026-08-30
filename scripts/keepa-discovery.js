@@ -1,4 +1,5 @@
 const fs = require("fs");
+const { writeKeepaStatus } = require("./keepa-status");
 
 const KEEPA_API_KEY = process.env.KEEPA_API_KEY;
 const STREAM_NAME = process.argv[2];
@@ -713,6 +714,7 @@ async function run() {
   }
 
   const data = await res.json();
+  writeKeepaStatus(data, `discovery:${STREAM_NAME}`);
 
   if (data.error) {
     throw new Error(JSON.stringify(data.error));

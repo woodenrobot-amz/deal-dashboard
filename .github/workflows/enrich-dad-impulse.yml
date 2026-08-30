@@ -31,6 +31,7 @@ jobs:
       - name: Run dad impulse enrichment
         env:
           KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+          CAPTURE_KEEPA_STATUS: "1"
         run: node scripts/enrich-stream.js dad_impulse
 
       - name: Commit enrichment results

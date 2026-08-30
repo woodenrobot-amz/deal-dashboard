@@ -1,0 +1,60 @@
+name: Agent Apply Keepa Token Display
+
+on:
+  push:
+    branches:
+      - agent/keepa-token-display-stage
+    paths:
+      - .github/workflows/agent-apply-keepa-token-display.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/keepa-token-display-stage
+          fetch-depth: 0
+
+      - name: Apply patch
+        run: python scripts/agent-patch-keepa-display.py
+
+      - name: Validate JavaScript
+        run: |
+          node --check scripts/keepa-status.js
+          node --check scripts/check-keepa-tokens.js
+          node --check scripts/keepa-discovery.js
+          node --check scripts/enrich-stream.js
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          html = Path('index.html').read_text()
+          match = re.search(r'<script>([\s\S]*?)</script>', html)
+          if not match:
+              raise SystemExit('No inline script found')
+          Path('/tmp/app.js').write_text(match.group(1))
+          PY
+          node --check /tmp/app.js
+
+      - name: Validate token snapshot JSON
+        run: node -e "JSON.parse(require('fs').readFileSync('data/keepa-status.json','utf8'))"
+
+      - name: Validate workflow staging
+        run: |
+          count=$(grep -rl 'node scripts/keepa-discovery.js\|node scripts/enrich-stream.js' .github/workflows/*.yml | wc -l)
+          staged=$(grep -l 'git add data/keepa-status.json' .github/workflows/*.yml | wc -l)
+          echo "Keepa workflows: $count; workflows staging status: $staged"
+          test "$staged" -ge "$count"
+
+      - name: Commit implementation
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html scripts/keepa-discovery.js scripts/enrich-stream.js .github/workflows/*.yml
+          git diff --cached --quiet && exit 0
+          git commit -m "Show Keepa token balance in PWA"
+          git push origin HEAD:agent/keepa-token-display-stage

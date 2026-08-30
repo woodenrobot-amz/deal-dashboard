@@ -1,0 +1,56 @@
+name: Agent Fix Action Status
+
+on:
+  push:
+    branches:
+      - agent/action-run-status
+    paths:
+      - .github/workflows/agent-fix-action-status.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/action-run-status
+          fetch-depth: 0
+
+      - name: Fix and validate PWA script
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path('index.html')
+          text = path.read_text()
+          old = '''      const link = runUrl
+        ? " <a href="" + escapeAttr(runUrl) + "" target="_blank" rel="noopener noreferrer">View run</a>"
+        : "";'''
+          new = '''      const link = runUrl
+        ? ' <a href="' + escapeAttr(runUrl) + '" target="_blank" rel="noopener noreferrer">View run</a>'
+        : "";'''
+          if old not in text:
+              raise SystemExit('Malformed View run link block not found')
+          text = text.replace(old, new, 1)
+          path.write_text(text)
+
+          matches = re.findall(r'<script>(.*?)</script>', text, flags=re.S)
+          if not matches:
+              raise SystemExit('No inline script found')
+          Path('/tmp/app.js').write_text('\n'.join(matches))
+          PY
+          node --check /tmp/app.js
+
+      - name: Commit fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet && exit 0
+          git commit -m "Fix and validate live action status tracking"
+          git push origin HEAD:agent/action-run-status

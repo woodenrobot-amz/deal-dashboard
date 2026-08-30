@@ -2,7 +2,8 @@ const fs = require("fs");
 
 const STATUS_FILE = "data/keepa-status.json";
 
-function writeKeepaStatus(data, source) {
+function writeKeepaStatus(data, source, force = false) {
+  if (!force && process.env.CAPTURE_KEEPA_STATUS !== "1") return false;
   if (!data || typeof data.tokensLeft !== "number") return false;
 
   const status = {

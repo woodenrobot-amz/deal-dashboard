@@ -29,6 +29,7 @@ jobs:
             "enrich-power.yml"
             "disco-woodworking-test.yml"
             "enrich-woodworking-test.yml"
+            "keepa-token-check.yml"
           )
 
           for workflow in "${workflows[@]}"; do

@@ -40,6 +40,7 @@ jobs:
 
           git add data/deals.json
           git add data/discovered-asins.json
+          git add data/keepa-status.json
 
           if git diff --cached --quiet; then
             echo "No changes to commit"

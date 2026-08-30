@@ -549,6 +549,63 @@
       line-height: 1.45;
     }
 
+    .keepa-token-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .keepa-token-copy { min-width: 0; }
+
+    .keepa-token-label {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .keepa-token-value {
+      margin-top: 2px;
+      color: var(--text);
+      font-size: 2rem;
+      line-height: 1.05;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .keepa-token-note {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.35;
+    }
+
+    .keepa-token-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 5px;
+      flex: 0 0 auto;
+    }
+
+    .keepa-token-refresh-note {
+      color: var(--muted);
+      font-size: 0.7rem;
+      white-space: nowrap;
+    }
+
+    .keepa-token-card.updating {
+      border-color: rgba(245, 158, 11, 0.5);
+    }
+
     .workflow-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -731,9 +788,15 @@
         justify-content: flex-start;
       }
 
-      .github-access-card {
+      .github-access-card,
+      .keepa-token-card {
         align-items: flex-start;
         flex-direction: column;
+      }
+
+      .keepa-token-actions {
+        width: 100%;
+        align-items: flex-start;
       }
 
       .github-access-actions {
@@ -798,6 +861,18 @@
 
     <main>
       <p class="workflow-intro">One-tap controls for the existing GitHub Actions. The current test target is Dad Impulse.</p>
+
+      <section id="keepaTokenCard" class="keepa-token-card" aria-label="Keepa token balance">
+        <div class="keepa-token-copy">
+          <div class="keepa-token-label">Keepa Tokens</div>
+          <div id="keepaTokenValue" class="keepa-token-value">—</div>
+          <div id="keepaTokenNote" class="keepa-token-note">Waiting for the first saved Keepa response.</div>
+        </div>
+        <div class="keepa-token-actions">
+          <button id="refreshKeepaTokensBtn" class="small-control" type="button" data-workflow="keepa-token-check.yml" data-label="Keepa Token Refresh">Refresh Exact</button>
+          <span class="keepa-token-refresh-note">Exact check uses 1 token.</span>
+        </div>
+      </section>
 
       <section class="github-access-card" aria-label="GitHub access">
         <div class="github-access-copy">
@@ -864,6 +939,7 @@
 
     const GITHUB_REPO = "woodenrobot-amz/deal-dashboard";
     const GITHUB_REF = "main";
+    const KEEPA_STATUS_URL = "https://raw.githubusercontent.com/woodenrobot-amz/deal-dashboard/main/data/keepa-status.json";
 
     const state = {
       deals: [],
@@ -871,6 +947,7 @@
       selectedTag: localStorage.getItem(STORAGE_KEYS.selectedTag) || "All",
       sortBy: localStorage.getItem(STORAGE_KEYS.sortBy) || "dealScore",
       showBookmarksOnly: false,
+      keepaStatus: null,
       ignoredAsins: loadSet(STORAGE_KEYS.ignoredAsins),
       hiddenAsins: loadSet(STORAGE_KEYS.hiddenAsins),
       bookmarkedAsins: loadSet(STORAGE_KEYS.bookmarkedAsins)
@@ -882,10 +959,13 @@
       dealsTabBtn: document.getElementById("dealsTabBtn"),
       actionsTabBtn: document.getElementById("actionsTabBtn"),
       githubAccessState: document.getElementById("githubAccessState"),
+      keepaTokenCard: document.getElementById("keepaTokenCard"),
+      keepaTokenValue: document.getElementById("keepaTokenValue"),
+      keepaTokenNote: document.getElementById("keepaTokenNote"),
       setGithubTokenBtn: document.getElementById("setGithubTokenBtn"),
       forgetGithubTokenBtn: document.getElementById("forgetGithubTokenBtn"),
       workflowStatus: document.getElementById("workflowStatus"),
-      workflowButtons: Array.from(document.querySelectorAll(".workflow-trigger")),
+      workflowButtons: Array.from(document.querySelectorAll(".workflow-trigger, #refreshKeepaTokensBtn")),
       searchInput: document.getElementById("searchInput"),
       clearSearchBtn: document.getElementById("clearSearchBtn"),
       tagFilters: document.getElementById("tagFilters"),
@@ -912,6 +992,8 @@
       updateGithubAccessState();
       state.deals = normalizeDeals(await getDeals());
       render();
+      await loadKeepaStatus();
+      window.setInterval(renderKeepaTokenStatus, 15000);
       resumeActiveWorkflow();
 
       if ("serviceWorker" in navigator) {
@@ -1085,6 +1167,7 @@
       });
 
       els.forgetGithubTokenBtn.disabled = locked || !Boolean(getGithubToken());
+      renderKeepaTokenStatus();
     }
 
     async function githubActionsRequest(path, options) {
@@ -1256,6 +1339,7 @@
             const succeeded = run.conclusion === "success";
             clearActiveWorkflow();
             setWorkflowControlsLocked(false);
+            await loadKeepaStatus(true);
 
             if (succeeded) {
               setWorkflowStatus(active.label + " completed successfully. Safe to start the next action.", "success", active.htmlUrl);
@@ -1295,6 +1379,95 @@
         ? ' <a href="' + escapeAttr(runUrl) + '" target="_blank" rel="noopener noreferrer">View run</a>'
         : "";
       els.workflowStatus.innerHTML = "<strong>Status:</strong> " + escapeHtml(message) + link;
+    }
+
+    function keepaActionIsActive() {
+      const active = getActiveWorkflow();
+      return Boolean(active && active.workflowFile !== "scrub-all.yml");
+    }
+
+    function effectiveKeepaRefillRate(status) {
+      const refillRate = Number(status && status.refillRate);
+      const reduction = Number(status && status.tokenFlowReduction);
+      if (!Number.isFinite(refillRate) || refillRate <= 0) return 0;
+      return Math.max(0, refillRate - Math.round(Number.isFinite(reduction) ? reduction : 0));
+    }
+
+    function estimateKeepaTokens(status) {
+      const exact = Number(status && status.tokensLeft);
+      const capturedAt = Date.parse(status && status.capturedAt);
+      if (!Number.isFinite(exact) || !Number.isFinite(capturedAt)) return null;
+
+      const rate = effectiveKeepaRefillRate(status);
+      if (!rate) return exact;
+
+      const elapsed = Math.max(0, Date.now() - capturedAt);
+      const refillIn = Math.max(0, Number(status.refillIn) || 0);
+      let added = 0;
+
+      if (elapsed >= refillIn) {
+        added = rate * (1 + Math.floor((elapsed - refillIn) / 60000));
+      }
+
+      const capacity = Math.max(exact, rate * 60);
+      return Math.min(capacity, exact + added);
+    }
+
+    function formatKeepaCaptureTime(value) {
+      const date = new Date(value);
+      if (!Number.isFinite(date.getTime())) return "unknown time";
+      return date.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+    }
+
+    function renderKeepaTokenStatus() {
+      const status = state.keepaStatus;
+      const exact = Number(status && status.tokensLeft);
+
+      if (!status || !Number.isFinite(exact) || !status.capturedAt) {
+        els.keepaTokenCard.classList.remove("updating");
+        els.keepaTokenValue.textContent = "—";
+        els.keepaTokenNote.textContent = "Run any Keepa action or tap Refresh Exact to capture the balance.";
+        return;
+      }
+
+      const active = getActiveWorkflow();
+      const keepaActive = keepaActionIsActive();
+      const rate = effectiveKeepaRefillRate(status);
+      const estimated = estimateKeepaTokens(status);
+      const exactLabel = Math.round(exact).toLocaleString();
+
+      els.keepaTokenCard.classList.toggle("updating", keepaActive);
+
+      if (keepaActive) {
+        els.keepaTokenValue.textContent = exactLabel + " last exact";
+        els.keepaTokenNote.textContent =
+          formatKeepaCaptureTime(status.capturedAt) +
+          " • " + active.label + " is active; balance refreshes when it finishes.";
+        return;
+      }
+
+      els.keepaTokenValue.textContent = estimated === null
+        ? exactLabel
+        : "≈ " + Math.round(estimated).toLocaleString();
+      els.keepaTokenNote.textContent =
+        "Last exact " + exactLabel + " at " + formatKeepaCaptureTime(status.capturedAt) +
+        (rate ? " • " + rate.toLocaleString() + "/min refill" : "");
+    }
+
+    async function loadKeepaStatus(force) {
+      const suffix = force ? "?t=" + Date.now() : "?t=" + Math.floor(Date.now() / 15000);
+      try {
+        const response = await fetch(KEEPA_STATUS_URL + suffix, { cache: "no-store" });
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        state.keepaStatus = await response.json();
+        renderKeepaTokenStatus();
+      } catch (error) {
+        console.warn("Could not load Keepa token status", error);
+        if (!state.keepaStatus) {
+          els.keepaTokenValue.textContent = "Unavailable";
+          els.keepaTokenNote.textContent = "Could not load the saved Keepa balance.";
+        }
+      }
     }
 
     async function getDeals() {

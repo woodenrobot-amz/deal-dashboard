@@ -31,6 +31,7 @@ jobs:
       - name: Run dad impulse discovery
         env:
           KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+          CAPTURE_KEEPA_STATUS: "1"
         run: node scripts/keepa-discovery.js dad_impulse
 
       - name: Upload discovery artifact
@@ -44,5 +45,6 @@ jobs:
           git config user.name "keepa-bot"
           git config user.email "keepa-bot@users.noreply.github.com"
           git add data/discovered-asins.json
+          git add data/keepa-status.json
           git diff --cached --quiet || git commit -m "update dad impulse discovery"
           git push

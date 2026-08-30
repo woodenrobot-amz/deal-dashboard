@@ -1,4 +1,4 @@
-name: Enrich Dad Impulse Deals
+name: Check Keepa Tokens
 
 on:
   workflow_dispatch:
@@ -7,11 +7,11 @@ permissions:
   contents: write
 
 concurrency:
-  group: keepa-enrich-dad-impulse
+  group: keepa-token-check
   cancel-in-progress: false
 
 jobs:
-  enrich:
+  check:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,27 +28,16 @@ jobs:
         with:
           node-version: 22
 
-      - name: Run dad impulse enrichment
+      - name: Check Keepa token balance
         env:
           KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
-          CAPTURE_KEEPA_STATUS: "1"
-        run: node scripts/enrich-stream.js dad_impulse
+        run: node scripts/check-keepa-tokens.js
 
-      - name: Commit enrichment results
+      - name: Commit token status
         run: |
           git config user.name "keepa-bot"
           git config user.email "keepa-bot@users.noreply.github.com"
-
-          git add data/deals.json
-          git add data/discovered-asins.json
           git add data/keepa-status.json
-
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
-
-          git commit -m "enrich dad impulse deals"
-
+          git diff --cached --quiet || git commit -m "update Keepa token status"
           git pull --rebase origin main
           git push

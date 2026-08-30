@@ -31,6 +31,7 @@ jobs:
       - name: Run dad impulse discovery
         env:
           KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+          CAPTURE_KEEPA_STATUS: "1"
         run: node scripts/keepa-discovery.js dad_impulse
 
       - name: Upload discovery artifact

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-30T23:42:44.072Z",
+  "generatedAt": "2026-08-31T00:53:24.600Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 186,
+  "lastEnrichmentStream": "power_tools_main",
+  "dealCount": 187,
   "deals": [
     {
       "asin": "B01DR90MM6",
@@ -10793,6 +10793,85 @@
         "reviews": 3,
         "rating": 5,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B000GAUXWE",
+      "parentAsin": "B0FD94Z9DN",
+      "familyKey": "B0FD94Z9DN",
+      "variationCount": 1,
+      "productAgeDays": 5638,
+      "title": "makita gv5010 5\" disc sander",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552884",
+        "228013",
+        "328182011",
+        "551236",
+        "552876"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552876",
+          "name": "sanders"
+        },
+        {
+          "id": "552884",
+          "name": "disc sanders"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 107,
+      "avg30": 109.6,
+      "avg90": 111.71,
+      "low365": 79.99,
+      "rating": 4.7,
+      "reviewCount": 714,
+      "rank": 69617,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51FMX82sLSL.jpg",
+      "url": "https://www.amazon.com/dp/B000GAUXWE",
+      "keepa": "https://keepa.com/#!product/1-B000GAUXWE",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-08-31T00:53:24.599Z",
+      "dealScore": 62,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 6,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 50,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 9,
+        "priceTier": 6
       }
     },
     {

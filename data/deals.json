@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-02T10:27:56.949Z",
+  "generatedAt": "2026-09-02T10:28:31.112Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 616,
+  "lastEnrichmentStream": "dudes_power",
+  "dealCount": 617,
   "deals": [
     {
       "asin": "B0CYLL8Y89",
@@ -236,15 +236,15 @@
       }
     },
     {
-      "asin": "B09NRG4GK3",
+      "asin": "B09P8DSRVB",
       "parentAsin": "B0B1D5ZH9V",
       "familyKey": "B0B1D5ZH9V",
       "variationCount": 3,
-      "productAgeDays": 1652,
+      "productAgeDays": 1435,
       "title": "anker 633 magnetic power bank with stand, 10,000mah portable charger",
       "brand": "anker",
       "brandTier": "top",
-      "category": "dad_impulse",
+      "category": "dad_impulse,dudes_power",
       "keepaCategoryIds": [
         "7073960011",
         "2335752011",
@@ -269,25 +269,25 @@
           "name": "portable power banks"
         }
       ],
-      "sourceStream": "dad_impulse",
+      "sourceStream": "dudes_power",
       "sources": [
         "keepa"
       ],
       "price": 39.99,
-      "avg30": 54.17,
-      "avg90": 55.74,
-      "low365": 35.98,
+      "avg30": 54,
+      "avg90": 55.96,
+      "low365": 35.99,
       "rating": 4.4,
-      "reviewCount": 11637,
-      "rank": 786,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51ScnQNj18L.jpg",
-      "url": "https://www.amazon.com/dp/B09NRG4GK3",
-      "keepa": "https://keepa.com/#!product/1-B09NRG4GK3",
+      "reviewCount": 11644,
+      "rank": 738,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51c2uuW935L.jpg",
+      "url": "https://www.amazon.com/dp/B09P8DSRVB",
+      "keepa": "https://keepa.com/#!product/1-B09P8DSRVB",
       "isLowAll": false,
       "drop1Day": 0,
       "isHot": true,
       "isNameBrand": true,
-      "updatedAt": "2026-09-01T10:45:05.419Z",
+      "updatedAt": "2026-09-02T10:28:31.110Z",
       "dealScore": 132,
       "scoreBreakdown": {
         "rating": 22,
@@ -307,7 +307,13 @@
         "reviews": 15,
         "rating": 5,
         "priceTier": 2
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B09NRG4GK3",
+        "B09P8DSRVB"
+      ]
     },
     {
       "asin": "B0CF54FWFL",
@@ -381,7 +387,13 @@
         "reviews": 15,
         "rating": 5,
         "priceTier": 4
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0CF54FWFL",
+        "B0CF56WHV4"
+      ]
     },
     {
       "asin": "B0D72M2X7X",
@@ -463,6 +475,86 @@
       }
     },
     {
+      "asin": "B0F66PLGWG",
+      "parentAsin": "B0GN2FR2LD",
+      "familyKey": "B0GN2FR2LD",
+      "variationCount": 2,
+      "productAgeDays": 285,
+      "title": "anker prime power bank, 26,250mah 300w with fast charging base",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "7073960011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "7073960011",
+          "name": "portable power banks"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 259.99,
+      "avg30": 308.78,
+      "avg90": 302.7,
+      "low365": 247.49,
+      "rating": 4.6,
+      "reviewCount": 1634,
+      "rank": 694,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61TDi5WhM9L.jpg",
+      "url": "https://www.amazon.com/dp/B0F66PLGWG",
+      "keepa": "https://keepa.com/#!product/1-B0F66PLGWG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-02T10:28:31.110Z",
+      "dealScore": 107,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 21,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 79,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 13,
+        "rating": 8,
+        "priceTier": 8
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0F66LNB8D",
+        "B0F66PLGWG"
+      ]
+    },
+    {
       "asin": "B0D8PTGKSM",
       "parentAsin": "B0DGTJC5W7",
       "familyKey": "B0DGTJC5W7",
@@ -534,7 +626,13 @@
         "reviews": 13,
         "rating": 5,
         "priceTier": 4
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0D8PTGKSM",
+        "B0D8PYWHZR"
+      ]
     },
     {
       "asin": "B0B466YTT3",
@@ -608,80 +706,6 @@
         "reviews": 15,
         "rating": 0,
         "priceTier": 0
-      }
-    },
-    {
-      "asin": "B0F66LNB8D",
-      "parentAsin": "B0GN2FR2LD",
-      "familyKey": "B0GN2FR2LD",
-      "variationCount": 2,
-      "productAgeDays": 404,
-      "title": "anker prime power bank, 26,250mah 300w fast charging",
-      "brand": "anker",
-      "brandTier": "top",
-      "category": "dudes_power",
-      "keepaCategoryIds": [
-        "7073960011",
-        "2335752011",
-        "2407755011",
-        "2407761011"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "2335752011",
-          "name": "cell phones & accessories"
-        },
-        {
-          "id": "2407755011",
-          "name": "accessories"
-        },
-        {
-          "id": "2407761011",
-          "name": "chargers & power adapters"
-        },
-        {
-          "id": "7073960011",
-          "name": "portable power banks"
-        }
-      ],
-      "sourceStream": "dudes_power",
-      "sources": [
-        "keepa"
-      ],
-      "price": 179.98,
-      "avg30": 215.05,
-      "avg90": 209.33,
-      "low365": 159.99,
-      "rating": 4.6,
-      "reviewCount": 1632,
-      "rank": 984,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/61e1Q8gZDVL.jpg",
-      "url": "https://www.amazon.com/dp/B0F66LNB8D",
-      "keepa": "https://keepa.com/#!product/1-B0F66LNB8D",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": true,
-      "isNameBrand": true,
-      "updatedAt": "2026-09-01T21:37:56.156Z",
-      "dealScore": 107,
-      "scoreBreakdown": {
-        "rating": 23,
-        "discount": 21,
-        "rank": 30,
-        "reviews": 10,
-        "variationFamily": 0,
-        "productAge": 3,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 77,
-      "normalizedScoreBreakdown": {
-        "discount": 10,
-        "brand": 20,
-        "demand": 20,
-        "reviews": 13,
-        "rating": 8,
-        "priceTier": 6
       }
     },
     {
@@ -979,7 +1003,13 @@
         "reviews": 15,
         "rating": 7,
         "priceTier": 2
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FKN6DGLV",
+        "B0DGGHTJQB"
+      ]
     },
     {
       "asin": "B00VQCBTXS",
@@ -24740,6 +24770,75 @@
         "reviews": 15,
         "rating": 5,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0C5DB18DC",
+      "parentAsin": "B0GXVGZF29",
+      "familyKey": "B0GXVGZF29",
+      "variationCount": 1,
+      "productAgeDays": 1204,
+      "title": "bluetti elite 100 mini portable power station 1004.8wh 700w lfp for camping",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 429,
+      "avg30": 522.46,
+      "avg90": 513.56,
+      "low365": 395,
+      "rating": 4.5,
+      "reviewCount": 89,
+      "rank": 430228,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61wi+sUjpiL.jpg",
+      "url": "https://www.amazon.com/dp/B0C5DB18DC",
+      "keepa": "https://keepa.com/#!product/1-B0C5DB18DC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-02T10:28:31.111Z",
+      "dealScore": 74,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 24,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 54,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 7,
+        "priceTier": 10
       }
     },
     {

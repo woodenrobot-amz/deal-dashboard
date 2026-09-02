@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-02T10:27:16.592Z",
+  "generatedAt": "2026-09-02T10:27:56.949Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 608,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 616,
   "deals": [
     {
       "asin": "B0CYLL8Y89",
@@ -43993,6 +43993,89 @@
       }
     },
     {
+      "asin": "B0057GJYPO",
+      "parentAsin": "B004MYFPFK",
+      "familyKey": "B004MYFPFK",
+      "variationCount": 11,
+      "productAgeDays": 5478,
+      "title": "starrett intenss pro-die bi-metal band saw blade, 8' 9\" l x 1/2\" w",
+      "brand": "starrett",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552288",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552288",
+          "name": "band saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 76.27,
+      "avg30": 94.58,
+      "avg90": 82.47,
+      "low365": 62.1,
+      "rating": 4.1,
+      "reviewCount": 195,
+      "rank": 445356,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/317KdHVUK4L.jpg",
+      "url": "https://www.amazon.com/dp/B0057GJYPO",
+      "keepa": "https://keepa.com/#!product/1-B0057GJYPO",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-02T10:27:56.946Z",
+      "dealScore": 62,
+      "scoreBreakdown": {
+        "rating": 20,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 0,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B001NI6LPG",
       "parentAsin": "B0B2KX1H1V",
       "familyKey": "B0B2KX1H1V",
@@ -44231,6 +44314,80 @@
         "reviews": 6,
         "rating": 10,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B003J35KN2",
+      "parentAsin": "",
+      "familyKey": "B003J35KN2",
+      "variationCount": 0,
+      "productAgeDays": 4687,
+      "title": "tormek sj-200 tormek japanese waterstone 4000 grit - delivers a mirror finish - fits t-4 and t-3",
+      "brand": "tormek",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553346",
+        "228013",
+        "328182011",
+        "551238"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553346",
+          "name": "sharpening stones"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 321.3,
+      "avg30": 356.52,
+      "avg90": 356.84,
+      "low365": 266.4,
+      "rating": 4.6,
+      "reviewCount": 107,
+      "rank": 818628,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71i2ZHvMpxL.jpg",
+      "url": "https://www.amazon.com/dp/B003J35KN2",
+      "keepa": "https://keepa.com/#!product/1-B003J35KN2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-02T10:27:56.946Z",
+      "dealScore": 45,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 8,
+        "priceTier": 10
       }
     },
     {
@@ -44671,6 +44828,80 @@
       "isHot": false,
       "isNameBrand": false,
       "updatedAt": "2026-09-01T21:38:36.677Z",
+      "dealScore": 45,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 27,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 9,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B07Y3CH995",
+      "parentAsin": "",
+      "familyKey": "B07Y3CH995",
+      "variationCount": 0,
+      "productAgeDays": 2500,
+      "title": "tormek us-430 universal support extended with micro adjust - for sharpening long knives, cleavers, machetes, etc. - suits tormek sharpening systems t-8/t-7/t-4/t-3 and older models",
+      "brand": "tormek",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553346",
+        "228013",
+        "328182011",
+        "551238"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553346",
+          "name": "sharpening stones"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 119.65,
+      "avg30": 132.51,
+      "avg90": 132.83,
+      "low365": 111.6,
+      "rating": 4.7,
+      "reviewCount": 103,
+      "rank": 497520,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/613RSXEPKrL.jpg",
+      "url": "https://www.amazon.com/dp/B07Y3CH995",
+      "keepa": "https://keepa.com/#!product/1-B07Y3CH995",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-02T10:27:56.946Z",
       "dealScore": 45,
       "scoreBreakdown": {
         "rating": 23,
@@ -45409,6 +45640,154 @@
       }
     },
     {
+      "asin": "B00149HCNO",
+      "parentAsin": "",
+      "familyKey": "B00149HCNO",
+      "variationCount": 0,
+      "productAgeDays": 5632,
+      "title": "tormek svs-38 short tool jig - sharpen short woodworking tools like short wood chisels, carving gouges, tools for power carvers etc.",
+      "brand": "tormek",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552488",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552488",
+          "name": "jig accessories"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 36,
+      "avg30": 39.79,
+      "avg90": 39.86,
+      "low365": 33.3,
+      "rating": 4.6,
+      "reviewCount": 299,
+      "rank": 177430,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51CQ4xEU7jL.jpg",
+      "url": "https://www.amazon.com/dp/B00149HCNO",
+      "keepa": "https://keepa.com/#!product/1-B00149HCNO",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-02T10:27:56.947Z",
+      "dealScore": 45,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 24,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B082W9YRNF",
+      "parentAsin": "",
+      "familyKey": "B082W9YRNF",
+      "variationCount": 0,
+      "productAgeDays": 2399,
+      "title": "tormek tnt-808 woodturner’s kit - a complete turning tool sharpener kit for tormek water cooled sharpening systems – includes jigs to shape and sharpen turning tools",
+      "brand": "tormek",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553346",
+        "228013",
+        "328182011",
+        "551238"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553346",
+          "name": "sharpening stones"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 473.4,
+      "avg30": 523.07,
+      "avg90": 521.82,
+      "low365": 430,
+      "rating": 4.4,
+      "reviewCount": 86,
+      "rank": 690980,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61R3QfOjbML.jpg",
+      "url": "https://www.amazon.com/dp/B082W9YRNF",
+      "keepa": "https://keepa.com/#!product/1-B082W9YRNF",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-02T10:27:56.947Z",
+      "dealScore": 43,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 24,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 5,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B0FJRR9RGC",
       "parentAsin": "",
       "familyKey": "B0FJRR9RGC",
@@ -45561,6 +45940,81 @@
       }
     },
     {
+      "asin": "B0034YQY1I",
+      "parentAsin": "",
+      "familyKey": "B0034YQY1I",
+      "variationCount": 0,
+      "productAgeDays": 5640,
+      "title": "tormek msk-250 stainless steel main shaft and e-z lock upgrade kit (for t-7, super grind 2000 and all 10-inch tormek grinding systems)",
+      "brand": "tormek",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553346",
+        "9022420011",
+        "228013",
+        "328182011",
+        "551238"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553346",
+          "name": "sharpening stones"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 72,
+      "avg30": 79.92,
+      "avg90": 79.97,
+      "low365": 66.6,
+      "rating": 4.7,
+      "reviewCount": 95,
+      "rank": 675703,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71n2JI6K6KL.jpg",
+      "url": "https://www.amazon.com/dp/B0034YQY1I",
+      "keepa": "https://keepa.com/#!product/1-B0034YQY1I",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-02T10:27:56.946Z",
+      "dealScore": 45,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 22,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 9,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B0013N8Z0A",
       "parentAsin": "",
       "familyKey": "B0013N8Z0A",
@@ -45632,6 +46086,80 @@
         "reviews": 3,
         "rating": 5,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B00149DICS",
+      "parentAsin": "B0D81NXVYP",
+      "familyKey": "B0D81NXVYP",
+      "variationCount": 1,
+      "productAgeDays": 5625,
+      "title": "tormek sg-200 original grindstone 220-1000 grit - ideal for both efficient steel removal and a fine surface finish - fits t-4, t-3 and tormek 1200",
+      "brand": "tormek",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553346",
+        "228013",
+        "328182011",
+        "551238"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553346",
+          "name": "sharpening stones"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 171,
+      "avg30": 189.35,
+      "avg90": 189.78,
+      "low365": 153.86,
+      "rating": 4.5,
+      "reviewCount": 75,
+      "rank": 322699,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81LdZRNTAzL.jpg",
+      "url": "https://www.amazon.com/dp/B00149DICS",
+      "keepa": "https://keepa.com/#!product/1-B00149DICS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-02T10:27:56.945Z",
+      "dealScore": 44,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 22,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 7,
+        "priceTier": 6
       }
     },
     {
@@ -45869,6 +46397,80 @@
         "reviews": 6,
         "rating": 5,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B00149FIFI",
+      "parentAsin": "",
+      "familyKey": "B00149FIFI",
+      "variationCount": 0,
+      "productAgeDays": 3957,
+      "title": "tormek planer blade sharpener svh-320. the planer/jointer blade sharpening jig that precisely sharpens virtually any length blade",
+      "brand": "tormek",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552488",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552488",
+          "name": "jig accessories"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 265.99,
+      "avg30": 289.16,
+      "avg90": 290.03,
+      "low365": 250.16,
+      "rating": 4.1,
+      "reviewCount": 178,
+      "rank": 514239,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61wuAV1ZMvL.jpg",
+      "url": "https://www.amazon.com/dp/B00149FIFI",
+      "keepa": "https://keepa.com/#!product/1-B00149FIFI",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-02T10:27:56.947Z",
+      "dealScore": 40,
+      "scoreBreakdown": {
+        "rating": 20,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 20,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 0,
+        "priceTier": 8
       }
     },
     {

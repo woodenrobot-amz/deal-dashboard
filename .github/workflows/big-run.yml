@@ -32,28 +32,52 @@ jobs:
             "keepa-token-check.yml"
           )
 
+          max_attempts=3
+
           for workflow in "${workflows[@]}"; do
-            echo "Starting $workflow..."
+            attempt=1
 
-            gh workflow run "$workflow" --ref "${{ github.ref_name }}"
+            while (( attempt <= max_attempts )); do
+              echo "Starting $workflow (attempt $attempt/$max_attempts)..."
 
-            sleep 10
+              gh workflow run "$workflow" --ref "${{ github.ref_name }}"
 
-            run_id=$(gh run list \
-              --workflow "$workflow" \
-              --branch "${{ github.ref_name }}" \
-              --limit 1 \
-              --json databaseId \
-              --jq '.[0].databaseId')
+              sleep 10
 
-            gh run watch "$run_id"
+              run_id=$(gh run list \
+                --workflow "$workflow" \
+                --branch "${{ github.ref_name }}" \
+                --limit 1 \
+                --json databaseId \
+                --jq '.[0].databaseId')
 
-            conclusion=$(gh run view "$run_id" --json conclusion --jq '.conclusion')
+              gh run watch "$run_id" || true
 
-            if [[ "$conclusion" != "success" ]]; then
+              conclusion=$(gh run view "$run_id" --json conclusion --jq '.conclusion')
+
+              if [[ "$conclusion" == "success" ]]; then
+                echo "$workflow complete."
+                break
+              fi
+
               echo "$workflow failed with conclusion: $conclusion"
-              exit 1
-            fi
 
-            echo "$workflow complete."
+              logs=$(gh run view "$run_id" --log 2>&1 || true)
+
+              if grep -q "429 Too Many Requests" <<< "$logs"; then
+                if (( attempt == max_attempts )); then
+                  echo "$workflow is still being throttled by Keepa after $max_attempts attempts."
+                  exit 1
+                fi
+
+                wait_seconds=$((60 * attempt))
+                echo "Keepa returned 429 Too Many Requests. Waiting ${wait_seconds}s for tokens to replenish before retrying..."
+                sleep "$wait_seconds"
+                ((attempt++))
+                continue
+              fi
+
+              echo "$workflow failed for a non-throttling reason; not retrying."
+              exit 1
+            done
           done

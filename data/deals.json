@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-09T22:56:30.512Z",
+  "generatedAt": "2026-09-09T22:57:08.831Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 458,
+  "lastEnrichmentStream": "dudes_power",
+  "dealCount": 460,
   "deals": [
     {
       "asin": "B0DDQ71B9P",
@@ -467,6 +467,87 @@
         "rating": 8,
         "priceTier": 4
       }
+    },
+    {
+      "asin": "B0DGGKSV1X",
+      "parentAsin": "B0GMZT8D9N",
+      "familyKey": "B0GMZT8D9N",
+      "variationCount": 5,
+      "productAgeDays": 721,
+      "title": "anker nano power bank, 45w 10,000mah portable charger, iphone battery pack (white)",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "7073960011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "7073960011",
+          "name": "portable power banks"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg30": 56.77,
+      "avg90": 58.91,
+      "low365": 39.99,
+      "rating": 4.5,
+      "reviewCount": 3260,
+      "rank": 209,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61G6-v9swdL.jpg",
+      "url": "https://www.amazon.com/dp/B0DGGKSV1X",
+      "keepa": "https://keepa.com/#!product/1-B0DGGKSV1X",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-09T22:57:08.830Z",
+      "dealScore": 107,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 22,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 78,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 2
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FKN6DGLV",
+        "B0DGKWTQQC",
+        "B0DGGKSV1X"
+      ]
     },
     {
       "asin": "B0F66LNB8D",
@@ -1087,86 +1168,6 @@
       }
     },
     {
-      "asin": "B0FKN6DGLV",
-      "parentAsin": "B0GMZT8D9N",
-      "familyKey": "B0GMZT8D9N",
-      "variationCount": 5,
-      "productAgeDays": 403,
-      "title": "anker nano power bank, 45w 10,000mah portable charger, iphone battery pack (blue)",
-      "brand": "anker",
-      "brandTier": "top",
-      "category": "dudes_power",
-      "keepaCategoryIds": [
-        "7073960011",
-        "2335752011",
-        "2407755011",
-        "2407761011"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "2335752011",
-          "name": "cell phones & accessories"
-        },
-        {
-          "id": "2407755011",
-          "name": "accessories"
-        },
-        {
-          "id": "2407761011",
-          "name": "chargers & power adapters"
-        },
-        {
-          "id": "7073960011",
-          "name": "portable power banks"
-        }
-      ],
-      "sourceStream": "dudes_power",
-      "sources": [
-        "keepa"
-      ],
-      "price": 49.99,
-      "avg30": 57.28,
-      "avg90": 57.89,
-      "low365": 49.99,
-      "rating": 4.5,
-      "reviewCount": 3245,
-      "rank": 207,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/61FmGAWuTLL.jpg",
-      "url": "https://www.amazon.com/dp/B0FKN6DGLV",
-      "keepa": "https://keepa.com/#!product/1-B0FKN6DGLV",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": true,
-      "isNameBrand": true,
-      "updatedAt": "2026-09-08T10:15:27.939Z",
-      "dealScore": 105,
-      "scoreBreakdown": {
-        "rating": 22,
-        "discount": 20,
-        "rank": 30,
-        "reviews": 10,
-        "variationFamily": 0,
-        "productAge": 3,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 74,
-      "normalizedScoreBreakdown": {
-        "discount": 10,
-        "brand": 20,
-        "demand": 20,
-        "reviews": 15,
-        "rating": 7,
-        "priceTier": 2
-      },
-      "spcImported": false,
-      "spcCapturedAt": "",
-      "siblingAsins": [
-        "B0FKN6DGLV",
-        "B0DGKWTQQC"
-      ]
-    },
-    {
       "asin": "B0F66NH2ZX",
       "parentAsin": "B0GK1GT8K3",
       "familyKey": "B0GK1GT8K3",
@@ -1381,6 +1382,80 @@
         "reviews": 13,
         "rating": 0,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B099VV9Z98",
+      "parentAsin": "B0BBPRBW4P",
+      "familyKey": "B0BBPRBW4P",
+      "variationCount": 8,
+      "productAgeDays": 1547,
+      "title": "anker 621 maggo power bank, 5,000mah magnetic portable charger",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "7073960011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "7073960011",
+          "name": "portable power banks"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 30.99,
+      "avg30": 39.37,
+      "avg90": 38.94,
+      "low365": 23.99,
+      "rating": 4.2,
+      "reviewCount": 20560,
+      "rank": 175,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61kszzVLhfL.jpg",
+      "url": "https://www.amazon.com/dp/B099VV9Z98",
+      "keepa": "https://keepa.com/#!product/1-B099VV9Z98",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-09T22:57:08.829Z",
+      "dealScore": 122,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 30,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 73,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 0,
+        "priceTier": 0
       }
     },
     {
@@ -5521,6 +5596,75 @@
       }
     },
     {
+      "asin": "B0FHWTL3VD",
+      "parentAsin": "B0H98K33X9",
+      "familyKey": "B0H98K33X9",
+      "variationCount": 13,
+      "productAgeDays": 419,
+      "title": "jackery generator 1000 v2 with 200w panel, 1070wh portable power station",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 699,
+      "avg30": 1292.22,
+      "avg90": 1110.45,
+      "low365": 599,
+      "rating": 4.8,
+      "reviewCount": 29,
+      "rank": 112032,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71KrCdthSQL.jpg",
+      "url": "https://www.amazon.com/dp/B0FHWTL3VD",
+      "keepa": "https://keepa.com/#!product/1-B0FHWTL3VD",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-09T22:57:08.830Z",
+      "dealScore": 105,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 55,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 62,
+      "normalizedScoreBreakdown": {
+        "discount": 22,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B07WXGLDGV",
       "parentAsin": "",
       "familyKey": "B07WXGLDGV",
@@ -6613,6 +6757,81 @@
         "rating": 8,
         "priceTier": 0
       }
+    },
+    {
+      "asin": "B0FCM2GBV1",
+      "parentAsin": "B0FXPZZVSJ",
+      "familyKey": "B0FXPZZVSJ",
+      "variationCount": 9,
+      "productAgeDays": 455,
+      "title": "bluetti ac200pl solar generator & charger 1 2304wh portable power station",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1198.98,
+      "avg30": 1358.13,
+      "avg90": 1305.51,
+      "low365": 1099,
+      "rating": 4.5,
+      "reviewCount": 5,
+      "rank": 3265,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71PQG1LZmkL.jpg",
+      "url": "https://www.amazon.com/dp/B0FCM2GBV1",
+      "keepa": "https://keepa.com/#!product/1-B0FCM2GBV1",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-09T22:57:08.830Z",
+      "dealScore": 90,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 12,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 61,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 0,
+        "rating": 7,
+        "priceTier": 10
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0GD5M8XPW",
+        "B0FCM2GBV1"
+      ]
     },
     {
       "asin": "B07B8LJRVC",
@@ -13741,75 +13960,6 @@
         "reviews": 13,
         "rating": 9,
         "priceTier": 6
-      }
-    },
-    {
-      "asin": "B0GD5M8XPW",
-      "parentAsin": "B0FXPZZVSJ",
-      "familyKey": "B0FXPZZVSJ",
-      "variationCount": 9,
-      "productAgeDays": 248,
-      "title": "bluetti ac200pl solar generator & 2x200w solar panel included 2304wh lfp",
-      "brand": "bluetti",
-      "brandTier": "top",
-      "category": "dudes_power",
-      "keepaCategoryIds": [
-        "348967011",
-        "2972638011",
-        "552808"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "2972638011",
-          "name": "patio, lawn & garden"
-        },
-        {
-          "id": "552808",
-          "name": "generators & portable power"
-        },
-        {
-          "id": "348967011",
-          "name": "generators"
-        }
-      ],
-      "sourceStream": "dudes_power",
-      "sources": [
-        "keepa"
-      ],
-      "price": 1548.98,
-      "avg30": 1729.69,
-      "avg90": 1715.01,
-      "low365": 1299,
-      "rating": null,
-      "reviewCount": null,
-      "rank": 3931,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71aiy3gWB4L.jpg",
-      "url": "https://www.amazon.com/dp/B0GD5M8XPW",
-      "keepa": "https://keepa.com/#!product/1-B0GD5M8XPW",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": true,
-      "isNameBrand": true,
-      "updatedAt": "2026-09-09T10:31:32.327Z",
-      "dealScore": 67,
-      "scoreBreakdown": {
-        "rating": 0,
-        "discount": 14,
-        "rank": 30,
-        "reviews": 0,
-        "variationFamily": 3,
-        "productAge": 0,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 54,
-      "normalizedScoreBreakdown": {
-        "discount": 6,
-        "brand": 20,
-        "demand": 18,
-        "reviews": 0,
-        "rating": 0,
-        "priceTier": 10
       }
     },
     {

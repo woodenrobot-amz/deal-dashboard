@@ -1,6 +1,10 @@
 {
-  "generatedAt": "2026-09-09T10:31:32.328Z",
-  "totalDiscovered": 1196,
+  "generatedAt": "2026-09-09T10:31:50.844Z",
+  "lastDiscoveryStream": "woodworking_test",
+  "maxPoolAgeDays": 30,
+  "totalDiscovered": 1231,
+  "tokensConsumed": 11,
+  "tokensLeft": 188,
   "asins": [
     {
       "asin": "B09Q4ZDCKB",
@@ -61,6 +65,93 @@
       "variationCount": 0
     },
     {
+      "asin": "B084SX4S86",
+      "streams": [
+        "trusted_sellers",
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-08T10:14:19.387Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 3,
+      "streamStats": {
+        "trusted_sellers": {
+          "firstSeenAt": "2026-09-08T10:14:19.387Z",
+          "lastSeenAt": "2026-09-09T10:30:37.470Z",
+          "timesSeen": 2
+        },
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": "2026-09-08T10:14:45.173Z",
+      "enrichedAt": "2026-09-08T10:14:45.173Z",
+      "lastEnrichedStream": "trusted_sellers",
+      "parentAsin": "",
+      "familyKey": "B084SX4S86",
+      "variationCount": 0
+    },
+    {
+      "asin": "B0DJNZX1GV",
+      "streams": [
+        "power_tools_main",
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-08T10:13:41.156Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 3,
+      "streamStats": {
+        "power_tools_main": {
+          "firstSeenAt": "2026-09-08T10:13:41.156Z",
+          "lastSeenAt": "2026-09-09T10:29:55.237Z",
+          "timesSeen": 2
+        },
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": "2026-09-08T10:14:03.066Z",
+      "enrichedAt": "2026-09-08T10:14:03.066Z",
+      "lastEnrichedStream": "power_tools_main",
+      "parentAsin": "B0GMPZNL9Z",
+      "familyKey": "B0GMPZNL9Z",
+      "variationCount": 2
+    },
+    {
+      "asin": "B0DWFBSPKQ",
+      "streams": [
+        "power_tools_main",
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-08T10:13:41.156Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 3,
+      "streamStats": {
+        "power_tools_main": {
+          "firstSeenAt": "2026-09-08T10:13:41.156Z",
+          "lastSeenAt": "2026-09-09T10:29:55.237Z",
+          "timesSeen": 2
+        },
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": "2026-09-08T10:14:03.066Z",
+      "enrichedAt": "2026-09-08T10:14:03.066Z",
+      "lastEnrichedStream": "power_tools_main",
+      "parentAsin": "",
+      "familyKey": "B0DWFBSPKQ",
+      "variationCount": 0
+    },
+    {
       "asin": "B0CZ7BL16W",
       "streams": [
         "dad_impulse",
@@ -116,6 +207,35 @@
       "lastEnrichedStream": "dad_impulse",
       "parentAsin": "",
       "familyKey": "B0C4YTB56H",
+      "variationCount": 0
+    },
+    {
+      "asin": "B0995L3THB",
+      "streams": [
+        "dad_impulse",
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-07T12:04:33.918Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 2,
+      "streamStats": {
+        "dad_impulse": {
+          "firstSeenAt": "2026-09-07T12:04:33.918Z",
+          "lastSeenAt": "2026-09-07T12:04:33.918Z",
+          "timesSeen": 1
+        },
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null,
+      "enrichedAt": null,
+      "lastEnrichedStream": "",
+      "parentAsin": "",
+      "familyKey": "B0995L3THB",
       "variationCount": 0
     },
     {
@@ -1112,29 +1232,6 @@
       "parentAsin": "B0BVWGDQ77",
       "familyKey": "B0BVWGDQ77",
       "variationCount": 21
-    },
-    {
-      "asin": "B084SX4S86",
-      "streams": [
-        "trusted_sellers"
-      ],
-      "discoveredAt": "2026-09-08T10:14:19.387Z",
-      "lastSeenAt": "2026-09-09T10:30:37.470Z",
-      "timesSeen": 2,
-      "streamStats": {
-        "trusted_sellers": {
-          "firstSeenAt": "2026-09-08T10:14:19.387Z",
-          "lastSeenAt": "2026-09-09T10:30:37.470Z",
-          "timesSeen": 2
-        }
-      },
-      "ignored": false,
-      "lastEnrichedAt": "2026-09-08T10:14:45.173Z",
-      "enrichedAt": "2026-09-08T10:14:45.173Z",
-      "lastEnrichedStream": "trusted_sellers",
-      "parentAsin": "",
-      "familyKey": "B084SX4S86",
-      "variationCount": 0
     },
     {
       "asin": "B00KRFVG5G",
@@ -2241,52 +2338,6 @@
       "variationCount": 8
     },
     {
-      "asin": "B0DJNZX1GV",
-      "streams": [
-        "power_tools_main"
-      ],
-      "discoveredAt": "2026-09-08T10:13:41.156Z",
-      "lastSeenAt": "2026-09-09T10:29:55.237Z",
-      "timesSeen": 2,
-      "streamStats": {
-        "power_tools_main": {
-          "firstSeenAt": "2026-09-08T10:13:41.156Z",
-          "lastSeenAt": "2026-09-09T10:29:55.237Z",
-          "timesSeen": 2
-        }
-      },
-      "ignored": false,
-      "lastEnrichedAt": "2026-09-08T10:14:03.066Z",
-      "enrichedAt": "2026-09-08T10:14:03.066Z",
-      "lastEnrichedStream": "power_tools_main",
-      "parentAsin": "B0GMPZNL9Z",
-      "familyKey": "B0GMPZNL9Z",
-      "variationCount": 2
-    },
-    {
-      "asin": "B0DWFBSPKQ",
-      "streams": [
-        "power_tools_main"
-      ],
-      "discoveredAt": "2026-09-08T10:13:41.156Z",
-      "lastSeenAt": "2026-09-09T10:29:55.237Z",
-      "timesSeen": 2,
-      "streamStats": {
-        "power_tools_main": {
-          "firstSeenAt": "2026-09-08T10:13:41.156Z",
-          "lastSeenAt": "2026-09-09T10:29:55.237Z",
-          "timesSeen": 2
-        }
-      },
-      "ignored": false,
-      "lastEnrichedAt": "2026-09-08T10:14:03.066Z",
-      "enrichedAt": "2026-09-08T10:14:03.066Z",
-      "lastEnrichedStream": "power_tools_main",
-      "parentAsin": "",
-      "familyKey": "B0DWFBSPKQ",
-      "variationCount": 0
-    },
-    {
       "asin": "B000KKWLE8",
       "streams": [
         "power_tools_main"
@@ -2845,6 +2896,636 @@
       "variationCount": 1
     },
     {
+      "asin": "B0B8285C5P",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0G64WWSKP",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0C1GP2NWB",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0H45B94Q9",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0DRFHX9KD",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0D8BT2136",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0C9SYN89J",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B00N1JC7HQ",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B07693HKXK",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0DX1DQJB1",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0D14SDPC9",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B095VT6ZWD",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0CCV7YSY9",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B08WX1TK54",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B08SVQDR6J",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0DXKPHFV6",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0HF4WZ7TV",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B017EOLGCK",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B07KHJT6P8",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B009E0EBDO",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B07V5RNZV8",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B000VJSQ7O",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0031HLLGQ",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0BPC5SWXB",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0D7VTBH9Y",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B001AZV01W",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B00101V1S8",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B07V3NXQV3",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0DXPLRGZD",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0009E6JHK",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B0006NGH08",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B00062NELE",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B009ACC7GY",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B001RQTK9I",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
+      "asin": "B001TL0BVW",
+      "streams": [
+        "woodworking_test"
+      ],
+      "discoveredAt": "2026-09-09T10:31:50.844Z",
+      "lastSeenAt": "2026-09-09T10:31:50.844Z",
+      "timesSeen": 1,
+      "streamStats": {
+        "woodworking_test": {
+          "firstSeenAt": "2026-09-09T10:31:50.844Z",
+          "lastSeenAt": "2026-09-09T10:31:50.844Z",
+          "timesSeen": 1
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": null
+    },
+    {
       "asin": "B0CXDXP8VR",
       "streams": [
         "dudes_power"
@@ -2860,12 +3541,12 @@
         }
       },
       "ignored": false,
-      "lastEnrichedAt": null,
+      "lastEnrichedAt": "2026-09-09T10:31:32.328Z",
+      "enrichedAt": "2026-09-09T10:31:32.328Z",
+      "lastEnrichedStream": "dudes_power",
       "parentAsin": "B0DB75CXPC",
       "familyKey": "B0DB75CXPC",
-      "variationCount": 3,
-      "enrichedAt": "2026-09-09T10:31:32.328Z",
-      "lastEnrichedStream": "dudes_power"
+      "variationCount": 3
     },
     {
       "asin": "B0DGKWTQQC",
@@ -2883,12 +3564,12 @@
         }
       },
       "ignored": false,
-      "lastEnrichedAt": null,
+      "lastEnrichedAt": "2026-09-09T10:31:32.328Z",
+      "enrichedAt": "2026-09-09T10:31:32.328Z",
+      "lastEnrichedStream": "dudes_power",
       "parentAsin": "B0GMZT8D9N",
       "familyKey": "B0GMZT8D9N",
-      "variationCount": 5,
-      "enrichedAt": "2026-09-09T10:31:32.328Z",
-      "lastEnrichedStream": "dudes_power"
+      "variationCount": 5
     },
     {
       "asin": "B0C9CSG3B7",
@@ -2906,12 +3587,12 @@
         }
       },
       "ignored": false,
-      "lastEnrichedAt": null,
+      "lastEnrichedAt": "2026-09-09T10:31:32.328Z",
+      "enrichedAt": "2026-09-09T10:31:32.328Z",
+      "lastEnrichedStream": "dudes_power",
       "parentAsin": "B0GMF239HJ",
       "familyKey": "B0GMF239HJ",
-      "variationCount": 6,
-      "enrichedAt": "2026-09-09T10:31:32.328Z",
-      "lastEnrichedStream": "dudes_power"
+      "variationCount": 6
     },
     {
       "asin": "B0GD5M8XPW",
@@ -2929,12 +3610,12 @@
         }
       },
       "ignored": false,
-      "lastEnrichedAt": null,
+      "lastEnrichedAt": "2026-09-09T10:31:32.328Z",
+      "enrichedAt": "2026-09-09T10:31:32.328Z",
+      "lastEnrichedStream": "dudes_power",
       "parentAsin": "B0FXPZZVSJ",
       "familyKey": "B0FXPZZVSJ",
-      "variationCount": 9,
-      "enrichedAt": "2026-09-09T10:31:32.328Z",
-      "lastEnrichedStream": "dudes_power"
+      "variationCount": 9
     },
     {
       "asin": "B0FJ21NG3Z",
@@ -2952,12 +3633,12 @@
         }
       },
       "ignored": false,
-      "lastEnrichedAt": null,
+      "lastEnrichedAt": "2026-09-09T10:31:32.328Z",
+      "enrichedAt": "2026-09-09T10:31:32.328Z",
+      "lastEnrichedStream": "dudes_power",
       "parentAsin": "B0GPVLKJTX",
       "familyKey": "B0GPVLKJTX",
-      "variationCount": 14,
-      "enrichedAt": "2026-09-09T10:31:32.328Z",
-      "lastEnrichedStream": "dudes_power"
+      "variationCount": 14
     },
     {
       "asin": "B0DCZ74WMT",
@@ -2975,12 +3656,12 @@
         }
       },
       "ignored": false,
-      "lastEnrichedAt": null,
+      "lastEnrichedAt": "2026-09-09T10:31:32.328Z",
+      "enrichedAt": "2026-09-09T10:31:32.328Z",
+      "lastEnrichedStream": "dudes_power",
       "parentAsin": "",
       "familyKey": "B0DCZ74WMT",
-      "variationCount": 0,
-      "enrichedAt": "2026-09-09T10:31:32.328Z",
-      "lastEnrichedStream": "dudes_power"
+      "variationCount": 0
     },
     {
       "asin": "B0DCZC95HG",
@@ -2998,12 +3679,12 @@
         }
       },
       "ignored": false,
-      "lastEnrichedAt": null,
+      "lastEnrichedAt": "2026-09-09T10:31:32.328Z",
+      "enrichedAt": "2026-09-09T10:31:32.328Z",
+      "lastEnrichedStream": "dudes_power",
       "parentAsin": "",
       "familyKey": "B0DCZC95HG",
-      "variationCount": 0,
-      "enrichedAt": "2026-09-09T10:31:32.328Z",
-      "lastEnrichedStream": "dudes_power"
+      "variationCount": 0
     },
     {
       "asin": "B0DY7NS98L",
@@ -3021,12 +3702,12 @@
         }
       },
       "ignored": false,
-      "lastEnrichedAt": null,
+      "lastEnrichedAt": "2026-09-09T10:31:32.328Z",
+      "enrichedAt": "2026-09-09T10:31:32.328Z",
+      "lastEnrichedStream": "dudes_power",
       "parentAsin": "",
       "familyKey": "B0DY7NS98L",
-      "variationCount": 0,
-      "enrichedAt": "2026-09-09T10:31:32.328Z",
-      "lastEnrichedStream": "dudes_power"
+      "variationCount": 0
     },
     {
       "asin": "B010QZZ3JQ",
@@ -11076,29 +11757,6 @@
       "lastEnrichedStream": "",
       "parentAsin": "",
       "familyKey": "B0CT3KWKDP",
-      "variationCount": 0
-    },
-    {
-      "asin": "B0995L3THB",
-      "streams": [
-        "dad_impulse"
-      ],
-      "discoveredAt": "2026-09-07T12:04:33.918Z",
-      "lastSeenAt": "2026-09-07T12:04:33.918Z",
-      "timesSeen": 1,
-      "streamStats": {
-        "dad_impulse": {
-          "firstSeenAt": "2026-09-07T12:04:33.918Z",
-          "lastSeenAt": "2026-09-07T12:04:33.918Z",
-          "timesSeen": 1
-        }
-      },
-      "ignored": false,
-      "lastEnrichedAt": null,
-      "enrichedAt": null,
-      "lastEnrichedStream": "",
-      "parentAsin": "",
-      "familyKey": "B0995L3THB",
       "variationCount": 0
     },
     {

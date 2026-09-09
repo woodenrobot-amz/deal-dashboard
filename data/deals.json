@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-09T10:30:55.886Z",
+  "generatedAt": "2026-09-09T10:31:32.328Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 405,
+  "lastEnrichmentStream": "dudes_power",
+  "dealCount": 408,
   "deals": [
     {
       "asin": "B0CZ7BL16W",
@@ -520,7 +520,13 @@
         "reviews": 15,
         "rating": 7,
         "priceTier": 4
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0CXDMYS8C",
+        "B0CXDXP8VR"
+      ]
     },
     {
       "asin": "B08CV6MGJH",
@@ -1055,6 +1061,86 @@
       }
     },
     {
+      "asin": "B0C9CSG3B7",
+      "parentAsin": "B0GMF239HJ",
+      "familyKey": "B0GMF239HJ",
+      "variationCount": 6,
+      "productAgeDays": 1110,
+      "title": "anker nano power bank,10,000mah 30w portable charger,built-in usb-c cable",
+      "brand": "anker",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "7073960011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "7073960011",
+          "name": "portable power banks"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 44.99,
+      "avg30": 52.65,
+      "avg90": 53.02,
+      "low365": 29.99,
+      "rating": 4.4,
+      "reviewCount": 10202,
+      "rank": 1668,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61uQScwjxvL.jpg",
+      "url": "https://www.amazon.com/dp/B0C9CSG3B7",
+      "keepa": "https://keepa.com/#!product/1-B0C9CSG3B7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-09T10:31:32.327Z",
+      "dealScore": 112,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 22,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 74,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 2
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0C9D7R1B6",
+        "B0C9CSG3B7"
+      ]
+    },
+    {
       "asin": "B0D12T6R7M",
       "parentAsin": "B0GL31BJ7C",
       "familyKey": "B0GL31BJ7C",
@@ -1200,7 +1286,13 @@
         "reviews": 15,
         "rating": 7,
         "priceTier": 2
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FKN6DGLV",
+        "B0DGKWTQQC"
+      ]
     },
     {
       "asin": "B0F66NH2ZX",
@@ -2029,80 +2121,6 @@
         "reviews": 6,
         "rating": 9,
         "priceTier": 4
-      }
-    },
-    {
-      "asin": "B0C9D7R1B6",
-      "parentAsin": "B0GMF239HJ",
-      "familyKey": "B0GMF239HJ",
-      "variationCount": 6,
-      "productAgeDays": 1106,
-      "title": "anker nano power bank,10,000mah 30w portable charger,built-in usb-c cable",
-      "brand": "anker",
-      "brandTier": "top",
-      "category": "dudes_power",
-      "keepaCategoryIds": [
-        "7073960011",
-        "2335752011",
-        "2407755011",
-        "2407761011"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "2335752011",
-          "name": "cell phones & accessories"
-        },
-        {
-          "id": "2407755011",
-          "name": "accessories"
-        },
-        {
-          "id": "2407761011",
-          "name": "chargers & power adapters"
-        },
-        {
-          "id": "7073960011",
-          "name": "portable power banks"
-        }
-      ],
-      "sourceStream": "dudes_power",
-      "sources": [
-        "keepa"
-      ],
-      "price": 44.99,
-      "avg30": 52.9,
-      "avg90": 51.95,
-      "low365": 29.99,
-      "rating": 4.4,
-      "reviewCount": 10196,
-      "rank": 1864,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/612I9lQVRiL.jpg",
-      "url": "https://www.amazon.com/dp/B0C9D7R1B6",
-      "keepa": "https://keepa.com/#!product/1-B0C9D7R1B6",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": true,
-      "isNameBrand": true,
-      "updatedAt": "2026-09-08T10:15:27.940Z",
-      "dealScore": 110,
-      "scoreBreakdown": {
-        "rating": 22,
-        "discount": 20,
-        "rank": 30,
-        "reviews": 10,
-        "variationFamily": 0,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 70,
-      "normalizedScoreBreakdown": {
-        "discount": 10,
-        "brand": 20,
-        "demand": 18,
-        "reviews": 15,
-        "rating": 5,
-        "priceTier": 2
       }
     },
     {
@@ -17020,6 +17038,75 @@
       }
     },
     {
+      "asin": "B0GD5M8XPW",
+      "parentAsin": "B0FXPZZVSJ",
+      "familyKey": "B0FXPZZVSJ",
+      "variationCount": 9,
+      "productAgeDays": 248,
+      "title": "bluetti ac200pl solar generator & 2x200w solar panel included 2304wh lfp",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1548.98,
+      "avg30": 1729.69,
+      "avg90": 1715.01,
+      "low365": 1299,
+      "rating": null,
+      "reviewCount": null,
+      "rank": 3931,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71aiy3gWB4L.jpg",
+      "url": "https://www.amazon.com/dp/B0GD5M8XPW",
+      "keepa": "https://keepa.com/#!product/1-B0GD5M8XPW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-09T10:31:32.327Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 0,
+        "discount": 14,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 54,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B0DGSKRD48",
       "parentAsin": "B0G91PWGRM",
       "familyKey": "B0G91PWGRM",
@@ -26002,6 +26089,75 @@
       }
     },
     {
+      "asin": "B0FJ21NG3Z",
+      "parentAsin": "B0GPVLKJTX",
+      "familyKey": "B0GPVLKJTX",
+      "variationCount": 14,
+      "productAgeDays": 414,
+      "title": "bluetti apex 300 solar generator & 2x350w solar panel included 2764.8wh lfp",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 2598.99,
+      "avg30": 2843.96,
+      "avg90": 2774.03,
+      "low365": 2399,
+      "rating": 3.2,
+      "reviewCount": 4,
+      "rank": 37960,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71aisNOe1iL.jpg",
+      "url": "https://www.amazon.com/dp/B0FJ21NG3Z",
+      "keepa": "https://keepa.com/#!product/1-B0FJ21NG3Z",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-09T10:31:32.327Z",
+      "dealScore": 51,
+      "scoreBreakdown": {
+        "rating": 16,
+        "discount": 9,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 38,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B003YVWHOE",
       "parentAsin": "",
       "familyKey": "B003YVWHOE",
@@ -27944,6 +28100,75 @@
         "demand": 0,
         "reviews": 6,
         "rating": 8,
+        "priceTier": 10
+      }
+    },
+    {
+      "asin": "B0DY7NS98L",
+      "parentAsin": "",
+      "familyKey": "B0DY7NS98L",
+      "variationCount": 0,
+      "productAgeDays": 561,
+      "title": "jackery explorer 2000 plus portable power station with 2x100wmini solar panels, 2042wh lifepo4 battery, 3000w ac output, expandable to 24kwh, 10-year lifespan, for outdoor rv camping and emergency",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1219,
+      "avg30": 1218.99,
+      "avg90": 1218.99,
+      "low365": 1219,
+      "rating": 4,
+      "reviewCount": 5,
+      "rank": 874274,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71HfKOcLoPL.jpg",
+      "url": "https://www.amazon.com/dp/B0DY7NS98L",
+      "keepa": "https://keepa.com/#!product/1-B0DY7NS98L",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-09T10:31:32.327Z",
+      "dealScore": 43,
+      "scoreBreakdown": {
+        "rating": 20,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 0,
+        "rating": 0,
         "priceTier": 10
       }
     },

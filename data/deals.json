@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-09T10:32:16.521Z",
+  "generatedAt": "2026-09-09T10:36:04.247Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "woodworking_test",
-  "dealCount": 441,
+  "lastEnrichmentStream": "power_tools_main",
+  "dealCount": 442,
   "deals": [
     {
       "asin": "B0CZ7BL16W",
@@ -11236,6 +11236,85 @@
       }
     },
     {
+      "asin": "B01L8O0C90",
+      "parentAsin": "B0762DM74N",
+      "familyKey": "B0762DM74N",
+      "variationCount": 1,
+      "productAgeDays": 3654,
+      "title": "makita xds01z 18v lxt lithium-ion cordless cut-out saw, tool only",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552922",
+        "228013",
+        "328182011",
+        "551236",
+        "552894"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552894",
+          "name": "saws"
+        },
+        {
+          "id": "552922",
+          "name": "circular saws"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 239.95,
+      "avg30": 259.5,
+      "avg90": 261.26,
+      "low365": 219.33,
+      "rating": 4.8,
+      "reviewCount": 776,
+      "rank": 75984,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61mjccDFu6L.jpg",
+      "url": "https://www.amazon.com/dp/B01L8O0C90",
+      "keepa": "https://keepa.com/#!product/1-B01L8O0C90",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-09T10:36:04.246Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 59,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 10,
+        "priceTier": 8
+      }
+    },
+    {
       "asin": "B09Q4ZDCKB",
       "parentAsin": "",
       "familyKey": "B09Q4ZDCKB",
@@ -15990,7 +16069,7 @@
       "isHot": false,
       "isNameBrand": true,
       "updatedAt": "2026-09-09T10:30:18.601Z",
-      "dealScore": 51,
+      "dealScore": 55,
       "scoreBreakdown": {
         "rating": 23,
         "discount": 0,
@@ -16009,7 +16088,13 @@
         "reviews": 8,
         "rating": 9,
         "priceTier": 6
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0D1TP1Q4C",
+        "B0FQHSZQPL"
+      ]
     },
     {
       "asin": "B0H3YXQNKL",

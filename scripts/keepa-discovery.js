@@ -55,7 +55,6 @@ trusted_sellers: {
             "desc"
         ]
     ],
-    "lastRatingUpdate_gte": 8000779,
     "perPage": 100,
     "page": 0
   }
@@ -125,7 +124,6 @@ deltaPercent30_BUY_BOX_SHIPPING_gte: 8,
     deltaPercent90_BUY_BOX_SHIPPING_gte: 5,
 
     brand: [
-      "anker",
       "bluetti",
       "ecoflow",
       "goal zero",
@@ -214,8 +212,7 @@ current_BUY_BOX_SHIPPING_gte: 3000,
 
 isLowest90_BUY_BOX_SHIPPING: true,
 
-deltaPercent90_BUY_BOX_SHIPPING_gte: 10,
-deltaPercent30_BUY_BOX_SHIPPING_gte: 8,
+deltaPercent30_BUY_BOX_SHIPPING_gte: 10,
 
 categories_exclude: [
   511228,      // Hardware

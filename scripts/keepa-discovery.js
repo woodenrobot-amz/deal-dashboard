@@ -348,12 +348,12 @@ dad_impulse: {
     ],
 
     current_SALES_gte: 1,
-    current_SALES_lte: 100000,
+    current_SALES_lte: 50000,
 
-    current_RATING_gte: 42,
-    current_COUNT_REVIEWS_gte: 100,
+    current_RATING_gte: 43,
+    current_COUNT_REVIEWS_gte: 250,
 
-    current_BUY_BOX_SHIPPING_gte: 1500,
+    current_BUY_BOX_SHIPPING_gte: 2000,
     current_BUY_BOX_SHIPPING_lte: 5000,
 
     isLowest90_BUY_BOX_SHIPPING: true,
@@ -361,7 +361,7 @@ dad_impulse: {
     deltaPercent30_BUY_BOX_SHIPPING_gte: 15,
 
     sort: [
-      ["monthlySold", "desc"],
+      ["deltaPercent90_BUY_BOX_SHIPPING", "desc"],
       ["current_SALES", "asc"]
     ],
 

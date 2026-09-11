@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-11T10:34:26.136Z",
+  "generatedAt": "2026-09-11T10:35:08.147Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 263,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 266,
   "deals": [
     {
       "asin": "B004W1WGIC",
@@ -15635,6 +15635,85 @@
       }
     },
     {
+      "asin": "B00GOA7MVU",
+      "parentAsin": "",
+      "familyKey": "B00GOA7MVU",
+      "variationCount": 0,
+      "productAgeDays": 4286,
+      "title": "msa 816651 skullgard cap style safety hard hat with swing ratchet suspension | non-slotted cap, made of phenolic resin, radiant heat loads up to 350f - standard size in tan",
+      "brand": "msa",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553566",
+        "228013",
+        "3180231",
+        "486555011",
+        "7459497011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "486555011",
+          "name": "personal protective equipment"
+        },
+        {
+          "id": "7459497011",
+          "name": "head protection"
+        },
+        {
+          "id": "553566",
+          "name": "hard hats"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 95.48,
+      "avg30": 112.33,
+      "avg90": 118.92,
+      "low365": 95.48,
+      "rating": 4.6,
+      "reviewCount": 381,
+      "rank": 33584,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81UlPVyzFGL.jpg",
+      "url": "https://www.amazon.com/dp/B00GOA7MVU",
+      "keepa": "https://keepa.com/#!product/1-B00GOA7MVU",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-11T10:35:08.146Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 42,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B009E0EBES",
       "parentAsin": "B0F7LXLJ5W",
       "familyKey": "B0F7LXLJ5W",
@@ -16207,6 +16286,90 @@
         "reviews": 11,
         "rating": 10,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B008BGIF1G",
+      "parentAsin": "B0F3JVK2XB",
+      "familyKey": "B0F3JVK2XB",
+      "variationCount": 8,
+      "productAgeDays": 4511,
+      "title": "festool 499049 rubin 2 p100 grit rts (80x133mm) rectangular abrasive sanding sheets, 50-pack",
+      "brand": "festool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552594",
+        "256167011",
+        "228013",
+        "328182011",
+        "552262",
+        "8106314011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106314011",
+          "name": "power finishing tool parts & accessories"
+        },
+        {
+          "id": "552582",
+          "name": "power sander parts & accessories"
+        },
+        {
+          "id": "552594",
+          "name": "sanding sheets"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 27,
+      "avg30": 28.66,
+      "avg90": 29.97,
+      "low365": 27,
+      "rating": 4.7,
+      "reviewCount": 50,
+      "rank": 157175,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71OV4pZJCaL.jpg",
+      "url": "https://www.amazon.com/dp/B008BGIF1G",
+      "keepa": "https://keepa.com/#!product/1-B008BGIF1G",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-11T10:35:08.147Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 38,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 9,
+        "priceTier": 0
       }
     },
     {
@@ -19930,6 +20093,76 @@
         "reviews": 3,
         "rating": 9,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B00D2Z2C38",
+      "parentAsin": "",
+      "familyKey": "B00D2Z2C38",
+      "variationCount": 0,
+      "productAgeDays": 2172,
+      "title": "flexcut slipstrop, polish and debur cutting and carving tools for razor sharp blade edges",
+      "brand": "flexcut",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "551238",
+        "2617942011",
+        "228013",
+        "328182011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.95,
+      "avg30": 22.7,
+      "avg90": 23.68,
+      "low365": 19.85,
+      "rating": 4.6,
+      "reviewCount": 496,
+      "rank": 121434,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/518HKNAaoQL.jpg",
+      "url": "https://www.amazon.com/dp/B00D2Z2C38",
+      "keepa": "https://keepa.com/#!product/1-B00D2Z2C38",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-11T10:35:08.146Z",
+      "dealScore": 41,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 10,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 16,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 0
       }
     },
     {

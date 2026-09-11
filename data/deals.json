@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-11T10:35:08.147Z",
+  "generatedAt": "2026-09-11T10:35:44.699Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 266,
+  "lastEnrichmentStream": "dudes_power",
+  "dealCount": 267,
   "deals": [
     {
       "asin": "B004W1WGIC",
@@ -15794,6 +15794,75 @@
         "reviews": 11,
         "rating": 9,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0FJ21NG3Z",
+      "parentAsin": "B0GPVLKJTX",
+      "familyKey": "B0GPVLKJTX",
+      "variationCount": 14,
+      "productAgeDays": 416,
+      "title": "bluetti apex 300 solar generator & 2x350w solar panel included 2764.8wh lfp",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 2598.98,
+      "avg30": 2823.93,
+      "avg90": 2767.35,
+      "low365": 2399,
+      "rating": 3.2,
+      "reviewCount": 4,
+      "rank": 19087,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71aisNOe1iL.jpg",
+      "url": "https://www.amazon.com/dp/B0FJ21NG3Z",
+      "keepa": "https://keepa.com/#!product/1-B0FJ21NG3Z",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-11T10:35:44.698Z",
+      "dealScore": 51,
+      "scoreBreakdown": {
+        "rating": 16,
+        "discount": 9,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 42,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
       }
     },
     {

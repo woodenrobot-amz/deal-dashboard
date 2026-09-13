@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-13T11:54:53.779Z",
+  "generatedAt": "2026-09-13T11:56:04.728Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 57,
+  "lastEnrichmentStream": "woodworking_test",
+  "dealCount": 59,
   "deals": [
     {
       "asin": "B015PVDCHQ",
@@ -1983,6 +1983,85 @@
       }
     },
     {
+      "asin": "B00E1RK6QG",
+      "parentAsin": "",
+      "familyKey": "B00E1RK6QG",
+      "variationCount": 0,
+      "productAgeDays": 4803,
+      "title": "bosch cm8s 8-1/2 in. single-bevel slide miter saw for woodworking",
+      "brand": "bosch",
+      "brandTier": "top",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552940",
+        "228013",
+        "328182011",
+        "551236",
+        "552894"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552894",
+          "name": "saws"
+        },
+        {
+          "id": "552940",
+          "name": "miter saws"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 405.15,
+      "avg30": 538.96,
+      "avg90": 538.98,
+      "low365": 399,
+      "rating": 4.4,
+      "reviewCount": 178,
+      "rank": 309943,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61dzUVKPkxL.jpg",
+      "url": "https://www.amazon.com/dp/B00E1RK6QG",
+      "keepa": "https://keepa.com/#!product/1-B00E1RK6QG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-13T11:56:04.727Z",
+      "dealScore": 87,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 37,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 59,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 5,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B001TL0BVW",
       "parentAsin": "B07SLDP4BM",
       "familyKey": "B07SLDP4BM",
@@ -3680,6 +3759,80 @@
         "reviews": 6,
         "rating": 10,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0D7C7MDW7",
+      "parentAsin": "B0D7C7FJFN",
+      "familyKey": "B0D7C7FJFN",
+      "variationCount": 2,
+      "productAgeDays": 791,
+      "title": "folding magnetic table compatible with milwaukee packout toolbox,powerful magnetic tool tray side on your packout system",
+      "brand": "bpopo",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg30": 59.78,
+      "avg90": 59.92,
+      "low365": 49.99,
+      "rating": 4.6,
+      "reviewCount": 226,
+      "rank": 129246,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71piCmiOFXL.jpg",
+      "url": "https://www.amazon.com/dp/B0D7C7MDW7",
+      "keepa": "https://keepa.com/#!product/1-B0D7C7MDW7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-13T11:56:04.727Z",
+      "dealScore": 55,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 24,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 8,
+        "priceTier": 2
       }
     },
     {

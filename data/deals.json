@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-14T02:11:59.148Z",
+  "generatedAt": "2026-09-14T02:24:50.915Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "woodworking_test",
-  "dealCount": 177,
+  "lastEnrichmentStream": "power_tools_main",
+  "dealCount": 180,
   "deals": [
     {
       "asin": "B000BZI1C8",
@@ -153,6 +153,90 @@
         "brand": 20,
         "demand": 16,
         "reviews": 13,
+        "rating": 9,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B00R82KU4O",
+      "parentAsin": "B0DSBQ73XM",
+      "familyKey": "B0DSBQ73XM",
+      "variationCount": 5,
+      "productAgeDays": 4263,
+      "title": "makita dc18rd 18v lithium-ion dual port rapid optimum charger, 2-port",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "8106529011",
+        "10063711011",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552376",
+          "name": "charger & converters"
+        },
+        {
+          "id": "8106529011",
+          "name": "battery chargers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 77.5,
+      "avg30": 99.55,
+      "avg90": 111.66,
+      "low365": 77.5,
+      "rating": 4.7,
+      "reviewCount": 3347,
+      "rank": 31539,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71SRjz+KTgL.jpg",
+      "url": "https://www.amazon.com/dp/B00R82KU4O",
+      "keepa": "https://keepa.com/#!product/1-B00R82KU4O",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-14T02:24:50.914Z",
+      "dealScore": 106,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 45,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 78,
+      "normalizedScoreBreakdown": {
+        "discount": 22,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 15,
         "rating": 9,
         "priceTier": 4
       }
@@ -6965,6 +7049,80 @@
       }
     },
     {
+      "asin": "B08MZ5N428",
+      "parentAsin": "",
+      "familyKey": "B08MZ5N428",
+      "variationCount": 0,
+      "productAgeDays": 2134,
+      "title": "2526-20 m12 brushless 12-volt lithium-ion cordless oscillating multi-tool (tool-only)",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "2445476011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2445476011",
+          "name": "oscillating tools"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 110,
+      "avg30": 116.59,
+      "avg90": 118.5,
+      "low365": 69.99,
+      "rating": 4.8,
+      "reviewCount": 703,
+      "rank": 26250,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51FqQy4mkDL.jpg",
+      "url": "https://www.amazon.com/dp/B08MZ5N428",
+      "keepa": "https://keepa.com/#!product/1-B08MZ5N428",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-14T02:24:50.914Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 10,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 11,
+        "rating": 10,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0FMRF1HKQ",
       "parentAsin": "B0DXL7HY1C",
       "familyKey": "B0DXL7HY1C",
@@ -11765,6 +11923,86 @@
         "demand": 0,
         "reviews": 6,
         "rating": 9,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B08CKPXQSD",
+      "parentAsin": "",
+      "familyKey": "B08CKPXQSD",
+      "variationCount": 0,
+      "productAgeDays": 1149,
+      "title": "makita makita bl4040 battery 40v 4.0ah - 191b26-6",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552354",
+        "493964",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552354",
+          "name": "battery packs"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 145,
+      "avg30": 153.44,
+      "avg90": 154.11,
+      "low365": 134.99,
+      "rating": 4.4,
+      "reviewCount": 189,
+      "rank": 73625,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Ut+-I0ZoL.jpg",
+      "url": "https://www.amazon.com/dp/B08CKPXQSD",
+      "keepa": "https://keepa.com/#!product/1-B08CKPXQSD",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-14T02:24:50.914Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 8,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 41,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 5,
         "priceTier": 6
       }
     },

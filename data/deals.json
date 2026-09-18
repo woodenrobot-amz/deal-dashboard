@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-18T01:25:14.838Z",
+  "generatedAt": "2026-09-18T01:25:48.534Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 131,
+  "lastEnrichmentStream": "dudes_power",
+  "dealCount": 132,
   "deals": [
     {
       "asin": "B004W1WGIC",
@@ -76,6 +76,75 @@
         "reviews": 15,
         "rating": 9,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0FHWTL3VD",
+      "parentAsin": "B0H98K33X9",
+      "familyKey": "B0H98K33X9",
+      "variationCount": 13,
+      "productAgeDays": 427,
+      "title": "jackery generator 1000 v2 with 200w panel, 1070wh portable power station",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 699,
+      "avg30": 1130.16,
+      "avg90": 1057.25,
+      "low365": 599,
+      "rating": 4.8,
+      "reviewCount": 30,
+      "rank": 685,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71KrCdthSQL.jpg",
+      "url": "https://www.amazon.com/dp/B0FHWTL3VD",
+      "keepa": "https://keepa.com/#!product/1-B0FHWTL3VD",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-18T01:25:48.533Z",
+      "dealScore": 130,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 50,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 82,
+      "normalizedScoreBreakdown": {
+        "discount": 22,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 10
       }
     },
     {

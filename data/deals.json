@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-18T10:22:13.789Z",
+  "generatedAt": "2026-09-18T10:22:54.643Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 238,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 242,
   "deals": [
     {
       "asin": "B004W1WGIC",
@@ -11017,6 +11017,85 @@
       }
     },
     {
+      "asin": "B0BHCGKBDH",
+      "parentAsin": "B0GVSXR38Q",
+      "familyKey": "B0GVSXR38Q",
+      "variationCount": 2,
+      "productAgeDays": 1429,
+      "title": "metabo 4-1/2-5-inch angle grinder, 11 amp, 11,000 rpm, non-locking paddle switch, made in germany, wp 11-125 quick, 603624420, green",
+      "brand": "metabo hpt",
+      "brandTier": "mid",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552812",
+        "228013",
+        "328182011",
+        "551236",
+        "552810"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552810",
+          "name": "grinders"
+        },
+        {
+          "id": "552812",
+          "name": "angle grinders"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 105.26,
+      "avg30": 164.83,
+      "avg90": 147.61,
+      "low365": 105.26,
+      "rating": 4.6,
+      "reviewCount": 198,
+      "rank": 104427,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61XeP1FywsL.jpg",
+      "url": "https://www.amazon.com/dp/B0BHCGKBDH",
+      "keepa": "https://keepa.com/#!product/1-B0BHCGKBDH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-18T10:22:54.642Z",
+      "dealScore": 82,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 43,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 12,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 8,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B07J2LMLVZ",
       "parentAsin": "",
       "familyKey": "B07J2LMLVZ",
@@ -15510,6 +15589,89 @@
       }
     },
     {
+      "asin": "B001AOSX3Q",
+      "parentAsin": "",
+      "familyKey": "B001AOSX3Q",
+      "variationCount": 0,
+      "productAgeDays": 5656,
+      "title": "porter-cable fn250c 16-gauge 2 1/2 in. straight finish nailer kit",
+      "brand": "porter-cable",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552700",
+        "228013",
+        "328182011",
+        "551236",
+        "552838"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552838",
+          "name": "nailers & staplers"
+        },
+        {
+          "id": "686960011",
+          "name": "nailers"
+        },
+        {
+          "id": "552700",
+          "name": "finish nailers"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 128.52,
+      "avg30": 150.42,
+      "avg90": 159.17,
+      "low365": 123.99,
+      "rating": 4.4,
+      "reviewCount": 325,
+      "rank": 173552,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61wrHO+7OxL.jpg",
+      "url": "https://www.amazon.com/dp/B001AOSX3Q",
+      "keepa": "https://keepa.com/#!product/1-B001AOSX3Q",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-18T10:22:54.641Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 28,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 33,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0C69WPXH7",
       "parentAsin": "B0DBV59PS4",
       "familyKey": "B0DBV59PS4",
@@ -16575,6 +16737,80 @@
         "demand": 0,
         "reviews": 6,
         "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B002YHIW8O",
+      "parentAsin": "B0H5WWM8WN",
+      "familyKey": "B0H5WWM8WN",
+      "variationCount": 1,
+      "productAgeDays": 4543,
+      "title": "itw ramset 00022 hammershot low velocity powder actuated tool replaces hd22",
+      "brand": "itw",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "9022408011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "9022408011",
+          "name": "powder-actuated tools"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 27.39,
+      "avg30": 29.51,
+      "avg90": 30.97,
+      "low365": 26.51,
+      "rating": 4.3,
+      "reviewCount": 276,
+      "rank": 64886,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71TCgec7e1L.jpg",
+      "url": "https://www.amazon.com/dp/B002YHIW8O",
+      "keepa": "https://keepa.com/#!product/1-B002YHIW8O",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-18T10:22:54.642Z",
+      "dealScore": 46,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 25,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 3,
         "priceTier": 0
       }
     },
@@ -18027,6 +18263,80 @@
         "demand": 0,
         "reviews": 3,
         "rating": 0,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0CYHM24PD",
+      "parentAsin": "B0D2S7MQBP",
+      "familyKey": "B0D2S7MQBP",
+      "variationCount": 3,
+      "productAgeDays": 912,
+      "title": "dirt devil 5 gallon corded wet dry shop vacuum, portable",
+      "brand": "dirt devil",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553022",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "553022",
+          "name": "wet-dry shop vacuums"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 79.8,
+      "avg30": 79.8,
+      "avg90": 79.8,
+      "low365": 79.8,
+      "rating": 4.3,
+      "reviewCount": 132,
+      "rank": 734977,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61xsZopWIuL.jpg",
+      "url": "https://www.amazon.com/dp/B0CYHM24PD",
+      "keepa": "https://keepa.com/#!product/1-B0CYHM24PD",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-18T10:22:54.642Z",
+      "dealScore": 29,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 13,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 3,
         "priceTier": 4
       }
     },

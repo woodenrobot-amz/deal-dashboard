@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-20T10:56:47.229Z",
+  "generatedAt": "2026-09-20T10:57:23.387Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 38,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 39,
   "deals": [
     {
       "asin": "B06XPHK5MP",
@@ -2207,6 +2207,85 @@
         "demand": 4,
         "reviews": 0,
         "rating": 5,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B09Z1KDZLH",
+      "parentAsin": "B09Z26N35M",
+      "familyKey": "B09Z26N35M",
+      "variationCount": 17,
+      "productAgeDays": 1547,
+      "title": "msa v-gard c1 vented red full brim hard hat reflectir cooling thermal",
+      "brand": "msa",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553566",
+        "228013",
+        "3180231",
+        "486555011",
+        "7459497011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "486555011",
+          "name": "personal protective equipment"
+        },
+        {
+          "id": "7459497011",
+          "name": "head protection"
+        },
+        {
+          "id": "553566",
+          "name": "hard hats"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 51.36,
+      "avg30": 58.89,
+      "avg90": 61.87,
+      "low365": 51.36,
+      "rating": 4.5,
+      "reviewCount": 142,
+      "rank": 96807,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51QzkUNF0HL.jpg",
+      "url": "https://www.amazon.com/dp/B09Z1KDZLH",
+      "keepa": "https://keepa.com/#!product/1-B09Z1KDZLH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-20T10:57:23.386Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 25,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 35,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 7,
         "priceTier": 4
       }
     },

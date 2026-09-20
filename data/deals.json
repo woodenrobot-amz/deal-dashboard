@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-20T10:57:23.387Z",
+  "generatedAt": "2026-09-20T10:58:33.413Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 39,
+  "lastEnrichmentStream": "woodworking_test",
+  "dealCount": 43,
   "deals": [
     {
       "asin": "B06XPHK5MP",
@@ -1037,7 +1037,13 @@
         "reviews": 11,
         "rating": 5,
         "priceTier": 6
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0GJX3FLCK",
+        "B0GJZ1G942"
+      ]
     },
     {
       "asin": "B09SB2JWVF",
@@ -2128,6 +2134,163 @@
       ]
     },
     {
+      "asin": "B085RH87VZ",
+      "parentAsin": "B0HJH327DR",
+      "familyKey": "B0HJH327DR",
+      "variationCount": 3,
+      "productAgeDays": 1674,
+      "title": "forward cr40a 4.5 inch bench vise heavy duty with anvil and 210°swivel base",
+      "brand": "forward",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "5739459011",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "19502224011",
+          "name": "vises"
+        },
+        {
+          "id": "5739459011",
+          "name": "bench vises"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 67.99,
+      "avg30": 75.44,
+      "avg90": 76.97,
+      "low365": 55.99,
+      "rating": 4.7,
+      "reviewCount": 1433,
+      "rank": 35857,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81ETFOgQ4TL.jpg",
+      "url": "https://www.amazon.com/dp/B085RH87VZ",
+      "keepa": "https://keepa.com/#!product/1-B085RH87VZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-20T10:58:33.412Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 13,
+        "rating": 9,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0F1F8D86H",
+      "parentAsin": "B0HKDC88TR",
+      "familyKey": "B0HKDC88TR",
+      "variationCount": 7,
+      "productAgeDays": 538,
+      "title": "teeno wood router, 800w compact router tools for woodworking, 31000 rpm hand trim router with 15 pcs 1/4\" router bits set, edge guide, roller guide, dust hood",
+      "brand": "teeno",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552866",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552866",
+          "name": "routers"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 34.82,
+      "avg30": 38.7,
+      "avg90": 40.99,
+      "low365": 34.82,
+      "rating": 4.3,
+      "reviewCount": 371,
+      "rank": 4054,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81Iqp6PBZIL.jpg",
+      "url": "https://www.amazon.com/dp/B0F1F8D86H",
+      "keepa": "https://keepa.com/#!product/1-B0F1F8D86H",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-20T10:58:33.412Z",
+      "dealScore": 76,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 22,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 43,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 18,
+        "reviews": 8,
+        "rating": 3,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B017GQJJA2",
       "parentAsin": "B019YMAT4G",
       "familyKey": "B019YMAT4G",
@@ -2208,6 +2371,174 @@
         "reviews": 0,
         "rating": 5,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0F7Y66V3Y",
+      "parentAsin": "B0FQHP89XS",
+      "familyKey": "B0FQHP89XS",
+      "variationCount": 6,
+      "productAgeDays": 478,
+      "title": "cordless sander, 3\" palm sander with 2pcs 16.8v 2.0ah batteries, 3500rpm mini polisher, 30 accessories sanders tool for sanding/polishing/waxing/cleaning",
+      "brand": "vkndoynt",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552888",
+        "228013",
+        "328182011",
+        "551236",
+        "552876"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552876",
+          "name": "sanders"
+        },
+        {
+          "id": "552888",
+          "name": "random-orbit sanders"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 50.99,
+      "avg30": 57.36,
+      "avg90": 58.17,
+      "low365": 47.19,
+      "rating": 4.4,
+      "reviewCount": 432,
+      "rank": 24001,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/717LJMxo5qL.jpg",
+      "url": "https://www.amazon.com/dp/B0F7Y66V3Y",
+      "keepa": "https://keepa.com/#!product/1-B0F7Y66V3Y",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-20T10:58:33.412Z",
+      "dealScore": 46,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 39,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 4
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0F7Y6KNCY",
+        "B0F7Y66V3Y"
+      ]
+    },
+    {
+      "asin": "B08SVQDR6J",
+      "parentAsin": "B08SW4SMX9",
+      "familyKey": "B08SW4SMX9",
+      "variationCount": 3,
+      "productAgeDays": 1937,
+      "title": "forward dt150b 6 inch heavy duty bench vise with 360° swivel base and head",
+      "brand": "forward",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "5739459011",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "19502224011",
+          "name": "vises"
+        },
+        {
+          "id": "5739459011",
+          "name": "bench vises"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 144.49,
+      "avg30": 162.73,
+      "avg90": 160.16,
+      "low365": 135.99,
+      "rating": 4.6,
+      "reviewCount": 303,
+      "rank": 48761,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/615gXoMxXhL.jpg",
+      "url": "https://www.amazon.com/dp/B08SVQDR6J",
+      "keepa": "https://keepa.com/#!product/1-B08SVQDR6J",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-20T10:58:33.413Z",
+      "dealScore": 45,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 36,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 6
       }
     },
     {
@@ -2361,85 +2692,6 @@
         "reviews": 8,
         "rating": 3,
         "priceTier": 6
-      }
-    },
-    {
-      "asin": "B0F7Y6KNCY",
-      "parentAsin": "B0FQHP89XS",
-      "familyKey": "B0FQHP89XS",
-      "variationCount": 6,
-      "productAgeDays": 475,
-      "title": "cordless sander, 3\" palm sander with 2pcs 16.8v 2.0ah batteries, 3500rpm mini polisher, 30 accessories sanders tool for sanding/polishing/waxing/cleaning",
-      "brand": "vkndoynt",
-      "brandTier": "off",
-      "category": "woodworking_test",
-      "keepaCategoryIds": [
-        "552888",
-        "228013",
-        "328182011",
-        "551236",
-        "552876"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "228013",
-          "name": "tools & home improvement"
-        },
-        {
-          "id": "328182011",
-          "name": "power & hand tools"
-        },
-        {
-          "id": "551236",
-          "name": "power tools"
-        },
-        {
-          "id": "552876",
-          "name": "sanders"
-        },
-        {
-          "id": "552888",
-          "name": "random-orbit sanders"
-        }
-      ],
-      "sourceStream": "woodworking_test",
-      "sources": [
-        "keepa"
-      ],
-      "price": 50.99,
-      "avg30": 57.43,
-      "avg90": 59.35,
-      "low365": 47.19,
-      "rating": 4.4,
-      "reviewCount": 431,
-      "rank": 34199,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/715dzz5X0CL.jpg",
-      "url": "https://www.amazon.com/dp/B0F7Y6KNCY",
-      "keepa": "https://keepa.com/#!product/1-B0F7Y6KNCY",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": false,
-      "updatedAt": "2026-09-19T17:07:42.355Z",
-      "dealScore": 46,
-      "scoreBreakdown": {
-        "rating": 22,
-        "discount": 21,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 0,
-        "productAge": 3,
-        "streamFit": 0,
-        "brand": 0
-      },
-      "normalizedScore": 35,
-      "normalizedScoreBreakdown": {
-        "discount": 10,
-        "brand": 0,
-        "demand": 8,
-        "reviews": 8,
-        "rating": 5,
-        "priceTier": 4
       }
     },
     {
@@ -2615,12 +2867,12 @@
       ]
     },
     {
-      "asin": "B0GL1SZTMM",
+      "asin": "B0FQJL9QG1",
       "parentAsin": "B0GVF8KWMX",
       "familyKey": "B0GVF8KWMX",
       "variationCount": 3,
-      "productAgeDays": 229,
-      "title": "cordless random orbital sander compatible for dew 20v max, 5-inch brushless orbit sander with 19000 rpm 6 variable speed, electric hand sander with dust collector for woodworking sanding (no battery)",
+      "productAgeDays": 305,
+      "title": "cordless random orbital sander compatible for mik 18v max, 5-inch brushless electric palm sander with 19000 rpm & dust collector, 6 variable speed, 18 pcs sandpaper for sanding (no battery)",
       "brand": "siloon",
       "brandTier": "off",
       "category": "woodworking_test",
@@ -2658,20 +2910,20 @@
         "keepa"
       ],
       "price": 43.19,
-      "avg30": 59.76,
-      "avg90": 59.91,
+      "avg30": 59.54,
+      "avg90": 59.84,
       "low365": 43.19,
       "rating": 4.4,
       "reviewCount": 95,
-      "rank": 86521,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/7143-oJ74+L.jpg",
-      "url": "https://www.amazon.com/dp/B0GL1SZTMM",
-      "keepa": "https://keepa.com/#!product/1-B0GL1SZTMM",
+      "rank": 54346,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/8178D3l102L.jpg",
+      "url": "https://www.amazon.com/dp/B0FQJL9QG1",
+      "keepa": "https://keepa.com/#!product/1-B0FQJL9QG1",
       "isLowAll": false,
       "drop1Day": 0,
       "isHot": false,
       "isNameBrand": false,
-      "updatedAt": "2026-09-19T17:07:42.355Z",
+      "updatedAt": "2026-09-20T10:58:33.413Z",
       "dealScore": 63,
       "scoreBreakdown": {
         "rating": 22,
@@ -2691,7 +2943,13 @@
         "reviews": 3,
         "rating": 5,
         "priceTier": 2
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0GL1SZTMM",
+        "B0FQJL9QG1"
+      ]
     },
     {
       "asin": "B003J35KN2",
@@ -2918,6 +3176,80 @@
         "reviews": 8,
         "rating": 8,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0FBLDYWBV",
+      "parentAsin": "B0HDL37KBG",
+      "familyKey": "B0HDL37KBG",
+      "variationCount": 6,
+      "productAgeDays": 474,
+      "title": "vevor portable folding workstand, 4.16 x 2.18 ft collapsible workbench, 2500 lbs weight capacity, no assembly foldable work stand with storage bag, table top not included, for garage workshop outdoor",
+      "brand": "vevor",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 68.31,
+      "avg30": 84.57,
+      "avg90": 81.71,
+      "low365": 62.91,
+      "rating": 4.3,
+      "reviewCount": 142,
+      "rank": 128984,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61a9AEAIuAL.jpg",
+      "url": "https://www.amazon.com/dp/B0FBLDYWBV",
+      "keepa": "https://keepa.com/#!product/1-B0FBLDYWBV",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-20T10:58:33.413Z",
+      "dealScore": 48,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 24,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 27,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 3,
+        "priceTier": 4
       }
     },
     {

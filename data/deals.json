@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-27T02:04:47.753Z",
+  "generatedAt": "2026-09-27T11:30:14.777Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "woodworking_test",
-  "dealCount": 129,
+  "lastEnrichmentStream": "power_tools_main",
+  "dealCount": 135,
   "deals": [
     {
       "asin": "B004W1WGIC",
@@ -2056,6 +2056,80 @@
       }
     },
     {
+      "asin": "B00I3PNJ7K",
+      "parentAsin": "",
+      "familyKey": "B00I3PNJ7K",
+      "variationCount": 0,
+      "productAgeDays": 3909,
+      "title": "milwaukee 2658-20 m18 3/8\" impact wrench",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552820",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552820",
+          "name": "impact wrenches"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 80,
+      "avg30": 83.3,
+      "avg90": 102.19,
+      "low365": 80,
+      "rating": 4.6,
+      "reviewCount": 267,
+      "rank": 64895,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41yTKc4k0NL.jpg",
+      "url": "https://www.amazon.com/dp/B00I3PNJ7K",
+      "keepa": "https://keepa.com/#!product/1-B00I3PNJ7K",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-27T11:30:14.776Z",
+      "dealScore": 83,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 32,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 62,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B0FHJCTL4Y",
       "parentAsin": "B0GJCJX65J",
       "familyKey": "B0GJCJX65J",
@@ -2135,6 +2209,89 @@
       }
     },
     {
+      "asin": "B089FMLC3H",
+      "parentAsin": "B0FD8Z4DFG",
+      "familyKey": "B0FD8Z4DFG",
+      "variationCount": 1,
+      "productAgeDays": 2294,
+      "title": "dewalt 12v max*/20v max*/flexvolt 6 amp charger (dcb1106)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "8106529011",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552376",
+          "name": "charger & converters"
+        },
+        {
+          "id": "8106529011",
+          "name": "battery chargers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.87,
+      "avg30": 41.22,
+      "avg90": 44.24,
+      "low365": 34.23,
+      "rating": 4.6,
+      "reviewCount": 1096,
+      "rank": 18662,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71v5GISh6AL.jpg",
+      "url": "https://www.amazon.com/dp/B089FMLC3H",
+      "keepa": "https://keepa.com/#!product/1-B089FMLC3H",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-27T11:30:14.775Z",
+      "dealScore": 75,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 61,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 13,
+        "rating": 8,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0DP5G7466",
       "parentAsin": "",
       "familyKey": "B0DP5G7466",
@@ -2210,6 +2367,85 @@
         "demand": 12,
         "reviews": 3,
         "rating": 10,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0BGJMFTXK",
+      "parentAsin": "",
+      "familyKey": "B0BGJMFTXK",
+      "variationCount": 0,
+      "productAgeDays": 1459,
+      "title": "milwaukee electric - m18 fuel. 4-1/2 / 5 variable speed braking grind",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552812",
+        "228013",
+        "328182011",
+        "551236",
+        "552810"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552810",
+          "name": "grinders"
+        },
+        {
+          "id": "552812",
+          "name": "angle grinders"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 149.8,
+      "avg30": 160.73,
+      "avg90": 169.24,
+      "low365": 142.83,
+      "rating": 4.7,
+      "reviewCount": 296,
+      "rank": 49652,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51ZNer6VYrL.jpg",
+      "url": "https://www.amazon.com/dp/B0BGJMFTXK",
+      "keepa": "https://keepa.com/#!product/1-B0BGJMFTXK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-27T11:30:14.776Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 61,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 9,
         "priceTier": 6
       }
     },
@@ -2965,6 +3201,91 @@
       }
     },
     {
+      "asin": "B075LPPW87",
+      "parentAsin": "B0DKBZ2941",
+      "familyKey": "B0DKBZ2941",
+      "variationCount": 4,
+      "productAgeDays": 3278,
+      "title": "skil 13 amp corded reciprocating saw with buzzkill technology - spt44a-00",
+      "brand": "skil",
+      "brandTier": "mid",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552950",
+        "228013",
+        "328182011",
+        "551236",
+        "552894"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552894",
+          "name": "saws"
+        },
+        {
+          "id": "552950",
+          "name": "reciprocating saws"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 98.1,
+      "avg30": 107.18,
+      "avg90": 116.19,
+      "low365": 78,
+      "rating": 4.7,
+      "reviewCount": 973,
+      "rank": 33956,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51aTMZ6QKkL.jpg",
+      "url": "https://www.amazon.com/dp/B075LPPW87",
+      "keepa": "https://keepa.com/#!product/1-B075LPPW87",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-27T11:30:14.776Z",
+      "dealScore": 74,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 23,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 12,
+        "demand": 8,
+        "reviews": 11,
+        "rating": 9,
+        "priceTier": 4
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B07DVZK528",
+        "B075LPPW87"
+      ]
+    },
+    {
       "asin": "B0D9GBM8RF",
       "parentAsin": "",
       "familyKey": "B0D9GBM8RF",
@@ -3420,85 +3741,6 @@
         "demand": 12,
         "reviews": 8,
         "rating": 10,
-        "priceTier": 6
-      }
-    },
-    {
-      "asin": "B07DVZK528",
-      "parentAsin": "B0DKBZ2941",
-      "familyKey": "B0DKBZ2941",
-      "variationCount": 4,
-      "productAgeDays": 3000,
-      "title": "skil 15 amp heavy duty reciprocating saw-spt44-10",
-      "brand": "skil",
-      "brandTier": "mid",
-      "category": "power_tools_main",
-      "keepaCategoryIds": [
-        "552950",
-        "228013",
-        "328182011",
-        "551236",
-        "552894"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "228013",
-          "name": "tools & home improvement"
-        },
-        {
-          "id": "328182011",
-          "name": "power & hand tools"
-        },
-        {
-          "id": "551236",
-          "name": "power tools"
-        },
-        {
-          "id": "552894",
-          "name": "saws"
-        },
-        {
-          "id": "552950",
-          "name": "reciprocating saws"
-        }
-      ],
-      "sourceStream": "power_tools_main",
-      "sources": [
-        "keepa"
-      ],
-      "price": 134.1,
-      "avg30": 151.93,
-      "avg90": 176.64,
-      "low365": 122.79,
-      "rating": 4.4,
-      "reviewCount": 231,
-      "rank": 34831,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/412jn-BDy5L.jpg",
-      "url": "https://www.amazon.com/dp/B07DVZK528",
-      "keepa": "https://keepa.com/#!product/1-B07DVZK528",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": true,
-      "updatedAt": "2026-09-27T02:02:49.054Z",
-      "dealScore": 74,
-      "scoreBreakdown": {
-        "rating": 22,
-        "discount": 36,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 0,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 8
-      },
-      "normalizedScore": 55,
-      "normalizedScoreBreakdown": {
-        "discount": 18,
-        "brand": 12,
-        "demand": 8,
-        "reviews": 6,
-        "rating": 5,
         "priceTier": 6
       }
     },
@@ -3963,6 +4205,85 @@
         "reviews": 0,
         "rating": 9,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B00R4ZZTRI",
+      "parentAsin": "",
+      "familyKey": "B00R4ZZTRI",
+      "variationCount": 0,
+      "productAgeDays": 3902,
+      "title": "milwaukee 2635-20 m18 cordless 18 gauge double cut shear - bare tool",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "3206562011",
+        "228013",
+        "328182011",
+        "551236",
+        "552984"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552984",
+          "name": "shears & nibblers"
+        },
+        {
+          "id": "3206562011",
+          "name": "shears"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 219.17,
+      "avg30": 231.59,
+      "avg90": 254.06,
+      "low365": 130,
+      "rating": 4.4,
+      "reviewCount": 194,
+      "rank": 73773,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/31ihvR6JdpL.jpg",
+      "url": "https://www.amazon.com/dp/B00R4ZZTRI",
+      "keepa": "https://keepa.com/#!product/1-B00R4ZZTRI",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-27T11:30:14.776Z",
+      "dealScore": 70,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 20,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 53,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 5,
+        "priceTier": 8
       }
     },
     {
@@ -4730,6 +5051,80 @@
         "reviews": 0,
         "rating": 5,
         "priceTier": 10
+      }
+    },
+    {
+      "asin": "B00ZORWING",
+      "parentAsin": "",
+      "familyKey": "B00ZORWING",
+      "variationCount": 0,
+      "productAgeDays": 3970,
+      "title": "dewalt dwe46152 surface grinding dust shroud, 5",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "9022420011",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "9022420011",
+          "name": "power tools replacement parts"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 83.83,
+      "avg30": 87.35,
+      "avg90": 91.47,
+      "low365": 83.83,
+      "rating": 4.3,
+      "reviewCount": 934,
+      "rank": 60257,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51kQBor88vL.jpg",
+      "url": "https://www.amazon.com/dp/B00ZORWING",
+      "keepa": "https://keepa.com/#!product/1-B00ZORWING",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-27T11:30:14.776Z",
+      "dealScore": 66,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 3,
+        "priceTier": 4
       }
     },
     {
@@ -7053,6 +7448,80 @@
       }
     },
     {
+      "asin": "B0CT171ZRZ",
+      "parentAsin": "B0CX364RZ5",
+      "familyKey": "B0CX364RZ5",
+      "variationCount": 7,
+      "productAgeDays": 972,
+      "title": "flex 24v brushless cordless 1/4-inch 2,500 in-lbs torque quick eject hex impact driver multi-mode tool only, battery and charger not included - fx1371a-z",
+      "brand": "flex",
+      "brandTier": "mid",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "2399141011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2399141011",
+          "name": "impact drivers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 134.01,
+      "avg30": 147.07,
+      "avg90": 153.28,
+      "low365": 87.9,
+      "rating": 4.3,
+      "reviewCount": 37,
+      "rank": 57667,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/517tsHTGKeL.jpg",
+      "url": "https://www.amazon.com/dp/B0CT171ZRZ",
+      "keepa": "https://keepa.com/#!product/1-B0CT171ZRZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-27T11:30:14.776Z",
+      "dealScore": 55,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 35,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 12,
+        "demand": 4,
+        "reviews": 0,
+        "rating": 3,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B08PC9RHH2",
       "parentAsin": "B07VH24H2L",
       "familyKey": "B07VH24H2L",
@@ -7735,7 +8204,7 @@
       "isHot": false,
       "isNameBrand": true,
       "updatedAt": "2026-09-27T02:02:49.054Z",
-      "dealScore": 57,
+      "dealScore": 60,
       "scoreBreakdown": {
         "rating": 19,
         "discount": 22,
@@ -7754,7 +8223,13 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 2
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0C69WPXH7",
+        "B0C69SZB7S"
+      ]
     },
     {
       "asin": "B0DSPBZMV5",

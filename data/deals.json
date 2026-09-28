@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-28T10:13:49.040Z",
+  "generatedAt": "2026-09-28T23:31:42.702Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "woodworking_test",
-  "dealCount": 123,
+  "lastEnrichmentStream": "dad_impulse",
+  "dealCount": 218,
   "deals": [
     {
       "asin": "B004W1WGIC",
@@ -145,6 +145,90 @@
         "reviews": 11,
         "rating": 9,
         "priceTier": 10
+      }
+    },
+    {
+      "asin": "B09J714273",
+      "parentAsin": "B0BGDQGB2T",
+      "familyKey": "B0BGDQGB2T",
+      "variationCount": 7,
+      "productAgeDays": 1796,
+      "title": "3m sandpaper, 60 grit, 6 sheets, 3-2/3 in x 9 in, sands paint, wood & metal, great for general purpose sanding, coarse aluminum oxide sand paper (9017na-cc)",
+      "brand": "3m",
+      "brandTier": "mid",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "552594",
+        "256167011",
+        "228013",
+        "328182011",
+        "552262",
+        "8106314011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106314011",
+          "name": "power finishing tool parts & accessories"
+        },
+        {
+          "id": "552582",
+          "name": "power sander parts & accessories"
+        },
+        {
+          "id": "552594",
+          "name": "sanding sheets"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.95,
+      "avg30": 50.59,
+      "avg90": 57.95,
+      "low365": 21.95,
+      "rating": 4.6,
+      "reviewCount": 1156,
+      "rank": 954,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71iLEkYeVTL.jpg",
+      "url": "https://www.amazon.com/dp/B09J714273",
+      "keepa": "https://keepa.com/#!product/1-B09J714273",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-09-28T23:31:42.699Z",
+      "dealScore": 172,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 93,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 78,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 12,
+        "demand": 20,
+        "reviews": 13,
+        "rating": 8,
+        "priceTier": 0
       }
     },
     {
@@ -612,6 +696,85 @@
       }
     },
     {
+      "asin": "B0036DNQLS",
+      "parentAsin": "B0DKQMZD52",
+      "familyKey": "B0DKQMZD52",
+      "variationCount": 108,
+      "productAgeDays": 4673,
+      "title": "berkley trilene® big game™, green, 20lb | 9kg, 7800yd | 7132m monofilament fishing line, suitable for saltwater and freshwater environments coastal brown",
+      "brand": "berkley",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3473331",
+        "3375251",
+        "706813011",
+        "3408951",
+        "3473311"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "706813011",
+          "name": "hunting & fishing"
+        },
+        {
+          "id": "3408951",
+          "name": "fishing"
+        },
+        {
+          "id": "3473311",
+          "name": "fishing line"
+        },
+        {
+          "id": "3473331",
+          "name": "monofilament line"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 42,
+      "avg30": 112.25,
+      "avg90": 112.57,
+      "low365": 42,
+      "rating": 4.6,
+      "reviewCount": 3303,
+      "rank": 269,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61vyREfz5kL.jpg",
+      "url": "https://www.amazon.com/dp/B0036DNQLS",
+      "keepa": "https://keepa.com/#!product/1-B0036DNQLS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.699Z",
+      "dealScore": 173,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 94,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 70,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0D2L1G66J",
       "parentAsin": "B0H98K33X9",
       "familyKey": "B0H98K33X9",
@@ -979,6 +1142,161 @@
         "reviews": 13,
         "rating": 7,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0CB9NS29Q",
+      "parentAsin": "B0CDR2MGZ5",
+      "familyKey": "B0CDR2MGZ5",
+      "variationCount": 7,
+      "productAgeDays": 1106,
+      "title": "amazon echo pop kids (newest model), enjoy age-appropriate audiobooks, sleep routines and alexa+ experiences to create and learn, marvel's avengers design",
+      "brand": "amazon",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "12097482011",
+        "18238261011",
+        "24069497011",
+        "23566054011",
+        "172282",
+        "667846011",
+        "322215011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "667846011",
+          "name": "home audio"
+        },
+        {
+          "id": "322215011",
+          "name": "wireless & streaming audio"
+        },
+        {
+          "id": "12097482011",
+          "name": "wireless multiroom systems"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.99,
+      "avg30": 42.65,
+      "avg90": 45.26,
+      "low365": 21.99,
+      "rating": 4.7,
+      "reviewCount": 5667,
+      "rank": 115,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61hkgQv3LnL.jpg",
+      "url": "https://www.amazon.com/dp/B0CB9NS29Q",
+      "keepa": "https://keepa.com/#!product/1-B0CB9NS29Q",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 148,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 77,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 69,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0C5QRZ47P",
+      "parentAsin": "B08QSB7SR3",
+      "familyKey": "B08QSB7SR3",
+      "variationCount": 4,
+      "productAgeDays": 1131,
+      "title": "ring outdoor cam (stick up cam), weather-resistant home or business hd security camera, live view, color night vision, two-way talk, motion alerts, works with alexa, white",
+      "brand": "ring",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "495238",
+        "898400",
+        "3180341",
+        "21614611011",
+        "17440052011",
+        "228013",
+        "495224",
+        "495236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "495224",
+          "name": "lighting & ceiling fans"
+        },
+        {
+          "id": "495236",
+          "name": "outdoor lighting"
+        },
+        {
+          "id": "495238",
+          "name": "flood & security lights"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg30": 72.42,
+      "avg90": 75.09,
+      "low365": 39.99,
+      "rating": 4.5,
+      "reviewCount": 65443,
+      "rank": 12,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51jsmzS6DYL.jpg",
+      "url": "https://www.amazon.com/dp/B0C5QRZ47P",
+      "keepa": "https://keepa.com/#!product/1-B0C5QRZ47P",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 140,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 70,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 69,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 2
       }
     },
     {
@@ -1592,6 +1910,225 @@
       }
     },
     {
+      "asin": "B0B89RVCZS",
+      "parentAsin": "B0C4RJGPPK",
+      "familyKey": "B0C4RJGPPK",
+      "variationCount": 174,
+      "productAgeDays": 1463,
+      "title": "junk food nfl - miami dolphins team helmet adult hoodie grey",
+      "brand": "junk food",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3204004011",
+        "1040658",
+        "3375251",
+        "3386071",
+        "374742011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374742011",
+          "name": "clothing"
+        },
+        {
+          "id": "3204004011",
+          "name": "sweatshirts & hoodies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 20.63,
+      "avg30": 52.12,
+      "avg90": 44.9,
+      "low365": 20.63,
+      "rating": 4.7,
+      "reviewCount": 3982,
+      "rank": 1223,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/7117ewS0GYL.jpg",
+      "url": "https://www.amazon.com/dp/B0B89RVCZS",
+      "keepa": "https://keepa.com/#!product/1-B0B89RVCZS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 160,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 81,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 67,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 18,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0H6BGCYNF",
+      "parentAsin": "B0HDN5W2N1",
+      "familyKey": "B0HDN5W2N1",
+      "variationCount": 9,
+      "productAgeDays": 98,
+      "title": "bmani ear buds wireless earbuds bluetooth headphones with 80h playtime led display case, over-ear hook with mic, stereo sound, easy button controls, sports earphones for running workout gym black",
+      "brand": "bmani",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "12097478011",
+        "12097479011",
+        "172282",
+        "24046923011",
+        "172541"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "24046923011",
+          "name": "headphones, earbuds & accessories"
+        },
+        {
+          "id": "172541",
+          "name": "headphones & earbuds"
+        },
+        {
+          "id": "12097478011",
+          "name": "earbud headphones"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 35.99,
+      "avg30": 47.99,
+      "avg90": 92.4,
+      "low365": 35.99,
+      "rating": 4.4,
+      "reviewCount": 4680,
+      "rank": 93,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71X1Vc38WVL.jpg",
+      "url": "https://www.amazon.com/dp/B0H6BGCYNF",
+      "keepa": "https://keepa.com/#!product/1-B0H6BGCYNF",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.699Z",
+      "dealScore": 156,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 91,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 67,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0FLKDCKBX",
+      "parentAsin": "B0DFCQXKR7",
+      "familyKey": "B0DFCQXKR7",
+      "variationCount": 368,
+      "productAgeDays": 376,
+      "title": "walli cases wallet phone case for iphone 18 pro and iphone 17 pro",
+      "brand": "walli",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3081461011",
+        "2335752011",
+        "2407760011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407760011",
+          "name": "cases, holsters & sleeves"
+        },
+        {
+          "id": "3081461011",
+          "name": "basic cases"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.49,
+      "avg30": 40.02,
+      "avg90": 45.33,
+      "low365": 21.49,
+      "rating": 4.5,
+      "reviewCount": 2008,
+      "rank": 476,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61-rv+sOsgL.jpg",
+      "url": "https://www.amazon.com/dp/B0FLKDCKBX",
+      "keepa": "https://keepa.com/#!product/1-B0FLKDCKBX",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 151,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 78,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 67,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B00ZTPCLZ8",
       "parentAsin": "B07SH7QJH5",
       "familyKey": "B07SH7QJH5",
@@ -1668,6 +2205,149 @@
         "reviews": 15,
         "rating": 10,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0B9266V4T",
+      "parentAsin": "B0CHWHW4Y9",
+      "familyKey": "B0CHWHW4Y9",
+      "variationCount": 186,
+      "productAgeDays": 1461,
+      "title": "junk food nfl - detroit lions - spotlight - officially licensed adult pullover fleece hoodie for men and women",
+      "brand": "junk food",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3204004011",
+        "3375251",
+        "3386071",
+        "374742011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374742011",
+          "name": "clothing"
+        },
+        {
+          "id": "3204004011",
+          "name": "sweatshirts & hoodies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.94,
+      "avg30": 52.82,
+      "avg90": 46.52,
+      "low365": 21.94,
+      "rating": 4.6,
+      "reviewCount": 3367,
+      "rank": 2397,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61yzeuPj1QL.jpg",
+      "url": "https://www.amazon.com/dp/B0B9266V4T",
+      "keepa": "https://keepa.com/#!product/1-B0B9266V4T",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 158,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 79,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 66,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 18,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0F21D7VCN",
+      "parentAsin": "B0CLV3VB72",
+      "familyKey": "B0CLV3VB72",
+      "variationCount": 39,
+      "productAgeDays": 496,
+      "title": "favoyard outdoor chair cushion 22 x 22 x 3 in waterproof fade resistant",
+      "brand": "favoyard",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3480724011",
+        "2972638011",
+        "553824"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "3480724011",
+          "name": "cushions"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 26.5,
+      "avg30": 39.61,
+      "avg90": 54.82,
+      "low365": 26.5,
+      "rating": 4.6,
+      "reviewCount": 4388,
+      "rank": 4682,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81fqgS43urL.jpg",
+      "url": "https://www.amazon.com/dp/B0F21D7VCN",
+      "keepa": "https://keepa.com/#!product/1-B0F21D7VCN",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 151,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 77,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 66,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 18,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 0
       }
     },
     {
@@ -1903,6 +2583,456 @@
       }
     },
     {
+      "asin": "B0DMSSXLK3",
+      "parentAsin": "B0HKM628GJ",
+      "familyKey": "B0HKM628GJ",
+      "variationCount": 22,
+      "productAgeDays": 140,
+      "title": "termitor upgraded h11/h9 bulbs, 15x extreme brightness, 6500k cool white, real 1:1 halogen mini size, 10-year service life, h16 h8 driving fog lights replacement, plug-and-play, pack of 2",
+      "brand": "termitor",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "404801011",
+        "15684181",
+        "346333011",
+        "404659011",
+        "404796011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "346333011",
+          "name": "motorcycle & powersports"
+        },
+        {
+          "id": "404659011",
+          "name": "parts"
+        },
+        {
+          "id": "404796011",
+          "name": "lights"
+        },
+        {
+          "id": "404801011",
+          "name": "turn signal assemblies & lenses"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg30": 85.44,
+      "avg90": 90.47,
+      "low365": 39.99,
+      "rating": 4.4,
+      "reviewCount": 1358,
+      "rank": 860,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71xn61PHFJL.jpg",
+      "url": "https://www.amazon.com/dp/B0DMSSXLK3",
+      "keepa": "https://keepa.com/#!product/1-B0DMSSXLK3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 153,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 83,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 65,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 13,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0F3BJJ9DJ",
+      "parentAsin": "B0FRC281ZG",
+      "familyKey": "B0FRC281ZG",
+      "variationCount": 9,
+      "productAgeDays": 363,
+      "title": "blink mini 2k+ (newest model) – plug-in home & pet indoor security camera with 2k video resolution, night vision, enhanced audio, motion detection – 2 cameras (white)",
+      "brand": "blink",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "14241571",
+        "898400",
+        "172282",
+        "524136",
+        "11041121"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "524136",
+          "name": "security & surveillance"
+        },
+        {
+          "id": "11041121",
+          "name": "accessories"
+        },
+        {
+          "id": "14241571",
+          "name": "surveillance housing & mounting brackets"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 27.99,
+      "avg30": 48.89,
+      "avg90": 56.28,
+      "low365": 27.99,
+      "rating": 4.4,
+      "reviewCount": 7910,
+      "rank": 8,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41CxRFPVUjL.jpg",
+      "url": "https://www.amazon.com/dp/B0F3BJJ9DJ",
+      "keepa": "https://keepa.com/#!product/1-B0F3BJJ9DJ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 140,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 75,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 65,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0F9WG8V5V",
+      "parentAsin": "B0H256X3HM",
+      "familyKey": "B0H256X3HM",
+      "variationCount": 13,
+      "productAgeDays": 161,
+      "title": "high wind american flag for outdoor 8x12 ft,heavy duty allegiance us flag",
+      "brand": "danf flag",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "553792",
+        "2972638011",
+        "553788"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553788",
+          "name": "outdoor décor"
+        },
+        {
+          "id": "553792",
+          "name": "flags"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 48.98,
+      "avg30": 80.39,
+      "avg90": 94.15,
+      "low365": 48.98,
+      "rating": 4.4,
+      "reviewCount": 6152,
+      "rank": 1877,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81liClcenmL.jpg",
+      "url": "https://www.amazon.com/dp/B0F9WG8V5V",
+      "keepa": "https://keepa.com/#!product/1-B0F9WG8V5V",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 136,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 71,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 65,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 18,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0791CC16Z",
+      "parentAsin": "B07FX7DM4T",
+      "familyKey": "B07FX7DM4T",
+      "variationCount": 1470,
+      "productAgeDays": 3114,
+      "title": "hercules super cast 1000m 1094 yards braided fishing line 200 lb test for saltwater freshwater pe braid fish lines superline 8 strands - pink, 200lb (90.7kg), 0.75mm",
+      "brand": "hercules",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3473351",
+        "3375251",
+        "706813011",
+        "3408951",
+        "3473311"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "706813011",
+          "name": "hunting & fishing"
+        },
+        {
+          "id": "3408951",
+          "name": "fishing"
+        },
+        {
+          "id": "3473311",
+          "name": "fishing line"
+        },
+        {
+          "id": "3473351",
+          "name": "braided line"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.74,
+      "avg30": 49.74,
+      "avg90": 86.58,
+      "low365": 39.99,
+      "rating": 4.5,
+      "reviewCount": 7999,
+      "rank": 8706,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61LkLcOG9LL.jpg",
+      "url": "https://www.amazon.com/dp/B0791CC16Z",
+      "keepa": "https://keepa.com/#!product/1-B0791CC16Z",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 111,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 63,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 65,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B08YND6K2N",
+      "parentAsin": "B0939BDKGK",
+      "familyKey": "B0939BDKGK",
+      "variationCount": 439,
+      "productAgeDays": 1734,
+      "title": "blue 84 men's virginia tech hokies quarter zip sweatshirt icon secondary, alternate color, xx-large",
+      "brand": "blue 84",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3204004011",
+        "3375251",
+        "3386071",
+        "374742011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374742011",
+          "name": "clothing"
+        },
+        {
+          "id": "3204004011",
+          "name": "sweatshirts & hoodies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 26.04,
+      "avg30": 60.56,
+      "avg90": 53.32,
+      "low365": 24.08,
+      "rating": 4.6,
+      "reviewCount": 1293,
+      "rank": 2980,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61-eTlWXYwL.jpg",
+      "url": "https://www.amazon.com/dp/B08YND6K2N",
+      "keepa": "https://keepa.com/#!product/1-B08YND6K2N",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 155,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 76,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 64,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 18,
+        "reviews": 13,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B08G4WKC62",
+      "parentAsin": "B07KZPS21T",
+      "familyKey": "B07KZPS21T",
+      "variationCount": 521,
+      "productAgeDays": 2096,
+      "title": "barnesmith kansas state university sweatshirt, heritage, purple, xx-large",
+      "brand": "barnesmith",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3204004011",
+        "3375251",
+        "3386071",
+        "374742011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374742011",
+          "name": "clothing"
+        },
+        {
+          "id": "3204004011",
+          "name": "sweatshirts & hoodies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.48,
+      "avg30": 41.26,
+      "avg90": 47.05,
+      "low365": 21.48,
+      "rating": 4.6,
+      "reviewCount": 7701,
+      "rank": 7221,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41NOv4WH+aL.jpg",
+      "url": "https://www.amazon.com/dp/B08G4WKC62",
+      "keepa": "https://keepa.com/#!product/1-B08G4WKC62",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 130,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 81,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 64,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B08C7L4RQV",
       "parentAsin": "",
       "familyKey": "B08C7L4RQV",
@@ -2056,6 +3186,452 @@
       }
     },
     {
+      "asin": "B076SCZNPB",
+      "parentAsin": "B0FF64Y5TB",
+      "familyKey": "B0FF64Y5TB",
+      "variationCount": 1731,
+      "productAgeDays": 2876,
+      "title": "bendix premium prt6246 rear brake rotor for mercedes-benz gl450 2013, gl550 2013",
+      "brand": "bendix",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "46244011",
+        "15684181",
+        "15719731",
+        "15721631"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "15719731",
+          "name": "replacement parts"
+        },
+        {
+          "id": "15721631",
+          "name": "brake system"
+        },
+        {
+          "id": "46244011",
+          "name": "rotors"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 41.65,
+      "avg30": 78.68,
+      "avg90": 79.56,
+      "low365": 41.65,
+      "rating": 4.4,
+      "reviewCount": 1751,
+      "rank": 1394,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/617A6+2TFRL.jpg",
+      "url": "https://www.amazon.com/dp/B076SCZNPB",
+      "keepa": "https://keepa.com/#!product/1-B076SCZNPB",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 149,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 71,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 63,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 18,
+        "reviews": 13,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0B2D79LWH",
+      "parentAsin": "B0F5VT8Z4R",
+      "familyKey": "B0F5VT8Z4R",
+      "variationCount": 7,
+      "productAgeDays": 1549,
+      "title": "ciciwind 82ft×17.7in white grey wallpaper wood peel and stick wall paper vintage self-adhesive removable wood panel contact paper decoral rv living room laundry hallway closet for walls covering",
+      "brand": "ciciwind",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "2242314011",
+        "228013",
+        "228899",
+        "17881625011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "228899",
+          "name": "paint, wall treatments & supplies"
+        },
+        {
+          "id": "17881625011",
+          "name": "wallpaper & wallpapering supplies"
+        },
+        {
+          "id": "2242314011",
+          "name": "wallpaper"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 31.99,
+      "avg30": 51.8,
+      "avg90": 59.92,
+      "low365": 31.99,
+      "rating": 4.4,
+      "reviewCount": 8293,
+      "rank": 4097,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81c3yJec35L.jpg",
+      "url": "https://www.amazon.com/dp/B0B2D79LWH",
+      "keepa": "https://keepa.com/#!product/1-B0B2D79LWH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 139,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 69,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 63,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 18,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0FWDXNQYJ",
+      "parentAsin": "B0GYT5Q68Y",
+      "familyKey": "B0GYT5Q68Y",
+      "variationCount": 18,
+      "productAgeDays": 95,
+      "title": "ring outdoor cam 2k (newest model), battery, home or business security, wide-angle retinal 2k video, 6x enhanced zoom, night vision, black",
+      "brand": "ring",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "898406",
+        "898400",
+        "898402",
+        "172282",
+        "502394",
+        "7161091011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "502394",
+          "name": "camera & photo"
+        },
+        {
+          "id": "7161091011",
+          "name": "video surveillance"
+        },
+        {
+          "id": "898406",
+          "name": "surveillance systems"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg30": 90.64,
+      "avg90": 98.28,
+      "low365": 49.99,
+      "rating": 4.4,
+      "reviewCount": 564,
+      "rank": 11,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51FDtQYQ0NL.jpg",
+      "url": "https://www.amazon.com/dp/B0FWDXNQYJ",
+      "keepa": "https://keepa.com/#!product/1-B0FWDXNQYJ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 133,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 73,
+        "rank": 30,
+        "reviews": 5,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 63,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 11,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B08ZCKHTZD",
+      "parentAsin": "B0CTTDNCMJ",
+      "familyKey": "B0CTTDNCMJ",
+      "variationCount": 901,
+      "productAgeDays": 1912,
+      "title": "sunlax sun shade sail 16' x 16' x 22' dark grey right triangle uv shade",
+      "brand": "sunlax",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3480728011",
+        "2972638011",
+        "553824",
+        "14135022011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "14135022011",
+          "name": "umbrellas & shade"
+        },
+        {
+          "id": "3480728011",
+          "name": "shade sails"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 22.49,
+      "avg30": 39.11,
+      "avg90": 43.03,
+      "low365": 22.49,
+      "rating": 4.5,
+      "reviewCount": 5932,
+      "rank": 8262,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71t+Nvtl8FL.jpg",
+      "url": "https://www.amazon.com/dp/B08ZCKHTZD",
+      "keepa": "https://keepa.com/#!product/1-B08ZCKHTZD",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 119,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 71,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 63,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0DHXWG5WN",
+      "parentAsin": "B0HDJFMJDQ",
+      "familyKey": "B0HDJFMJDQ",
+      "variationCount": 3308,
+      "productAgeDays": 338,
+      "title": "artpuch sun shade sail 26'x26'x26' blue triangle",
+      "brand": "artpuch",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3480728011",
+        "2972638011",
+        "553824",
+        "14135022011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "14135022011",
+          "name": "umbrellas & shade"
+        },
+        {
+          "id": "3480728011",
+          "name": "shade sails"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 33.99,
+      "avg30": 57.83,
+      "avg90": 70.09,
+      "low365": 33.99,
+      "rating": 4.5,
+      "reviewCount": 15526,
+      "rank": 5401,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81JTcFGEQnL.jpg",
+      "url": "https://www.amazon.com/dp/B0DHXWG5WN",
+      "keepa": "https://keepa.com/#!product/1-B0DHXWG5WN",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 117,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 77,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 63,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0G34FJGDK",
+      "parentAsin": "B0HB54ZVF2",
+      "familyKey": "B0HB54ZVF2",
+      "variationCount": 1900,
+      "productAgeDays": 200,
+      "title": "shade&beyond 10'x13'x16.4' sun shade sail sand triangle",
+      "brand": "shade&beyond",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3480728011",
+        "2972638011",
+        "553824",
+        "14135022011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "14135022011",
+          "name": "umbrellas & shade"
+        },
+        {
+          "id": "3480728011",
+          "name": "shade sails"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.99,
+      "avg30": 43.94,
+      "avg90": 46.64,
+      "low365": 23.99,
+      "rating": 4.5,
+      "reviewCount": 12875,
+      "rank": 5096,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/811AqvKsexL.jpg",
+      "url": "https://www.amazon.com/dp/B0G34FJGDK",
+      "keepa": "https://keepa.com/#!product/1-B0G34FJGDK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 112,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 72,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 63,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B085VTRG7L",
       "parentAsin": "B0BJ85QT3V",
       "familyKey": "B0BJ85QT3V",
@@ -2127,6 +3703,80 @@
         "reviews": 13,
         "rating": 10,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0GC53FS8C",
+      "parentAsin": "B0HH5YZ5L8",
+      "familyKey": "B0HH5YZ5L8",
+      "variationCount": 8,
+      "productAgeDays": 236,
+      "title": "tegarbed galvanized raised garden bed outdoor, 8x4x1ft(2 pack) metal heavy duty planter boxes for gardening, easy assemble large oval plant container kit for vegetable, flower, fruit, silver",
+      "brand": "tegarbed",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "14623212011",
+        "2972638011",
+        "3610851",
+        "3480694011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "3610851",
+          "name": "gardening & lawn care"
+        },
+        {
+          "id": "3480694011",
+          "name": "pots, planters & container accessories"
+        },
+        {
+          "id": "14623212011",
+          "name": "raised beds"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg30": 89.53,
+      "avg90": 101.21,
+      "low365": 49.99,
+      "rating": 4.6,
+      "reviewCount": 542,
+      "rank": 9031,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/91+rSwNfnDL.jpg",
+      "url": "https://www.amazon.com/dp/B0GC53FS8C",
+      "keepa": "https://keepa.com/#!product/1-B0GC53FS8C",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 106,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 75,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 62,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 11,
+        "rating": 8,
+        "priceTier": 2
       }
     },
     {
@@ -2593,6 +4243,229 @@
       }
     },
     {
+      "asin": "B0G62ZV449",
+      "parentAsin": "B0GVPT34PC",
+      "familyKey": "B0GVPT34PC",
+      "variationCount": 6,
+      "productAgeDays": 181,
+      "title": "blink battery doorbell 2k+ (newest model) — wireless video doorbell, 2k resolution, enhanced audio. required sync module not included – add-on (white)",
+      "brand": "blink",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "495320",
+        "898400",
+        "228013",
+        "495266"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "495266",
+          "name": "electrical"
+        },
+        {
+          "id": "495320",
+          "name": "door chimes & bells"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 30.99,
+      "avg30": 51.02,
+      "avg90": 57.19,
+      "low365": 30.99,
+      "rating": 4.3,
+      "reviewCount": 1268,
+      "rank": 32,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51iVxI8ojNL.jpg",
+      "url": "https://www.amazon.com/dp/B0G62ZV449",
+      "keepa": "https://keepa.com/#!product/1-B0G62ZV449",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 129,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 68,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 61,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 13,
+        "rating": 3,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0D8KRDVC3",
+      "parentAsin": "B0CJQB161V",
+      "familyKey": "B0CJQB161V",
+      "variationCount": 3,
+      "productAgeDays": 789,
+      "title": "zuckeo blacklight spotlight outdoor 15w halloween black light spot light with us plug, ip66 landscape black lights fixtures for glow party fluorescent yard garden house decorating(6pack)",
+      "brand": "zuckeo",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "14193181",
+        "228013",
+        "495224",
+        "495236",
+        "553784"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "495224",
+          "name": "lighting & ceiling fans"
+        },
+        {
+          "id": "495236",
+          "name": "outdoor lighting"
+        },
+        {
+          "id": "553784",
+          "name": "landscape lighting"
+        },
+        {
+          "id": "14193181",
+          "name": "spotlights"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 44.99,
+      "avg30": 83.36,
+      "avg90": 87.78,
+      "low365": 44.99,
+      "rating": 4.5,
+      "reviewCount": 580,
+      "rank": 7798,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71vKvKCt5rL.jpg",
+      "url": "https://www.amazon.com/dp/B0D8KRDVC3",
+      "keepa": "https://keepa.com/#!product/1-B0D8KRDVC3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 108,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 73,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 61,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0H1M6NDCG",
+      "parentAsin": "B0HKWJSD8X",
+      "familyKey": "B0HKWJSD8X",
+      "variationCount": 7,
+      "productAgeDays": 132,
+      "title": "sealight h11 led bulbs, 66,000lm 6500k cool white, ip68 ip6x 80,000hrs long lifespan, real 1:1 size plug n play, anti flickering h8/h9/h16 fog bulbs combo 99% compatible, pack of 2",
+      "brand": "sealight",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "15730111",
+        "15684181",
+        "15736321",
+        "15736341"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "15736321",
+          "name": "lights, bulbs & indicators"
+        },
+        {
+          "id": "15736341",
+          "name": "bulbs"
+        },
+        {
+          "id": "15730111",
+          "name": "driving lights"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg30": 70.36,
+      "avg90": 96.78,
+      "low365": 49.99,
+      "rating": 4.5,
+      "reviewCount": 8906,
+      "rank": 21492,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71FowUjyNXL.jpg",
+      "url": "https://www.amazon.com/dp/B0H1M6NDCG",
+      "keepa": "https://keepa.com/#!product/1-B0H1M6NDCG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 104,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 72,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 61,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B07RD6BSF3",
       "parentAsin": "",
       "familyKey": "B07RD6BSF3",
@@ -2738,6 +4611,233 @@
         "reviews": 6,
         "rating": 3,
         "priceTier": 10
+      }
+    },
+    {
+      "asin": "B08LZWXLF4",
+      "parentAsin": "B09L77NNLQ",
+      "familyKey": "B09L77NNLQ",
+      "variationCount": 123,
+      "productAgeDays": 2150,
+      "title": "foco dallas cowboys nfl mens memory foam slide - xl",
+      "brand": "foco",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "2309435011",
+        "3375251",
+        "3386071",
+        "374747011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374747011",
+          "name": "footwear"
+        },
+        {
+          "id": "2309435011",
+          "name": "slippers"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 30,
+      "avg30": 52.44,
+      "avg90": 60.3,
+      "low365": 28.49,
+      "rating": 4.6,
+      "reviewCount": 5394,
+      "rank": 14950,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81t1DeFZSaL.jpg",
+      "url": "https://www.amazon.com/dp/B08LZWXLF4",
+      "keepa": "https://keepa.com/#!product/1-B08LZWXLF4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 124,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 75,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 60,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B08DFVXZ9M",
+      "parentAsin": "B0H4V5HSV1",
+      "familyKey": "B0H4V5HSV1",
+      "variationCount": 18,
+      "productAgeDays": 2203,
+      "title": "micsiu 2 pack 5.5\" narrow oil rubbed bronze vintage farmhouse porch light",
+      "brand": "micsiu",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "5486443011",
+        "228013",
+        "495224",
+        "495236",
+        "5486440011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "495224",
+          "name": "lighting & ceiling fans"
+        },
+        {
+          "id": "495236",
+          "name": "outdoor lighting"
+        },
+        {
+          "id": "5486440011",
+          "name": "porch & patio lights"
+        },
+        {
+          "id": "5486443011",
+          "name": "wall lights"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 30.79,
+      "avg30": 49.36,
+      "avg90": 57.51,
+      "low365": 30.79,
+      "rating": 4.6,
+      "reviewCount": 2113,
+      "rank": 12654,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/712idkq5NKL.jpg",
+      "url": "https://www.amazon.com/dp/B08DFVXZ9M",
+      "keepa": "https://keepa.com/#!product/1-B08DFVXZ9M",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 113,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 69,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 60,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0GCR57FPS",
+      "parentAsin": "B0HDB533S9",
+      "familyKey": "B0HDB533S9",
+      "variationCount": 27,
+      "productAgeDays": 244,
+      "title": "krismile outdoor swivel rocker chair cover 4 pack, waterproof rocking chair covers, all-weather protection outdoor lawn patio furniture covers for patio chair 32\" w x 35\" d x 32\" h, black",
+      "brand": "krismile",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "13981261",
+        "2972638011",
+        "553824",
+        "13749551"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "13749551",
+          "name": "patio furniture covers"
+        },
+        {
+          "id": "13981261",
+          "name": "chair covers"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 35.99,
+      "avg30": 62.56,
+      "avg90": 74.18,
+      "low365": 35.99,
+      "rating": 4.7,
+      "reviewCount": 471,
+      "rank": 9169,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61r1YidjUXL.jpg",
+      "url": "https://www.amazon.com/dp/B0GCR57FPS",
+      "keepa": "https://keepa.com/#!product/1-B0GCR57FPS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 108,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 77,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 60,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 2
       }
     },
     {
@@ -3180,6 +5280,602 @@
       }
     },
     {
+      "asin": "B00NWD5GGA",
+      "parentAsin": "B0BJLLCZB7",
+      "familyKey": "B0BJLLCZB7",
+      "variationCount": 64,
+      "productAgeDays": 4194,
+      "title": "stren original monofilament fishing line",
+      "brand": "stren",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3473331",
+        "3375251",
+        "706813011",
+        "3408951",
+        "3473311"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "706813011",
+          "name": "hunting & fishing"
+        },
+        {
+          "id": "3408951",
+          "name": "fishing"
+        },
+        {
+          "id": "3473311",
+          "name": "fishing line"
+        },
+        {
+          "id": "3473331",
+          "name": "monofilament line"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 26.99,
+      "avg30": 94.64,
+      "avg90": 102.58,
+      "low365": 15.68,
+      "rating": 4.6,
+      "reviewCount": 391,
+      "rank": 3544,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81sVZ8xh1HL.jpg",
+      "url": "https://www.amazon.com/dp/B00NWD5GGA",
+      "keepa": "https://keepa.com/#!product/1-B00NWD5GGA",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.698Z",
+      "dealScore": 179,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 110,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 59,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 18,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0973F62RS",
+      "parentAsin": "B08XQGQ49X",
+      "familyKey": "B08XQGQ49X",
+      "variationCount": 87,
+      "productAgeDays": 1860,
+      "title": "foco unisex adult ncaa college team logo floral sun straw hat, team logo, one size us",
+      "brand": "foco",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "5768995011",
+        "3375251",
+        "3386071",
+        "2431377011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "2431377011",
+          "name": "clothing accessories"
+        },
+        {
+          "id": "5768995011",
+          "name": "caps & hats"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg30": 63.45,
+      "avg90": 144.61,
+      "low365": 27.94,
+      "rating": 4.7,
+      "reviewCount": 11335,
+      "rank": 31182,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81WAPE8lVXL.jpg",
+      "url": "https://www.amazon.com/dp/B0973F62RS",
+      "keepa": "https://keepa.com/#!product/1-B0973F62RS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.698Z",
+      "dealScore": 157,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 108,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 59,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0G5WMWHJ7",
+      "parentAsin": "B0HC2KH65M",
+      "familyKey": "B0HC2KH65M",
+      "variationCount": 65,
+      "productAgeDays": 218,
+      "title": "motorevo ignition coil pack fit for honda civic gas 1.8l l4 uf582+xp5224",
+      "brand": "motorevo",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "15729011",
+        "15684181",
+        "15719731",
+        "15728931"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "15719731",
+          "name": "replacement parts"
+        },
+        {
+          "id": "15728931",
+          "name": "ignition parts"
+        },
+        {
+          "id": "15729011",
+          "name": "coil packs"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 27.99,
+      "avg30": 47.87,
+      "avg90": 53.28,
+      "low365": 27.99,
+      "rating": 4.4,
+      "reviewCount": 701,
+      "rank": 2699,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61oARDmZ3KL.jpg",
+      "url": "https://www.amazon.com/dp/B0G5WMWHJ7",
+      "keepa": "https://keepa.com/#!product/1-B0G5WMWHJ7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 136,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 71,
+        "rank": 30,
+        "reviews": 5,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 59,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 18,
+        "reviews": 11,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0F9L1P6J1",
+      "parentAsin": "B0H5KDZ3T8",
+      "familyKey": "B0H5KDZ3T8",
+      "variationCount": 26,
+      "productAgeDays": 483,
+      "title": "15 ft round winter pool cover for above ground pools, cable & pulley, red",
+      "brand": "poolhacker",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "1272994011",
+        "2972638011",
+        "1272941011",
+        "4623183011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "1272941011",
+          "name": "pools, hot tubs & supplies"
+        },
+        {
+          "id": "4623183011",
+          "name": "parts & accessories"
+        },
+        {
+          "id": "1272994011",
+          "name": "covers"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg30": 59.8,
+      "avg90": 74.64,
+      "low365": 39.99,
+      "rating": 4.3,
+      "reviewCount": 501,
+      "rank": 1230,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/91XvPv-sxCL.jpg",
+      "url": "https://www.amazon.com/dp/B0F9L1P6J1",
+      "keepa": "https://keepa.com/#!product/1-B0F9L1P6J1",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 136,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 69,
+        "rank": 30,
+        "reviews": 5,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 59,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 18,
+        "reviews": 11,
+        "rating": 3,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0B5PDY3Y6",
+      "parentAsin": "B09FZBXTLM",
+      "familyKey": "B09FZBXTLM",
+      "variationCount": 170,
+      "productAgeDays": 1350,
+      "title": "easy-going outdoor curtains for patio 1 panel, 150x96 inch, orange",
+      "brand": "easy-going",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3480737011",
+        "2972638011",
+        "553788"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553788",
+          "name": "outdoor décor"
+        },
+        {
+          "id": "3480737011",
+          "name": "outdoor curtains"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 20.99,
+      "avg30": 43.61,
+      "avg90": 48.13,
+      "low365": 20.99,
+      "rating": 4.4,
+      "reviewCount": 1924,
+      "rank": 8188,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71GmtOITP4L.jpg",
+      "url": "https://www.amazon.com/dp/B0B5PDY3Y6",
+      "keepa": "https://keepa.com/#!product/1-B0B5PDY3Y6",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 132,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 84,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 59,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 13,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B08T1P814Y",
+      "parentAsin": "B0DB8V559K",
+      "familyKey": "B0DB8V559K",
+      "variationCount": 2020,
+      "productAgeDays": 2046,
+      "title": "shade&beyond 12'x12' sun shade sail blue rectangle",
+      "brand": "shade&beyond",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3480728011",
+        "2972638011",
+        "553824",
+        "14135022011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "14135022011",
+          "name": "umbrellas & shade"
+        },
+        {
+          "id": "3480728011",
+          "name": "shade sails"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 28.49,
+      "avg30": 48.03,
+      "avg90": 53.82,
+      "low365": 28.49,
+      "rating": 4.5,
+      "reviewCount": 9762,
+      "rank": 10074,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/91gds2kMTOL.jpg",
+      "url": "https://www.amazon.com/dp/B08T1P814Y",
+      "keepa": "https://keepa.com/#!product/1-B08T1P814Y",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 118,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 70,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 59,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0CKV66MVV",
+      "parentAsin": "B0CKVD8CBQ",
+      "familyKey": "B0CKVD8CBQ",
+      "variationCount": 84,
+      "productAgeDays": 902,
+      "title": "easy-going outdoor patio curtains 2 panels, 110x120 inch, terra red",
+      "brand": "easy-going",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3480737011",
+        "2972638011",
+        "553788"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553788",
+          "name": "outdoor décor"
+        },
+        {
+          "id": "3480737011",
+          "name": "outdoor curtains"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 30.99,
+      "avg30": 61.87,
+      "avg90": 61.95,
+      "low365": 20.6,
+      "rating": 4.5,
+      "reviewCount": 708,
+      "rank": 7508,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81hQwb2hiuL.jpg",
+      "url": "https://www.amazon.com/dp/B0CKV66MVV",
+      "keepa": "https://keepa.com/#!product/1-B0CKV66MVV",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 117,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 74,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 59,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0GQS51RWF",
+      "parentAsin": "B0BZVV53ZC",
+      "familyKey": "B0BZVV53ZC",
+      "variationCount": 63,
+      "productAgeDays": 127,
+      "title": "duzzy flexible baseboard molding trim, 6 inch(w) x 40 feet(l) peel and stick rubber wall trim molding, self-adhesive vinyl wall base cove base",
+      "brand": "duzzy",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "10671474011",
+        "228013",
+        "551240",
+        "13397641",
+        "13399301"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "13397641",
+          "name": "building materials"
+        },
+        {
+          "id": "13399301",
+          "name": "millwork"
+        },
+        {
+          "id": "13399341",
+          "name": "moldings & trims"
+        },
+        {
+          "id": "10671474011",
+          "name": "floor molding & trim"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 37.99,
+      "avg30": 64.4,
+      "avg90": 72.12,
+      "low365": 37.99,
+      "rating": 4.4,
+      "reviewCount": 539,
+      "rank": 7385,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61qU8k1kDAL.jpg",
+      "url": "https://www.amazon.com/dp/B0GQS51RWF",
+      "keepa": "https://keepa.com/#!product/1-B0GQS51RWF",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 105,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 70,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 59,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 11,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B078J26PNJ",
       "parentAsin": "",
       "familyKey": "B078J26PNJ",
@@ -3334,6 +6030,233 @@
       }
     },
     {
+      "asin": "B09C23NQ2N",
+      "parentAsin": "B08FJ8F31S",
+      "familyKey": "B08FJ8F31S",
+      "variationCount": 39,
+      "productAgeDays": 1874,
+      "title": "homdiy 50 pack gold dresser knobs small gold drawer knobs",
+      "brand": "homdiy",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "511246",
+        "228013",
+        "511228",
+        "2380871011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "511228",
+          "name": "hardware"
+        },
+        {
+          "id": "2380871011",
+          "name": "cabinet hardware"
+        },
+        {
+          "id": "511246",
+          "name": "knobs"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 29.39,
+      "avg30": 52.56,
+      "avg90": 54.77,
+      "low365": 29.39,
+      "rating": 4.6,
+      "reviewCount": 1730,
+      "rank": 24004,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51uzASQPqHL.jpg",
+      "url": "https://www.amazon.com/dp/B09C23NQ2N",
+      "keepa": "https://keepa.com/#!product/1-B09C23NQ2N",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 118,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 69,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 13,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0G2T4P2M4",
+      "parentAsin": "B0FZM192Y9",
+      "familyKey": "B0FZM192Y9",
+      "variationCount": 61,
+      "productAgeDays": 272,
+      "title": "covermates classic outdoor chair cover - 2 pack - 36wx35dx32h - water resistant",
+      "brand": "covermates",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "13981261",
+        "2972638011",
+        "553824",
+        "13749551"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "13749551",
+          "name": "patio furniture covers"
+        },
+        {
+          "id": "13981261",
+          "name": "chair covers"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 20,
+      "avg30": 39.74,
+      "avg90": 44.39,
+      "low365": 20,
+      "rating": 4.7,
+      "reviewCount": 250,
+      "rank": 5422,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61L63PHeVzL.jpg",
+      "url": "https://www.amazon.com/dp/B0G2T4P2M4",
+      "keepa": "https://keepa.com/#!product/1-B0G2T4P2M4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 113,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 82,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0BSKXQW7K",
+      "parentAsin": "B0BX8PQXM5",
+      "familyKey": "B0BX8PQXM5",
+      "variationCount": 9,
+      "productAgeDays": 1287,
+      "title": "portal beach chairs for adults 2 pack high back low folding camping chair portable lightweight with cup holder for travel, concert, lawn, festival, support 400lbs",
+      "brand": "portal",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3400791",
+        "3375251",
+        "706814011",
+        "3400371",
+        "3400781"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "706814011",
+          "name": "outdoor recreation"
+        },
+        {
+          "id": "3400371",
+          "name": "camping & hiking"
+        },
+        {
+          "id": "3400781",
+          "name": "camping furniture"
+        },
+        {
+          "id": "3400791",
+          "name": "chairs"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg30": 76.14,
+      "avg90": 76.25,
+      "low365": 39.99,
+      "rating": 4.6,
+      "reviewCount": 940,
+      "rank": 21077,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71NHPfZ+AsL.jpg",
+      "url": "https://www.amazon.com/dp/B0BSKXQW7K",
+      "keepa": "https://keepa.com/#!product/1-B0BSKXQW7K",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 110,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 71,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 11,
+        "rating": 8,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0BNPNM7L1",
       "parentAsin": "B0GFPLJVQX",
       "familyKey": "B0GFPLJVQX",
@@ -3406,6 +6329,228 @@
         "reviews": 13,
         "rating": 5,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0BLHH25JM",
+      "parentAsin": "B09V731SZV",
+      "familyKey": "B09V731SZV",
+      "variationCount": 25,
+      "productAgeDays": 1234,
+      "title": "easy-going 600d heavy duty patio furniture cover, outdoor square table and chair set cover, waterproof outdoor sectional set cover (84\"l x 84\"w x 28\"h, black)",
+      "brand": "easy-going",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "13981281",
+        "2972638011",
+        "553824",
+        "13749551"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "13749551",
+          "name": "patio furniture covers"
+        },
+        {
+          "id": "13981281",
+          "name": "furniture set covers"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.3,
+      "avg30": 43.84,
+      "avg90": 47.83,
+      "low365": 24.3,
+      "rating": 4.5,
+      "reviewCount": 1078,
+      "rank": 11314,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41UABO0EiWL.jpg",
+      "url": "https://www.amazon.com/dp/B0BLHH25JM",
+      "keepa": "https://keepa.com/#!product/1-B0BLHH25JM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 121,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 73,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 57,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 13,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0DB1MZGS1",
+      "parentAsin": "B0FPX7357G",
+      "familyKey": "B0FPX7357G",
+      "variationCount": 2729,
+      "productAgeDays": 538,
+      "title": "cool area sun shade sail for patio, rectangle 14x18ft, butter cream",
+      "brand": "cool area",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3480728011",
+        "2972638011",
+        "553824",
+        "14135022011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "14135022011",
+          "name": "umbrellas & shade"
+        },
+        {
+          "id": "3480728011",
+          "name": "shade sails"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 34.99,
+      "avg30": 68.75,
+      "avg90": 69.61,
+      "low365": 34.99,
+      "rating": 4.5,
+      "reviewCount": 1067,
+      "rank": 12874,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81yJhVZDwAL.jpg",
+      "url": "https://www.amazon.com/dp/B0DB1MZGS1",
+      "keepa": "https://keepa.com/#!product/1-B0DB1MZGS1",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 117,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 74,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 57,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 13,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0GQLVP7ZF",
+      "parentAsin": "B0H5Q53BJC",
+      "familyKey": "B0H5Q53BJC",
+      "variationCount": 10,
+      "productAgeDays": 170,
+      "title": "wireless earbuds, 2026 bluetooth 5.4 headphones new ear buds 40h bass stereo in-ear earphones enc noise cancelling earbuds with 4 hd mic, usb-c led display ip7 waterproof sport headset, pure grey",
+      "brand": "ordtop",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "12097478011",
+        "172282",
+        "24046923011",
+        "172541"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "172282",
+          "name": "electronics"
+        },
+        {
+          "id": "24046923011",
+          "name": "headphones, earbuds & accessories"
+        },
+        {
+          "id": "172541",
+          "name": "headphones & earbuds"
+        },
+        {
+          "id": "12097478011",
+          "name": "earbud headphones"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.99,
+      "avg30": 46.94,
+      "avg90": 48.97,
+      "low365": 24.99,
+      "rating": 4.4,
+      "reviewCount": 11225,
+      "rank": 10711,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61PD7GyKcTL.jpg",
+      "url": "https://www.amazon.com/dp/B0GQLVP7ZF",
+      "keepa": "https://keepa.com/#!product/1-B0GQLVP7ZF",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 108,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 73,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 57,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 0
       }
     },
     {
@@ -3485,6 +6630,312 @@
         "reviews": 3,
         "rating": 10,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B08RZ5RVJM",
+      "parentAsin": "B0H94XVKC2",
+      "familyKey": "B0H94XVKC2",
+      "variationCount": 56,
+      "productAgeDays": 2091,
+      "title": "goldenwarm 15 pack brushed brass cabinet knobs acrylic drawer knobs, 2inch",
+      "brand": "goldenwarm",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "511246",
+        "228013",
+        "511228",
+        "2380871011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "511228",
+          "name": "hardware"
+        },
+        {
+          "id": "2380871011",
+          "name": "cabinet hardware"
+        },
+        {
+          "id": "511246",
+          "name": "knobs"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.5,
+      "avg30": 40.9,
+      "avg90": 46.29,
+      "low365": 22.05,
+      "rating": 4.4,
+      "reviewCount": 259,
+      "rank": 4558,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51PuRtyj13L.jpg",
+      "url": "https://www.amazon.com/dp/B08RZ5RVJM",
+      "keepa": "https://keepa.com/#!product/1-B08RZ5RVJM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 138,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 70,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 56,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 18,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0FQQY395W",
+      "parentAsin": "B0FMJQPBC2",
+      "familyKey": "B0FMJQPBC2",
+      "variationCount": 86,
+      "productAgeDays": 381,
+      "title": "northwest nhl chicago blackhawks 100 years hoodler oversized sherpa pullover, plush wearable blanket sweatshirt, soft fleece with front pocket and logo, one size fits most",
+      "brand": "northwest",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3204004011",
+        "3375251",
+        "3386071",
+        "374742011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374742011",
+          "name": "clothing"
+        },
+        {
+          "id": "3204004011",
+          "name": "sweatshirts & hoodies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 26.03,
+      "avg30": 62.19,
+      "avg90": 55.54,
+      "low365": 26.03,
+      "rating": 4.6,
+      "reviewCount": 2377,
+      "rank": 41260,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/8194M0y3QgL.jpg",
+      "url": "https://www.amazon.com/dp/B0FQQY395W",
+      "keepa": "https://keepa.com/#!product/1-B0FQQY395W",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 123,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 79,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 56,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 15,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0D5WX7FDJ",
+      "parentAsin": "B0GTC11VF7",
+      "familyKey": "B0GTC11VF7",
+      "variationCount": 93,
+      "productAgeDays": 551,
+      "title": "the memory company officially licensed 40oz pink bling game day tumbler, houston texans",
+      "brand": "the memory company",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "374885011",
+        "3375251",
+        "3386071",
+        "374819011",
+        "374875011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374819011",
+          "name": "home & kitchen"
+        },
+        {
+          "id": "374875011",
+          "name": "kitchen & dining"
+        },
+        {
+          "id": "374885011",
+          "name": "travel mugs"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.59,
+      "avg30": 56.47,
+      "avg90": 49.89,
+      "low365": 23.59,
+      "rating": 4.5,
+      "reviewCount": 387,
+      "rank": 5280,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81r0+qY5UUL.jpg",
+      "url": "https://www.amazon.com/dp/B0D5WX7FDJ",
+      "keepa": "https://keepa.com/#!product/1-B0D5WX7FDJ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 112,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 79,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 56,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 8,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0DT9J92M4",
+      "parentAsin": "B08PBW45W3",
+      "familyKey": "B08PBW45W3",
+      "variationCount": 8,
+      "productAgeDays": 541,
+      "title": "storystore automotive door weather stripping 39ft car door rubber edge trim seal strip gasket with top car door seal strip for bus camper boat rv truck doors home applications",
+      "brand": "storystore",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "15710311",
+        "15684181",
+        "15719731",
+        "13591417011",
+        "15709991"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "15719731",
+          "name": "replacement parts"
+        },
+        {
+          "id": "13591417011",
+          "name": "body & trim"
+        },
+        {
+          "id": "15709991",
+          "name": "trim"
+        },
+        {
+          "id": "15710311",
+          "name": "weather stripping"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 20.99,
+      "avg30": 41.61,
+      "avg90": 41.85,
+      "low365": 13.49,
+      "rating": 4.6,
+      "reviewCount": 980,
+      "rank": 12128,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61uxOxqDsbL.jpg",
+      "url": "https://www.amazon.com/dp/B0DT9J92M4",
+      "keepa": "https://keepa.com/#!product/1-B0DT9J92M4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 108,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 74,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 56,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 11,
+        "rating": 8,
+        "priceTier": 0
       }
     },
     {
@@ -3729,6 +7180,693 @@
       }
     },
     {
+      "asin": "B08ML4RB68",
+      "parentAsin": "B08DL1L2X1",
+      "familyKey": "B08DL1L2X1",
+      "variationCount": 20,
+      "productAgeDays": 2152,
+      "title": "salon world safety replacement face shields only (40 packs of 10)",
+      "brand": "tcp global",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "393327011",
+        "228013",
+        "3180231",
+        "486555011",
+        "7459496011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "486555011",
+          "name": "personal protective equipment"
+        },
+        {
+          "id": "7459496011",
+          "name": "face protection"
+        },
+        {
+          "id": "393327011",
+          "name": "safety face shields"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg30": 81.41,
+      "avg90": 93.79,
+      "low365": 39.99,
+      "rating": 4.4,
+      "reviewCount": 59529,
+      "rank": 40007,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81He8wGb-lL.jpg",
+      "url": "https://www.amazon.com/dp/B08ML4RB68",
+      "keepa": "https://keepa.com/#!product/1-B08ML4RB68",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 134,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 86,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0F8VH172M",
+      "parentAsin": "B0FN48G24Y",
+      "familyKey": "B0FN48G24Y",
+      "variationCount": 3844,
+      "productAgeDays": 472,
+      "title": "engine coolant radiator compatible with buick cadillac w/toc, w/eoc",
+      "brand": "readair",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "15725431",
+        "15684181",
+        "15719731",
+        "2286886011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "15719731",
+          "name": "replacement parts"
+        },
+        {
+          "id": "2286886011",
+          "name": "engine cooling & climate control"
+        },
+        {
+          "id": "15725431",
+          "name": "radiators"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg30": 55.81,
+      "avg90": 82.47,
+      "low365": 39.99,
+      "rating": 4.4,
+      "reviewCount": 568,
+      "rank": 18925,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81hGlV7D2eL.jpg",
+      "url": "https://www.amazon.com/dp/B0F8VH172M",
+      "keepa": "https://keepa.com/#!product/1-B0F8VH172M",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 115,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 77,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 11,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0D2D9JLKT",
+      "parentAsin": "B0GKM8LVY6",
+      "familyKey": "B0GKM8LVY6",
+      "variationCount": 35,
+      "productAgeDays": 873,
+      "title": "garden blasam waterproof patio furniture cover 128w x 82d in dark grey",
+      "brand": "garden balsam",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "13981281",
+        "2972638011",
+        "553824",
+        "13749551"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "13749551",
+          "name": "patio furniture covers"
+        },
+        {
+          "id": "13981281",
+          "name": "furniture set covers"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 27.5,
+      "avg30": 49.61,
+      "avg90": 52.53,
+      "low365": 27.5,
+      "rating": 4.8,
+      "reviewCount": 283,
+      "rank": 17357,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51A4sgTKK6L.jpg",
+      "url": "https://www.amazon.com/dp/B0D2D9JLKT",
+      "keepa": "https://keepa.com/#!product/1-B0D2D9JLKT",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 111,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 71,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0CX1B33H9",
+      "parentAsin": "B0D125N82T",
+      "familyKey": "B0D125N82T",
+      "variationCount": 38,
+      "productAgeDays": 909,
+      "title": "ycco industrial l pipe shelf brackets for 7-14 in depth wood,6.7in 6 pack",
+      "brand": "ycco",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "9628891011",
+        "3610841",
+        "228013",
+        "511228",
+        "517826"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "511228",
+          "name": "hardware"
+        },
+        {
+          "id": "517826",
+          "name": "shelf brackets & supports"
+        },
+        {
+          "id": "9628891011",
+          "name": "brackets"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 20.99,
+      "avg30": 35.81,
+      "avg90": 39.93,
+      "low365": 20.99,
+      "rating": 4.8,
+      "reviewCount": 303,
+      "rank": 12132,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/21ka5m5q4YL.jpg",
+      "url": "https://www.amazon.com/dp/B0CX1B33H9",
+      "keepa": "https://keepa.com/#!product/1-B0CX1B33H9",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 111,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 71,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0BQMN3HLV",
+      "parentAsin": "B0C16FVLDJ",
+      "familyKey": "B0C16FVLDJ",
+      "variationCount": 4,
+      "productAgeDays": 1377,
+      "title": "thefitlife flexible metal garden hose - 50 ft lightweight stainless steel water hose with solid fittings and sprayer nozzle - leak proof, kink free, anti-rust, large diameter, durable and easy storage",
+      "brand": "thefitlife",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "553966",
+        "2972638011",
+        "3610851",
+        "553958"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "3610851",
+          "name": "gardening & lawn care"
+        },
+        {
+          "id": "553958",
+          "name": "watering equipment"
+        },
+        {
+          "id": "553966",
+          "name": "garden hoses"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 29.99,
+      "avg30": 50.87,
+      "avg90": 56.32,
+      "low365": 29.99,
+      "rating": 4.5,
+      "reviewCount": 2480,
+      "rank": 25162,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81W+VaeK4PL.jpg",
+      "url": "https://www.amazon.com/dp/B0BQMN3HLV",
+      "keepa": "https://keepa.com/#!product/1-B0BQMN3HLV",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 110,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 70,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0GK91QTLX",
+      "parentAsin": "B0GSVW5ZN6",
+      "familyKey": "B0GSVW5ZN6",
+      "variationCount": 6,
+      "productAgeDays": 127,
+      "title": "sanuke wire rope crimping kit, 200ft 1/16\" 304 stainless steel cable",
+      "brand": "sanuke",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "553392",
+        "228013",
+        "328182011",
+        "551238"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553392",
+          "name": "crimpers"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 35.99,
+      "avg30": 43.12,
+      "avg90": 73.62,
+      "low365": 35.99,
+      "rating": 4.5,
+      "reviewCount": 1490,
+      "rank": 47318,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81CS77kQ4zL.jpg",
+      "url": "https://www.amazon.com/dp/B0GK91QTLX",
+      "keepa": "https://keepa.com/#!product/1-B0GK91QTLX",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 108,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 76,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 13,
+        "rating": 7,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0FKMNCTLP",
+      "parentAsin": "B0BP5Y6TRD",
+      "familyKey": "B0BP5Y6TRD",
+      "variationCount": 2050,
+      "productAgeDays": 174,
+      "title": "love story 4x12 ft sun shade cloth with grommets for patio, dark grey",
+      "brand": "love story",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3480729011",
+        "2972638011",
+        "553824",
+        "14135022011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "14135022011",
+          "name": "umbrellas & shade"
+        },
+        {
+          "id": "3480729011",
+          "name": "shade cloth"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.99,
+      "avg30": 36.68,
+      "avg90": 41.51,
+      "low365": 21.99,
+      "rating": 4.5,
+      "reviewCount": 780,
+      "rank": 22140,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71qt+1RPcZL.jpg",
+      "url": "https://www.amazon.com/dp/B0FKMNCTLP",
+      "keepa": "https://keepa.com/#!product/1-B0FKMNCTLP",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 105,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 70,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0DJR5LH3C",
+      "parentAsin": "B0CRV2886H",
+      "familyKey": "B0CRV2886H",
+      "variationCount": 9,
+      "productAgeDays": 686,
+      "title": "boltigen 1 inch npt fuel transfer hose, 10ft heavy duty fuel hose",
+      "brand": "boltigen",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "15721481",
+        "15727321",
+        "15684181",
+        "15719731",
+        "15721321",
+        "15721401"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "15719731",
+          "name": "replacement parts"
+        },
+        {
+          "id": "15721321",
+          "name": "belts, hoses & pulleys"
+        },
+        {
+          "id": "15721401",
+          "name": "hoses"
+        },
+        {
+          "id": "15721481",
+          "name": "fuel"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 26.99,
+      "avg30": 49.53,
+      "avg90": 52.5,
+      "low365": 26.99,
+      "rating": 4.8,
+      "reviewCount": 277,
+      "rank": 14895,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61LtWYQWbLL.jpg",
+      "url": "https://www.amazon.com/dp/B0DJR5LH3C",
+      "keepa": "https://keepa.com/#!product/1-B0DJR5LH3C",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 102,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 72,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0F28WGHLJ",
+      "parentAsin": "B0FGCNZ1ZM",
+      "familyKey": "B0FGCNZ1ZM",
+      "variationCount": 1,
+      "productAgeDays": 524,
+      "title": "xynover led camping lantern rechargeable,1000lm, portable with 5 ligth modes, ip44 waterproof 4400mah tent flashlight lanterns for power outages, hiking, hurricane,campsites, emergencies (2-pack)",
+      "brand": "xynover",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "21222469011",
+        "3375251",
+        "706814011",
+        "3400371",
+        "3401301"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "706814011",
+          "name": "outdoor recreation"
+        },
+        {
+          "id": "3400371",
+          "name": "camping & hiking"
+        },
+        {
+          "id": "3401301",
+          "name": "lights & lanterns"
+        },
+        {
+          "id": "3401371",
+          "name": "lanterns"
+        },
+        {
+          "id": "21222469011",
+          "name": "electric lanterns"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 29.99,
+      "avg30": 51.36,
+      "avg90": 57.04,
+      "low365": 29.99,
+      "rating": 4.5,
+      "reviewCount": 950,
+      "rank": 23793,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/711gy7x66rL.jpg",
+      "url": "https://www.amazon.com/dp/B0F28WGHLJ",
+      "keepa": "https://keepa.com/#!product/1-B0F28WGHLJ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 101,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 71,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B07DVZK528",
       "parentAsin": "B0DKBZ2941",
       "familyKey": "B0DKBZ2941",
@@ -3874,6 +8012,237 @@
         "reviews": 11,
         "rating": 8,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0C876211D",
+      "parentAsin": "B0CB6F41VQ",
+      "familyKey": "B0CB6F41VQ",
+      "variationCount": 631,
+      "productAgeDays": 1130,
+      "title": "vantage apparel poly mesh polo, west virginia mountaineers, m team color",
+      "brand": "vantage apparel",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3204001011",
+        "3375251",
+        "3386071",
+        "374742011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374742011",
+          "name": "clothing"
+        },
+        {
+          "id": "3204001011",
+          "name": "polo shirts"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 20.41,
+      "avg30": 47.2,
+      "avg90": 45.68,
+      "low365": 20.41,
+      "rating": 4.4,
+      "reviewCount": 342,
+      "rank": 9237,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/91AWB6i8hzL.jpg",
+      "url": "https://www.amazon.com/dp/B0C876211D",
+      "keepa": "https://keepa.com/#!product/1-B0C876211D",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 120,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 82,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 54,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0DWJ1LZPX",
+      "parentAsin": "B0FG7QFQ6K",
+      "familyKey": "B0FG7QFQ6K",
+      "variationCount": 35,
+      "productAgeDays": 526,
+      "title": "nattork roller skates for women outdoor indoor four-wheel fun fashionable roller skates for men girls boys teal",
+      "brand": "nattork",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "6501428011",
+        "3375251",
+        "10971181011",
+        "11051398011",
+        "3416551"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "10971181011",
+          "name": "sports"
+        },
+        {
+          "id": "11051398011",
+          "name": "skates, skateboards & scooters"
+        },
+        {
+          "id": "3416551",
+          "name": "inline & roller skating"
+        },
+        {
+          "id": "2259064011",
+          "name": "roller skates"
+        },
+        {
+          "id": "6501428011",
+          "name": "outdoor skates"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 27.99,
+      "avg30": 47.5,
+      "avg90": 53.16,
+      "low365": 27.99,
+      "rating": 4.4,
+      "reviewCount": 439,
+      "rank": 7863,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61+JE6lVmOL.jpg",
+      "url": "https://www.amazon.com/dp/B0DWJ1LZPX",
+      "keepa": "https://keepa.com/#!product/1-B0DWJ1LZPX",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 104,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 71,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 54,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0CLV173S7",
+      "parentAsin": "B0CRDLSJYR",
+      "familyKey": "B0CRDLSJYR",
+      "variationCount": 16,
+      "productAgeDays": 1019,
+      "title": "grill replacement parts for weber spirit 2 grill parts gs4 spirit ii e310 e320 s310 s320 parts for weber gs4 spirit 2 flavorizer bars 7636 67046 69797 68843 & heat deflector 67060 stainless steel",
+      "brand": "petkao",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "13363621",
+        "2972638011",
+        "553760",
+        "13299251"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553760",
+          "name": "grills & outdoor cooking"
+        },
+        {
+          "id": "13299251",
+          "name": "outdoor cooking tools & accessories"
+        },
+        {
+          "id": "13363621",
+          "name": "flavorizer bars"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.99,
+      "avg30": 48.34,
+      "avg90": 46.8,
+      "low365": 24.99,
+      "rating": 4.7,
+      "reviewCount": 343,
+      "rank": 11622,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61GuFLL8TuL.jpg",
+      "url": "https://www.amazon.com/dp/B0CLV173S7",
+      "keepa": "https://keepa.com/#!product/1-B0CLV173S7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 103,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 69,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 54,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 0
       }
     },
     {
@@ -4252,6 +8621,386 @@
       }
     },
     {
+      "asin": "B010V0SOK6",
+      "parentAsin": "B0FL2HZK6V",
+      "familyKey": "B0FL2HZK6V",
+      "variationCount": 39,
+      "productAgeDays": 3902,
+      "title": "pool mate 12 x 18 ft extra strength platinum oval above ground pool cover",
+      "brand": "pool mate",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "1272994011",
+        "2972638011",
+        "1272941011",
+        "4623183011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "1272941011",
+          "name": "pools, hot tubs & supplies"
+        },
+        {
+          "id": "4623183011",
+          "name": "parts & accessories"
+        },
+        {
+          "id": "1272994011",
+          "name": "covers"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 28.91,
+      "avg30": 50.36,
+      "avg90": 66.06,
+      "low365": 28.91,
+      "rating": 4.4,
+      "reviewCount": 505,
+      "rank": 19391,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71m6rJj482L.jpg",
+      "url": "https://www.amazon.com/dp/B010V0SOK6",
+      "keepa": "https://keepa.com/#!product/1-B010V0SOK6",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 127,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 84,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 53,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 11,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B07XDHVTHM",
+      "parentAsin": "B07VGWC6W1",
+      "familyKey": "B07VGWC6W1",
+      "variationCount": 96,
+      "productAgeDays": 2570,
+      "title": "loogu desert digital camo netting, 150d camouflage net for sunshade, camping, military, hunting blind, party decorations - 16.5 x 20 feet",
+      "brand": "loogu",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3413471",
+        "3375251",
+        "706813011",
+        "3412851",
+        "3413431"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "706813011",
+          "name": "hunting & fishing"
+        },
+        {
+          "id": "3412851",
+          "name": "hunting"
+        },
+        {
+          "id": "3413431",
+          "name": "hunting accessories"
+        },
+        {
+          "id": "3413471",
+          "name": "camouflage accessories"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 41.58,
+      "avg30": 51.19,
+      "avg90": 83.55,
+      "low365": 41.58,
+      "rating": 4.4,
+      "reviewCount": 1862,
+      "rank": 37297,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81zs0Nd8ecL.jpg",
+      "url": "https://www.amazon.com/dp/B07XDHVTHM",
+      "keepa": "https://keepa.com/#!product/1-B07XDHVTHM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 123,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 75,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 53,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 13,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0DHLR9RCZ",
+      "parentAsin": "B0CL2XS989",
+      "familyKey": "B0CL2XS989",
+      "variationCount": 160,
+      "productAgeDays": 508,
+      "title": "chicka-d women's oversized dropped shoulder crewneck fleece sweatshirt | ncaa primary team icon team color, spelman college, team color, small",
+      "brand": "chicka-d",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3204004011",
+        "3375251",
+        "3386071",
+        "374742011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374742011",
+          "name": "clothing"
+        },
+        {
+          "id": "3204004011",
+          "name": "sweatshirts & hoodies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 22.46,
+      "avg30": 59.8,
+      "avg90": 50.13,
+      "low365": 22.46,
+      "rating": 4.6,
+      "reviewCount": 347,
+      "rank": 15296,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71aEDfdn3EL.jpg",
+      "url": "https://www.amazon.com/dp/B0DHLR9RCZ",
+      "keepa": "https://keepa.com/#!product/1-B0DHLR9RCZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 116,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 82,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 53,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0C9NYFWTQ",
+      "parentAsin": "B0C9NCDMQ5",
+      "familyKey": "B0C9NCDMQ5",
+      "variationCount": 202,
+      "productAgeDays": 1079,
+      "title": "blue 84 colorado buffaloes ncaa officially licensed women's crewneck sweatshirt burnout vintage scholar, xx-large",
+      "brand": "blue 84",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3204004011",
+        "3375251",
+        "3386071",
+        "374742011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374742011",
+          "name": "clothing"
+        },
+        {
+          "id": "3204004011",
+          "name": "sweatshirts & hoodies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.4,
+      "avg30": 56.79,
+      "avg90": 48.66,
+      "low365": 23.4,
+      "rating": 4.6,
+      "reviewCount": 256,
+      "rank": 20345,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81doBUixFXL.jpg",
+      "url": "https://www.amazon.com/dp/B0C9NYFWTQ",
+      "keepa": "https://keepa.com/#!product/1-B0C9NYFWTQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 116,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 77,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 53,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0FGNBBFMC",
+      "parentAsin": "B0HBWK2B7N",
+      "familyKey": "B0HBWK2B7N",
+      "variationCount": 10,
+      "productAgeDays": 390,
+      "title": "kooper taller solar pathway lights outdoor, 6 pack upgraded brighter solar garden lights solar powered, up to 15 hours outdoor solar lights for yard landscape path walkway driveway （cool white）",
+      "brand": "kooper",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "14193171",
+        "228013",
+        "495224",
+        "495236",
+        "553784"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "495224",
+          "name": "lighting & ceiling fans"
+        },
+        {
+          "id": "495236",
+          "name": "outdoor lighting"
+        },
+        {
+          "id": "553784",
+          "name": "landscape lighting"
+        },
+        {
+          "id": "14193171",
+          "name": "path lights"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.99,
+      "avg30": 48.4,
+      "avg90": 49.46,
+      "low365": 24.99,
+      "rating": 4.4,
+      "reviewCount": 885,
+      "rank": 19648,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71Q3gUdHLtL.jpg",
+      "url": "https://www.amazon.com/dp/B0FGNBBFMC",
+      "keepa": "https://keepa.com/#!product/1-B0FGNBBFMC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 107,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 74,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 53,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 11,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B08LK12GCS",
       "parentAsin": "B0GN3G2YTX",
       "familyKey": "B0GN3G2YTX",
@@ -4405,6 +9154,324 @@
       }
     },
     {
+      "asin": "B0GCT2YLY6",
+      "parentAsin": "B082XP8K83",
+      "familyKey": "B082XP8K83",
+      "variationCount": 51,
+      "productAgeDays": 258,
+      "title": "sleepman outdoor 17\"x16\" chair cushions with ties set of 8, water resistant all weather u-shape seat pads for patio garden furniture indoor fade resistant patio cushions (blue flower)",
+      "brand": "sleepman",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3480724011",
+        "2972638011",
+        "553824"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "3480724011",
+          "name": "cushions"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.74,
+      "avg30": 44.06,
+      "avg90": 77.56,
+      "low365": 23.74,
+      "rating": 4.6,
+      "reviewCount": 644,
+      "rank": 37010,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81EiHqb424L.jpg",
+      "url": "https://www.amazon.com/dp/B0GCT2YLY6",
+      "keepa": "https://keepa.com/#!product/1-B0GCT2YLY6",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.699Z",
+      "dealScore": 140,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 104,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 11,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0F59TN97B",
+      "parentAsin": "B0H8T5RQ4Z",
+      "familyKey": "B0H8T5RQ4Z",
+      "variationCount": 108,
+      "productAgeDays": 528,
+      "title": "kax 512512 rear wheel bearing hub assembly for 2003-2006 toyota matrix awd",
+      "brand": "kax",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "46161011",
+        "15684181",
+        "15719731",
+        "15720041",
+        "15720051"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "15719731",
+          "name": "replacement parts"
+        },
+        {
+          "id": "15720041",
+          "name": "bearings & seals"
+        },
+        {
+          "id": "15720051",
+          "name": "bearings"
+        },
+        {
+          "id": "15720521",
+          "name": "wheel"
+        },
+        {
+          "id": "46161011",
+          "name": "hub assemblies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 37.8,
+      "avg30": 78.15,
+      "avg90": 77.45,
+      "low365": 37.8,
+      "rating": 4.4,
+      "reviewCount": 286,
+      "rank": 14020,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/714a+VVH3dL.jpg",
+      "url": "https://www.amazon.com/dp/B0F59TN97B",
+      "keepa": "https://keepa.com/#!product/1-B0F59TN97B",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 109,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 76,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0DKRCJ4LQ",
+      "parentAsin": "B0CG8FX9QH",
+      "familyKey": "B0CG8FX9QH",
+      "variationCount": 24,
+      "productAgeDays": 630,
+      "title": "nordwolf 7/8\" m35 cobalt stubby drill bit for stainless steel & hard metals, with 7/16\" hex shank for quick chucks & impact drivers",
+      "brand": "nordwolf",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "552400",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552388",
+          "name": "drill bits"
+        },
+        {
+          "id": "552416",
+          "name": "twist drill bits"
+        },
+        {
+          "id": "552400",
+          "name": "hex-shank drill bits"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 22.49,
+      "avg30": 44.83,
+      "avg90": 44.93,
+      "low365": 22.49,
+      "rating": 4.5,
+      "reviewCount": 433,
+      "rank": 24070,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71yTjUb52HL.jpg",
+      "url": "https://www.amazon.com/dp/B0DKRCJ4LQ",
+      "keepa": "https://keepa.com/#!product/1-B0DKRCJ4LQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 107,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 74,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B088T9Q4R1",
+      "parentAsin": "B08BL6QSGM",
+      "familyKey": "B08BL6QSGM",
+      "variationCount": 3,
+      "productAgeDays": 2291,
+      "title": "kingtop 3 ft golf flagstick sets with usa flags and cups, 3 pack",
+      "brand": "kingtop",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "2492773011",
+        "3375251",
+        "10971181011",
+        "3410851",
+        "3410861"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "10971181011",
+          "name": "sports"
+        },
+        {
+          "id": "3410851",
+          "name": "golf"
+        },
+        {
+          "id": "3410861",
+          "name": "accessories"
+        },
+        {
+          "id": "2492773011",
+          "name": "pin flags"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 42.44,
+      "avg30": 83.34,
+      "avg90": 84.36,
+      "low365": 42.44,
+      "rating": 4.7,
+      "reviewCount": 364,
+      "rank": 30185,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61SYH8QMZWL.jpg",
+      "url": "https://www.amazon.com/dp/B088T9Q4R1",
+      "keepa": "https://keepa.com/#!product/1-B088T9Q4R1",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 105,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 74,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0CGLMRLLD",
       "parentAsin": "B0GZJ29DWN",
       "familyKey": "B0GZJ29DWN",
@@ -4479,6 +9546,312 @@
         "brand": 12,
         "demand": 18,
         "reviews": 15,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0F677R93Z",
+      "parentAsin": "B0G4C8MVRP",
+      "familyKey": "B0G4C8MVRP",
+      "variationCount": 4,
+      "productAgeDays": 521,
+      "title": "gyozol bird feeder with camera,wifi smart bird house with cam solar powered",
+      "brand": "gyozol",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3563979011",
+        "2972638011",
+        "553632",
+        "4532514011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553632",
+          "name": "backyard birding & wildlife"
+        },
+        {
+          "id": "4532514011",
+          "name": "birds"
+        },
+        {
+          "id": "3563979011",
+          "name": "feeders"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 29.99,
+      "avg30": 65.44,
+      "avg90": 69.54,
+      "low365": 29.99,
+      "rating": 4.3,
+      "reviewCount": 600,
+      "rank": 15638,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71ZfqkIy9oL.jpg",
+      "url": "https://www.amazon.com/dp/B0F677R93Z",
+      "keepa": "https://keepa.com/#!product/1-B0F677R93Z",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 114,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 85,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 51,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 11,
+        "rating": 3,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0DMZH6ZBT",
+      "parentAsin": "B0D9H3P2JH",
+      "familyKey": "B0D9H3P2JH",
+      "variationCount": 91,
+      "productAgeDays": 635,
+      "title": "lvtxiii bench cushion with ties, 42x18 inch water-repellent patio furniture cushion, 3\" thick foam pad for outdoor indoor window seat, porch swing, loveseat, dailey tan",
+      "brand": "lvtxiii",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3480724011",
+        "2972638011",
+        "553824"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "3480724011",
+          "name": "cushions"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 22.99,
+      "avg30": 44.64,
+      "avg90": 45.54,
+      "low365": 22.99,
+      "rating": 4.8,
+      "reviewCount": 309,
+      "rank": 37330,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/714788ZdpuL.jpg",
+      "url": "https://www.amazon.com/dp/B0DMZH6ZBT",
+      "keepa": "https://keepa.com/#!product/1-B0DMZH6ZBT",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 109,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 74,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 51,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0DHRJV2V4",
+      "parentAsin": "B0GYPVWCNP",
+      "familyKey": "B0GYPVWCNP",
+      "variationCount": 9,
+      "productAgeDays": 726,
+      "title": "magnetic garage door screen 8x7 ft fiberglass mesh for winter",
+      "brand": "anrukler",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "13398351",
+        "228013",
+        "551240",
+        "13397641",
+        "13398201"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "13397641",
+          "name": "building materials"
+        },
+        {
+          "id": "13398201",
+          "name": "doors"
+        },
+        {
+          "id": "13398281",
+          "name": "exterior doors"
+        },
+        {
+          "id": "13398351",
+          "name": "screen doors"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 40.98,
+      "avg30": 67.2,
+      "avg90": 77.06,
+      "low365": 40.98,
+      "rating": 4.4,
+      "reviewCount": 744,
+      "rank": 38211,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81UIrNjHXNL.jpg",
+      "url": "https://www.amazon.com/dp/B0DHRJV2V4",
+      "keepa": "https://keepa.com/#!product/1-B0DHRJV2V4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 103,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 70,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 51,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 11,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0DPSGBQ12",
+      "parentAsin": "B0DPSVD86C",
+      "familyKey": "B0DPSVD86C",
+      "variationCount": 3,
+      "productAgeDays": 551,
+      "title": "xiny tool sewer jetter kit for pressure washer 150ft, 4000 psi drain cleaner hose 1/4 inch npt, corner rotating and button hose sewer jetting nozzle pearl corsage pin tape handle strap spanner, blue",
+      "brand": "xiny tool",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "9425932011",
+        "468240",
+        "2972638011",
+        "551242",
+        "553898",
+        "3023451"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "551242",
+          "name": "outdoor power tools"
+        },
+        {
+          "id": "553898",
+          "name": "replacement parts & accessories"
+        },
+        {
+          "id": "3023451",
+          "name": "pressure washer parts & accessories"
+        },
+        {
+          "id": "9425932011",
+          "name": "accessories"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 34.99,
+      "avg30": 55.62,
+      "avg90": 66.68,
+      "low365": 34.99,
+      "rating": 4.5,
+      "reviewCount": 684,
+      "rank": 40500,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71jsjACjkRL.jpg",
+      "url": "https://www.amazon.com/dp/B0DPSGBQ12",
+      "keepa": "https://keepa.com/#!product/1-B0DPSGBQ12",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 101,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 71,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 51,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 11,
         "rating": 7,
         "priceTier": 0
       }
@@ -4638,6 +10011,292 @@
         "reviews": 0,
         "rating": 7,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B09Y18BS7C",
+      "parentAsin": "B09XZQQLZP",
+      "familyKey": "B09XZQQLZP",
+      "variationCount": 48,
+      "productAgeDays": 1519,
+      "title": "bistro chair cushions 15 inch,set of 2,tufted round chair cushions with ties,15\"x15\"x4\",water resistant round seat cushion for barstool chairs,patio garden kitchen outdoor furniture(gray stripe)",
+      "brand": "funhome",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3480724011",
+        "2972638011",
+        "553824"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "3480724011",
+          "name": "cushions"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.49,
+      "avg30": 42.75,
+      "avg90": 42.91,
+      "low365": 19.77,
+      "rating": 4.7,
+      "reviewCount": 423,
+      "rank": 27993,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/819bwTZfVSL.jpg",
+      "url": "https://www.amazon.com/dp/B09Y18BS7C",
+      "keepa": "https://keepa.com/#!product/1-B09Y18BS7C",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 113,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 74,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 50,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0DHLRHG5W",
+      "parentAsin": "B08B4D31NC",
+      "familyKey": "B08B4D31NC",
+      "variationCount": 183,
+      "productAgeDays": 508,
+      "title": "chicka-d women's oversized dropped shoulder crewneck fleece sweatshirt | ncaa classic arch over neutral, north dakota state bison, neutral, large",
+      "brand": "chicka-d",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3204004011",
+        "3375251",
+        "3386071",
+        "374742011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374742011",
+          "name": "clothing"
+        },
+        {
+          "id": "3204004011",
+          "name": "sweatshirts & hoodies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 22.22,
+      "avg30": 54.46,
+      "avg90": 46.68,
+      "low365": 22.22,
+      "rating": 4.4,
+      "reviewCount": 474,
+      "rank": 13655,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71RW5LVyvnL.jpg",
+      "url": "https://www.amazon.com/dp/B0DHLRHG5W",
+      "keepa": "https://keepa.com/#!product/1-B0DHLRHG5W",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 111,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 78,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 50,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0FXG2YNH3",
+      "parentAsin": "B0CT8MYW2G",
+      "familyKey": "B0CT8MYW2G",
+      "variationCount": 37,
+      "productAgeDays": 326,
+      "title": "welacymet clear tarp heavy duty waterproof,90% transparent with grommets",
+      "brand": "welacymet",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "511396",
+        "228013",
+        "511228",
+        "511388"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "511228",
+          "name": "hardware"
+        },
+        {
+          "id": "511388",
+          "name": "tarps & tie-downs"
+        },
+        {
+          "id": "511396",
+          "name": "tarps"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.99,
+      "avg30": 43.8,
+      "avg90": 47.92,
+      "low365": 24.99,
+      "rating": 4.4,
+      "reviewCount": 405,
+      "rank": 18288,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61kmdiQNxDL.jpg",
+      "url": "https://www.amazon.com/dp/B0FXG2YNH3",
+      "keepa": "https://keepa.com/#!product/1-B0FXG2YNH3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 101,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 71,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 50,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0G38X678N",
+      "parentAsin": "B09N6KWH28",
+      "familyKey": "B09N6KWH28",
+      "variationCount": 27,
+      "productAgeDays": 144,
+      "title": "magpie fabrics indoor outdoor waterproof square chair cushion, 18\" x 18\" x 2.5\", 2 pack, water resistant seat cushions, for patio garden office, green stripe",
+      "brand": "magpie fabrics",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3480724011",
+        "2972638011",
+        "553824"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "3480724011",
+          "name": "cushions"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.99,
+      "avg30": 41.46,
+      "avg90": 47.14,
+      "low365": 24.99,
+      "rating": 4.7,
+      "reviewCount": 436,
+      "rank": 29997,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81MsRdANngL.jpg",
+      "url": "https://www.amazon.com/dp/B0G38X678N",
+      "keepa": "https://keepa.com/#!product/1-B0G38X678N",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 101,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 70,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 50,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 0
       }
     },
     {
@@ -4881,6 +10540,602 @@
       }
     },
     {
+      "asin": "B0FSQQSFPH",
+      "parentAsin": "B0G6L36Q8S",
+      "familyKey": "B0G6L36Q8S",
+      "variationCount": 6,
+      "productAgeDays": 326,
+      "title": "smart bird feeder with camera solar powered & ai bi rd identification, 2.4ghz wifi bird feeders for outdoors, 2k live video, instant arrival alerts - orange",
+      "brand": "navfs",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3563979011",
+        "2972638011",
+        "553632",
+        "4532514011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553632",
+          "name": "backyard birding & wildlife"
+        },
+        {
+          "id": "4532514011",
+          "name": "birds"
+        },
+        {
+          "id": "3563979011",
+          "name": "feeders"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 29.99,
+      "avg30": 43.75,
+      "avg90": 80.31,
+      "low365": 29.99,
+      "rating": 4.4,
+      "reviewCount": 670,
+      "rank": 38397,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71UWeFV-P8L.jpg",
+      "url": "https://www.amazon.com/dp/B0FSQQSFPH",
+      "keepa": "https://keepa.com/#!product/1-B0FSQQSFPH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.699Z",
+      "dealScore": 120,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 93,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 11,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B08636M737",
+      "parentAsin": "B09WG2B69Z",
+      "familyKey": "B09WG2B69Z",
+      "variationCount": 4,
+      "productAgeDays": 2381,
+      "title": "apple watch band - leather loop (44mm) - peacock - large",
+      "brand": "apple",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "11591904011",
+        "2335752011",
+        "2407755011",
+        "7939902011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "7939902011",
+          "name": "smartwatch accessories"
+        },
+        {
+          "id": "11591904011",
+          "name": "smartwatch bands"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.95,
+      "avg30": 39.23,
+      "avg90": 56.41,
+      "low365": 24.95,
+      "rating": 4.6,
+      "reviewCount": 427,
+      "rank": 33042,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71sYwy4UGzL.jpg",
+      "url": "https://www.amazon.com/dp/B08636M737",
+      "keepa": "https://keepa.com/#!product/1-B08636M737",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 114,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 83,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B084DZC3HW",
+      "parentAsin": "B0FYQL8C8W",
+      "familyKey": "B0FYQL8C8W",
+      "variationCount": 261,
+      "productAgeDays": 1760,
+      "title": "bendix premium pdr0452 rear brake drum compatible with ford aerostar 1991-1986, bronco ii 1990-1984, ranger 1997-1983, mazda b2300 1997-1994, b3000 1997-1994, b4000 1997-1994",
+      "brand": "bendix",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "46226011",
+        "15684181",
+        "15719731",
+        "15721631"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "15719731",
+          "name": "replacement parts"
+        },
+        {
+          "id": "15721631",
+          "name": "brake system"
+        },
+        {
+          "id": "46226011",
+          "name": "drums"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 38.27,
+      "avg30": 74.55,
+      "avg90": 74.39,
+      "low365": 38.27,
+      "rating": 4.3,
+      "reviewCount": 884,
+      "rank": 44847,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/31PGfjhYRPS.jpg",
+      "url": "https://www.amazon.com/dp/B084DZC3HW",
+      "keepa": "https://keepa.com/#!product/1-B084DZC3HW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 114,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 72,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 11,
+        "rating": 3,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B09RNGWTMK",
+      "parentAsin": "B08Z8P5P5N",
+      "familyKey": "B08Z8P5P5N",
+      "variationCount": 93,
+      "productAgeDays": 379,
+      "title": "blue 84 arkansas razorbacks hoodie team color icon, xx-large",
+      "brand": "blue 84",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3204004011",
+        "3375251",
+        "3386071",
+        "374742011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374742011",
+          "name": "clothing"
+        },
+        {
+          "id": "3204004011",
+          "name": "sweatshirts & hoodies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.28,
+      "avg30": 51.16,
+      "avg90": 45.1,
+      "low365": 21.28,
+      "rating": 4.6,
+      "reviewCount": 360,
+      "rank": 36331,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61rAHrxRWyL.jpg",
+      "url": "https://www.amazon.com/dp/B09RNGWTMK",
+      "keepa": "https://keepa.com/#!product/1-B09RNGWTMK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 113,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 79,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B08ZJW5R94",
+      "parentAsin": "B08ZKNB8WC",
+      "familyKey": "B08ZKNB8WC",
+      "variationCount": 160,
+      "productAgeDays": 413,
+      "title": "blue 84 men's connecticut huskies hoodie vintage cap dark heather, dark grey, xx-large",
+      "brand": "blue 84",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3204004011",
+        "3375251",
+        "3386071",
+        "374742011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374742011",
+          "name": "clothing"
+        },
+        {
+          "id": "3204004011",
+          "name": "sweatshirts & hoodies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.88,
+      "avg30": 58.02,
+      "avg90": 47.85,
+      "low365": 23.88,
+      "rating": 4.6,
+      "reviewCount": 336,
+      "rank": 30957,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61pgykfEckL.jpg",
+      "url": "https://www.amazon.com/dp/B08ZJW5R94",
+      "keepa": "https://keepa.com/#!product/1-B08ZJW5R94",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 109,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 75,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0D5MVP9Q5",
+      "parentAsin": "B0D5QTHP5V",
+      "familyKey": "B0D5QTHP5V",
+      "variationCount": 10,
+      "productAgeDays": 748,
+      "title": "senroyal flush mount ceiling light fixture, 7 inch led modern kitchen light, metal and glass, slim dimmable brushed nickel ceiling light for low ceiling, 17w, 3000k, 2 pack",
+      "brand": "senroyal",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "5538121011",
+        "228013",
+        "495224",
+        "5486428011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "495224",
+          "name": "lighting & ceiling fans"
+        },
+        {
+          "id": "5486428011",
+          "name": "ceiling lights"
+        },
+        {
+          "id": "5538121011",
+          "name": "close to ceiling lights"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 25.68,
+      "avg30": 47.42,
+      "avg90": 50.05,
+      "low365": 25.68,
+      "rating": 4.6,
+      "reviewCount": 264,
+      "rank": 38791,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61n57w+cf6L.jpg",
+      "url": "https://www.amazon.com/dp/B0D5MVP9Q5",
+      "keepa": "https://keepa.com/#!product/1-B0D5MVP9Q5",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 107,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 73,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B087TL86QK",
+      "parentAsin": "B0GYXB6DDZ",
+      "familyKey": "B0GYXB6DDZ",
+      "variationCount": 4,
+      "productAgeDays": 321,
+      "title": "mobosi for z fold 7 case with rotatable ring stand, matte black",
+      "brand": "mobosi",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3081461011",
+        "2335752011",
+        "2407760011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407760011",
+          "name": "cases, holsters & sleeves"
+        },
+        {
+          "id": "3081461011",
+          "name": "basic cases"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 29.99,
+      "avg30": 57.8,
+      "avg90": 59.26,
+      "low365": 29.99,
+      "rating": 4.3,
+      "reviewCount": 1331,
+      "rank": 38730,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71bDnZYfvFL.jpg",
+      "url": "https://www.amazon.com/dp/B087TL86QK",
+      "keepa": "https://keepa.com/#!product/1-B087TL86QK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 105,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 74,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 13,
+        "rating": 3,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0FKTF1P5C",
+      "parentAsin": "B07KXSNT7X",
+      "familyKey": "B07KXSNT7X",
+      "variationCount": 19,
+      "productAgeDays": 403,
+      "title": "ledvillage 30 pcs with 2-wire plug (dc) 10 amber + 10 red + 10 white, led side marker lights 12led clearance lamps, surface mount for trailer truck rv suv 12v dc",
+      "brand": "ledvillage",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "2425152011",
+        "15684181",
+        "15736321",
+        "3094869011",
+        "9002274011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "15736321",
+          "name": "lights, bulbs & indicators"
+        },
+        {
+          "id": "3094869011",
+          "name": "lighting assemblies & accessories"
+        },
+        {
+          "id": "9002274011",
+          "name": "signal light assemblies"
+        },
+        {
+          "id": "9002276011",
+          "name": "marker light assemblies"
+        },
+        {
+          "id": "2425152011",
+          "name": "side marker assemblies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 41.49,
+      "avg30": 71.12,
+      "avg90": 79.83,
+      "low365": 41.49,
+      "rating": 4.5,
+      "reviewCount": 722,
+      "rank": 73407,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81WY5WHy3AL.jpg",
+      "url": "https://www.amazon.com/dp/B0FKTF1P5C",
+      "keepa": "https://keepa.com/#!product/1-B0FKTF1P5C",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 105,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 72,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0DWZ5WT5W",
       "parentAsin": "B0F2GKMHNH",
       "familyKey": "B0F2GKMHNH",
@@ -4961,6 +11216,541 @@
         "reviews": 0,
         "rating": 7,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0DP3FVGMZ",
+      "parentAsin": "B0DTT4FKS3",
+      "familyKey": "B0DTT4FKS3",
+      "variationCount": 11,
+      "productAgeDays": 613,
+      "title": "otterbox samsung galaxy s25 ultra symmetry series soft touch case - purple",
+      "brand": "otterbox",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3081461011",
+        "2335752011",
+        "2407760011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407760011",
+          "name": "cases, holsters & sleeves"
+        },
+        {
+          "id": "3081461011",
+          "name": "basic cases"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.1,
+      "avg30": 65.73,
+      "avg90": 56.59,
+      "low365": 23.1,
+      "rating": 4.5,
+      "reviewCount": 289,
+      "rank": 41139,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61+1DdpYjyL.jpg",
+      "url": "https://www.amazon.com/dp/B0DP3FVGMZ",
+      "keepa": "https://keepa.com/#!product/1-B0DP3FVGMZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 116,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 88,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0DHLQJHV1",
+      "parentAsin": "B0DYVRSXXQ",
+      "familyKey": "B0DYVRSXXQ",
+      "variationCount": 157,
+      "productAgeDays": 519,
+      "title": "chicka-d women's oversized original corded crew fleece sweatshirt ncaa classic arch over team color, miami (ohio) redhawks, red, x-large",
+      "brand": "chicka-d",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3204004011",
+        "3375251",
+        "3386071",
+        "374742011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374742011",
+          "name": "clothing"
+        },
+        {
+          "id": "3204004011",
+          "name": "sweatshirts & hoodies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.28,
+      "avg30": 60.68,
+      "avg90": 46.76,
+      "low365": 23.28,
+      "rating": 4.5,
+      "reviewCount": 254,
+      "rank": 30661,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/8127x0QPEHL.jpg",
+      "url": "https://www.amazon.com/dp/B0DHLQJHV1",
+      "keepa": "https://keepa.com/#!product/1-B0DHLQJHV1",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 108,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 75,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B07BNXQPBY",
+      "parentAsin": "B0C9L3TDPZ",
+      "familyKey": "B0C9L3TDPZ",
+      "variationCount": 11,
+      "productAgeDays": 2849,
+      "title": "ergodyne skullerz odin polarized safety glasses- matte black, smoke lens",
+      "brand": "ergodyne",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "2681346011",
+        "228013",
+        "3180231",
+        "486555011",
+        "553560"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "486555011",
+          "name": "personal protective equipment"
+        },
+        {
+          "id": "553560",
+          "name": "eye protection"
+        },
+        {
+          "id": "2681344011",
+          "name": "safety goggles & glasses"
+        },
+        {
+          "id": "2681346011",
+          "name": "safety glasses"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.39,
+      "avg30": 33.78,
+      "avg90": 41.83,
+      "low365": 20.75,
+      "rating": 4.5,
+      "reviewCount": 250,
+      "rank": 46525,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Y0kxQK8yL.jpg",
+      "url": "https://www.amazon.com/dp/B07BNXQPBY",
+      "keepa": "https://keepa.com/#!product/1-B07BNXQPBY",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 106,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 73,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B09MZ4PTL5",
+      "parentAsin": "B09MZ5MT84",
+      "familyKey": "B09MZ5MT84",
+      "variationCount": 16,
+      "productAgeDays": 1679,
+      "title": "haokaisen high visibility reflective safety jacket, waterproof rain suit for men lightweight rain gear(yellow xx-large)",
+      "brand": "haokaisen",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "7491824011",
+        "228013",
+        "3180231",
+        "486555011",
+        "7459501011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "486555011",
+          "name": "personal protective equipment"
+        },
+        {
+          "id": "7459501011",
+          "name": "protective workwear"
+        },
+        {
+          "id": "9764728011",
+          "name": "safety apparel"
+        },
+        {
+          "id": "7491824011",
+          "name": "jackets"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 22.99,
+      "avg30": 39.91,
+      "avg90": 43.96,
+      "low365": 22.99,
+      "rating": 4.5,
+      "reviewCount": 378,
+      "rank": 29561,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Yo2DKr6xL.jpg",
+      "url": "https://www.amazon.com/dp/B09MZ4PTL5",
+      "keepa": "https://keepa.com/#!product/1-B09MZ4PTL5",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 104,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 71,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0CJM2414W",
+      "parentAsin": "B0H7WN8KKY",
+      "familyKey": "B0H7WN8KKY",
+      "variationCount": 2,
+      "productAgeDays": 998,
+      "title": "twimost rain shower head with handheld, 13-function high pressure dual shower head, 2-in-1 magnetic rainfall showerhead combo with 72-inch hose, matte black",
+      "brand": "twimost",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "6810212011",
+        "228013",
+        "3754161",
+        "680350011",
+        "6810209011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3754161",
+          "name": "kitchen & bath fixtures"
+        },
+        {
+          "id": "680350011",
+          "name": "bathroom fixtures"
+        },
+        {
+          "id": "6810209011",
+          "name": "bathtub faucets & showerheads"
+        },
+        {
+          "id": "680352011",
+          "name": "showerheads"
+        },
+        {
+          "id": "6810212011",
+          "name": "handheld showerheads"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg30": 89.11,
+      "avg90": 96.36,
+      "low365": 49.99,
+      "rating": 4.4,
+      "reviewCount": 389,
+      "rank": 38528,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81o1eYQUF5L.jpg",
+      "url": "https://www.amazon.com/dp/B0CJM2414W",
+      "keepa": "https://keepa.com/#!product/1-B0CJM2414W",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 102,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 72,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0GF121D7B",
+      "parentAsin": "B0GV3HDD6V",
+      "familyKey": "B0GV3HDD6V",
+      "variationCount": 10,
+      "productAgeDays": 165,
+      "title": "74064 grill wheels kit for pit boss austin xl, pro series ii 1150",
+      "brand": "bbqration",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3742161",
+        "2972638011",
+        "553760"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553760",
+          "name": "grills & outdoor cooking"
+        },
+        {
+          "id": "3742161",
+          "name": "outdoor cooking replacement parts"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.49,
+      "avg30": 42.07,
+      "avg90": 42.68,
+      "low365": 21.49,
+      "rating": 4.5,
+      "reviewCount": 300,
+      "rank": 33838,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61bM+SVYvAL.jpg",
+      "url": "https://www.amazon.com/dp/B0GF121D7B",
+      "keepa": "https://keepa.com/#!product/1-B0GF121D7B",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 99,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 74,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0DRFP44PX",
+      "parentAsin": "B0HJ2JNP7F",
+      "familyKey": "B0HJ2JNP7F",
+      "variationCount": 66,
+      "productAgeDays": 573,
+      "title": "cciyu d1793 d1792 brake pads w/hardware front rear disc brake pad set",
+      "brand": "cciyu",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "15721811",
+        "15684181",
+        "15719731",
+        "15721631"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "15719731",
+          "name": "replacement parts"
+        },
+        {
+          "id": "15721631",
+          "name": "brake system"
+        },
+        {
+          "id": "15721811",
+          "name": "brake pads"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 22.29,
+      "avg30": 29.22,
+      "avg90": 40.52,
+      "low365": 20.99,
+      "rating": 4.3,
+      "reviewCount": 400,
+      "rank": 16119,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71eZg6DDvIL.jpg",
+      "url": "https://www.amazon.com/dp/B0DRFP44PX",
+      "keepa": "https://keepa.com/#!product/1-B0DRFP44PX",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 99,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 67,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 3,
+        "priceTier": 0
       }
     },
     {
@@ -5121,6 +11911,80 @@
       }
     },
     {
+      "asin": "B0CJJ42THK",
+      "parentAsin": "B08XNNWVZ6",
+      "familyKey": "B08XNNWVZ6",
+      "variationCount": 19,
+      "productAgeDays": 959,
+      "title": "easy-going waterproof patio lounge chair cover, 68wx30dx30h inch, camel",
+      "brand": "easy-going",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "13981301",
+        "2972638011",
+        "553824",
+        "13749551"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "553824",
+          "name": "patio furniture & accessories"
+        },
+        {
+          "id": "13749551",
+          "name": "patio furniture covers"
+        },
+        {
+          "id": "13981301",
+          "name": "chaise lounge covers"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 22.99,
+      "avg30": 42.25,
+      "avg90": 44.74,
+      "low365": 22.99,
+      "rating": 4.3,
+      "reviewCount": 561,
+      "rank": 28798,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Nn-UPRleL.jpg",
+      "url": "https://www.amazon.com/dp/B0CJJ42THK",
+      "keepa": "https://keepa.com/#!product/1-B0CJJ42THK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 109,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 72,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 47,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 11,
+        "rating": 3,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B0BNWDMHNC",
       "parentAsin": "B0C1GP3R7N",
       "familyKey": "B0C1GP3R7N",
@@ -5192,6 +12056,80 @@
         "reviews": 6,
         "rating": 5,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0FYH56JJP",
+      "parentAsin": "B0H4S8SSFD",
+      "familyKey": "B0H4S8SSFD",
+      "variationCount": 4,
+      "productAgeDays": 322,
+      "title": "weighted walking sticks for seniors, women & men – 1.2lb each ergonomic hiking poles for balance, posture & stability – durable trekking poles for walking (small, black)",
+      "brand": "jetti",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3401281",
+        "3375251",
+        "706814011",
+        "3400371"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "706814011",
+          "name": "outdoor recreation"
+        },
+        {
+          "id": "3400371",
+          "name": "camping & hiking"
+        },
+        {
+          "id": "3401281",
+          "name": "trekking poles"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.99,
+      "avg30": 62.23,
+      "avg90": 67.37,
+      "low365": 24.99,
+      "rating": 4.4,
+      "reviewCount": 347,
+      "rank": 48137,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71nuBLsMfpL.jpg",
+      "url": "https://www.amazon.com/dp/B0FYH56JJP",
+      "keepa": "https://keepa.com/#!product/1-B0FYH56JJP",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.699Z",
+      "dealScore": 116,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 94,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 0
       }
     },
     {
@@ -5437,6 +12375,242 @@
         "demand": 8,
         "reviews": 8,
         "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B08B4D4HZS",
+      "parentAsin": "B08B4G4428",
+      "familyKey": "B08B4G4428",
+      "variationCount": 197,
+      "productAgeDays": 2201,
+      "title": "chicka-d ncaa virginia tech hokies womens pullover sweatshirt, oatmeal, small",
+      "brand": "chicka-d",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3204004011",
+        "3375251",
+        "3386071",
+        "374742011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "3386071",
+          "name": "fan shop"
+        },
+        {
+          "id": "374742011",
+          "name": "clothing"
+        },
+        {
+          "id": "3204004011",
+          "name": "sweatshirts & hoodies"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 22.1,
+      "avg30": 59.68,
+      "avg90": 57.83,
+      "low365": 22.1,
+      "rating": 4.5,
+      "reviewCount": 254,
+      "rank": 61796,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71yCTpjk11L.jpg",
+      "url": "https://www.amazon.com/dp/B08B4D4HZS",
+      "keepa": "https://keepa.com/#!product/1-B08B4D4HZS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.699Z",
+      "dealScore": 130,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 92,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0CD15JZWB",
+      "parentAsin": "B0CKPLPHW8",
+      "familyKey": "B0CKPLPHW8",
+      "variationCount": 20,
+      "productAgeDays": 1094,
+      "title": "duzzy 98 inch collapsible shower water dam, shower threshold water stopper barrier and retention system and keeps water inside threshold dry and wet separation, suitable for bathroom & kitchen",
+      "brand": "duzzy",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "6810469011",
+        "228013",
+        "3754161",
+        "680350011",
+        "3754221"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3754161",
+          "name": "kitchen & bath fixtures"
+        },
+        {
+          "id": "680350011",
+          "name": "bathroom fixtures"
+        },
+        {
+          "id": "3754221",
+          "name": "showers & shower parts"
+        },
+        {
+          "id": "6810469011",
+          "name": "shower bases & pans"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 20.99,
+      "avg30": 40.82,
+      "avg90": 41.6,
+      "low365": 20.99,
+      "rating": 4.3,
+      "reviewCount": 318,
+      "rank": 47579,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51voLHs250L.jpg",
+      "url": "https://www.amazon.com/dp/B0CD15JZWB",
+      "keepa": "https://keepa.com/#!product/1-B0CD15JZWB",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.701Z",
+      "dealScore": 111,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 74,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 3,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B08D9P67CP",
+      "parentAsin": "B08D9R64M6",
+      "familyKey": "B08D9R64M6",
+      "variationCount": 9,
+      "productAgeDays": 2218,
+      "title": "aowish inline skate wheels, outdoor asphalt formula, 8-pack (red, 80mm)",
+      "brand": "aowish",
+      "brandTier": "off",
+      "category": "dad_impulse",
+      "keepaCategoryIds": [
+        "3416621",
+        "3375251",
+        "10971181011",
+        "11051398011",
+        "3416551"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "3375251",
+          "name": "sports & outdoors"
+        },
+        {
+          "id": "10971181011",
+          "name": "sports"
+        },
+        {
+          "id": "11051398011",
+          "name": "skates, skateboards & scooters"
+        },
+        {
+          "id": "3416551",
+          "name": "inline & roller skating"
+        },
+        {
+          "id": "3416641",
+          "name": "inline skate parts"
+        },
+        {
+          "id": "3416621",
+          "name": "wheels"
+        }
+      ],
+      "sourceStream": "dad_impulse",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.99,
+      "avg30": 53.56,
+      "avg90": 51.18,
+      "low365": 24.99,
+      "rating": 4.3,
+      "reviewCount": 485,
+      "rank": 34741,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71YRuHJE9PL.jpg",
+      "url": "https://www.amazon.com/dp/B08D9P67CP",
+      "keepa": "https://keepa.com/#!product/1-B08D9P67CP",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-09-28T23:31:42.700Z",
+      "dealScore": 108,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 76,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 3,
         "priceTier": 0
       }
     },

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-02T01:33:04.850Z",
+  "generatedAt": "2026-10-02T01:33:46.384Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 141,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 145,
   "deals": [
     {
       "asin": "B004W1WGIC",
@@ -3691,6 +3691,75 @@
       }
     },
     {
+      "asin": "B0002FUO6S",
+      "parentAsin": "B0FJ7S25B5",
+      "familyKey": "B0FJ7S25B5",
+      "variationCount": 7,
+      "productAgeDays": 4712,
+      "title": "starrett machinists' level, ground and graduated main vial, 4\" length",
+      "brand": "starrett",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553256",
+        "228013",
+        "553244"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "553256",
+          "name": "levels"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 146.78,
+      "avg30": 152.69,
+      "avg90": 160.19,
+      "low365": 146.78,
+      "rating": 4.6,
+      "reviewCount": 840,
+      "rank": 46299,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51dosd3A1tL.jpg",
+      "url": "https://www.amazon.com/dp/B0002FUO6S",
+      "keepa": "https://keepa.com/#!product/1-B0002FUO6S",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-02T01:33:46.383Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 59,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 11,
+        "rating": 8,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0F42554XX",
       "parentAsin": "B0HK4GXJG6",
       "familyKey": "B0HK4GXJG6",
@@ -5800,6 +5869,81 @@
       }
     },
     {
+      "asin": "B00C9V579C",
+      "parentAsin": "B08T7PNX9L",
+      "familyKey": "B08T7PNX9L",
+      "variationCount": 7,
+      "productAgeDays": 3364,
+      "title": "ox 3 foot level - aluminum 36 inch level tool, rubber grip, non-slip handle",
+      "brand": "ox",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553256",
+        "228013",
+        "553244"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "553256",
+          "name": "levels"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 59.99,
+      "avg30": 79.68,
+      "avg90": 84.91,
+      "low365": 49.99,
+      "rating": 4.6,
+      "reviewCount": 1413,
+      "rank": 173288,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51TxpOC6pqL.jpg",
+      "url": "https://www.amazon.com/dp/B00C9V579C",
+      "keepa": "https://keepa.com/#!product/1-B00C9V579C",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-02T01:33:46.383Z",
+      "dealScore": 85,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 44,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 45,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 13,
+        "rating": 8,
+        "priceTier": 4
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B00C9V56S4",
+        "B00C9V579C"
+      ]
+    },
+    {
       "asin": "B07GBG9QMP",
       "parentAsin": "B0BVWGDQ77",
       "familyKey": "B0BVWGDQ77",
@@ -6838,7 +6982,13 @@
         "reviews": 3,
         "rating": 5,
         "priceTier": 0
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B008B7OOCY",
+        "B008BGFWR6"
+      ]
     },
     {
       "asin": "B07NPVSMBG",
@@ -6985,75 +7135,6 @@
       "scoreBreakdown": {
         "rating": 23,
         "discount": 29,
-        "rank": 0,
-        "reviews": 10,
-        "variationFamily": 0,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 0
-      },
-      "normalizedScore": 37,
-      "normalizedScoreBreakdown": {
-        "discount": 14,
-        "brand": 0,
-        "demand": 0,
-        "reviews": 13,
-        "rating": 8,
-        "priceTier": 2
-      }
-    },
-    {
-      "asin": "B00C9V56S4",
-      "parentAsin": "B08T7PNX9L",
-      "familyKey": "B08T7PNX9L",
-      "variationCount": 7,
-      "productAgeDays": 2961,
-      "title": "ox 2 foot level - aluminum 24 inch level tool, rubber grip, non-slip handle",
-      "brand": "ox",
-      "brandTier": "off",
-      "category": "trusted_sellers",
-      "keepaCategoryIds": [
-        "553256",
-        "228013",
-        "553244"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "228013",
-          "name": "tools & home improvement"
-        },
-        {
-          "id": "553244",
-          "name": "measuring & layout tools"
-        },
-        {
-          "id": "553256",
-          "name": "levels"
-        }
-      ],
-      "sourceStream": "trusted_sellers",
-      "sources": [
-        "keepa"
-      ],
-      "price": 49.99,
-      "avg30": 61.67,
-      "avg90": 61.93,
-      "low365": 49.99,
-      "rating": 4.6,
-      "reviewCount": 1413,
-      "rank": 145995,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/51ecr8yi3BL.jpg",
-      "url": "https://www.amazon.com/dp/B00C9V56S4",
-      "keepa": "https://keepa.com/#!product/1-B00C9V56S4",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": false,
-      "updatedAt": "2026-10-01T10:32:06.575Z",
-      "dealScore": 69,
-      "scoreBreakdown": {
-        "rating": 23,
-        "discount": 28,
         "rank": 0,
         "reviews": 10,
         "variationFamily": 0,
@@ -9960,6 +10041,180 @@
       }
     },
     {
+      "asin": "B019R26PQE",
+      "parentAsin": "",
+      "familyKey": "B019R26PQE",
+      "variationCount": 0,
+      "productAgeDays": 3591,
+      "title": "whiteside router bit 705 cnc starter set, 5-piece",
+      "brand": "whiteside router bits",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686958011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686958011",
+          "name": "spiral"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 169.06,
+      "avg30": 180.43,
+      "avg90": 186.39,
+      "low365": 135.24,
+      "rating": 4.9,
+      "reviewCount": 59,
+      "rank": 680167,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51WD60IbGAL.jpg",
+      "url": "https://www.amazon.com/dp/B019R26PQE",
+      "keepa": "https://keepa.com/#!product/1-B019R26PQE",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-02T01:33:46.383Z",
+      "dealScore": 45,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 25,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B000HPYOJ6",
+      "parentAsin": "",
+      "familyKey": "B000HPYOJ6",
+      "variationCount": 0,
+      "productAgeDays": 5654,
+      "title": "whiteside router bits rft2100 1/4-inch diameter spiral flush trim up cut",
+      "brand": "whiteside router bits",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686958011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686958011",
+          "name": "spiral"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 48.65,
+      "avg30": 51.03,
+      "avg90": 50.26,
+      "low365": 42.99,
+      "rating": 4.5,
+      "reviewCount": 573,
+      "rank": 76775,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Gq-CB08JL.jpg",
+      "url": "https://www.amazon.com/dp/B000HPYOJ6",
+      "keepa": "https://keepa.com/#!product/1-B000HPYOJ6",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-02T01:33:46.382Z",
+      "dealScore": 39,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 4,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 24,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B000LJNJNU",
       "parentAsin": "",
       "familyKey": "B000LJNJNU",
@@ -10608,6 +10863,85 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B00910PQXQ",
+      "parentAsin": "",
+      "familyKey": "B00910PQXQ",
+      "variationCount": 0,
+      "productAgeDays": 5119,
+      "title": "channellock fence tool pliers 85 - heavy duty slip-joint pliers - 10.5",
+      "brand": "channellock",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553324",
+        "228013",
+        "328182011",
+        "551238",
+        "553314"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553314",
+          "name": "pliers"
+        },
+        {
+          "id": "553324",
+          "name": "slip-joint pliers"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 41.44,
+      "avg30": 45.36,
+      "avg90": 44.9,
+      "low365": 38.95,
+      "rating": 4.8,
+      "reviewCount": 150,
+      "rank": 823511,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61LBpz16V9L.jpg",
+      "url": "https://www.amazon.com/dp/B00910PQXQ",
+      "keepa": "https://keepa.com/#!product/1-B00910PQXQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-02T01:33:46.383Z",
+      "dealScore": 43,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 18,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 10,
+        "priceTier": 2
       }
     },
     {

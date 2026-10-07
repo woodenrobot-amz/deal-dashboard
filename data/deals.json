@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-07T10:16:26.491Z",
+  "generatedAt": "2026-10-07T10:17:03.112Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 107,
+  "lastEnrichmentStream": "dudes_power",
+  "dealCount": 121,
   "deals": [
     {
       "asin": "B004W1WGIC",
@@ -399,6 +399,80 @@
       }
     },
     {
+      "asin": "B0FS67DKV5",
+      "parentAsin": "B0HK3RZ71X",
+      "familyKey": "B0HK3RZ71X",
+      "variationCount": 6,
+      "productAgeDays": 364,
+      "title": "bluetti 2 100w flexible solar panels 23.4% high efficiency ip67 solar panel",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "2236628011",
+        "2972638011",
+        "552808",
+        "3236381"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "3236381",
+          "name": "solar & wind power"
+        },
+        {
+          "id": "2236628011",
+          "name": "solar panels"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 299,
+      "avg30": 386.06,
+      "avg90": 389.33,
+      "low365": 199,
+      "rating": 4.5,
+      "reviewCount": 1205,
+      "rank": 18637,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81XnmHu5MIL.jpg",
+      "url": "https://www.amazon.com/dp/B0FS67DKV5",
+      "keepa": "https://keepa.com/#!product/1-B0FS67DKV5",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.107Z",
+      "dealScore": 86,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 34,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 78,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 13,
+        "rating": 7,
+        "priceTier": 8
+      }
+    },
+    {
       "asin": "B09DRDZF75",
       "parentAsin": "",
       "familyKey": "B09DRDZF75",
@@ -544,6 +618,75 @@
         "reviews": 11,
         "rating": 8,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0DG8NXM21",
+      "parentAsin": "B0H98VNHMF",
+      "familyKey": "B0H98VNHMF",
+      "variationCount": 3,
+      "productAgeDays": 760,
+      "title": "jackery explorer 2000 v2 and 2x200w solar panels, 2042wh, 2200w ac output",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1279,
+      "avg30": 1463.52,
+      "avg90": 1456.68,
+      "low365": 1099,
+      "rating": 4.6,
+      "reviewCount": 272,
+      "rank": 2964,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/819bjtPFn5L.jpg",
+      "url": "https://www.amazon.com/dp/B0DG8NXM21",
+      "keepa": "https://keepa.com/#!product/1-B0DG8NXM21",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.107Z",
+      "dealScore": 99,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 18,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 74,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 10
       }
     },
     {
@@ -697,6 +840,75 @@
         "reviews": 15,
         "rating": 10,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0FZ89GS5F",
+      "parentAsin": "B0HK3TKFLF",
+      "familyKey": "B0HK3TKFLF",
+      "variationCount": 4,
+      "productAgeDays": 329,
+      "title": "bluetti solar generator elite 10 & 60w 128wh portable power station lifepo4",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 219,
+      "avg30": 240.88,
+      "avg90": 249.35,
+      "low365": 218.99,
+      "rating": 4.3,
+      "reviewCount": 1272,
+      "rank": 2212,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71ovUGYwd4L.jpg",
+      "url": "https://www.amazon.com/dp/B0FZ89GS5F",
+      "keepa": "https://keepa.com/#!product/1-B0FZ89GS5F",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.106Z",
+      "dealScore": 99,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 18,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 72,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 13,
+        "rating": 3,
+        "priceTier": 8
       }
     },
     {
@@ -861,6 +1073,75 @@
       }
     },
     {
+      "asin": "B0FMXCPWBN",
+      "parentAsin": "B0GL24MVBZ",
+      "familyKey": "B0GL24MVBZ",
+      "variationCount": 9,
+      "productAgeDays": 406,
+      "title": "jackery homepower 3600 plus & 2x200w solar panels, 3584wh, 3600w ac output",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 2109,
+      "avg30": 2366.77,
+      "avg90": 2364.74,
+      "low365": 1889,
+      "rating": 4.5,
+      "reviewCount": 137,
+      "rank": 3755,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81q5hT6t0EL.jpg",
+      "url": "https://www.amazon.com/dp/B0FMXCPWBN",
+      "keepa": "https://keepa.com/#!product/1-B0FMXCPWBN",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.107Z",
+      "dealScore": 94,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 16,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 71,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 6,
+        "rating": 7,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B00ZTPCLZ8",
       "parentAsin": "B07SH7QJH5",
       "familyKey": "B07SH7QJH5",
@@ -937,6 +1218,75 @@
         "reviews": 15,
         "rating": 10,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0C2ZCPTNB",
+      "parentAsin": "B0HK4FZFW6",
+      "familyKey": "B0HK4FZFW6",
+      "variationCount": 10,
+      "productAgeDays": 1266,
+      "title": "bluetti ac180 solar generator with 200w solar panel included, 1152wh 1800w",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 729,
+      "avg30": 806.02,
+      "avg90": 786.64,
+      "low365": 645,
+      "rating": 4.5,
+      "reviewCount": 2633,
+      "rank": 2346,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/715f5kU6hUL.jpg",
+      "url": "https://www.amazon.com/dp/B0C2ZCPTNB",
+      "keepa": "https://keepa.com/#!product/1-B0C2ZCPTNB",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.106Z",
+      "dealScore": 103,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 10,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 70,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 10
       }
     },
     {
@@ -1165,6 +1515,75 @@
         "reviews": 15,
         "rating": 9,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0FJ1ZK9K3",
+      "parentAsin": "B0HK3RP2SQ",
+      "familyKey": "B0HK3RP2SQ",
+      "variationCount": 6,
+      "productAgeDays": 442,
+      "title": "bluetti solar generator apex 300 & b300k & charger 1 alternator charger",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 2799,
+      "avg30": 3034.24,
+      "avg90": 3135.29,
+      "low365": 2464.15,
+      "rating": 4.5,
+      "reviewCount": 978,
+      "rank": 23347,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71RDusLZqbL.jpg",
+      "url": "https://www.amazon.com/dp/B0FJ1ZK9K3",
+      "keepa": "https://keepa.com/#!product/1-B0FJ1ZK9K3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.107Z",
+      "dealScore": 66,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 70,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 10
       }
     },
     {
@@ -2029,6 +2448,75 @@
       }
     },
     {
+      "asin": "B0G8XZ25BY",
+      "parentAsin": "B0HKFK5DGV",
+      "familyKey": "B0HKFK5DGV",
+      "variationCount": 7,
+      "productAgeDays": 285,
+      "title": "bluetti solar generator elite 400 with 350w solar panel included, 3840wh",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1699,
+      "avg30": 1881.11,
+      "avg90": 1910.05,
+      "low365": 1698.99,
+      "rating": 4.7,
+      "reviewCount": 98,
+      "rank": 24671,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/917rD2Ew-1L.jpg",
+      "url": "https://www.amazon.com/dp/B0G8XZ25BY",
+      "keepa": "https://keepa.com/#!product/1-B0G8XZ25BY",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.107Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 64,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 3,
+        "rating": 9,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B08SMNZ8C9",
       "parentAsin": "",
       "familyKey": "B08SMNZ8C9",
@@ -2511,6 +2999,80 @@
         "reviews": 11,
         "rating": 7,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0D3DPN424",
+      "parentAsin": "B0D323N25V",
+      "familyKey": "B0D323N25V",
+      "variationCount": 5,
+      "productAgeDays": 883,
+      "title": "jackery solarsaga 100 prime bifacial diy solar panel,100w",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "2236628011",
+        "2972638011",
+        "552808",
+        "3236381"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "3236381",
+          "name": "solar & wind power"
+        },
+        {
+          "id": "2236628011",
+          "name": "solar panels"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 184,
+      "avg30": 208.08,
+      "avg90": 208.98,
+      "low365": 169,
+      "rating": 4.6,
+      "reviewCount": 47,
+      "rank": 9128,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51aIghxLuKL.jpg",
+      "url": "https://www.amazon.com/dp/B0D3DPN424",
+      "keepa": "https://keepa.com/#!product/1-B0D3DPN424",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.107Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 60,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 0,
+        "rating": 8,
+        "priceTier": 6
       }
     },
     {
@@ -3055,6 +3617,75 @@
       }
     },
     {
+      "asin": "B0DKJ7P5L8",
+      "parentAsin": "B0DKNBPZLT",
+      "familyKey": "B0DKNBPZLT",
+      "variationCount": 10,
+      "productAgeDays": 714,
+      "title": "jackery solar generator 5000 plus and 2x500w & transfer switch, 5040wh",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 4929,
+      "avg30": 5511.64,
+      "avg90": 5731.99,
+      "low365": 4549,
+      "rating": 4.3,
+      "reviewCount": 27,
+      "rank": 15186,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71LaOac4T4L.jpg",
+      "url": "https://www.amazon.com/dp/B0DKJ7P5L8",
+      "keepa": "https://keepa.com/#!product/1-B0DKJ7P5L8",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.107Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 0,
+        "rating": 3,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B0DR399M33",
       "parentAsin": "",
       "familyKey": "B0DR399M33",
@@ -3288,6 +3919,75 @@
       }
     },
     {
+      "asin": "B0FP2GY2DV",
+      "parentAsin": "B0HK3S613W",
+      "familyKey": "B0HK3S613W",
+      "variationCount": 10,
+      "productAgeDays": 401,
+      "title": "bluetti solar generator 2 apex 300 & 2 b300k with solarx 4k, 11kwh lfp battery backup with 12 7680w ac outlets, 120v/240v dual voltage output, ultimate modular power for rv, home and off-grid living",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 7299,
+      "avg30": 9311.86,
+      "avg90": 9311.86,
+      "low365": 7299,
+      "rating": 4.4,
+      "reviewCount": 21,
+      "rank": 261478,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71zYb3U83sL.jpg",
+      "url": "https://www.amazon.com/dp/B0FP2GY2DV",
+      "keepa": "https://keepa.com/#!product/1-B0FP2GY2DV",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.108Z",
+      "dealScore": 80,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 32,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 53,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 0,
+        "rating": 5,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B08PC8CY58",
       "parentAsin": "B07VH24H2L",
       "familyKey": "B07VH24H2L",
@@ -3433,6 +4133,75 @@
         "reviews": 15,
         "rating": 7,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0FB9FD57N",
+      "parentAsin": "B0HK4FLWXK",
+      "familyKey": "B0HK4FLWXK",
+      "variationCount": 4,
+      "productAgeDays": 494,
+      "title": "bluetti handsfree 1 portable power station 268wh 300w lfp (no backpack)",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 199,
+      "avg30": 222.76,
+      "avg90": 242.87,
+      "low365": 141,
+      "rating": 4.7,
+      "reviewCount": 82,
+      "rank": 248511,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71bw8DgZSXL.jpg",
+      "url": "https://www.amazon.com/dp/B0FB9FD57N",
+      "keepa": "https://keepa.com/#!product/1-B0FB9FD57N",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.108Z",
+      "dealScore": 73,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 27,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 9,
+        "priceTier": 6
       }
     },
     {
@@ -5362,6 +6131,75 @@
       }
     },
     {
+      "asin": "B0FB8TZDSD",
+      "parentAsin": "B0HK3WY5FV",
+      "familyKey": "B0HK3WY5FV",
+      "variationCount": 3,
+      "productAgeDays": 495,
+      "title": "bluetti solar generator ac180 & 200w & charger 1 alternator charger",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 999,
+      "avg30": 1117.18,
+      "avg90": 1082.37,
+      "low365": 899,
+      "rating": 4.8,
+      "reviewCount": 7,
+      "rank": 727825,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71vfSyRsrLL.jpg",
+      "url": "https://www.amazon.com/dp/B0FB8TZDSD",
+      "keepa": "https://keepa.com/#!product/1-B0FB8TZDSD",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.108Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 40,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B0BFQYZPQK",
       "parentAsin": "",
       "familyKey": "B0BFQYZPQK",
@@ -5599,6 +6437,80 @@
         "reviews": 8,
         "rating": 5,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0DJTZX3HV",
+      "parentAsin": "",
+      "familyKey": "B0DJTZX3HV",
+      "variationCount": 0,
+      "productAgeDays": 713,
+      "title": "goal zero basecamp 4 charging pad, charges 4 devices, foldable",
+      "brand": "goal zero",
+      "brandTier": "mid",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "12557639011",
+        "2335752011",
+        "2407755011",
+        "2407761011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2335752011",
+          "name": "cell phones & accessories"
+        },
+        {
+          "id": "2407755011",
+          "name": "accessories"
+        },
+        {
+          "id": "2407761011",
+          "name": "chargers & power adapters"
+        },
+        {
+          "id": "12557639011",
+          "name": "charging stations"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 50.97,
+      "avg30": 75.9,
+      "avg90": 78.6,
+      "low365": 50.97,
+      "rating": 3.9,
+      "reviewCount": 5,
+      "rank": 136164,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41IH4esE-bL.jpg",
+      "url": "https://www.amazon.com/dp/B0DJTZX3HV",
+      "keepa": "https://keepa.com/#!product/1-B0DJTZX3HV",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.108Z",
+      "dealScore": 82,
+      "scoreBreakdown": {
+        "rating": 19,
+        "discount": 52,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 38,
+      "normalizedScoreBreakdown": {
+        "discount": 22,
+        "brand": 12,
+        "demand": 0,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 4
       }
     },
     {
@@ -5975,6 +6887,76 @@
         "reviews": 3,
         "rating": 7,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0G13DFFL5",
+      "parentAsin": "B0HK4L8H8Y",
+      "familyKey": "B0HK4L8H8Y",
+      "variationCount": 2,
+      "productAgeDays": 335,
+      "title": "bluetti rvsolar system, all-in-one 5000w 5120wh rv power kit lfp battery",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "2504395011",
+        "348967011",
+        "15684181",
+        "2258019011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "15684181",
+          "name": "automotive"
+        },
+        {
+          "id": "2258019011",
+          "name": "rv parts & accessories"
+        },
+        {
+          "id": "2504395011",
+          "name": "electronics"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 2999,
+      "avg30": 3292.89,
+      "avg90": 3269.89,
+      "low365": 2799,
+      "rating": 3.2,
+      "reviewCount": 3,
+      "rank": 556421,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81oDcALBfLL.jpg",
+      "url": "https://www.amazon.com/dp/B0G13DFFL5",
+      "keepa": "https://keepa.com/#!product/1-B0G13DFFL5",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-07T10:17:03.108Z",
+      "dealScore": 48,
+      "scoreBreakdown": {
+        "rating": 16,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 36,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
       }
     },
     {

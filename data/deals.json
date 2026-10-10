@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-10T10:40:09.263Z",
+  "generatedAt": "2026-10-10T11:53:08.378Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "woodworking_test",
-  "dealCount": 67,
+  "lastEnrichmentStream": "power_tools_main",
+  "dealCount": 71,
   "deals": [
     {
       "asin": "B0C3PQHGR7",
@@ -470,6 +470,85 @@
         "demand": 18,
         "reviews": 13,
         "rating": 7,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B004RPY3FM",
+      "parentAsin": "B08WB78XZ3",
+      "familyKey": "B08WB78XZ3",
+      "variationCount": 2,
+      "productAgeDays": 4238,
+      "title": "dewalt miter saw stand, heavy duty (dwx723)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552620",
+        "228013",
+        "328182011",
+        "552262",
+        "8106315011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106315011",
+          "name": "stands & mobile bases"
+        },
+        {
+          "id": "552620",
+          "name": "stands"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 149,
+      "avg30": 212.49,
+      "avg90": 223.96,
+      "low365": 149,
+      "rating": 4.7,
+      "reviewCount": 2996,
+      "rank": 74616,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41RNi2W5BzL.jpg",
+      "url": "https://www.amazon.com/dp/B004RPY3FM",
+      "keepa": "https://keepa.com/#!product/1-B004RPY3FM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-10T11:53:08.377Z",
+      "dealScore": 111,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 50,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 76,
+      "normalizedScoreBreakdown": {
+        "discount": 22,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 15,
+        "rating": 9,
         "priceTier": 6
       }
     },
@@ -2694,6 +2773,85 @@
       }
     },
     {
+      "asin": "B0GD29YCTW",
+      "parentAsin": "B0GJC5MBPS",
+      "familyKey": "B0GJC5MBPS",
+      "variationCount": 2,
+      "productAgeDays": 280,
+      "title": "dewalt 20v max battery, 4 pack, includes 2 x 5.0ah extended runtime batteries and 2 x 2.0ah compact batteries (dcb235-4)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552354",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552354",
+          "name": "battery packs"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 197,
+      "avg30": 226.99,
+      "avg90": 231.4,
+      "low365": 192.98,
+      "rating": 4.7,
+      "reviewCount": 7,
+      "rank": 12947,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71Voi5l77xL.jpg",
+      "url": "https://www.amazon.com/dp/B0GD29YCTW",
+      "keepa": "https://keepa.com/#!product/1-B0GD29YCTW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-10T11:53:08.377Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 57,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 0,
+        "rating": 9,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0BMM5FDFB",
       "parentAsin": "",
       "familyKey": "B0BMM5FDFB",
@@ -2852,6 +3010,89 @@
         "demand": 16,
         "reviews": 15,
         "rating": 5,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B07YF8QPCZ",
+      "parentAsin": "",
+      "familyKey": "B07YF8QPCZ",
+      "variationCount": 0,
+      "productAgeDays": 2521,
+      "title": "makita b-69646 14\" diamond blade, segmented, general purpose, contractor 3/pk",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552304",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552304",
+          "name": "diamond blades"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 189.49,
+      "avg30": 205.21,
+      "avg90": 222.58,
+      "low365": 136.59,
+      "rating": 4.7,
+      "reviewCount": 172,
+      "rank": 75334,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/818UQvJQIBL.jpg",
+      "url": "https://www.amazon.com/dp/B07YF8QPCZ",
+      "keepa": "https://keepa.com/#!product/1-B07YF8QPCZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-10T11:53:08.378Z",
+      "dealScore": 73,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 9,
         "priceTier": 6
       }
     },
@@ -4333,6 +4574,85 @@
         "reviews": 3,
         "rating": 9,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0CR5WW1MF",
+      "parentAsin": "",
+      "familyKey": "B0CR5WW1MF",
+      "variationCount": 0,
+      "productAgeDays": 1016,
+      "title": "milwaukee electric - m12. brushless 2 planer",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "9022412011",
+        "228013",
+        "328182011",
+        "551236",
+        "552842"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552842",
+          "name": "planers"
+        },
+        {
+          "id": "9022412011",
+          "name": "handheld planers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 191.98,
+      "avg30": 199.22,
+      "avg90": 197.75,
+      "low365": 127.35,
+      "rating": 4.7,
+      "reviewCount": 124,
+      "rank": 81008,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51k5LKpNTsL.jpg",
+      "url": "https://www.amazon.com/dp/B0CR5WW1MF",
+      "keepa": "https://keepa.com/#!product/1-B0CR5WW1MF",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-10T11:53:08.378Z",
+      "dealScore": 55,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 4,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 45,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 9,
+        "priceTier": 6
       }
     },
     {

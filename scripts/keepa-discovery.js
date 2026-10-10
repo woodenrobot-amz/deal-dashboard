@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { writeKeepaStatus } = require("./keepa-status");
+const { requestKeepa } = require("./keepa-request");
 
 const KEEPA_API_KEY = process.env.KEEPA_API_KEY;
 const STREAM_NAME = process.argv[2];
@@ -704,17 +704,12 @@ function sortDiscoveryPool(items) {
 async function run() {
   console.log(`Starting discovery for ${stream.name}`);
 
-  const res = await fetch(buildQueryUrl(stream.selection));
-
-  if (!res.ok) {
-    throw new Error(`Keepa request failed: ${res.status} ${res.statusText}`);
-  }
-
-  const data = await res.json();
-  writeKeepaStatus(data, `discovery:${STREAM_NAME}`);
-
-  if (data.error) {
-    throw new Error(JSON.stringify(data.error));
+  const data = await requestKeepa(buildQueryUrl(stream.selection), {
+    source: `discovery:${STREAM_NAME}`,
+    minimumTokens: 11
+  });
+  if (!Array.isArray(data.asinList)) {
+    throw new Error("Keepa discovery response is missing its ASIN list.");
   }
 
   const now = new Date().toISOString();

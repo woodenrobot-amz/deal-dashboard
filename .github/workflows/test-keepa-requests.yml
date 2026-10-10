@@ -1,0 +1,33 @@
+name: Test Keepa Request Handling
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/keepa-request.js'
+      - 'scripts/enrich-stream.js'
+      - 'scripts/keepa-discovery.js'
+      - 'scripts/tests/keepa-enrichment.test.js'
+      - '.github/workflows/test-keepa-requests.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/keepa-request.js'
+      - 'scripts/enrich-stream.js'
+      - 'scripts/keepa-discovery.js'
+      - 'scripts/tests/keepa-enrichment.test.js'
+      - '.github/workflows/test-keepa-requests.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node --check scripts/enrich-stream.js
+      - run: node --check scripts/keepa-discovery.js
+      - run: node --test scripts/tests/keepa-enrichment.test.js

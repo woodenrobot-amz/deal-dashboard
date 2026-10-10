@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { writeKeepaStatus } = require("./keepa-status");
+const { requestKeepa } = require("./keepa-request");
 
 const KEEPA_API_KEY = process.env.KEEPA_API_KEY;
 const STREAM_NAME = process.argv[2];
@@ -608,6 +608,7 @@ async function fetchProducts(asins) {
   const MAX_BATCH_SIZE = 100;
   const allProducts = [];
   let latestTokensLeft = null;
+  let previousStatus = null;
 
   for (let i = 0; i < asins.length; i += MAX_BATCH_SIZE) {
     const batch = asins.slice(i, i + MAX_BATCH_SIZE);
@@ -616,23 +617,21 @@ async function fetchProducts(asins) {
       `Enriching batch ${Math.floor(i / MAX_BATCH_SIZE) + 1}: ${batch.length} ${STREAM_NAME} ASINs...`
     );
 
-    const res = await fetch(buildProductUrl(batch));
-    const data = await res.json();
-    writeKeepaStatus(data, `enrich:${STREAM_NAME}`);
-
-    if (data.error) {
-      throw new Error(JSON.stringify(data.error));
+    const data = await requestKeepa(buildProductUrl(batch), {
+      source: `enrich:${STREAM_NAME}`,
+      // Product + rating history can consume two tokens per ASIN.
+      minimumTokens: batch.length * 2 + TOKEN_FLOOR,
+      previousStatus
+    });
+    if (!Array.isArray(data.products)) {
+      throw new Error("Keepa product response is missing its products array; ASINs remain pending.");
     }
 
     console.log(`Tokens consumed: ${data.tokensConsumed}, tokens left: ${data.tokensLeft}`);
-
-    allProducts.push(...(data.products || []));
+    console.log(`Products returned: ${data.products.length}/${batch.length}`);
+    allProducts.push(...data.products);
     latestTokensLeft = data.tokensLeft;
-
-    if (latestTokensLeft !== null && latestTokensLeft < TOKEN_FLOOR) {
-      console.log(`Token floor reached. Stopping after this batch. Tokens left: ${latestTokensLeft}`);
-      break;
-    }
+    previousStatus = data;
   }
 
   return {
@@ -709,7 +708,8 @@ async function run() {
     products.map(p => [normalizeAsin(p.asin), p])
   );
 
-  const enrichedSet = new Set(asins);
+  // Missing or unprocessed products must remain eligible for a later run.
+  const enrichedSet = new Set(asins.filter(asin => productByAsin.has(asin)));
 
   const updatedDiscovery = discovered.map(item => {
     const asin = normalizeAsin(item.asin);
@@ -756,6 +756,7 @@ async function run() {
   console.log(`New valid ${STREAM_NAME} deals: ${newDeals.length}`);
   console.log(`Total active enriched deals after parent-family dedupe: ${mergedDeals.length}`);
   console.log(`Marked ${enrichedSet.size} ASINs as enriched.`);
+  console.log(`Left ${asins.length - enrichedSet.size} selected ASINs pending (no returned product data).`);
 }
 
 run().catch(err => {

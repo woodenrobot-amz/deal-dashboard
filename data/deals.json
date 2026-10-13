@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-13T11:08:01.616Z",
+  "generatedAt": "2026-10-13T11:09:16.012Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 235,
+  "lastEnrichmentStream": "woodworking_test",
+  "dealCount": 237,
   "deals": [
     {
       "asin": "B007ML7DHS",
@@ -8493,6 +8493,86 @@
       }
     },
     {
+      "asin": "B0FB8DM47R",
+      "parentAsin": "B0H6SS6WTM",
+      "familyKey": "B0H6SS6WTM",
+      "variationCount": 2,
+      "productAgeDays": 500,
+      "title": "cammoo 48\" adjustable workbench, 2000lbs max load, pegboard & power strip",
+      "brand": "cammoo",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 119.99,
+      "avg30": 139.97,
+      "avg90": 134.87,
+      "low365": 119.99,
+      "rating": 4.8,
+      "reviewCount": 714,
+      "rank": 5741,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71ryqS8odAL.jpg",
+      "url": "https://www.amazon.com/dp/B0FB8DM47R",
+      "keepa": "https://keepa.com/#!product/1-B0FB8DM47R",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-13T11:09:16.010Z",
+      "dealScore": 48,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 53,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 16,
+        "reviews": 11,
+        "rating": 10,
+        "priceTier": 6
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FB8SMXFG",
+        "B0FB8DM47R"
+      ]
+    },
+    {
       "asin": "B073RRJFL5",
       "parentAsin": "B073RR2JL3",
       "familyKey": "B073RR2JL3",
@@ -11220,80 +11300,6 @@
       ]
     },
     {
-      "asin": "B0FB8SMXFG",
-      "parentAsin": "B0H6SS6WTM",
-      "familyKey": "B0H6SS6WTM",
-      "variationCount": 2,
-      "productAgeDays": 499,
-      "title": "cammoo 60\" adjustable workbench, 2000lbs max load, pegboard & power strip",
-      "brand": "cammoo",
-      "brandTier": "off",
-      "category": "woodworking_test",
-      "keepaCategoryIds": [
-        "553602",
-        "228013",
-        "551240",
-        "553516"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "228013",
-          "name": "tools & home improvement"
-        },
-        {
-          "id": "551240",
-          "name": "building supplies"
-        },
-        {
-          "id": "553516",
-          "name": "material handling"
-        },
-        {
-          "id": "553602",
-          "name": "workbenches"
-        }
-      ],
-      "sourceStream": "woodworking_test",
-      "sources": [
-        "keepa"
-      ],
-      "price": 149.59,
-      "avg30": 171.35,
-      "avg90": 162.66,
-      "low365": 149.59,
-      "rating": 4.8,
-      "reviewCount": 714,
-      "rank": 6179,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/717dwQDjUDL.jpg",
-      "url": "https://www.amazon.com/dp/B0FB8SMXFG",
-      "keepa": "https://keepa.com/#!product/1-B0FB8SMXFG",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": false,
-      "updatedAt": "2026-10-12T15:43:43.538Z",
-      "dealScore": 44,
-      "scoreBreakdown": {
-        "rating": 24,
-        "discount": 12,
-        "rank": 0,
-        "reviews": 5,
-        "variationFamily": 0,
-        "productAge": 3,
-        "streamFit": 0,
-        "brand": 0
-      },
-      "normalizedScore": 49,
-      "normalizedScoreBreakdown": {
-        "discount": 6,
-        "brand": 0,
-        "demand": 16,
-        "reviews": 11,
-        "rating": 10,
-        "priceTier": 6
-      }
-    },
-    {
       "asin": "B01D4VXMGK",
       "parentAsin": "B0HDT68DMZ",
       "familyKey": "B0HDT68DMZ",
@@ -14019,7 +14025,13 @@
         "reviews": 8,
         "rating": 3,
         "priceTier": 6
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0DJFMPHD8",
+        "B0GYRTMST5"
+      ]
     },
     {
       "asin": "B07MGJ73JQ",
@@ -16033,6 +16045,89 @@
       }
     },
     {
+      "asin": "B001022GPE",
+      "parentAsin": "B0F499T1W4",
+      "familyKey": "B0F499T1W4",
+      "variationCount": 16,
+      "productAgeDays": 4995,
+      "title": "wilton brute force c-clamp, 1-3/4\" opening, 1-7/16\" throat, 8750 lbs. clamping force (1-1/2 f.c.)",
+      "brand": "wilton",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553158",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "553150",
+          "name": "clamps"
+        },
+        {
+          "id": "553158",
+          "name": "c-clamps"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 56.51,
+      "avg30": 74.08,
+      "avg90": 65.21,
+      "low365": 50.2,
+      "rating": 4.7,
+      "reviewCount": 166,
+      "rank": 127563,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71pLedthOdL.jpg",
+      "url": "https://www.amazon.com/dp/B001022GPE",
+      "keepa": "https://keepa.com/#!product/1-B001022GPE",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-13T11:09:16.011Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 20,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 29,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 9,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B00JXDT2OK",
       "parentAsin": "B07WJBJCMJ",
       "familyKey": "B07WJBJCMJ",
@@ -16266,6 +16361,85 @@
         "reviews": 0,
         "rating": 7,
         "priceTier": 8
+      }
+    },
+    {
+      "asin": "B0D1Y3K7HB",
+      "parentAsin": "B0GHXT5C23",
+      "familyKey": "B0GHXT5C23",
+      "variationCount": 3,
+      "productAgeDays": 908,
+      "title": "thinklearn cordless detail sander, 20v electric hand sander",
+      "brand": "thinklearn",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552880",
+        "228013",
+        "328182011",
+        "551236",
+        "552876"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552876",
+          "name": "sanders"
+        },
+        {
+          "id": "552880",
+          "name": "detail sanders"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 62.99,
+      "avg30": 69.64,
+      "avg90": 69.87,
+      "low365": 55.99,
+      "rating": 4.4,
+      "reviewCount": 179,
+      "rank": 46854,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81LykDJZSWL.jpg",
+      "url": "https://www.amazon.com/dp/B0D1Y3K7HB",
+      "keepa": "https://keepa.com/#!product/1-B0D1Y3K7HB",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-13T11:09:16.011Z",
+      "dealScore": 44,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 29,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 6,
+        "rating": 5,
+        "priceTier": 4
       }
     },
     {

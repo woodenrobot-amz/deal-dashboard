@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-13T03:16:44.731Z",
+  "generatedAt": "2026-10-13T11:07:21.285Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "dad_impulse",
-  "dealCount": 233,
+  "lastEnrichmentStream": "power_tools_main",
+  "dealCount": 235,
   "deals": [
     {
       "asin": "B007ML7DHS",
@@ -549,6 +549,80 @@
         "reviews": 6,
         "rating": 8,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0858J4BTK",
+      "parentAsin": "B092RRG2NP",
+      "familyKey": "B092RRG2NP",
+      "variationCount": 2,
+      "productAgeDays": 2413,
+      "title": "dewalt tools 5 tool power tool combo kit, cordless drill impact driver saw oscillating multi-tool set with 20v max battery and charger (dck551d1m1)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552734",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552734",
+          "name": "combo kits"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 499.01,
+      "avg30": 623.43,
+      "avg90": 609.68,
+      "low365": 442.57,
+      "rating": 4.7,
+      "reviewCount": 1091,
+      "rank": 34771,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71qRxtUe9ML.jpg",
+      "url": "https://www.amazon.com/dp/B0858J4BTK",
+      "keepa": "https://keepa.com/#!product/1-B0858J4BTK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-13T11:07:21.284Z",
+      "dealScore": 88,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 27,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 74,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 13,
+        "rating": 9,
+        "priceTier": 10
       }
     },
     {
@@ -1304,6 +1378,95 @@
         "rating": 8,
         "priceTier": 0
       }
+    },
+    {
+      "asin": "B00004RGZG",
+      "parentAsin": "B08Q315V4S",
+      "familyKey": "B08Q315V4S",
+      "variationCount": 13,
+      "productAgeDays": 5676,
+      "title": "dewalt drill bit, ship auger, 7/8 inch x 17 inch (dw1685)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552410",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552388",
+          "name": "drill bits"
+        },
+        {
+          "id": "552410",
+          "name": "auger drill bits"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 25.89,
+      "avg30": 44.81,
+      "avg90": 43.6,
+      "low365": 19.99,
+      "rating": 4.7,
+      "reviewCount": 104,
+      "rank": 40300,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41VxlI24V5L.jpg",
+      "url": "https://www.amazon.com/dp/B00004RGZG",
+      "keepa": "https://keepa.com/#!product/1-B00004RGZG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-13T11:07:21.284Z",
+      "dealScore": 114,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 60,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 68,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 6,
+        "rating": 9,
+        "priceTier": 0
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B00004RGZL",
+        "B00004RGZG"
+      ]
     },
     {
       "asin": "B000J0BG7W",
@@ -10220,89 +10383,6 @@
       }
     },
     {
-      "asin": "B00004RGZL",
-      "parentAsin": "B08Q315V4S",
-      "familyKey": "B08Q315V4S",
-      "variationCount": 13,
-      "productAgeDays": 5644,
-      "title": "dewalt drill bit, ship auger, 1-1/4 inch x 17 inch (dw1690)",
-      "brand": "dewalt",
-      "brandTier": "top",
-      "category": "power_tools_main",
-      "keepaCategoryIds": [
-        "552410",
-        "228013",
-        "328182011",
-        "552262",
-        "552796"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "228013",
-          "name": "tools & home improvement"
-        },
-        {
-          "id": "328182011",
-          "name": "power & hand tools"
-        },
-        {
-          "id": "552262",
-          "name": "power tool parts & accessories"
-        },
-        {
-          "id": "552796",
-          "name": "power drill parts & accessories"
-        },
-        {
-          "id": "552388",
-          "name": "drill bits"
-        },
-        {
-          "id": "552410",
-          "name": "auger drill bits"
-        }
-      ],
-      "sourceStream": "power_tools_main",
-      "sources": [
-        "keepa"
-      ],
-      "price": 30.8,
-      "avg30": 35.36,
-      "avg90": 36.36,
-      "low365": 29.95,
-      "rating": 4.6,
-      "reviewCount": 21,
-      "rank": 44642,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/61mlvl91leS.jpg",
-      "url": "https://www.amazon.com/dp/B00004RGZL",
-      "keepa": "https://keepa.com/#!product/1-B00004RGZL",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": true,
-      "updatedAt": "2026-10-12T15:41:05.659Z",
-      "dealScore": 76,
-      "scoreBreakdown": {
-        "rating": 23,
-        "discount": 22,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 3,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 20
-      },
-      "normalizedScore": 50,
-      "normalizedScoreBreakdown": {
-        "discount": 14,
-        "brand": 20,
-        "demand": 8,
-        "reviews": 0,
-        "rating": 8,
-        "priceTier": 0
-      }
-    },
-    {
       "asin": "B07KKXNWWX",
       "parentAsin": "",
       "familyKey": "B07KKXNWWX",
@@ -14925,6 +15005,85 @@
         "reviews": 6,
         "rating": 8,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B08NWF6P3Q",
+      "parentAsin": "B0F83RMCKG",
+      "familyKey": "B0F83RMCKG",
+      "variationCount": 4,
+      "productAgeDays": 2148,
+      "title": "wen pl1326 15-amp 13-inch spiral benchtop thickness planer",
+      "brand": "wen",
+      "brandTier": "off",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "9022410011",
+        "228013",
+        "328182011",
+        "551236",
+        "552842"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552842",
+          "name": "planers"
+        },
+        {
+          "id": "9022410011",
+          "name": "benchtop planers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 418,
+      "avg30": 435.13,
+      "avg90": 443.02,
+      "low365": 407.69,
+      "rating": 4.7,
+      "reviewCount": 736,
+      "rank": 83608,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71tM87icxvL.jpg",
+      "url": "https://www.amazon.com/dp/B08NWF6P3Q",
+      "keepa": "https://keepa.com/#!product/1-B08NWF6P3Q",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-13T11:07:21.284Z",
+      "dealScore": 44,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 8,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 34,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 9,
+        "priceTier": 10
       }
     },
     {

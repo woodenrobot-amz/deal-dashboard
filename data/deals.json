@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-15T01:42:05.008Z",
+  "generatedAt": "2026-10-15T01:42:46.322Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 241,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 247,
   "deals": [
     {
       "asin": "B007NVSTO8",
@@ -6572,6 +6572,85 @@
         "reviews": 15,
         "rating": 7,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B00ODDUYWY",
+      "parentAsin": "B0H5CJFYBJ",
+      "familyKey": "B0H5CJFYBJ",
+      "variationCount": 7,
+      "productAgeDays": 3595,
+      "title": "frogtape multi-surface painter's tape with paintblock, 0.94 in x 60 yds",
+      "brand": "frogtape",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "228921",
+        "228013",
+        "228899",
+        "17881623011",
+        "17881624011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "228899",
+          "name": "paint, wall treatments & supplies"
+        },
+        {
+          "id": "17881623011",
+          "name": "painting supplies & tools"
+        },
+        {
+          "id": "17881624011",
+          "name": "tape"
+        },
+        {
+          "id": "228921",
+          "name": "masking tape"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 26.05,
+      "avg30": 32.31,
+      "avg90": 32.08,
+      "low365": 26.05,
+      "rating": 4.7,
+      "reviewCount": 10710,
+      "rank": 491,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71O6uhXd8LL.jpg",
+      "url": "https://www.amazon.com/dp/B00ODDUYWY",
+      "keepa": "https://keepa.com/#!product/1-B00ODDUYWY",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-15T01:42:46.320Z",
+      "dealScore": 99,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 28,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 58,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 0
       }
     },
     {
@@ -17760,6 +17839,247 @@
       }
     },
     {
+      "asin": "B008JVM45G",
+      "parentAsin": "B0D78W4SZM",
+      "familyKey": "B0D78W4SZM",
+      "variationCount": 1,
+      "productAgeDays": 5004,
+      "title": "powermate vx 125-155 psi replacement pressure switch (034-0184rp)",
+      "brand": "powermate",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "9022420011",
+        "16310161",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "9022420011",
+          "name": "power tools replacement parts"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 30.42,
+      "avg30": 36.2,
+      "avg90": 37.01,
+      "low365": 19.99,
+      "rating": 4.4,
+      "reviewCount": 708,
+      "rank": 200002,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71hyr5CnPfL.jpg",
+      "url": "https://www.amazon.com/dp/B008JVM45G",
+      "keepa": "https://keepa.com/#!product/1-B008JVM45G",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-15T01:42:46.321Z",
+      "dealScore": 61,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 26,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 11,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B000S6BYCE",
+      "parentAsin": "",
+      "familyKey": "B000S6BYCE",
+      "variationCount": 0,
+      "productAgeDays": 5357,
+      "title": "proxxon 28017 2-inch carbide tipped blade for ks 115 20 teeth",
+      "brand": "proxxon",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552292",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552292",
+          "name": "circular saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 20.55,
+      "avg30": 27.62,
+      "avg90": 25,
+      "low365": 20.52,
+      "rating": 4.6,
+      "reviewCount": 377,
+      "rank": 611820,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Z1FgqqW-L.jpg",
+      "url": "https://www.amazon.com/dp/B000S6BYCE",
+      "keepa": "https://keepa.com/#!product/1-B000S6BYCE",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-15T01:42:46.321Z",
+      "dealScore": 57,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 26,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B00FLEGGMQ",
+      "parentAsin": "B08XRSTJ4K",
+      "familyKey": "B08XRSTJ4K",
+      "variationCount": 5,
+      "productAgeDays": 4108,
+      "title": "starrett king cut reciprocating saw blade, 12\" l, 1\" w, 0.63\" h, 5-pack",
+      "brand": "starrett",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552332",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552332",
+          "name": "reciprocating saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 46.5,
+      "avg30": 46.3,
+      "avg90": 45.15,
+      "low365": 37.64,
+      "rating": 4.4,
+      "reviewCount": 61,
+      "rank": 1102575,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41pOBz28jsL.jpg",
+      "url": "https://www.amazon.com/dp/B00FLEGGMQ",
+      "keepa": "https://keepa.com/#!product/1-B00FLEGGMQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-15T01:42:46.321Z",
+      "dealScore": 50,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B001022GPE",
       "parentAsin": "B0F499T1W4",
       "familyKey": "B0F499T1W4",
@@ -18070,6 +18390,89 @@
       }
     },
     {
+      "asin": "B00JBJCUU4",
+      "parentAsin": "",
+      "familyKey": "B00JBJCUU4",
+      "variationCount": 0,
+      "productAgeDays": 2578,
+      "title": "ultra finish-plywood & melamine 210x0.110”x30mm t=64 atb",
+      "brand": "cmt orange tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552292",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552292",
+          "name": "circular saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 44.1,
+      "avg30": 47.88,
+      "avg90": 51.01,
+      "low365": 44.1,
+      "rating": 4.8,
+      "reviewCount": 82,
+      "rank": 2029906,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61uePbPeytL.jpg",
+      "url": "https://www.amazon.com/dp/B00JBJCUU4",
+      "keepa": "https://keepa.com/#!product/1-B00JBJCUU4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-15T01:42:46.321Z",
+      "dealScore": 52,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 20,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 25,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0CS2TGMBH",
       "parentAsin": "B0CS3JV7KK",
       "familyKey": "B0CS3JV7KK",
@@ -18136,6 +18539,85 @@
         "reviews": 8,
         "rating": 7,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B07FY7HHQH",
+      "parentAsin": "",
+      "familyKey": "B07FY7HHQH",
+      "variationCount": 0,
+      "productAgeDays": 2898,
+      "title": "authentic easy wood tools ci5 negative rake (6604nr) replacement carbide cutter for woodturnig tools",
+      "brand": "easy wood tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552516",
+        "228013",
+        "328182011",
+        "552262",
+        "552512"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552512",
+          "name": "lathe parts & accessories"
+        },
+        {
+          "id": "552516",
+          "name": "turning tools"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.75,
+      "avg30": 26.47,
+      "avg90": 27.83,
+      "low365": 20.29,
+      "rating": 4.8,
+      "reviewCount": 60,
+      "rank": 576063,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41Lt3J9CO0L.jpg",
+      "url": "https://www.amazon.com/dp/B07FY7HHQH",
+      "keepa": "https://keepa.com/#!product/1-B07FY7HHQH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-15T01:42:46.321Z",
+      "dealScore": 53,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 23,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 0
       }
     },
     {

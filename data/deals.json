@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-16T01:27:57.490Z",
+  "generatedAt": "2026-10-16T01:28:38.062Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 56,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 97,
   "deals": [
     {
       "asin": "B007NVSTO8",
@@ -937,6 +937,85 @@
         "demand": 8,
         "reviews": 15,
         "rating": 8,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B00608ZSI0",
+      "parentAsin": "",
+      "familyKey": "B00608ZSI0",
+      "variationCount": 0,
+      "productAgeDays": 5429,
+      "title": "makita jv0600k top handle jig saw, with tool case",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552934",
+        "228013",
+        "328182011",
+        "551236",
+        "552894"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552894",
+          "name": "saws"
+        },
+        {
+          "id": "552934",
+          "name": "jig saws"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 114.22,
+      "avg30": 136.27,
+      "avg90": 142.83,
+      "low365": 95,
+      "rating": 4.7,
+      "reviewCount": 1202,
+      "rank": 179760,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61aExpImuBL.jpg",
+      "url": "https://www.amazon.com/dp/B00608ZSI0",
+      "keepa": "https://keepa.com/#!product/1-B00608ZSI0",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 91,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 66,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 13,
+        "rating": 9,
         "priceTier": 6
       }
     },
@@ -2743,6 +2822,89 @@
       }
     },
     {
+      "asin": "B01KJHSTCY",
+      "parentAsin": "B0B2XT25HX",
+      "familyKey": "B0B2XT25HX",
+      "variationCount": 50,
+      "productAgeDays": 3514,
+      "title": "amana tool 45475-3ds carbide tipped down shear router bit 3/8 d x 1/2 ch",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552392",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552388",
+          "name": "drill bits"
+        },
+        {
+          "id": "552392",
+          "name": "boring drill bits"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 47.82,
+      "avg30": 47.82,
+      "avg90": 51.74,
+      "low365": 32.74,
+      "rating": 4.4,
+      "reviewCount": 1906,
+      "rank": 12978,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51GjSCLSCRL.jpg",
+      "url": "https://www.amazon.com/dp/B01KJHSTCY",
+      "keepa": "https://keepa.com/#!product/1-B01KJHSTCY",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 79,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 13,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0092K1F2Q",
       "parentAsin": "B0F7Z2SXDY",
       "familyKey": "B0F7Z2SXDY",
@@ -2975,6 +3137,76 @@
         "demand": 8,
         "reviews": 0,
         "rating": 0,
+        "priceTier": 10
+      }
+    },
+    {
+      "asin": "B0DCZVXWVL",
+      "parentAsin": "B0DCZWTRD6",
+      "familyKey": "B0DCZWTRD6",
+      "variationCount": 2,
+      "productAgeDays": 726,
+      "title": "woodpeckers precision woodworking square set, 18 inch & 26 inch, aluminum, usa made, feature packed square, self standing, shoulder lip",
+      "brand": "woodpeckers",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "3006710011",
+        "16310161",
+        "228013",
+        "553244"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "3006710011",
+          "name": "carpentry squares"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 458.99,
+      "avg30": 494.2,
+      "avg90": 504.72,
+      "low365": 399.99,
+      "rating": 4.9,
+      "reviewCount": 116,
+      "rank": 513956,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51YC+w0BaZL.jpg",
+      "url": "https://www.amazon.com/dp/B0DCZVXWVL",
+      "keepa": "https://keepa.com/#!product/1-B0DCZVXWVL",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 10,
         "priceTier": 10
       }
     },
@@ -3368,6 +3600,292 @@
       }
     },
     {
+      "asin": "B001TIZQTM",
+      "parentAsin": "B0CZ1WTMY1",
+      "familyKey": "B0CZ1WTMY1",
+      "variationCount": 4,
+      "productAgeDays": 5544,
+      "title": "woodpeckers t square, 12 inch, precision woodworking t-square ruler, built-in edge support, scribing & shelf pin guides, rack-it mount, made in usa",
+      "brand": "woodpeckers",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "3006710011",
+        "228013",
+        "553244"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "3006710011",
+          "name": "carpentry squares"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 134.99,
+      "avg30": 145.29,
+      "avg90": 148.39,
+      "low365": 118.99,
+      "rating": 4.8,
+      "reviewCount": 455,
+      "rank": 157740,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61xq6juu9rL.jpg",
+      "url": "https://www.amazon.com/dp/B001TIZQTM",
+      "keepa": "https://keepa.com/#!product/1-B001TIZQTM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 50,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 10,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B072NZRLP8",
+      "parentAsin": "B0731PFTZK",
+      "familyKey": "B0731PFTZK",
+      "variationCount": 5,
+      "productAgeDays": 3353,
+      "title": "ox concrete screed board, 6' screed with level, herramienta de concreto",
+      "brand": "ox",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "13399531",
+        "228013",
+        "328182011",
+        "551238",
+        "13399471"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "13399471",
+          "name": "masonry tools"
+        },
+        {
+          "id": "13399531",
+          "name": "floats"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 109.98,
+      "avg30": 124.68,
+      "avg90": 131.55,
+      "low365": 72.24,
+      "rating": 4.6,
+      "reviewCount": 1041,
+      "rank": 43800,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/613w53pGpXL.jpg",
+      "url": "https://www.amazon.com/dp/B072NZRLP8",
+      "keepa": "https://keepa.com/#!product/1-B072NZRLP8",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 24,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 13,
+        "rating": 8,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0CZM7RD57",
+      "parentAsin": "B0CZN773JJ",
+      "familyKey": "B0CZN773JJ",
+      "variationCount": 5,
+      "productAgeDays": 921,
+      "title": "woodpeckers saddle t-square, inch set, wraps around work edge, usa made woodworking square with scribing guides",
+      "brand": "woodpeckers",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "3006710011",
+        "228013",
+        "553244"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "3006710011",
+          "name": "carpentry squares"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 314.99,
+      "avg30": 338.53,
+      "avg90": 346.05,
+      "low365": 314.99,
+      "rating": 4.8,
+      "reviewCount": 96,
+      "rank": 257931,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71H3gUNewRL.jpg",
+      "url": "https://www.amazon.com/dp/B0CZM7RD57",
+      "keepa": "https://keepa.com/#!product/1-B0CZM7RD57",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 49,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 10
+      }
+    },
+    {
+      "asin": "B01D5T5QTM",
+      "parentAsin": "B0DCZTC2CZ",
+      "familyKey": "B0DCZTC2CZ",
+      "variationCount": 7,
+      "productAgeDays": 3579,
+      "title": "woodpeckers precision woodworking square, 150mm, aluminum, usa made, feature packed metric square, self standing, shoulder lip, laser engraved scales",
+      "brand": "woodpeckers",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "3006710011",
+        "228013",
+        "553244"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "3006710011",
+          "name": "carpentry squares"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 85.49,
+      "avg30": 92.29,
+      "avg90": 94.09,
+      "low365": 85.49,
+      "rating": 4.8,
+      "reviewCount": 486,
+      "rank": 137482,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51e6fkXx-NL.jpg",
+      "url": "https://www.amazon.com/dp/B01D5T5QTM",
+      "keepa": "https://keepa.com/#!product/1-B01D5T5QTM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 10,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B0BK2WCTTB",
       "parentAsin": "B0FFQKR869",
       "familyKey": "B0FFQKR869",
@@ -3444,6 +3962,80 @@
         "reviews": 6,
         "rating": 8,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B07PTQR59X",
+      "parentAsin": "B0D1L2QW1C",
+      "familyKey": "B0D1L2QW1C",
+      "variationCount": 3,
+      "productAgeDays": 2652,
+      "title": "woodpeckers slab flattening mill, small, 24\"x48\" capacity, usa made wood slab leveling jig, includes router sled, rails, clamping dogs",
+      "brand": "woodpeckers",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552566",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 683.99,
+      "avg30": 736.48,
+      "avg90": 752.15,
+      "low365": 683.99,
+      "rating": 4.5,
+      "reviewCount": 85,
+      "rank": 885819,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61gJzlwRkyL.jpg",
+      "url": "https://www.amazon.com/dp/B07PTQR59X",
+      "keepa": "https://keepa.com/#!product/1-B07PTQR59X",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 7,
+        "priceTier": 10
       }
     },
     {
@@ -3524,6 +4116,81 @@
         "reviews": 6,
         "rating": 8,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0D365GN7T",
+      "parentAsin": "B0D36QWMY8",
+      "familyKey": "B0D36QWMY8",
+      "variationCount": 3,
+      "productAgeDays": 857,
+      "title": "woodpeckers serx precision straight edge tool, 900 mm, freestanding woodworking machine setup rule, 0.0015\" tolerance per foot, laser engraved scale",
+      "brand": "woodpeckers",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553278",
+        "16310161",
+        "228013",
+        "553244",
+        "11646393011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "11646393011",
+          "name": "linear measurement"
+        },
+        {
+          "id": "553278",
+          "name": "rulers"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 95.39,
+      "avg30": 103.15,
+      "avg90": 105.04,
+      "low365": 95.39,
+      "rating": 4.7,
+      "reviewCount": 194,
+      "rank": 415556,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/619UW6ayG6L.jpg",
+      "url": "https://www.amazon.com/dp/B0D365GN7T",
+      "keepa": "https://keepa.com/#!product/1-B0D365GN7T",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 64,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 45,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 9,
+        "priceTier": 4
       }
     },
     {
@@ -3833,6 +4500,424 @@
       }
     },
     {
+      "asin": "B000K2BPUC",
+      "parentAsin": "B09WZDVB4G",
+      "familyKey": "B09WZDVB4G",
+      "variationCount": 27,
+      "productAgeDays": 3197,
+      "title": "amana tool - 45702 carbide tipped v-groove 90 deg x 3/8 dia x 7/16 x 1/2\" shank",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "3116541",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116541",
+          "name": "edge treatment & grooving bits"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 37.24,
+      "avg30": 37.47,
+      "avg90": 41.31,
+      "low365": 33.87,
+      "rating": 4.6,
+      "reviewCount": 160,
+      "rank": 212371,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/31gF-fLTktL.jpg",
+      "url": "https://www.amazon.com/dp/B000K2BPUC",
+      "keepa": "https://keepa.com/#!product/1-B000K2BPUC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 73,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 42,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 8,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B000K2FDQE",
+      "parentAsin": "B0B2KJ76F8",
+      "familyKey": "B0B2KJ76F8",
+      "variationCount": 33,
+      "productAgeDays": 3519,
+      "title": "amana tool - 45410 carbide tipped straight plunge high production 5/16 dia x 3/4 x 1/2 inc",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686957011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686957011",
+          "name": "straight"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 26.78,
+      "avg30": 26.78,
+      "avg90": 28.31,
+      "low365": 24.34,
+      "rating": 4.7,
+      "reviewCount": 432,
+      "rank": 71238,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/11yu4nqAS-L.jpg",
+      "url": "https://www.amazon.com/dp/B000K2FDQE",
+      "keepa": "https://keepa.com/#!product/1-B000K2FDQE",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 8,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 41,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B073NGCXBK",
+      "parentAsin": "B0B2KX1H1V",
+      "familyKey": "B0B2KX1H1V",
+      "variationCount": 10,
+      "productAgeDays": 3190,
+      "title": "amana tool 45253 carbide tipped straight plunge 10mm d x 38mm ch x 10mm inch shk router bit",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686957011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686957011",
+          "name": "straight"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 28.84,
+      "avg30": 29.14,
+      "avg90": 32.93,
+      "low365": 26.19,
+      "rating": 4.5,
+      "reviewCount": 80,
+      "rank": 135105,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/31x2YZN0gtL.jpg",
+      "url": "https://www.amazon.com/dp/B073NGCXBK",
+      "keepa": "https://keepa.com/#!product/1-B073NGCXBK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 71,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 40,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0GQDS4WV7",
+      "parentAsin": "B0HDWRDPFD",
+      "familyKey": "B0HDWRDPFD",
+      "variationCount": 2,
+      "productAgeDays": 112,
+      "title": "tracer 5.2mm tough carpenter pencils w/ 5 pc lead holster and sharpener",
+      "brand": "tracer",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "11646399011",
+        "228013",
+        "553244",
+        "553268"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "553268",
+          "name": "marking tools"
+        },
+        {
+          "id": "11646399011",
+          "name": "scribers"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 22.99,
+      "avg30": 22.99,
+      "avg90": 33.78,
+      "low365": 22.99,
+      "rating": 4.8,
+      "reviewCount": 57,
+      "rank": 94673,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71DxfHFSZHL.jpg",
+      "url": "https://www.amazon.com/dp/B0GQDS4WV7",
+      "keepa": "https://keepa.com/#!product/1-B0GQDS4WV7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 71,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 47,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 39,
+      "normalizedScoreBreakdown": {
+        "discount": 22,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B07B9Q5LJW",
+      "parentAsin": "B09X621T2T",
+      "familyKey": "B09X621T2T",
+      "variationCount": 34,
+      "productAgeDays": 2801,
+      "title": "amana tool spektra coated solid carbide cnc spiral single o-flute router bit, 51412-k, 3/16 d x 5/8 ch x 3/16 shk x 2 inch l up-cut mirror finish",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686958011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686958011",
+          "name": "spiral"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 42.53,
+      "avg30": 42.53,
+      "avg90": 42.62,
+      "low365": 38.28,
+      "rating": 4.4,
+      "reviewCount": 301,
+      "rank": 57186,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51tTGvE1s8L.jpg",
+      "url": "https://www.amazon.com/dp/B07B9Q5LJW",
+      "keepa": "https://keepa.com/#!product/1-B07B9Q5LJW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 39,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B07MGJ73JQ",
       "parentAsin": "",
       "familyKey": "B07MGJ73JQ",
@@ -3913,6 +4998,242 @@
       }
     },
     {
+      "asin": "B0CBGW6BVQ",
+      "parentAsin": "B0CBGVYCWR",
+      "familyKey": "B0CBGVYCWR",
+      "variationCount": 5,
+      "productAgeDays": 1167,
+      "title": "woodpeckers hexscale rule, 36 inch / 900mm, 6-in-1 woodworking ruler with stop, inch, metric & centering scales, r2l & l2r measuring, architect style",
+      "brand": "woodpeckers",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553278",
+        "228013",
+        "553244",
+        "11646393011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "11646393011",
+          "name": "linear measurement"
+        },
+        {
+          "id": "553278",
+          "name": "rulers"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 62.99,
+      "avg30": 68.71,
+      "avg90": 69.55,
+      "low365": 62.99,
+      "rating": 4.4,
+      "reviewCount": 51,
+      "rank": 390177,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71cEXT91CdL.jpg",
+      "url": "https://www.amazon.com/dp/B0CBGW6BVQ",
+      "keepa": "https://keepa.com/#!product/1-B0CBGW6BVQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 64,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 38,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 5,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B00C102VO0",
+      "parentAsin": "",
+      "familyKey": "B00C102VO0",
+      "variationCount": 0,
+      "productAgeDays": 4613,
+      "title": "slugger by fein mild steel cutting saw blade, 14\" diameter, 66 teeth",
+      "brand": "jancy",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552292",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552292",
+          "name": "circular saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99.95,
+      "avg30": 159.6,
+      "avg90": 173.16,
+      "low365": 99.95,
+      "rating": 4.4,
+      "reviewCount": 79,
+      "rank": 278327,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51PCDqohl1L.jpg",
+      "url": "https://www.amazon.com/dp/B00C102VO0",
+      "keepa": "https://keepa.com/#!product/1-B00C102VO0",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 93,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 63,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 37,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 5,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B071CDWM2F",
+      "parentAsin": "B091VVJFBK",
+      "familyKey": "B091VVJFBK",
+      "variationCount": 9,
+      "productAgeDays": 2162,
+      "title": "ox pro series sfbl quickskim plaster skimming blade - 18 inch",
+      "brand": "ox",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "13399581",
+        "228013",
+        "328182011",
+        "551238",
+        "13399471"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "13399471",
+          "name": "masonry tools"
+        },
+        {
+          "id": "13399581",
+          "name": "trowels"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 44.99,
+      "avg30": 54.13,
+      "avg90": 57.37,
+      "low365": 44.99,
+      "rating": 4.4,
+      "reviewCount": 635,
+      "rank": 1389028,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51wmpAIwuXL.jpg",
+      "url": "https://www.amazon.com/dp/B071CDWM2F",
+      "keepa": "https://keepa.com/#!product/1-B071CDWM2F",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 70,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 32,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 36,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 11,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0C69WPXH7",
       "parentAsin": "B0DBV59PS4",
       "familyKey": "B0DBV59PS4",
@@ -3985,6 +5306,90 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B008BGFWR6",
+      "parentAsin": "B0F3JVK2XB",
+      "familyKey": "B0F3JVK2XB",
+      "variationCount": 8,
+      "productAgeDays": 4550,
+      "title": "festool 499048 rubin 2 p80 grit rts (80x133mm) rectangular abrasive sanding sheets, 50-pack",
+      "brand": "festool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552594",
+        "256167011",
+        "228013",
+        "328182011",
+        "552262",
+        "8106314011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106314011",
+          "name": "power finishing tool parts & accessories"
+        },
+        {
+          "id": "552582",
+          "name": "power sander parts & accessories"
+        },
+        {
+          "id": "552594",
+          "name": "sanding sheets"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 27,
+      "avg30": 27,
+      "avg90": 29.49,
+      "low365": 27,
+      "rating": 4.5,
+      "reviewCount": 99,
+      "rank": 160173,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71OV4pZJCaL.jpg",
+      "url": "https://www.amazon.com/dp/B008BGFWR6",
+      "keepa": "https://keepa.com/#!product/1-B008BGFWR6",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 65,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 36,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 7,
+        "priceTier": 0
       }
     },
     {
@@ -4067,6 +5472,649 @@
       }
     },
     {
+      "asin": "B07GBF9H78",
+      "parentAsin": "B0BVWGDQ77",
+      "familyKey": "B0BVWGDQ77",
+      "variationCount": 23,
+      "productAgeDays": 2982,
+      "title": "amana tool cnc solid carbide spiral o flute up-cut, aluminum cutting router bit, zrn coated, 51402-z, 1/4 d x 5/8 ch x 1/4 shk x 2 inch l",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686958011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686958011",
+          "name": "spiral"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 45.75,
+      "avg30": 45.75,
+      "avg90": 47.52,
+      "low365": 45.75,
+      "rating": 4.4,
+      "reviewCount": 84,
+      "rank": 81227,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51v2lIN5SYL.jpg",
+      "url": "https://www.amazon.com/dp/B07GBF9H78",
+      "keepa": "https://keepa.com/#!product/1-B07GBF9H78",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 63,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 5,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 34,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 3,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0CV7GJXH3",
+      "parentAsin": "B0H2BDL7L9",
+      "familyKey": "B0H2BDL7L9",
+      "variationCount": 10,
+      "productAgeDays": 976,
+      "title": "flex 24v brushless cordless 1/2-inch 750 in-lbs torque 2-speed hammer drill kit with (2) 2.5ah lithium batteries and 160w fast charger - fx1251-2a",
+      "brand": "flex",
+      "brandTier": "mid",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552802",
+        "228013",
+        "328182011",
+        "551236",
+        "552794"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552794",
+          "name": "drills"
+        },
+        {
+          "id": "9022393011",
+          "name": "demolition drills & hammers"
+        },
+        {
+          "id": "552802",
+          "name": "hammer drills"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 130,
+      "avg30": 135.04,
+      "avg90": 148.45,
+      "low365": 99.99,
+      "rating": 4.3,
+      "reviewCount": 83,
+      "rank": 104076,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61YS7H6IZQL.jpg",
+      "url": "https://www.amazon.com/dp/B0CV7GJXH3",
+      "keepa": "https://keepa.com/#!product/1-B0CV7GJXH3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 34,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 12,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 3,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0CP2VJXTP",
+      "parentAsin": "B0GYYQVR2D",
+      "familyKey": "B0GYYQVR2D",
+      "variationCount": 3,
+      "productAgeDays": 1023,
+      "title": "kinco, 901tw-m, women's leather work and snowboarding mitt, medium",
+      "brand": "kinco",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553608",
+        "2371058011",
+        "228013",
+        "3180231",
+        "486555011",
+        "4954450011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "486555011",
+          "name": "personal protective equipment"
+        },
+        {
+          "id": "4954450011",
+          "name": "hand & arm protection"
+        },
+        {
+          "id": "318139011",
+          "name": "lab, safety & work gloves"
+        },
+        {
+          "id": "553608",
+          "name": "safety work gloves"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 33.8,
+      "avg30": 37.81,
+      "avg90": 38.33,
+      "low365": 22.34,
+      "rating": 4.8,
+      "reviewCount": 125,
+      "rank": 48863,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51VhoqGSDWL.jpg",
+      "url": "https://www.amazon.com/dp/B0CP2VJXTP",
+      "keepa": "https://keepa.com/#!product/1-B0CP2VJXTP",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.059Z",
+      "dealScore": 49,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 34,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 6,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0039ZYQLW",
+      "parentAsin": "",
+      "familyKey": "B0039ZYQLW",
+      "variationCount": 0,
+      "productAgeDays": 5668,
+      "title": "authentic easy wood tools ci0 round carbide replacement cutter for full",
+      "brand": "easy wood tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552516",
+        "228013",
+        "328182011",
+        "552262",
+        "552512"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552512",
+          "name": "lathe parts & accessories"
+        },
+        {
+          "id": "552516",
+          "name": "turning tools"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.31,
+      "avg30": 26.72,
+      "avg90": 28.77,
+      "low365": 19.3,
+      "rating": 4.7,
+      "reviewCount": 250,
+      "rank": 310016,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61UZJKuH0LL.jpg",
+      "url": "https://www.amazon.com/dp/B0039ZYQLW",
+      "keepa": "https://keepa.com/#!product/1-B0039ZYQLW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 28,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 31,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B000S6BYCE",
+      "parentAsin": "",
+      "familyKey": "B000S6BYCE",
+      "variationCount": 0,
+      "productAgeDays": 5358,
+      "title": "proxxon 28017 2-inch carbide tipped blade for ks 115 20 teeth",
+      "brand": "proxxon",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552292",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552292",
+          "name": "circular saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 20.55,
+      "avg30": 27.34,
+      "avg90": 24.98,
+      "low365": 20.52,
+      "rating": 4.6,
+      "reviewCount": 377,
+      "rank": 607189,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Z1FgqqW-L.jpg",
+      "url": "https://www.amazon.com/dp/B000S6BYCE",
+      "keepa": "https://keepa.com/#!product/1-B000S6BYCE",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 57,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 26,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B000ZRT72A",
+      "parentAsin": "B0C8479F5Q",
+      "familyKey": "B0C8479F5Q",
+      "variationCount": 42,
+      "productAgeDays": 5578,
+      "title": "flexcut #11 palm sweep, high carbon steel, solid ash handle, 1/8 inch (fr309)",
+      "brand": "flexcut",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553148",
+        "228013",
+        "328182011",
+        "551238",
+        "553142"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553142",
+          "name": "chisels"
+        },
+        {
+          "id": "553148",
+          "name": "wood chisels"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 22.75,
+      "avg30": 22.75,
+      "avg90": 25.43,
+      "low365": 21.2,
+      "rating": 4.8,
+      "reviewCount": 141,
+      "rank": 51567,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/416JdepJutL.jpg",
+      "url": "https://www.amazon.com/dp/B000ZRT72A",
+      "keepa": "https://keepa.com/#!product/1-B000ZRT72A",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 55,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B003A04800",
+      "parentAsin": "",
+      "familyKey": "B003A04800",
+      "variationCount": 0,
+      "productAgeDays": 5668,
+      "title": "authentic easy wood tools ci1-sq square carbide replacement cutter for full and pro size roughers lathe woodturning tools ci1-sq",
+      "brand": "easy wood tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552516",
+        "228013",
+        "328182011",
+        "552262",
+        "552512"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552512",
+          "name": "lathe parts & accessories"
+        },
+        {
+          "id": "552516",
+          "name": "turning tools"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 20.23,
+      "avg30": 23.11,
+      "avg90": 23.82,
+      "low365": 17.32,
+      "rating": 4.9,
+      "reviewCount": 156,
+      "rank": 354757,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81c1QF6e6sL.jpg",
+      "url": "https://www.amazon.com/dp/B003A04800",
+      "keepa": "https://keepa.com/#!product/1-B003A04800",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0C69TPBB8",
+      "parentAsin": "",
+      "familyKey": "B0C69TPBB8",
+      "variationCount": 0,
+      "productAgeDays": 1216,
+      "title": "flex stack pack 41-piece impact driver bit set - fam10102-41",
+      "brand": "flex",
+      "brandTier": "mid",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552262",
+        "228013",
+        "328182011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24.95,
+      "avg30": 26.94,
+      "avg90": 27.67,
+      "low365": 24.95,
+      "rating": 4.6,
+      "reviewCount": 60,
+      "rank": 144085,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71dJq61VI4L.jpg",
+      "url": "https://www.amazon.com/dp/B0C69TPBB8",
+      "keepa": "https://keepa.com/#!product/1-B0C69TPBB8",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 53,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 29,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 12,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B0D46B5GM1",
       "parentAsin": "B0H62KK357",
       "familyKey": "B0H62KK357",
@@ -4143,6 +6191,1051 @@
         "reviews": 3,
         "rating": 0,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B000P4LU2I",
+      "parentAsin": "B0B5FDMSNS",
+      "familyKey": "B0B5FDMSNS",
+      "variationCount": 6,
+      "productAgeDays": 3281,
+      "title": "amana tool 45829 carbide tipped dovetail 8 deg x 11/16 d x 1.025 ch x 1/2 inch shk router bit",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "3116541",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116541",
+          "name": "edge treatment & grooving bits"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 25.88,
+      "avg30": 25.88,
+      "avg90": 26.71,
+      "low365": 23.52,
+      "rating": 4.4,
+      "reviewCount": 60,
+      "rank": 281761,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/11HQtACVqvL.jpg",
+      "url": "https://www.amazon.com/dp/B000P4LU2I",
+      "keepa": "https://keepa.com/#!product/1-B000P4LU2I",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 4,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 28,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B01AT2XQ68",
+      "parentAsin": "",
+      "familyKey": "B01AT2XQ68",
+      "variationCount": 0,
+      "productAgeDays": 3856,
+      "title": "kinco lined heavy duty premium grain & suede pigskin driver with knit wrist",
+      "brand": "kinco",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553608",
+        "228013",
+        "3180231",
+        "486555011",
+        "4954450011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "486555011",
+          "name": "personal protective equipment"
+        },
+        {
+          "id": "4954450011",
+          "name": "hand & arm protection"
+        },
+        {
+          "id": "318139011",
+          "name": "lab, safety & work gloves"
+        },
+        {
+          "id": "553608",
+          "name": "safety work gloves"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 34.61,
+      "avg30": 39.01,
+      "avg90": 38.95,
+      "low365": 29,
+      "rating": 4.5,
+      "reviewCount": 518,
+      "rank": 292478,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71d3ZDkqBsL.jpg",
+      "url": "https://www.amazon.com/dp/B01AT2XQ68",
+      "keepa": "https://keepa.com/#!product/1-B01AT2XQ68",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 51,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 28,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B007F9YVMW",
+      "parentAsin": "",
+      "familyKey": "B007F9YVMW",
+      "variationCount": 0,
+      "productAgeDays": 3555,
+      "title": "authentic easy wood tools ci5 round carbide replacement cutter for mid size hollowers lathe woodturning tools ci5",
+      "brand": "easy wood tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552516",
+        "228013",
+        "328182011",
+        "552262",
+        "552512"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552512",
+          "name": "lathe parts & accessories"
+        },
+        {
+          "id": "552516",
+          "name": "turning tools"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 21.44,
+      "avg30": 24.25,
+      "avg90": 26.07,
+      "low365": 16.14,
+      "rating": 4.8,
+      "reviewCount": 62,
+      "rank": 434646,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61jJNTUBH5L.jpg",
+      "url": "https://www.amazon.com/dp/B007F9YVMW",
+      "keepa": "https://keepa.com/#!product/1-B007F9YVMW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 58,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 26,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 27,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B073FKCDQT",
+      "parentAsin": "B08Y39CBPP",
+      "familyKey": "B08Y39CBPP",
+      "variationCount": 5,
+      "productAgeDays": 257,
+      "title": "ox pro 29 oz caulking gun - heavy duty steel frame 12:1 ratio",
+      "brand": "ox",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553140",
+        "228013",
+        "328182011",
+        "551238"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553140",
+          "name": "caulking guns"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 33.99,
+      "avg30": 36.99,
+      "avg90": 39.6,
+      "low365": 33.99,
+      "rating": 4.5,
+      "reviewCount": 113,
+      "rank": 93749,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/715wnoNltQL.jpg",
+      "url": "https://www.amazon.com/dp/B073FKCDQT",
+      "keepa": "https://keepa.com/#!product/1-B073FKCDQT",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 43,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 27,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B071R6D5LG",
+      "parentAsin": "B091VT7L68",
+      "familyKey": "B091VT7L68",
+      "variationCount": 8,
+      "productAgeDays": 2201,
+      "title": "ox pro series stbl quickskim plaster skimming blade - 70-7/8 inch",
+      "brand": "ox",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553332",
+        "228013",
+        "328182011",
+        "551238"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553332",
+          "name": "sanding blocks"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.99,
+      "avg30": 57.37,
+      "avg90": 58.61,
+      "low365": 49.99,
+      "rating": 4.6,
+      "reviewCount": 235,
+      "rank": 1186134,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61YsuR5rKsL.jpg",
+      "url": "https://www.amazon.com/dp/B071R6D5LG",
+      "keepa": "https://keepa.com/#!product/1-B071R6D5LG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 56,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 26,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 8,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B07JC4HZ31",
+      "parentAsin": "",
+      "familyKey": "B07JC4HZ31",
+      "variationCount": 0,
+      "productAgeDays": 2875,
+      "title": "authentic easy wood tools ci0-nr (4400nr) patented negative rake carbide cutter for easy full and pro-size finishers for for wood turning",
+      "brand": "easy wood tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552514",
+        "228013",
+        "328182011",
+        "552262",
+        "552512"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552512",
+          "name": "lathe parts & accessories"
+        },
+        {
+          "id": "552514",
+          "name": "accessories"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 25.73,
+      "avg30": 28.08,
+      "avg90": 28.81,
+      "low365": 21.28,
+      "rating": 4.8,
+      "reviewCount": 209,
+      "rank": 253330,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51FF-nkcB6L.jpg",
+      "url": "https://www.amazon.com/dp/B07JC4HZ31",
+      "keepa": "https://keepa.com/#!product/1-B07JC4HZ31",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 48,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 26,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B00UM5GC00",
+      "parentAsin": "",
+      "familyKey": "B00UM5GC00",
+      "variationCount": 0,
+      "productAgeDays": 4173,
+      "title": "3423vpc 93.5\" by 3/4\" timber wolf bandsaw silicone steel low tension resaw blade",
+      "brand": "timberwolf",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552288",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552288",
+          "name": "band saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 25.88,
+      "avg30": 25.88,
+      "avg90": 29.06,
+      "low365": 23.99,
+      "rating": 4.6,
+      "reviewCount": 333,
+      "rank": 104158,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61ioipCzOUL.jpg",
+      "url": "https://www.amazon.com/dp/B00UM5GC00",
+      "keepa": "https://keepa.com/#!product/1-B00UM5GC00",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 47,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 26,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B00JBJCUU4",
+      "parentAsin": "",
+      "familyKey": "B00JBJCUU4",
+      "variationCount": 0,
+      "productAgeDays": 2579,
+      "title": "ultra finish-plywood & melamine 210x0.110”x30mm t=64 atb",
+      "brand": "cmt orange tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552292",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552292",
+          "name": "circular saw blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 44.1,
+      "avg30": 47.71,
+      "avg90": 50.87,
+      "low365": 44.1,
+      "rating": 4.8,
+      "reviewCount": 82,
+      "rank": 2030547,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61uePbPeytL.jpg",
+      "url": "https://www.amazon.com/dp/B00JBJCUU4",
+      "keepa": "https://keepa.com/#!product/1-B00JBJCUU4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 51,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 19,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 25,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 2
+      }
+    },
+    {
+      "asin": "B07JVJ4XLH",
+      "parentAsin": "",
+      "familyKey": "B07JVJ4XLH",
+      "variationCount": 0,
+      "productAgeDays": 2875,
+      "title": "authentic easy wood tools ci1-r2-nr (1600nr) patented negative rake carbide cutter w 2\" radius for woodturning tools",
+      "brand": "easy wood tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552516",
+        "228013",
+        "328182011",
+        "552262",
+        "552512"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552512",
+          "name": "lathe parts & accessories"
+        },
+        {
+          "id": "552516",
+          "name": "turning tools"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.75,
+      "avg30": 25.9,
+      "avg90": 26.79,
+      "low365": 14.99,
+      "rating": 4.7,
+      "reviewCount": 149,
+      "rank": 292051,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51pHHUXYjeL.jpg",
+      "url": "https://www.amazon.com/dp/B07JVJ4XLH",
+      "keepa": "https://keepa.com/#!product/1-B07JVJ4XLH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 48,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 25,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B078NF46Y2",
+      "parentAsin": "B09RQ3FMHY",
+      "familyKey": "B09RQ3FMHY",
+      "variationCount": 1,
+      "productAgeDays": 3211,
+      "title": "flexcut wood carving knife | single bevel sloyd hook knife | wood carving tools for spoons & hollowing bowls | 1095 high carbon steel blades | ergonomic cherry hardwood handle | kn52 | made in the u.s",
+      "brand": "flexcut",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553240",
+        "228013",
+        "328182011",
+        "551238",
+        "23642827011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "23642827011",
+          "name": "knives, parts & accessories"
+        },
+        {
+          "id": "553222",
+          "name": "knives"
+        },
+        {
+          "id": "553240",
+          "name": "utility knives"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 62,
+      "avg30": 62.89,
+      "avg90": 69.43,
+      "low365": 59.94,
+      "rating": 4.6,
+      "reviewCount": 84,
+      "rank": 491649,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51S7NHRGGKL.jpg",
+      "url": "https://www.amazon.com/dp/B078NF46Y2",
+      "keepa": "https://keepa.com/#!product/1-B078NF46Y2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 47,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 25,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 8,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B07FY7HHQH",
+      "parentAsin": "",
+      "familyKey": "B07FY7HHQH",
+      "variationCount": 0,
+      "productAgeDays": 2899,
+      "title": "authentic easy wood tools ci5 negative rake (6604nr) replacement carbide cutter for woodturnig tools",
+      "brand": "easy wood tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552516",
+        "228013",
+        "328182011",
+        "552262",
+        "552512"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552512",
+          "name": "lathe parts & accessories"
+        },
+        {
+          "id": "552516",
+          "name": "turning tools"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.75,
+      "avg30": 26.29,
+      "avg90": 27.77,
+      "low365": 20.29,
+      "rating": 4.8,
+      "reviewCount": 60,
+      "rank": 596719,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41Lt3J9CO0L.jpg",
+      "url": "https://www.amazon.com/dp/B07FY7HHQH",
+      "keepa": "https://keepa.com/#!product/1-B07FY7HHQH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 53,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 23,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B00856U08S",
+      "parentAsin": "B08V6RB86S",
+      "familyKey": "B08V6RB86S",
+      "variationCount": 10,
+      "productAgeDays": 3458,
+      "title": "ox 10 in turbo diamond blade for concrete, granite and stone",
+      "brand": "ox",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552304",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "552286",
+          "name": "blades"
+        },
+        {
+          "id": "552304",
+          "name": "diamond blades"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 89.99,
+      "avg30": 99.88,
+      "avg90": 107.53,
+      "low365": 89.99,
+      "rating": 4.2,
+      "reviewCount": 80,
+      "rank": 286033,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71uaattEGvL.jpg",
+      "url": "https://www.amazon.com/dp/B00856U08S",
+      "keepa": "https://keepa.com/#!product/1-B00856U08S",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 56,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 24,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 21,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 0,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B000ML7HY4",
+      "parentAsin": "",
+      "familyKey": "B000ML7HY4",
+      "variationCount": 0,
+      "productAgeDays": 5674,
+      "title": "tajima rock hard aluminist utility knife, 7-point snap blade cutter, red",
+      "brand": "tajima",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553240",
+        "228013",
+        "328182011",
+        "551238",
+        "23642827011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "23642827011",
+          "name": "knives, parts & accessories"
+        },
+        {
+          "id": "553222",
+          "name": "knives"
+        },
+        {
+          "id": "553240",
+          "name": "utility knives"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 31.15,
+      "avg30": 31.33,
+      "avg90": 34.67,
+      "low365": 31.15,
+      "rating": 4.5,
+      "reviewCount": 50,
+      "rank": 781617,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Em4KMJuqL.jpg",
+      "url": "https://www.amazon.com/dp/B000ML7HY4",
+      "keepa": "https://keepa.com/#!product/1-B000ML7HY4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 45,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 20,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 7,
+        "priceTier": 0
       }
     },
     {
@@ -4305,6 +7398,172 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B07KQHC6CX",
+      "parentAsin": "",
+      "familyKey": "B07KQHC6CX",
+      "variationCount": 0,
+      "productAgeDays": 2854,
+      "title": "whiteside udft2100 spiral up/down cut 2+2 compression flush trim router bit: 1/4 inch cutting diameter, 1/4 inch shank, 1 inch cutting length, double bearing guide",
+      "brand": "whiteside router bits",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686958011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686958011",
+          "name": "spiral"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 71.02,
+      "avg30": 62.91,
+      "avg90": 63.87,
+      "low365": 56.31,
+      "rating": 4.5,
+      "reviewCount": 119,
+      "rank": 162564,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Gl8mV6x3L.jpg",
+      "url": "https://www.amazon.com/dp/B07KQHC6CX",
+      "keepa": "https://keepa.com/#!product/1-B07KQHC6CX",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.060Z",
+      "dealScore": 30,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 17,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 7,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B002RCFECI",
+      "parentAsin": "",
+      "familyKey": "B002RCFECI",
+      "variationCount": 0,
+      "productAgeDays": 5668,
+      "title": "1/16\" robert sorby #865h micro parting tool",
+      "brand": "robert sorby",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552516",
+        "228013",
+        "328182011",
+        "552262",
+        "552512"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552512",
+          "name": "lathe parts & accessories"
+        },
+        {
+          "id": "552516",
+          "name": "turning tools"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 46.95,
+      "avg30": 46.95,
+      "avg90": 53.26,
+      "low365": 46.95,
+      "rating": 4.2,
+      "reviewCount": 68,
+      "rank": 204877,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61hgsI7AJPL.jpg",
+      "url": "https://www.amazon.com/dp/B002RCFECI",
+      "keepa": "https://keepa.com/#!product/1-B002RCFECI",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-16T01:28:38.061Z",
+      "dealScore": 46,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 15,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 0,
+        "priceTier": 2
       }
     },
     {

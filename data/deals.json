@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-25T13:23:02.376Z",
+  "generatedAt": "2026-10-25T13:23:43.966Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "dudes_power",
-  "dealCount": 155,
+  "lastEnrichmentStream": "woodworking_test",
+  "dealCount": 156,
   "deals": [
     {
       "asin": "B00KQU1ENG",
@@ -9521,7 +9521,13 @@
         "reviews": 8,
         "rating": 3,
         "priceTier": 2
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0DPM3WTHT",
+        "B0F2837XPL"
+      ]
     },
     {
       "asin": "B008BGFWR6",
@@ -9767,6 +9773,81 @@
         "reviews": 6,
         "rating": 10,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B07X37C3K4",
+      "parentAsin": "",
+      "familyKey": "B07X37C3K4",
+      "variationCount": 0,
+      "productAgeDays": 2603,
+      "title": "my first power drill set - real cordless drill for boys and girls - lightweight, led light, child size kit, carrying case, includes bits, charger, 5 year warranty",
+      "brand": "diy jr",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "8906593011",
+        "166342011",
+        "16310091",
+        "383598011",
+        "256264011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "16310091",
+          "name": "industrial & scientific"
+        },
+        {
+          "id": "383598011",
+          "name": "cutting tools"
+        },
+        {
+          "id": "256264011",
+          "name": "industrial drill bits"
+        },
+        {
+          "id": "8906593011",
+          "name": "wood drill bit sets"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg30": 43.57,
+      "avg90": 43.57,
+      "low365": 35.99,
+      "rating": 4.7,
+      "reviewCount": 1266,
+      "rank": 150139,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71ZDqiVX0JL.jpg",
+      "url": "https://www.amazon.com/dp/B07X37C3K4",
+      "keepa": "https://keepa.com/#!product/1-B07X37C3K4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-25T13:23:43.965Z",
+      "dealScore": 53,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 13,
+        "rating": 9,
+        "priceTier": 2
       }
     },
     {

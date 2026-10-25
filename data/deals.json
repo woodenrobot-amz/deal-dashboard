@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-25T13:22:27.816Z",
+  "generatedAt": "2026-10-25T13:23:02.376Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 153,
+  "lastEnrichmentStream": "dudes_power",
+  "dealCount": 155,
   "deals": [
     {
       "asin": "B00KQU1ENG",
@@ -1076,6 +1076,75 @@
         "reviews": 0,
         "rating": 10,
         "priceTier": 10
+      }
+    },
+    {
+      "asin": "B0FZ89GS5F",
+      "parentAsin": "B0HK3TKFLF",
+      "familyKey": "B0HK3TKFLF",
+      "variationCount": 4,
+      "productAgeDays": 347,
+      "title": "bluetti solar generator elite 10 & 60w 128wh portable power station lifepo4",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 219,
+      "avg30": 258.78,
+      "avg90": 253.22,
+      "low365": 218.99,
+      "rating": 4.3,
+      "reviewCount": 1289,
+      "rank": 5593,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71ovUGYwd4L.jpg",
+      "url": "https://www.amazon.com/dp/B0FZ89GS5F",
+      "keepa": "https://keepa.com/#!product/1-B0FZ89GS5F",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-25T13:23:02.376Z",
+      "dealScore": 71,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 20,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 70,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 13,
+        "rating": 3,
+        "priceTier": 8
       }
     },
     {
@@ -2316,6 +2385,75 @@
       }
     },
     {
+      "asin": "B0G8XZ25BY",
+      "parentAsin": "B0HKFK5DGV",
+      "familyKey": "B0HKFK5DGV",
+      "variationCount": 7,
+      "productAgeDays": 304,
+      "title": "bluetti solar generator elite 400 with 350w solar panel included, 3840wh",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1699,
+      "avg30": 1894.42,
+      "avg90": 1957.8,
+      "low365": 1698.99,
+      "rating": 4.7,
+      "reviewCount": 100,
+      "rank": 37960,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/917rD2Ew-1L.jpg",
+      "url": "https://www.amazon.com/dp/B0G8XZ25BY",
+      "keepa": "https://keepa.com/#!product/1-B0G8XZ25BY",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-25T13:23:02.376Z",
+      "dealScore": 62,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 19,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 63,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 6,
+        "rating": 9,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B002XFYBYQ",
       "parentAsin": "B09P8LGZQR",
       "familyKey": "B09P8LGZQR",
@@ -2608,7 +2746,13 @@
         "reviews": 0,
         "rating": 3,
         "priceTier": 10
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0GGLB9CG5",
+        "B0GH62X8RD"
+      ]
     },
     {
       "asin": "B0090IHBPU",

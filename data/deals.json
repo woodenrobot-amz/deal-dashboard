@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-25T22:23:09.605Z",
+  "generatedAt": "2026-10-25T22:23:46.297Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "dudes_power",
-  "dealCount": 159,
+  "lastEnrichmentStream": "woodworking_test",
+  "dealCount": 161,
   "deals": [
     {
       "asin": "B00KQU1ENG",
@@ -4626,6 +4626,80 @@
       }
     },
     {
+      "asin": "B000T3JWZ2",
+      "parentAsin": "B0185HHIHW",
+      "familyKey": "B0185HHIHW",
+      "variationCount": 3,
+      "productAgeDays": 5694,
+      "title": "weston butcher meat and bone saw with 25 inch stainless steel serrated blade with quick release handle (47-2501)",
+      "brand": "weston",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553220",
+        "228013",
+        "328182011",
+        "551238"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553220",
+          "name": "handsaws"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 44.99,
+      "avg30": 49.58,
+      "avg90": 56.66,
+      "low365": 44.99,
+      "rating": 4.4,
+      "reviewCount": 2352,
+      "rank": 11830,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71BH6nc6+vL.jpg",
+      "url": "https://www.amazon.com/dp/B000T3JWZ2",
+      "keepa": "https://keepa.com/#!product/1-B000T3JWZ2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-25T22:23:46.295Z",
+      "dealScore": 70,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 30,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B07HFQ8DKZ",
       "parentAsin": "B0F1G9MH9Q",
       "familyKey": "B0F1G9MH9Q",
@@ -6857,7 +6931,13 @@
         "reviews": 11,
         "rating": 5,
         "priceTier": 6
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FCD13KKQ",
+        "B0FCFRD275"
+      ]
     },
     {
       "asin": "B0007SXHA0",
@@ -7352,6 +7432,80 @@
         "reviews": 8,
         "rating": 9,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0G4W8BK5M",
+      "parentAsin": "B0HJZPYZ9L",
+      "familyKey": "B0HJZPYZ9L",
+      "variationCount": 5,
+      "productAgeDays": 326,
+      "title": "vevor adjustable workbench, 5000 lbs capacity, 96 x 24 inch oak wood top workstation with 4 ac outlets & 2 usb ports, heavy-duty hardwood worktable for garage, workshop, home, office, commercial",
+      "brand": "vevor",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 279.9,
+      "avg30": 325.91,
+      "avg90": 330.43,
+      "low365": 259.9,
+      "rating": 4.3,
+      "reviewCount": 412,
+      "rank": 46299,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61pAeb1xXmL.jpg",
+      "url": "https://www.amazon.com/dp/B0G4W8BK5M",
+      "keepa": "https://keepa.com/#!product/1-B0G4W8BK5M",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-10-25T22:23:46.296Z",
+      "dealScore": 43,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 41,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 8,
+        "rating": 3,
+        "priceTier": 8
       }
     },
     {
@@ -9067,7 +9221,13 @@
         "reviews": 6,
         "rating": 7,
         "priceTier": 2
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0GMGX996M",
+        "B0H6X1Q4QH"
+      ]
     },
     {
       "asin": "B0C8BQ57KC",
@@ -9295,7 +9455,13 @@
         "reviews": 6,
         "rating": 3,
         "priceTier": 4
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B0FDGQBZ8C",
+        "B0GQY3FBJ2"
+      ]
     },
     {
       "asin": "B008MVYLPE",

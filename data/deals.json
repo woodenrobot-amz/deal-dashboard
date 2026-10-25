@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-25T13:23:43.966Z",
+  "generatedAt": "2026-10-25T22:21:46.133Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "woodworking_test",
-  "dealCount": 156,
+  "lastEnrichmentStream": "power_tools_main",
+  "dealCount": 158,
   "deals": [
     {
       "asin": "B00KQU1ENG",
@@ -6701,6 +6701,85 @@
       }
     },
     {
+      "asin": "B00FX96MXW",
+      "parentAsin": "",
+      "familyKey": "B00FX96MXW",
+      "variationCount": 0,
+      "productAgeDays": 3676,
+      "title": "dewalt dwht16063 short blade wood chisel 4piece set",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "553148",
+        "228013",
+        "328182011",
+        "551238",
+        "553142"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553142",
+          "name": "chisels"
+        },
+        {
+          "id": "553148",
+          "name": "wood chisels"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 29.99,
+      "avg30": 33.85,
+      "avg90": 31.28,
+      "low365": 10,
+      "rating": 4.7,
+      "reviewCount": 996,
+      "rank": 99059,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61TcGkCvyOL.jpg",
+      "url": "https://www.amazon.com/dp/B00FX96MXW",
+      "keepa": "https://keepa.com/#!product/1-B00FX96MXW",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-25T22:21:46.133Z",
+      "dealScore": 62,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 6,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B0FCD13KKQ",
       "parentAsin": "B0H7GZ96SB",
       "familyKey": "B0H7GZ96SB",
@@ -6772,6 +6851,89 @@
         "reviews": 11,
         "rating": 5,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0007SXHA0",
+      "parentAsin": "B08457666P",
+      "familyKey": "B08457666P",
+      "variationCount": 7,
+      "productAgeDays": 5678,
+      "title": "makita 742304-1 1-1/8\" x 21\" abrasive belt, 100 grit, 10/pk",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552586",
+        "228013",
+        "328182011",
+        "552262",
+        "8106314011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106314011",
+          "name": "power finishing tool parts & accessories"
+        },
+        {
+          "id": "552582",
+          "name": "power sander parts & accessories"
+        },
+        {
+          "id": "552586",
+          "name": "belts"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 25.38,
+      "avg30": 29.81,
+      "avg90": 28.91,
+      "low365": 25.38,
+      "rating": 4.7,
+      "reviewCount": 15,
+      "rank": 91559,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81UzArj6R+L.jpg",
+      "url": "https://www.amazon.com/dp/B0007SXHA0",
+      "keepa": "https://keepa.com/#!product/1-B0007SXHA0",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-25T22:21:46.132Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 43,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 0,
+        "rating": 9,
+        "priceTier": 0
       }
     },
     {

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-28T01:01:56.580Z",
+  "generatedAt": "2026-10-28T01:02:31.532Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 159,
+  "lastEnrichmentStream": "dudes_power",
+  "dealCount": 161,
   "deals": [
     {
       "asin": "B00540JS7C",
@@ -693,6 +693,80 @@
         "demand": 16,
         "reviews": 15,
         "rating": 10,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0BNN9M6ZP",
+      "parentAsin": "B0HK3RZ71X",
+      "familyKey": "B0HK3RZ71X",
+      "variationCount": 6,
+      "productAgeDays": 1427,
+      "title": "bluetti 60w portable solar panel 23.4% high efficiency ip65 waterproof",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "2236628011",
+        "2972638011",
+        "552808",
+        "3236381"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "3236381",
+          "name": "solar & wind power"
+        },
+        {
+          "id": "2236628011",
+          "name": "solar panels"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 100.94,
+      "avg30": 139.39,
+      "avg90": 139.54,
+      "low365": 100.94,
+      "rating": 4.4,
+      "reviewCount": 1217,
+      "rank": 11580,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/812Pwk43ZtL.jpg",
+      "url": "https://www.amazon.com/dp/B0BNN9M6ZP",
+      "keepa": "https://keepa.com/#!product/1-B0BNN9M6ZP",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-28T01:02:31.531Z",
+      "dealScore": 101,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 41,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 76,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 13,
+        "rating": 5,
         "priceTier": 6
       }
     },
@@ -5228,6 +5302,75 @@
         "reviews": 15,
         "rating": 5,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0H36PBDXL",
+      "parentAsin": "B0H9XL9C78",
+      "familyKey": "B0H9XL9C78",
+      "variationCount": 7,
+      "productAgeDays": 132,
+      "title": "jackery homepower 2000 plus v2 and 2x200w solar panels,2048wh,2400w output",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 1479,
+      "avg30": 1706.6,
+      "avg90": 1734.83,
+      "low365": 1479,
+      "rating": 3.7,
+      "reviewCount": 11,
+      "rank": 18310,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71GfgXXs5oL.jpg",
+      "url": "https://www.amazon.com/dp/B0H36PBDXL",
+      "keepa": "https://keepa.com/#!product/1-B0H36PBDXL",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-10-28T01:02:31.531Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 18,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 0,
+        "rating": 0,
+        "priceTier": 10
       }
     },
     {

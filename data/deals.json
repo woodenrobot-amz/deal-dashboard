@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-02T12:22:38.497Z",
+  "generatedAt": "2026-11-02T12:23:47.234Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 124,
+  "lastEnrichmentStream": "dudes_power",
+  "dealCount": 126,
   "deals": [
     {
       "asin": "B00KQU1ENG",
@@ -992,6 +992,75 @@
       }
     },
     {
+      "asin": "B0FQJ29HVZ",
+      "parentAsin": "B0H98K33X9",
+      "familyKey": "B0H98K33X9",
+      "variationCount": 17,
+      "productAgeDays": 332,
+      "title": "jackery solar generator 1000 v2 and 2x100w light panels,1070wh,1500w ac",
+      "brand": "jackery",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 749,
+      "avg30": 851.63,
+      "avg90": 884.55,
+      "low365": 648.99,
+      "rating": 4.9,
+      "reviewCount": 24,
+      "rank": 34,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61X66DgUSiL.jpg",
+      "url": "https://www.amazon.com/dp/B0FQJ29HVZ",
+      "keepa": "https://keepa.com/#!product/1-B0FQJ29HVZ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-02T12:23:47.232Z",
+      "dealScore": 99,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 22,
+        "rank": 30,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 74,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 20,
+        "reviews": 0,
+        "rating": 10,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B0GQJR8RQB",
       "parentAsin": "",
       "familyKey": "B0GQJR8RQB",
@@ -1378,6 +1447,75 @@
         "reviews": 15,
         "rating": 8,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0DP659FYM",
+      "parentAsin": "B0HK4FZFW6",
+      "familyKey": "B0HK4FZFW6",
+      "variationCount": 8,
+      "productAgeDays": 704,
+      "title": "bluetti ac180 solar generator with charger 1 1152wh portable power station",
+      "brand": "bluetti",
+      "brandTier": "top",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "348967011",
+        "2972638011",
+        "552808"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "348967011",
+          "name": "generators"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 899,
+      "avg30": 749.36,
+      "avg90": 735.32,
+      "low365": 656.1,
+      "rating": 4.5,
+      "reviewCount": 2831,
+      "rank": 1021,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71Cy8kYj24L.jpg",
+      "url": "https://www.amazon.com/dp/B0DP659FYM",
+      "keepa": "https://keepa.com/#!product/1-B0DP659FYM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-02T12:23:47.233Z",
+      "dealScore": 88,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 0,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 3,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 70,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 10
       }
     },
     {

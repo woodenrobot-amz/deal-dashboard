@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-03T03:17:41.797Z",
+  "generatedAt": "2026-11-03T12:08:16.232Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "woodworking_test",
-  "dealCount": 186,
+  "lastEnrichmentStream": "power_tools_main",
+  "dealCount": 195,
   "deals": [
     {
       "asin": "B0GDJQ8CN2",
@@ -1609,6 +1609,85 @@
       }
     },
     {
+      "asin": "B0C46RY8P7",
+      "parentAsin": "",
+      "familyKey": "B0C46RY8P7",
+      "variationCount": 0,
+      "productAgeDays": 1278,
+      "title": "milwaukee 48-22-2710 10 piece screwdriver set",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "553344",
+        "228013",
+        "328182011",
+        "551238",
+        "15569906011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "15569906011",
+          "name": "screwdrivers & nut drivers"
+        },
+        {
+          "id": "553344",
+          "name": "screwdriver sets"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 32.29,
+      "avg30": 40.93,
+      "avg90": 48.32,
+      "low365": 26,
+      "rating": 4.8,
+      "reviewCount": 363,
+      "rank": 15415,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/714k6RQ98XL.jpg",
+      "url": "https://www.amazon.com/dp/B0C46RY8P7",
+      "keepa": "https://keepa.com/#!product/1-B0C46RY8P7",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-03T12:08:16.231Z",
+      "dealScore": 101,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 49,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 72,
+      "normalizedScoreBreakdown": {
+        "discount": 22,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B006GKFWSS",
       "parentAsin": "B07HSYGVFP",
       "familyKey": "B07HSYGVFP",
@@ -1680,6 +1759,85 @@
         "reviews": 13,
         "rating": 7,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0000223IY",
+      "parentAsin": "B01N8ZI647",
+      "familyKey": "B01N8ZI647",
+      "variationCount": 1,
+      "productAgeDays": 5702,
+      "title": "makita 9403 4\" x 24\" belt sander, teal, corded electric",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552878",
+        "228013",
+        "328182011",
+        "551236",
+        "552876"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552876",
+          "name": "sanders"
+        },
+        {
+          "id": "552878",
+          "name": "belt sanders"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 339,
+      "avg30": 406.7,
+      "avg90": 402.23,
+      "low365": 335,
+      "rating": 4.7,
+      "reviewCount": 2914,
+      "rank": 53888,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/612ESUu8G7L.jpg",
+      "url": "https://www.amazon.com/dp/B0000223IY",
+      "keepa": "https://keepa.com/#!product/1-B0000223IY",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-03T12:08:16.231Z",
+      "dealScore": 84,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 23,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 72,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 10
       }
     },
     {
@@ -2135,6 +2293,89 @@
         "reviews": 15,
         "rating": 5,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B00NOVNDW4",
+      "parentAsin": "B0B9RL7S27",
+      "familyKey": "B0B9RL7S27",
+      "variationCount": 1,
+      "productAgeDays": 4423,
+      "title": "makita xrh04z 18v lxt® lithium-ion cordless 7/8\" rotary hammer, accepts sds-plus bits, tool only",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552858",
+        "228013",
+        "328182011",
+        "551236",
+        "552794"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552794",
+          "name": "drills"
+        },
+        {
+          "id": "9022393011",
+          "name": "demolition drills & hammers"
+        },
+        {
+          "id": "552858",
+          "name": "rotary hammers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 143,
+      "avg30": 182.09,
+      "avg90": 184.39,
+      "low365": 129.92,
+      "rating": 4.7,
+      "reviewCount": 902,
+      "rank": 59407,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51GWS2QozmL.jpg",
+      "url": "https://www.amazon.com/dp/B00NOVNDW4",
+      "keepa": "https://keepa.com/#!product/1-B00NOVNDW4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-03T12:08:16.231Z",
+      "dealScore": 89,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 33,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 68,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 9,
+        "priceTier": 6
       }
     },
     {
@@ -3685,6 +3926,85 @@
         "reviews": 0,
         "rating": 10,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B00SMFXMJQ",
+      "parentAsin": "B0D6H1PDY7",
+      "familyKey": "B0D6H1PDY7",
+      "variationCount": 3,
+      "productAgeDays": 4062,
+      "title": "dewalt dwht51064 22 oz. framing hammer",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "553194",
+        "228013",
+        "328182011",
+        "551238",
+        "553190"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553190",
+          "name": "hammers"
+        },
+        {
+          "id": "553194",
+          "name": "claw hammers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 43.53,
+      "avg30": 55.84,
+      "avg90": 53.98,
+      "low365": 32.99,
+      "rating": 4.7,
+      "reviewCount": 1695,
+      "rank": 96907,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/415wjGNrYvL.jpg",
+      "url": "https://www.amazon.com/dp/B00SMFXMJQ",
+      "keepa": "https://keepa.com/#!product/1-B00SMFXMJQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-03T12:08:16.232Z",
+      "dealScore": 90,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 29,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 62,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 13,
+        "rating": 9,
+        "priceTier": 2
       }
     },
     {
@@ -5415,6 +5735,81 @@
       }
     },
     {
+      "asin": "B0C546W6VQ",
+      "parentAsin": "",
+      "familyKey": "B0C546W6VQ",
+      "variationCount": 0,
+      "productAgeDays": 1235,
+      "title": "dewalt led flashlight, usb-c rechargeable, magnetic jobsite light (dcl183)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "2445457011",
+        "1063498",
+        "228013",
+        "3180231",
+        "3180261"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "3180261",
+          "name": "flashlights"
+        },
+        {
+          "id": "2445457011",
+          "name": "handheld flashlights"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 69,
+      "avg30": 79.58,
+      "avg90": 78.63,
+      "low365": 53.88,
+      "rating": 4.7,
+      "reviewCount": 439,
+      "rank": 71056,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41Lx5NDJIGL.jpg",
+      "url": "https://www.amazon.com/dp/B0C546W6VQ",
+      "keepa": "https://keepa.com/#!product/1-B0C546W6VQ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-03T12:08:16.231Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 55,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B0FJ21NG3Z",
       "parentAsin": "B0HK4GXJG6",
       "familyKey": "B0HK4GXJG6",
@@ -6407,6 +6802,81 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 10
+      }
+    },
+    {
+      "asin": "B07KRM55L2",
+      "parentAsin": "B07KRNVJ2V",
+      "familyKey": "B07KRNVJ2V",
+      "variationCount": 2,
+      "productAgeDays": 2879,
+      "title": "dewalt stainless steel big back taping knife 4-pack + free bonus 6\" soft grip putty knife | 8/10/12-inches | soft grip handles | dxtt-3-172",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "553234",
+        "553238",
+        "228013",
+        "228899",
+        "17881623011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "228899",
+          "name": "paint, wall treatments & supplies"
+        },
+        {
+          "id": "17881623011",
+          "name": "painting supplies & tools"
+        },
+        {
+          "id": "553234",
+          "name": "putty knives"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 74.97,
+      "avg30": 84.28,
+      "avg90": 84.74,
+      "low365": 74.97,
+      "rating": 4.5,
+      "reviewCount": 124,
+      "rank": 97429,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/718UcB0wV6L.jpg",
+      "url": "https://www.amazon.com/dp/B07KRM55L2",
+      "keepa": "https://keepa.com/#!product/1-B07KRM55L2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-03T12:08:16.232Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 51,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 7,
+        "priceTier": 4
       }
     },
     {
@@ -7780,6 +8250,80 @@
       ]
     },
     {
+      "asin": "B0D1TP1Q4C",
+      "parentAsin": "B0FNCMPVZ5",
+      "familyKey": "B0FNCMPVZ5",
+      "variationCount": 3,
+      "productAgeDays": 931,
+      "title": "dewalt stealthsonic wet dry shop vac 6 gallon 5 hp, dxv06p-qt",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "553022",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "553022",
+          "name": "wet-dry shop vacuums"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 169.99,
+      "avg30": 169.99,
+      "avg90": 165.37,
+      "low365": 135.99,
+      "rating": 4.8,
+      "reviewCount": 291,
+      "rank": 57462,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61RD+oCTi+L.jpg",
+      "url": "https://www.amazon.com/dp/B0D1TP1Q4C",
+      "keepa": "https://keepa.com/#!product/1-B0D1TP1Q4C",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-03T12:08:16.231Z",
+      "dealScore": 52,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 0,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 10,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B07YGYZ5QH",
       "parentAsin": "",
       "familyKey": "B07YGYZ5QH",
@@ -8258,6 +8802,89 @@
         "reviews": 3,
         "rating": 9,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B07L3XBQ2H",
+      "parentAsin": "B07PPD9WHX",
+      "familyKey": "B07PPD9WHX",
+      "variationCount": 5,
+      "productAgeDays": 2845,
+      "title": "dewalt premium leather welding gloves, fire/heat resistant, gauntlet-style cuff, elastic wrist, large",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "4954448011",
+        "228013",
+        "3180231",
+        "486555011",
+        "4954450011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "486555011",
+          "name": "personal protective equipment"
+        },
+        {
+          "id": "4954450011",
+          "name": "hand & arm protection"
+        },
+        {
+          "id": "318139011",
+          "name": "lab, safety & work gloves"
+        },
+        {
+          "id": "4954448011",
+          "name": "welding gloves"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 31.98,
+      "avg30": 32.54,
+      "avg90": 35.16,
+      "low365": 31.28,
+      "rating": 4.4,
+      "reviewCount": 843,
+      "rank": 93969,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81C9GYeMKwL.jpg",
+      "url": "https://www.amazon.com/dp/B07L3XBQ2H",
+      "keepa": "https://keepa.com/#!product/1-B07L3XBQ2H",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-03T12:08:16.232Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 5,
+        "priceTier": 0
       }
     },
     {
@@ -10291,6 +10918,85 @@
         "reviews": 8,
         "rating": 8,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0DJB4QD9N",
+      "parentAsin": "",
+      "familyKey": "B0DJB4QD9N",
+      "variationCount": 0,
+      "productAgeDays": 763,
+      "title": "milwaukee electric - usb bluetoothreg jobsite ear buds",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "393311011",
+        "228013",
+        "3180231",
+        "486555011",
+        "553558"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "486555011",
+          "name": "personal protective equipment"
+        },
+        {
+          "id": "553558",
+          "name": "hearing protection"
+        },
+        {
+          "id": "393311011",
+          "name": "safety earmuffs"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 135,
+      "avg30": 139.09,
+      "avg90": 141.88,
+      "low365": 125,
+      "rating": 3.9,
+      "reviewCount": 273,
+      "rank": 72845,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41hFuVZHcoL.jpg",
+      "url": "https://www.amazon.com/dp/B0DJB4QD9N",
+      "keepa": "https://keepa.com/#!product/1-B0DJB4QD9N",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-03T12:08:16.231Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 19,
+        "discount": 7,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 38,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 0,
+        "priceTier": 6
       }
     },
     {

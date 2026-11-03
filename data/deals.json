@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-03T03:15:24.632Z",
+  "generatedAt": "2026-11-03T03:16:08.876Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 174,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 179,
   "deals": [
     {
       "asin": "B0GDJQ8CN2",
@@ -8265,6 +8265,89 @@
       }
     },
     {
+      "asin": "B0112TNWN4",
+      "parentAsin": "B09YC7GDLX",
+      "familyKey": "B09YC7GDLX",
+      "variationCount": 39,
+      "productAgeDays": 3296,
+      "title": "amana tool - 49505 carbide tipped corner round 1/4 radius x 3/4 dia x 1/2 x 1/4 shank",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "3116541",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116541",
+          "name": "edge treatment & grooving bits"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 49.92,
+      "avg30": 51.63,
+      "avg90": 52.07,
+      "low365": 45.38,
+      "rating": 4.8,
+      "reviewCount": 281,
+      "rank": 78281,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/31Ui9psGQCL.jpg",
+      "url": "https://www.amazon.com/dp/B0112TNWN4",
+      "keepa": "https://keepa.com/#!product/1-B0112TNWN4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-03T03:16:08.876Z",
+      "dealScore": 66,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 6,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 44,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 10,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B01D5T5PW0",
       "parentAsin": "B0DCZTC2CZ",
       "familyKey": "B0DCZTC2CZ",
@@ -9206,6 +9289,93 @@
         "reviews": 6,
         "rating": 7,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B01MRC6CJM",
+      "parentAsin": "B0B2KJ76F8",
+      "familyKey": "B0B2KJ76F8",
+      "variationCount": 33,
+      "productAgeDays": 3062,
+      "title": "amana tool 45181 carbide tipped straight plunge high production 3/4 d x 5/8 ch x 1/2 inch shk router bit",
+      "brand": "amana tool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "686957011",
+        "228013",
+        "328182011",
+        "552262",
+        "552566"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552566",
+          "name": "router parts & accessories"
+        },
+        {
+          "id": "3116511",
+          "name": "router bits"
+        },
+        {
+          "id": "3116571",
+          "name": "straight, spiral & trim bits"
+        },
+        {
+          "id": "686957011",
+          "name": "straight"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 31.69,
+      "avg30": 31.69,
+      "avg90": 32.11,
+      "low365": 28.8,
+      "rating": 4.7,
+      "reviewCount": 432,
+      "rank": 92534,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/3150QKACFEL.jpg",
+      "url": "https://www.amazon.com/dp/B01MRC6CJM",
+      "keepa": "https://keepa.com/#!product/1-B01MRC6CJM",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-03T03:16:08.876Z",
+      "dealScore": 60,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 1,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 41,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 0
       }
     },
     {
@@ -10613,6 +10783,159 @@
         "demand": 0,
         "reviews": 3,
         "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B008ACYRFO",
+      "parentAsin": "B08T7PNX9L",
+      "familyKey": "B08T7PNX9L",
+      "variationCount": 7,
+      "productAgeDays": 3699,
+      "title": "ox 4 foot level - aluminum 48 inch level tool, rubber grip, non-slip handle",
+      "brand": "ox",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553256",
+        "228013",
+        "553244"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "553256",
+          "name": "levels"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 93.48,
+      "avg30": 109.84,
+      "avg90": 109.94,
+      "low365": 54,
+      "rating": 4.5,
+      "reviewCount": 1418,
+      "rank": 252106,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51cQDuhvCvL.jpg",
+      "url": "https://www.amazon.com/dp/B008ACYRFO",
+      "keepa": "https://keepa.com/#!product/1-B008ACYRFO",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-03T03:16:08.875Z",
+      "dealScore": 62,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 34,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 13,
+        "rating": 7,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B0BFZ2JW2W",
+      "parentAsin": "",
+      "familyKey": "B0BFZ2JW2W",
+      "variationCount": 0,
+      "productAgeDays": 1451,
+      "title": "yorkshire grit microfine abrasive sanding paste for wood and resins",
+      "brand": "easy wood tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552594",
+        "15718301",
+        "228013",
+        "328182011",
+        "552262",
+        "8106314011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106314011",
+          "name": "power finishing tool parts & accessories"
+        },
+        {
+          "id": "552582",
+          "name": "power sander parts & accessories"
+        },
+        {
+          "id": "552594",
+          "name": "sanding sheets"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.39,
+      "avg30": 25.93,
+      "avg90": 27.45,
+      "low365": 19.99,
+      "rating": 4.8,
+      "reviewCount": 206,
+      "rank": 40740,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61zDX-uC-ZL.jpg",
+      "url": "https://www.amazon.com/dp/B0BFZ2JW2W",
+      "keepa": "https://keepa.com/#!product/1-B0BFZ2JW2W",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-03T03:16:08.876Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 34,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 6,
+        "rating": 10,
         "priceTier": 0
       }
     },
@@ -12462,6 +12785,89 @@
         "demand": 0,
         "reviews": 3,
         "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0BFXTWXGN",
+      "parentAsin": "",
+      "familyKey": "B0BFXTWXGN",
+      "variationCount": 0,
+      "productAgeDays": 1455,
+      "title": "yorkshire grit original - abrasive paste for woods and resins",
+      "brand": "yorkshire grit",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552594",
+        "228013",
+        "328182011",
+        "552262",
+        "8106314011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106314011",
+          "name": "power finishing tool parts & accessories"
+        },
+        {
+          "id": "552582",
+          "name": "power sander parts & accessories"
+        },
+        {
+          "id": "552594",
+          "name": "sanding sheets"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.39,
+      "avg30": 25.94,
+      "avg90": 25.97,
+      "low365": 19.99,
+      "rating": 4.8,
+      "reviewCount": 265,
+      "rank": 72292,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Kqpop5biL.jpg",
+      "url": "https://www.amazon.com/dp/B0BFXTWXGN",
+      "keepa": "https://keepa.com/#!product/1-B0BFXTWXGN",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-03T03:16:08.875Z",
+      "dealScore": 46,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 14,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 28,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 10,
         "priceTier": 0
       }
     },

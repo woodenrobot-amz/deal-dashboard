@@ -1,6 +1,10 @@
 {
-  "generatedAt": "2026-11-03T12:08:53.810Z",
+  "generatedAt": "2026-11-03T12:09:11.335Z",
+  "lastDiscoveryStream": "dudes_power",
+  "maxPoolAgeDays": 30,
   "totalDiscovered": 211,
+  "tokensConsumed": 11,
+  "tokensLeft": 248,
   "asins": [
     {
       "asin": "B00CP8DF3O",
@@ -320,6 +324,29 @@
       "parentAsin": "",
       "familyKey": "B0773N29R5",
       "variationCount": 0
+    },
+    {
+      "asin": "B0HDS1SV6Y",
+      "streams": [
+        "dudes_power"
+      ],
+      "discoveredAt": "2026-11-02T12:22:57.381Z",
+      "lastSeenAt": "2026-11-03T12:09:11.335Z",
+      "timesSeen": 3,
+      "streamStats": {
+        "dudes_power": {
+          "firstSeenAt": "2026-11-02T12:22:57.381Z",
+          "lastSeenAt": "2026-11-03T12:09:11.335Z",
+          "timesSeen": 3
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": "2026-11-02T12:23:47.234Z",
+      "enrichedAt": "2026-11-02T12:23:47.234Z",
+      "lastEnrichedStream": "dudes_power",
+      "parentAsin": "B0HKFK5DGV",
+      "familyKey": "B0HKFK5DGV",
+      "variationCount": 7
     },
     {
       "asin": "B00UM5GC00",
@@ -2231,6 +2258,52 @@
       "variationCount": 3
     },
     {
+      "asin": "B0FJ21NG3Z",
+      "streams": [
+        "dudes_power"
+      ],
+      "discoveredAt": "2026-11-03T03:16:41.830Z",
+      "lastSeenAt": "2026-11-03T12:09:11.335Z",
+      "timesSeen": 2,
+      "streamStats": {
+        "dudes_power": {
+          "firstSeenAt": "2026-11-03T03:16:41.830Z",
+          "lastSeenAt": "2026-11-03T12:09:11.335Z",
+          "timesSeen": 2
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": "2026-11-03T03:17:01.826Z",
+      "enrichedAt": "2026-11-03T03:17:01.826Z",
+      "lastEnrichedStream": "dudes_power",
+      "parentAsin": "B0HK4GXJG6",
+      "familyKey": "B0HK4GXJG6",
+      "variationCount": 14
+    },
+    {
+      "asin": "B0HN29QGJP",
+      "streams": [
+        "dudes_power"
+      ],
+      "discoveredAt": "2026-11-03T03:16:41.830Z",
+      "lastSeenAt": "2026-11-03T12:09:11.335Z",
+      "timesSeen": 2,
+      "streamStats": {
+        "dudes_power": {
+          "firstSeenAt": "2026-11-03T03:16:41.830Z",
+          "lastSeenAt": "2026-11-03T12:09:11.335Z",
+          "timesSeen": 2
+        }
+      },
+      "ignored": false,
+      "lastEnrichedAt": "2026-11-03T03:17:01.826Z",
+      "enrichedAt": "2026-11-03T03:17:01.826Z",
+      "lastEnrichedStream": "dudes_power",
+      "parentAsin": "B0HPN9J9SG",
+      "familyKey": "B0HPN9J9SG",
+      "variationCount": 7
+    },
+    {
       "asin": "B008ACYRFO",
       "streams": [
         "trusted_sellers"
@@ -3358,29 +3431,6 @@
       "variationCount": 1
     },
     {
-      "asin": "B0HDS1SV6Y",
-      "streams": [
-        "dudes_power"
-      ],
-      "discoveredAt": "2026-11-02T12:22:57.381Z",
-      "lastSeenAt": "2026-11-03T03:16:41.830Z",
-      "timesSeen": 2,
-      "streamStats": {
-        "dudes_power": {
-          "firstSeenAt": "2026-11-02T12:22:57.381Z",
-          "lastSeenAt": "2026-11-03T03:16:41.830Z",
-          "timesSeen": 2
-        }
-      },
-      "ignored": false,
-      "lastEnrichedAt": "2026-11-02T12:23:47.234Z",
-      "enrichedAt": "2026-11-02T12:23:47.234Z",
-      "lastEnrichedStream": "dudes_power",
-      "parentAsin": "B0HKFK5DGV",
-      "familyKey": "B0HKFK5DGV",
-      "variationCount": 7
-    },
-    {
       "asin": "B014PW2EMK",
       "streams": [
         "trusted_sellers"
@@ -3649,12 +3699,12 @@
         }
       },
       "ignored": false,
-      "lastEnrichedAt": null,
+      "lastEnrichedAt": "2026-11-03T12:08:53.810Z",
+      "enrichedAt": "2026-11-03T12:08:53.810Z",
+      "lastEnrichedStream": "trusted_sellers",
       "parentAsin": "",
       "familyKey": "B003OCB1YU",
-      "variationCount": 0,
-      "enrichedAt": "2026-11-03T12:08:53.810Z",
-      "lastEnrichedStream": "trusted_sellers"
+      "variationCount": 0
     },
     {
       "asin": "B0010ZFRSY",
@@ -3672,12 +3722,12 @@
         }
       },
       "ignored": false,
-      "lastEnrichedAt": null,
+      "lastEnrichedAt": "2026-11-03T12:08:53.810Z",
+      "enrichedAt": "2026-11-03T12:08:53.810Z",
+      "lastEnrichedStream": "trusted_sellers",
       "parentAsin": "B0722CZ29R",
       "familyKey": "B0722CZ29R",
-      "variationCount": 1,
-      "enrichedAt": "2026-11-03T12:08:53.810Z",
-      "lastEnrichedStream": "trusted_sellers"
+      "variationCount": 1
     },
     {
       "asin": "B003OC7ACC",
@@ -3695,12 +3745,12 @@
         }
       },
       "ignored": false,
-      "lastEnrichedAt": null,
+      "lastEnrichedAt": "2026-11-03T12:08:53.810Z",
+      "enrichedAt": "2026-11-03T12:08:53.810Z",
+      "lastEnrichedStream": "trusted_sellers",
       "parentAsin": "",
       "familyKey": "B003OC7ACC",
-      "variationCount": 0,
-      "enrichedAt": "2026-11-03T12:08:53.810Z",
-      "lastEnrichedStream": "trusted_sellers"
+      "variationCount": 0
     },
     {
       "asin": "B0C46RY8P7",
@@ -4048,29 +4098,6 @@
       "variationCount": 1
     },
     {
-      "asin": "B0FJ21NG3Z",
-      "streams": [
-        "dudes_power"
-      ],
-      "discoveredAt": "2026-11-03T03:16:41.830Z",
-      "lastSeenAt": "2026-11-03T03:16:41.830Z",
-      "timesSeen": 1,
-      "streamStats": {
-        "dudes_power": {
-          "firstSeenAt": "2026-11-03T03:16:41.830Z",
-          "lastSeenAt": "2026-11-03T03:16:41.830Z",
-          "timesSeen": 1
-        }
-      },
-      "ignored": false,
-      "lastEnrichedAt": "2026-11-03T03:17:01.826Z",
-      "enrichedAt": "2026-11-03T03:17:01.826Z",
-      "lastEnrichedStream": "dudes_power",
-      "parentAsin": "B0HK4GXJG6",
-      "familyKey": "B0HK4GXJG6",
-      "variationCount": 14
-    },
-    {
       "asin": "B0FJ1XLM9H",
       "streams": [
         "dudes_power"
@@ -4092,29 +4119,6 @@
       "parentAsin": "B0HK3S613W",
       "familyKey": "B0HK3S613W",
       "variationCount": 10
-    },
-    {
-      "asin": "B0HN29QGJP",
-      "streams": [
-        "dudes_power"
-      ],
-      "discoveredAt": "2026-11-03T03:16:41.830Z",
-      "lastSeenAt": "2026-11-03T03:16:41.830Z",
-      "timesSeen": 1,
-      "streamStats": {
-        "dudes_power": {
-          "firstSeenAt": "2026-11-03T03:16:41.830Z",
-          "lastSeenAt": "2026-11-03T03:16:41.830Z",
-          "timesSeen": 1
-        }
-      },
-      "ignored": false,
-      "lastEnrichedAt": "2026-11-03T03:17:01.826Z",
-      "enrichedAt": "2026-11-03T03:17:01.826Z",
-      "lastEnrichedStream": "dudes_power",
-      "parentAsin": "B0HPN9J9SG",
-      "familyKey": "B0HPN9J9SG",
-      "variationCount": 7
     },
     {
       "asin": "B0GDJQ8CN2",

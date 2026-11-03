@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-03T03:17:01.826Z",
+  "generatedAt": "2026-11-03T03:17:41.797Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "dudes_power",
-  "dealCount": 181,
+  "lastEnrichmentStream": "woodworking_test",
+  "dealCount": 186,
   "deals": [
     {
       "asin": "B0GDJQ8CN2",
@@ -1980,6 +1980,86 @@
         "demand": 8,
         "reviews": 13,
         "rating": 9,
+        "priceTier": 10
+      }
+    },
+    {
+      "asin": "B07VDZBCMD",
+      "parentAsin": "B0BX3JXPKQ",
+      "familyKey": "B0BX3JXPKQ",
+      "variationCount": 1,
+      "productAgeDays": 924,
+      "title": "makita dpo600z 18v li-ion lxt brushless random orbit polisher - batteries and charger not included",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552888",
+        "2445477011",
+        "228013",
+        "328182011",
+        "551236",
+        "552876"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552876",
+          "name": "sanders"
+        },
+        {
+          "id": "552888",
+          "name": "random-orbit sanders"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 348.83,
+      "avg30": 530.33,
+      "avg90": 524.36,
+      "low365": 348.83,
+      "rating": 4.6,
+      "reviewCount": 402,
+      "rank": 367464,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71p8n7Bg7OL.jpg",
+      "url": "https://www.amazon.com/dp/B07VDZBCMD",
+      "keepa": "https://keepa.com/#!product/1-B07VDZBCMD",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-03T03:17:41.793Z",
+      "dealScore": 101,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 50,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 68,
+      "normalizedScoreBreakdown": {
+        "discount": 22,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 8,
         "priceTier": 10
       }
     },
@@ -8887,6 +8967,91 @@
       }
     },
     {
+      "asin": "B08SLRD5Z3",
+      "parentAsin": "B0GYNCFBGF",
+      "familyKey": "B0GYNCFBGF",
+      "variationCount": 3,
+      "productAgeDays": 2055,
+      "title": "woodskil 4.3a belt disc sander combo for woodworking,4x36\" belt,6\" disc",
+      "brand": "woodskil",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552882",
+        "228013",
+        "328182011",
+        "551236",
+        "552876"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552876",
+          "name": "sanders"
+        },
+        {
+          "id": "552882",
+          "name": "combination disc & belt sanders"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 109.5,
+      "avg30": 125.61,
+      "avg90": 128.19,
+      "low365": 99.58,
+      "rating": 4.6,
+      "reviewCount": 553,
+      "rank": 47999,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71qwDWQ4wvL.jpg",
+      "url": "https://www.amazon.com/dp/B08SLRD5Z3",
+      "keepa": "https://keepa.com/#!product/1-B08SLRD5Z3",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-03T03:17:41.792Z",
+      "dealScore": 57,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 43,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 11,
+        "rating": 8,
+        "priceTier": 6
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B09ZV7RBFQ",
+        "B08SLRD5Z3"
+      ]
+    },
+    {
       "asin": "B0GL9MQBBT",
       "parentAsin": "",
       "familyKey": "B0GL9MQBBT",
@@ -10050,85 +10215,6 @@
       }
     },
     {
-      "asin": "B09ZV7RBFQ",
-      "parentAsin": "B0GYNCFBGF",
-      "familyKey": "B0GYNCFBGF",
-      "variationCount": 3,
-      "productAgeDays": 1547,
-      "title": "woodskil 4.5a belt disc sander combo for woodworking,4x36\" belt,6\" disc",
-      "brand": "woodskil",
-      "brandTier": "off",
-      "category": "woodworking_test",
-      "keepaCategoryIds": [
-        "552882",
-        "228013",
-        "328182011",
-        "551236",
-        "552876"
-      ],
-      "keepaCategoryTree": [
-        {
-          "id": "228013",
-          "name": "tools & home improvement"
-        },
-        {
-          "id": "328182011",
-          "name": "power & hand tools"
-        },
-        {
-          "id": "551236",
-          "name": "power tools"
-        },
-        {
-          "id": "552876",
-          "name": "sanders"
-        },
-        {
-          "id": "552882",
-          "name": "combination disc & belt sanders"
-        }
-      ],
-      "sourceStream": "woodworking_test",
-      "sources": [
-        "keepa"
-      ],
-      "price": 111.79,
-      "avg30": 128.11,
-      "avg90": 129.96,
-      "low365": 111.79,
-      "rating": 4.7,
-      "reviewCount": 230,
-      "rank": 47914,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71C1GTMvZAL.jpg",
-      "url": "https://www.amazon.com/dp/B09ZV7RBFQ",
-      "keepa": "https://keepa.com/#!product/1-B09ZV7RBFQ",
-      "isLowAll": false,
-      "drop1Day": 0,
-      "isHot": false,
-      "isNameBrand": false,
-      "updatedAt": "2026-11-02T12:24:26.798Z",
-      "dealScore": 51,
-      "scoreBreakdown": {
-        "rating": 23,
-        "discount": 20,
-        "rank": 0,
-        "reviews": 0,
-        "variationFamily": 0,
-        "productAge": 8,
-        "streamFit": 0,
-        "brand": 0
-      },
-      "normalizedScore": 39,
-      "normalizedScoreBreakdown": {
-        "discount": 10,
-        "brand": 0,
-        "demand": 8,
-        "reviews": 6,
-        "rating": 9,
-        "priceTier": 6
-      }
-    },
-    {
       "asin": "B09X2C6VP3",
       "parentAsin": "",
       "familyKey": "B09X2C6VP3",
@@ -10447,6 +10533,89 @@
         "reviews": 6,
         "rating": 3,
         "priceTier": 10
+      }
+    },
+    {
+      "asin": "B01DAPPF5G",
+      "parentAsin": "B07XBM5SSR",
+      "familyKey": "B07XBM5SSR",
+      "variationCount": 3,
+      "productAgeDays": 3426,
+      "title": "groz 6-inch portable woodworking vise, dual mount bench clamp or bolt-down, cast iron with toe-in jaws and chrome-plated screw, for woodworkers and diy (39006)",
+      "brand": "groz",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "5739459011",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "19502224011",
+          "name": "vises"
+        },
+        {
+          "id": "5739459011",
+          "name": "bench vises"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 50.57,
+      "avg30": 56.76,
+      "avg90": 65.76,
+      "low365": 50.57,
+      "rating": 4.5,
+      "reviewCount": 418,
+      "rank": 334325,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51udPicP5eL.jpg",
+      "url": "https://www.amazon.com/dp/B01DAPPF5G",
+      "keepa": "https://keepa.com/#!product/1-B01DAPPF5G",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-03T03:17:41.793Z",
+      "dealScore": 64,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 34,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 37,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 7,
+        "priceTier": 4
       }
     },
     {
@@ -11075,6 +11244,85 @@
         "reviews": 6,
         "rating": 10,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0002MID2I",
+      "parentAsin": "",
+      "familyKey": "B0002MID2I",
+      "variationCount": 0,
+      "productAgeDays": 5702,
+      "title": "chicago pneumatic cp870, air random / rotary sander, 6 in, non-vacuum, psa",
+      "brand": "chicago pneumatic",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552888",
+        "228013",
+        "328182011",
+        "551236",
+        "552876"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552876",
+          "name": "sanders"
+        },
+        {
+          "id": "552888",
+          "name": "random-orbit sanders"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 63.99,
+      "avg30": 68.97,
+      "avg90": 75.89,
+      "low365": 63.99,
+      "rating": 4.6,
+      "reviewCount": 272,
+      "rank": 224115,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71uSzoLt+TL.jpg",
+      "url": "https://www.amazon.com/dp/B0002MID2I",
+      "keepa": "https://keepa.com/#!product/1-B0002MID2I",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-03T03:17:41.793Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 23,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 34,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 4
       }
     },
     {
@@ -12439,6 +12687,80 @@
         "reviews": 8,
         "rating": 8,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B08Q3GFVDG",
+      "parentAsin": "",
+      "familyKey": "B08Q3GFVDG",
+      "variationCount": 0,
+      "productAgeDays": 2069,
+      "title": "workess saw horses 2 pack, heavy duty folding portable saw horses table 2200 lbs load capacity with 2x4 support legs, fast open legs and easy grip handle for woodworking.",
+      "brand": "workess",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 60.79,
+      "avg30": 67.67,
+      "avg90": 68.35,
+      "low365": 60.79,
+      "rating": 4.6,
+      "reviewCount": 316,
+      "rank": 166688,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61OKgaQTuYL.jpg",
+      "url": "https://www.amazon.com/dp/B08Q3GFVDG",
+      "keepa": "https://keepa.com/#!product/1-B08Q3GFVDG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-03T03:17:41.793Z",
+      "dealScore": 47,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 4
       }
     },
     {
@@ -13951,6 +14273,89 @@
         "reviews": 6,
         "rating": 9,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B0924R7W8B",
+      "parentAsin": "",
+      "familyKey": "B0924R7W8B",
+      "variationCount": 0,
+      "productAgeDays": 2028,
+      "title": "eagle grip lp11c locking c-clamp, multi",
+      "brand": "malco",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553158",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "553150",
+          "name": "clamps"
+        },
+        {
+          "id": "553158",
+          "name": "c-clamps"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 59.95,
+      "avg30": 66.32,
+      "avg90": 61.55,
+      "low365": 59.95,
+      "rating": 5,
+      "reviewCount": 94,
+      "rank": 308744,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61ndieHrEGS.jpg",
+      "url": "https://www.amazon.com/dp/B0924R7W8B",
+      "keepa": "https://keepa.com/#!product/1-B0924R7W8B",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-03T03:17:41.793Z",
+      "dealScore": 36,
+      "scoreBreakdown": {
+        "rating": 25,
+        "discount": 3,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 17,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 4
       }
     },
     {

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-03T12:08:53.810Z",
+  "generatedAt": "2026-11-03T12:10:12.037Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 198,
+  "lastEnrichmentStream": "woodworking_test",
+  "dealCount": 200,
   "deals": [
     {
       "asin": "B0GDJQ8CN2",
@@ -11167,6 +11167,81 @@
       }
     },
     {
+      "asin": "B0D2CXCBN4",
+      "parentAsin": "B0D3LJ8R8M",
+      "familyKey": "B0D3LJ8R8M",
+      "variationCount": 2,
+      "productAgeDays": 913,
+      "title": "vacmaster professional vdk811pw 0201 8 gal wet/dry vac self-cleaning filter",
+      "brand": "vacmaster",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553022",
+        "3256984011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "553022",
+          "name": "wet-dry shop vacuums"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 97.64,
+      "avg30": 109.17,
+      "avg90": 107.33,
+      "low365": 92.99,
+      "rating": 4.6,
+      "reviewCount": 302,
+      "rank": 16500,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81nvkk+sZVL.jpg",
+      "url": "https://www.amazon.com/dp/B0D2CXCBN4",
+      "keepa": "https://keepa.com/#!product/1-B0D2CXCBN4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-03T12:10:12.035Z",
+      "dealScore": 44,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 13,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 38,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 8,
+        "rating": 8,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B004INGNQU",
       "parentAsin": "B0F4RV23KL",
       "familyKey": "B0F4RV23KL",
@@ -12916,6 +12991,89 @@
         "reviews": 6,
         "rating": 3,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0GWH62F8L",
+      "parentAsin": "B0H2LWBJXF",
+      "familyKey": "B0H2LWBJXF",
+      "variationCount": 1,
+      "productAgeDays": 161,
+      "title": "8p corner clamps for woodworking(5.5\"x4+2.5\"x4) for right angle positioning",
+      "brand": "vexthyx",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553152",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "553150",
+          "name": "clamps"
+        },
+        {
+          "id": "553152",
+          "name": "angle clamps"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 39.99,
+      "avg30": 49.87,
+      "avg90": 47.01,
+      "low365": 39.99,
+      "rating": 4.3,
+      "reviewCount": 101,
+      "rank": 21164,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/811Y5ZVFc-L.jpg",
+      "url": "https://www.amazon.com/dp/B0GWH62F8L",
+      "keepa": "https://keepa.com/#!product/1-B0GWH62F8L",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-03T12:10:12.036Z",
+      "dealScore": 43,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 0,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 33,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 12,
+        "reviews": 6,
+        "rating": 3,
+        "priceTier": 2
       }
     },
     {

@@ -1,0 +1,58 @@
+name: Dad Outdoors
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# The two Dad cycles share data files, so serialize their complete cycles.
+concurrency:
+  group: keepa-dad-cycle
+  cancel-in-progress: false
+
+jobs:
+  discover-and-enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Pull latest
+        run: git pull --rebase origin main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Discover Dad Outdoors deals
+        env:
+          KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+          CAPTURE_KEEPA_STATUS: "1"
+        run: node scripts/keepa-discovery.js dad_outdoors
+
+      - name: Enrich Dad Outdoors candidates
+        env:
+          KEEPA_API_KEY: ${{ secrets.KEEPA_API_KEY }}
+          CAPTURE_KEEPA_STATUS: "1"
+        run: node scripts/enrich-stream.js dad_outdoors
+
+      # Preserve pending discoveries if enrichment fails, while keeping the run failed.
+      - name: Commit pipeline results
+        if: ${{ always() && !cancelled() }}
+        run: |
+          set -euo pipefail
+          git config user.name "keepa-bot"
+          git config user.email "keepa-bot@users.noreply.github.com"
+          git add data/deals.json data/discovered-asins.json data/keepa-status.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "update dad_outdoors discovery and enrichment"
+          git pull --rebase origin main
+          git push

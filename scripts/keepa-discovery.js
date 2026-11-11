@@ -370,6 +370,51 @@ dad_impulse: {
   }
 },
 
+dad_outdoors: {
+  name: "dad_outdoors",
+  selection: {
+    productType: [0],
+    singleVariation: true,
+
+    // Category-first search covers grilling/patio plus sports and outdoor gear.
+    rootCategory: [
+      "2972638011",  // Patio, Lawn & Garden
+      "3375251"      // Sports & Outdoors
+    ],
+
+    categories_exclude: [
+      "165796011",   // Baby Products
+      "3760911",     // Beauty & Personal Care
+      "3760901",     // Health & Household
+      "16310101",    // Grocery & Gourmet Food
+      "2619533011",  // Pet Supplies
+      "2617941011",  // Arts, Crafts & Sewing
+      "7141123011",  // Clothing, Shoes & Jewelry
+      "283155"        // Books
+    ],
+
+    current_SALES_gte: 1,
+    current_SALES_lte: 50000,
+
+    current_RATING_gte: 43,
+    current_COUNT_REVIEWS_gte: 250,
+
+    current_BUY_BOX_SHIPPING_gte: 2000,
+
+    isLowest90_BUY_BOX_SHIPPING: true,
+    deltaPercent90_BUY_BOX_SHIPPING_gte: 20,
+    deltaPercent30_BUY_BOX_SHIPPING_gte: 15,
+
+    sort: [
+      ["deltaPercent90_BUY_BOX_SHIPPING", "desc"],
+      ["current_SALES", "asc"]
+    ],
+
+    perPage: 1000,
+    page: 0
+  }
+},
+
 three_d_printing: {
   name: "three_d_printing",
   selection: {

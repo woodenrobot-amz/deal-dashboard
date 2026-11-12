@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-12T14:07:52.610Z",
+  "generatedAt": "2026-11-12T14:08:32.342Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "power_tools_main",
-  "dealCount": 640,
+  "lastEnrichmentStream": "trusted_sellers",
+  "dealCount": 649,
   "deals": [
     {
       "asin": "B00KQU1ENG",
@@ -37812,6 +37812,93 @@
       }
     },
     {
+      "asin": "B002VMNTKI",
+      "parentAsin": "",
+      "familyKey": "B002VMNTKI",
+      "variationCount": 0,
+      "productAgeDays": 4593,
+      "title": "festool 492522 centrotec drill bit with depth stop",
+      "brand": "festool",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "256275011",
+        "228013",
+        "328182011",
+        "552262",
+        "552796"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552796",
+          "name": "power drill parts & accessories"
+        },
+        {
+          "id": "552388",
+          "name": "drill bits"
+        },
+        {
+          "id": "552416",
+          "name": "twist drill bits"
+        },
+        {
+          "id": "256275011",
+          "name": "jobber drill bits"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 67,
+      "avg30": 92.04,
+      "avg90": 75.34,
+      "low365": 66.78,
+      "rating": 4.8,
+      "reviewCount": 54,
+      "rank": 1052382,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51-dpttl+-L.jpg",
+      "url": "https://www.amazon.com/dp/B002VMNTKI",
+      "keepa": "https://keepa.com/#!product/1-B002VMNTKI",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-12T14:08:32.341Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 16,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 47,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B0858F3L2M",
       "parentAsin": "",
       "familyKey": "B0858F3L2M",
@@ -44830,6 +44917,80 @@
       }
     },
     {
+      "asin": "B091ZZG9CH",
+      "parentAsin": "B0BHWSB7PT",
+      "familyKey": "B0BHWSB7PT",
+      "variationCount": 1,
+      "productAgeDays": 2024,
+      "title": "makita p-84349 makpac 5 drawer interlocking case, 12-1/2\" x 15-1/2\" x 11-5/8",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "13400721",
+        "228013",
+        "328182011",
+        "13400691"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "13400691",
+          "name": "tool organizers"
+        },
+        {
+          "id": "13400721",
+          "name": "tool boxes"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 216.99,
+      "avg30": 244.54,
+      "avg90": 227.23,
+      "low365": 184.44,
+      "rating": 4.3,
+      "reviewCount": 166,
+      "rank": 370806,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Mqw9yCHdL.jpg",
+      "url": "https://www.amazon.com/dp/B091ZZG9CH",
+      "keepa": "https://keepa.com/#!product/1-B091ZZG9CH",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-12T14:08:32.341Z",
+      "dealScore": 55,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 6,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 37,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 3,
+        "priceTier": 8
+      }
+    },
+    {
       "asin": "B0CBB5KCKG",
       "parentAsin": "B0FD8PHRFW",
       "familyKey": "B0FD8PHRFW",
@@ -45429,6 +45590,85 @@
         "reviews": 3,
         "rating": 10,
         "priceTier": 0
+      }
+    },
+    {
+      "asin": "B00H2B78YG",
+      "parentAsin": "",
+      "familyKey": "B00H2B78YG",
+      "variationCount": 0,
+      "productAgeDays": 4473,
+      "title": "rikon 80-805 professional 8-inch low speed bench grinder, 1/2 hp, 1750 rpm",
+      "brand": "rikon power tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552814",
+        "228013",
+        "328182011",
+        "551236",
+        "552810"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552810",
+          "name": "grinders"
+        },
+        {
+          "id": "552814",
+          "name": "bench grinders"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 133.98,
+      "avg30": 149.82,
+      "avg90": 152.47,
+      "low365": 127.49,
+      "rating": 4.6,
+      "reviewCount": 852,
+      "rank": 157718,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/8126zgxPaTL.jpg",
+      "url": "https://www.amazon.com/dp/B00H2B78YG",
+      "keepa": "https://keepa.com/#!product/1-B00H2B78YG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-12T14:08:32.340Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 35,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 11,
+        "rating": 8,
+        "priceTier": 6
       }
     },
     {
@@ -46394,6 +46634,80 @@
       }
     },
     {
+      "asin": "B0036F7EX2",
+      "parentAsin": "",
+      "familyKey": "B0036F7EX2",
+      "variationCount": 0,
+      "productAgeDays": 4279,
+      "title": "cmt cmt 998.001.03 formula 2050 blade & bit cleaner, 1 gallon plastic jug",
+      "brand": "cmt orange tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552518",
+        "228013",
+        "328182011",
+        "552262"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552518",
+          "name": "lubricants"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 34,
+      "avg30": 36.33,
+      "avg90": 38.6,
+      "low365": 31.4,
+      "rating": 4.7,
+      "reviewCount": 280,
+      "rank": 63922,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/6130rjwl7aL.jpg",
+      "url": "https://www.amazon.com/dp/B0036F7EX2",
+      "keepa": "https://keepa.com/#!product/1-B0036F7EX2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-12T14:08:32.340Z",
+      "dealScore": 48,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 31,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B073NGCXBK",
       "parentAsin": "B0B2KX1H1V",
       "familyKey": "B0B2KX1H1V",
@@ -46561,6 +46875,85 @@
         "demand": 0,
         "reviews": 3,
         "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B07JC4HZ31",
+      "parentAsin": "",
+      "familyKey": "B07JC4HZ31",
+      "variationCount": 0,
+      "productAgeDays": 2902,
+      "title": "authentic easy wood tools ci0-nr (4400nr) patented negative rake carbide cutter for easy full and pro-size finishers for for wood turning",
+      "brand": "easy wood tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552514",
+        "228013",
+        "328182011",
+        "552262",
+        "552512"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "552512",
+          "name": "lathe parts & accessories"
+        },
+        {
+          "id": "552514",
+          "name": "accessories"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.16,
+      "avg30": 25.26,
+      "avg90": 27.93,
+      "low365": 21.28,
+      "rating": 4.8,
+      "reviewCount": 210,
+      "rank": 220195,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51FF-nkcB6L.jpg",
+      "url": "https://www.amazon.com/dp/B07JC4HZ31",
+      "keepa": "https://keepa.com/#!product/1-B07JC4HZ31",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-12T14:08:32.340Z",
+      "dealScore": 57,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 25,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 30,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 10,
         "priceTier": 0
       }
     },
@@ -47019,6 +47412,89 @@
         "demand": 8,
         "reviews": 3,
         "rating": 8,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B00BMXAC52",
+      "parentAsin": "B0F49CGZ77",
+      "familyKey": "B0F49CGZ77",
+      "variationCount": 9,
+      "productAgeDays": 4682,
+      "title": "wilton hi-vis c-clamp, 3\" opening, 2-7/16\" throat, 3500 lbs. clamping force (model 403-sf)",
+      "brand": "wilton",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553158",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "553150",
+          "name": "clamps"
+        },
+        {
+          "id": "553158",
+          "name": "c-clamps"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 31.41,
+      "avg30": 43.73,
+      "avg90": 43.56,
+      "low365": 27.99,
+      "rating": 4.4,
+      "reviewCount": 78,
+      "rank": 515750,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61iZfAhYdzL.jpg",
+      "url": "https://www.amazon.com/dp/B00BMXAC52",
+      "keepa": "https://keepa.com/#!product/1-B00BMXAC52",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-12T14:08:32.340Z",
+      "dealScore": 74,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 41,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 3,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 28,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 5,
         "priceTier": 0
       }
     },
@@ -47948,6 +48424,159 @@
       }
     },
     {
+      "asin": "B00QMCCZN0",
+      "parentAsin": "",
+      "familyKey": "B00QMCCZN0",
+      "variationCount": 0,
+      "productAgeDays": 4310,
+      "title": "dustless technologies d1603 wet+dry shop vac",
+      "brand": "dustless",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "553022",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "553022",
+          "name": "wet-dry shop vacuums"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 346.72,
+      "avg30": 405.47,
+      "avg90": 407.15,
+      "low365": 320,
+      "rating": 4.2,
+      "reviewCount": 62,
+      "rank": 343894,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/611NWiGg0QL.jpg",
+      "url": "https://www.amazon.com/dp/B00QMCCZN0",
+      "keepa": "https://keepa.com/#!product/1-B00QMCCZN0",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-12T14:08:32.341Z",
+      "dealScore": 51,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 22,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 23,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 0,
+        "priceTier": 10
+      }
+    },
+    {
+      "asin": "B00B4WL0O8",
+      "parentAsin": "",
+      "familyKey": "B00B4WL0O8",
+      "variationCount": 0,
+      "productAgeDays": 4898,
+      "title": "rikon 50-112 4-inch x 36-inch belt 6-inch disc sander",
+      "brand": "rikon power tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552882",
+        "228013",
+        "328182011",
+        "551236",
+        "552876"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552876",
+          "name": "sanders"
+        },
+        {
+          "id": "552882",
+          "name": "combination disc & belt sanders"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 159.48,
+      "avg30": 186.14,
+      "avg90": 185.94,
+      "low365": 129.28,
+      "rating": 4.2,
+      "reviewCount": 160,
+      "rank": 820412,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61qIoesvFuL.jpg",
+      "url": "https://www.amazon.com/dp/B00B4WL0O8",
+      "keepa": "https://keepa.com/#!product/1-B00B4WL0O8",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-12T14:08:32.340Z",
+      "dealScore": 50,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 22,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 6,
+        "rating": 0,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0DK5XTZ63",
       "parentAsin": "",
       "familyKey": "B0DK5XTZ63",
@@ -48193,6 +48822,89 @@
         "demand": 0,
         "reviews": 6,
         "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B075RDCZXG",
+      "parentAsin": "",
+      "familyKey": "B075RDCZXG",
+      "variationCount": 0,
+      "productAgeDays": 3214,
+      "title": "rikon bandsaw table inserts (4 pack) all 14 in. & 18 in. bandsaw except 10-346",
+      "brand": "rikon power tools",
+      "brandTier": "off",
+      "category": "trusted_sellers",
+      "keepaCategoryIds": [
+        "552912",
+        "228013",
+        "328182011",
+        "552262",
+        "8106311011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106311011",
+          "name": "saw blades, parts & accessories"
+        },
+        {
+          "id": "13708781",
+          "name": "accessories"
+        },
+        {
+          "id": "552912",
+          "name": "band saw accessories"
+        }
+      ],
+      "sourceStream": "trusted_sellers",
+      "sources": [
+        "keepa"
+      ],
+      "price": 26.88,
+      "avg30": 30.45,
+      "avg90": 30.41,
+      "low365": 20.39,
+      "rating": 4.5,
+      "reviewCount": 70,
+      "rank": 467544,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41Rz+d-W2HL.jpg",
+      "url": "https://www.amazon.com/dp/B075RDCZXG",
+      "keepa": "https://keepa.com/#!product/1-B075RDCZXG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-12T14:08:32.340Z",
+      "dealScore": 47,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 20,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 7,
         "priceTier": 0
       }
     },

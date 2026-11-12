@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-12T14:08:32.342Z",
+  "generatedAt": "2026-11-12T14:09:11.509Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 649,
+  "lastEnrichmentStream": "dudes_power",
+  "dealCount": 650,
   "deals": [
     {
       "asin": "B00KQU1ENG",
@@ -45137,6 +45137,80 @@
         "reviews": 6,
         "rating": 3,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B06Y3XMQTK",
+      "parentAsin": "B073X7QR8S",
+      "familyKey": "B073X7QR8S",
+      "variationCount": 3,
+      "productAgeDays": 3500,
+      "title": "goal zero boulder 50 watt monocrystalline solar panel",
+      "brand": "goal zero",
+      "brandTier": "mid",
+      "category": "dudes_power",
+      "keepaCategoryIds": [
+        "2236628011",
+        "2972638011",
+        "552808",
+        "3236381"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "2972638011",
+          "name": "patio, lawn & garden"
+        },
+        {
+          "id": "552808",
+          "name": "generators & portable power"
+        },
+        {
+          "id": "3236381",
+          "name": "solar & wind power"
+        },
+        {
+          "id": "2236628011",
+          "name": "solar panels"
+        }
+      ],
+      "sourceStream": "dudes_power",
+      "sources": [
+        "keepa"
+      ],
+      "price": 249.95,
+      "avg30": 272.32,
+      "avg90": 258.98,
+      "low365": 187.89,
+      "rating": 4.7,
+      "reviewCount": 270,
+      "rank": 113622,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81X0sOUhbfL.jpg",
+      "url": "https://www.amazon.com/dp/B06Y3XMQTK",
+      "keepa": "https://keepa.com/#!product/1-B06Y3XMQTK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-12T14:09:11.507Z",
+      "dealScore": 44,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 5,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 37,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 12,
+        "demand": 0,
+        "reviews": 8,
+        "rating": 9,
+        "priceTier": 8
       }
     },
     {

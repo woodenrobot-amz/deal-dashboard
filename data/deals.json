@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-12T14:09:11.509Z",
+  "generatedAt": "2026-11-12T14:09:51.444Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "dudes_power",
-  "dealCount": 650,
+  "lastEnrichmentStream": "woodworking_test",
+  "dealCount": 653,
   "deals": [
     {
       "asin": "B00KQU1ENG",
@@ -28441,6 +28441,80 @@
       }
     },
     {
+      "asin": "B07QXWG93C",
+      "parentAsin": "B0CP79SRJT",
+      "familyKey": "B0CP79SRJT",
+      "variationCount": 1,
+      "productAgeDays": 2745,
+      "title": "craftsman cmxevbe17250 2.5 gallon 2.5 peak hp wet dry shop vacuum",
+      "brand": "craftsman",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553022",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "553022",
+          "name": "wet-dry shop vacuums"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 44.99,
+      "avg30": 49.74,
+      "avg90": 51.1,
+      "low365": 41.99,
+      "rating": 4.4,
+      "reviewCount": 10336,
+      "rank": 711,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61jRJ8xWZpL.jpg",
+      "url": "https://www.amazon.com/dp/B07QXWG93C",
+      "keepa": "https://keepa.com/#!product/1-B07QXWG93C",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-12T14:09:51.442Z",
+      "dealScore": 87,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 17,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 0,
+        "demand": 20,
+        "reviews": 15,
+        "rating": 5,
+        "priceTier": 2
+      }
+    },
+    {
       "asin": "B0G2X6RFCG",
       "parentAsin": "B0H9Y1M5L8",
       "familyKey": "B0H9Y1M5L8",
@@ -39644,6 +39718,85 @@
       }
     },
     {
+      "asin": "B00006ANS4",
+      "parentAsin": "B07CP9XBYJ",
+      "familyKey": "B07CP9XBYJ",
+      "variationCount": 1,
+      "productAgeDays": 4592,
+      "title": "jet 14\" woodworking band saw with enclosed cabinet stand, 1 hp, 115/230v",
+      "brand": "jet",
+      "brandTier": "mid",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "552910",
+        "228013",
+        "328182011",
+        "551236",
+        "552894"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552894",
+          "name": "saws"
+        },
+        {
+          "id": "552910",
+          "name": "band saws"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 899.99,
+      "avg30": 1144.49,
+      "avg90": 1150.83,
+      "low365": 879.99,
+      "rating": 4.3,
+      "reviewCount": 98,
+      "rank": 210186,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61veaEBmqfL.jpg",
+      "url": "https://www.amazon.com/dp/B00006ANS4",
+      "keepa": "https://keepa.com/#!product/1-B00006ANS4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-12T14:09:51.442Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 21,
+        "discount": 32,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 18,
+        "brand": 12,
+        "demand": 0,
+        "reviews": 3,
+        "rating": 3,
+        "priceTier": 10
+      }
+    },
+    {
       "asin": "B0773NFM2K",
       "parentAsin": "",
       "familyKey": "B0773NFM2K",
@@ -42916,7 +43069,13 @@
         "reviews": 8,
         "rating": 8,
         "priceTier": 4
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B08WWT6CRY",
+        "B08WX1TK54"
+      ]
     },
     {
       "asin": "B0DWMQCNJ7",
@@ -44757,6 +44916,80 @@
         "reviews": 11,
         "rating": 7,
         "priceTier": 10
+      }
+    },
+    {
+      "asin": "B09NN239MC",
+      "parentAsin": "",
+      "familyKey": "B09NN239MC",
+      "variationCount": 0,
+      "productAgeDays": 1792,
+      "title": "tlgreen 7in1 multifunctional portable workbench,worktable with poweroutlet",
+      "brand": "tlgreen",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553602",
+        "228013",
+        "551240",
+        "553516"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "551240",
+          "name": "building supplies"
+        },
+        {
+          "id": "553516",
+          "name": "material handling"
+        },
+        {
+          "id": "553602",
+          "name": "workbenches"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 125.99,
+      "avg30": 139.91,
+      "avg90": 137.1,
+      "low365": 113.87,
+      "rating": 4.5,
+      "reviewCount": 531,
+      "rank": 27138,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61Asw991ZjL.jpg",
+      "url": "https://www.amazon.com/dp/B09NN239MC",
+      "keepa": "https://keepa.com/#!product/1-B09NN239MC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-12T14:09:51.442Z",
+      "dealScore": 47,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 38,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 0,
+        "demand": 8,
+        "reviews": 11,
+        "rating": 7,
+        "priceTier": 6
       }
     },
     {

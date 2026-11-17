@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-17T01:24:33.560Z",
+  "generatedAt": "2026-11-17T11:39:16.660Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "woodworking_test",
-  "dealCount": 421,
+  "lastEnrichmentStream": "power_tools_main",
+  "dealCount": 429,
   "deals": [
     {
       "asin": "B00KQU1ENG",
@@ -301,6 +301,80 @@
         "brand": 20,
         "demand": 18,
         "reviews": 13,
+        "rating": 10,
+        "priceTier": 4
+      }
+    },
+    {
+      "asin": "B00SOU6LR4",
+      "parentAsin": "B0GFLHMYM3",
+      "familyKey": "B0GFLHMYM3",
+      "variationCount": 2,
+      "productAgeDays": 2673,
+      "title": "dewalt 20v max xr oscillating tool, battery and charger included (dcs356d1)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "2445476011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2445476011",
+          "name": "oscillating tools"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 99,
+      "avg30": 124.66,
+      "avg90": 137.86,
+      "low365": 99,
+      "rating": 4.8,
+      "reviewCount": 5738,
+      "rank": 5179,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/716To-rxGLL.jpg",
+      "url": "https://www.amazon.com/dp/B00SOU6LR4",
+      "keepa": "https://keepa.com/#!product/1-B00SOU6LR4",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T11:39:16.658Z",
+      "dealScore": 104,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 42,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 85,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 16,
+        "reviews": 15,
         "rating": 10,
         "priceTier": 4
       }
@@ -3958,6 +4032,85 @@
       }
     },
     {
+      "asin": "B09NP9H7SG",
+      "parentAsin": "",
+      "familyKey": "B09NP9H7SG",
+      "variationCount": 0,
+      "productAgeDays": 1795,
+      "title": "dewalt 20v max* reciprocating saw, cordless, 2-finger variable trigger, keyless blade clamp, tool only (dcs382b)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552950",
+        "228013",
+        "328182011",
+        "551236",
+        "552894"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552894",
+          "name": "saws"
+        },
+        {
+          "id": "552950",
+          "name": "reciprocating saws"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 130,
+      "avg30": 140.66,
+      "avg90": 142.01,
+      "low365": 120,
+      "rating": 4.7,
+      "reviewCount": 1277,
+      "rank": 23576,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61rFezS+43L.jpg",
+      "url": "https://www.amazon.com/dp/B09NP9H7SG",
+      "keepa": "https://keepa.com/#!product/1-B09NP9H7SG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T11:39:16.659Z",
+      "dealScore": 73,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 12,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 66,
+      "normalizedScoreBreakdown": {
+        "discount": 6,
+        "brand": 20,
+        "demand": 12,
+        "reviews": 13,
+        "rating": 9,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0D1TP1Q4C",
       "parentAsin": "B0FNCMPVZ5",
       "familyKey": "B0FNCMPVZ5",
@@ -6652,6 +6805,168 @@
         "demand": 16,
         "reviews": 15,
         "rating": 7,
+        "priceTier": 0
+      }
+    },
+    {
+      "asin": "B07HDP6W72",
+      "parentAsin": "B07WV5C42H",
+      "familyKey": "B07WV5C42H",
+      "variationCount": 24,
+      "productAgeDays": 2923,
+      "title": "dewalt heated work coat with 20v battery and charger, black, 3xl",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "7491824011",
+        "228013",
+        "3180231",
+        "486555011",
+        "7459501011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "486555011",
+          "name": "personal protective equipment"
+        },
+        {
+          "id": "7459501011",
+          "name": "protective workwear"
+        },
+        {
+          "id": "9764728011",
+          "name": "safety apparel"
+        },
+        {
+          "id": "7491824011",
+          "name": "jackets"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 234.99,
+      "avg30": 262.62,
+      "avg90": 314.68,
+      "low365": 234.99,
+      "rating": 4,
+      "reviewCount": 854,
+      "rank": 89922,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81cElxTxB0L.jpg",
+      "url": "https://www.amazon.com/dp/B07HDP6W72",
+      "keepa": "https://keepa.com/#!product/1-B07HDP6W72",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T11:39:16.659Z",
+      "dealScore": 98,
+      "scoreBreakdown": {
+        "rating": 20,
+        "discount": 37,
+        "rank": 0,
+        "reviews": 5,
+        "variationFamily": 8,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 63,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 11,
+        "rating": 0,
+        "priceTier": 8
+      }
+    },
+    {
+      "asin": "B007MMG4YK",
+      "parentAsin": "B0FQHTSMJ6",
+      "familyKey": "B0FQHTSMJ6",
+      "variationCount": 1,
+      "productAgeDays": 4517,
+      "title": "dewalt dt7969-qz bit-set (32 piece)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "2445469011",
+        "552262",
+        "228013",
+        "328182011",
+        "21481432011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "21481432011",
+          "name": "screwdriver accessories"
+        },
+        {
+          "id": "2445469011",
+          "name": "screwdriver bit sets"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 24,
+      "avg30": 27.44,
+      "avg90": 28.83,
+      "low365": 15.99,
+      "rating": 4.8,
+      "reviewCount": 18051,
+      "rank": 59604,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71q+l6bToOS.jpg",
+      "url": "https://www.amazon.com/dp/B007MMG4YK",
+      "keepa": "https://keepa.com/#!product/1-B007MMG4YK",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T11:39:16.659Z",
+      "dealScore": 87,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 25,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 63,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 15,
+        "rating": 10,
         "priceTier": 0
       }
     },
@@ -16351,6 +16666,80 @@
       }
     },
     {
+      "asin": "B0FRLBRPJJ",
+      "parentAsin": "",
+      "familyKey": "B0FRLBRPJJ",
+      "variationCount": 0,
+      "productAgeDays": 407,
+      "title": "milwaukee 3048-20 m12 fuel 1/4\" subcompact impact wrench w/ friction ring, tool only",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552820",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552820",
+          "name": "impact wrenches"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 195.76,
+      "avg30": 211.13,
+      "avg90": 232.82,
+      "low365": 195.76,
+      "rating": 4.7,
+      "reviewCount": 4,
+      "rank": 98011,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51k5HIlgylL.jpg",
+      "url": "https://www.amazon.com/dp/B0FRLBRPJJ",
+      "keepa": "https://keepa.com/#!product/1-B0FRLBRPJJ",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T11:39:16.659Z",
+      "dealScore": 69,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 23,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 53,
+      "normalizedScoreBreakdown": {
+        "discount": 14,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 0,
+        "rating": 9,
+        "priceTier": 6
+      }
+    },
+    {
       "asin": "B0H9Z14V6N",
       "parentAsin": "",
       "familyKey": "B0H9Z14V6N",
@@ -17777,6 +18166,85 @@
         "reviews": 6,
         "rating": 8,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B0CFYM9L5W",
+      "parentAsin": "",
+      "familyKey": "B0CFYM9L5W",
+      "variationCount": 0,
+      "productAgeDays": 1186,
+      "title": "dewalt dcs334b 20v cordless brushless jigsaw (tool only)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552934",
+        "228013",
+        "328182011",
+        "551236",
+        "552894"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552894",
+          "name": "saws"
+        },
+        {
+          "id": "552934",
+          "name": "jig saws"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 118.99,
+      "avg30": 130.92,
+      "avg90": 134.59,
+      "low365": 118.99,
+      "rating": 4.7,
+      "reviewCount": 79,
+      "rank": 94609,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61w9llKezpL.jpg",
+      "url": "https://www.amazon.com/dp/B0CFYM9L5W",
+      "keepa": "https://keepa.com/#!product/1-B0CFYM9L5W",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T11:39:16.659Z",
+      "dealScore": 68,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 17,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 3,
+        "rating": 9,
+        "priceTier": 6
       }
     },
     {
@@ -24020,6 +24488,85 @@
       }
     },
     {
+      "asin": "B0FHH55SX2",
+      "parentAsin": "",
+      "familyKey": "B0FHH55SX2",
+      "variationCount": 0,
+      "productAgeDays": 448,
+      "title": "milwaukee electric - 2pc 14-in-1 ratcheting multi-bit screwdriver and 8",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "553344",
+        "228013",
+        "328182011",
+        "551238",
+        "15569906011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "15569906011",
+          "name": "screwdrivers & nut drivers"
+        },
+        {
+          "id": "553344",
+          "name": "screwdriver sets"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 32,
+      "avg30": 34.45,
+      "avg90": 37.28,
+      "low365": 19.97,
+      "rating": 4.4,
+      "reviewCount": 75,
+      "rank": 34255,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/21qsX3t84iL.jpg",
+      "url": "https://www.amazon.com/dp/B0FHH55SX2",
+      "keepa": "https://keepa.com/#!product/1-B0FHH55SX2",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T11:39:16.659Z",
+      "dealScore": 66,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 21,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 46,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 3,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B00HQYFZGM",
       "parentAsin": "",
       "familyKey": "B00HQYFZGM",
@@ -27677,6 +28224,85 @@
         "demand": 0,
         "reviews": 15,
         "rating": 3,
+        "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0DJB4QD9N",
+      "parentAsin": "",
+      "familyKey": "B0DJB4QD9N",
+      "variationCount": 0,
+      "productAgeDays": 777,
+      "title": "milwaukee electric - usb bluetoothreg jobsite ear buds",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "393311011",
+        "228013",
+        "3180231",
+        "486555011",
+        "553558"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "3180231",
+          "name": "safety & security"
+        },
+        {
+          "id": "486555011",
+          "name": "personal protective equipment"
+        },
+        {
+          "id": "553558",
+          "name": "hearing protection"
+        },
+        {
+          "id": "393311011",
+          "name": "safety earmuffs"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 135,
+      "avg30": 135.34,
+      "avg90": 142.38,
+      "low365": 125,
+      "rating": 3.9,
+      "reviewCount": 276,
+      "rank": 57481,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/41hFuVZHcoL.jpg",
+      "url": "https://www.amazon.com/dp/B0DJB4QD9N",
+      "keepa": "https://keepa.com/#!product/1-B0DJB4QD9N",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T11:39:16.659Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 19,
+        "discount": 7,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 38,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 0,
         "priceTier": 6
       }
     },

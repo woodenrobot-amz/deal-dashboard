@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-17T11:39:58.740Z",
+  "generatedAt": "2026-11-17T11:41:26.305Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "trusted_sellers",
-  "dealCount": 432,
+  "lastEnrichmentStream": "woodworking_test",
+  "dealCount": 435,
   "deals": [
     {
       "asin": "B00KQU1ENG",
@@ -2301,6 +2301,80 @@
         "reviews": 13,
         "rating": 9,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B01L31KAGI",
+      "parentAsin": "B08Z7JZNLH",
+      "familyKey": "B08Z7JZNLH",
+      "variationCount": 1,
+      "productAgeDays": 2457,
+      "title": "dewalt mixed drill drive set (100 pc.), dt71563-qz",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "8906593011",
+        "16310091",
+        "383598011",
+        "256264011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "16310091",
+          "name": "industrial & scientific"
+        },
+        {
+          "id": "383598011",
+          "name": "cutting tools"
+        },
+        {
+          "id": "256264011",
+          "name": "industrial drill bits"
+        },
+        {
+          "id": "8906593011",
+          "name": "wood drill bit sets"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 46,
+      "avg30": 57.14,
+      "avg90": 62.09,
+      "low365": 28,
+      "rating": 4.7,
+      "reviewCount": 9726,
+      "rank": 61212,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71YKp1k1oEL.jpg",
+      "url": "https://www.amazon.com/dp/B01L31KAGI",
+      "keepa": "https://keepa.com/#!product/1-B01L31KAGI",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T11:41:26.304Z",
+      "dealScore": 99,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 38,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 70,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 2
       }
     },
     {
@@ -21288,7 +21362,8 @@
       "spcCapturedAt": "",
       "siblingAsins": [
         "B0GX5JX62J",
-        "B0GX57B4HK"
+        "B0GX57B4HK",
+        "B0GDZB3BPM"
       ]
     },
     {
@@ -28313,6 +28388,89 @@
       }
     },
     {
+      "asin": "B07DQB4PK9",
+      "parentAsin": "B08DG7MJVM",
+      "familyKey": "B08DG7MJVM",
+      "variationCount": 4,
+      "productAgeDays": 3075,
+      "title": "buildpro ptt956k inserta plier, table mount clamp, rear crank handle, 5/8\" insert diameter, 6-1/8\" throat depth",
+      "brand": "buildpro",
+      "brandTier": "off",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "553158",
+        "228013",
+        "328182011",
+        "551238",
+        "979147011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "979147011",
+          "name": "workholding devices"
+        },
+        {
+          "id": "553150",
+          "name": "clamps"
+        },
+        {
+          "id": "553158",
+          "name": "c-clamps"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 34.24,
+      "avg30": 47.09,
+      "avg90": 45.85,
+      "low365": 34,
+      "rating": 4.4,
+      "reviewCount": 410,
+      "rank": 70043,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/716-Hj9xFwL.jpg",
+      "url": "https://www.amazon.com/dp/B07DQB4PK9",
+      "keepa": "https://keepa.com/#!product/1-B07DQB4PK9",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": false,
+      "updatedAt": "2026-11-17T11:41:26.304Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 37,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 0
+      },
+      "normalizedScore": 37,
+      "normalizedScoreBreakdown": {
+        "discount": 20,
+        "brand": 0,
+        "demand": 4,
+        "reviews": 8,
+        "rating": 5,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B004INGNQU",
       "parentAsin": "B0F4RV23KL",
       "familyKey": "B0F4RV23KL",
@@ -28869,6 +29027,80 @@
         "reviews": 0,
         "rating": 0,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0851MTW42",
+      "parentAsin": "",
+      "familyKey": "B0851MTW42",
+      "variationCount": 0,
+      "productAgeDays": 2454,
+      "title": "ryobi p343 18v one+ cordless oscillating multi-tool (bare tool)",
+      "brand": "ryobi",
+      "brandTier": "mid",
+      "category": "woodworking_test",
+      "keepaCategoryIds": [
+        "2445476011",
+        "228013",
+        "328182011",
+        "551236"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "2445476011",
+          "name": "oscillating tools"
+        }
+      ],
+      "sourceStream": "woodworking_test",
+      "sources": [
+        "keepa"
+      ],
+      "price": 55.69,
+      "avg30": 59.49,
+      "avg90": 60.44,
+      "low365": 48,
+      "rating": 4.5,
+      "reviewCount": 1399,
+      "rank": 138889,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/714Od0LeYqL.jpg",
+      "url": "https://www.amazon.com/dp/B0851MTW42",
+      "keepa": "https://keepa.com/#!product/1-B0851MTW42",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T11:41:26.304Z",
+      "dealScore": 59,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 36,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 12,
+        "demand": 0,
+        "reviews": 13,
+        "rating": 7,
+        "priceTier": 4
       }
     },
     {

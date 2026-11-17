@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-16T21:16:36.791Z",
+  "generatedAt": "2026-11-17T01:22:00.525Z",
   "source": "keepa-enrichment",
-  "lastEnrichmentStream": "dad_impulse",
-  "dealCount": 406,
+  "lastEnrichmentStream": "power_tools_main",
+  "dealCount": 413,
   "deals": [
     {
       "asin": "B00KQU1ENG",
@@ -1361,6 +1361,89 @@
       }
     },
     {
+      "asin": "B06X94PH92",
+      "parentAsin": "",
+      "familyKey": "B06X94PH92",
+      "variationCount": 0,
+      "productAgeDays": 3266,
+      "title": "dewalt dcb107 12v/20v max lithium ion charger (bulk packed)",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "8106529011",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552376",
+          "name": "charger & converters"
+        },
+        {
+          "id": "8106529011",
+          "name": "battery chargers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 19.99,
+      "avg30": 21.47,
+      "avg90": 23.07,
+      "low365": 18.59,
+      "rating": 4.7,
+      "reviewCount": 7816,
+      "rank": 2316,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/6124Y4QsK5L.jpg",
+      "url": "https://www.amazon.com/dp/B06X94PH92",
+      "keepa": "https://keepa.com/#!product/1-B06X94PH92",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T01:22:00.523Z",
+      "dealScore": 111,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 20,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 72,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 18,
+        "reviews": 15,
+        "rating": 9,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B017Y7T2JG",
       "parentAsin": "",
       "familyKey": "B017Y7T2JG",
@@ -1732,7 +1815,7 @@
       "isHot": true,
       "isNameBrand": true,
       "updatedAt": "2026-11-16T11:57:04.649Z",
-      "dealScore": 99,
+      "dealScore": 102,
       "scoreBreakdown": {
         "rating": 23,
         "discount": 20,
@@ -1751,7 +1834,13 @@
         "reviews": 15,
         "rating": 8,
         "priceTier": 8
-      }
+      },
+      "spcImported": false,
+      "spcCapturedAt": "",
+      "siblingAsins": [
+        "B08J7N3VYW",
+        "B0DHS3PP4J"
+      ]
     },
     {
       "asin": "B01IU92IYI",
@@ -6882,6 +6971,75 @@
       }
     },
     {
+      "asin": "B07NNRW9VG",
+      "parentAsin": "",
+      "familyKey": "B07NNRW9VG",
+      "variationCount": 0,
+      "productAgeDays": 2829,
+      "title": "milwaukee 7 in. aluminum magnetic compact torpedo level 3 vial",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "553256",
+        "228013",
+        "553244"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "553244",
+          "name": "measuring & layout tools"
+        },
+        {
+          "id": "553256",
+          "name": "levels"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 23.95,
+      "avg30": 50.7,
+      "avg90": 47.81,
+      "low365": 23.95,
+      "rating": 4.8,
+      "reviewCount": 94,
+      "rank": 83996,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/21kZ2tLoQvL.jpg",
+      "url": "https://www.amazon.com/dp/B07NNRW9VG",
+      "keepa": "https://keepa.com/#!product/1-B07NNRW9VG",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T01:22:00.524Z",
+      "dealScore": 126,
+      "scoreBreakdown": {
+        "rating": 24,
+        "discount": 74,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 62,
+      "normalizedScoreBreakdown": {
+        "discount": 25,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 3,
+        "rating": 10,
+        "priceTier": 0
+      }
+    },
+    {
       "asin": "B0CSW3FLCD",
       "parentAsin": "B0HR5FDH5B",
       "familyKey": "B0HR5FDH5B",
@@ -7254,6 +7412,75 @@
         "reviews": 13,
         "rating": 9,
         "priceTier": 2
+      }
+    },
+    {
+      "asin": "B07C4916LS",
+      "parentAsin": "B0GXCBSL3J",
+      "familyKey": "B0GXCBSL3J",
+      "variationCount": 1,
+      "productAgeDays": 3136,
+      "title": "skil rechargeable 4v cordless screwdriver with circuit sensor technology, includes 9pcs bit, 1pc bit holder, usb charging cable - sd561201, red",
+      "brand": "skil",
+      "brandTier": "mid",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "551236",
+        "228013",
+        "328182011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 22.79,
+      "avg30": 26.91,
+      "avg90": 26.33,
+      "low365": 21.99,
+      "rating": 4.5,
+      "reviewCount": 9050,
+      "rank": 4654,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51YS3qHC87L.jpg",
+      "url": "https://www.amazon.com/dp/B07C4916LS",
+      "keepa": "https://keepa.com/#!product/1-B07C4916LS",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": true,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T01:22:00.524Z",
+      "dealScore": 98,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 20,
+        "rank": 30,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 62,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 12,
+        "demand": 18,
+        "reviews": 15,
+        "rating": 7,
+        "priceTier": 0
       }
     },
     {
@@ -17553,6 +17780,85 @@
       }
     },
     {
+      "asin": "B08S7JQK31",
+      "parentAsin": "",
+      "familyKey": "B08S7JQK31",
+      "variationCount": 0,
+      "productAgeDays": 2131,
+      "title": "dewalt dcb126 12v max* 5.0ah lithium ion battery",
+      "brand": "dewalt",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552354",
+        "228013",
+        "328182011",
+        "552262",
+        "8106312011"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "552262",
+          "name": "power tool parts & accessories"
+        },
+        {
+          "id": "8106312011",
+          "name": "battery packs & chargers"
+        },
+        {
+          "id": "552354",
+          "name": "battery packs"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 73.99,
+      "avg30": 77.04,
+      "avg90": 78.05,
+      "low365": 64.67,
+      "rating": 4.5,
+      "reviewCount": 1296,
+      "rank": 35603,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51E5xxE1l5L.jpg",
+      "url": "https://www.amazon.com/dp/B08S7JQK31",
+      "keepa": "https://keepa.com/#!product/1-B08S7JQK31",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T01:22:00.524Z",
+      "dealScore": 67,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 7,
+        "rank": 0,
+        "reviews": 10,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 13,
+        "rating": 7,
+        "priceTier": 4
+      }
+    },
+    {
       "asin": "B096Z7PN4M",
       "parentAsin": "B0D95LDZTY",
       "familyKey": "B0D95LDZTY",
@@ -17629,6 +17935,89 @@
         "reviews": 11,
         "rating": 5,
         "priceTier": 6
+      }
+    },
+    {
+      "asin": "B0G1NCXJQX",
+      "parentAsin": "",
+      "familyKey": "B0G1NCXJQX",
+      "variationCount": 0,
+      "productAgeDays": 369,
+      "title": "makita xnb07z 18v lxt® lithium-ion brushless cordless 30º clipped head 3-1/2\" framing nailer, tool only",
+      "brand": "makita",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552702",
+        "228013",
+        "328182011",
+        "551236",
+        "552838"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552838",
+          "name": "nailers & staplers"
+        },
+        {
+          "id": "686960011",
+          "name": "nailers"
+        },
+        {
+          "id": "552702",
+          "name": "framing nailers"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 344.06,
+      "avg30": 378.96,
+      "avg90": 393.09,
+      "low365": 344.06,
+      "rating": 4.6,
+      "reviewCount": 22,
+      "rank": 90726,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61zPaMeV4KL.jpg",
+      "url": "https://www.amazon.com/dp/B0G1NCXJQX",
+      "keepa": "https://keepa.com/#!product/1-B0G1NCXJQX",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T01:22:00.524Z",
+      "dealScore": 64,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 18,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 3,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 52,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 20,
+        "demand": 4,
+        "reviews": 0,
+        "rating": 8,
+        "priceTier": 10
       }
     },
     {
@@ -21479,6 +21868,85 @@
       }
     },
     {
+      "asin": "B0DHS4RHR8",
+      "parentAsin": "B0HGF3Q7TB",
+      "familyKey": "B0HGF3Q7TB",
+      "variationCount": 4,
+      "productAgeDays": 780,
+      "title": "skil 15 amp 8-1/4-inch compact portable jobsite table saw (stand sfs0001 sold separately)-ts6308-00",
+      "brand": "skil",
+      "brandTier": "mid",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "552962",
+        "228013",
+        "328182011",
+        "551236",
+        "552894"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551236",
+          "name": "power tools"
+        },
+        {
+          "id": "552894",
+          "name": "saws"
+        },
+        {
+          "id": "552962",
+          "name": "table saws"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 229,
+      "avg30": 244.55,
+      "avg90": 254.86,
+      "low365": 219,
+      "rating": 4.6,
+      "reviewCount": 148,
+      "rank": 79512,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51Wy9+IXAeL.jpg",
+      "url": "https://www.amazon.com/dp/B0DHS4RHR8",
+      "keepa": "https://keepa.com/#!product/1-B0DHS4RHR8",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T01:22:00.524Z",
+      "dealScore": 54,
+      "scoreBreakdown": {
+        "rating": 23,
+        "discount": 15,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 8
+      },
+      "normalizedScore": 48,
+      "normalizedScoreBreakdown": {
+        "discount": 10,
+        "brand": 12,
+        "demand": 4,
+        "reviews": 6,
+        "rating": 8,
+        "priceTier": 8
+      }
+    },
+    {
       "asin": "B0CLN9V25Z",
       "parentAsin": "B0CX21MQQS",
       "familyKey": "B0CX21MQQS",
@@ -22258,6 +22726,80 @@
         "reviews": 3,
         "rating": 10,
         "priceTier": 4
+      }
+    },
+    {
+      "asin": "B00I3PNDGC",
+      "parentAsin": "",
+      "familyKey": "B00I3PNDGC",
+      "variationCount": 0,
+      "productAgeDays": 3679,
+      "title": "milwaukee electric tool - 2441-20 - cordless caulk gun, 12v, 10 oz",
+      "brand": "milwaukee",
+      "brandTier": "top",
+      "category": "power_tools_main",
+      "keepaCategoryIds": [
+        "553140",
+        "228013",
+        "328182011",
+        "551238"
+      ],
+      "keepaCategoryTree": [
+        {
+          "id": "228013",
+          "name": "tools & home improvement"
+        },
+        {
+          "id": "328182011",
+          "name": "power & hand tools"
+        },
+        {
+          "id": "551238",
+          "name": "hand tools"
+        },
+        {
+          "id": "553140",
+          "name": "caulking guns"
+        }
+      ],
+      "sourceStream": "power_tools_main",
+      "sources": [
+        "keepa"
+      ],
+      "price": 159,
+      "avg30": 168.85,
+      "avg90": 172.37,
+      "low365": 126.69,
+      "rating": 4.5,
+      "reviewCount": 231,
+      "rank": 46233,
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51r20T5JmkL.jpg",
+      "url": "https://www.amazon.com/dp/B00I3PNDGC",
+      "keepa": "https://keepa.com/#!product/1-B00I3PNDGC",
+      "isLowAll": false,
+      "drop1Day": 0,
+      "isHot": false,
+      "isNameBrand": true,
+      "updatedAt": "2026-11-17T01:22:00.524Z",
+      "dealScore": 61,
+      "scoreBreakdown": {
+        "rating": 22,
+        "discount": 11,
+        "rank": 0,
+        "reviews": 0,
+        "variationFamily": 0,
+        "productAge": 8,
+        "streamFit": 0,
+        "brand": 20
+      },
+      "normalizedScore": 47,
+      "normalizedScoreBreakdown": {
+        "discount": 0,
+        "brand": 20,
+        "demand": 8,
+        "reviews": 6,
+        "rating": 7,
+        "priceTier": 6
       }
     },
     {

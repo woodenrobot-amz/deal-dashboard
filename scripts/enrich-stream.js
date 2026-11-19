@@ -10,6 +10,7 @@ const ENRICH_LIMITS = {
   dudes_power: 125,
   dad_impulse: 125,
   dad_outdoors: 125,
+  shop_lighting: 125,
   three_d_printing: 125,
   
   deals_for_dudes: 125,
@@ -445,6 +446,21 @@ function getUiCategory(streamName) {
   return String(streamName || "").toLowerCase();
 }
 
+// Category selection is deliberately brand-agnostic. Verify product intent once
+// Keepa returns titles, since the lighting nodes also contain household fixtures.
+function isShopLightingDeal(deal) {
+  const title = deal.title.replace(/[-–—]/g, " ");
+  const excluded = /\b(?:headlights?|head\s*lamps?|tail\s*lights?|off\s*road|driving lights?|grow lights?|plant lights?|chandeliers?|pendant lights?|vanity lights?|string lights?|fairy lights?|security lights?|street lights?|parking lot lights?|wall packs?|replacement (?:bulbs?|tubes?|parts?|brackets?)|battery adapters?)\b/i;
+  const included = /\b(?:shop light(?:s|ing)?|garage light(?:s|ing)?|garage ceiling lights?|work\s*light(?:s|ing)?|workshop light(?:s|ing)?|high\s*bay|low\s*bay|batten lights?|utility (?:lights?|fixtures?)|job\s*site light(?:s|ing)?|under\s*hood (?:work )?lights?|mechanic lights?|inspection lights?|woodworking lights?|machine lights?|workbench lights?|work bench lights?|hexagon(?:al)? (?:led )?(?:garage )?lights?|honeycomb (?:led )?(?:garage )?lights?)\b/i;
+  const taskFixture = /\b(?:task lights?|strip light fixtures?|light bars?)\b/i.test(title) && /\b(?:garage|workshop|workbench|work bench|machine|shop)\b/i.test(title);
+  return !excluded.test(title) && (included.test(title) || taskFixture) &&
+    deal.price >= 20 && deal.price <= 200 &&
+    deal.rating >= 4 && deal.reviewCount >= 50 &&
+    deal.rank >= 1 && deal.rank <= 200000 &&
+    deal.avg90 > 0 && deal.price <= deal.avg90 * 0.85 + 1e-8 &&
+    deal.avg30 > 0 && deal.price <= deal.avg30 * 0.90 + 1e-8;
+}
+
 function normalizeProduct(p, streamName) {
   const asin = normalizeAsin(p.asin);
   const parentAsin = getParentAsin(p);
@@ -691,6 +707,7 @@ async function run() {
     .filter(hasEnoughKeepaHistory)
     .map(p => normalizeProduct(p, STREAM_NAME))
     .filter(d => d.asin && d.title && d.price)
+    .filter(d => STREAM_NAME !== "shop_lighting" || isShopLightingDeal(d))
     .filter(d => !ignoredAsins.has(d.asin))
     .filter(d => !d.parentAsin || !ignoredParentAsins.has(d.parentAsin));
 

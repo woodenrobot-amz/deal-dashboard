@@ -49,8 +49,8 @@ test('token wait has a finite budget', async () => {
   assert.equal(refillWaitMs({ tokensLeft: -1, refillRate: 0 }, 55), 60000);
 });
 
-async function runEnrichment(count, batches) {
-  const items = Array.from({ length: count }, (_, i) => ({ asin: `B${String(i).padStart(9, '0')}`, streams: ['trusted_sellers'] }));
+async function runEnrichment(count, batches, stream = 'trusted_sellers') {
+  const items = Array.from({ length: count }, (_, i) => ({ asin: `B${String(i).padStart(9, '0')}`, streams: [stream] }));
   items.push({ asin: 'B999999999', streams: ['trusted_sellers'], enrichedAt: 'existing' });
   const files = new Map([
     ['data/discovered-asins.json', JSON.stringify({ asins: items })],
@@ -68,7 +68,7 @@ async function runEnrichment(count, batches) {
       } };
       throw new Error(`Unexpected dependency ${name}`);
     },
-    process: { env: { KEEPA_API_KEY: 'test' }, argv: ['node', 'script', 'trusted_sellers'], exit: code => errors.push(code) },
+    process: { env: { KEEPA_API_KEY: 'test' }, argv: ['node', 'script', stream], exit: code => errors.push(code) },
     console: { log: () => {}, error: error => errors.push(error) },
     URL, URLSearchParams, Date, Set, Map
   };
@@ -104,4 +104,56 @@ test('125 candidates continue to the second batch after crossing the token floor
   assert.equal(r.calls[1].opts.previousStatus.tokensLeft, 4);
   const marked = JSON.parse(r.files.get('data/discovered-asins.json')).asins.filter(i => i.enrichedAt && i.enrichedAt !== 'existing');
   assert.equal(marked.length, 2);
+});
+
+test('shop lighting retains relevant deals within price and discount limits', async () => {
+  const product = (i, title, price = 2000, avg90 = 2500, avg30 = 2500) => ({
+    asin: `B${String(i).padStart(9, '0')}`, title, parentAsin: '',
+    trackingSince: 1, rating: 45, reviewCount: 200,
+    stats: { current: [price, price, price, 1000], avg90: [avg90], avg30: [avg30] }
+  });
+  const products = [
+    product(0, 'Linkable LED Shop Lights for Garage'),
+    product(1, 'Hexagon Garage Lights', 20000, 25000, 25000),
+    product(2, 'Rechargeable Under Hood Work Light'),
+    product(3, 'LED Grow Lights for Indoor Plants'),
+    product(4, 'Decorative Pendant Lights'),
+    product(5, 'LED Headlight Work Lights for Off-Road'),
+    product(6, 'LED Shop Lights', 20001, 25000, 25000),
+    product(7, 'LED Shop Lights', 2000, 2100, 2500),
+    product(8, 'LED Shop Lights', 1999),
+    product(9, 'Replacement Brackets for Shop Lights'),
+    product(10, 'Rechargeable Flashlight'),
+    product(11, 'LED High-Bay Light')
+  ];
+  const r = await runEnrichment(products.length, [{ products, tokensLeft: 100 }], 'shop_lighting');
+  assert.deepEqual(r.errors, []);
+  const deals = JSON.parse(r.files.get('data/deals.json')).deals;
+  assert.deepEqual(deals.map(d => d.asin).sort(), [0, 1, 2, 11].map(i => `B${String(i).padStart(9, '0')}`));
+  assert.ok(deals.every(d => d.category === 'shop_lighting'));
+});
+
+test('shop lighting discovery uses the approved filters', async () => {
+  let selection;
+  const context = {
+    require: name => name === 'fs' ? {
+      existsSync: () => false, mkdirSync: () => {}, writeFileSync: () => {}
+    } : { requestKeepa: async url => {
+      selection = JSON.parse(new URL(url).searchParams.get('selection'));
+      return { asinList: [] };
+    } },
+    process: { env: { KEEPA_API_KEY: 'test' }, argv: ['node', 'script', 'shop_lighting'], exit: () => assert.fail('discovery failed') },
+    console: { log: () => {} }, URL, Date, Map, Set
+  };
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../keepa-discovery.js'), 'utf8'), context);
+  await new Promise(setImmediate);
+  assert.equal(selection.current_BUY_BOX_SHIPPING_gte, 2000);
+  assert.equal(selection.current_BUY_BOX_SHIPPING_lte, 20000);
+  assert.equal(selection.current_RATING_gte, 40);
+  assert.equal(selection.current_COUNT_REVIEWS_gte, 50);
+  assert.equal(selection.current_SALES_lte, 200000);
+  assert.equal(selection.deltaPercent90_BUY_BOX_SHIPPING_gte, 15);
+  assert.equal(selection.deltaPercent30_BUY_BOX_SHIPPING_gte, 10);
+  assert.equal(selection.isLowest90_BUY_BOX_SHIPPING, true);
+  assert.equal(selection.brand, undefined);
 });

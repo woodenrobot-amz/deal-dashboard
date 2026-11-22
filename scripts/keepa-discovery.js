@@ -415,6 +415,35 @@ dad_outdoors: {
   }
 },
 
+shop_lighting: {
+  name: "shop_lighting",
+  selection: {
+    productType: [0],
+    singleVariation: true,
+    categories_include: [
+      "5772192011", // Commercial Lighting
+      "5772194011", // Commercial Bay Lighting
+      "553504",     // Job Site & Security Lighting
+      "5538121011"  // Close to Ceiling Light Fixtures
+    ],
+    current_SALES_gte: 1,
+    current_SALES_lte: 200000,
+    current_RATING_gte: 40,
+    current_COUNT_REVIEWS_gte: 50,
+    current_BUY_BOX_SHIPPING_gte: 2000,
+    current_BUY_BOX_SHIPPING_lte: 20000,
+    isLowest90_BUY_BOX_SHIPPING: true,
+    deltaPercent90_BUY_BOX_SHIPPING_gte: 15,
+    deltaPercent30_BUY_BOX_SHIPPING_gte: 10,
+    sort: [
+      ["deltaPercent90_BUY_BOX_SHIPPING", "desc"],
+      ["current_SALES", "asc"]
+    ],
+    perPage: 1000,
+    page: 0
+  }
+},
+
 three_d_printing: {
   name: "three_d_printing",
   selection: {
